@@ -42,9 +42,9 @@ class RscZGMListbox {
     period = 1;
     colorBackground[] = {0, 0, 0, 0.5};
     maxHistoryDelay = 1;
-    colorPicture[] = {0, 0, 0, 0};
-    colorPictureSelected[] = {0, 0, 0, 0};
-    colorPictureDisabled[] = {0, 0, 0, 0};
+    colorPicture[] = {1, 1, 1, 1};
+    colorPictureSelected[] = {1, 1, 1, 1};
+    colorPictureDisabled[] = {1, 1, 1, 1};
     colorPictureRight[] = {0, 0, 0, 0};
     colorPictureRightSelected[] = {0, 0, 0, 0};
     colorPictureRightDisabled[] = {0, 0, 0, 0};
@@ -130,7 +130,7 @@ class RscZGMSlots {
 		colorBackground[] = {0,0,0,0.8};
 	};
 	class Apply: RscZGMButton {
-		idc = 1;
+		idc = -1;
 		onButtonClick = "_this call zgm_loadoutScreen_fnc_applySelected;";	
 		text = "Apply selected"; //--- ToDo: Localize;
 		x = 0.644375 * safezoneW + safezoneX;
@@ -139,7 +139,7 @@ class RscZGMSlots {
 		h = 0.056 * safezoneH;
 	};
 	class Reset: RscZGMButton {
-		idc = 1;
+		idc = -1;
 		onButtonClick = "_this call zgm_loadoutScreen_fnc_resetDefault;";
 		text = "Apply default"; //--- ToDo: Localize;
 		x = 0.644375 * safezoneW + safezoneX;

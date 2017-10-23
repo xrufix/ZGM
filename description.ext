@@ -26,3 +26,5 @@ class CfgFunctions {
 
 #include "CfgPoppy.hpp"
 #include "CfgLoadouts.hpp"
+
+allowFunctionsRecompile = 1;

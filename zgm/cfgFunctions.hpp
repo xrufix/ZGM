@@ -49,7 +49,6 @@ class zgm_loadoutScreen {
             postInit = 1;
         };
         class applySelected {};
-        class cancel {};
         class onLoad {};
         class resetDefault {};
     };

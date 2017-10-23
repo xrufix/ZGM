@@ -28,7 +28,14 @@ switch (side player) do {
 
 // Add factions to listbox.
 {	/* private _configName = configName _x; */
-	_factionsList lbAdd (getText (_x >> "displayName"));
+	private _displayName = getText (_x >> "displayName");
+	_factionsList lbAdd _displayName;
+	_factionsList lbSetTooltip [_forEachIndex, _displayName];
+	if (isText (_x >> "icon")) then {
+		_factionsList lbSetPicture [_forEachIndex, getText (_x >> "icon")];
+	} else {
+		_factionsList lbSetPicture [_forEachIndex, "\a3\characters_f\data\ui\icon_null_ca.paa"];
+	};
 /* 	if (_configName == _faction) then {
 		_factionsList lbSetCurSel _forEachIndex;
 	}; */
@@ -41,6 +48,9 @@ switch (side player) do {
 	
 	{	/* private _configNameRole = configName _x; */
 		_rolesList tvAdd [[_parent], getText (_x >> "displayName")];
+		if (isText (_x >> "icon")) then {
+		_rolesList tvSetPicture [[_parent,_forEachIndex], getText (_x >> "icon")]
+		};
 /* 		if ((_configNameGroup == _group) && (_roleText == _role)) then {
 			_rolesList tvExpand [_parent];
 			_rolesList tvSetCurSel [_parent, _forEachIndex];
