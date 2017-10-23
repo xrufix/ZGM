@@ -5,6 +5,7 @@ class zgm_main {
         class initAddons {
             postInit = 1;
         };   
+        class isNearSpawn {};
     };
 };
 
@@ -37,5 +38,19 @@ class zgm_loadouts {
         class factionBLUFOR {};
         class factionINDEP {};
         class factionOPFOR {};
+        class selectLoadout {};
+    };
+};
+
+class zgm_loadoutScreen {
+    class functions {
+        file = "zgm\loadoutScreen";
+        class addAction {
+            postInit = 1;
+        };
+        class applySelected {};
+        class cancel {};
+        class onLoad {};
+        class resetDefault {};
     };
 };

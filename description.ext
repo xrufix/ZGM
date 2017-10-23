@@ -20,6 +20,9 @@ class CfgFunctions {
 };
 
 #include "zgm\params.hpp"
+#include "zgm\loadoutScreen\dialog.hpp"
+#include "zgm\cfgFactions.hpp"
+#include "zgm\cfgRoles.hpp"
 
 #include "CfgPoppy.hpp"
-
+#include "CfgLoadouts.hpp"
