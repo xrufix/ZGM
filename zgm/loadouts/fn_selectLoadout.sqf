@@ -7,13 +7,13 @@ params ["_unit"];
 private _side = switch (side _unit) do {
 	case west : {"b";};
 	case east : {"o";};
-	case guer : {"i";};
+	case independent : {"i";};
 	default 	{"b"};
 };
 private _faction = switch (side _unit) do {
 	case west : {GVAR(BLUFOR)};
 	case east : {GVAR(OPFOR)};
-	case guer : {GVAR(INDEP)};
+	case independent : {GVAR(INDEP)};
 	default		{GVAR(BLUFOR)};
 };
 

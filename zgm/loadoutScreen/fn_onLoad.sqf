@@ -11,7 +11,7 @@ private _rolesList = _display displayCtrl 13;
 private _faction = switch (side _unit) do {
 	case west : {GVAR(BLUFOR)};
 	case east : {GVAR(OPFOR)};
-	case guer : {GVAR(INDEP)};
+	case independent : {GVAR(INDEP)};
 	default		{GVAR(BLUFOR)};
 };
 (_unit getVariable [QGVAR(role),["squad","light"]]) params ["_group","_role"];
@@ -21,7 +21,7 @@ private _faction = switch (side _unit) do {
 } forEach ["BLUFOR","INDEP","OPFOR"];
 switch (side player) do {
 	case west : {_sidesList lbSetCurSel 0};
-	case guer : {_sidesList lbSetCurSel 1};
+	case independent : {_sidesList lbSetCurSel 1};
 	case east : {_sidesList lbSetCurSel 2};
 	default 	{_sidesList lbSetCurSel 0};
 };

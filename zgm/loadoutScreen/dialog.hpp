@@ -95,9 +95,17 @@ class RscZGMTree : RscZGMListbox {
     maxHistoryDelay = 1;
     class ScrollBar : ListScrollBar {};
 };
+class RscZGMheader {
+	type = 0;
+	style = 2;
+	colorBackground[] = {1, 0.84, 0, 0.5};
+	colorText[] = {0,0,0,1};
+	sizeEx = 0.037;
+	font = "RobotoCondensed";
+};
 
-	
-class RscZGMSlots {
+//missionConfigfile >> "RscZGMLoadouts"
+class RscZGMLoadouts {
     idd = -1;
     movingEnable = false;
     enablesimulation = true;
@@ -105,7 +113,10 @@ class RscZGMSlots {
 		Background,
         Side,
         Faction,
-        Role
+		Role,
+		headerSide,
+		headerFaction,
+		headerRole
     };
     controls[] = {
         Apply,
@@ -133,49 +144,71 @@ class RscZGMSlots {
 		idc = -1;
 		onButtonClick = "_this call zgm_loadoutScreen_fnc_applySelected;";	
 		text = "Apply selected"; //--- ToDo: Localize;
-		x = 0.644375 * safezoneW + safezoneX;
-		y = 0.766 * safezoneH + safezoneY;
-		w = 0.105 * safezoneW;
-		h = 0.056 * safezoneH;
+		x = 0.63128 * safezoneW + safezoneX;
+		y = 0.766012 * safezoneH + safezoneY;
+		w = 0.111588 * safezoneW;
+		h = 0.0560024 * safezoneH;
 	};
 	class Reset: RscZGMButton {
 		idc = -1;
 		onButtonClick = "_this call zgm_loadoutScreen_fnc_resetDefault;";
 		text = "Apply default"; //--- ToDo: Localize;
-		x = 0.644375 * safezoneW + safezoneX;
-		y = 0.682 * safezoneH + safezoneY;
-		w = 0.105 * safezoneW;
-		h = 0.056 * safezoneH;
+		x = 0.506564 * safezoneW + safezoneX;
+		y = 0.766012 * safezoneH + safezoneY;
+		w = 0.111588 * safezoneW;
+		h = 0.0560024 * safezoneH;
 	};
 	class Cancel: RscZGMButton {
 		idc = 2;
 		text = "Cancel"; //--- ToDo: Localize;
-		x = 0.644375 * safezoneW + safezoneX;
-		y = 0.598 * safezoneH + safezoneY;
-		w = 0.105 * safezoneW;
-		h = 0.056 * safezoneH;
+		x = 0.257132 * safezoneW + safezoneX;
+		y = 0.766012 * safezoneH + safezoneY;
+		w = 0.111588 * safezoneW;
+		h = 0.0560024 * safezoneH;
 	};
 	class Side: RscZGMListbox {
 		idc = 11;
-		text = "Side"; //--- ToDo: Localize;
-		x = 0.250625 * safezoneW + safezoneX;
-		y = 0.234 * safezoneH + safezoneY;
-		w = 0.124687 * safezoneW;
-		h = 0.084 * safezoneH;
+		x = 0.257132 * safezoneW + safezoneX;
+		y = 0.205987 * safezoneH + safezoneY;
+		w = 0.124716 * safezoneW;
+		h = 0.0840036 * safezoneH;
 	};
 	class Faction: RscZGMListbox {
 		idc = 12;
-		text = "Faction"; //--- ToDo: Localize;
-		x = 0.250625 * safezoneW + safezoneX;
-		y = 0.346 * safezoneH + safezoneY;
-		w = 0.124687 * safezoneW;
-		h = 0.476 * safezoneH;
+		x = 0.257132 * safezoneW + safezoneX;
+		y = 0.345993 * safezoneH + safezoneY;
+		w = 0.22974 * safezoneW;
+		h = 0.392017 * safezoneH;
 	};
 	class Role: RscZGMTree {
 		idc = 13;
-		x = 0.388437 * safezoneW + safezoneX;
-		y = 0.234 * safezoneH + safezoneY;
-		w = 0.21 * safezoneW;
-		h = 0.588 * safezoneH;
+		x = 0.506564 * safezoneW + safezoneX;
+		y = 0.205987 * safezoneH + safezoneY;
+		w = 0.236304 * safezoneW;
+		h = 0.532023 * safezoneH;
+	};
+	class headerSide : RscZGMheader {
+		idc = -1;
+		text = "Side"; //--- ToDo: Localize;
+		x = 0.257132 * safezoneW + safezoneX;
+		y = 0.177986 * safezoneH + safezoneY;
+		w = 0.124716 * safezoneW;
+		h = 0.0280012 * safezoneH;
+	};
+	class headerFaction : RscZGMheader {
+		idc = -1;
+		text = "Faction"; //--- ToDo: Localize;
+		x = 0.257132 * safezoneW + safezoneX;
+		y = 0.317992 * safezoneH + safezoneY;
+		w = 0.22974 * safezoneW;
+		h = 0.0280012 * safezoneH;
+	};
+	class headerRole : RscZGMheader {
+		idc = -1;
+		text = "Role"; //--- ToDo: Localize;
+		x = 0.506564 * safezoneW + safezoneX;
+		y = 0.177986 * safezoneH + safezoneY;
+		w = 0.22974 * safezoneW;
+		h = 0.0280012 * safezoneH;
 	};
 };

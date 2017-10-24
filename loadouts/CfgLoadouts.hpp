@@ -14,13 +14,13 @@ class CommonBlufor : CommonDefault {};
 
 #define SIDE Indep
 #define SIDE_SHORT i
-#define GRENADES_BASIC  ARR_4("ACE_Chemlight_Orange","ACE_Chemlight_White","SmokeShellOrange","SmokeShellPurple")
+#define GRENADES_BASIC  ARR_4("Chemlight_blue","Chemlight_yellow","SmokeShellBlue","SmokeShellYellow")
 class CommonIndependant : CommonDefault {};
 #include "factions.hpp"
 
 #define SIDE Opfor
 #define SIDE_SHORT o
-#define GRENADES_BASIC  ARR_4("ACE_Chemlight_Orange","ACE_Chemlight_White","SmokeShellOrange","SmokeShellPurple")
+#define GRENADES_BASIC  ARR_4("Chemlight_red","Chemlight_green","SmokeShellRed","SmokeShellGreen")
 class CommonOpfor : CommonDefault {};
 #include "factions.hpp"
 
