@@ -2,8 +2,28 @@
 #include "..\loadouts\AAF.hpp"
 #include "..\template.hpp"
 
+#define FACTION CHINA
+#include "..\loadouts\CHINA.hpp"
+#include "..\template.hpp"
+
+#define FACTION CHINA_GRN
+#include "..\loadouts\CHINA_GRN.hpp"
+#include "..\template.hpp"
+
 #define FACTION IDF
 #include "..\loadouts\IDF.hpp"
+#include "..\template.hpp"
+
+#define FACTION IRAN
+#include "..\loadouts\IRAN.hpp"
+#include "..\template.hpp"
+
+#define FACTION IRAN_GRN
+#include "..\loadouts\IRAN_GRN.hpp"
+#include "..\template.hpp"
+
+#define FACTION IRAN_URB
+#include "..\loadouts\IRAN_URB.hpp"
 #include "..\template.hpp"
 
 #define FACTION NATO_CTRG

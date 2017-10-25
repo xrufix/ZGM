@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ZGM">
+    <Package name="main">
+        <Container name="main">
+            <Key ID="STR_ZGM_FACTIONS_AAF">
+                <English>Altis Armed Forces</English>
+                <German>Altische Streitkräfte (AAF)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_CHINA">
+                <English>CSAT - PLA of China (Brown)</English>
+                <German>CSAT - Volksarmee China (Braun)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_CHINA_GRN">
+                <English>CSAT - PLA of China (Green)</English>
+                <German>CSAT - Volksarmee China (Grün)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_IDF">
+                <English>Israeli Defense Forces</English>
+                <German>Israelische Verteidigungsstreitkräfte</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_IRAN">
+                <English>CSAT - Iranian Army (Brown)</English>
+                <German>CSAT - Iranische Armee (Braun)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_IRAN_GRN">
+                <English>CSAT - Iranian Army (Green)</English>
+                <German>CSAT - Iranische Armee (Grün)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_IRAN_URB">
+                <English>CSAT - Iranian Army (Urban)</English>
+                <German>CSAT - Iranische Armee (Stadt)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_NATO_CTRG">
+                <English>British Army 2035 / CTRG</English>
+                <German>Britische Armee 2035 / CTRG</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_NATO_MTP">
+                <English>NATO 2035 (MTP)</English>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_NATO_TRPC">
+                <English>NATO 2035 (Tropic)</English>
+                <German>NATO 2035 (Tropen)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_NATO_WDL">
+                <English>NATO 2035 (Woodland)</English>
+                <German>NATO 2035 (Wald)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_USARMY_OCP">
+                <English>US Army (OCP)</English>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_USARMY_UCP">
+                <English>US Army (UCP)</English>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_USMC_D">
+                <English>US Marine Corps (Desert)</English>
+                <German>US Marine Corps (Wüste)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_USMC_W">
+                <English>US Marine Corps (Woodland)</English>
+                <German>US Marine Corps (Wald)</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_BLUFOR">
+                <English>Blufor Faction (Loadouts)</English>
+                <German>Blufor-Fraktion (Loadouts)</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_INDEP">
+                <English>Independent Faction (Loadouts)</English>
+                <German>Independent-Fraktion (Loadouts)</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_OPFOR">
+                <English>Opfor Faction (Loadouts)</English>
+                <German>Opfor-Fraktion (Loadouts)</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_AISKILL">
+                <English>AI Skill Level</English>
+                <German>KI-Schwierigkeitsstufe</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_AISKILL_LOWEST">
+                <English>Very Low</English>
+                <German>Sehr niedrig</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_AISKILL_LOW">
+                <English>Low</English>
+                <German>Niedrig</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_AISKILL_DEFAULT">
+                <English>Standard (Default)</English>
+                <German>Standard</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_AISKILL_HIGH">
+                <English>High</English>
+                <German>Hoch</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_AISKILL_HIGHEST">
+                <English>Highest</English>
+                <German>Sehr hoch</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_DAYTIME">
+                <English>Time of day</English>
+                <German>Tageszeit</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_DAYTIME_RANDOM">
+                <English>Random (Default)</English>
+                <German>Zufällig (Standard)</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_DAYTIME_MORNING">
+                <English>Morning</English>
+                <German>Morgens</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_DAYTIME_NOON">
+                <English>Noon</English>
+                <German>Mittags</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_DAYTIME_EVENING">
+                <English>Evening</English>
+                <German>Abends</German>
+            </Key>
+            <Key ID="STR_ZGM_PARAMS_DAYTIME_NIGHT">
+                <English>Night</English>
+                <German>Nachts</German>
+            </Key>
+        </Container>
+    </Package>
+</Project>
