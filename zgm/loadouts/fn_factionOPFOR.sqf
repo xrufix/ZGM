@@ -2,9 +2,6 @@
 
 params ["_index"];
 
-_faction = [
-	"CSAT",
-	"CSAT_P"
-	] select _index;
+private _factions = "true" configClasses (missionConfigFile >> "CfgFactions") apply {configName _x};
 
-GVAR(OPFOR) = _faction;
+GVAR(OPFOR) = _factions select _index;

@@ -2,10 +2,6 @@
 
 params ["_index"];
 
-_faction = [
-	"AAF",
-	"ISD",
-	"CTRG"
-	] select _index;
+private _factions = "true" configClasses (missionConfigFile >> "CfgFactions") apply {configName _x};
 
-GVAR(INDEP) = _faction;
+GVAR(INDEP) = _factions select _index;
