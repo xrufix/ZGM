@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1337;
+		nextID=1338;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=93;
+		nextID=102;
 	};
 	class Camera
 	{
-		pos[]={14475.387,32.562805,6185.3428};
-		dir[]={-0.53205067,-0.68493491,-0.49780974};
-		up[]={-0.50015426,0.72859865,-0.46796632};
-		aside[]={-0.68323028,-5.2937685e-007,0.73022246};
+		pos[]={14467.614,29.295624,6184.9326};
+		dir[]={0.46416849,-0.52518702,-0.71333528};
+		up[]={0.28646687,0.85096127,-0.4402431};
+		aside[]={-0.83822572,-1.1906814e-006,-0.54543889};
 	};
 };
 binarizationWanted=0;
@@ -37,13 +37,14 @@ addons[]=
 	"A3_Characters_F_Mark",
 	"ace_explosives",
 	"ace_nouniformrestrictions",
-	"A3_Characters_F_Jets"
+	"A3_Characters_F_Jets",
+	"A3_Signs_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=10;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -104,6 +105,13 @@ class AddonsMetaData
 		{
 			className="A3_Characters_F_Jets";
 			name="Arma 3 Jets - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Signs_F";
+			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -521,7 +529,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			dataType="Marker";
@@ -27349,6 +27357,23 @@ class Mission
 			};
 			id=874;
 			atlOffset=0.012664795;
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14471.324,25.543062,6183.8218};
+				angles[]={0.0039968039,1.4207329,6.2818413};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{null = [this] call FETT_framework_fnc_techSupport;}";
+			};
+			id=1337;
+			type="FlagSmall_F";
 		};
 	};
 };
