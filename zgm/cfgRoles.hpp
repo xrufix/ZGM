@@ -93,7 +93,7 @@ class cfgRoles {
         };
         class eng {
             displayName = "Combat Engineer";
-            icon ="\a3\ui_f\data\igui\cfg\cursors\iconrepairvehicle_ca.paa"
+            icon ="\a3\ui_f\data\igui\cfg\cursors\iconrepairvehicle_ca.paa";
         };
     };
 

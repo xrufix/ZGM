@@ -1,13 +1,13 @@
-author = [W] rufix;
+author = "[W] rufix";
 onLoadName = "xru ZGM";
 onLoadMission = "xru ZGM";
 overviewText = "Zeus Guided Mission";
 loadScreen = "";
 
 class Header {
-    gameType = Zeus;
+    gameType = "Zeus";
     minPlayers = 1;
-    maxPlayers = 123;
+    maxPlayers = 128;
 };
 
 // W-Framework und Medicsystem
@@ -21,8 +21,8 @@ class CfgFunctions {
 
 #include "zgm\params.hpp"
 #include "zgm\loadoutScreen\dialog.hpp"
-#include "zgm\cfgFactions.hpp"
-#include "zgm\cfgRoles.hpp"
+#include "zgm\CfgFactions.hpp"
+#include "zgm\CfgRoles.hpp"
 
 #include "CfgPoppy.hpp"
 #include "CfgLoadouts.hpp"
