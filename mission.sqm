@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1338;
+		nextID=1340;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=102;
+		nextID=111;
 	};
 	class Camera
 	{
-		pos[]={14467.614,29.295624,6184.9326};
-		dir[]={0.46416849,-0.52518702,-0.71333528};
-		up[]={0.28646687,0.85096127,-0.4402431};
-		aside[]={-0.83822572,-1.1906814e-006,-0.54543889};
+		pos[]={8830.0547,42.237675,25380.262};
+		dir[]={-0.65051305,-0.40593758,-0.64198965};
+		up[]={-0.28894773,0.91389275,-0.28516003};
+		aside[]={-0.70246565,-1.4784746e-008,0.71179324};
 	};
 };
 binarizationWanted=0;
@@ -1124,7 +1124,6 @@ class Mission
 								init="call{this setVariable [""zgm_loadouts_role"",[""company"",""co""]];}";
 								name="p_zeus_1";
 								description="Zeus@Olympos";
-								isPlayer=1;
 								isPlayable=1;
 							};
 							id=1332;
@@ -2097,8 +2096,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8486.749,82.153732,25296.572};
-								angles[]={0.20890664,0,0.019999012};
+								position[]={8486.749,82.153725,25296.572};
+								angles[]={0.20889845,0,0.020001473};
 							};
 							side="West";
 							flags=7;
@@ -2112,6 +2111,7 @@ class Mission
 							};
 							id=358;
 							type="B_Soldier_F";
+							atlOffset=-7.6293945e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -2430,6 +2430,7 @@ class Mission
 						formation="FILE";
 					};
 					id=357;
+					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2955,7 +2956,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="b_13";
 								isPlayable=1;
 							};
@@ -3201,7 +3202,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="b_17";
 								isPlayable=1;
 							};
@@ -3547,7 +3548,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="b_22";
 								isPlayable=1;
 							};
@@ -3793,7 +3794,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="b_26";
 								isPlayable=1;
 							};
@@ -4139,7 +4140,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="b_31";
 								isPlayable=1;
 							};
@@ -4385,7 +4386,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="b_35";
 								isPlayable=1;
 							};
@@ -4970,14 +4971,14 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8495.1416,84.736961,25284.225};
-								angles[]={0.25186849,0,6.212636};
+								angles[]={0.25186846,0,6.2126393};
 							};
 							side="West";
 							flags=4;
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""weapons"",""at""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""weapons"",""atgm""]];}";
 								name="b_44";
 								isPlayable=1;
 							};
@@ -5032,15 +5033,16 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8495.1416,85.210945,25281.725};
-								angles[]={0.051953323,0,6.2126365};
+								angles[]={0.051958453,0,6.2126393};
 							};
 							side="West";
 							flags=4;
 							class Attributes
 							{
-								init="call{this setVariable [""zgm_loadouts_role"",[""weapons"",""aat""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""weapons"",""aatgm""]];}";
 								name="b_45";
 								isPlayable=1;
+								stance="Middle";
 							};
 							id=458;
 							type="B_soldier_AAT_F";
@@ -8077,7 +8079,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""sl""]];}";
 								name="b_51";
 								isPlayable=1;
 							};
@@ -8671,7 +8673,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""sl""]];}";
 								name="b_60";
 								isPlayable=1;
 							};
@@ -9265,7 +9267,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""sl""]];}";
 								name="b_69";
 								isPlayable=1;
 							};
@@ -10705,8 +10707,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8222.9414,50.7108,25128.209};
-								angles[]={0.20890664,0,0.019999012};
+								position[]={8222.9414,50.71114,25128.209};
+								angles[]={0.20889845,0,0.020001473};
 							};
 							side="East";
 							flags=7;
@@ -10716,11 +10718,12 @@ class Mission
 								init="call{this setVariable [""zgm_loadouts_role"",[""company"",""co""]];}";
 								name="o_1";
 								description="1: Commanding Officer@Command Team";
+								isPlayer=1;
 								isPlayable=1;
 							};
 							id=876;
 							type="O_Soldier_F";
-							atlOffset=0.0016593933;
+							atlOffset=0.0019989014;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -11025,7 +11028,7 @@ class Mission
 						formation="FILE";
 					};
 					id=875;
-					atlOffset=0.0016593933;
+					atlOffset=0.0019989014;
 				};
 				class Item1
 				{
@@ -11506,7 +11509,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="o_13";
 								isPlayable=1;
 							};
@@ -11756,7 +11759,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="o_17";
 								isPlayable=1;
 							};
@@ -12085,7 +12088,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="o_22";
 								isPlayable=1;
 							};
@@ -12334,7 +12337,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="o_26";
 								isPlayable=1;
 							};
@@ -12663,7 +12666,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="o_31";
 								isPlayable=1;
 							};
@@ -12913,7 +12916,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="o_35";
 								isPlayable=1;
 							};
@@ -13483,21 +13486,21 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8231.334,55.258213,25115.861};
-								angles[]={0.098347999,0,0.24936607};
+								position[]={8231.334,55.258461,25115.861};
+								angles[]={0.098349303,0,0.24937265};
 							};
 							side="East";
 							flags=4;
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""weapons"",""at""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""weapons"",""atgm""]];}";
 								name="o_44";
 								isPlayable=1;
 							};
 							id=924;
 							type="O_Soldier_AT_F";
-							atlOffset=0.033748627;
+							atlOffset=0.033996582;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -13546,20 +13549,20 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8231.334,55.490704,25113.361};
-								angles[]={0.06656827,0,0.2791796};
+								position[]={8231.334,55.490757,25113.361};
+								angles[]={0.066566855,0,0.27918288};
 							};
 							side="East";
 							flags=4;
 							class Attributes
 							{
-								init="call{this setVariable [""zgm_loadouts_role"",[""weapons"",""aat""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""weapons"",""aatgm""]];}";
 								name="o_45";
 								isPlayable=1;
 							};
 							id=925;
 							type="O_Soldier_AAT_F";
-							atlOffset=0.030944824;
+							atlOffset=0.03099823;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15462,7 +15465,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""sl""]];}";
 								name="o_51";
 								isPlayable=1;
 							};
@@ -16038,7 +16041,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""sl""]];}";
 								name="o_60";
 								isPlayable=1;
 							};
@@ -16615,7 +16618,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""sl""]];}";
 								name="o_69";
 								isPlayable=1;
 							};
@@ -19843,7 +19846,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="i_13";
 								isPlayable=1;
 							};
@@ -20093,7 +20096,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="i_17";
 								isPlayable=1;
 							};
@@ -20420,7 +20423,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="i_22";
 								isPlayable=1;
 							};
@@ -20670,7 +20673,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="i_26";
 								isPlayable=1;
 							};
@@ -20997,7 +21000,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="i_31";
 								isPlayable=1;
 							};
@@ -21247,7 +21250,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""ftl""]];}";
 								name="i_35";
 								isPlayable=1;
 							};
@@ -21819,21 +21822,21 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8794.5459,29.089212,25349.479};
-								angles[]={0.30849314,0,6.1888003};
+								position[]={8794.5459,29.089087,25349.479};
+								angles[]={0.30848694,0,6.188798};
 							};
 							side="Independent";
 							flags=4;
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""weapons"",""at""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""weapons"",""atgm""]];}";
 								name="i_44";
 								isPlayable=1;
 							};
 							id=1228;
 							type="I_Soldier_AT_F";
-							atlOffset=0.06612587;
+							atlOffset=0.065999985;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21882,20 +21885,20 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8794.5459,29.833864,25346.979};
-								angles[]={0.30849314,0,6.1888003};
+								position[]={8794.5459,29.833559,25346.979};
+								angles[]={0.30848694,0,6.188798};
 							};
 							side="Independent";
 							flags=4;
 							class Attributes
 							{
-								init="call{this setVariable [""zgm_loadouts_role"",[""weapons"",""aat""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""weapons"",""aatgm""]];}";
 								name="i_45";
 								isPlayable=1;
 							};
 							id=1229;
 							type="I_Soldier_AAT_F";
-							atlOffset=0.014305115;
+							atlOffset=0.013999939;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -23789,7 +23792,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""sl""]];}";
 								name="i_51";
 								isPlayable=1;
 							};
@@ -24365,7 +24368,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""sl""]];}";
 								name="i_60";
 								isPlayable=1;
 							};
@@ -24942,7 +24945,7 @@ class Mission
 							class Attributes
 							{
 								rank="CORPORAL";
-								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""tl""]];}";
+								init="call{this setVariable [""zgm_loadouts_role"",[""squad"",""sl""]];}";
 								name="i_69";
 								isPlayable=1;
 							};

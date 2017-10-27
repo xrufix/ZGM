@@ -1,78 +1,38 @@
 #include "script_macros_cfg.hpp"
 
+#define FACTION_PARAM(var1,var2) \
+    class DOUBLES(faction,var1) { \
+        title = CSTRING(PARAMS,var1); \
+        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}; \
+        texts[] = { \
+            CSTRING(FACTIONS,AAF), \
+            CSTRING(FACTIONS,CHINA), \
+            CSTRING(FACTIONS,CHINA_GRN), \
+            CSTRING(FACTIONS,FIA), \
+            CSTRING(FACTIONS,IDF), \
+            CSTRING(FACTIONS,IRAN), \
+            CSTRING(FACTIONS,IRAN_GRN), \
+            CSTRING(FACTIONS,IRAN_URB), \
+            CSTRING(FACTIONS,NATO_CTRG), \
+            CSTRING(FACTIONS,NATO_MTP), \
+            CSTRING(FACTIONS,NATO_TRPC), \
+            CSTRING(FACTIONS,NATO_WDL), \
+            CSTRING(FACTIONS,SYND), \
+            CSTRING(FACTIONS,USARMY_OCP), \
+            CSTRING(FACTIONS,USARMY_UCP), \
+            CSTRING(FACTIONS,USMC_D), \
+            CSTRING(FACTIONS,USMC_W) \
+        }; \
+        default = var2; \
+        function = QEFUNC(loadouts,GLUE(faction,var1)); \
+        isGlobal =1; \
+    };
+
 class params {
-    class faction_BLUFOR {
-        title = CSTRING(PARAMS,BLUFOR);
-        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14};
-        texts[] = {
-            CSTRING(FACTIONS,AAF),
-            CSTRING(FACTIONS,CHINA),
-            CSTRING(FACTIONS,CHINA_GRN),
-            CSTRING(FACTIONS,IDF),
-            CSTRING(FACTIONS,IRAN),
-            CSTRING(FACTIONS,IRAN_GRN),
-            CSTRING(FACTIONS,IRAN_URB),
-            CSTRING(FACTIONS,NATO_CTRG),
-            CSTRING(FACTIONS,NATO_MTP),
-            CSTRING(FACTIONS,NATO_TRPC),
-            CSTRING(FACTIONS,NATO_WDL),
-            CSTRING(FACTIONS,USARMY_OCP),
-            CSTRING(FACTIONS,USARMY_UCP),
-            CSTRING(FACTIONS,USMC_D),
-            CSTRING(FACTIONS,USMC_W)
-        };
-        default = 8;
-        function = QEFUNC(loadouts,factionBlufor);
-        isGlobal = 1;
-    };
-    class faction_INDEP {
-        title = CSTRING(PARAMS,INDEP);
-        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14};
-        texts[] = {
-            CSTRING(FACTIONS,AAF),
-            CSTRING(FACTIONS,CHINA),
-            CSTRING(FACTIONS,CHINA_GRN),
-            CSTRING(FACTIONS,IDF),
-            CSTRING(FACTIONS,IRAN),
-            CSTRING(FACTIONS,IRAN_GRN),
-            CSTRING(FACTIONS,IRAN_URB),
-            CSTRING(FACTIONS,NATO_CTRG),
-            CSTRING(FACTIONS,NATO_MTP),
-            CSTRING(FACTIONS,NATO_TRPC),
-            CSTRING(FACTIONS,NATO_WDL),
-            CSTRING(FACTIONS,USARMY_OCP),
-            CSTRING(FACTIONS,USARMY_UCP),
-            CSTRING(FACTIONS,USMC_D),
-            CSTRING(FACTIONS,USMC_W)
-        };
-        default = 0;
-        function = QEFUNC(loadouts,factionIndep);
-        isGlobal = 1;
-    };
-    class faction_OPFOR {
-        title = CSTRING(PARAMS,OPFOR);
-        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14};
-        texts[] = {
-            CSTRING(FACTIONS,AAF),
-            CSTRING(FACTIONS,CHINA),
-            CSTRING(FACTIONS,CHINA_GRN),
-            CSTRING(FACTIONS,IDF),
-            CSTRING(FACTIONS,IRAN),
-            CSTRING(FACTIONS,IRAN_GRN),
-            CSTRING(FACTIONS,IRAN_URB),
-            CSTRING(FACTIONS,NATO_CTRG),
-            CSTRING(FACTIONS,NATO_MTP),
-            CSTRING(FACTIONS,NATO_TRPC),
-            CSTRING(FACTIONS,NATO_WDL),
-            CSTRING(FACTIONS,USARMY_OCP),
-            CSTRING(FACTIONS,USARMY_UCP),
-            CSTRING(FACTIONS,USMC_D),
-            CSTRING(FACTIONS,USMC_W)
-        };
-        default = 1;
-        function = QEFUNC(loadouts,factionOpfor);
-        isGlobal = 1;
-    };
+    FACTION_PARAM(BLUFOR,9)
+    FACTION_PARAM(INDEP,0)
+    FACTION_PARAM(OPFOR,1)
+
     class GuerFriendly
     {
         title = "$STR_DISP_INTEL_EDIT_GUERILLA";

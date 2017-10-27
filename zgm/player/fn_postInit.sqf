@@ -1,5 +1,8 @@
 #include "script_component.hpp"
 
+player addAction ["Change Loadout",{createDialog "RscZGMLoadouts";},[],6,false,true,"",QUOTE([player] call EFUNC(main,isNearSpawn))];
+player addAction ["Teleport to your team",{createDialog "RscFrameworkTeleporter"},[],6,false,true,"",QUOTE([player] call EFUNC(main,isNearSpawn))];
+
 if ([player] call EFUNC(main,iscurator)) exitWith {
 	[] call FUNC(postInitZeus);
 };

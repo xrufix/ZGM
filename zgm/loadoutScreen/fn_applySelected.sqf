@@ -7,7 +7,8 @@ private _sidesList = _display displayCtrl 11;
 private _factionsList = _display displayCtrl 12;
 private _rolesList = _display displayCtrl 13;
 
-private _side = switch (lbCurSel _sidesList) do {
+private _side = [player] call EFUNC(main,getSide);
+/* switch (lbCurSel _sidesList) do {
 	case 0 : {"b"};
 	case 1 : {"i"};
 	case 2 : {"o"};
@@ -19,7 +20,7 @@ if !(_side isEqualType "") exitWith {
 		private _endState = ["No side selected! Select a side and try again.","Error",true,true] call BIS_fnc_guiMessage;
 		if !_endState then {_display closeDisplay 2};
 	};
-};
+}; */
 
 private _factionIndex = (lbCurSel _factionsList);
 if (_factionIndex == -1) exitWith {

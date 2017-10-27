@@ -111,7 +111,7 @@ class CommonBluforAAF: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_AAF_company_common: CommonBluforAAF
 {
@@ -397,7 +397,7 @@ class b_AAF_platoon_jtac: b_AAF_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -408,8 +408,6 @@ class b_AAF_platoon_jtac: b_AAF_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -457,7 +455,7 @@ class b_AAF_platoon_medic: b_AAF_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_AAF_squad_sl: CommonBluforAAF
 {
@@ -501,20 +499,23 @@ class b_AAF_squad_sl: CommonBluforAAF
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -802,7 +803,7 @@ class b_AAF_squad_cm: CommonBluforAAF
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_AAF_squad_dm: CommonBluforAAF
 {
@@ -866,7 +867,7 @@ class b_AAF_squad_eng: CommonBluforAAF
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_AAF_weapons_common: CommonBluforAAF
 {
@@ -1330,7 +1331,7 @@ class b_AAF_recon_common: CommonBluforAAF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_AAF_recon_rm: b_AAF_recon_common
 {
@@ -1388,13 +1389,11 @@ class b_AAF_recon_tl: b_AAF_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -1587,7 +1586,7 @@ class b_AAF_recon_cm: b_AAF_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_AAF_recon_dm: b_AAF_recon_common
 {
@@ -1683,7 +1682,7 @@ class b_AAF_recon_exp: b_AAF_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_AAF_diver_common: b_AAF_recon_common
 {
@@ -1861,7 +1860,7 @@ class b_AAF_diver_exp: b_AAF_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_AAF_diver_cm: b_AAF_diver_common
 {
@@ -1901,7 +1900,7 @@ class b_AAF_diver_cm: b_AAF_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_AAF_diver_dm: b_AAF_diver_common
 {
@@ -1983,8 +1982,6 @@ class b_AAF_diver_jtac: b_AAF_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -2074,10 +2071,9 @@ class b_AAF_sniper_spot: b_AAF_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -2095,7 +2091,8 @@ class b_AAF_sniper_spot: b_AAF_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -2216,7 +2213,7 @@ class b_AAF_sniper_exp: b_AAF_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_AAF_crew_common: CommonBluforAAF
 {
@@ -2265,7 +2262,7 @@ class b_AAF_crew_common: CommonBluforAAF
 	{
 		"ACRE_PRC152"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_AAF_crew_cmd: b_AAF_crew_common
 {
@@ -2460,7 +2457,7 @@ class b_AAF_logistics_common: CommonBluforAAF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_AAF_medevac_common: CommonBluforAAF
 {
@@ -2510,7 +2507,7 @@ class b_AAF_medevac_common: CommonBluforAAF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_AAF_medevac_doc: b_AAF_medevac_common
 {
@@ -2546,7 +2543,7 @@ class b_AAF_medevac_doc: b_AAF_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_AAF_medevac_tl: b_AAF_medevac_doc
 {
@@ -2622,7 +2619,7 @@ class CommonBluforCHINA: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_khk"
 	};
 	backpack[]=
 	{
@@ -2723,7 +2720,7 @@ class CommonBluforCHINA: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_company_common: CommonBluforCHINA
 {
@@ -3011,7 +3008,7 @@ class b_CHINA_platoon_jtac: b_CHINA_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -3022,8 +3019,6 @@ class b_CHINA_platoon_jtac: b_CHINA_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -3071,7 +3066,7 @@ class b_CHINA_platoon_medic: b_CHINA_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_squad_sl: CommonBluforCHINA
 {
@@ -3115,20 +3110,23 @@ class b_CHINA_squad_sl: CommonBluforCHINA
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -3422,7 +3420,7 @@ class b_CHINA_squad_cm: CommonBluforCHINA
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_squad_dm: CommonBluforCHINA
 {
@@ -3486,7 +3484,7 @@ class b_CHINA_squad_eng: CommonBluforCHINA
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_weapons_common: CommonBluforCHINA
 {
@@ -3939,7 +3937,7 @@ class b_CHINA_recon_common: CommonBluforCHINA
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_recon_rm: b_CHINA_recon_common
 {
@@ -3997,13 +3995,11 @@ class b_CHINA_recon_tl: b_CHINA_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -4191,7 +4187,7 @@ class b_CHINA_recon_cm: b_CHINA_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_recon_dm: b_CHINA_recon_common
 {
@@ -4289,7 +4285,7 @@ class b_CHINA_recon_exp: b_CHINA_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_diver_common: b_CHINA_recon_common
 {
@@ -4460,7 +4456,7 @@ class b_CHINA_diver_exp: b_CHINA_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_diver_cm: b_CHINA_diver_common
 {
@@ -4500,7 +4496,7 @@ class b_CHINA_diver_cm: b_CHINA_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_diver_dm: b_CHINA_diver_common
 {
@@ -4584,8 +4580,6 @@ class b_CHINA_diver_jtac: b_CHINA_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -4675,10 +4669,9 @@ class b_CHINA_sniper_spot: b_CHINA_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -4696,7 +4689,8 @@ class b_CHINA_sniper_spot: b_CHINA_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -4821,7 +4815,7 @@ class b_CHINA_sniper_exp: b_CHINA_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_crew_common: CommonBluforCHINA
 {
@@ -4870,7 +4864,7 @@ class b_CHINA_crew_common: CommonBluforCHINA
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_crew_cmd: b_CHINA_crew_common
 {
@@ -5068,7 +5062,7 @@ class b_CHINA_logistics_common: CommonBluforCHINA
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_medevac_common: CommonBluforCHINA
 {
@@ -5118,7 +5112,7 @@ class b_CHINA_medevac_common: CommonBluforCHINA
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_CHINA_medevac_doc: b_CHINA_medevac_common
 {
@@ -5154,7 +5148,7 @@ class b_CHINA_medevac_doc: b_CHINA_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_CHINA_medevac_tl: b_CHINA_medevac_doc
 {
@@ -5230,7 +5224,8 @@ class CommonBluforCHINA_GRN: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
 	};
 	backpack[]=
 	{
@@ -5330,7 +5325,7 @@ class CommonBluforCHINA_GRN: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_GRN_company_common: CommonBluforCHINA_GRN
 {
@@ -5619,7 +5614,7 @@ class b_CHINA_GRN_platoon_jtac: b_CHINA_GRN_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -5630,8 +5625,6 @@ class b_CHINA_GRN_platoon_jtac: b_CHINA_GRN_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -5680,7 +5673,7 @@ class b_CHINA_GRN_platoon_medic: b_CHINA_GRN_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_GRN_squad_sl: CommonBluforCHINA_GRN
 {
@@ -5724,20 +5717,23 @@ class b_CHINA_GRN_squad_sl: CommonBluforCHINA_GRN
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -6034,7 +6030,7 @@ class b_CHINA_GRN_squad_cm: CommonBluforCHINA_GRN
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_GRN_squad_dm: CommonBluforCHINA_GRN
 {
@@ -6100,7 +6096,7 @@ class b_CHINA_GRN_squad_eng: CommonBluforCHINA_GRN
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_GRN_weapons_common: CommonBluforCHINA_GRN
 {
@@ -6555,7 +6551,7 @@ class b_CHINA_GRN_recon_common: CommonBluforCHINA_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_GRN_recon_rm: b_CHINA_GRN_recon_common
 {
@@ -6614,13 +6610,11 @@ class b_CHINA_GRN_recon_tl: b_CHINA_GRN_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -6809,7 +6803,7 @@ class b_CHINA_GRN_recon_cm: b_CHINA_GRN_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_GRN_recon_dm: b_CHINA_GRN_recon_common
 {
@@ -6907,7 +6901,7 @@ class b_CHINA_GRN_recon_exp: b_CHINA_GRN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_GRN_diver_common: b_CHINA_GRN_recon_common
 {
@@ -7078,7 +7072,7 @@ class b_CHINA_GRN_diver_exp: b_CHINA_GRN_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_GRN_diver_cm: b_CHINA_GRN_diver_common
 {
@@ -7118,7 +7112,7 @@ class b_CHINA_GRN_diver_cm: b_CHINA_GRN_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_GRN_diver_dm: b_CHINA_GRN_diver_common
 {
@@ -7202,8 +7196,6 @@ class b_CHINA_GRN_diver_jtac: b_CHINA_GRN_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -7289,10 +7281,9 @@ class b_CHINA_GRN_sniper_spot: b_CHINA_GRN_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -7310,7 +7301,8 @@ class b_CHINA_GRN_sniper_spot: b_CHINA_GRN_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -7433,7 +7425,7 @@ class b_CHINA_GRN_sniper_exp: b_CHINA_GRN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_GRN_crew_common: CommonBluforCHINA_GRN
 {
@@ -7482,7 +7474,7 @@ class b_CHINA_GRN_crew_common: CommonBluforCHINA_GRN
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_GRN_crew_cmd: b_CHINA_GRN_crew_common
 {
@@ -7682,7 +7674,7 @@ class b_CHINA_GRN_logistics_common: CommonBluforCHINA_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_CHINA_GRN_medevac_common: CommonBluforCHINA_GRN
 {
@@ -7732,7 +7724,7 @@ class b_CHINA_GRN_medevac_common: CommonBluforCHINA_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_CHINA_GRN_medevac_doc: b_CHINA_GRN_medevac_common
 {
@@ -7768,7 +7760,7 @@ class b_CHINA_GRN_medevac_doc: b_CHINA_GRN_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_CHINA_GRN_medevac_tl: b_CHINA_GRN_medevac_doc
 {
@@ -7817,6 +7809,2618 @@ class b_CHINA_GRN_medevac_heli: b_CHINA_GRN_medevac_common
 	};
 };
 class b_CHINA_GRN_medevac_drv: b_CHINA_GRN_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Driver";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_Banana"
+	};
+};
+class CommonBluforFIA: CommonDefault
+{
+	side="Blufor";
+	sideShort="b";
+	faction="FIA";
+	scope=0;
+	uniform[]=
+	{
+		"U_O_T_Soldier_F"
+	};
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	backpack[]=
+	{
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_FieldPack_ghex_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Rook40_F",
+			"",
+			"",
+			""
+		}
+	};
+	launcher[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet"
+	};
+	headgear[]=
+	{
+		"H_HelmetO_ghex_f",
+		"H_HelmetLeaderO_ghex_f"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_oli"
+	};
+	nvgs[]=
+	{
+		"O_NVGoggles_ghex_f"
+	};
+	binoculars[]=
+	{
+		""
+	};
+	map[]=
+	{
+		""
+	};
+	gps[]=
+	{
+		""
+	};
+	compass[]=
+	{
+		"ItemCompass"
+	};
+	watch[]=
+	{
+		"ItemWatch"
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_FIA_company_common: CommonBluforFIA
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_O_T_Officer_F"
+	};
+	vest[]=
+	{
+		"v_rangemaster_belt"
+	};
+	primary[]=
+	{
+		
+		{
+			"smg_02_f",
+			"optic_aco_grn",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_9x21_Mag",
+		3
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_milcap_ghex_f",
+		"H_Cap_oli_hs",
+		"H_Cap_headphones"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+};
+class b_FIA_company_co: b_FIA_company_common
+{
+	scope=1;
+	displayName="Company Commanding Officer";
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class b_FIA_company_xo: b_FIA_company_common
+{
+	scope=1;
+	displayName="Company Executive Officer";
+	gps[]=
+	{
+		"b_EasyTrack_Tablet"
+	};
+	headgear[]=
+	{
+		"H_milcap_ghex_f"
+	};
+};
+class b_FIA_company_mio: b_FIA_company_common
+{
+	scope=1;
+	displayName="Mission Intelligence Officer";
+	gps[]=
+	{
+		"b_EasyTrack_Tablet"
+	};
+};
+class b_FIA_company_colo: b_FIA_company_common
+{
+	scope=1;
+	displayName="Chief of Logistics";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class b_FIA_company_fo: b_FIA_company_common
+{
+	scope=1;
+	displayName="Forward Observer";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_RangeTable_82mm"
+	};
+};
+class b_FIA_platoon_common: CommonBluforFIA
+{
+	scope=0;
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		5,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecO_ghex_f"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+};
+class b_FIA_platoon_pl: b_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Leader";
+	lrRadios[]=
+	{
+		"ACRE_PRC148",
+		"ACRE_PRC117F"
+	};
+};
+class b_FIA_platoon_psgt: b_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Sergeant";
+	gps[]=
+	{
+		"b_EasyTrack_Tablet"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148",
+		"ACRE_PRC117F"
+	};
+};
+class b_FIA_platoon_uav: b_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon UAV Operator";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_UAVBattery",
+		"b_UavTerminal"
+	};
+};
+class b_FIA_platoon_jtac: b_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon JTAC";
+	vest[]=
+	{
+		"v_harnessogl_ghex_f"
+	};
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator_02_ghex_f"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148",
+		"ACRE_PRC117F"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		5,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"Laserbatteries",
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2,
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+};
+class b_FIA_platoon_medic: b_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Medic";
+	vest[]=
+	{
+		"v_tacchestrig_grn_f",
+		"v_tacchestrig_oli_f"
+	};
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_personalAidKit",
+		2,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		50,
+		"ACE_quikclot",
+		30,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_FIA_squad_sl: CommonBluforFIA
+{
+	scope=1;
+	displayName="Squad Leader";
+	vest[]=
+	{
+		"v_harnesso_ghex_f"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_HuntIR_M203",
+		4,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class b_FIA_squad_ftl: CommonBluforFIA
+{
+	scope=1;
+	displayName="Squad Fireteam Leader";
+	vest[]=
+	{
+		"v_harnesso_ghex_f"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item"
+	};
+};
+class b_FIA_squad_ar: CommonBluforFIA
+{
+	scope=1;
+	displayName="Squad Automatic Rifleman";
+	vest[]=
+	{
+		"v_harnesso_ghex_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTARS_blk_F",
+			"optic_Holosight_blk_F",
+			"acc_pointer_ir",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"100Rnd_580x42_Mag_F",
+		5,
+		"100Rnd_580x42_Mag_Tracer_F",
+		2,
+		"16Rnd_9x21_Mag",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"MiniGrenade",
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_oli"
+	};
+};
+class b_FIA_squad_gl: CommonBluforFIA
+{
+	scope=1;
+	displayName="Squad Grenadier";
+	vest[]=
+	{
+		"v_harnessogl_ghex_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class b_FIA_squad_gl2: CommonBluforFIA
+{
+	scope=1;
+	displayName="Squad Grenadier (M32)";
+	vest[]=
+	{
+		"v_harnessogl_ghex_f"
+	};
+	primary[]=
+	{
+		"rhs_weap_m32"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		5,
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		5,
+		"rhsusf_mag_6Rnd_M714_white",
+		1,
+		"rhsusf_mag_6Rnd_M576_Buckshot",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class b_FIA_squad_light: CommonBluforFIA
+{
+	scope=1;
+	displayName="Squad Rifleman (light)";
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"acc_pointer_ir",
+			"optic_arco_blk_f",
+			""
+		}
+	};
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+};
+class b_FIA_squad_aar: CommonBluforFIA
+{
+	scope=1;
+	displayName="Squad Rifleman";
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"acc_pointer_ir",
+			"optic_arco_blk_f",
+			""
+		}
+	};
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	magazines[]=
+	{
+		"ACE_SpareBarrel",
+		"100Rnd_580x42_Mag_F",
+		2,
+		"100Rnd_580x42_Mag_Tracer_F",
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class b_FIA_squad_lat: CommonBluforFIA
+{
+	scope=1;
+	displayName="Squad Light Anti-Tank Rifleman";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	backpack[]=
+	{
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_FieldPack_ghex_f"
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_rpg32_ghex_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
+	};
+};
+class b_FIA_squad_cm: CommonBluforFIA
+{
+	scope=1;
+	displayName="Squad Combat Medic";
+	vest[]=
+	{
+		"v_tacchestrig_grn_f",
+		"v_tacchestrig_oli_f"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		4,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV_500",
+		2,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_FIA_squad_dm: CommonBluforFIA
+{
+	scope=1;
+	displayName="Squad Designated Marksman";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"srifle_DMR_07_blk_F",
+			"optic_dms",
+			"acc_pointer_ir",
+			""
+		}
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeCard"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"20Rnd_650x39_Cased_Mag_F",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class b_FIA_squad_eng: CommonBluforFIA
+{
+	scope=1;
+	displayName="Squad Combat Engineer";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ToolKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_FIA_weapons_common: CommonBluforFIA
+{
+	scope=0;
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class b_FIA_assistant_common: b_FIA_weapons_common
+{
+	scope=0;
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class b_FIA_weapons_mg: b_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Medium Machine Gunner";
+	vest[]=
+	{
+		"v_harnesso_ghex_f"
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		
+		{
+			"MMG_01_tan_F",
+			"optic_arco_blk_f",
+			"acc_pointer_ir",
+			"bipod_02_f_blk"
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"150Rnd_93x64_Mag",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_oli"
+	};
+};
+class b_FIA_weapons_amg: b_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant MMG";
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"150Rnd_93x64_Mag",
+		2,
+		"ACE_SpareBarrel"
+	};
+};
+class b_FIA_weapons_hmg: b_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Heavy Machine Gunner";
+	backpack[]=
+	{
+		"O_HMG_01_weapon_F"
+	};
+};
+class b_FIA_weapons_ahmg: b_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant HMG";
+	backpack[]=
+	{
+		"O_HMG_01_support_F"
+	};
+};
+class b_FIA_weapons_gmg: b_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Grenade Machine Gunner";
+	backpack[]=
+	{
+		"O_GMG_01_weapon_F"
+	};
+};
+class b_FIA_weapons_agmg: b_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant GMG";
+	backpack[]=
+	{
+		"O_HMG_01_support_F"
+	};
+};
+class b_FIA_weapons_at: b_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad AT-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_rpg32_ghex_f",
+			"",
+			"",
+			""
+		}
+	};
+};
+class b_FIA_weapons_aat: b_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad AT-Assistant";
+	backpack[]=
+	{
+		"B_Carryall_ghex_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F",
+		2
+	};
+};
+class b_FIA_weapons_atgm: b_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad ATGM-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_O_Titan_short_ghex_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT"
+	};
+};
+class b_FIA_weapons_aatgm: b_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad ATGM-Assistant";
+	backpack[]=
+	{
+		"B_Carryall_ghex_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT",
+		2,
+		"Titan_AP"
+	};
+};
+class b_FIA_weapons_aa: b_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad AA-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_O_Titan_ghex_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AA"
+	};
+};
+class b_FIA_weapons_aaa: b_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad AA-Assistant";
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AA",
+		2
+	};
+};
+class b_FIA_weapons_mort: b_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Gunner";
+	backpack[]=
+	{
+		"O_Mortar_01_weapon_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class b_FIA_weapons_amort: b_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Assistant";
+	backpack[]=
+	{
+		"O_Mortar_01_support_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class b_FIA_weapons_acmort: b_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Ammo Carrier";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_1Rnd_82mm_Mo_HE",
+		5
+	};
+};
+class b_FIA_recon_common: CommonBluforFIA
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_O_V_Soldier_Viper_F"
+	};
+	vest[]=
+	{
+		"v_tacchestrig_grn_f",
+		"v_tacchestrig_oli_f"
+	};
+	backpack[]=
+	{
+		"b_viperharness_ghex_f"
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Pistol_heavy_02_F",
+			"optic_Yorris",
+			"muzzle_snds_L",
+			""
+		}
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2
+	};
+	goggles[]=
+	{
+		""
+	};
+	headgear[]=
+	{
+		"H_HelmetO_ViperSP_ghex_F"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_FIA_recon_rm: b_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Operator";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_wirecutter"
+	};
+};
+class b_FIA_recon_tl: b_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Leader";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"UGL_COL1",
+		"b_ir_grenade",
+		2,
+		"ACE_HuntIR_M203",
+		5
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+};
+class b_FIA_recon_ar: b_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Automatic Rifleman";
+	vest[]=
+	{
+		"v_tacchestrig_grn_f",
+		"v_tacchestrig_oli_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTARS_ghex_F",
+			"acc_pointer_ir",
+			"optic_Arco_ghex_F",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"100Rnd_580x42_Mag_F",
+		5,
+		"100Rnd_580x42_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"acc_pointer_ir"
+	};
+	goggles[]=
+	{
+		""
+	};
+};
+class b_FIA_recon_gl: b_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Grenadier";
+	vest[]=
+	{
+		"v_harnessogl_ghex_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class b_FIA_recon_lat: b_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Light Anti-Tank";
+	launcher[]=
+	{
+		
+		{
+			"launch_rpg32_ghex_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
+	};
+};
+class b_FIA_recon_cm: b_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Medic";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		6,
+		"ACE_epinephrine",
+		12,
+		"ACE_salineIV_500",
+		3,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_FIA_recon_dm: b_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Marksman";
+	primary[]=
+	{
+		
+		{
+			"arifle_ARX_ghex_F",
+			"optic_dms_ghex_f",
+			"acc_pointer_ir",
+			"muzzle_snds_65_TI_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"10Rnd_50BW_Mag_F",
+		3,
+		"30Rnd_65x39_caseless_green",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"bipod_02_f_blk"
+	};
+};
+class b_FIA_recon_exp: b_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Explosive Specialist";
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	secondary[]=
+	{
+		"ACE_VMM3"
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"DemoCharge_Remote_Mag",
+		4,
+		"SatchelCharge_Remote_Mag",
+		"SLAMDirectionalMine_Wire_Mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class b_FIA_diver_common: b_FIA_recon_common
+{
+	scope=0;
+	displayName="Combat Diver Operator";
+	uniform[]=
+	{
+		"U_O_Wetsuit"
+	};
+	vest[]=
+	{
+		"V_RebreatherIR"
+	};
+	backpack[]=
+	{
+		"b_viperharness_blk_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"optic_arco_blk_f",
+			"acc_pointer_ir",
+			"muzzle_snds_58_blk_F"
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Pistol_heavy_02_F",
+			"optic_Yorris",
+			"muzzle_snds_L",
+			""
+		}
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F"
+	};
+	goggles[]=
+	{
+		"G_O_Diving"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecO_blk"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+};
+class b_FIA_diver_rm: b_FIA_diver_common
+{
+	scope=1;
+};
+class b_FIA_diver_tl: b_FIA_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Team Leader";
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F",
+		"ACE_MapTools"
+	};
+};
+class b_FIA_diver_exp: b_FIA_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Explosive Specialist";
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"DemoCharge_Remote_Mag",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F",
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class b_FIA_diver_cm: b_FIA_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Medic";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F",
+		"W_Defibrillator",
+		"ACE_fieldDressing",
+		5,
+		"ACE_elasticBandage",
+		15,
+		"ACE_quikclot",
+		15,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV",
+		4,
+		"ACE_surgicalKit"
+	};
+	binoculars[]=
+	{
+		"ACE_MX2A"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_FIA_diver_dm: b_FIA_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Marksman";
+	primary[]=
+	{
+		
+		{
+			"arifle_ARX_blk_F",
+			"optic_dms_ghex_f",
+			"acc_pointer_ir",
+			"muzzle_snds_65_TI_blk_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"10Rnd_50BW_Mag_F",
+		3,
+		"30Rnd_65x39_caseless_green",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F",
+		"bipod_02_f_blk"
+	};
+};
+class b_FIA_diver_jtac: b_FIA_diver_tl
+{
+	scope=1;
+	displayName="Combat Diver Terminal Attack Controller";
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_blk_f",
+			"optic_arco_blk_f",
+			"acc_pointer_ir",
+			"muzzle_snds_58_blk_F"
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator_02_ghex_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2,
+		"Laserbatteries",
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2
+	};
+};
+class b_FIA_sniper_common: b_FIA_recon_common
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_O_T_FullGhillie_tna_F"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"optic_NVS",
+		"ACE_Rangecard"
+	};
+};
+class b_FIA_sniper_spot: b_FIA_recon_common
+{
+	scope=1;
+	displayName="Sniper Spotter";
+	uniform[]=
+	{
+		"U_O_T_FullGhillie_tna_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"b_ir_grenade",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_580x42_Mag_F",
+		8,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		4,
+		"ACE_HuntIR_M203",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_SpottingScope",
+		"ACE_Tripod",
+		"ACE_ATragMX",
+		"ACE_IR_Strobe_Item",
+		"ACE_Rangecard",
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+};
+class b_FIA_sniper_ap: b_FIA_sniper_common
+{
+	scope=1;
+	displayName="Sniper (Anti-Personel)";
+	primary[]=
+	{
+		
+		{
+			"srifle_DMR_07_ghex_F",
+			"optic_LRPS_ghex_f",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"20Rnd_650x39_Cased_Mag_F",
+		4,
+		"ACE_20Rnd_65x47_Scenar_mag",
+		3,
+		"ACE_20Rnd_65_Creedmor_mag",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class b_FIA_sniper_am: b_FIA_sniper_common
+{
+	scope=1;
+	displayName="Sniper (Anti-Materiel)";
+	primary[]=
+	{
+		
+		{
+			"srifle_GM6_ghex_F",
+			"optic_LRPS_ghex_f",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"5Rnd_127x108_Mag",
+		4,
+		"5Rnd_127x108_APDS_Mag",
+		4,
+		"ACE_5Rnd_127x99_AMAX_Mag",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class b_FIA_sniper_exp: b_FIA_recon_common
+{
+	scope=1;
+	displayName="Sniper Explosive Specialist";
+	uniform[]=
+	{
+		"U_O_T_FullGhillie_tna_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"APERSTripMine_Wire_mag",
+		2,
+		"ClaymoreDirectionalMine_Remote_mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class b_FIA_crew_common: CommonBluforFIA
+{
+	scope=1;
+	displayName="Armored Vehicle Crew";
+	uniform[]=
+	{
+		"U_O_T_Soldier_F"
+	};
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"V_LegStrapBag_olive_F"
+	};
+	primary[]=
+	{
+		"arifle_CTAR_blk_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"H_HelmetCrew_O_ghex_f"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_FIA_crew_cmd: b_FIA_crew_common
+{
+	scope=1;
+	displayName="Armored Vehicle Commander";
+	backpack[]=
+	{
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_FieldPack_ghex_f"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148",
+		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class b_FIA_crew_jet: CommonBluforFIA
+{
+	scope=1;
+	displayName="Jet Pilot";
+	uniform[]=
+	{
+		"U_O_PilotCoveralls"
+	};
+	vest[]=
+	{
+		""
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetFighter_O"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	watch[]=
+	{
+		"ACE_Altimeter"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class b_FIA_crew_heli: b_FIA_crew_common
+{
+	scope=1;
+	displayName="Helicopter Crew";
+	uniform[]=
+	{
+		"U_O_T_Soldier_F"
+	};
+	headgear[]=
+	{
+		"H_CrewHelmetHeli_O"
+	};
+	map[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class b_FIA_crew_helipilot: b_FIA_crew_heli
+{
+	scope=1;
+	displayName="Helicopter Pilot/Copilot/Gunner";
+	backpack[]=
+	{
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_FieldPack_ghex_f"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetHeli_O"
+	};
+	nvgs[]=
+	{
+		""
+	};
+};
+class b_FIA_logistics_common: CommonBluforFIA
+{
+	scope=1;
+	displayName="Logistician";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	primary[]=
+	{
+		"arifle_CTAR_blk_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecO_ghex_f"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ToolKit"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F",
+		"ACRE_PRC148"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_FIA_medevac_common: CommonBluforFIA
+{
+	scope=0;
+	primary[]=
+	{
+		""
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Rook40_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecO_ghex_f"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class b_FIA_medevac_doc: b_FIA_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Doctor";
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class b_FIA_medevac_tl: b_FIA_medevac_doc
+{
+	scope=1;
+	displayName="Medical Service Team Leader";
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+};
+class b_FIA_medevac_heli: b_FIA_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Helicopter Pilot";
+	uniform[]=
+	{
+		"U_O_T_Soldier_F"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetHeli_O"
+	};
+	nvgs[]=
+	{
+		""
+	};
+};
+class b_FIA_medevac_drv: b_FIA_medevac_common
 {
 	scope=1;
 	displayName="Medical Service Driver";
@@ -7943,7 +10547,7 @@ class CommonBluforIDF: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IDF_company_common: CommonBluforIDF
 {
@@ -8233,7 +10837,7 @@ class b_IDF_platoon_jtac: b_IDF_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -8244,8 +10848,6 @@ class b_IDF_platoon_jtac: b_IDF_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -8294,7 +10896,7 @@ class b_IDF_platoon_medic: b_IDF_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IDF_squad_sl: CommonBluforIDF
 {
@@ -8338,20 +10940,23 @@ class b_IDF_squad_sl: CommonBluforIDF
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -8646,7 +11251,7 @@ class b_IDF_squad_cm: CommonBluforIDF
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IDF_squad_dm: CommonBluforIDF
 {
@@ -8713,7 +11318,7 @@ class b_IDF_squad_eng: CommonBluforIDF
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IDF_weapons_common: CommonBluforIDF
 {
@@ -9188,7 +11793,7 @@ class b_IDF_recon_common: CommonBluforIDF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IDF_recon_rm: b_IDF_recon_common
 {
@@ -9256,13 +11861,11 @@ class b_IDF_recon_tl: b_IDF_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -9459,7 +12062,7 @@ class b_IDF_recon_cm: b_IDF_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IDF_recon_dm: b_IDF_recon_common
 {
@@ -9570,7 +12173,7 @@ class b_IDF_recon_exp: b_IDF_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_IDF_diver_common: b_IDF_recon_common
 {
@@ -9749,7 +12352,7 @@ class b_IDF_diver_exp: b_IDF_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_IDF_diver_cm: b_IDF_diver_common
 {
@@ -9789,7 +12392,7 @@ class b_IDF_diver_cm: b_IDF_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IDF_diver_dm: b_IDF_diver_common
 {
@@ -9892,8 +12495,6 @@ class b_IDF_diver_jtac: b_IDF_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -9988,10 +12589,9 @@ class b_IDF_sniper_spot: b_IDF_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -10009,7 +12609,8 @@ class b_IDF_sniper_spot: b_IDF_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -10134,7 +12735,7 @@ class b_IDF_sniper_exp: b_IDF_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_IDF_crew_common: CommonBluforIDF
 {
@@ -10184,7 +12785,7 @@ class b_IDF_crew_common: CommonBluforIDF
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IDF_crew_cmd: b_IDF_crew_common
 {
@@ -10387,7 +12988,7 @@ class b_IDF_logistics_common: CommonBluforIDF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IDF_medevac_common: CommonBluforIDF
 {
@@ -10438,7 +13039,7 @@ class b_IDF_medevac_common: CommonBluforIDF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_IDF_medevac_doc: b_IDF_medevac_common
 {
@@ -10475,7 +13076,7 @@ class b_IDF_medevac_doc: b_IDF_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_IDF_medevac_tl: b_IDF_medevac_doc
 {
@@ -10551,7 +13152,7 @@ class CommonBluforIRAN: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_khk"
 	};
 	backpack[]=
 	{
@@ -10652,7 +13253,7 @@ class CommonBluforIRAN: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_company_common: CommonBluforIRAN
 {
@@ -10940,7 +13541,7 @@ class b_IRAN_platoon_jtac: b_IRAN_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -10951,8 +13552,6 @@ class b_IRAN_platoon_jtac: b_IRAN_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -11000,7 +13599,7 @@ class b_IRAN_platoon_medic: b_IRAN_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_squad_sl: CommonBluforIRAN
 {
@@ -11044,20 +13643,23 @@ class b_IRAN_squad_sl: CommonBluforIRAN
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -11349,7 +13951,7 @@ class b_IRAN_squad_cm: CommonBluforIRAN
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_squad_dm: CommonBluforIRAN
 {
@@ -11413,7 +14015,7 @@ class b_IRAN_squad_eng: CommonBluforIRAN
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_weapons_common: CommonBluforIRAN
 {
@@ -11868,7 +14470,7 @@ class b_IRAN_recon_common: CommonBluforIRAN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_recon_rm: b_IRAN_recon_common
 {
@@ -11928,13 +14530,11 @@ class b_IRAN_recon_tl: b_IRAN_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -12125,7 +14725,7 @@ class b_IRAN_recon_cm: b_IRAN_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_recon_dm: b_IRAN_recon_common
 {
@@ -12223,7 +14823,7 @@ class b_IRAN_recon_exp: b_IRAN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_diver_common: b_IRAN_recon_common
 {
@@ -12400,7 +15000,7 @@ class b_IRAN_diver_exp: b_IRAN_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_diver_cm: b_IRAN_diver_common
 {
@@ -12440,7 +15040,7 @@ class b_IRAN_diver_cm: b_IRAN_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_diver_dm: b_IRAN_diver_common
 {
@@ -12524,8 +15124,6 @@ class b_IRAN_diver_jtac: b_IRAN_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -12617,10 +15215,9 @@ class b_IRAN_sniper_spot: b_IRAN_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -12638,7 +15235,8 @@ class b_IRAN_sniper_spot: b_IRAN_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -12761,7 +15359,7 @@ class b_IRAN_sniper_exp: b_IRAN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_crew_common: CommonBluforIRAN
 {
@@ -12810,7 +15408,7 @@ class b_IRAN_crew_common: CommonBluforIRAN
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_crew_cmd: b_IRAN_crew_common
 {
@@ -13008,7 +15606,7 @@ class b_IRAN_logistics_common: CommonBluforIRAN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_medevac_common: CommonBluforIRAN
 {
@@ -13058,7 +15656,7 @@ class b_IRAN_medevac_common: CommonBluforIRAN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_IRAN_medevac_doc: b_IRAN_medevac_common
 {
@@ -13094,7 +15692,7 @@ class b_IRAN_medevac_doc: b_IRAN_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_IRAN_medevac_tl: b_IRAN_medevac_doc
 {
@@ -13170,7 +15768,8 @@ class CommonBluforIRAN_GRN: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
 	};
 	backpack[]=
 	{
@@ -13270,7 +15869,7 @@ class CommonBluforIRAN_GRN: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_GRN_company_common: CommonBluforIRAN_GRN
 {
@@ -13559,7 +16158,7 @@ class b_IRAN_GRN_platoon_jtac: b_IRAN_GRN_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -13570,8 +16169,6 @@ class b_IRAN_GRN_platoon_jtac: b_IRAN_GRN_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -13620,7 +16217,7 @@ class b_IRAN_GRN_platoon_medic: b_IRAN_GRN_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_GRN_squad_sl: CommonBluforIRAN_GRN
 {
@@ -13664,20 +16261,23 @@ class b_IRAN_GRN_squad_sl: CommonBluforIRAN_GRN
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -13972,7 +16572,7 @@ class b_IRAN_GRN_squad_cm: CommonBluforIRAN_GRN
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_GRN_squad_dm: CommonBluforIRAN_GRN
 {
@@ -14038,7 +16638,7 @@ class b_IRAN_GRN_squad_eng: CommonBluforIRAN_GRN
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_GRN_weapons_common: CommonBluforIRAN_GRN
 {
@@ -14495,7 +17095,7 @@ class b_IRAN_GRN_recon_common: CommonBluforIRAN_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_GRN_recon_rm: b_IRAN_GRN_recon_common
 {
@@ -14556,13 +17156,11 @@ class b_IRAN_GRN_recon_tl: b_IRAN_GRN_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -14754,7 +17352,7 @@ class b_IRAN_GRN_recon_cm: b_IRAN_GRN_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_GRN_recon_dm: b_IRAN_GRN_recon_common
 {
@@ -14852,7 +17450,7 @@ class b_IRAN_GRN_recon_exp: b_IRAN_GRN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_GRN_diver_common: b_IRAN_GRN_recon_common
 {
@@ -15029,7 +17627,7 @@ class b_IRAN_GRN_diver_exp: b_IRAN_GRN_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_GRN_diver_cm: b_IRAN_GRN_diver_common
 {
@@ -15069,7 +17667,7 @@ class b_IRAN_GRN_diver_cm: b_IRAN_GRN_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_GRN_diver_dm: b_IRAN_GRN_diver_common
 {
@@ -15153,8 +17751,6 @@ class b_IRAN_GRN_diver_jtac: b_IRAN_GRN_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -15242,10 +17838,9 @@ class b_IRAN_GRN_sniper_spot: b_IRAN_GRN_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -15263,7 +17858,8 @@ class b_IRAN_GRN_sniper_spot: b_IRAN_GRN_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -15384,7 +17980,7 @@ class b_IRAN_GRN_sniper_exp: b_IRAN_GRN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_GRN_crew_common: CommonBluforIRAN_GRN
 {
@@ -15433,7 +18029,7 @@ class b_IRAN_GRN_crew_common: CommonBluforIRAN_GRN
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_GRN_crew_cmd: b_IRAN_GRN_crew_common
 {
@@ -15633,7 +18229,7 @@ class b_IRAN_GRN_logistics_common: CommonBluforIRAN_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_GRN_medevac_common: CommonBluforIRAN_GRN
 {
@@ -15683,7 +18279,7 @@ class b_IRAN_GRN_medevac_common: CommonBluforIRAN_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_IRAN_GRN_medevac_doc: b_IRAN_GRN_medevac_common
 {
@@ -15719,7 +18315,7 @@ class b_IRAN_GRN_medevac_doc: b_IRAN_GRN_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_IRAN_GRN_medevac_tl: b_IRAN_GRN_medevac_doc
 {
@@ -15795,7 +18391,7 @@ class CommonBluforIRAN_URB: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_blk"
 	};
 	backpack[]=
 	{
@@ -15893,7 +18489,7 @@ class CommonBluforIRAN_URB: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_URB_company_common: CommonBluforIRAN_URB
 {
@@ -16181,7 +18777,7 @@ class b_IRAN_URB_platoon_jtac: b_IRAN_URB_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -16192,8 +18788,6 @@ class b_IRAN_URB_platoon_jtac: b_IRAN_URB_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -16241,7 +18835,7 @@ class b_IRAN_URB_platoon_medic: b_IRAN_URB_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_URB_squad_sl: CommonBluforIRAN_URB
 {
@@ -16285,20 +18879,23 @@ class b_IRAN_URB_squad_sl: CommonBluforIRAN_URB
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -16587,7 +19184,7 @@ class b_IRAN_URB_squad_cm: CommonBluforIRAN_URB
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_URB_squad_dm: CommonBluforIRAN_URB
 {
@@ -16651,7 +19248,7 @@ class b_IRAN_URB_squad_eng: CommonBluforIRAN_URB
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_URB_weapons_common: CommonBluforIRAN_URB
 {
@@ -17106,7 +19703,7 @@ class b_IRAN_URB_recon_common: CommonBluforIRAN_URB
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_URB_recon_rm: b_IRAN_URB_recon_common
 {
@@ -17166,13 +19763,11 @@ class b_IRAN_URB_recon_tl: b_IRAN_URB_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -17363,7 +19958,7 @@ class b_IRAN_URB_recon_cm: b_IRAN_URB_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_URB_recon_dm: b_IRAN_URB_recon_common
 {
@@ -17461,7 +20056,7 @@ class b_IRAN_URB_recon_exp: b_IRAN_URB_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_URB_diver_common: b_IRAN_URB_recon_common
 {
@@ -17638,7 +20233,7 @@ class b_IRAN_URB_diver_exp: b_IRAN_URB_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_URB_diver_cm: b_IRAN_URB_diver_common
 {
@@ -17678,7 +20273,7 @@ class b_IRAN_URB_diver_cm: b_IRAN_URB_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_URB_diver_dm: b_IRAN_URB_diver_common
 {
@@ -17762,8 +20357,6 @@ class b_IRAN_URB_diver_jtac: b_IRAN_URB_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -17855,10 +20448,9 @@ class b_IRAN_URB_sniper_spot: b_IRAN_URB_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -17876,7 +20468,8 @@ class b_IRAN_URB_sniper_spot: b_IRAN_URB_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -17999,7 +20592,7 @@ class b_IRAN_URB_sniper_exp: b_IRAN_URB_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_URB_crew_common: CommonBluforIRAN_URB
 {
@@ -18048,7 +20641,7 @@ class b_IRAN_URB_crew_common: CommonBluforIRAN_URB
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_URB_crew_cmd: b_IRAN_URB_crew_common
 {
@@ -18243,7 +20836,7 @@ class b_IRAN_URB_logistics_common: CommonBluforIRAN_URB
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_IRAN_URB_medevac_common: CommonBluforIRAN_URB
 {
@@ -18293,7 +20886,7 @@ class b_IRAN_URB_medevac_common: CommonBluforIRAN_URB
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_IRAN_URB_medevac_doc: b_IRAN_URB_medevac_common
 {
@@ -18329,7 +20922,7 @@ class b_IRAN_URB_medevac_doc: b_IRAN_URB_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_IRAN_URB_medevac_tl: b_IRAN_URB_medevac_doc
 {
@@ -18508,7 +21101,7 @@ class CommonBluforNATO_CTRG: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_CTRG_company_common: CommonBluforNATO_CTRG
 {
@@ -18799,7 +21392,7 @@ class b_NATO_CTRG_platoon_jtac: b_NATO_CTRG_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -18810,8 +21403,6 @@ class b_NATO_CTRG_platoon_jtac: b_NATO_CTRG_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -18859,7 +21450,7 @@ class b_NATO_CTRG_platoon_medic: b_NATO_CTRG_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_CTRG_squad_sl: CommonBluforNATO_CTRG
 {
@@ -18903,20 +21494,23 @@ class b_NATO_CTRG_squad_sl: CommonBluforNATO_CTRG
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -19204,7 +21798,7 @@ class b_NATO_CTRG_squad_cm: CommonBluforNATO_CTRG
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_CTRG_squad_dm: CommonBluforNATO_CTRG
 {
@@ -19268,7 +21862,7 @@ class b_NATO_CTRG_squad_eng: CommonBluforNATO_CTRG
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_CTRG_weapons_common: CommonBluforNATO_CTRG
 {
@@ -19721,7 +22315,7 @@ class b_NATO_CTRG_recon_common: CommonBluforNATO_CTRG
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_CTRG_recon_rm: b_NATO_CTRG_recon_common
 {
@@ -19779,13 +22373,11 @@ class b_NATO_CTRG_recon_tl: b_NATO_CTRG_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -19970,7 +22562,7 @@ class b_NATO_CTRG_recon_cm: b_NATO_CTRG_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_CTRG_recon_dm: b_NATO_CTRG_recon_common
 {
@@ -20066,7 +22658,7 @@ class b_NATO_CTRG_recon_exp: b_NATO_CTRG_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_CTRG_diver_common: b_NATO_CTRG_recon_common
 {
@@ -20237,7 +22829,7 @@ class b_NATO_CTRG_diver_exp: b_NATO_CTRG_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_CTRG_diver_cm: b_NATO_CTRG_diver_common
 {
@@ -20277,7 +22869,7 @@ class b_NATO_CTRG_diver_cm: b_NATO_CTRG_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_CTRG_diver_dm: b_NATO_CTRG_diver_common
 {
@@ -20359,8 +22951,6 @@ class b_NATO_CTRG_diver_jtac: b_NATO_CTRG_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -20446,10 +23036,9 @@ class b_NATO_CTRG_sniper_spot: b_NATO_CTRG_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -20467,7 +23056,8 @@ class b_NATO_CTRG_sniper_spot: b_NATO_CTRG_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -20586,7 +23176,7 @@ class b_NATO_CTRG_sniper_exp: b_NATO_CTRG_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_CTRG_crew_common: CommonBluforNATO_CTRG
 {
@@ -20635,7 +23225,7 @@ class b_NATO_CTRG_crew_common: CommonBluforNATO_CTRG
 	{
 		"ACRE_PRC152"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_CTRG_crew_cmd: b_NATO_CTRG_crew_common
 {
@@ -20836,7 +23426,7 @@ class b_NATO_CTRG_logistics_common: CommonBluforNATO_CTRG
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_CTRG_medevac_common: CommonBluforNATO_CTRG
 {
@@ -20891,7 +23481,7 @@ class b_NATO_CTRG_medevac_common: CommonBluforNATO_CTRG
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_NATO_CTRG_medevac_doc: b_NATO_CTRG_medevac_common
 {
@@ -20927,7 +23517,7 @@ class b_NATO_CTRG_medevac_doc: b_NATO_CTRG_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_NATO_CTRG_medevac_tl: b_NATO_CTRG_medevac_doc
 {
@@ -21111,7 +23701,7 @@ class CommonBluforNATO_MTP: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_MTP_company_common: CommonBluforNATO_MTP
 {
@@ -21131,7 +23721,7 @@ class b_NATO_MTP_company_common: CommonBluforNATO_MTP
 		{
 			"smg_01_f",
 			"optic_aco_grn",
-			"",
+			"acc_flashlight_smg_01",
 			""
 		}
 	};
@@ -21406,7 +23996,7 @@ class b_NATO_MTP_platoon_jtac: b_NATO_MTP_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -21417,8 +24007,6 @@ class b_NATO_MTP_platoon_jtac: b_NATO_MTP_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -21468,7 +24056,7 @@ class b_NATO_MTP_platoon_medic: b_NATO_MTP_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_MTP_squad_sl: CommonBluforNATO_MTP
 {
@@ -21513,20 +24101,23 @@ class b_NATO_MTP_squad_sl: CommonBluforNATO_MTP
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -21823,7 +24414,7 @@ class b_NATO_MTP_squad_cm: CommonBluforNATO_MTP
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_MTP_squad_dm: CommonBluforNATO_MTP
 {
@@ -21889,7 +24480,7 @@ class b_NATO_MTP_squad_eng: CommonBluforNATO_MTP
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_MTP_weapons_common: CommonBluforNATO_MTP
 {
@@ -22376,7 +24967,7 @@ class b_NATO_MTP_recon_common: CommonBluforNATO_MTP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_MTP_recon_rm: b_NATO_MTP_recon_common
 {
@@ -22449,13 +25040,11 @@ class b_NATO_MTP_recon_tl: b_NATO_MTP_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -22669,7 +25258,7 @@ class b_NATO_MTP_recon_cm: b_NATO_MTP_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_MTP_recon_dm: b_NATO_MTP_recon_common
 {
@@ -22780,7 +25369,7 @@ class b_NATO_MTP_recon_exp: b_NATO_MTP_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_MTP_diver_common: b_NATO_MTP_recon_common
 {
@@ -22951,7 +25540,7 @@ class b_NATO_MTP_diver_exp: b_NATO_MTP_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_MTP_diver_cm: b_NATO_MTP_diver_common
 {
@@ -22991,7 +25580,7 @@ class b_NATO_MTP_diver_cm: b_NATO_MTP_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_MTP_diver_dm: b_NATO_MTP_diver_common
 {
@@ -23073,8 +25662,6 @@ class b_NATO_MTP_diver_jtac: b_NATO_MTP_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -23169,10 +25756,9 @@ class b_NATO_MTP_sniper_spot: b_NATO_MTP_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -23190,7 +25776,8 @@ class b_NATO_MTP_sniper_spot: b_NATO_MTP_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -23317,7 +25904,7 @@ class b_NATO_MTP_sniper_exp: b_NATO_MTP_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_MTP_crew_common: CommonBluforNATO_MTP
 {
@@ -23366,7 +25953,7 @@ class b_NATO_MTP_crew_common: CommonBluforNATO_MTP
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_MTP_crew_cmd: b_NATO_MTP_crew_common
 {
@@ -23576,7 +26163,7 @@ class b_NATO_MTP_logistics_common: CommonBluforNATO_MTP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_MTP_medevac_common: CommonBluforNATO_MTP
 {
@@ -23631,7 +26218,7 @@ class b_NATO_MTP_medevac_common: CommonBluforNATO_MTP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_NATO_MTP_medevac_doc: b_NATO_MTP_medevac_common
 {
@@ -23668,7 +26255,7 @@ class b_NATO_MTP_medevac_doc: b_NATO_MTP_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_NATO_MTP_medevac_tl: b_NATO_MTP_medevac_doc
 {
@@ -23843,7 +26430,7 @@ class CommonBluforNATO_TRPC: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_TRPC_company_common: CommonBluforNATO_TRPC
 {
@@ -23862,7 +26449,7 @@ class b_NATO_TRPC_company_common: CommonBluforNATO_TRPC
 		{
 			"smg_01_f",
 			"optic_aco",
-			"",
+			"acc_flashlight_smg_01",
 			""
 		}
 	};
@@ -24129,7 +26716,7 @@ class b_NATO_TRPC_platoon_jtac: b_NATO_TRPC_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -24140,8 +26727,6 @@ class b_NATO_TRPC_platoon_jtac: b_NATO_TRPC_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -24189,7 +26774,7 @@ class b_NATO_TRPC_platoon_medic: b_NATO_TRPC_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_TRPC_squad_sl: CommonBluforNATO_TRPC
 {
@@ -24233,20 +26818,23 @@ class b_NATO_TRPC_squad_sl: CommonBluforNATO_TRPC
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -24535,7 +27123,7 @@ class b_NATO_TRPC_squad_cm: CommonBluforNATO_TRPC
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_TRPC_squad_dm: CommonBluforNATO_TRPC
 {
@@ -24599,7 +27187,7 @@ class b_NATO_TRPC_squad_eng: CommonBluforNATO_TRPC
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_TRPC_weapons_common: CommonBluforNATO_TRPC
 {
@@ -25061,7 +27649,7 @@ class b_NATO_TRPC_recon_common: CommonBluforNATO_TRPC
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_TRPC_recon_rm: b_NATO_TRPC_recon_common
 {
@@ -25126,13 +27714,11 @@ class b_NATO_TRPC_recon_tl: b_NATO_TRPC_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -25330,7 +27916,7 @@ class b_NATO_TRPC_recon_cm: b_NATO_TRPC_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_TRPC_recon_dm: b_NATO_TRPC_recon_common
 {
@@ -25433,7 +28019,7 @@ class b_NATO_TRPC_recon_exp: b_NATO_TRPC_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_TRPC_diver_common: b_NATO_TRPC_recon_common
 {
@@ -25604,7 +28190,7 @@ class b_NATO_TRPC_diver_exp: b_NATO_TRPC_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_TRPC_diver_cm: b_NATO_TRPC_diver_common
 {
@@ -25644,7 +28230,7 @@ class b_NATO_TRPC_diver_cm: b_NATO_TRPC_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_TRPC_diver_dm: b_NATO_TRPC_diver_common
 {
@@ -25726,8 +28312,6 @@ class b_NATO_TRPC_diver_jtac: b_NATO_TRPC_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -25813,10 +28397,9 @@ class b_NATO_TRPC_sniper_spot: b_NATO_TRPC_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -25834,7 +28417,8 @@ class b_NATO_TRPC_sniper_spot: b_NATO_TRPC_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -25953,7 +28537,7 @@ class b_NATO_TRPC_sniper_exp: b_NATO_TRPC_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_TRPC_crew_common: CommonBluforNATO_TRPC
 {
@@ -26002,7 +28586,7 @@ class b_NATO_TRPC_crew_common: CommonBluforNATO_TRPC
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_TRPC_crew_cmd: b_NATO_TRPC_crew_common
 {
@@ -26199,7 +28783,7 @@ class b_NATO_TRPC_logistics_common: CommonBluforNATO_TRPC
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_TRPC_medevac_common: CommonBluforNATO_TRPC
 {
@@ -26249,7 +28833,7 @@ class b_NATO_TRPC_medevac_common: CommonBluforNATO_TRPC
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_NATO_TRPC_medevac_doc: b_NATO_TRPC_medevac_common
 {
@@ -26285,7 +28869,7 @@ class b_NATO_TRPC_medevac_doc: b_NATO_TRPC_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_NATO_TRPC_medevac_tl: b_NATO_TRPC_medevac_doc
 {
@@ -26463,7 +29047,7 @@ class CommonBluforNATO_WDL: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_WDL_company_common: CommonBluforNATO_WDL
 {
@@ -26481,7 +29065,7 @@ class b_NATO_WDL_company_common: CommonBluforNATO_WDL
 	{
 		"smg_01_f",
 		"optic_aco_grn",
-		"",
+		"acc_flashlight_smg_01",
 		""
 	};
 	magazines[]=
@@ -26752,7 +29336,7 @@ class b_NATO_WDL_platoon_jtac: b_NATO_WDL_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -26763,8 +29347,6 @@ class b_NATO_WDL_platoon_jtac: b_NATO_WDL_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -26812,7 +29394,7 @@ class b_NATO_WDL_platoon_medic: b_NATO_WDL_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_WDL_squad_sl: CommonBluforNATO_WDL
 {
@@ -26856,20 +29438,23 @@ class b_NATO_WDL_squad_sl: CommonBluforNATO_WDL
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -27158,7 +29743,7 @@ class b_NATO_WDL_squad_cm: CommonBluforNATO_WDL
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_WDL_squad_dm: CommonBluforNATO_WDL
 {
@@ -27222,7 +29807,7 @@ class b_NATO_WDL_squad_eng: CommonBluforNATO_WDL
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_WDL_weapons_common: CommonBluforNATO_WDL
 {
@@ -27687,7 +30272,7 @@ class b_NATO_WDL_recon_common: CommonBluforNATO_WDL
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_WDL_recon_rm: b_NATO_WDL_recon_common
 {
@@ -27752,13 +30337,11 @@ class b_NATO_WDL_recon_tl: b_NATO_WDL_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -27956,7 +30539,7 @@ class b_NATO_WDL_recon_cm: b_NATO_WDL_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_WDL_recon_dm: b_NATO_WDL_recon_common
 {
@@ -28059,7 +30642,7 @@ class b_NATO_WDL_recon_exp: b_NATO_WDL_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_WDL_diver_common: b_NATO_WDL_recon_common
 {
@@ -28230,7 +30813,7 @@ class b_NATO_WDL_diver_exp: b_NATO_WDL_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_WDL_diver_cm: b_NATO_WDL_diver_common
 {
@@ -28270,7 +30853,7 @@ class b_NATO_WDL_diver_cm: b_NATO_WDL_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_WDL_diver_dm: b_NATO_WDL_diver_common
 {
@@ -28352,8 +30935,6 @@ class b_NATO_WDL_diver_jtac: b_NATO_WDL_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -28439,10 +31020,9 @@ class b_NATO_WDL_sniper_spot: b_NATO_WDL_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -28460,7 +31040,8 @@ class b_NATO_WDL_sniper_spot: b_NATO_WDL_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -28579,7 +31160,7 @@ class b_NATO_WDL_sniper_exp: b_NATO_WDL_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_WDL_crew_common: CommonBluforNATO_WDL
 {
@@ -28628,7 +31209,7 @@ class b_NATO_WDL_crew_common: CommonBluforNATO_WDL
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_WDL_crew_cmd: b_NATO_WDL_crew_common
 {
@@ -28828,7 +31409,7 @@ class b_NATO_WDL_logistics_common: CommonBluforNATO_WDL
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_NATO_WDL_medevac_common: CommonBluforNATO_WDL
 {
@@ -28883,7 +31464,7 @@ class b_NATO_WDL_medevac_common: CommonBluforNATO_WDL
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_NATO_WDL_medevac_doc: b_NATO_WDL_medevac_common
 {
@@ -28919,7 +31500,7 @@ class b_NATO_WDL_medevac_doc: b_NATO_WDL_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_NATO_WDL_medevac_tl: b_NATO_WDL_medevac_doc
 {
@@ -28968,6 +31549,3279 @@ class b_NATO_WDL_medevac_heli: b_NATO_WDL_medevac_common
 	};
 };
 class b_NATO_WDL_medevac_drv: b_NATO_WDL_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Driver";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_Banana"
+	};
+};
+class CommonBluforSYND: CommonDefault
+{
+	side="Blufor";
+	sideShort="b";
+	faction="SYND";
+	scope=0;
+	uniform[]=
+	{
+		"U_I_C_Soldier_Bandit_1_F",
+		"U_I_C_Soldier_Bandit_2_F",
+		"U_I_C_Soldier_Bandit_3_F",
+		"U_I_C_Soldier_Bandit_4_F",
+		"U_I_C_Soldier_Bandit_5_F"
+	};
+	vest[]=
+	{
+		"V_LegStrapBag_black_F",
+		"V_LegStrapBag_coyote_F",
+		"V_LegStrapBag_olive_F"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_rgr",
+		"B_AssaultPack_khk",
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_AssaultPack_tna_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akm",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhsusf_weap_m1911a1",
+			"",
+			"",
+			""
+		}
+	};
+	launcher[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black",
+		"g_bandanna_beast",
+		"g_bandanna_blk",
+		"g_bandanna_khk",
+		"g_bandanna_oli",
+		"g_bandanna_tan"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		""
+	};
+	map[]=
+	{
+		""
+	};
+	gps[]=
+	{
+		""
+	};
+	compass[]=
+	{
+		"ItemCompass"
+	};
+	watch[]=
+	{
+		"ItemWatch"
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_SYND_company_common: CommonBluforSYND
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_I_C_Soldier_Camo_F"
+	};
+	vest[]=
+	{
+		"V_Rangemaster_belt"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74u",
+			"rhs_acc_pgs64_74u",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_aks74un",
+			"rhs_acc_pgs64_74un",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		3
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class b_SYND_company_co: b_SYND_company_common
+{
+	scope=1;
+	displayName="Company Commanding Officer";
+	headgear[]=
+	{
+		"H_Hat_Safari_olive_F"
+	};
+};
+class b_SYND_company_xo: b_SYND_company_common
+{
+	scope=1;
+	displayName="Company Executive Officer";
+	gps[]=
+	{
+		"b_EasyTrack_Tablet"
+	};
+	headgear[]=
+	{
+		"H_Hat_Safari_sand_F"
+	};
+};
+class b_SYND_company_mio: b_SYND_company_common
+{
+	scope=1;
+	displayName="Mission Intelligence Officer";
+	gps[]=
+	{
+		"b_EasyTrack_Tablet"
+	};
+};
+class b_SYND_company_colo: b_SYND_company_common
+{
+	scope=1;
+	displayName="Chief of Logistics";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class b_SYND_company_fo: b_SYND_company_common
+{
+	scope=1;
+	displayName="Forward Observer";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_RangeTable_82mm"
+	};
+};
+class b_SYND_platoon_common: CommonBluforSYND
+{
+	scope=0;
+	vest[]=
+	{
+		"V_BandollierB_khk",
+		"V_BandollierB_cbr",
+		"V_BandollierB_rgr",
+		"V_BandollierB_blk",
+		"V_BandollierB_oli",
+		"V_Pocketed_black_F",
+		"V_Pocketed_coyote_F",
+		"V_Pocketed_olive_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_aks74_2",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		5,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class b_SYND_platoon_pl: b_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Leader";
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+};
+class b_SYND_platoon_psgt: b_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Sergeant";
+	gps[]=
+	{
+		"b_EasyTrack_Tablet"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+};
+class b_SYND_platoon_uav: b_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon UAV Operator";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_UAVBattery",
+		"b_UavTerminal"
+	};
+};
+class b_SYND_platoon_jtac: b_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon JTAC";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		5,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"Laserbatteries",
+		"rhs_GRD40_White",
+		2,
+		"rhs_GRD40_Green",
+		2,
+		"rhs_GRD40_Red",
+		2,
+		"rhs_VG40MD_Green",
+		2,
+		"rhs_VG40MD_Red",
+		2,
+		"rhs_VG40MD_White",
+		2,
+		"rhs_VG40OP_white",
+		2,
+		"rhs_VG40OP_green",
+		2,
+		"rhs_VG40OP_red",
+		2
+	};
+};
+class b_SYND_platoon_medic: b_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Medic";
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_personalAidKit",
+		2,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		50,
+		"ACE_quikclot",
+		30,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_SYND_squad_sl: CommonBluforSYND
+{
+	scope=1;
+	displayName="Squad Leader";
+	vest[]=
+	{
+		"V_I_G_resistanceLeader_F",
+		"V_TacVest_khk",
+		"V_TacVest_brn",
+		"V_TacVest_oli",
+		"V_TacVest_blk",
+		"V_TacVest_camo"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn_gp25",
+			"",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akm_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_VOG25",
+		10,
+		"rhs_GRD40_White",
+		2,
+		"rhs_GRD40_Green",
+		"rhs_GRD40_Red",
+		"rhs_VG40MD_Green",
+		"rhs_VG40MD_Red",
+		"rhs_VG40MD_White",
+		"rhs_VG40OP_white",
+		2,
+		"rhs_VG40OP_green",
+		2,
+		"rhs_VG40OP_red",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class b_SYND_squad_ftl: CommonBluforSYND
+{
+	scope=1;
+	displayName="Squad Fireteam Leader";
+	vest[]=
+	{
+		"V_I_G_resistanceLeader_F",
+		"V_TacVest_khk",
+		"V_TacVest_brn",
+		"V_TacVest_oli",
+		"V_TacVest_blk",
+		"V_TacVest_camo"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item"
+	};
+};
+class b_SYND_squad_ar: CommonBluforSYND
+{
+	scope=1;
+	displayName="Squad Automatic Rifleman";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_pkm",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_100Rnd_762x54mmR",
+		4,
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"MiniGrenade",
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black"
+	};
+};
+class b_SYND_squad_gl: CommonBluforSYND
+{
+	scope=1;
+	displayName="Squad Grenadier";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn_gp25",
+			"",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akm_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_VOG25",
+		16,
+		"rhs_VOG25P",
+		6,
+		"rhs_VG40TB",
+		4,
+		"rhs_GRD40_White",
+		6,
+		"rhs_GDM40",
+		2
+	};
+};
+class b_SYND_squad_gl2: CommonBluforSYND
+{
+	scope=1;
+	displayName="Squad Grenadier (M32)";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		"rhs_weap_m32"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		5,
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		5,
+		"rhsusf_mag_6Rnd_M714_white",
+		1,
+		"rhsusf_mag_6Rnd_M576_Buckshot",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class b_SYND_squad_light: CommonBluforSYND
+{
+	scope=1;
+	displayName="Squad Rifleman (light)";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtk",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtkakm",
+			""
+		},
+		
+		{
+			"rhs_weap_akm",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtkakm",
+			""
+		}
+	};
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+};
+class b_SYND_squad_aar: CommonBluforSYND
+{
+	scope=1;
+	displayName="Squad Rifleman";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtk",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtkakm",
+			""
+		},
+		
+		{
+			"rhs_weap_akm",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtkakm",
+			""
+		}
+	};
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	magazines[]=
+	{
+		"ACE_SpareBarrel",
+		"rhs_100Rnd_762x54mmR",
+		2,
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class b_SYND_squad_lat: CommonBluforSYND
+{
+	scope=1;
+	displayName="Squad Light Anti-Tank Rifleman";
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	backpack[]=
+	{
+		"rhs_rpg_empty"
+	};
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_rpg7",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7V_mag",
+		3
+	};
+};
+class b_SYND_squad_cm: CommonBluforSYND
+{
+	scope=1;
+	displayName="Squad Combat Medic";
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		4,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV_500",
+		2,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_SYND_squad_dm: CommonBluforSYND
+{
+	scope=1;
+	displayName="Squad Designated Marksman";
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103",
+			"rhs_acc_dtk",
+			"rhs_acc_pso1m2",
+			""
+		}
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeCard"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class b_SYND_squad_eng: CommonBluforSYND
+{
+	scope=1;
+	displayName="Squad Combat Engineer";
+	vest[]=
+	{
+		"V_BandollierB_khk",
+		"V_BandollierB_cbr",
+		"V_BandollierB_rgr",
+		"V_BandollierB_blk",
+		"V_BandollierB_oli",
+		"V_Pocketed_black_F",
+		"V_Pocketed_coyote_F",
+		"V_Pocketed_olive_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ToolKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_SYND_weapons_common: CommonBluforSYND
+{
+	scope=0;
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class b_SYND_assistant_common: b_SYND_weapons_common
+{
+	scope=0;
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class b_SYND_weapons_mg: b_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Medium Machine Gunner";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_pkp",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"rhs_100Rnd_762x54mmR",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black"
+	};
+};
+class b_SYND_weapons_amg: b_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant MMG";
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_100Rnd_762x54mmR",
+		3,
+		"ACE_SpareBarrel"
+	};
+};
+class b_SYND_weapons_hmg: b_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Heavy Machine Gunner";
+	backpack[]=
+	{
+		"I_HMG_01_weapon_F"
+	};
+};
+class b_SYND_weapons_ahmg: b_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant HMG";
+	backpack[]=
+	{
+		"I_HMG_01_support_F"
+	};
+};
+class b_SYND_weapons_gmg: b_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Grenade Machine Gunner";
+	backpack[]=
+	{
+		"I_GMG_01_weapon_F"
+	};
+};
+class b_SYND_weapons_agmg: b_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant GMG";
+	backpack[]=
+	{
+		"I_HMG_01_support_F"
+	};
+};
+class b_SYND_weapons_at: b_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad AT-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_rpg7",
+			"rhs_acc_pgo7v3",
+			"",
+			""
+		}
+	};
+};
+class b_SYND_weapons_aat: b_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad AT-Assistant";
+	backpack[]=
+	{
+		"B_Carryall_khk",
+		"B_Carryall_oli"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7V_mag",
+		4
+	};
+};
+class b_SYND_weapons_atgm: b_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad ATGM-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_i_Titan_short_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT"
+	};
+};
+class b_SYND_weapons_aatgm: b_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad ATGM-Assistant";
+	backpack[]=
+	{
+		"B_Carryall_khk",
+		"B_Carryall_oli"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT",
+		2,
+		"Titan_AP"
+	};
+};
+class b_SYND_weapons_aa: b_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad AA-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_igla",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_mag_9k38_rocket"
+	};
+};
+class b_SYND_weapons_aaa: b_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad AA-Assistant";
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_mag_9k38_rocket",
+		2
+	};
+};
+class b_SYND_weapons_mort: b_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Gunner";
+	backpack[]=
+	{
+		"I_Mortar_01_weapon_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class b_SYND_weapons_amort: b_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Assistant";
+	backpack[]=
+	{
+		"I_Mortar_01_support_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class b_SYND_weapons_acmort: b_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Ammo Carrier";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_1Rnd_82mm_Mo_HE",
+		5
+	};
+};
+class b_SYND_recon_common: CommonBluforSYND
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_I_C_Soldier_Para_1_F",
+		"U_I_C_Soldier_Para_2_F",
+		"U_I_C_Soldier_Para_3_F",
+		"U_I_C_Soldier_Para_4_F",
+		"U_I_C_Soldier_Para_5_F"
+	};
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_rgr",
+		"B_AssaultPack_khk",
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_AssaultPack_tna_f"
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhs_weap_tt33",
+			"",
+			"",
+			""
+		}
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak105",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_1p63"
+		},
+		
+		{
+			"rhs_weap_ak74",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_2mag",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_camo",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		},
+		
+		{
+			"rhs_weap_ak74_2",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black",
+		"g_bandanna_beast",
+		"g_bandanna_blk",
+		"g_bandanna_khk",
+		"g_bandanna_oli",
+		"g_bandanna_tan"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_SYND_recon_rm: b_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Operator";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_wirecutter"
+	};
+};
+class b_SYND_recon_tl: b_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Leader";
+	vest[]=
+	{
+		"V_I_G_resistanceLeader_F",
+		"V_TacVest_khk",
+		"V_TacVest_brn",
+		"V_TacVest_oli",
+		"V_TacVest_blk",
+		"V_TacVest_camo"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_fullplum_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_VOG25",
+		10,
+		"rhs_GRD40_White",
+		2,
+		"UGL_COL1",
+		"b_ir_grenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_IR_Strobe_Item"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class b_SYND_recon_ar: b_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Automatic Rifleman";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_RPK12",
+			"rhs_acc_ekp8_18",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"rhs_45Rnd_545X39_7N22_AK",
+		8,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ace_banana"
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black"
+	};
+};
+class b_SYND_recon_gl: b_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Grenadier";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_fullplum_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_VOG25",
+		16,
+		"rhs_VOG25P",
+		6,
+		"rhs_VG40TB",
+		4,
+		"rhs_GRD40_White",
+		6,
+		"rhs_GDM40",
+		2
+	};
+};
+class b_SYND_recon_lat: b_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Light Anti-Tank";
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_rpg7",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7V_mag",
+		3
+	};
+};
+class b_SYND_recon_cm: b_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Medic";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		6,
+		"ACE_epinephrine",
+		12,
+		"ACE_salineIV_500",
+		3,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_SYND_recon_dm: b_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Marksman";
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_M14dmr_Rail",
+			"optic_KHS_old",
+			"",
+			""
+		},
+		
+		{
+			"hlc_rifle_M21_Rail",
+			"optic_KHS_old",
+			"",
+			""
+		},
+		
+		{
+			"srifle_DMR_03_khaki_F",
+			"optic_KHS_old",
+			"",
+			"bipod_01_F_khk"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"20Rnd_762x51_Mag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"bipod_03_F_oli"
+	};
+};
+class b_SYND_recon_exp: b_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Explosive Specialist";
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	secondary[]=
+	{
+		"ACE_VMM3"
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"DemoCharge_Remote_Mag",
+		4,
+		"SatchelCharge_Remote_Mag",
+		"SLAMDirectionalMine_Wire_Mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class b_SYND_diver_common: b_SYND_recon_common
+{
+	scope=0;
+	displayName="Combat Diver Operator";
+	uniform[]=
+	{
+		"U_I_Wetsuit"
+	};
+	vest[]=
+	{
+		"V_RebreatherB"
+	};
+	backpack[]=
+	{
+		"B_Carryall_khk",
+		"B_Carryall_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak105",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_1p63"
+		},
+		
+		{
+			"rhs_weap_ak74",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_2mag",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_camo",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		},
+		
+		{
+			"rhs_weap_ak74_2",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhs_weap_tt33",
+			"",
+			"",
+			""
+		}
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F"
+	};
+	goggles[]=
+	{
+		"G_i_Diving"
+	};
+	headgear[]=
+	{
+		""
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+};
+class b_SYND_diver_rm: b_SYND_diver_common
+{
+	scope=1;
+};
+class b_SYND_diver_tl: b_SYND_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Team Leader";
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F",
+		"ACE_MapTools"
+	};
+};
+class b_SYND_diver_exp: b_SYND_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Explosive Specialist";
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"DemoCharge_Remote_Mag",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F",
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class b_SYND_diver_cm: b_SYND_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Medic";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F",
+		"W_Defibrillator",
+		"ACE_fieldDressing",
+		5,
+		"ACE_elasticBandage",
+		15,
+		"ACE_quikclot",
+		15,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV",
+		4,
+		"ACE_surgicalKit"
+	};
+	binoculars[]=
+	{
+		"ACE_MX2A"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_SYND_diver_dm: b_SYND_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Marksman";
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_M14dmr_Rail",
+			"optic_KHS_old",
+			"",
+			""
+		},
+		
+		{
+			"hlc_rifle_M21_Rail",
+			"optic_KHS_old",
+			"",
+			""
+		},
+		
+		{
+			"srifle_DMR_03_khaki_F",
+			"optic_KHS_old",
+			"",
+			"bipod_01_F_khk"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"20Rnd_762x51_Mag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F",
+		"bipod_03_F_oli"
+	};
+};
+class b_SYND_diver_jtac: b_SYND_diver_tl
+{
+	scope=1;
+	displayName="Combat Diver Terminal Attack Controller";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_fullplum_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2,
+		"Laserbatteries",
+		"rhs_GRD40_Green",
+		2,
+		"rhs_GRD40_Red",
+		2,
+		"rhs_VG40MD_Green",
+		2,
+		"rhs_VG40MD_Red",
+		2,
+		"rhs_VG40MD_White",
+		2
+	};
+};
+class b_SYND_sniper_common: b_SYND_recon_common
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_I_C_Soldier_Para_1_F",
+		"U_I_C_Soldier_Para_2_F",
+		"U_I_C_Soldier_Para_3_F",
+		"U_I_C_Soldier_Para_4_F",
+		"U_I_C_Soldier_Para_5_F"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"ACE_Rangecard"
+	};
+};
+class b_SYND_sniper_spot: b_SYND_recon_common
+{
+	scope=1;
+	displayName="Sniper Spotter";
+	uniform[]=
+	{
+		"U_I_C_Soldier_Para_1_F",
+		"U_I_C_Soldier_Para_2_F",
+		"U_I_C_Soldier_Para_3_F",
+		"U_I_C_Soldier_Para_4_F",
+		"U_I_C_Soldier_Para_5_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_fullplum_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"b_ir_grenade",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_545x39_Mag_F",
+		8,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"rhs_VOG25",
+		10,
+		"rhs_GRD40_White",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_SpottingScope",
+		"ACE_Tripod",
+		"ACE_ATragMX",
+		"ACE_IR_Strobe_Item",
+		"ACE_Rangecard",
+		"ACE_Kestrel4500"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class b_SYND_sniper_ap: b_SYND_sniper_common
+{
+	scope=1;
+	displayName="Sniper (Anti-Personel)";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_m24sws_ghillie",
+			"rhsusf_acc_LEUPOLDMK4_2_d",
+			"rhsusf_acc_harris_swivel",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"rhsusf_5Rnd_762x51_m118_special_Mag",
+		16,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class b_SYND_sniper_am: b_SYND_sniper_common
+{
+	scope=1;
+	displayName="Sniper (Anti-Materiel)";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_M107_w",
+			"rhsusf_acc_M8541",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"rhsusf_mag_10Rnd_STD_50BMG_M33",
+		5,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class b_SYND_sniper_exp: b_SYND_recon_common
+{
+	scope=1;
+	displayName="Sniper Explosive Specialist";
+	uniform[]=
+	{
+		"U_I_C_Soldier_Para_1_F",
+		"U_I_C_Soldier_Para_2_F",
+		"U_I_C_Soldier_Para_3_F",
+		"U_I_C_Soldier_Para_4_F",
+		"U_I_C_Soldier_Para_5_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_3",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_camo",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_desert",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"APERSTripMine_Wire_mag",
+		2,
+		"ClaymoreDirectionalMine_Remote_mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class b_SYND_crew_common: CommonBluforSYND
+{
+	scope=1;
+	displayName="Armored Vehicle Crew";
+	uniform[]=
+	{
+		"xru_u_coveralls_bandit"
+	};
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"V_LegStrapBag_black_F",
+		"V_LegStrapBag_coyote_F",
+		"V_LegStrapBag_olive_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_aks74_2",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_SYND_crew_cmd: b_SYND_crew_common
+{
+	scope=1;
+	displayName="Armored Vehicle Commander";
+	backpack[]=
+	{
+		"B_AssaultPack_rgr",
+		"B_AssaultPack_khk",
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_AssaultPack_tna_f"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class b_SYND_crew_jet: CommonBluforSYND
+{
+	scope=1;
+	displayName="Jet Pilot";
+	uniform[]=
+	{
+		"U_C_Man_casual_2_F",
+		"U_C_Man_casual_1_F",
+		"U_C_Man_casual_3_F"
+	};
+	vest[]=
+	{
+		""
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	watch[]=
+	{
+		"ACE_Altimeter"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class b_SYND_crew_heli: b_SYND_crew_common
+{
+	scope=1;
+	displayName="Helicopter Crew";
+	uniform[]=
+	{
+		"U_C_Man_casual_2_F",
+		"U_C_Man_casual_1_F",
+		"U_C_Man_casual_3_F"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	map[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class b_SYND_crew_helipilot: b_SYND_crew_heli
+{
+	scope=1;
+	displayName="Helicopter Pilot/Copilot/Gunner";
+	backpack[]=
+	{
+		"B_AssaultPack_rgr",
+		"B_AssaultPack_khk",
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_AssaultPack_tna_f"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	nvgs[]=
+	{
+		""
+	};
+};
+class b_SYND_logistics_common: CommonBluforSYND
+{
+	scope=1;
+	displayName="Logistician";
+	vest[]=
+	{
+		"V_BandollierB_khk",
+		"V_BandollierB_cbr",
+		"V_BandollierB_rgr",
+		"V_BandollierB_blk",
+		"V_BandollierB_oli",
+		"V_Pocketed_black_F",
+		"V_Pocketed_coyote_F",
+		"V_Pocketed_olive_F"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_aks74_2",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ToolKit"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class b_SYND_medevac_common: CommonBluforSYND
+{
+	scope=0;
+	primary[]=
+	{
+		""
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhsusf_weap_m1911a1",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class b_SYND_medevac_doc: b_SYND_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Doctor";
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class b_SYND_medevac_tl: b_SYND_medevac_doc
+{
+	scope=1;
+	displayName="Medical Service Team Leader";
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class b_SYND_medevac_heli: b_SYND_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Helicopter Pilot";
+	uniform[]=
+	{
+		"U_C_Man_casual_2_F",
+		"U_C_Man_casual_1_F",
+		"U_C_Man_casual_3_F"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	nvgs[]=
+	{
+		""
+	};
+};
+class b_SYND_medevac_drv: b_SYND_medevac_common
 {
 	scope=1;
 	displayName="Medical Service Driver";
@@ -29102,7 +34956,7 @@ class CommonBluforUSARMY_OCP: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USARMY_OCP_company_common: CommonBluforUSARMY_OCP
 {
@@ -29416,7 +35270,7 @@ class b_USARMY_OCP_platoon_jtac: b_USARMY_OCP_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -29427,8 +35281,6 @@ class b_USARMY_OCP_platoon_jtac: b_USARMY_OCP_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -29478,7 +35330,7 @@ class b_USARMY_OCP_platoon_medic: b_USARMY_OCP_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USARMY_OCP_squad_sl: CommonBluforUSARMY_OCP
 {
@@ -29522,20 +35374,23 @@ class b_USARMY_OCP_squad_sl: CommonBluforUSARMY_OCP
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -29925,7 +35780,7 @@ class b_USARMY_OCP_squad_cm: CommonBluforUSARMY_OCP
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USARMY_OCP_squad_dm: CommonBluforUSARMY_OCP
 {
@@ -29989,7 +35844,7 @@ class b_USARMY_OCP_squad_eng: CommonBluforUSARMY_OCP
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USARMY_OCP_weapons_common: CommonBluforUSARMY_OCP
 {
@@ -30472,7 +36327,7 @@ class b_USARMY_OCP_recon_common: CommonBluforUSARMY_OCP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USARMY_OCP_recon_rm: b_USARMY_OCP_recon_common
 {
@@ -30544,13 +36399,11 @@ class b_USARMY_OCP_recon_tl: b_USARMY_OCP_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -30623,7 +36476,7 @@ class b_USARMY_OCP_recon_ar: b_USARMY_OCP_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"acc_pointer_ir"
+		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -30748,7 +36601,7 @@ class b_USARMY_OCP_recon_cm: b_USARMY_OCP_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USARMY_OCP_recon_dm: b_USARMY_OCP_recon_common
 {
@@ -30860,7 +36713,7 @@ class b_USARMY_OCP_recon_exp: b_USARMY_OCP_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_USARMY_OCP_diver_common: b_USARMY_OCP_recon_common
 {
@@ -31032,7 +36885,7 @@ class b_USARMY_OCP_diver_exp: b_USARMY_OCP_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_USARMY_OCP_diver_cm: b_USARMY_OCP_diver_common
 {
@@ -31072,7 +36925,7 @@ class b_USARMY_OCP_diver_cm: b_USARMY_OCP_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USARMY_OCP_diver_dm: b_USARMY_OCP_diver_common
 {
@@ -31154,8 +37007,6 @@ class b_USARMY_OCP_diver_jtac: b_USARMY_OCP_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -31243,10 +37094,9 @@ class b_USARMY_OCP_sniper_spot: b_USARMY_OCP_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -31264,7 +37114,8 @@ class b_USARMY_OCP_sniper_spot: b_USARMY_OCP_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -31389,7 +37240,7 @@ class b_USARMY_OCP_sniper_exp: b_USARMY_OCP_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_USARMY_OCP_crew_common: CommonBluforUSARMY_OCP
 {
@@ -31441,7 +37292,7 @@ class b_USARMY_OCP_crew_common: CommonBluforUSARMY_OCP
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USARMY_OCP_crew_cmd: b_USARMY_OCP_crew_common
 {
@@ -31652,7 +37503,7 @@ class b_USARMY_OCP_logistics_common: CommonBluforUSARMY_OCP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USARMY_OCP_medevac_common: CommonBluforUSARMY_OCP
 {
@@ -31707,7 +37558,7 @@ class b_USARMY_OCP_medevac_common: CommonBluforUSARMY_OCP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_USARMY_OCP_medevac_doc: b_USARMY_OCP_medevac_common
 {
@@ -31745,7 +37596,7 @@ class b_USARMY_OCP_medevac_doc: b_USARMY_OCP_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_USARMY_OCP_medevac_tl: b_USARMY_OCP_medevac_doc
 {
@@ -31959,7 +37810,7 @@ class CommonBluforUSMC_D: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_D_company_common: CommonBluforUSMC_D
 {
@@ -32272,7 +38123,7 @@ class b_USMC_D_platoon_jtac: b_USMC_D_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -32283,8 +38134,6 @@ class b_USMC_D_platoon_jtac: b_USMC_D_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -32333,7 +38182,7 @@ class b_USMC_D_platoon_medic: b_USMC_D_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_D_squad_sl: CommonBluforUSMC_D
 {
@@ -32391,20 +38240,23 @@ class b_USMC_D_squad_sl: CommonBluforUSMC_D
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -32808,7 +38660,7 @@ class b_USMC_D_squad_cm: CommonBluforUSMC_D
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_D_squad_dm: CommonBluforUSMC_D
 {
@@ -32872,7 +38724,7 @@ class b_USMC_D_squad_eng: CommonBluforUSMC_D
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_D_weapons_common: CommonBluforUSMC_D
 {
@@ -33353,7 +39205,7 @@ class b_USMC_D_recon_common: CommonBluforUSMC_D
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_D_recon_rm: b_USMC_D_recon_common
 {
@@ -33425,13 +39277,11 @@ class b_USMC_D_recon_tl: b_USMC_D_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -33518,7 +39368,7 @@ class b_USMC_D_recon_ar: b_USMC_D_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"acc_pointer_ir"
+		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -33643,7 +39493,7 @@ class b_USMC_D_recon_cm: b_USMC_D_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_D_recon_dm: b_USMC_D_recon_common
 {
@@ -33754,7 +39604,7 @@ class b_USMC_D_recon_exp: b_USMC_D_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_D_diver_common: b_USMC_D_recon_common
 {
@@ -33926,7 +39776,7 @@ class b_USMC_D_diver_exp: b_USMC_D_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_D_diver_cm: b_USMC_D_diver_common
 {
@@ -33966,7 +39816,7 @@ class b_USMC_D_diver_cm: b_USMC_D_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_D_diver_dm: b_USMC_D_diver_common
 {
@@ -34048,8 +39898,6 @@ class b_USMC_D_diver_jtac: b_USMC_D_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -34137,10 +39985,9 @@ class b_USMC_D_sniper_spot: b_USMC_D_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -34158,7 +40005,8 @@ class b_USMC_D_sniper_spot: b_USMC_D_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -34285,7 +40133,7 @@ class b_USMC_D_sniper_exp: b_USMC_D_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_D_crew_common: CommonBluforUSMC_D
 {
@@ -34337,7 +40185,7 @@ class b_USMC_D_crew_common: CommonBluforUSMC_D
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_D_crew_cmd: b_USMC_D_crew_common
 {
@@ -34545,7 +40393,7 @@ class b_USMC_D_logistics_common: CommonBluforUSMC_D
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_D_medevac_common: CommonBluforUSMC_D
 {
@@ -34600,7 +40448,7 @@ class b_USMC_D_medevac_common: CommonBluforUSMC_D
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_USMC_D_medevac_doc: b_USMC_D_medevac_common
 {
@@ -34637,7 +40485,7 @@ class b_USMC_D_medevac_doc: b_USMC_D_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_USMC_D_medevac_tl: b_USMC_D_medevac_doc
 {
@@ -34851,7 +40699,7 @@ class CommonBluforUSMC_W: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_W_company_common: CommonBluforUSMC_W
 {
@@ -35164,7 +41012,7 @@ class b_USMC_W_platoon_jtac: b_USMC_W_platoon_common
 		"SmokeShellOrange",
 		"SmokeShellPurple",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -35175,8 +41023,6 @@ class b_USMC_W_platoon_jtac: b_USMC_W_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -35225,7 +41071,7 @@ class b_USMC_W_platoon_medic: b_USMC_W_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_W_squad_sl: CommonBluforUSMC_W
 {
@@ -35283,20 +41129,23 @@ class b_USMC_W_squad_sl: CommonBluforUSMC_W
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -35700,7 +41549,7 @@ class b_USMC_W_squad_cm: CommonBluforUSMC_W
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_W_squad_dm: CommonBluforUSMC_W
 {
@@ -35764,7 +41613,7 @@ class b_USMC_W_squad_eng: CommonBluforUSMC_W
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_W_weapons_common: CommonBluforUSMC_W
 {
@@ -36245,7 +42094,7 @@ class b_USMC_W_recon_common: CommonBluforUSMC_W
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_W_recon_rm: b_USMC_W_recon_common
 {
@@ -36317,13 +42166,11 @@ class b_USMC_W_recon_tl: b_USMC_W_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"b_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -36410,7 +42257,7 @@ class b_USMC_W_recon_ar: b_USMC_W_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"acc_pointer_ir"
+		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -36535,7 +42382,7 @@ class b_USMC_W_recon_cm: b_USMC_W_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_W_recon_dm: b_USMC_W_recon_common
 {
@@ -36646,7 +42493,7 @@ class b_USMC_W_recon_exp: b_USMC_W_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_W_diver_common: b_USMC_W_recon_common
 {
@@ -36818,7 +42665,7 @@ class b_USMC_W_diver_exp: b_USMC_W_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_W_diver_cm: b_USMC_W_diver_common
 {
@@ -36858,7 +42705,7 @@ class b_USMC_W_diver_cm: b_USMC_W_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_W_diver_dm: b_USMC_W_diver_common
 {
@@ -36940,8 +42787,6 @@ class b_USMC_W_diver_jtac: b_USMC_W_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -37029,10 +42874,9 @@ class b_USMC_W_sniper_spot: b_USMC_W_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -37050,7 +42894,8 @@ class b_USMC_W_sniper_spot: b_USMC_W_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -37177,7 +43022,7 @@ class b_USMC_W_sniper_exp: b_USMC_W_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_W_crew_common: CommonBluforUSMC_W
 {
@@ -37229,7 +43074,7 @@ class b_USMC_W_crew_common: CommonBluforUSMC_W
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_W_crew_cmd: b_USMC_W_crew_common
 {
@@ -37437,7 +43282,7 @@ class b_USMC_W_logistics_common: CommonBluforUSMC_W
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class b_USMC_W_medevac_common: CommonBluforUSMC_W
 {
@@ -37492,7 +43337,7 @@ class b_USMC_W_medevac_common: CommonBluforUSMC_W
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_USMC_W_medevac_doc: b_USMC_W_medevac_common
 {
@@ -37529,7 +43374,7 @@ class b_USMC_W_medevac_doc: b_USMC_W_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class b_USMC_W_medevac_tl: b_USMC_W_medevac_doc
 {
@@ -37705,7 +43550,7 @@ class CommonIndepAAF: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_AAF_company_common: CommonIndepAAF
 {
@@ -37991,7 +43836,7 @@ class i_AAF_platoon_jtac: i_AAF_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -38002,8 +43847,6 @@ class i_AAF_platoon_jtac: i_AAF_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -38051,7 +43894,7 @@ class i_AAF_platoon_medic: i_AAF_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_AAF_squad_sl: CommonIndepAAF
 {
@@ -38095,20 +43938,23 @@ class i_AAF_squad_sl: CommonIndepAAF
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -38396,7 +44242,7 @@ class i_AAF_squad_cm: CommonIndepAAF
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_AAF_squad_dm: CommonIndepAAF
 {
@@ -38460,7 +44306,7 @@ class i_AAF_squad_eng: CommonIndepAAF
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_AAF_weapons_common: CommonIndepAAF
 {
@@ -38924,7 +44770,7 @@ class i_AAF_recon_common: CommonIndepAAF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_AAF_recon_rm: i_AAF_recon_common
 {
@@ -38982,13 +44828,11 @@ class i_AAF_recon_tl: i_AAF_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -39181,7 +45025,7 @@ class i_AAF_recon_cm: i_AAF_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_AAF_recon_dm: i_AAF_recon_common
 {
@@ -39277,7 +45121,7 @@ class i_AAF_recon_exp: i_AAF_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_AAF_diver_common: i_AAF_recon_common
 {
@@ -39455,7 +45299,7 @@ class i_AAF_diver_exp: i_AAF_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_AAF_diver_cm: i_AAF_diver_common
 {
@@ -39495,7 +45339,7 @@ class i_AAF_diver_cm: i_AAF_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_AAF_diver_dm: i_AAF_diver_common
 {
@@ -39577,8 +45421,6 @@ class i_AAF_diver_jtac: i_AAF_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -39668,10 +45510,9 @@ class i_AAF_sniper_spot: i_AAF_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -39689,7 +45530,8 @@ class i_AAF_sniper_spot: i_AAF_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -39810,7 +45652,7 @@ class i_AAF_sniper_exp: i_AAF_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_AAF_crew_common: CommonIndepAAF
 {
@@ -39859,7 +45701,7 @@ class i_AAF_crew_common: CommonIndepAAF
 	{
 		"ACRE_PRC152"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_AAF_crew_cmd: i_AAF_crew_common
 {
@@ -40054,7 +45896,7 @@ class i_AAF_logistics_common: CommonIndepAAF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_AAF_medevac_common: CommonIndepAAF
 {
@@ -40104,7 +45946,7 @@ class i_AAF_medevac_common: CommonIndepAAF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_AAF_medevac_doc: i_AAF_medevac_common
 {
@@ -40140,7 +45982,7 @@ class i_AAF_medevac_doc: i_AAF_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_AAF_medevac_tl: i_AAF_medevac_doc
 {
@@ -40216,7 +46058,7 @@ class CommonIndepCHINA: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_khk"
 	};
 	backpack[]=
 	{
@@ -40317,7 +46159,7 @@ class CommonIndepCHINA: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_company_common: CommonIndepCHINA
 {
@@ -40605,7 +46447,7 @@ class i_CHINA_platoon_jtac: i_CHINA_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -40616,8 +46458,6 @@ class i_CHINA_platoon_jtac: i_CHINA_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -40665,7 +46505,7 @@ class i_CHINA_platoon_medic: i_CHINA_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_squad_sl: CommonIndepCHINA
 {
@@ -40709,20 +46549,23 @@ class i_CHINA_squad_sl: CommonIndepCHINA
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -41016,7 +46859,7 @@ class i_CHINA_squad_cm: CommonIndepCHINA
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_squad_dm: CommonIndepCHINA
 {
@@ -41080,7 +46923,7 @@ class i_CHINA_squad_eng: CommonIndepCHINA
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_weapons_common: CommonIndepCHINA
 {
@@ -41533,7 +47376,7 @@ class i_CHINA_recon_common: CommonIndepCHINA
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_recon_rm: i_CHINA_recon_common
 {
@@ -41591,13 +47434,11 @@ class i_CHINA_recon_tl: i_CHINA_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -41785,7 +47626,7 @@ class i_CHINA_recon_cm: i_CHINA_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_recon_dm: i_CHINA_recon_common
 {
@@ -41883,7 +47724,7 @@ class i_CHINA_recon_exp: i_CHINA_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_diver_common: i_CHINA_recon_common
 {
@@ -42054,7 +47895,7 @@ class i_CHINA_diver_exp: i_CHINA_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_diver_cm: i_CHINA_diver_common
 {
@@ -42094,7 +47935,7 @@ class i_CHINA_diver_cm: i_CHINA_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_diver_dm: i_CHINA_diver_common
 {
@@ -42178,8 +48019,6 @@ class i_CHINA_diver_jtac: i_CHINA_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -42269,10 +48108,9 @@ class i_CHINA_sniper_spot: i_CHINA_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -42290,7 +48128,8 @@ class i_CHINA_sniper_spot: i_CHINA_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -42415,7 +48254,7 @@ class i_CHINA_sniper_exp: i_CHINA_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_crew_common: CommonIndepCHINA
 {
@@ -42464,7 +48303,7 @@ class i_CHINA_crew_common: CommonIndepCHINA
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_crew_cmd: i_CHINA_crew_common
 {
@@ -42662,7 +48501,7 @@ class i_CHINA_logistics_common: CommonIndepCHINA
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_medevac_common: CommonIndepCHINA
 {
@@ -42712,7 +48551,7 @@ class i_CHINA_medevac_common: CommonIndepCHINA
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_CHINA_medevac_doc: i_CHINA_medevac_common
 {
@@ -42748,7 +48587,7 @@ class i_CHINA_medevac_doc: i_CHINA_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_CHINA_medevac_tl: i_CHINA_medevac_doc
 {
@@ -42824,7 +48663,8 @@ class CommonIndepCHINA_GRN: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
 	};
 	backpack[]=
 	{
@@ -42924,7 +48764,7 @@ class CommonIndepCHINA_GRN: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_GRN_company_common: CommonIndepCHINA_GRN
 {
@@ -43213,7 +49053,7 @@ class i_CHINA_GRN_platoon_jtac: i_CHINA_GRN_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -43224,8 +49064,6 @@ class i_CHINA_GRN_platoon_jtac: i_CHINA_GRN_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -43274,7 +49112,7 @@ class i_CHINA_GRN_platoon_medic: i_CHINA_GRN_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_GRN_squad_sl: CommonIndepCHINA_GRN
 {
@@ -43318,20 +49156,23 @@ class i_CHINA_GRN_squad_sl: CommonIndepCHINA_GRN
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -43628,7 +49469,7 @@ class i_CHINA_GRN_squad_cm: CommonIndepCHINA_GRN
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_GRN_squad_dm: CommonIndepCHINA_GRN
 {
@@ -43694,7 +49535,7 @@ class i_CHINA_GRN_squad_eng: CommonIndepCHINA_GRN
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_GRN_weapons_common: CommonIndepCHINA_GRN
 {
@@ -44149,7 +49990,7 @@ class i_CHINA_GRN_recon_common: CommonIndepCHINA_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_GRN_recon_rm: i_CHINA_GRN_recon_common
 {
@@ -44208,13 +50049,11 @@ class i_CHINA_GRN_recon_tl: i_CHINA_GRN_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -44403,7 +50242,7 @@ class i_CHINA_GRN_recon_cm: i_CHINA_GRN_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_GRN_recon_dm: i_CHINA_GRN_recon_common
 {
@@ -44501,7 +50340,7 @@ class i_CHINA_GRN_recon_exp: i_CHINA_GRN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_GRN_diver_common: i_CHINA_GRN_recon_common
 {
@@ -44672,7 +50511,7 @@ class i_CHINA_GRN_diver_exp: i_CHINA_GRN_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_GRN_diver_cm: i_CHINA_GRN_diver_common
 {
@@ -44712,7 +50551,7 @@ class i_CHINA_GRN_diver_cm: i_CHINA_GRN_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_GRN_diver_dm: i_CHINA_GRN_diver_common
 {
@@ -44796,8 +50635,6 @@ class i_CHINA_GRN_diver_jtac: i_CHINA_GRN_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -44883,10 +50720,9 @@ class i_CHINA_GRN_sniper_spot: i_CHINA_GRN_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -44904,7 +50740,8 @@ class i_CHINA_GRN_sniper_spot: i_CHINA_GRN_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -45027,7 +50864,7 @@ class i_CHINA_GRN_sniper_exp: i_CHINA_GRN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_GRN_crew_common: CommonIndepCHINA_GRN
 {
@@ -45076,7 +50913,7 @@ class i_CHINA_GRN_crew_common: CommonIndepCHINA_GRN
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_GRN_crew_cmd: i_CHINA_GRN_crew_common
 {
@@ -45276,7 +51113,7 @@ class i_CHINA_GRN_logistics_common: CommonIndepCHINA_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_CHINA_GRN_medevac_common: CommonIndepCHINA_GRN
 {
@@ -45326,7 +51163,7 @@ class i_CHINA_GRN_medevac_common: CommonIndepCHINA_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_CHINA_GRN_medevac_doc: i_CHINA_GRN_medevac_common
 {
@@ -45362,7 +51199,7 @@ class i_CHINA_GRN_medevac_doc: i_CHINA_GRN_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_CHINA_GRN_medevac_tl: i_CHINA_GRN_medevac_doc
 {
@@ -45411,6 +51248,2618 @@ class i_CHINA_GRN_medevac_heli: i_CHINA_GRN_medevac_common
 	};
 };
 class i_CHINA_GRN_medevac_drv: i_CHINA_GRN_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Driver";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_Banana"
+	};
+};
+class CommonIndepFIA: CommonDefault
+{
+	side="Indep";
+	sideShort="i";
+	faction="FIA";
+	scope=0;
+	uniform[]=
+	{
+		"U_O_T_Soldier_F"
+	};
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	backpack[]=
+	{
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_FieldPack_ghex_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Rook40_F",
+			"",
+			"",
+			""
+		}
+	};
+	launcher[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet"
+	};
+	headgear[]=
+	{
+		"H_HelmetO_ghex_f",
+		"H_HelmetLeaderO_ghex_f"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_oli"
+	};
+	nvgs[]=
+	{
+		"O_NVGoggles_ghex_f"
+	};
+	binoculars[]=
+	{
+		""
+	};
+	map[]=
+	{
+		""
+	};
+	gps[]=
+	{
+		""
+	};
+	compass[]=
+	{
+		"ItemCompass"
+	};
+	watch[]=
+	{
+		"ItemWatch"
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_FIA_company_common: CommonIndepFIA
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_O_T_Officer_F"
+	};
+	vest[]=
+	{
+		"v_rangemaster_belt"
+	};
+	primary[]=
+	{
+		
+		{
+			"smg_02_f",
+			"optic_aco_grn",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_9x21_Mag",
+		3
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_milcap_ghex_f",
+		"H_Cap_oli_hs",
+		"H_Cap_headphones"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+};
+class i_FIA_company_co: i_FIA_company_common
+{
+	scope=1;
+	displayName="Company Commanding Officer";
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class i_FIA_company_xo: i_FIA_company_common
+{
+	scope=1;
+	displayName="Company Executive Officer";
+	gps[]=
+	{
+		"i_EasyTrack_Tablet"
+	};
+	headgear[]=
+	{
+		"H_milcap_ghex_f"
+	};
+};
+class i_FIA_company_mio: i_FIA_company_common
+{
+	scope=1;
+	displayName="Mission Intelligence Officer";
+	gps[]=
+	{
+		"i_EasyTrack_Tablet"
+	};
+};
+class i_FIA_company_colo: i_FIA_company_common
+{
+	scope=1;
+	displayName="Chief of Logistics";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class i_FIA_company_fo: i_FIA_company_common
+{
+	scope=1;
+	displayName="Forward Observer";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_RangeTable_82mm"
+	};
+};
+class i_FIA_platoon_common: CommonIndepFIA
+{
+	scope=0;
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		5,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecO_ghex_f"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+};
+class i_FIA_platoon_pl: i_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Leader";
+	lrRadios[]=
+	{
+		"ACRE_PRC148",
+		"ACRE_PRC117F"
+	};
+};
+class i_FIA_platoon_psgt: i_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Sergeant";
+	gps[]=
+	{
+		"i_EasyTrack_Tablet"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148",
+		"ACRE_PRC117F"
+	};
+};
+class i_FIA_platoon_uav: i_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon UAV Operator";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_UAVBattery",
+		"i_UavTerminal"
+	};
+};
+class i_FIA_platoon_jtac: i_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon JTAC";
+	vest[]=
+	{
+		"v_harnessogl_ghex_f"
+	};
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator_02_ghex_f"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148",
+		"ACRE_PRC117F"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		5,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"Laserbatteries",
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2,
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+};
+class i_FIA_platoon_medic: i_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Medic";
+	vest[]=
+	{
+		"v_tacchestrig_grn_f",
+		"v_tacchestrig_oli_f"
+	};
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_personalAidKit",
+		2,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		50,
+		"ACE_quikclot",
+		30,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_FIA_squad_sl: CommonIndepFIA
+{
+	scope=1;
+	displayName="Squad Leader";
+	vest[]=
+	{
+		"v_harnesso_ghex_f"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_HuntIR_M203",
+		4,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class i_FIA_squad_ftl: CommonIndepFIA
+{
+	scope=1;
+	displayName="Squad Fireteam Leader";
+	vest[]=
+	{
+		"v_harnesso_ghex_f"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item"
+	};
+};
+class i_FIA_squad_ar: CommonIndepFIA
+{
+	scope=1;
+	displayName="Squad Automatic Rifleman";
+	vest[]=
+	{
+		"v_harnesso_ghex_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTARS_blk_F",
+			"optic_Holosight_blk_F",
+			"acc_pointer_ir",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"100Rnd_580x42_Mag_F",
+		5,
+		"100Rnd_580x42_Mag_Tracer_F",
+		2,
+		"16Rnd_9x21_Mag",
+		3,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"MiniGrenade",
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_oli"
+	};
+};
+class i_FIA_squad_gl: CommonIndepFIA
+{
+	scope=1;
+	displayName="Squad Grenadier";
+	vest[]=
+	{
+		"v_harnessogl_ghex_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class i_FIA_squad_gl2: CommonIndepFIA
+{
+	scope=1;
+	displayName="Squad Grenadier (M32)";
+	vest[]=
+	{
+		"v_harnessogl_ghex_f"
+	};
+	primary[]=
+	{
+		"rhs_weap_m32"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		5,
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		5,
+		"rhsusf_mag_6Rnd_M714_white",
+		1,
+		"rhsusf_mag_6Rnd_M576_Buckshot",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class i_FIA_squad_light: CommonIndepFIA
+{
+	scope=1;
+	displayName="Squad Rifleman (light)";
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"acc_pointer_ir",
+			"optic_arco_blk_f",
+			""
+		}
+	};
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+};
+class i_FIA_squad_aar: CommonIndepFIA
+{
+	scope=1;
+	displayName="Squad Rifleman";
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"acc_pointer_ir",
+			"optic_arco_blk_f",
+			""
+		}
+	};
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	magazines[]=
+	{
+		"ACE_SpareBarrel",
+		"100Rnd_580x42_Mag_F",
+		2,
+		"100Rnd_580x42_Mag_Tracer_F",
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class i_FIA_squad_lat: CommonIndepFIA
+{
+	scope=1;
+	displayName="Squad Light Anti-Tank Rifleman";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	backpack[]=
+	{
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_FieldPack_ghex_f"
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_rpg32_ghex_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
+	};
+};
+class i_FIA_squad_cm: CommonIndepFIA
+{
+	scope=1;
+	displayName="Squad Combat Medic";
+	vest[]=
+	{
+		"v_tacchestrig_grn_f",
+		"v_tacchestrig_oli_f"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		4,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV_500",
+		2,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_FIA_squad_dm: CommonIndepFIA
+{
+	scope=1;
+	displayName="Squad Designated Marksman";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"srifle_DMR_07_blk_F",
+			"optic_dms",
+			"acc_pointer_ir",
+			""
+		}
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeCard"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"20Rnd_650x39_Cased_Mag_F",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class i_FIA_squad_eng: CommonIndepFIA
+{
+	scope=1;
+	displayName="Squad Combat Engineer";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ToolKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_FIA_weapons_common: CommonIndepFIA
+{
+	scope=0;
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class i_FIA_assistant_common: i_FIA_weapons_common
+{
+	scope=0;
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class i_FIA_weapons_mg: i_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Medium Machine Gunner";
+	vest[]=
+	{
+		"v_harnesso_ghex_f"
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		
+		{
+			"MMG_01_tan_F",
+			"optic_arco_blk_f",
+			"acc_pointer_ir",
+			"bipod_02_f_blk"
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"150Rnd_93x64_Mag",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_oli"
+	};
+};
+class i_FIA_weapons_amg: i_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant MMG";
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"150Rnd_93x64_Mag",
+		2,
+		"ACE_SpareBarrel"
+	};
+};
+class i_FIA_weapons_hmg: i_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Heavy Machine Gunner";
+	backpack[]=
+	{
+		"O_HMG_01_weapon_F"
+	};
+};
+class i_FIA_weapons_ahmg: i_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant HMG";
+	backpack[]=
+	{
+		"O_HMG_01_support_F"
+	};
+};
+class i_FIA_weapons_gmg: i_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Grenade Machine Gunner";
+	backpack[]=
+	{
+		"O_GMG_01_weapon_F"
+	};
+};
+class i_FIA_weapons_agmg: i_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant GMG";
+	backpack[]=
+	{
+		"O_HMG_01_support_F"
+	};
+};
+class i_FIA_weapons_at: i_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad AT-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_rpg32_ghex_f",
+			"",
+			"",
+			""
+		}
+	};
+};
+class i_FIA_weapons_aat: i_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad AT-Assistant";
+	backpack[]=
+	{
+		"B_Carryall_ghex_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F",
+		2
+	};
+};
+class i_FIA_weapons_atgm: i_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad ATGM-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_O_Titan_short_ghex_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT"
+	};
+};
+class i_FIA_weapons_aatgm: i_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad ATGM-Assistant";
+	backpack[]=
+	{
+		"B_Carryall_ghex_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT",
+		2,
+		"Titan_AP"
+	};
+};
+class i_FIA_weapons_aa: i_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad AA-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_O_Titan_ghex_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AA"
+	};
+};
+class i_FIA_weapons_aaa: i_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad AA-Assistant";
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AA",
+		2
+	};
+};
+class i_FIA_weapons_mort: i_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Gunner";
+	backpack[]=
+	{
+		"O_Mortar_01_weapon_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class i_FIA_weapons_amort: i_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Assistant";
+	backpack[]=
+	{
+		"O_Mortar_01_support_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class i_FIA_weapons_acmort: i_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Ammo Carrier";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_1Rnd_82mm_Mo_HE",
+		5
+	};
+};
+class i_FIA_recon_common: CommonIndepFIA
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_O_V_Soldier_Viper_F"
+	};
+	vest[]=
+	{
+		"v_tacchestrig_grn_f",
+		"v_tacchestrig_oli_f"
+	};
+	backpack[]=
+	{
+		"b_viperharness_ghex_f"
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Pistol_heavy_02_F",
+			"optic_Yorris",
+			"muzzle_snds_L",
+			""
+		}
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2
+	};
+	goggles[]=
+	{
+		""
+	};
+	headgear[]=
+	{
+		"H_HelmetO_ViperSP_ghex_F"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_FIA_recon_rm: i_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Operator";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_wirecutter"
+	};
+};
+class i_FIA_recon_tl: i_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Leader";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"UGL_COL1",
+		"i_ir_grenade",
+		2,
+		"ACE_HuntIR_M203",
+		5
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+};
+class i_FIA_recon_ar: i_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Automatic Rifleman";
+	vest[]=
+	{
+		"v_tacchestrig_grn_f",
+		"v_tacchestrig_oli_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTARS_ghex_F",
+			"acc_pointer_ir",
+			"optic_Arco_ghex_F",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"100Rnd_580x42_Mag_F",
+		5,
+		"100Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"acc_pointer_ir"
+	};
+	goggles[]=
+	{
+		""
+	};
+};
+class i_FIA_recon_gl: i_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Grenadier";
+	vest[]=
+	{
+		"v_harnessogl_ghex_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class i_FIA_recon_lat: i_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Light Anti-Tank";
+	launcher[]=
+	{
+		
+		{
+			"launch_rpg32_ghex_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
+	};
+};
+class i_FIA_recon_cm: i_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Medic";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		6,
+		"ACE_epinephrine",
+		12,
+		"ACE_salineIV_500",
+		3,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_FIA_recon_dm: i_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Marksman";
+	primary[]=
+	{
+		
+		{
+			"arifle_ARX_ghex_F",
+			"optic_dms_ghex_f",
+			"acc_pointer_ir",
+			"muzzle_snds_65_TI_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"10Rnd_50BW_Mag_F",
+		3,
+		"30Rnd_65x39_caseless_green",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"bipod_02_f_blk"
+	};
+};
+class i_FIA_recon_exp: i_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Explosive Specialist";
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	secondary[]=
+	{
+		"ACE_VMM3"
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"DemoCharge_Remote_Mag",
+		4,
+		"SatchelCharge_Remote_Mag",
+		"SLAMDirectionalMine_Wire_Mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class i_FIA_diver_common: i_FIA_recon_common
+{
+	scope=0;
+	displayName="Combat Diver Operator";
+	uniform[]=
+	{
+		"U_O_Wetsuit"
+	};
+	vest[]=
+	{
+		"V_RebreatherIR"
+	};
+	backpack[]=
+	{
+		"b_viperharness_blk_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"optic_arco_blk_f",
+			"acc_pointer_ir",
+			"muzzle_snds_58_blk_F"
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Pistol_heavy_02_F",
+			"optic_Yorris",
+			"muzzle_snds_L",
+			""
+		}
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F"
+	};
+	goggles[]=
+	{
+		"G_O_Diving"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecO_blk"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+};
+class i_FIA_diver_rm: i_FIA_diver_common
+{
+	scope=1;
+};
+class i_FIA_diver_tl: i_FIA_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Team Leader";
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F",
+		"ACE_MapTools"
+	};
+};
+class i_FIA_diver_exp: i_FIA_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Explosive Specialist";
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"ACE_M84",
+		4,
+		"DemoCharge_Remote_Mag",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F",
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class i_FIA_diver_cm: i_FIA_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Medic";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F",
+		"W_Defibrillator",
+		"ACE_fieldDressing",
+		5,
+		"ACE_elasticBandage",
+		15,
+		"ACE_quikclot",
+		15,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV",
+		4,
+		"ACE_surgicalKit"
+	};
+	binoculars[]=
+	{
+		"ACE_MX2A"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_FIA_diver_dm: i_FIA_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Marksman";
+	primary[]=
+	{
+		
+		{
+			"arifle_ARX_blk_F",
+			"optic_dms_ghex_f",
+			"acc_pointer_ir",
+			"muzzle_snds_65_TI_blk_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"10Rnd_50BW_Mag_F",
+		3,
+		"30Rnd_65x39_caseless_green",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F",
+		"bipod_02_f_blk"
+	};
+};
+class i_FIA_diver_jtac: i_FIA_diver_tl
+{
+	scope=1;
+	displayName="Combat Diver Terminal Attack Controller";
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_blk_f",
+			"optic_arco_blk_f",
+			"acc_pointer_ir",
+			"muzzle_snds_58_blk_F"
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator_02_ghex_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2,
+		"Laserbatteries",
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2
+	};
+};
+class i_FIA_sniper_common: i_FIA_recon_common
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_O_T_FullGhillie_tna_F"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"optic_NVS",
+		"ACE_Rangecard"
+	};
+};
+class i_FIA_sniper_spot: i_FIA_recon_common
+{
+	scope=1;
+	displayName="Sniper Spotter";
+	uniform[]=
+	{
+		"U_O_T_FullGhillie_tna_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"i_ir_grenade",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_580x42_Mag_F",
+		8,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		4,
+		"ACE_HuntIR_M203",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_SpottingScope",
+		"ACE_Tripod",
+		"ACE_ATragMX",
+		"ACE_IR_Strobe_Item",
+		"ACE_Rangecard",
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+};
+class i_FIA_sniper_ap: i_FIA_sniper_common
+{
+	scope=1;
+	displayName="Sniper (Anti-Personel)";
+	primary[]=
+	{
+		
+		{
+			"srifle_DMR_07_ghex_F",
+			"optic_LRPS_ghex_f",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"20Rnd_650x39_Cased_Mag_F",
+		4,
+		"ACE_20Rnd_65x47_Scenar_mag",
+		3,
+		"ACE_20Rnd_65_Creedmor_mag",
+		3,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+};
+class i_FIA_sniper_am: i_FIA_sniper_common
+{
+	scope=1;
+	displayName="Sniper (Anti-Materiel)";
+	primary[]=
+	{
+		
+		{
+			"srifle_GM6_ghex_F",
+			"optic_LRPS_ghex_f",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"5Rnd_127x108_Mag",
+		4,
+		"5Rnd_127x108_APDS_Mag",
+		4,
+		"ACE_5Rnd_127x99_AMAX_Mag",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+};
+class i_FIA_sniper_exp: i_FIA_recon_common
+{
+	scope=1;
+	displayName="Sniper Explosive Specialist";
+	uniform[]=
+	{
+		"U_O_T_FullGhillie_tna_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"APERSTripMine_Wire_mag",
+		2,
+		"ClaymoreDirectionalMine_Remote_mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class i_FIA_crew_common: CommonIndepFIA
+{
+	scope=1;
+	displayName="Armored Vehicle Crew";
+	uniform[]=
+	{
+		"U_O_T_Soldier_F"
+	};
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"V_LegStrapBag_olive_F"
+	};
+	primary[]=
+	{
+		"arifle_CTAR_blk_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		6,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+	headgear[]=
+	{
+		"H_HelmetCrew_O_ghex_f"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_FIA_crew_cmd: i_FIA_crew_common
+{
+	scope=1;
+	displayName="Armored Vehicle Commander";
+	backpack[]=
+	{
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_FieldPack_ghex_f"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148",
+		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class i_FIA_crew_jet: CommonIndepFIA
+{
+	scope=1;
+	displayName="Jet Pilot";
+	uniform[]=
+	{
+		"U_O_PilotCoveralls"
+	};
+	vest[]=
+	{
+		""
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetFighter_O"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	watch[]=
+	{
+		"ACE_Altimeter"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class i_FIA_crew_heli: i_FIA_crew_common
+{
+	scope=1;
+	displayName="Helicopter Crew";
+	uniform[]=
+	{
+		"U_O_T_Soldier_F"
+	};
+	headgear[]=
+	{
+		"H_CrewHelmetHeli_O"
+	};
+	map[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class i_FIA_crew_helipilot: i_FIA_crew_heli
+{
+	scope=1;
+	displayName="Helicopter Pilot/Copilot/Gunner";
+	backpack[]=
+	{
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_FieldPack_ghex_f"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetHeli_O"
+	};
+	nvgs[]=
+	{
+		""
+	};
+};
+class i_FIA_logistics_common: CommonIndepFIA
+{
+	scope=1;
+	displayName="Logistician";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	primary[]=
+	{
+		"arifle_CTAR_blk_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		6,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecO_ghex_f"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ToolKit"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F",
+		"ACRE_PRC148"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_FIA_medevac_common: CommonIndepFIA
+{
+	scope=0;
+	primary[]=
+	{
+		""
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Rook40_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecO_ghex_f"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class i_FIA_medevac_doc: i_FIA_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Doctor";
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class i_FIA_medevac_tl: i_FIA_medevac_doc
+{
+	scope=1;
+	displayName="Medical Service Team Leader";
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+};
+class i_FIA_medevac_heli: i_FIA_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Helicopter Pilot";
+	uniform[]=
+	{
+		"U_O_T_Soldier_F"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetHeli_O"
+	};
+	nvgs[]=
+	{
+		""
+	};
+};
+class i_FIA_medevac_drv: i_FIA_medevac_common
 {
 	scope=1;
 	displayName="Medical Service Driver";
@@ -45537,7 +53986,7 @@ class CommonIndepIDF: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IDF_company_common: CommonIndepIDF
 {
@@ -45827,7 +54276,7 @@ class i_IDF_platoon_jtac: i_IDF_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -45838,8 +54287,6 @@ class i_IDF_platoon_jtac: i_IDF_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -45888,7 +54335,7 @@ class i_IDF_platoon_medic: i_IDF_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IDF_squad_sl: CommonIndepIDF
 {
@@ -45932,20 +54379,23 @@ class i_IDF_squad_sl: CommonIndepIDF
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -46240,7 +54690,7 @@ class i_IDF_squad_cm: CommonIndepIDF
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IDF_squad_dm: CommonIndepIDF
 {
@@ -46307,7 +54757,7 @@ class i_IDF_squad_eng: CommonIndepIDF
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IDF_weapons_common: CommonIndepIDF
 {
@@ -46782,7 +55232,7 @@ class i_IDF_recon_common: CommonIndepIDF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IDF_recon_rm: i_IDF_recon_common
 {
@@ -46850,13 +55300,11 @@ class i_IDF_recon_tl: i_IDF_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -47053,7 +55501,7 @@ class i_IDF_recon_cm: i_IDF_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IDF_recon_dm: i_IDF_recon_common
 {
@@ -47164,7 +55612,7 @@ class i_IDF_recon_exp: i_IDF_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_IDF_diver_common: i_IDF_recon_common
 {
@@ -47343,7 +55791,7 @@ class i_IDF_diver_exp: i_IDF_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_IDF_diver_cm: i_IDF_diver_common
 {
@@ -47383,7 +55831,7 @@ class i_IDF_diver_cm: i_IDF_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IDF_diver_dm: i_IDF_diver_common
 {
@@ -47486,8 +55934,6 @@ class i_IDF_diver_jtac: i_IDF_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -47582,10 +56028,9 @@ class i_IDF_sniper_spot: i_IDF_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -47603,7 +56048,8 @@ class i_IDF_sniper_spot: i_IDF_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -47728,7 +56174,7 @@ class i_IDF_sniper_exp: i_IDF_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_IDF_crew_common: CommonIndepIDF
 {
@@ -47778,7 +56224,7 @@ class i_IDF_crew_common: CommonIndepIDF
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IDF_crew_cmd: i_IDF_crew_common
 {
@@ -47981,7 +56427,7 @@ class i_IDF_logistics_common: CommonIndepIDF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IDF_medevac_common: CommonIndepIDF
 {
@@ -48032,7 +56478,7 @@ class i_IDF_medevac_common: CommonIndepIDF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_IDF_medevac_doc: i_IDF_medevac_common
 {
@@ -48069,7 +56515,7 @@ class i_IDF_medevac_doc: i_IDF_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_IDF_medevac_tl: i_IDF_medevac_doc
 {
@@ -48145,7 +56591,7 @@ class CommonIndepIRAN: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_khk"
 	};
 	backpack[]=
 	{
@@ -48246,7 +56692,7 @@ class CommonIndepIRAN: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_company_common: CommonIndepIRAN
 {
@@ -48534,7 +56980,7 @@ class i_IRAN_platoon_jtac: i_IRAN_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -48545,8 +56991,6 @@ class i_IRAN_platoon_jtac: i_IRAN_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -48594,7 +57038,7 @@ class i_IRAN_platoon_medic: i_IRAN_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_squad_sl: CommonIndepIRAN
 {
@@ -48638,20 +57082,23 @@ class i_IRAN_squad_sl: CommonIndepIRAN
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -48943,7 +57390,7 @@ class i_IRAN_squad_cm: CommonIndepIRAN
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_squad_dm: CommonIndepIRAN
 {
@@ -49007,7 +57454,7 @@ class i_IRAN_squad_eng: CommonIndepIRAN
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_weapons_common: CommonIndepIRAN
 {
@@ -49462,7 +57909,7 @@ class i_IRAN_recon_common: CommonIndepIRAN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_recon_rm: i_IRAN_recon_common
 {
@@ -49522,13 +57969,11 @@ class i_IRAN_recon_tl: i_IRAN_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -49719,7 +58164,7 @@ class i_IRAN_recon_cm: i_IRAN_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_recon_dm: i_IRAN_recon_common
 {
@@ -49817,7 +58262,7 @@ class i_IRAN_recon_exp: i_IRAN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_diver_common: i_IRAN_recon_common
 {
@@ -49994,7 +58439,7 @@ class i_IRAN_diver_exp: i_IRAN_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_diver_cm: i_IRAN_diver_common
 {
@@ -50034,7 +58479,7 @@ class i_IRAN_diver_cm: i_IRAN_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_diver_dm: i_IRAN_diver_common
 {
@@ -50118,8 +58563,6 @@ class i_IRAN_diver_jtac: i_IRAN_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -50211,10 +58654,9 @@ class i_IRAN_sniper_spot: i_IRAN_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -50232,7 +58674,8 @@ class i_IRAN_sniper_spot: i_IRAN_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -50355,7 +58798,7 @@ class i_IRAN_sniper_exp: i_IRAN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_crew_common: CommonIndepIRAN
 {
@@ -50404,7 +58847,7 @@ class i_IRAN_crew_common: CommonIndepIRAN
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_crew_cmd: i_IRAN_crew_common
 {
@@ -50602,7 +59045,7 @@ class i_IRAN_logistics_common: CommonIndepIRAN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_medevac_common: CommonIndepIRAN
 {
@@ -50652,7 +59095,7 @@ class i_IRAN_medevac_common: CommonIndepIRAN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_IRAN_medevac_doc: i_IRAN_medevac_common
 {
@@ -50688,7 +59131,7 @@ class i_IRAN_medevac_doc: i_IRAN_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_IRAN_medevac_tl: i_IRAN_medevac_doc
 {
@@ -50764,7 +59207,8 @@ class CommonIndepIRAN_GRN: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
 	};
 	backpack[]=
 	{
@@ -50864,7 +59308,7 @@ class CommonIndepIRAN_GRN: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_GRN_company_common: CommonIndepIRAN_GRN
 {
@@ -51153,7 +59597,7 @@ class i_IRAN_GRN_platoon_jtac: i_IRAN_GRN_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -51164,8 +59608,6 @@ class i_IRAN_GRN_platoon_jtac: i_IRAN_GRN_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -51214,7 +59656,7 @@ class i_IRAN_GRN_platoon_medic: i_IRAN_GRN_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_GRN_squad_sl: CommonIndepIRAN_GRN
 {
@@ -51258,20 +59700,23 @@ class i_IRAN_GRN_squad_sl: CommonIndepIRAN_GRN
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -51566,7 +60011,7 @@ class i_IRAN_GRN_squad_cm: CommonIndepIRAN_GRN
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_GRN_squad_dm: CommonIndepIRAN_GRN
 {
@@ -51632,7 +60077,7 @@ class i_IRAN_GRN_squad_eng: CommonIndepIRAN_GRN
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_GRN_weapons_common: CommonIndepIRAN_GRN
 {
@@ -52089,7 +60534,7 @@ class i_IRAN_GRN_recon_common: CommonIndepIRAN_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_GRN_recon_rm: i_IRAN_GRN_recon_common
 {
@@ -52150,13 +60595,11 @@ class i_IRAN_GRN_recon_tl: i_IRAN_GRN_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -52348,7 +60791,7 @@ class i_IRAN_GRN_recon_cm: i_IRAN_GRN_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_GRN_recon_dm: i_IRAN_GRN_recon_common
 {
@@ -52446,7 +60889,7 @@ class i_IRAN_GRN_recon_exp: i_IRAN_GRN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_GRN_diver_common: i_IRAN_GRN_recon_common
 {
@@ -52623,7 +61066,7 @@ class i_IRAN_GRN_diver_exp: i_IRAN_GRN_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_GRN_diver_cm: i_IRAN_GRN_diver_common
 {
@@ -52663,7 +61106,7 @@ class i_IRAN_GRN_diver_cm: i_IRAN_GRN_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_GRN_diver_dm: i_IRAN_GRN_diver_common
 {
@@ -52747,8 +61190,6 @@ class i_IRAN_GRN_diver_jtac: i_IRAN_GRN_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -52836,10 +61277,9 @@ class i_IRAN_GRN_sniper_spot: i_IRAN_GRN_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -52857,7 +61297,8 @@ class i_IRAN_GRN_sniper_spot: i_IRAN_GRN_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -52978,7 +61419,7 @@ class i_IRAN_GRN_sniper_exp: i_IRAN_GRN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_GRN_crew_common: CommonIndepIRAN_GRN
 {
@@ -53027,7 +61468,7 @@ class i_IRAN_GRN_crew_common: CommonIndepIRAN_GRN
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_GRN_crew_cmd: i_IRAN_GRN_crew_common
 {
@@ -53227,7 +61668,7 @@ class i_IRAN_GRN_logistics_common: CommonIndepIRAN_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_GRN_medevac_common: CommonIndepIRAN_GRN
 {
@@ -53277,7 +61718,7 @@ class i_IRAN_GRN_medevac_common: CommonIndepIRAN_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_IRAN_GRN_medevac_doc: i_IRAN_GRN_medevac_common
 {
@@ -53313,7 +61754,7 @@ class i_IRAN_GRN_medevac_doc: i_IRAN_GRN_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_IRAN_GRN_medevac_tl: i_IRAN_GRN_medevac_doc
 {
@@ -53389,7 +61830,7 @@ class CommonIndepIRAN_URB: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_blk"
 	};
 	backpack[]=
 	{
@@ -53487,7 +61928,7 @@ class CommonIndepIRAN_URB: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_URB_company_common: CommonIndepIRAN_URB
 {
@@ -53775,7 +62216,7 @@ class i_IRAN_URB_platoon_jtac: i_IRAN_URB_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -53786,8 +62227,6 @@ class i_IRAN_URB_platoon_jtac: i_IRAN_URB_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -53835,7 +62274,7 @@ class i_IRAN_URB_platoon_medic: i_IRAN_URB_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_URB_squad_sl: CommonIndepIRAN_URB
 {
@@ -53879,20 +62318,23 @@ class i_IRAN_URB_squad_sl: CommonIndepIRAN_URB
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -54181,7 +62623,7 @@ class i_IRAN_URB_squad_cm: CommonIndepIRAN_URB
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_URB_squad_dm: CommonIndepIRAN_URB
 {
@@ -54245,7 +62687,7 @@ class i_IRAN_URB_squad_eng: CommonIndepIRAN_URB
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_URB_weapons_common: CommonIndepIRAN_URB
 {
@@ -54700,7 +63142,7 @@ class i_IRAN_URB_recon_common: CommonIndepIRAN_URB
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_URB_recon_rm: i_IRAN_URB_recon_common
 {
@@ -54760,13 +63202,11 @@ class i_IRAN_URB_recon_tl: i_IRAN_URB_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -54957,7 +63397,7 @@ class i_IRAN_URB_recon_cm: i_IRAN_URB_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_URB_recon_dm: i_IRAN_URB_recon_common
 {
@@ -55055,7 +63495,7 @@ class i_IRAN_URB_recon_exp: i_IRAN_URB_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_URB_diver_common: i_IRAN_URB_recon_common
 {
@@ -55232,7 +63672,7 @@ class i_IRAN_URB_diver_exp: i_IRAN_URB_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_URB_diver_cm: i_IRAN_URB_diver_common
 {
@@ -55272,7 +63712,7 @@ class i_IRAN_URB_diver_cm: i_IRAN_URB_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_URB_diver_dm: i_IRAN_URB_diver_common
 {
@@ -55356,8 +63796,6 @@ class i_IRAN_URB_diver_jtac: i_IRAN_URB_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -55449,10 +63887,9 @@ class i_IRAN_URB_sniper_spot: i_IRAN_URB_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -55470,7 +63907,8 @@ class i_IRAN_URB_sniper_spot: i_IRAN_URB_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -55593,7 +64031,7 @@ class i_IRAN_URB_sniper_exp: i_IRAN_URB_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_URB_crew_common: CommonIndepIRAN_URB
 {
@@ -55642,7 +64080,7 @@ class i_IRAN_URB_crew_common: CommonIndepIRAN_URB
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_URB_crew_cmd: i_IRAN_URB_crew_common
 {
@@ -55837,7 +64275,7 @@ class i_IRAN_URB_logistics_common: CommonIndepIRAN_URB
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_IRAN_URB_medevac_common: CommonIndepIRAN_URB
 {
@@ -55887,7 +64325,7 @@ class i_IRAN_URB_medevac_common: CommonIndepIRAN_URB
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_IRAN_URB_medevac_doc: i_IRAN_URB_medevac_common
 {
@@ -55923,7 +64361,7 @@ class i_IRAN_URB_medevac_doc: i_IRAN_URB_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_IRAN_URB_medevac_tl: i_IRAN_URB_medevac_doc
 {
@@ -56102,7 +64540,7 @@ class CommonIndepNATO_CTRG: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_CTRG_company_common: CommonIndepNATO_CTRG
 {
@@ -56393,7 +64831,7 @@ class i_NATO_CTRG_platoon_jtac: i_NATO_CTRG_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -56404,8 +64842,6 @@ class i_NATO_CTRG_platoon_jtac: i_NATO_CTRG_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -56453,7 +64889,7 @@ class i_NATO_CTRG_platoon_medic: i_NATO_CTRG_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_CTRG_squad_sl: CommonIndepNATO_CTRG
 {
@@ -56497,20 +64933,23 @@ class i_NATO_CTRG_squad_sl: CommonIndepNATO_CTRG
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -56798,7 +65237,7 @@ class i_NATO_CTRG_squad_cm: CommonIndepNATO_CTRG
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_CTRG_squad_dm: CommonIndepNATO_CTRG
 {
@@ -56862,7 +65301,7 @@ class i_NATO_CTRG_squad_eng: CommonIndepNATO_CTRG
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_CTRG_weapons_common: CommonIndepNATO_CTRG
 {
@@ -57315,7 +65754,7 @@ class i_NATO_CTRG_recon_common: CommonIndepNATO_CTRG
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_CTRG_recon_rm: i_NATO_CTRG_recon_common
 {
@@ -57373,13 +65812,11 @@ class i_NATO_CTRG_recon_tl: i_NATO_CTRG_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -57564,7 +66001,7 @@ class i_NATO_CTRG_recon_cm: i_NATO_CTRG_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_CTRG_recon_dm: i_NATO_CTRG_recon_common
 {
@@ -57660,7 +66097,7 @@ class i_NATO_CTRG_recon_exp: i_NATO_CTRG_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_CTRG_diver_common: i_NATO_CTRG_recon_common
 {
@@ -57831,7 +66268,7 @@ class i_NATO_CTRG_diver_exp: i_NATO_CTRG_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_CTRG_diver_cm: i_NATO_CTRG_diver_common
 {
@@ -57871,7 +66308,7 @@ class i_NATO_CTRG_diver_cm: i_NATO_CTRG_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_CTRG_diver_dm: i_NATO_CTRG_diver_common
 {
@@ -57953,8 +66390,6 @@ class i_NATO_CTRG_diver_jtac: i_NATO_CTRG_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -58040,10 +66475,9 @@ class i_NATO_CTRG_sniper_spot: i_NATO_CTRG_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -58061,7 +66495,8 @@ class i_NATO_CTRG_sniper_spot: i_NATO_CTRG_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -58180,7 +66615,7 @@ class i_NATO_CTRG_sniper_exp: i_NATO_CTRG_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_CTRG_crew_common: CommonIndepNATO_CTRG
 {
@@ -58229,7 +66664,7 @@ class i_NATO_CTRG_crew_common: CommonIndepNATO_CTRG
 	{
 		"ACRE_PRC152"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_CTRG_crew_cmd: i_NATO_CTRG_crew_common
 {
@@ -58430,7 +66865,7 @@ class i_NATO_CTRG_logistics_common: CommonIndepNATO_CTRG
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_CTRG_medevac_common: CommonIndepNATO_CTRG
 {
@@ -58485,7 +66920,7 @@ class i_NATO_CTRG_medevac_common: CommonIndepNATO_CTRG
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_NATO_CTRG_medevac_doc: i_NATO_CTRG_medevac_common
 {
@@ -58521,7 +66956,7 @@ class i_NATO_CTRG_medevac_doc: i_NATO_CTRG_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_NATO_CTRG_medevac_tl: i_NATO_CTRG_medevac_doc
 {
@@ -58705,7 +67140,7 @@ class CommonIndepNATO_MTP: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_MTP_company_common: CommonIndepNATO_MTP
 {
@@ -58725,7 +67160,7 @@ class i_NATO_MTP_company_common: CommonIndepNATO_MTP
 		{
 			"smg_01_f",
 			"optic_aco_grn",
-			"",
+			"acc_flashlight_smg_01",
 			""
 		}
 	};
@@ -59000,7 +67435,7 @@ class i_NATO_MTP_platoon_jtac: i_NATO_MTP_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -59011,8 +67446,6 @@ class i_NATO_MTP_platoon_jtac: i_NATO_MTP_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -59062,7 +67495,7 @@ class i_NATO_MTP_platoon_medic: i_NATO_MTP_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_MTP_squad_sl: CommonIndepNATO_MTP
 {
@@ -59107,20 +67540,23 @@ class i_NATO_MTP_squad_sl: CommonIndepNATO_MTP
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -59417,7 +67853,7 @@ class i_NATO_MTP_squad_cm: CommonIndepNATO_MTP
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_MTP_squad_dm: CommonIndepNATO_MTP
 {
@@ -59483,7 +67919,7 @@ class i_NATO_MTP_squad_eng: CommonIndepNATO_MTP
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_MTP_weapons_common: CommonIndepNATO_MTP
 {
@@ -59970,7 +68406,7 @@ class i_NATO_MTP_recon_common: CommonIndepNATO_MTP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_MTP_recon_rm: i_NATO_MTP_recon_common
 {
@@ -60043,13 +68479,11 @@ class i_NATO_MTP_recon_tl: i_NATO_MTP_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -60263,7 +68697,7 @@ class i_NATO_MTP_recon_cm: i_NATO_MTP_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_MTP_recon_dm: i_NATO_MTP_recon_common
 {
@@ -60374,7 +68808,7 @@ class i_NATO_MTP_recon_exp: i_NATO_MTP_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_MTP_diver_common: i_NATO_MTP_recon_common
 {
@@ -60545,7 +68979,7 @@ class i_NATO_MTP_diver_exp: i_NATO_MTP_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_MTP_diver_cm: i_NATO_MTP_diver_common
 {
@@ -60585,7 +69019,7 @@ class i_NATO_MTP_diver_cm: i_NATO_MTP_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_MTP_diver_dm: i_NATO_MTP_diver_common
 {
@@ -60667,8 +69101,6 @@ class i_NATO_MTP_diver_jtac: i_NATO_MTP_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -60763,10 +69195,9 @@ class i_NATO_MTP_sniper_spot: i_NATO_MTP_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -60784,7 +69215,8 @@ class i_NATO_MTP_sniper_spot: i_NATO_MTP_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -60911,7 +69343,7 @@ class i_NATO_MTP_sniper_exp: i_NATO_MTP_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_MTP_crew_common: CommonIndepNATO_MTP
 {
@@ -60960,7 +69392,7 @@ class i_NATO_MTP_crew_common: CommonIndepNATO_MTP
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_MTP_crew_cmd: i_NATO_MTP_crew_common
 {
@@ -61170,7 +69602,7 @@ class i_NATO_MTP_logistics_common: CommonIndepNATO_MTP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_MTP_medevac_common: CommonIndepNATO_MTP
 {
@@ -61225,7 +69657,7 @@ class i_NATO_MTP_medevac_common: CommonIndepNATO_MTP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_NATO_MTP_medevac_doc: i_NATO_MTP_medevac_common
 {
@@ -61262,7 +69694,7 @@ class i_NATO_MTP_medevac_doc: i_NATO_MTP_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_NATO_MTP_medevac_tl: i_NATO_MTP_medevac_doc
 {
@@ -61437,7 +69869,7 @@ class CommonIndepNATO_TRPC: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_TRPC_company_common: CommonIndepNATO_TRPC
 {
@@ -61456,7 +69888,7 @@ class i_NATO_TRPC_company_common: CommonIndepNATO_TRPC
 		{
 			"smg_01_f",
 			"optic_aco",
-			"",
+			"acc_flashlight_smg_01",
 			""
 		}
 	};
@@ -61723,7 +70155,7 @@ class i_NATO_TRPC_platoon_jtac: i_NATO_TRPC_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -61734,8 +70166,6 @@ class i_NATO_TRPC_platoon_jtac: i_NATO_TRPC_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -61783,7 +70213,7 @@ class i_NATO_TRPC_platoon_medic: i_NATO_TRPC_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_TRPC_squad_sl: CommonIndepNATO_TRPC
 {
@@ -61827,20 +70257,23 @@ class i_NATO_TRPC_squad_sl: CommonIndepNATO_TRPC
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -62129,7 +70562,7 @@ class i_NATO_TRPC_squad_cm: CommonIndepNATO_TRPC
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_TRPC_squad_dm: CommonIndepNATO_TRPC
 {
@@ -62193,7 +70626,7 @@ class i_NATO_TRPC_squad_eng: CommonIndepNATO_TRPC
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_TRPC_weapons_common: CommonIndepNATO_TRPC
 {
@@ -62655,7 +71088,7 @@ class i_NATO_TRPC_recon_common: CommonIndepNATO_TRPC
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_TRPC_recon_rm: i_NATO_TRPC_recon_common
 {
@@ -62720,13 +71153,11 @@ class i_NATO_TRPC_recon_tl: i_NATO_TRPC_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -62924,7 +71355,7 @@ class i_NATO_TRPC_recon_cm: i_NATO_TRPC_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_TRPC_recon_dm: i_NATO_TRPC_recon_common
 {
@@ -63027,7 +71458,7 @@ class i_NATO_TRPC_recon_exp: i_NATO_TRPC_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_TRPC_diver_common: i_NATO_TRPC_recon_common
 {
@@ -63198,7 +71629,7 @@ class i_NATO_TRPC_diver_exp: i_NATO_TRPC_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_TRPC_diver_cm: i_NATO_TRPC_diver_common
 {
@@ -63238,7 +71669,7 @@ class i_NATO_TRPC_diver_cm: i_NATO_TRPC_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_TRPC_diver_dm: i_NATO_TRPC_diver_common
 {
@@ -63320,8 +71751,6 @@ class i_NATO_TRPC_diver_jtac: i_NATO_TRPC_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -63407,10 +71836,9 @@ class i_NATO_TRPC_sniper_spot: i_NATO_TRPC_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -63428,7 +71856,8 @@ class i_NATO_TRPC_sniper_spot: i_NATO_TRPC_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -63547,7 +71976,7 @@ class i_NATO_TRPC_sniper_exp: i_NATO_TRPC_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_TRPC_crew_common: CommonIndepNATO_TRPC
 {
@@ -63596,7 +72025,7 @@ class i_NATO_TRPC_crew_common: CommonIndepNATO_TRPC
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_TRPC_crew_cmd: i_NATO_TRPC_crew_common
 {
@@ -63793,7 +72222,7 @@ class i_NATO_TRPC_logistics_common: CommonIndepNATO_TRPC
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_TRPC_medevac_common: CommonIndepNATO_TRPC
 {
@@ -63843,7 +72272,7 @@ class i_NATO_TRPC_medevac_common: CommonIndepNATO_TRPC
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_NATO_TRPC_medevac_doc: i_NATO_TRPC_medevac_common
 {
@@ -63879,7 +72308,7 @@ class i_NATO_TRPC_medevac_doc: i_NATO_TRPC_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_NATO_TRPC_medevac_tl: i_NATO_TRPC_medevac_doc
 {
@@ -64057,7 +72486,7 @@ class CommonIndepNATO_WDL: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_WDL_company_common: CommonIndepNATO_WDL
 {
@@ -64075,7 +72504,7 @@ class i_NATO_WDL_company_common: CommonIndepNATO_WDL
 	{
 		"smg_01_f",
 		"optic_aco_grn",
-		"",
+		"acc_flashlight_smg_01",
 		""
 	};
 	magazines[]=
@@ -64346,7 +72775,7 @@ class i_NATO_WDL_platoon_jtac: i_NATO_WDL_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -64357,8 +72786,6 @@ class i_NATO_WDL_platoon_jtac: i_NATO_WDL_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -64406,7 +72833,7 @@ class i_NATO_WDL_platoon_medic: i_NATO_WDL_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_WDL_squad_sl: CommonIndepNATO_WDL
 {
@@ -64450,20 +72877,23 @@ class i_NATO_WDL_squad_sl: CommonIndepNATO_WDL
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -64752,7 +73182,7 @@ class i_NATO_WDL_squad_cm: CommonIndepNATO_WDL
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_WDL_squad_dm: CommonIndepNATO_WDL
 {
@@ -64816,7 +73246,7 @@ class i_NATO_WDL_squad_eng: CommonIndepNATO_WDL
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_WDL_weapons_common: CommonIndepNATO_WDL
 {
@@ -65281,7 +73711,7 @@ class i_NATO_WDL_recon_common: CommonIndepNATO_WDL
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_WDL_recon_rm: i_NATO_WDL_recon_common
 {
@@ -65346,13 +73776,11 @@ class i_NATO_WDL_recon_tl: i_NATO_WDL_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -65550,7 +73978,7 @@ class i_NATO_WDL_recon_cm: i_NATO_WDL_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_WDL_recon_dm: i_NATO_WDL_recon_common
 {
@@ -65653,7 +74081,7 @@ class i_NATO_WDL_recon_exp: i_NATO_WDL_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_WDL_diver_common: i_NATO_WDL_recon_common
 {
@@ -65824,7 +74252,7 @@ class i_NATO_WDL_diver_exp: i_NATO_WDL_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_WDL_diver_cm: i_NATO_WDL_diver_common
 {
@@ -65864,7 +74292,7 @@ class i_NATO_WDL_diver_cm: i_NATO_WDL_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_WDL_diver_dm: i_NATO_WDL_diver_common
 {
@@ -65946,8 +74374,6 @@ class i_NATO_WDL_diver_jtac: i_NATO_WDL_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -66033,10 +74459,9 @@ class i_NATO_WDL_sniper_spot: i_NATO_WDL_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -66054,7 +74479,8 @@ class i_NATO_WDL_sniper_spot: i_NATO_WDL_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -66173,7 +74599,7 @@ class i_NATO_WDL_sniper_exp: i_NATO_WDL_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_WDL_crew_common: CommonIndepNATO_WDL
 {
@@ -66222,7 +74648,7 @@ class i_NATO_WDL_crew_common: CommonIndepNATO_WDL
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_WDL_crew_cmd: i_NATO_WDL_crew_common
 {
@@ -66422,7 +74848,7 @@ class i_NATO_WDL_logistics_common: CommonIndepNATO_WDL
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_NATO_WDL_medevac_common: CommonIndepNATO_WDL
 {
@@ -66477,7 +74903,7 @@ class i_NATO_WDL_medevac_common: CommonIndepNATO_WDL
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_NATO_WDL_medevac_doc: i_NATO_WDL_medevac_common
 {
@@ -66513,7 +74939,7 @@ class i_NATO_WDL_medevac_doc: i_NATO_WDL_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_NATO_WDL_medevac_tl: i_NATO_WDL_medevac_doc
 {
@@ -66562,6 +74988,3279 @@ class i_NATO_WDL_medevac_heli: i_NATO_WDL_medevac_common
 	};
 };
 class i_NATO_WDL_medevac_drv: i_NATO_WDL_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Driver";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_Banana"
+	};
+};
+class CommonIndepSYND: CommonDefault
+{
+	side="Indep";
+	sideShort="i";
+	faction="SYND";
+	scope=0;
+	uniform[]=
+	{
+		"U_I_C_Soldier_Bandit_1_F",
+		"U_I_C_Soldier_Bandit_2_F",
+		"U_I_C_Soldier_Bandit_3_F",
+		"U_I_C_Soldier_Bandit_4_F",
+		"U_I_C_Soldier_Bandit_5_F"
+	};
+	vest[]=
+	{
+		"V_LegStrapBag_black_F",
+		"V_LegStrapBag_coyote_F",
+		"V_LegStrapBag_olive_F"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_rgr",
+		"B_AssaultPack_khk",
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_AssaultPack_tna_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akm",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhsusf_weap_m1911a1",
+			"",
+			"",
+			""
+		}
+	};
+	launcher[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black",
+		"g_bandanna_beast",
+		"g_bandanna_blk",
+		"g_bandanna_khk",
+		"g_bandanna_oli",
+		"g_bandanna_tan"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		""
+	};
+	map[]=
+	{
+		""
+	};
+	gps[]=
+	{
+		""
+	};
+	compass[]=
+	{
+		"ItemCompass"
+	};
+	watch[]=
+	{
+		"ItemWatch"
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_SYND_company_common: CommonIndepSYND
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_I_C_Soldier_Camo_F"
+	};
+	vest[]=
+	{
+		"V_Rangemaster_belt"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74u",
+			"rhs_acc_pgs64_74u",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_aks74un",
+			"rhs_acc_pgs64_74un",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		3
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class i_SYND_company_co: i_SYND_company_common
+{
+	scope=1;
+	displayName="Company Commanding Officer";
+	headgear[]=
+	{
+		"H_Hat_Safari_olive_F"
+	};
+};
+class i_SYND_company_xo: i_SYND_company_common
+{
+	scope=1;
+	displayName="Company Executive Officer";
+	gps[]=
+	{
+		"i_EasyTrack_Tablet"
+	};
+	headgear[]=
+	{
+		"H_Hat_Safari_sand_F"
+	};
+};
+class i_SYND_company_mio: i_SYND_company_common
+{
+	scope=1;
+	displayName="Mission Intelligence Officer";
+	gps[]=
+	{
+		"i_EasyTrack_Tablet"
+	};
+};
+class i_SYND_company_colo: i_SYND_company_common
+{
+	scope=1;
+	displayName="Chief of Logistics";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class i_SYND_company_fo: i_SYND_company_common
+{
+	scope=1;
+	displayName="Forward Observer";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_RangeTable_82mm"
+	};
+};
+class i_SYND_platoon_common: CommonIndepSYND
+{
+	scope=0;
+	vest[]=
+	{
+		"V_BandollierB_khk",
+		"V_BandollierB_cbr",
+		"V_BandollierB_rgr",
+		"V_BandollierB_blk",
+		"V_BandollierB_oli",
+		"V_Pocketed_black_F",
+		"V_Pocketed_coyote_F",
+		"V_Pocketed_olive_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_aks74_2",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		5,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class i_SYND_platoon_pl: i_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Leader";
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+};
+class i_SYND_platoon_psgt: i_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Sergeant";
+	gps[]=
+	{
+		"i_EasyTrack_Tablet"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+};
+class i_SYND_platoon_uav: i_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon UAV Operator";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_UAVBattery",
+		"i_UavTerminal"
+	};
+};
+class i_SYND_platoon_jtac: i_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon JTAC";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		5,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"Laserbatteries",
+		"rhs_GRD40_White",
+		2,
+		"rhs_GRD40_Green",
+		2,
+		"rhs_GRD40_Red",
+		2,
+		"rhs_VG40MD_Green",
+		2,
+		"rhs_VG40MD_Red",
+		2,
+		"rhs_VG40MD_White",
+		2,
+		"rhs_VG40OP_white",
+		2,
+		"rhs_VG40OP_green",
+		2,
+		"rhs_VG40OP_red",
+		2
+	};
+};
+class i_SYND_platoon_medic: i_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Medic";
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_personalAidKit",
+		2,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		50,
+		"ACE_quikclot",
+		30,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_SYND_squad_sl: CommonIndepSYND
+{
+	scope=1;
+	displayName="Squad Leader";
+	vest[]=
+	{
+		"V_I_G_resistanceLeader_F",
+		"V_TacVest_khk",
+		"V_TacVest_brn",
+		"V_TacVest_oli",
+		"V_TacVest_blk",
+		"V_TacVest_camo"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn_gp25",
+			"",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akm_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_VOG25",
+		10,
+		"rhs_GRD40_White",
+		2,
+		"rhs_GRD40_Green",
+		"rhs_GRD40_Red",
+		"rhs_VG40MD_Green",
+		"rhs_VG40MD_Red",
+		"rhs_VG40MD_White",
+		"rhs_VG40OP_white",
+		2,
+		"rhs_VG40OP_green",
+		2,
+		"rhs_VG40OP_red",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class i_SYND_squad_ftl: CommonIndepSYND
+{
+	scope=1;
+	displayName="Squad Fireteam Leader";
+	vest[]=
+	{
+		"V_I_G_resistanceLeader_F",
+		"V_TacVest_khk",
+		"V_TacVest_brn",
+		"V_TacVest_oli",
+		"V_TacVest_blk",
+		"V_TacVest_camo"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item"
+	};
+};
+class i_SYND_squad_ar: CommonIndepSYND
+{
+	scope=1;
+	displayName="Squad Automatic Rifleman";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_pkm",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_100Rnd_762x54mmR",
+		4,
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"MiniGrenade",
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black"
+	};
+};
+class i_SYND_squad_gl: CommonIndepSYND
+{
+	scope=1;
+	displayName="Squad Grenadier";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn_gp25",
+			"",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akm_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_VOG25",
+		16,
+		"rhs_VOG25P",
+		6,
+		"rhs_VG40TB",
+		4,
+		"rhs_GRD40_White",
+		6,
+		"rhs_GDM40",
+		2
+	};
+};
+class i_SYND_squad_gl2: CommonIndepSYND
+{
+	scope=1;
+	displayName="Squad Grenadier (M32)";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		"rhs_weap_m32"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		5,
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		5,
+		"rhsusf_mag_6Rnd_M714_white",
+		1,
+		"rhsusf_mag_6Rnd_M576_Buckshot",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class i_SYND_squad_light: CommonIndepSYND
+{
+	scope=1;
+	displayName="Squad Rifleman (light)";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtk",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtkakm",
+			""
+		},
+		
+		{
+			"rhs_weap_akm",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtkakm",
+			""
+		}
+	};
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+};
+class i_SYND_squad_aar: CommonIndepSYND
+{
+	scope=1;
+	displayName="Squad Rifleman";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtk",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtkakm",
+			""
+		},
+		
+		{
+			"rhs_weap_akm",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtkakm",
+			""
+		}
+	};
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	magazines[]=
+	{
+		"ACE_SpareBarrel",
+		"rhs_100Rnd_762x54mmR",
+		2,
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class i_SYND_squad_lat: CommonIndepSYND
+{
+	scope=1;
+	displayName="Squad Light Anti-Tank Rifleman";
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	backpack[]=
+	{
+		"rhs_rpg_empty"
+	};
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_rpg7",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7V_mag",
+		3
+	};
+};
+class i_SYND_squad_cm: CommonIndepSYND
+{
+	scope=1;
+	displayName="Squad Combat Medic";
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		4,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV_500",
+		2,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_SYND_squad_dm: CommonIndepSYND
+{
+	scope=1;
+	displayName="Squad Designated Marksman";
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103",
+			"rhs_acc_dtk",
+			"rhs_acc_pso1m2",
+			""
+		}
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeCard"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class i_SYND_squad_eng: CommonIndepSYND
+{
+	scope=1;
+	displayName="Squad Combat Engineer";
+	vest[]=
+	{
+		"V_BandollierB_khk",
+		"V_BandollierB_cbr",
+		"V_BandollierB_rgr",
+		"V_BandollierB_blk",
+		"V_BandollierB_oli",
+		"V_Pocketed_black_F",
+		"V_Pocketed_coyote_F",
+		"V_Pocketed_olive_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ToolKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_SYND_weapons_common: CommonIndepSYND
+{
+	scope=0;
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class i_SYND_assistant_common: i_SYND_weapons_common
+{
+	scope=0;
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class i_SYND_weapons_mg: i_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Medium Machine Gunner";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_pkp",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"rhs_100Rnd_762x54mmR",
+		3,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black"
+	};
+};
+class i_SYND_weapons_amg: i_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant MMG";
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_100Rnd_762x54mmR",
+		3,
+		"ACE_SpareBarrel"
+	};
+};
+class i_SYND_weapons_hmg: i_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Heavy Machine Gunner";
+	backpack[]=
+	{
+		"I_HMG_01_weapon_F"
+	};
+};
+class i_SYND_weapons_ahmg: i_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant HMG";
+	backpack[]=
+	{
+		"I_HMG_01_support_F"
+	};
+};
+class i_SYND_weapons_gmg: i_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Grenade Machine Gunner";
+	backpack[]=
+	{
+		"I_GMG_01_weapon_F"
+	};
+};
+class i_SYND_weapons_agmg: i_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant GMG";
+	backpack[]=
+	{
+		"I_HMG_01_support_F"
+	};
+};
+class i_SYND_weapons_at: i_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad AT-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_rpg7",
+			"rhs_acc_pgo7v3",
+			"",
+			""
+		}
+	};
+};
+class i_SYND_weapons_aat: i_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad AT-Assistant";
+	backpack[]=
+	{
+		"B_Carryall_khk",
+		"B_Carryall_oli"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7V_mag",
+		4
+	};
+};
+class i_SYND_weapons_atgm: i_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad ATGM-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_i_Titan_short_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT"
+	};
+};
+class i_SYND_weapons_aatgm: i_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad ATGM-Assistant";
+	backpack[]=
+	{
+		"B_Carryall_khk",
+		"B_Carryall_oli"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT",
+		2,
+		"Titan_AP"
+	};
+};
+class i_SYND_weapons_aa: i_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad AA-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_igla",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_mag_9k38_rocket"
+	};
+};
+class i_SYND_weapons_aaa: i_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad AA-Assistant";
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_mag_9k38_rocket",
+		2
+	};
+};
+class i_SYND_weapons_mort: i_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Gunner";
+	backpack[]=
+	{
+		"I_Mortar_01_weapon_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class i_SYND_weapons_amort: i_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Assistant";
+	backpack[]=
+	{
+		"I_Mortar_01_support_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class i_SYND_weapons_acmort: i_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Ammo Carrier";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_1Rnd_82mm_Mo_HE",
+		5
+	};
+};
+class i_SYND_recon_common: CommonIndepSYND
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_I_C_Soldier_Para_1_F",
+		"U_I_C_Soldier_Para_2_F",
+		"U_I_C_Soldier_Para_3_F",
+		"U_I_C_Soldier_Para_4_F",
+		"U_I_C_Soldier_Para_5_F"
+	};
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_rgr",
+		"B_AssaultPack_khk",
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_AssaultPack_tna_f"
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhs_weap_tt33",
+			"",
+			"",
+			""
+		}
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak105",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_1p63"
+		},
+		
+		{
+			"rhs_weap_ak74",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_2mag",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_camo",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		},
+		
+		{
+			"rhs_weap_ak74_2",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black",
+		"g_bandanna_beast",
+		"g_bandanna_blk",
+		"g_bandanna_khk",
+		"g_bandanna_oli",
+		"g_bandanna_tan"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_SYND_recon_rm: i_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Operator";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_wirecutter"
+	};
+};
+class i_SYND_recon_tl: i_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Leader";
+	vest[]=
+	{
+		"V_I_G_resistanceLeader_F",
+		"V_TacVest_khk",
+		"V_TacVest_brn",
+		"V_TacVest_oli",
+		"V_TacVest_blk",
+		"V_TacVest_camo"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_fullplum_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_VOG25",
+		10,
+		"rhs_GRD40_White",
+		2,
+		"UGL_COL1",
+		"i_ir_grenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_IR_Strobe_Item"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class i_SYND_recon_ar: i_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Automatic Rifleman";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_RPK12",
+			"rhs_acc_ekp8_18",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"rhs_45Rnd_545X39_7N22_AK",
+		8,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ace_banana"
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black"
+	};
+};
+class i_SYND_recon_gl: i_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Grenadier";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_fullplum_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_VOG25",
+		16,
+		"rhs_VOG25P",
+		6,
+		"rhs_VG40TB",
+		4,
+		"rhs_GRD40_White",
+		6,
+		"rhs_GDM40",
+		2
+	};
+};
+class i_SYND_recon_lat: i_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Light Anti-Tank";
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_rpg7",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7V_mag",
+		3
+	};
+};
+class i_SYND_recon_cm: i_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Medic";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		6,
+		"ACE_epinephrine",
+		12,
+		"ACE_salineIV_500",
+		3,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_SYND_recon_dm: i_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Marksman";
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_M14dmr_Rail",
+			"optic_KHS_old",
+			"",
+			""
+		},
+		
+		{
+			"hlc_rifle_M21_Rail",
+			"optic_KHS_old",
+			"",
+			""
+		},
+		
+		{
+			"srifle_DMR_03_khaki_F",
+			"optic_KHS_old",
+			"",
+			"bipod_01_F_khk"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"20Rnd_762x51_Mag",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"bipod_03_F_oli"
+	};
+};
+class i_SYND_recon_exp: i_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Explosive Specialist";
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	secondary[]=
+	{
+		"ACE_VMM3"
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"DemoCharge_Remote_Mag",
+		4,
+		"SatchelCharge_Remote_Mag",
+		"SLAMDirectionalMine_Wire_Mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class i_SYND_diver_common: i_SYND_recon_common
+{
+	scope=0;
+	displayName="Combat Diver Operator";
+	uniform[]=
+	{
+		"U_I_Wetsuit"
+	};
+	vest[]=
+	{
+		"V_RebreatherB"
+	};
+	backpack[]=
+	{
+		"B_Carryall_khk",
+		"B_Carryall_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak105",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_1p63"
+		},
+		
+		{
+			"rhs_weap_ak74",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_2mag",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_camo",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		},
+		
+		{
+			"rhs_weap_ak74_2",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhs_weap_tt33",
+			"",
+			"",
+			""
+		}
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F"
+	};
+	goggles[]=
+	{
+		"G_i_Diving"
+	};
+	headgear[]=
+	{
+		""
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+};
+class i_SYND_diver_rm: i_SYND_diver_common
+{
+	scope=1;
+};
+class i_SYND_diver_tl: i_SYND_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Team Leader";
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F",
+		"ACE_MapTools"
+	};
+};
+class i_SYND_diver_exp: i_SYND_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Explosive Specialist";
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"ACE_M84",
+		4,
+		"DemoCharge_Remote_Mag",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F",
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class i_SYND_diver_cm: i_SYND_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Medic";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F",
+		"W_Defibrillator",
+		"ACE_fieldDressing",
+		5,
+		"ACE_elasticBandage",
+		15,
+		"ACE_quikclot",
+		15,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV",
+		4,
+		"ACE_surgicalKit"
+	};
+	binoculars[]=
+	{
+		"ACE_MX2A"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_SYND_diver_dm: i_SYND_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Marksman";
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_M14dmr_Rail",
+			"optic_KHS_old",
+			"",
+			""
+		},
+		
+		{
+			"hlc_rifle_M21_Rail",
+			"optic_KHS_old",
+			"",
+			""
+		},
+		
+		{
+			"srifle_DMR_03_khaki_F",
+			"optic_KHS_old",
+			"",
+			"bipod_01_F_khk"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"20Rnd_762x51_Mag",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F",
+		"bipod_03_F_oli"
+	};
+};
+class i_SYND_diver_jtac: i_SYND_diver_tl
+{
+	scope=1;
+	displayName="Combat Diver Terminal Attack Controller";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_fullplum_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		10,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2,
+		"Laserbatteries",
+		"rhs_GRD40_Green",
+		2,
+		"rhs_GRD40_Red",
+		2,
+		"rhs_VG40MD_Green",
+		2,
+		"rhs_VG40MD_Red",
+		2,
+		"rhs_VG40MD_White",
+		2
+	};
+};
+class i_SYND_sniper_common: i_SYND_recon_common
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_I_C_Soldier_Para_1_F",
+		"U_I_C_Soldier_Para_2_F",
+		"U_I_C_Soldier_Para_3_F",
+		"U_I_C_Soldier_Para_4_F",
+		"U_I_C_Soldier_Para_5_F"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"ACE_Rangecard"
+	};
+};
+class i_SYND_sniper_spot: i_SYND_recon_common
+{
+	scope=1;
+	displayName="Sniper Spotter";
+	uniform[]=
+	{
+		"U_I_C_Soldier_Para_1_F",
+		"U_I_C_Soldier_Para_2_F",
+		"U_I_C_Soldier_Para_3_F",
+		"U_I_C_Soldier_Para_4_F",
+		"U_I_C_Soldier_Para_5_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_fullplum_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"i_ir_grenade",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_545x39_Mag_F",
+		8,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"rhs_VOG25",
+		10,
+		"rhs_GRD40_White",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_SpottingScope",
+		"ACE_Tripod",
+		"ACE_ATragMX",
+		"ACE_IR_Strobe_Item",
+		"ACE_Rangecard",
+		"ACE_Kestrel4500"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class i_SYND_sniper_ap: i_SYND_sniper_common
+{
+	scope=1;
+	displayName="Sniper (Anti-Personel)";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_m24sws_ghillie",
+			"rhsusf_acc_LEUPOLDMK4_2_d",
+			"rhsusf_acc_harris_swivel",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"rhsusf_5Rnd_762x51_m118_special_Mag",
+		16,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+};
+class i_SYND_sniper_am: i_SYND_sniper_common
+{
+	scope=1;
+	displayName="Sniper (Anti-Materiel)";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_M107_w",
+			"rhsusf_acc_M8541",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"rhsusf_mag_10Rnd_STD_50BMG_M33",
+		5,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+};
+class i_SYND_sniper_exp: i_SYND_recon_common
+{
+	scope=1;
+	displayName="Sniper Explosive Specialist";
+	uniform[]=
+	{
+		"U_I_C_Soldier_Para_1_F",
+		"U_I_C_Soldier_Para_2_F",
+		"U_I_C_Soldier_Para_3_F",
+		"U_I_C_Soldier_Para_4_F",
+		"U_I_C_Soldier_Para_5_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_3",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_camo",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_desert",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"APERSTripMine_Wire_mag",
+		2,
+		"ClaymoreDirectionalMine_Remote_mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class i_SYND_crew_common: CommonIndepSYND
+{
+	scope=1;
+	displayName="Armored Vehicle Crew";
+	uniform[]=
+	{
+		"xru_u_coveralls_bandit"
+	};
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"V_LegStrapBag_black_F",
+		"V_LegStrapBag_coyote_F",
+		"V_LegStrapBag_olive_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_aks74_2",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		6,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_SYND_crew_cmd: i_SYND_crew_common
+{
+	scope=1;
+	displayName="Armored Vehicle Commander";
+	backpack[]=
+	{
+		"B_AssaultPack_rgr",
+		"B_AssaultPack_khk",
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_AssaultPack_tna_f"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class i_SYND_crew_jet: CommonIndepSYND
+{
+	scope=1;
+	displayName="Jet Pilot";
+	uniform[]=
+	{
+		"U_C_Man_casual_2_F",
+		"U_C_Man_casual_1_F",
+		"U_C_Man_casual_3_F"
+	};
+	vest[]=
+	{
+		""
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	watch[]=
+	{
+		"ACE_Altimeter"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class i_SYND_crew_heli: i_SYND_crew_common
+{
+	scope=1;
+	displayName="Helicopter Crew";
+	uniform[]=
+	{
+		"U_C_Man_casual_2_F",
+		"U_C_Man_casual_1_F",
+		"U_C_Man_casual_3_F"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	map[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class i_SYND_crew_helipilot: i_SYND_crew_heli
+{
+	scope=1;
+	displayName="Helicopter Pilot/Copilot/Gunner";
+	backpack[]=
+	{
+		"B_AssaultPack_rgr",
+		"B_AssaultPack_khk",
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_AssaultPack_tna_f"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	nvgs[]=
+	{
+		""
+	};
+};
+class i_SYND_logistics_common: CommonIndepSYND
+{
+	scope=1;
+	displayName="Logistician";
+	vest[]=
+	{
+		"V_BandollierB_khk",
+		"V_BandollierB_cbr",
+		"V_BandollierB_rgr",
+		"V_BandollierB_blk",
+		"V_BandollierB_oli",
+		"V_Pocketed_black_F",
+		"V_Pocketed_coyote_F",
+		"V_Pocketed_olive_F"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_aks74_2",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		6,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ToolKit"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class i_SYND_medevac_common: CommonIndepSYND
+{
+	scope=0;
+	primary[]=
+	{
+		""
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhsusf_weap_m1911a1",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class i_SYND_medevac_doc: i_SYND_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Doctor";
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class i_SYND_medevac_tl: i_SYND_medevac_doc
+{
+	scope=1;
+	displayName="Medical Service Team Leader";
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class i_SYND_medevac_heli: i_SYND_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Helicopter Pilot";
+	uniform[]=
+	{
+		"U_C_Man_casual_2_F",
+		"U_C_Man_casual_1_F",
+		"U_C_Man_casual_3_F"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"i_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	nvgs[]=
+	{
+		""
+	};
+};
+class i_SYND_medevac_drv: i_SYND_medevac_common
 {
 	scope=1;
 	displayName="Medical Service Driver";
@@ -66696,7 +78395,7 @@ class CommonIndepUSARMY_OCP: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USARMY_OCP_company_common: CommonIndepUSARMY_OCP
 {
@@ -67010,7 +78709,7 @@ class i_USARMY_OCP_platoon_jtac: i_USARMY_OCP_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -67021,8 +78720,6 @@ class i_USARMY_OCP_platoon_jtac: i_USARMY_OCP_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -67072,7 +78769,7 @@ class i_USARMY_OCP_platoon_medic: i_USARMY_OCP_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USARMY_OCP_squad_sl: CommonIndepUSARMY_OCP
 {
@@ -67116,20 +78813,23 @@ class i_USARMY_OCP_squad_sl: CommonIndepUSARMY_OCP
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -67519,7 +79219,7 @@ class i_USARMY_OCP_squad_cm: CommonIndepUSARMY_OCP
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USARMY_OCP_squad_dm: CommonIndepUSARMY_OCP
 {
@@ -67583,7 +79283,7 @@ class i_USARMY_OCP_squad_eng: CommonIndepUSARMY_OCP
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USARMY_OCP_weapons_common: CommonIndepUSARMY_OCP
 {
@@ -68066,7 +79766,7 @@ class i_USARMY_OCP_recon_common: CommonIndepUSARMY_OCP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USARMY_OCP_recon_rm: i_USARMY_OCP_recon_common
 {
@@ -68138,13 +79838,11 @@ class i_USARMY_OCP_recon_tl: i_USARMY_OCP_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -68217,7 +79915,7 @@ class i_USARMY_OCP_recon_ar: i_USARMY_OCP_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"acc_pointer_ir"
+		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -68342,7 +80040,7 @@ class i_USARMY_OCP_recon_cm: i_USARMY_OCP_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USARMY_OCP_recon_dm: i_USARMY_OCP_recon_common
 {
@@ -68454,7 +80152,7 @@ class i_USARMY_OCP_recon_exp: i_USARMY_OCP_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_USARMY_OCP_diver_common: i_USARMY_OCP_recon_common
 {
@@ -68626,7 +80324,7 @@ class i_USARMY_OCP_diver_exp: i_USARMY_OCP_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_USARMY_OCP_diver_cm: i_USARMY_OCP_diver_common
 {
@@ -68666,7 +80364,7 @@ class i_USARMY_OCP_diver_cm: i_USARMY_OCP_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USARMY_OCP_diver_dm: i_USARMY_OCP_diver_common
 {
@@ -68748,8 +80446,6 @@ class i_USARMY_OCP_diver_jtac: i_USARMY_OCP_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -68837,10 +80533,9 @@ class i_USARMY_OCP_sniper_spot: i_USARMY_OCP_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -68858,7 +80553,8 @@ class i_USARMY_OCP_sniper_spot: i_USARMY_OCP_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -68983,7 +80679,7 @@ class i_USARMY_OCP_sniper_exp: i_USARMY_OCP_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_USARMY_OCP_crew_common: CommonIndepUSARMY_OCP
 {
@@ -69035,7 +80731,7 @@ class i_USARMY_OCP_crew_common: CommonIndepUSARMY_OCP
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USARMY_OCP_crew_cmd: i_USARMY_OCP_crew_common
 {
@@ -69246,7 +80942,7 @@ class i_USARMY_OCP_logistics_common: CommonIndepUSARMY_OCP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USARMY_OCP_medevac_common: CommonIndepUSARMY_OCP
 {
@@ -69301,7 +80997,7 @@ class i_USARMY_OCP_medevac_common: CommonIndepUSARMY_OCP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_USARMY_OCP_medevac_doc: i_USARMY_OCP_medevac_common
 {
@@ -69339,7 +81035,7 @@ class i_USARMY_OCP_medevac_doc: i_USARMY_OCP_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_USARMY_OCP_medevac_tl: i_USARMY_OCP_medevac_doc
 {
@@ -69553,7 +81249,7 @@ class CommonIndepUSMC_D: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_D_company_common: CommonIndepUSMC_D
 {
@@ -69866,7 +81562,7 @@ class i_USMC_D_platoon_jtac: i_USMC_D_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -69877,8 +81573,6 @@ class i_USMC_D_platoon_jtac: i_USMC_D_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -69927,7 +81621,7 @@ class i_USMC_D_platoon_medic: i_USMC_D_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_D_squad_sl: CommonIndepUSMC_D
 {
@@ -69985,20 +81679,23 @@ class i_USMC_D_squad_sl: CommonIndepUSMC_D
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -70402,7 +82099,7 @@ class i_USMC_D_squad_cm: CommonIndepUSMC_D
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_D_squad_dm: CommonIndepUSMC_D
 {
@@ -70466,7 +82163,7 @@ class i_USMC_D_squad_eng: CommonIndepUSMC_D
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_D_weapons_common: CommonIndepUSMC_D
 {
@@ -70947,7 +82644,7 @@ class i_USMC_D_recon_common: CommonIndepUSMC_D
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_D_recon_rm: i_USMC_D_recon_common
 {
@@ -71019,13 +82716,11 @@ class i_USMC_D_recon_tl: i_USMC_D_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -71112,7 +82807,7 @@ class i_USMC_D_recon_ar: i_USMC_D_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"acc_pointer_ir"
+		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -71237,7 +82932,7 @@ class i_USMC_D_recon_cm: i_USMC_D_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_D_recon_dm: i_USMC_D_recon_common
 {
@@ -71348,7 +83043,7 @@ class i_USMC_D_recon_exp: i_USMC_D_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_D_diver_common: i_USMC_D_recon_common
 {
@@ -71520,7 +83215,7 @@ class i_USMC_D_diver_exp: i_USMC_D_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_D_diver_cm: i_USMC_D_diver_common
 {
@@ -71560,7 +83255,7 @@ class i_USMC_D_diver_cm: i_USMC_D_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_D_diver_dm: i_USMC_D_diver_common
 {
@@ -71642,8 +83337,6 @@ class i_USMC_D_diver_jtac: i_USMC_D_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -71731,10 +83424,9 @@ class i_USMC_D_sniper_spot: i_USMC_D_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -71752,7 +83444,8 @@ class i_USMC_D_sniper_spot: i_USMC_D_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -71879,7 +83572,7 @@ class i_USMC_D_sniper_exp: i_USMC_D_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_D_crew_common: CommonIndepUSMC_D
 {
@@ -71931,7 +83624,7 @@ class i_USMC_D_crew_common: CommonIndepUSMC_D
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_D_crew_cmd: i_USMC_D_crew_common
 {
@@ -72139,7 +83832,7 @@ class i_USMC_D_logistics_common: CommonIndepUSMC_D
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_D_medevac_common: CommonIndepUSMC_D
 {
@@ -72194,7 +83887,7 @@ class i_USMC_D_medevac_common: CommonIndepUSMC_D
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_USMC_D_medevac_doc: i_USMC_D_medevac_common
 {
@@ -72231,7 +83924,7 @@ class i_USMC_D_medevac_doc: i_USMC_D_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_USMC_D_medevac_tl: i_USMC_D_medevac_doc
 {
@@ -72445,7 +84138,7 @@ class CommonIndepUSMC_W: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_W_company_common: CommonIndepUSMC_W
 {
@@ -72758,7 +84451,7 @@ class i_USMC_W_platoon_jtac: i_USMC_W_platoon_common
 		"SmokeShellBlue",
 		"SmokeShellYellow",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -72769,8 +84462,6 @@ class i_USMC_W_platoon_jtac: i_USMC_W_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -72819,7 +84510,7 @@ class i_USMC_W_platoon_medic: i_USMC_W_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_W_squad_sl: CommonIndepUSMC_W
 {
@@ -72877,20 +84568,23 @@ class i_USMC_W_squad_sl: CommonIndepUSMC_W
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -73294,7 +84988,7 @@ class i_USMC_W_squad_cm: CommonIndepUSMC_W
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_W_squad_dm: CommonIndepUSMC_W
 {
@@ -73358,7 +85052,7 @@ class i_USMC_W_squad_eng: CommonIndepUSMC_W
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_W_weapons_common: CommonIndepUSMC_W
 {
@@ -73839,7 +85533,7 @@ class i_USMC_W_recon_common: CommonIndepUSMC_W
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_W_recon_rm: i_USMC_W_recon_common
 {
@@ -73911,13 +85605,11 @@ class i_USMC_W_recon_tl: i_USMC_W_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"i_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -74004,7 +85696,7 @@ class i_USMC_W_recon_ar: i_USMC_W_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"acc_pointer_ir"
+		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -74129,7 +85821,7 @@ class i_USMC_W_recon_cm: i_USMC_W_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_W_recon_dm: i_USMC_W_recon_common
 {
@@ -74240,7 +85932,7 @@ class i_USMC_W_recon_exp: i_USMC_W_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_W_diver_common: i_USMC_W_recon_common
 {
@@ -74412,7 +86104,7 @@ class i_USMC_W_diver_exp: i_USMC_W_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_W_diver_cm: i_USMC_W_diver_common
 {
@@ -74452,7 +86144,7 @@ class i_USMC_W_diver_cm: i_USMC_W_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_W_diver_dm: i_USMC_W_diver_common
 {
@@ -74534,8 +86226,6 @@ class i_USMC_W_diver_jtac: i_USMC_W_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -74623,10 +86313,9 @@ class i_USMC_W_sniper_spot: i_USMC_W_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -74644,7 +86333,8 @@ class i_USMC_W_sniper_spot: i_USMC_W_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -74771,7 +86461,7 @@ class i_USMC_W_sniper_exp: i_USMC_W_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_W_crew_common: CommonIndepUSMC_W
 {
@@ -74823,7 +86513,7 @@ class i_USMC_W_crew_common: CommonIndepUSMC_W
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_W_crew_cmd: i_USMC_W_crew_common
 {
@@ -75031,7 +86721,7 @@ class i_USMC_W_logistics_common: CommonIndepUSMC_W
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class i_USMC_W_medevac_common: CommonIndepUSMC_W
 {
@@ -75086,7 +86776,7 @@ class i_USMC_W_medevac_common: CommonIndepUSMC_W
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_USMC_W_medevac_doc: i_USMC_W_medevac_common
 {
@@ -75123,7 +86813,7 @@ class i_USMC_W_medevac_doc: i_USMC_W_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class i_USMC_W_medevac_tl: i_USMC_W_medevac_doc
 {
@@ -75299,7 +86989,7 @@ class CommonOpforAAF: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_AAF_company_common: CommonOpforAAF
 {
@@ -75585,7 +87275,7 @@ class o_AAF_platoon_jtac: o_AAF_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -75596,8 +87286,6 @@ class o_AAF_platoon_jtac: o_AAF_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -75645,7 +87333,7 @@ class o_AAF_platoon_medic: o_AAF_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_AAF_squad_sl: CommonOpforAAF
 {
@@ -75689,20 +87377,23 @@ class o_AAF_squad_sl: CommonOpforAAF
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -75990,7 +87681,7 @@ class o_AAF_squad_cm: CommonOpforAAF
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_AAF_squad_dm: CommonOpforAAF
 {
@@ -76054,7 +87745,7 @@ class o_AAF_squad_eng: CommonOpforAAF
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_AAF_weapons_common: CommonOpforAAF
 {
@@ -76518,7 +88209,7 @@ class o_AAF_recon_common: CommonOpforAAF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_AAF_recon_rm: o_AAF_recon_common
 {
@@ -76576,13 +88267,11 @@ class o_AAF_recon_tl: o_AAF_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -76775,7 +88464,7 @@ class o_AAF_recon_cm: o_AAF_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_AAF_recon_dm: o_AAF_recon_common
 {
@@ -76871,7 +88560,7 @@ class o_AAF_recon_exp: o_AAF_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_AAF_diver_common: o_AAF_recon_common
 {
@@ -77049,7 +88738,7 @@ class o_AAF_diver_exp: o_AAF_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_AAF_diver_cm: o_AAF_diver_common
 {
@@ -77089,7 +88778,7 @@ class o_AAF_diver_cm: o_AAF_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_AAF_diver_dm: o_AAF_diver_common
 {
@@ -77171,8 +88860,6 @@ class o_AAF_diver_jtac: o_AAF_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -77262,10 +88949,9 @@ class o_AAF_sniper_spot: o_AAF_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -77283,7 +88969,8 @@ class o_AAF_sniper_spot: o_AAF_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -77404,7 +89091,7 @@ class o_AAF_sniper_exp: o_AAF_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_AAF_crew_common: CommonOpforAAF
 {
@@ -77453,7 +89140,7 @@ class o_AAF_crew_common: CommonOpforAAF
 	{
 		"ACRE_PRC152"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_AAF_crew_cmd: o_AAF_crew_common
 {
@@ -77648,7 +89335,7 @@ class o_AAF_logistics_common: CommonOpforAAF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_AAF_medevac_common: CommonOpforAAF
 {
@@ -77698,7 +89385,7 @@ class o_AAF_medevac_common: CommonOpforAAF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_AAF_medevac_doc: o_AAF_medevac_common
 {
@@ -77734,7 +89421,7 @@ class o_AAF_medevac_doc: o_AAF_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_AAF_medevac_tl: o_AAF_medevac_doc
 {
@@ -77810,7 +89497,7 @@ class CommonOpforCHINA: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_khk"
 	};
 	backpack[]=
 	{
@@ -77911,7 +89598,7 @@ class CommonOpforCHINA: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_company_common: CommonOpforCHINA
 {
@@ -78199,7 +89886,7 @@ class o_CHINA_platoon_jtac: o_CHINA_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -78210,8 +89897,6 @@ class o_CHINA_platoon_jtac: o_CHINA_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -78259,7 +89944,7 @@ class o_CHINA_platoon_medic: o_CHINA_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_squad_sl: CommonOpforCHINA
 {
@@ -78303,20 +89988,23 @@ class o_CHINA_squad_sl: CommonOpforCHINA
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -78610,7 +90298,7 @@ class o_CHINA_squad_cm: CommonOpforCHINA
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_squad_dm: CommonOpforCHINA
 {
@@ -78674,7 +90362,7 @@ class o_CHINA_squad_eng: CommonOpforCHINA
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_weapons_common: CommonOpforCHINA
 {
@@ -79127,7 +90815,7 @@ class o_CHINA_recon_common: CommonOpforCHINA
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_recon_rm: o_CHINA_recon_common
 {
@@ -79185,13 +90873,11 @@ class o_CHINA_recon_tl: o_CHINA_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -79379,7 +91065,7 @@ class o_CHINA_recon_cm: o_CHINA_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_recon_dm: o_CHINA_recon_common
 {
@@ -79477,7 +91163,7 @@ class o_CHINA_recon_exp: o_CHINA_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_diver_common: o_CHINA_recon_common
 {
@@ -79648,7 +91334,7 @@ class o_CHINA_diver_exp: o_CHINA_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_diver_cm: o_CHINA_diver_common
 {
@@ -79688,7 +91374,7 @@ class o_CHINA_diver_cm: o_CHINA_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_diver_dm: o_CHINA_diver_common
 {
@@ -79772,8 +91458,6 @@ class o_CHINA_diver_jtac: o_CHINA_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -79863,10 +91547,9 @@ class o_CHINA_sniper_spot: o_CHINA_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -79884,7 +91567,8 @@ class o_CHINA_sniper_spot: o_CHINA_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -80009,7 +91693,7 @@ class o_CHINA_sniper_exp: o_CHINA_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_crew_common: CommonOpforCHINA
 {
@@ -80058,7 +91742,7 @@ class o_CHINA_crew_common: CommonOpforCHINA
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_crew_cmd: o_CHINA_crew_common
 {
@@ -80256,7 +91940,7 @@ class o_CHINA_logistics_common: CommonOpforCHINA
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_medevac_common: CommonOpforCHINA
 {
@@ -80306,7 +91990,7 @@ class o_CHINA_medevac_common: CommonOpforCHINA
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_CHINA_medevac_doc: o_CHINA_medevac_common
 {
@@ -80342,7 +92026,7 @@ class o_CHINA_medevac_doc: o_CHINA_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_CHINA_medevac_tl: o_CHINA_medevac_doc
 {
@@ -80418,7 +92102,8 @@ class CommonOpforCHINA_GRN: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
 	};
 	backpack[]=
 	{
@@ -80518,7 +92203,7 @@ class CommonOpforCHINA_GRN: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_GRN_company_common: CommonOpforCHINA_GRN
 {
@@ -80807,7 +92492,7 @@ class o_CHINA_GRN_platoon_jtac: o_CHINA_GRN_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -80818,8 +92503,6 @@ class o_CHINA_GRN_platoon_jtac: o_CHINA_GRN_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -80868,7 +92551,7 @@ class o_CHINA_GRN_platoon_medic: o_CHINA_GRN_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_GRN_squad_sl: CommonOpforCHINA_GRN
 {
@@ -80912,20 +92595,23 @@ class o_CHINA_GRN_squad_sl: CommonOpforCHINA_GRN
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -81222,7 +92908,7 @@ class o_CHINA_GRN_squad_cm: CommonOpforCHINA_GRN
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_GRN_squad_dm: CommonOpforCHINA_GRN
 {
@@ -81288,7 +92974,7 @@ class o_CHINA_GRN_squad_eng: CommonOpforCHINA_GRN
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_GRN_weapons_common: CommonOpforCHINA_GRN
 {
@@ -81743,7 +93429,7 @@ class o_CHINA_GRN_recon_common: CommonOpforCHINA_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_GRN_recon_rm: o_CHINA_GRN_recon_common
 {
@@ -81802,13 +93488,11 @@ class o_CHINA_GRN_recon_tl: o_CHINA_GRN_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -81997,7 +93681,7 @@ class o_CHINA_GRN_recon_cm: o_CHINA_GRN_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_GRN_recon_dm: o_CHINA_GRN_recon_common
 {
@@ -82095,7 +93779,7 @@ class o_CHINA_GRN_recon_exp: o_CHINA_GRN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_GRN_diver_common: o_CHINA_GRN_recon_common
 {
@@ -82266,7 +93950,7 @@ class o_CHINA_GRN_diver_exp: o_CHINA_GRN_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_GRN_diver_cm: o_CHINA_GRN_diver_common
 {
@@ -82306,7 +93990,7 @@ class o_CHINA_GRN_diver_cm: o_CHINA_GRN_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_GRN_diver_dm: o_CHINA_GRN_diver_common
 {
@@ -82390,8 +94074,6 @@ class o_CHINA_GRN_diver_jtac: o_CHINA_GRN_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -82477,10 +94159,9 @@ class o_CHINA_GRN_sniper_spot: o_CHINA_GRN_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -82498,7 +94179,8 @@ class o_CHINA_GRN_sniper_spot: o_CHINA_GRN_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -82621,7 +94303,7 @@ class o_CHINA_GRN_sniper_exp: o_CHINA_GRN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_GRN_crew_common: CommonOpforCHINA_GRN
 {
@@ -82670,7 +94352,7 @@ class o_CHINA_GRN_crew_common: CommonOpforCHINA_GRN
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_GRN_crew_cmd: o_CHINA_GRN_crew_common
 {
@@ -82870,7 +94552,7 @@ class o_CHINA_GRN_logistics_common: CommonOpforCHINA_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_CHINA_GRN_medevac_common: CommonOpforCHINA_GRN
 {
@@ -82920,7 +94602,7 @@ class o_CHINA_GRN_medevac_common: CommonOpforCHINA_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_CHINA_GRN_medevac_doc: o_CHINA_GRN_medevac_common
 {
@@ -82956,7 +94638,7 @@ class o_CHINA_GRN_medevac_doc: o_CHINA_GRN_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_CHINA_GRN_medevac_tl: o_CHINA_GRN_medevac_doc
 {
@@ -83005,6 +94687,2618 @@ class o_CHINA_GRN_medevac_heli: o_CHINA_GRN_medevac_common
 	};
 };
 class o_CHINA_GRN_medevac_drv: o_CHINA_GRN_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Driver";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_Banana"
+	};
+};
+class CommonOpforFIA: CommonDefault
+{
+	side="Opfor";
+	sideShort="o";
+	faction="FIA";
+	scope=0;
+	uniform[]=
+	{
+		"U_O_T_Soldier_F"
+	};
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	backpack[]=
+	{
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_FieldPack_ghex_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Rook40_F",
+			"",
+			"",
+			""
+		}
+	};
+	launcher[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet"
+	};
+	headgear[]=
+	{
+		"H_HelmetO_ghex_f",
+		"H_HelmetLeaderO_ghex_f"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_oli"
+	};
+	nvgs[]=
+	{
+		"O_NVGoggles_ghex_f"
+	};
+	binoculars[]=
+	{
+		""
+	};
+	map[]=
+	{
+		""
+	};
+	gps[]=
+	{
+		""
+	};
+	compass[]=
+	{
+		"ItemCompass"
+	};
+	watch[]=
+	{
+		"ItemWatch"
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_FIA_company_common: CommonOpforFIA
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_O_T_Officer_F"
+	};
+	vest[]=
+	{
+		"v_rangemaster_belt"
+	};
+	primary[]=
+	{
+		
+		{
+			"smg_02_f",
+			"optic_aco_grn",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_9x21_Mag",
+		3
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_milcap_ghex_f",
+		"H_Cap_oli_hs",
+		"H_Cap_headphones"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+};
+class o_FIA_company_co: o_FIA_company_common
+{
+	scope=1;
+	displayName="Company Commanding Officer";
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class o_FIA_company_xo: o_FIA_company_common
+{
+	scope=1;
+	displayName="Company Executive Officer";
+	gps[]=
+	{
+		"o_EasyTrack_Tablet"
+	};
+	headgear[]=
+	{
+		"H_milcap_ghex_f"
+	};
+};
+class o_FIA_company_mio: o_FIA_company_common
+{
+	scope=1;
+	displayName="Mission Intelligence Officer";
+	gps[]=
+	{
+		"o_EasyTrack_Tablet"
+	};
+};
+class o_FIA_company_colo: o_FIA_company_common
+{
+	scope=1;
+	displayName="Chief of Logistics";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class o_FIA_company_fo: o_FIA_company_common
+{
+	scope=1;
+	displayName="Forward Observer";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_RangeTable_82mm"
+	};
+};
+class o_FIA_platoon_common: CommonOpforFIA
+{
+	scope=0;
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		5,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecO_ghex_f"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+};
+class o_FIA_platoon_pl: o_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Leader";
+	lrRadios[]=
+	{
+		"ACRE_PRC148",
+		"ACRE_PRC117F"
+	};
+};
+class o_FIA_platoon_psgt: o_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Sergeant";
+	gps[]=
+	{
+		"o_EasyTrack_Tablet"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148",
+		"ACRE_PRC117F"
+	};
+};
+class o_FIA_platoon_uav: o_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon UAV Operator";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_UAVBattery",
+		"o_UavTerminal"
+	};
+};
+class o_FIA_platoon_jtac: o_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon JTAC";
+	vest[]=
+	{
+		"v_harnessogl_ghex_f"
+	};
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator_02_ghex_f"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148",
+		"ACRE_PRC117F"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		5,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"Laserbatteries",
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2,
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+};
+class o_FIA_platoon_medic: o_FIA_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Medic";
+	vest[]=
+	{
+		"v_tacchestrig_grn_f",
+		"v_tacchestrig_oli_f"
+	};
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_personalAidKit",
+		2,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		50,
+		"ACE_quikclot",
+		30,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_FIA_squad_sl: CommonOpforFIA
+{
+	scope=1;
+	displayName="Squad Leader";
+	vest[]=
+	{
+		"v_harnesso_ghex_f"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_HuntIR_M203",
+		4,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class o_FIA_squad_ftl: CommonOpforFIA
+{
+	scope=1;
+	displayName="Squad Fireteam Leader";
+	vest[]=
+	{
+		"v_harnesso_ghex_f"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item"
+	};
+};
+class o_FIA_squad_ar: CommonOpforFIA
+{
+	scope=1;
+	displayName="Squad Automatic Rifleman";
+	vest[]=
+	{
+		"v_harnesso_ghex_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTARS_blk_F",
+			"optic_Holosight_blk_F",
+			"acc_pointer_ir",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"100Rnd_580x42_Mag_F",
+		5,
+		"100Rnd_580x42_Mag_Tracer_F",
+		2,
+		"16Rnd_9x21_Mag",
+		3,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"MiniGrenade",
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_oli"
+	};
+};
+class o_FIA_squad_gl: CommonOpforFIA
+{
+	scope=1;
+	displayName="Squad Grenadier";
+	vest[]=
+	{
+		"v_harnessogl_ghex_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_blk_f",
+			"acc_pointer_ir",
+			"optic_aco_grn",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class o_FIA_squad_gl2: CommonOpforFIA
+{
+	scope=1;
+	displayName="Squad Grenadier (M32)";
+	vest[]=
+	{
+		"v_harnessogl_ghex_f"
+	};
+	primary[]=
+	{
+		"rhs_weap_m32"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		5,
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		5,
+		"rhsusf_mag_6Rnd_M714_white",
+		1,
+		"rhsusf_mag_6Rnd_M576_Buckshot",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class o_FIA_squad_light: CommonOpforFIA
+{
+	scope=1;
+	displayName="Squad Rifleman (light)";
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"acc_pointer_ir",
+			"optic_arco_blk_f",
+			""
+		}
+	};
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+};
+class o_FIA_squad_aar: CommonOpforFIA
+{
+	scope=1;
+	displayName="Squad Rifleman";
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"acc_pointer_ir",
+			"optic_arco_blk_f",
+			""
+		}
+	};
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	magazines[]=
+	{
+		"ACE_SpareBarrel",
+		"100Rnd_580x42_Mag_F",
+		2,
+		"100Rnd_580x42_Mag_Tracer_F",
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class o_FIA_squad_lat: CommonOpforFIA
+{
+	scope=1;
+	displayName="Squad Light Anti-Tank Rifleman";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	backpack[]=
+	{
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_FieldPack_ghex_f"
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_rpg32_ghex_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		4,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
+	};
+};
+class o_FIA_squad_cm: CommonOpforFIA
+{
+	scope=1;
+	displayName="Squad Combat Medic";
+	vest[]=
+	{
+		"v_tacchestrig_grn_f",
+		"v_tacchestrig_oli_f"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		4,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV_500",
+		2,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_FIA_squad_dm: CommonOpforFIA
+{
+	scope=1;
+	displayName="Squad Designated Marksman";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"srifle_DMR_07_blk_F",
+			"optic_dms",
+			"acc_pointer_ir",
+			""
+		}
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeCard"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"20Rnd_650x39_Cased_Mag_F",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class o_FIA_squad_eng: CommonOpforFIA
+{
+	scope=1;
+	displayName="Squad Combat Engineer";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ToolKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_FIA_weapons_common: CommonOpforFIA
+{
+	scope=0;
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class o_FIA_assistant_common: o_FIA_weapons_common
+{
+	scope=0;
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class o_FIA_weapons_mg: o_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Medium Machine Gunner";
+	vest[]=
+	{
+		"v_harnesso_ghex_f"
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		
+		{
+			"MMG_01_tan_F",
+			"optic_arco_blk_f",
+			"acc_pointer_ir",
+			"bipod_02_f_blk"
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"150Rnd_93x64_Mag",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_oli"
+	};
+};
+class o_FIA_weapons_amg: o_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant MMG";
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"150Rnd_93x64_Mag",
+		2,
+		"ACE_SpareBarrel"
+	};
+};
+class o_FIA_weapons_hmg: o_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Heavy Machine Gunner";
+	backpack[]=
+	{
+		"O_HMG_01_weapon_F"
+	};
+};
+class o_FIA_weapons_ahmg: o_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant HMG";
+	backpack[]=
+	{
+		"O_HMG_01_support_F"
+	};
+};
+class o_FIA_weapons_gmg: o_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Grenade Machine Gunner";
+	backpack[]=
+	{
+		"O_GMG_01_weapon_F"
+	};
+};
+class o_FIA_weapons_agmg: o_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant GMG";
+	backpack[]=
+	{
+		"O_HMG_01_support_F"
+	};
+};
+class o_FIA_weapons_at: o_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad AT-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_rpg32_ghex_f",
+			"",
+			"",
+			""
+		}
+	};
+};
+class o_FIA_weapons_aat: o_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad AT-Assistant";
+	backpack[]=
+	{
+		"B_Carryall_ghex_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F",
+		2
+	};
+};
+class o_FIA_weapons_atgm: o_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad ATGM-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_O_Titan_short_ghex_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT"
+	};
+};
+class o_FIA_weapons_aatgm: o_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad ATGM-Assistant";
+	backpack[]=
+	{
+		"B_Carryall_ghex_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT",
+		2,
+		"Titan_AP"
+	};
+};
+class o_FIA_weapons_aa: o_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad AA-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_O_Titan_ghex_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AA"
+	};
+};
+class o_FIA_weapons_aaa: o_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad AA-Assistant";
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		7,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AA",
+		2
+	};
+};
+class o_FIA_weapons_mort: o_FIA_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Gunner";
+	backpack[]=
+	{
+		"O_Mortar_01_weapon_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class o_FIA_weapons_amort: o_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Assistant";
+	backpack[]=
+	{
+		"O_Mortar_01_support_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class o_FIA_weapons_acmort: o_FIA_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Ammo Carrier";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_1Rnd_82mm_Mo_HE",
+		5
+	};
+};
+class o_FIA_recon_common: CommonOpforFIA
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_O_V_Soldier_Viper_F"
+	};
+	vest[]=
+	{
+		"v_tacchestrig_grn_f",
+		"v_tacchestrig_oli_f"
+	};
+	backpack[]=
+	{
+		"b_viperharness_ghex_f"
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Pistol_heavy_02_F",
+			"optic_Yorris",
+			"muzzle_snds_L",
+			""
+		}
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2
+	};
+	goggles[]=
+	{
+		""
+	};
+	headgear[]=
+	{
+		"H_HelmetO_ViperSP_ghex_F"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_FIA_recon_rm: o_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Operator";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_wirecutter"
+	};
+};
+class o_FIA_recon_tl: o_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Leader";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"UGL_COL1",
+		"o_ir_grenade",
+		2,
+		"ACE_HuntIR_M203",
+		5
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+};
+class o_FIA_recon_ar: o_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Automatic Rifleman";
+	vest[]=
+	{
+		"v_tacchestrig_grn_f",
+		"v_tacchestrig_oli_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTARS_ghex_F",
+			"acc_pointer_ir",
+			"optic_Arco_ghex_F",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"100Rnd_580x42_Mag_F",
+		5,
+		"100Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"acc_pointer_ir"
+	};
+	goggles[]=
+	{
+		""
+	};
+};
+class o_FIA_recon_gl: o_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Grenadier";
+	vest[]=
+	{
+		"v_harnessogl_ghex_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class o_FIA_recon_lat: o_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Light Anti-Tank";
+	launcher[]=
+	{
+		
+		{
+			"launch_rpg32_ghex_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
+	};
+};
+class o_FIA_recon_cm: o_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Medic";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		6,
+		"ACE_epinephrine",
+		12,
+		"ACE_salineIV_500",
+		3,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_FIA_recon_dm: o_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Marksman";
+	primary[]=
+	{
+		
+		{
+			"arifle_ARX_ghex_F",
+			"optic_dms_ghex_f",
+			"acc_pointer_ir",
+			"muzzle_snds_65_TI_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"10Rnd_50BW_Mag_F",
+		3,
+		"30Rnd_65x39_caseless_green",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"bipod_02_f_blk"
+	};
+};
+class o_FIA_recon_exp: o_FIA_recon_common
+{
+	scope=1;
+	displayName="Special Team Explosive Specialist";
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	secondary[]=
+	{
+		"ACE_VMM3"
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"DemoCharge_Remote_Mag",
+		4,
+		"SatchelCharge_Remote_Mag",
+		"SLAMDirectionalMine_Wire_Mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class o_FIA_diver_common: o_FIA_recon_common
+{
+	scope=0;
+	displayName="Combat Diver Operator";
+	uniform[]=
+	{
+		"U_O_Wetsuit"
+	};
+	vest[]=
+	{
+		"V_RebreatherIR"
+	};
+	backpack[]=
+	{
+		"b_viperharness_blk_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_blk_f",
+			"optic_arco_blk_f",
+			"acc_pointer_ir",
+			"muzzle_snds_58_blk_F"
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Pistol_heavy_02_F",
+			"optic_Yorris",
+			"muzzle_snds_L",
+			""
+		}
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F"
+	};
+	goggles[]=
+	{
+		"G_O_Diving"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecO_blk"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+};
+class o_FIA_diver_rm: o_FIA_diver_common
+{
+	scope=1;
+};
+class o_FIA_diver_tl: o_FIA_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Team Leader";
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F",
+		"ACE_MapTools"
+	};
+};
+class o_FIA_diver_exp: o_FIA_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Explosive Specialist";
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"ACE_M84",
+		4,
+		"DemoCharge_Remote_Mag",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F",
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class o_FIA_diver_cm: o_FIA_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Medic";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F",
+		"W_Defibrillator",
+		"ACE_fieldDressing",
+		5,
+		"ACE_elasticBandage",
+		15,
+		"ACE_quikclot",
+		15,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV",
+		4,
+		"ACE_surgicalKit"
+	};
+	binoculars[]=
+	{
+		"ACE_MX2A"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_FIA_diver_dm: o_FIA_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Marksman";
+	primary[]=
+	{
+		
+		{
+			"arifle_ARX_blk_F",
+			"optic_dms_ghex_f",
+			"acc_pointer_ir",
+			"muzzle_snds_65_TI_blk_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"10Rnd_50BW_Mag_F",
+		3,
+		"30Rnd_65x39_caseless_green",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"U_O_T_Soldier_F",
+		"bipod_02_f_blk"
+	};
+};
+class o_FIA_diver_jtac: o_FIA_diver_tl
+{
+	scope=1;
+	displayName="Combat Diver Terminal Attack Controller";
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_blk_f",
+			"optic_arco_blk_f",
+			"acc_pointer_ir",
+			"muzzle_snds_58_blk_F"
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator_02_ghex_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2,
+		"Laserbatteries",
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2
+	};
+};
+class o_FIA_sniper_common: o_FIA_recon_common
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_O_T_FullGhillie_tna_F"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"optic_NVS",
+		"ACE_Rangecard"
+	};
+};
+class o_FIA_sniper_spot: o_FIA_recon_common
+{
+	scope=1;
+	displayName="Sniper Spotter";
+	uniform[]=
+	{
+		"U_O_T_FullGhillie_tna_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_gl_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"o_ir_grenade",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_580x42_Mag_F",
+		8,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		4,
+		"ACE_HuntIR_M203",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_SpottingScope",
+		"ACE_Tripod",
+		"ACE_ATragMX",
+		"ACE_IR_Strobe_Item",
+		"ACE_Rangecard",
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+};
+class o_FIA_sniper_ap: o_FIA_sniper_common
+{
+	scope=1;
+	displayName="Sniper (Anti-Personel)";
+	primary[]=
+	{
+		
+		{
+			"srifle_DMR_07_ghex_F",
+			"optic_LRPS_ghex_f",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"20Rnd_650x39_Cased_Mag_F",
+		4,
+		"ACE_20Rnd_65x47_Scenar_mag",
+		3,
+		"ACE_20Rnd_65_Creedmor_mag",
+		3,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+};
+class o_FIA_sniper_am: o_FIA_sniper_common
+{
+	scope=1;
+	displayName="Sniper (Anti-Materiel)";
+	primary[]=
+	{
+		
+		{
+			"srifle_GM6_ghex_F",
+			"optic_LRPS_ghex_f",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"5Rnd_127x108_Mag",
+		4,
+		"5Rnd_127x108_APDS_Mag",
+		4,
+		"ACE_5Rnd_127x99_AMAX_Mag",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+};
+class o_FIA_sniper_exp: o_FIA_recon_common
+{
+	scope=1;
+	displayName="Sniper Explosive Specialist";
+	uniform[]=
+	{
+		"U_O_T_FullGhillie_tna_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_CTAR_ghex_F",
+			"optic_Arco_ghex_F",
+			"acc_pointer_ir",
+			"muzzle_snds_58_ghex_F"
+		}
+	};
+	magazines[]=
+	{
+		"6Rnd_45ACP_Cylinder",
+		3,
+		"30Rnd_580x42_Mag_F",
+		9,
+		"30Rnd_580x42_Mag_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"APERSTripMine_Wire_mag",
+		2,
+		"ClaymoreDirectionalMine_Remote_mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class o_FIA_crew_common: CommonOpforFIA
+{
+	scope=1;
+	displayName="Armored Vehicle Crew";
+	uniform[]=
+	{
+		"U_O_T_Soldier_F"
+	};
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"V_LegStrapBag_olive_F"
+	};
+	primary[]=
+	{
+		"arifle_CTAR_blk_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		6,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+	headgear[]=
+	{
+		"H_HelmetCrew_O_ghex_f"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_FIA_crew_cmd: o_FIA_crew_common
+{
+	scope=1;
+	displayName="Armored Vehicle Commander";
+	backpack[]=
+	{
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_FieldPack_ghex_f"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148",
+		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class o_FIA_crew_jet: CommonOpforFIA
+{
+	scope=1;
+	displayName="Jet Pilot";
+	uniform[]=
+	{
+		"U_O_PilotCoveralls"
+	};
+	vest[]=
+	{
+		""
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetFighter_O"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	watch[]=
+	{
+		"ACE_Altimeter"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class o_FIA_crew_heli: o_FIA_crew_common
+{
+	scope=1;
+	displayName="Helicopter Crew";
+	uniform[]=
+	{
+		"U_O_T_Soldier_F"
+	};
+	headgear[]=
+	{
+		"H_CrewHelmetHeli_O"
+	};
+	map[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class o_FIA_crew_helipilot: o_FIA_crew_heli
+{
+	scope=1;
+	displayName="Helicopter Pilot/Copilot/Gunner";
+	backpack[]=
+	{
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_FieldPack_ghex_f"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetHeli_O"
+	};
+	nvgs[]=
+	{
+		""
+	};
+};
+class o_FIA_logistics_common: CommonOpforFIA
+{
+	scope=1;
+	displayName="Logistician";
+	vest[]=
+	{
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
+	};
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	primary[]=
+	{
+		"arifle_CTAR_blk_f"
+	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		6,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecO_ghex_f"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ToolKit"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F",
+		"ACRE_PRC148"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_FIA_medevac_common: CommonOpforFIA
+{
+	scope=0;
+	primary[]=
+	{
+		""
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Rook40_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecO_ghex_f"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class o_FIA_medevac_doc: o_FIA_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Doctor";
+	backpack[]=
+	{
+		"B_ViperLightHarness_ghex_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class o_FIA_medevac_tl: o_FIA_medevac_doc
+{
+	scope=1;
+	displayName="Medical Service Team Leader";
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC148"
+	};
+};
+class o_FIA_medevac_heli: o_FIA_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Helicopter Pilot";
+	uniform[]=
+	{
+		"U_O_T_Soldier_F"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetHeli_O"
+	};
+	nvgs[]=
+	{
+		""
+	};
+};
+class o_FIA_medevac_drv: o_FIA_medevac_common
 {
 	scope=1;
 	displayName="Medical Service Driver";
@@ -83131,7 +97425,7 @@ class CommonOpforIDF: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IDF_company_common: CommonOpforIDF
 {
@@ -83421,7 +97715,7 @@ class o_IDF_platoon_jtac: o_IDF_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -83432,8 +97726,6 @@ class o_IDF_platoon_jtac: o_IDF_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -83482,7 +97774,7 @@ class o_IDF_platoon_medic: o_IDF_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IDF_squad_sl: CommonOpforIDF
 {
@@ -83526,20 +97818,23 @@ class o_IDF_squad_sl: CommonOpforIDF
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -83834,7 +98129,7 @@ class o_IDF_squad_cm: CommonOpforIDF
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IDF_squad_dm: CommonOpforIDF
 {
@@ -83901,7 +98196,7 @@ class o_IDF_squad_eng: CommonOpforIDF
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IDF_weapons_common: CommonOpforIDF
 {
@@ -84376,7 +98671,7 @@ class o_IDF_recon_common: CommonOpforIDF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IDF_recon_rm: o_IDF_recon_common
 {
@@ -84444,13 +98739,11 @@ class o_IDF_recon_tl: o_IDF_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -84647,7 +98940,7 @@ class o_IDF_recon_cm: o_IDF_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IDF_recon_dm: o_IDF_recon_common
 {
@@ -84758,7 +99051,7 @@ class o_IDF_recon_exp: o_IDF_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_IDF_diver_common: o_IDF_recon_common
 {
@@ -84937,7 +99230,7 @@ class o_IDF_diver_exp: o_IDF_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_IDF_diver_cm: o_IDF_diver_common
 {
@@ -84977,7 +99270,7 @@ class o_IDF_diver_cm: o_IDF_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IDF_diver_dm: o_IDF_diver_common
 {
@@ -85080,8 +99373,6 @@ class o_IDF_diver_jtac: o_IDF_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -85176,10 +99467,9 @@ class o_IDF_sniper_spot: o_IDF_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -85197,7 +99487,8 @@ class o_IDF_sniper_spot: o_IDF_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -85322,7 +99613,7 @@ class o_IDF_sniper_exp: o_IDF_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_IDF_crew_common: CommonOpforIDF
 {
@@ -85372,7 +99663,7 @@ class o_IDF_crew_common: CommonOpforIDF
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IDF_crew_cmd: o_IDF_crew_common
 {
@@ -85575,7 +99866,7 @@ class o_IDF_logistics_common: CommonOpforIDF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IDF_medevac_common: CommonOpforIDF
 {
@@ -85626,7 +99917,7 @@ class o_IDF_medevac_common: CommonOpforIDF
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_IDF_medevac_doc: o_IDF_medevac_common
 {
@@ -85663,7 +99954,7 @@ class o_IDF_medevac_doc: o_IDF_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_IDF_medevac_tl: o_IDF_medevac_doc
 {
@@ -85739,7 +100030,7 @@ class CommonOpforIRAN: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_khk"
 	};
 	backpack[]=
 	{
@@ -85840,7 +100131,7 @@ class CommonOpforIRAN: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_company_common: CommonOpforIRAN
 {
@@ -86128,7 +100419,7 @@ class o_IRAN_platoon_jtac: o_IRAN_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -86139,8 +100430,6 @@ class o_IRAN_platoon_jtac: o_IRAN_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -86188,7 +100477,7 @@ class o_IRAN_platoon_medic: o_IRAN_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_squad_sl: CommonOpforIRAN
 {
@@ -86232,20 +100521,23 @@ class o_IRAN_squad_sl: CommonOpforIRAN
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -86537,7 +100829,7 @@ class o_IRAN_squad_cm: CommonOpforIRAN
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_squad_dm: CommonOpforIRAN
 {
@@ -86601,7 +100893,7 @@ class o_IRAN_squad_eng: CommonOpforIRAN
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_weapons_common: CommonOpforIRAN
 {
@@ -87056,7 +101348,7 @@ class o_IRAN_recon_common: CommonOpforIRAN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_recon_rm: o_IRAN_recon_common
 {
@@ -87116,13 +101408,11 @@ class o_IRAN_recon_tl: o_IRAN_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -87313,7 +101603,7 @@ class o_IRAN_recon_cm: o_IRAN_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_recon_dm: o_IRAN_recon_common
 {
@@ -87411,7 +101701,7 @@ class o_IRAN_recon_exp: o_IRAN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_diver_common: o_IRAN_recon_common
 {
@@ -87588,7 +101878,7 @@ class o_IRAN_diver_exp: o_IRAN_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_diver_cm: o_IRAN_diver_common
 {
@@ -87628,7 +101918,7 @@ class o_IRAN_diver_cm: o_IRAN_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_diver_dm: o_IRAN_diver_common
 {
@@ -87712,8 +102002,6 @@ class o_IRAN_diver_jtac: o_IRAN_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -87805,10 +102093,9 @@ class o_IRAN_sniper_spot: o_IRAN_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -87826,7 +102113,8 @@ class o_IRAN_sniper_spot: o_IRAN_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -87949,7 +102237,7 @@ class o_IRAN_sniper_exp: o_IRAN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_crew_common: CommonOpforIRAN
 {
@@ -87998,7 +102286,7 @@ class o_IRAN_crew_common: CommonOpforIRAN
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_crew_cmd: o_IRAN_crew_common
 {
@@ -88196,7 +102484,7 @@ class o_IRAN_logistics_common: CommonOpforIRAN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_medevac_common: CommonOpforIRAN
 {
@@ -88246,7 +102534,7 @@ class o_IRAN_medevac_common: CommonOpforIRAN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_IRAN_medevac_doc: o_IRAN_medevac_common
 {
@@ -88282,7 +102570,7 @@ class o_IRAN_medevac_doc: o_IRAN_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_IRAN_medevac_tl: o_IRAN_medevac_doc
 {
@@ -88358,7 +102646,8 @@ class CommonOpforIRAN_GRN: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_rgr",
+		"v_chestrig_oli"
 	};
 	backpack[]=
 	{
@@ -88458,7 +102747,7 @@ class CommonOpforIRAN_GRN: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_GRN_company_common: CommonOpforIRAN_GRN
 {
@@ -88747,7 +103036,7 @@ class o_IRAN_GRN_platoon_jtac: o_IRAN_GRN_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -88758,8 +103047,6 @@ class o_IRAN_GRN_platoon_jtac: o_IRAN_GRN_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -88808,7 +103095,7 @@ class o_IRAN_GRN_platoon_medic: o_IRAN_GRN_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_GRN_squad_sl: CommonOpforIRAN_GRN
 {
@@ -88852,20 +103139,23 @@ class o_IRAN_GRN_squad_sl: CommonOpforIRAN_GRN
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -89160,7 +103450,7 @@ class o_IRAN_GRN_squad_cm: CommonOpforIRAN_GRN
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_GRN_squad_dm: CommonOpforIRAN_GRN
 {
@@ -89226,7 +103516,7 @@ class o_IRAN_GRN_squad_eng: CommonOpforIRAN_GRN
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_GRN_weapons_common: CommonOpforIRAN_GRN
 {
@@ -89683,7 +103973,7 @@ class o_IRAN_GRN_recon_common: CommonOpforIRAN_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_GRN_recon_rm: o_IRAN_GRN_recon_common
 {
@@ -89744,13 +104034,11 @@ class o_IRAN_GRN_recon_tl: o_IRAN_GRN_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -89942,7 +104230,7 @@ class o_IRAN_GRN_recon_cm: o_IRAN_GRN_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_GRN_recon_dm: o_IRAN_GRN_recon_common
 {
@@ -90040,7 +104328,7 @@ class o_IRAN_GRN_recon_exp: o_IRAN_GRN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_GRN_diver_common: o_IRAN_GRN_recon_common
 {
@@ -90217,7 +104505,7 @@ class o_IRAN_GRN_diver_exp: o_IRAN_GRN_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_GRN_diver_cm: o_IRAN_GRN_diver_common
 {
@@ -90257,7 +104545,7 @@ class o_IRAN_GRN_diver_cm: o_IRAN_GRN_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_GRN_diver_dm: o_IRAN_GRN_diver_common
 {
@@ -90341,8 +104629,6 @@ class o_IRAN_GRN_diver_jtac: o_IRAN_GRN_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -90430,10 +104716,9 @@ class o_IRAN_GRN_sniper_spot: o_IRAN_GRN_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -90451,7 +104736,8 @@ class o_IRAN_GRN_sniper_spot: o_IRAN_GRN_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -90572,7 +104858,7 @@ class o_IRAN_GRN_sniper_exp: o_IRAN_GRN_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_GRN_crew_common: CommonOpforIRAN_GRN
 {
@@ -90621,7 +104907,7 @@ class o_IRAN_GRN_crew_common: CommonOpforIRAN_GRN
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_GRN_crew_cmd: o_IRAN_GRN_crew_common
 {
@@ -90821,7 +105107,7 @@ class o_IRAN_GRN_logistics_common: CommonOpforIRAN_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_GRN_medevac_common: CommonOpforIRAN_GRN
 {
@@ -90871,7 +105157,7 @@ class o_IRAN_GRN_medevac_common: CommonOpforIRAN_GRN
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_IRAN_GRN_medevac_doc: o_IRAN_GRN_medevac_common
 {
@@ -90907,7 +105193,7 @@ class o_IRAN_GRN_medevac_doc: o_IRAN_GRN_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_IRAN_GRN_medevac_tl: o_IRAN_GRN_medevac_doc
 {
@@ -90983,7 +105269,7 @@ class CommonOpforIRAN_URB: CommonDefault
 	};
 	vest[]=
 	{
-		""
+		"v_chestrig_blk"
 	};
 	backpack[]=
 	{
@@ -91081,7 +105367,7 @@ class CommonOpforIRAN_URB: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_URB_company_common: CommonOpforIRAN_URB
 {
@@ -91369,7 +105655,7 @@ class o_IRAN_URB_platoon_jtac: o_IRAN_URB_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -91380,8 +105666,6 @@ class o_IRAN_URB_platoon_jtac: o_IRAN_URB_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -91429,7 +105713,7 @@ class o_IRAN_URB_platoon_medic: o_IRAN_URB_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_URB_squad_sl: CommonOpforIRAN_URB
 {
@@ -91473,20 +105757,23 @@ class o_IRAN_URB_squad_sl: CommonOpforIRAN_URB
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -91775,7 +106062,7 @@ class o_IRAN_URB_squad_cm: CommonOpforIRAN_URB
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_URB_squad_dm: CommonOpforIRAN_URB
 {
@@ -91839,7 +106126,7 @@ class o_IRAN_URB_squad_eng: CommonOpforIRAN_URB
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_URB_weapons_common: CommonOpforIRAN_URB
 {
@@ -92294,7 +106581,7 @@ class o_IRAN_URB_recon_common: CommonOpforIRAN_URB
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_URB_recon_rm: o_IRAN_URB_recon_common
 {
@@ -92354,13 +106641,11 @@ class o_IRAN_URB_recon_tl: o_IRAN_URB_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -92551,7 +106836,7 @@ class o_IRAN_URB_recon_cm: o_IRAN_URB_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_URB_recon_dm: o_IRAN_URB_recon_common
 {
@@ -92649,7 +106934,7 @@ class o_IRAN_URB_recon_exp: o_IRAN_URB_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_URB_diver_common: o_IRAN_URB_recon_common
 {
@@ -92826,7 +107111,7 @@ class o_IRAN_URB_diver_exp: o_IRAN_URB_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_URB_diver_cm: o_IRAN_URB_diver_common
 {
@@ -92866,7 +107151,7 @@ class o_IRAN_URB_diver_cm: o_IRAN_URB_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_URB_diver_dm: o_IRAN_URB_diver_common
 {
@@ -92950,8 +107235,6 @@ class o_IRAN_URB_diver_jtac: o_IRAN_URB_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -93043,10 +107326,9 @@ class o_IRAN_URB_sniper_spot: o_IRAN_URB_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -93064,7 +107346,8 @@ class o_IRAN_URB_sniper_spot: o_IRAN_URB_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -93187,7 +107470,7 @@ class o_IRAN_URB_sniper_exp: o_IRAN_URB_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_URB_crew_common: CommonOpforIRAN_URB
 {
@@ -93236,7 +107519,7 @@ class o_IRAN_URB_crew_common: CommonOpforIRAN_URB
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_URB_crew_cmd: o_IRAN_URB_crew_common
 {
@@ -93431,7 +107714,7 @@ class o_IRAN_URB_logistics_common: CommonOpforIRAN_URB
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_IRAN_URB_medevac_common: CommonOpforIRAN_URB
 {
@@ -93481,7 +107764,7 @@ class o_IRAN_URB_medevac_common: CommonOpforIRAN_URB
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_IRAN_URB_medevac_doc: o_IRAN_URB_medevac_common
 {
@@ -93517,7 +107800,7 @@ class o_IRAN_URB_medevac_doc: o_IRAN_URB_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_IRAN_URB_medevac_tl: o_IRAN_URB_medevac_doc
 {
@@ -93696,7 +107979,7 @@ class CommonOpforNATO_CTRG: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_CTRG_company_common: CommonOpforNATO_CTRG
 {
@@ -93987,7 +108270,7 @@ class o_NATO_CTRG_platoon_jtac: o_NATO_CTRG_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -93998,8 +108281,6 @@ class o_NATO_CTRG_platoon_jtac: o_NATO_CTRG_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -94047,7 +108328,7 @@ class o_NATO_CTRG_platoon_medic: o_NATO_CTRG_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_CTRG_squad_sl: CommonOpforNATO_CTRG
 {
@@ -94091,20 +108372,23 @@ class o_NATO_CTRG_squad_sl: CommonOpforNATO_CTRG
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -94392,7 +108676,7 @@ class o_NATO_CTRG_squad_cm: CommonOpforNATO_CTRG
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_CTRG_squad_dm: CommonOpforNATO_CTRG
 {
@@ -94456,7 +108740,7 @@ class o_NATO_CTRG_squad_eng: CommonOpforNATO_CTRG
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_CTRG_weapons_common: CommonOpforNATO_CTRG
 {
@@ -94909,7 +109193,7 @@ class o_NATO_CTRG_recon_common: CommonOpforNATO_CTRG
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_CTRG_recon_rm: o_NATO_CTRG_recon_common
 {
@@ -94967,13 +109251,11 @@ class o_NATO_CTRG_recon_tl: o_NATO_CTRG_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -95158,7 +109440,7 @@ class o_NATO_CTRG_recon_cm: o_NATO_CTRG_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_CTRG_recon_dm: o_NATO_CTRG_recon_common
 {
@@ -95254,7 +109536,7 @@ class o_NATO_CTRG_recon_exp: o_NATO_CTRG_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_CTRG_diver_common: o_NATO_CTRG_recon_common
 {
@@ -95425,7 +109707,7 @@ class o_NATO_CTRG_diver_exp: o_NATO_CTRG_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_CTRG_diver_cm: o_NATO_CTRG_diver_common
 {
@@ -95465,7 +109747,7 @@ class o_NATO_CTRG_diver_cm: o_NATO_CTRG_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_CTRG_diver_dm: o_NATO_CTRG_diver_common
 {
@@ -95547,8 +109829,6 @@ class o_NATO_CTRG_diver_jtac: o_NATO_CTRG_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -95634,10 +109914,9 @@ class o_NATO_CTRG_sniper_spot: o_NATO_CTRG_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -95655,7 +109934,8 @@ class o_NATO_CTRG_sniper_spot: o_NATO_CTRG_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -95774,7 +110054,7 @@ class o_NATO_CTRG_sniper_exp: o_NATO_CTRG_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_CTRG_crew_common: CommonOpforNATO_CTRG
 {
@@ -95823,7 +110103,7 @@ class o_NATO_CTRG_crew_common: CommonOpforNATO_CTRG
 	{
 		"ACRE_PRC152"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_CTRG_crew_cmd: o_NATO_CTRG_crew_common
 {
@@ -96024,7 +110304,7 @@ class o_NATO_CTRG_logistics_common: CommonOpforNATO_CTRG
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_CTRG_medevac_common: CommonOpforNATO_CTRG
 {
@@ -96079,7 +110359,7 @@ class o_NATO_CTRG_medevac_common: CommonOpforNATO_CTRG
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_NATO_CTRG_medevac_doc: o_NATO_CTRG_medevac_common
 {
@@ -96115,7 +110395,7 @@ class o_NATO_CTRG_medevac_doc: o_NATO_CTRG_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_NATO_CTRG_medevac_tl: o_NATO_CTRG_medevac_doc
 {
@@ -96299,7 +110579,7 @@ class CommonOpforNATO_MTP: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_MTP_company_common: CommonOpforNATO_MTP
 {
@@ -96319,7 +110599,7 @@ class o_NATO_MTP_company_common: CommonOpforNATO_MTP
 		{
 			"smg_01_f",
 			"optic_aco_grn",
-			"",
+			"acc_flashlight_smg_01",
 			""
 		}
 	};
@@ -96594,7 +110874,7 @@ class o_NATO_MTP_platoon_jtac: o_NATO_MTP_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -96605,8 +110885,6 @@ class o_NATO_MTP_platoon_jtac: o_NATO_MTP_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -96656,7 +110934,7 @@ class o_NATO_MTP_platoon_medic: o_NATO_MTP_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_MTP_squad_sl: CommonOpforNATO_MTP
 {
@@ -96701,20 +110979,23 @@ class o_NATO_MTP_squad_sl: CommonOpforNATO_MTP
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -97011,7 +111292,7 @@ class o_NATO_MTP_squad_cm: CommonOpforNATO_MTP
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_MTP_squad_dm: CommonOpforNATO_MTP
 {
@@ -97077,7 +111358,7 @@ class o_NATO_MTP_squad_eng: CommonOpforNATO_MTP
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_MTP_weapons_common: CommonOpforNATO_MTP
 {
@@ -97564,7 +111845,7 @@ class o_NATO_MTP_recon_common: CommonOpforNATO_MTP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_MTP_recon_rm: o_NATO_MTP_recon_common
 {
@@ -97637,13 +111918,11 @@ class o_NATO_MTP_recon_tl: o_NATO_MTP_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -97857,7 +112136,7 @@ class o_NATO_MTP_recon_cm: o_NATO_MTP_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_MTP_recon_dm: o_NATO_MTP_recon_common
 {
@@ -97968,7 +112247,7 @@ class o_NATO_MTP_recon_exp: o_NATO_MTP_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_MTP_diver_common: o_NATO_MTP_recon_common
 {
@@ -98139,7 +112418,7 @@ class o_NATO_MTP_diver_exp: o_NATO_MTP_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_MTP_diver_cm: o_NATO_MTP_diver_common
 {
@@ -98179,7 +112458,7 @@ class o_NATO_MTP_diver_cm: o_NATO_MTP_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_MTP_diver_dm: o_NATO_MTP_diver_common
 {
@@ -98261,8 +112540,6 @@ class o_NATO_MTP_diver_jtac: o_NATO_MTP_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -98357,10 +112634,9 @@ class o_NATO_MTP_sniper_spot: o_NATO_MTP_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -98378,7 +112654,8 @@ class o_NATO_MTP_sniper_spot: o_NATO_MTP_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -98505,7 +112782,7 @@ class o_NATO_MTP_sniper_exp: o_NATO_MTP_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_MTP_crew_common: CommonOpforNATO_MTP
 {
@@ -98554,7 +112831,7 @@ class o_NATO_MTP_crew_common: CommonOpforNATO_MTP
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_MTP_crew_cmd: o_NATO_MTP_crew_common
 {
@@ -98764,7 +113041,7 @@ class o_NATO_MTP_logistics_common: CommonOpforNATO_MTP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_MTP_medevac_common: CommonOpforNATO_MTP
 {
@@ -98819,7 +113096,7 @@ class o_NATO_MTP_medevac_common: CommonOpforNATO_MTP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_NATO_MTP_medevac_doc: o_NATO_MTP_medevac_common
 {
@@ -98856,7 +113133,7 @@ class o_NATO_MTP_medevac_doc: o_NATO_MTP_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_NATO_MTP_medevac_tl: o_NATO_MTP_medevac_doc
 {
@@ -99031,7 +113308,7 @@ class CommonOpforNATO_TRPC: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_TRPC_company_common: CommonOpforNATO_TRPC
 {
@@ -99050,7 +113327,7 @@ class o_NATO_TRPC_company_common: CommonOpforNATO_TRPC
 		{
 			"smg_01_f",
 			"optic_aco",
-			"",
+			"acc_flashlight_smg_01",
 			""
 		}
 	};
@@ -99317,7 +113594,7 @@ class o_NATO_TRPC_platoon_jtac: o_NATO_TRPC_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -99328,8 +113605,6 @@ class o_NATO_TRPC_platoon_jtac: o_NATO_TRPC_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -99377,7 +113652,7 @@ class o_NATO_TRPC_platoon_medic: o_NATO_TRPC_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_TRPC_squad_sl: CommonOpforNATO_TRPC
 {
@@ -99421,20 +113696,23 @@ class o_NATO_TRPC_squad_sl: CommonOpforNATO_TRPC
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -99723,7 +114001,7 @@ class o_NATO_TRPC_squad_cm: CommonOpforNATO_TRPC
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_TRPC_squad_dm: CommonOpforNATO_TRPC
 {
@@ -99787,7 +114065,7 @@ class o_NATO_TRPC_squad_eng: CommonOpforNATO_TRPC
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_TRPC_weapons_common: CommonOpforNATO_TRPC
 {
@@ -100249,7 +114527,7 @@ class o_NATO_TRPC_recon_common: CommonOpforNATO_TRPC
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_TRPC_recon_rm: o_NATO_TRPC_recon_common
 {
@@ -100314,13 +114592,11 @@ class o_NATO_TRPC_recon_tl: o_NATO_TRPC_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -100518,7 +114794,7 @@ class o_NATO_TRPC_recon_cm: o_NATO_TRPC_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_TRPC_recon_dm: o_NATO_TRPC_recon_common
 {
@@ -100621,7 +114897,7 @@ class o_NATO_TRPC_recon_exp: o_NATO_TRPC_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_TRPC_diver_common: o_NATO_TRPC_recon_common
 {
@@ -100792,7 +115068,7 @@ class o_NATO_TRPC_diver_exp: o_NATO_TRPC_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_TRPC_diver_cm: o_NATO_TRPC_diver_common
 {
@@ -100832,7 +115108,7 @@ class o_NATO_TRPC_diver_cm: o_NATO_TRPC_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_TRPC_diver_dm: o_NATO_TRPC_diver_common
 {
@@ -100914,8 +115190,6 @@ class o_NATO_TRPC_diver_jtac: o_NATO_TRPC_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -101001,10 +115275,9 @@ class o_NATO_TRPC_sniper_spot: o_NATO_TRPC_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -101022,7 +115295,8 @@ class o_NATO_TRPC_sniper_spot: o_NATO_TRPC_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -101141,7 +115415,7 @@ class o_NATO_TRPC_sniper_exp: o_NATO_TRPC_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_TRPC_crew_common: CommonOpforNATO_TRPC
 {
@@ -101190,7 +115464,7 @@ class o_NATO_TRPC_crew_common: CommonOpforNATO_TRPC
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_TRPC_crew_cmd: o_NATO_TRPC_crew_common
 {
@@ -101387,7 +115661,7 @@ class o_NATO_TRPC_logistics_common: CommonOpforNATO_TRPC
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_TRPC_medevac_common: CommonOpforNATO_TRPC
 {
@@ -101437,7 +115711,7 @@ class o_NATO_TRPC_medevac_common: CommonOpforNATO_TRPC
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_NATO_TRPC_medevac_doc: o_NATO_TRPC_medevac_common
 {
@@ -101473,7 +115747,7 @@ class o_NATO_TRPC_medevac_doc: o_NATO_TRPC_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_NATO_TRPC_medevac_tl: o_NATO_TRPC_medevac_doc
 {
@@ -101651,7 +115925,7 @@ class CommonOpforNATO_WDL: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_WDL_company_common: CommonOpforNATO_WDL
 {
@@ -101669,7 +115943,7 @@ class o_NATO_WDL_company_common: CommonOpforNATO_WDL
 	{
 		"smg_01_f",
 		"optic_aco_grn",
-		"",
+		"acc_flashlight_smg_01",
 		""
 	};
 	magazines[]=
@@ -101940,7 +116214,7 @@ class o_NATO_WDL_platoon_jtac: o_NATO_WDL_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -101951,8 +116225,6 @@ class o_NATO_WDL_platoon_jtac: o_NATO_WDL_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -102000,7 +116272,7 @@ class o_NATO_WDL_platoon_medic: o_NATO_WDL_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_WDL_squad_sl: CommonOpforNATO_WDL
 {
@@ -102044,20 +116316,23 @@ class o_NATO_WDL_squad_sl: CommonOpforNATO_WDL
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -102346,7 +116621,7 @@ class o_NATO_WDL_squad_cm: CommonOpforNATO_WDL
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_WDL_squad_dm: CommonOpforNATO_WDL
 {
@@ -102410,7 +116685,7 @@ class o_NATO_WDL_squad_eng: CommonOpforNATO_WDL
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_WDL_weapons_common: CommonOpforNATO_WDL
 {
@@ -102875,7 +117150,7 @@ class o_NATO_WDL_recon_common: CommonOpforNATO_WDL
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_WDL_recon_rm: o_NATO_WDL_recon_common
 {
@@ -102940,13 +117215,11 @@ class o_NATO_WDL_recon_tl: o_NATO_WDL_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -103144,7 +117417,7 @@ class o_NATO_WDL_recon_cm: o_NATO_WDL_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_WDL_recon_dm: o_NATO_WDL_recon_common
 {
@@ -103247,7 +117520,7 @@ class o_NATO_WDL_recon_exp: o_NATO_WDL_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_WDL_diver_common: o_NATO_WDL_recon_common
 {
@@ -103418,7 +117691,7 @@ class o_NATO_WDL_diver_exp: o_NATO_WDL_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_WDL_diver_cm: o_NATO_WDL_diver_common
 {
@@ -103458,7 +117731,7 @@ class o_NATO_WDL_diver_cm: o_NATO_WDL_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_WDL_diver_dm: o_NATO_WDL_diver_common
 {
@@ -103540,8 +117813,6 @@ class o_NATO_WDL_diver_jtac: o_NATO_WDL_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -103627,10 +117898,9 @@ class o_NATO_WDL_sniper_spot: o_NATO_WDL_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -103648,7 +117918,8 @@ class o_NATO_WDL_sniper_spot: o_NATO_WDL_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -103767,7 +118038,7 @@ class o_NATO_WDL_sniper_exp: o_NATO_WDL_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_WDL_crew_common: CommonOpforNATO_WDL
 {
@@ -103816,7 +118087,7 @@ class o_NATO_WDL_crew_common: CommonOpforNATO_WDL
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_WDL_crew_cmd: o_NATO_WDL_crew_common
 {
@@ -104016,7 +118287,7 @@ class o_NATO_WDL_logistics_common: CommonOpforNATO_WDL
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_NATO_WDL_medevac_common: CommonOpforNATO_WDL
 {
@@ -104071,7 +118342,7 @@ class o_NATO_WDL_medevac_common: CommonOpforNATO_WDL
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_NATO_WDL_medevac_doc: o_NATO_WDL_medevac_common
 {
@@ -104107,7 +118378,7 @@ class o_NATO_WDL_medevac_doc: o_NATO_WDL_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_NATO_WDL_medevac_tl: o_NATO_WDL_medevac_doc
 {
@@ -104156,6 +118427,3279 @@ class o_NATO_WDL_medevac_heli: o_NATO_WDL_medevac_common
 	};
 };
 class o_NATO_WDL_medevac_drv: o_NATO_WDL_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Driver";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_Banana"
+	};
+};
+class CommonOpforSYND: CommonDefault
+{
+	side="Opfor";
+	sideShort="o";
+	faction="SYND";
+	scope=0;
+	uniform[]=
+	{
+		"U_I_C_Soldier_Bandit_1_F",
+		"U_I_C_Soldier_Bandit_2_F",
+		"U_I_C_Soldier_Bandit_3_F",
+		"U_I_C_Soldier_Bandit_4_F",
+		"U_I_C_Soldier_Bandit_5_F"
+	};
+	vest[]=
+	{
+		"V_LegStrapBag_black_F",
+		"V_LegStrapBag_coyote_F",
+		"V_LegStrapBag_olive_F"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_rgr",
+		"B_AssaultPack_khk",
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_AssaultPack_tna_f"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akm",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhsusf_weap_m1911a1",
+			"",
+			"",
+			""
+		}
+	};
+	launcher[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black",
+		"g_bandanna_beast",
+		"g_bandanna_blk",
+		"g_bandanna_khk",
+		"g_bandanna_oli",
+		"g_bandanna_tan"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		""
+	};
+	map[]=
+	{
+		""
+	};
+	gps[]=
+	{
+		""
+	};
+	compass[]=
+	{
+		"ItemCompass"
+	};
+	watch[]=
+	{
+		"ItemWatch"
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_SYND_company_common: CommonOpforSYND
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_I_C_Soldier_Camo_F"
+	};
+	vest[]=
+	{
+		"V_Rangemaster_belt"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74u",
+			"rhs_acc_pgs64_74u",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_aks74un",
+			"rhs_acc_pgs64_74un",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		3
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class o_SYND_company_co: o_SYND_company_common
+{
+	scope=1;
+	displayName="Company Commanding Officer";
+	headgear[]=
+	{
+		"H_Hat_Safari_olive_F"
+	};
+};
+class o_SYND_company_xo: o_SYND_company_common
+{
+	scope=1;
+	displayName="Company Executive Officer";
+	gps[]=
+	{
+		"o_EasyTrack_Tablet"
+	};
+	headgear[]=
+	{
+		"H_Hat_Safari_sand_F"
+	};
+};
+class o_SYND_company_mio: o_SYND_company_common
+{
+	scope=1;
+	displayName="Mission Intelligence Officer";
+	gps[]=
+	{
+		"o_EasyTrack_Tablet"
+	};
+};
+class o_SYND_company_colo: o_SYND_company_common
+{
+	scope=1;
+	displayName="Chief of Logistics";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class o_SYND_company_fo: o_SYND_company_common
+{
+	scope=1;
+	displayName="Forward Observer";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_RangeTable_82mm"
+	};
+};
+class o_SYND_platoon_common: CommonOpforSYND
+{
+	scope=0;
+	vest[]=
+	{
+		"V_BandollierB_khk",
+		"V_BandollierB_cbr",
+		"V_BandollierB_rgr",
+		"V_BandollierB_blk",
+		"V_BandollierB_oli",
+		"V_Pocketed_black_F",
+		"V_Pocketed_coyote_F",
+		"V_Pocketed_olive_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_aks74_2",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		5,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class o_SYND_platoon_pl: o_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Leader";
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+};
+class o_SYND_platoon_psgt: o_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Sergeant";
+	gps[]=
+	{
+		"o_EasyTrack_Tablet"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+};
+class o_SYND_platoon_uav: o_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon UAV Operator";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_UAVBattery",
+		"o_UavTerminal"
+	};
+};
+class o_SYND_platoon_jtac: o_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon JTAC";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		5,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"Laserbatteries",
+		"rhs_GRD40_White",
+		2,
+		"rhs_GRD40_Green",
+		2,
+		"rhs_GRD40_Red",
+		2,
+		"rhs_VG40MD_Green",
+		2,
+		"rhs_VG40MD_Red",
+		2,
+		"rhs_VG40MD_White",
+		2,
+		"rhs_VG40OP_white",
+		2,
+		"rhs_VG40OP_green",
+		2,
+		"rhs_VG40OP_red",
+		2
+	};
+};
+class o_SYND_platoon_medic: o_SYND_platoon_common
+{
+	scope=1;
+	displayName="Infantry Platoon Medic";
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_MapTools",
+		"ACE_personalAidKit",
+		2,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		50,
+		"ACE_quikclot",
+		30,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_SYND_squad_sl: CommonOpforSYND
+{
+	scope=1;
+	displayName="Squad Leader";
+	vest[]=
+	{
+		"V_I_G_resistanceLeader_F",
+		"V_TacVest_khk",
+		"V_TacVest_brn",
+		"V_TacVest_oli",
+		"V_TacVest_blk",
+		"V_TacVest_camo"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn_gp25",
+			"",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akm_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_VOG25",
+		10,
+		"rhs_GRD40_White",
+		2,
+		"rhs_GRD40_Green",
+		"rhs_GRD40_Red",
+		"rhs_VG40MD_Green",
+		"rhs_VG40MD_Red",
+		"rhs_VG40MD_White",
+		"rhs_VG40OP_white",
+		2,
+		"rhs_VG40OP_green",
+		2,
+		"rhs_VG40OP_red",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class o_SYND_squad_ftl: CommonOpforSYND
+{
+	scope=1;
+	displayName="Squad Fireteam Leader";
+	vest[]=
+	{
+		"V_I_G_resistanceLeader_F",
+		"V_TacVest_khk",
+		"V_TacVest_brn",
+		"V_TacVest_oli",
+		"V_TacVest_blk",
+		"V_TacVest_camo"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item"
+	};
+};
+class o_SYND_squad_ar: CommonOpforSYND
+{
+	scope=1;
+	displayName="Squad Automatic Rifleman";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_pkm",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_100Rnd_762x54mmR",
+		4,
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"MiniGrenade",
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black"
+	};
+};
+class o_SYND_squad_gl: CommonOpforSYND
+{
+	scope=1;
+	displayName="Squad Grenadier";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn_gp25",
+			"",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akm_gp25",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_VOG25",
+		16,
+		"rhs_VOG25P",
+		6,
+		"rhs_VG40TB",
+		4,
+		"rhs_GRD40_White",
+		6,
+		"rhs_GDM40",
+		2
+	};
+};
+class o_SYND_squad_gl2: CommonOpforSYND
+{
+	scope=1;
+	displayName="Squad Grenadier (M32)";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		"rhs_weap_m32"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		5,
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		5,
+		"rhsusf_mag_6Rnd_M714_white",
+		1,
+		"rhsusf_mag_6Rnd_M576_Buckshot",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class o_SYND_squad_light: CommonOpforSYND
+{
+	scope=1;
+	displayName="Squad Rifleman (light)";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtk",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtkakm",
+			""
+		},
+		
+		{
+			"rhs_weap_akm",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtkakm",
+			""
+		}
+	};
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+};
+class o_SYND_squad_aar: CommonOpforSYND
+{
+	scope=1;
+	displayName="Squad Rifleman";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtk",
+			""
+		},
+		
+		{
+			"rhs_weap_akmn",
+			"rhs_acc_dtkakm",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_akms",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtkakm",
+			""
+		},
+		
+		{
+			"rhs_weap_akm",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_dtkakm",
+			""
+		}
+	};
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	magazines[]=
+	{
+		"ACE_SpareBarrel",
+		"rhs_100Rnd_762x54mmR",
+		2,
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class o_SYND_squad_lat: CommonOpforSYND
+{
+	scope=1;
+	displayName="Squad Light Anti-Tank Rifleman";
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	backpack[]=
+	{
+		"rhs_rpg_empty"
+	};
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_rpg7",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		4,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7V_mag",
+		3
+	};
+};
+class o_SYND_squad_cm: CommonOpforSYND
+{
+	scope=1;
+	displayName="Squad Combat Medic";
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		4,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV_500",
+		2,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_SYND_squad_dm: CommonOpforSYND
+{
+	scope=1;
+	displayName="Squad Designated Marksman";
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak103",
+			"rhs_acc_dtk",
+			"rhs_acc_pso1m2",
+			""
+		}
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeCard"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class o_SYND_squad_eng: CommonOpforSYND
+{
+	scope=1;
+	displayName="Squad Combat Engineer";
+	vest[]=
+	{
+		"V_BandollierB_khk",
+		"V_BandollierB_cbr",
+		"V_BandollierB_rgr",
+		"V_BandollierB_blk",
+		"V_BandollierB_oli",
+		"V_Pocketed_black_F",
+		"V_Pocketed_coyote_F",
+		"V_Pocketed_olive_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ToolKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_SYND_weapons_common: CommonOpforSYND
+{
+	scope=0;
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class o_SYND_assistant_common: o_SYND_weapons_common
+{
+	scope=0;
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class o_SYND_weapons_mg: o_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Medium Machine Gunner";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_pkp",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"rhs_100Rnd_762x54mmR",
+		3,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black"
+	};
+};
+class o_SYND_weapons_amg: o_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant MMG";
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_100Rnd_762x54mmR",
+		3,
+		"ACE_SpareBarrel"
+	};
+};
+class o_SYND_weapons_hmg: o_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Heavy Machine Gunner";
+	backpack[]=
+	{
+		"I_HMG_01_weapon_F"
+	};
+};
+class o_SYND_weapons_ahmg: o_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant HMG";
+	backpack[]=
+	{
+		"I_HMG_01_support_F"
+	};
+};
+class o_SYND_weapons_gmg: o_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Grenade Machine Gunner";
+	backpack[]=
+	{
+		"I_GMG_01_weapon_F"
+	};
+};
+class o_SYND_weapons_agmg: o_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Assistant GMG";
+	backpack[]=
+	{
+		"I_HMG_01_support_F"
+	};
+};
+class o_SYND_weapons_at: o_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad AT-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_rpg7",
+			"rhs_acc_pgo7v3",
+			"",
+			""
+		}
+	};
+};
+class o_SYND_weapons_aat: o_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad AT-Assistant";
+	backpack[]=
+	{
+		"B_Carryall_khk",
+		"B_Carryall_oli"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7V_mag",
+		4
+	};
+};
+class o_SYND_weapons_atgm: o_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad ATGM-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_i_Titan_short_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT"
+	};
+};
+class o_SYND_weapons_aatgm: o_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad ATGM-Assistant";
+	backpack[]=
+	{
+		"B_Carryall_khk",
+		"B_Carryall_oli"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT",
+		2,
+		"Titan_AP"
+	};
+};
+class o_SYND_weapons_aa: o_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad AA-Specialist";
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_igla",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_mag_9k38_rocket"
+	};
+};
+class o_SYND_weapons_aaa: o_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad AA-Assistant";
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		7,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_mag_9k38_rocket",
+		2
+	};
+};
+class o_SYND_weapons_mort: o_SYND_weapons_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Gunner";
+	backpack[]=
+	{
+		"I_Mortar_01_weapon_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class o_SYND_weapons_amort: o_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Assistant";
+	backpack[]=
+	{
+		"I_Mortar_01_support_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class o_SYND_weapons_acmort: o_SYND_assistant_common
+{
+	scope=1;
+	displayName="Weapon Squad Mortar Ammo Carrier";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_1Rnd_82mm_Mo_HE",
+		5
+	};
+};
+class o_SYND_recon_common: CommonOpforSYND
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_I_C_Soldier_Para_1_F",
+		"U_I_C_Soldier_Para_2_F",
+		"U_I_C_Soldier_Para_3_F",
+		"U_I_C_Soldier_Para_4_F",
+		"U_I_C_Soldier_Para_5_F"
+	};
+	vest[]=
+	{
+		"V_Chestrig_khk",
+		"V_Chestrig_rgr",
+		"V_Chestrig_blk",
+		"V_Chestrig_oli",
+		"xru_V_Chestrig_cbr"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_rgr",
+		"B_AssaultPack_khk",
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_AssaultPack_tna_f"
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhs_weap_tt33",
+			"",
+			"",
+			""
+		}
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak105",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_1p63"
+		},
+		
+		{
+			"rhs_weap_ak74",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_2mag",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_camo",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		},
+		
+		{
+			"rhs_weap_ak74_2",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black",
+		"g_bandanna_beast",
+		"g_bandanna_blk",
+		"g_bandanna_khk",
+		"g_bandanna_oli",
+		"g_bandanna_tan"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_SYND_recon_rm: o_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Operator";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_wirecutter"
+	};
+};
+class o_SYND_recon_tl: o_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Leader";
+	vest[]=
+	{
+		"V_I_G_resistanceLeader_F",
+		"V_TacVest_khk",
+		"V_TacVest_brn",
+		"V_TacVest_oli",
+		"V_TacVest_blk",
+		"V_TacVest_camo"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_fullplum_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_VOG25",
+		10,
+		"rhs_GRD40_White",
+		2,
+		"UGL_COL1",
+		"o_ir_grenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_IR_Strobe_Item"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class o_SYND_recon_ar: o_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Automatic Rifleman";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_RPK12",
+			"rhs_acc_ekp8_18",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"rhs_45Rnd_545X39_7N22_AK",
+		8,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ace_banana"
+	};
+	goggles[]=
+	{
+		"g_bandanna_aviator",
+		"g_bandanna_sport",
+		"g_shades_red",
+		"g_shades_black"
+	};
+};
+class o_SYND_recon_gl: o_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Grenadier";
+	vest[]=
+	{
+		"V_TacChestrig_grn_F",
+		"V_TacChestrig_oli_F",
+		"V_TacChestrig_cbr_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_fullplum_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_VOG25",
+		16,
+		"rhs_VOG25P",
+		6,
+		"rhs_VG40TB",
+		4,
+		"rhs_GRD40_White",
+		6,
+		"rhs_GDM40",
+		2
+	};
+};
+class o_SYND_recon_lat: o_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Light Anti-Tank";
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_rpg7",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7V_mag",
+		3
+	};
+};
+class o_SYND_recon_cm: o_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Medic";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		6,
+		"ACE_epinephrine",
+		12,
+		"ACE_salineIV_500",
+		3,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_SYND_recon_dm: o_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Marksman";
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_M14dmr_Rail",
+			"optic_KHS_old",
+			"",
+			""
+		},
+		
+		{
+			"hlc_rifle_M21_Rail",
+			"optic_KHS_old",
+			"",
+			""
+		},
+		
+		{
+			"srifle_DMR_03_khaki_F",
+			"optic_KHS_old",
+			"",
+			"bipod_01_F_khk"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"20Rnd_762x51_Mag",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"bipod_03_F_oli"
+	};
+};
+class o_SYND_recon_exp: o_SYND_recon_common
+{
+	scope=1;
+	displayName="Special Team Explosive Specialist";
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	secondary[]=
+	{
+		"ACE_VMM3"
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"DemoCharge_Remote_Mag",
+		4,
+		"SatchelCharge_Remote_Mag",
+		"SLAMDirectionalMine_Wire_Mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class o_SYND_diver_common: o_SYND_recon_common
+{
+	scope=0;
+	displayName="Combat Diver Operator";
+	uniform[]=
+	{
+		"U_I_Wetsuit"
+	};
+	vest[]=
+	{
+		"V_RebreatherB"
+	};
+	backpack[]=
+	{
+		"B_Carryall_khk",
+		"B_Carryall_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak105",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_1p63"
+		},
+		
+		{
+			"rhs_weap_ak74",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_2mag",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_camo",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		},
+		
+		{
+			"rhs_weap_ak74_2",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhs_weap_tt33",
+			"",
+			"",
+			""
+		}
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F"
+	};
+	goggles[]=
+	{
+		"G_i_Diving"
+	};
+	headgear[]=
+	{
+		""
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+};
+class o_SYND_diver_rm: o_SYND_diver_common
+{
+	scope=1;
+};
+class o_SYND_diver_tl: o_SYND_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Team Leader";
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F",
+		"ACE_MapTools"
+	};
+};
+class o_SYND_diver_exp: o_SYND_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Explosive Specialist";
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"ACE_M84",
+		4,
+		"DemoCharge_Remote_Mag",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F",
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class o_SYND_diver_cm: o_SYND_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Medic";
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F",
+		"W_Defibrillator",
+		"ACE_fieldDressing",
+		5,
+		"ACE_elasticBandage",
+		15,
+		"ACE_quikclot",
+		15,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV",
+		4,
+		"ACE_surgicalKit"
+	};
+	binoculars[]=
+	{
+		"ACE_MX2A"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_SYND_diver_dm: o_SYND_diver_common
+{
+	scope=1;
+	displayName="Combat Diver Marksman";
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_M14dmr_Rail",
+			"optic_KHS_old",
+			"",
+			""
+		},
+		
+		{
+			"hlc_rifle_M21_Rail",
+			"optic_KHS_old",
+			"",
+			""
+		},
+		
+		{
+			"srifle_DMR_03_khaki_F",
+			"optic_KHS_old",
+			"",
+			"bipod_01_F_khk"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"20Rnd_762x51_Mag",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_I_C_Soldier_Para_1_F",
+		"bipod_03_F_oli"
+	};
+};
+class o_SYND_diver_jtac: o_SYND_diver_tl
+{
+	scope=1;
+	displayName="Combat Diver Terminal Attack Controller";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_fullplum_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		10,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2,
+		"Laserbatteries",
+		"rhs_GRD40_Green",
+		2,
+		"rhs_GRD40_Red",
+		2,
+		"rhs_VG40MD_Green",
+		2,
+		"rhs_VG40MD_Red",
+		2,
+		"rhs_VG40MD_White",
+		2
+	};
+};
+class o_SYND_sniper_common: o_SYND_recon_common
+{
+	scope=0;
+	uniform[]=
+	{
+		"U_I_C_Soldier_Para_1_F",
+		"U_I_C_Soldier_Para_2_F",
+		"U_I_C_Soldier_Para_3_F",
+		"U_I_C_Soldier_Para_4_F",
+		"U_I_C_Soldier_Para_5_F"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Banana",
+		"ACE_Rangecard"
+	};
+};
+class o_SYND_sniper_spot: o_SYND_recon_common
+{
+	scope=1;
+	displayName="Sniper Spotter";
+	uniform[]=
+	{
+		"U_I_C_Soldier_Para_1_F",
+		"U_I_C_Soldier_Para_2_F",
+		"U_I_C_Soldier_Para_3_F",
+		"U_I_C_Soldier_Para_4_F",
+		"U_I_C_Soldier_Para_5_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_fullplum_gp25",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"o_ir_grenade",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_545x39_Mag_F",
+		8,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"rhs_VOG25",
+		10,
+		"rhs_GRD40_White",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_SpottingScope",
+		"ACE_Tripod",
+		"ACE_ATragMX",
+		"ACE_IR_Strobe_Item",
+		"ACE_Rangecard",
+		"ACE_Kestrel4500"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class o_SYND_sniper_ap: o_SYND_sniper_common
+{
+	scope=1;
+	displayName="Sniper (Anti-Personel)";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_m24sws_ghillie",
+			"rhsusf_acc_LEUPOLDMK4_2_d",
+			"rhsusf_acc_harris_swivel",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"rhsusf_5Rnd_762x51_m118_special_Mag",
+		16,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+};
+class o_SYND_sniper_am: o_SYND_sniper_common
+{
+	scope=1;
+	displayName="Sniper (Anti-Materiel)";
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_M107_w",
+			"rhsusf_acc_M8541",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"rhsusf_mag_10Rnd_STD_50BMG_M33",
+		5,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+};
+class o_SYND_sniper_exp: o_SYND_recon_common
+{
+	scope=1;
+	displayName="Sniper Explosive Specialist";
+	uniform[]=
+	{
+		"U_I_C_Soldier_Para_1_F",
+		"U_I_C_Soldier_Para_2_F",
+		"U_I_C_Soldier_Para_3_F",
+		"U_I_C_Soldier_Para_4_F",
+		"U_I_C_Soldier_Para_5_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_ak74_3",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			""
+		},
+		
+		{
+			"rhs_weap_ak74m_camo",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp1"
+		},
+		
+		{
+			"rhs_weap_ak74m_desert",
+			"rhs_acc_dtk",
+			"rhs_acc_2dpZenit",
+			"rhs_acc_ekp8_02"
+		}
+	};
+	magazines[]=
+	{
+		"rhs_mag_762x25_8",
+		3,
+		"30Rnd_545x39_Mag_F",
+		9,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"APERSTripMine_Wire_mag",
+		2,
+		"ClaymoreDirectionalMine_Remote_mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class o_SYND_crew_common: CommonOpforSYND
+{
+	scope=1;
+	displayName="Armored Vehicle Crew";
+	uniform[]=
+	{
+		"xru_u_coveralls_bandit"
+	};
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"V_LegStrapBag_black_F",
+		"V_LegStrapBag_coyote_F",
+		"V_LegStrapBag_olive_F"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_aks74_2",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		6,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_SYND_crew_cmd: o_SYND_crew_common
+{
+	scope=1;
+	displayName="Armored Vehicle Commander";
+	backpack[]=
+	{
+		"B_AssaultPack_rgr",
+		"B_AssaultPack_khk",
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_AssaultPack_tna_f"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class o_SYND_crew_jet: CommonOpforSYND
+{
+	scope=1;
+	displayName="Jet Pilot";
+	uniform[]=
+	{
+		"U_C_Man_casual_2_F",
+		"U_C_Man_casual_1_F",
+		"U_C_Man_casual_3_F"
+	};
+	vest[]=
+	{
+		""
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	watch[]=
+	{
+		"ACE_Altimeter"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class o_SYND_crew_heli: o_SYND_crew_common
+{
+	scope=1;
+	displayName="Helicopter Crew";
+	uniform[]=
+	{
+		"U_C_Man_casual_2_F",
+		"U_C_Man_casual_1_F",
+		"U_C_Man_casual_3_F"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	map[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class o_SYND_crew_helipilot: o_SYND_crew_heli
+{
+	scope=1;
+	displayName="Helicopter Pilot/Copilot/Gunner";
+	backpack[]=
+	{
+		"B_AssaultPack_rgr",
+		"B_AssaultPack_khk",
+		"B_FieldPack_oli",
+		"B_FieldPack_khk",
+		"B_AssaultPack_tna_f"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	nvgs[]=
+	{
+		""
+	};
+};
+class o_SYND_logistics_common: CommonOpforSYND
+{
+	scope=1;
+	displayName="Logistician";
+	vest[]=
+	{
+		"V_BandollierB_khk",
+		"V_BandollierB_cbr",
+		"V_BandollierB_rgr",
+		"V_BandollierB_blk",
+		"V_BandollierB_oli",
+		"V_Pocketed_black_F",
+		"V_Pocketed_coyote_F",
+		"V_Pocketed_olive_F"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_aks74",
+			"rhs_acc_dtk",
+			"",
+			""
+		},
+		
+		{
+			"rhs_weap_aks74_2",
+			"rhs_acc_dtk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_545x39_Mag_F",
+		6,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ToolKit"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL",
+		"ACRE_SEM52SL"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class o_SYND_medevac_common: CommonOpforSYND
+{
+	scope=0;
+	primary[]=
+	{
+		""
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhsusf_weap_m1911a1",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker"
+	};
+	headgear[]=
+	{
+		"H_Bandanna_camo",
+		"H_Bandanna_cbr",
+		"H_Bandanna_gry",
+		"H_Bandanna_khk",
+		"H_Bandanna_khk_hs",
+		"H_Bandanna_mcamo",
+		"H_Bandanna_sand",
+		"H_Bandanna_sgg",
+		"H_Watchcap_blk",
+		"H_Watchcap_camo",
+		"H_Watchcap_khk",
+		"H_Watchcap_cbr",
+		"H_Watchcap_sgg",
+		"H_Booniehat_khk",
+		"H_Booniehat_khk_hs",
+		"H_Booniehat_oli",
+		"H_Booniehat_tan",
+		"xru_H_MilCap_check1",
+		"xru_H_MilCap_check2",
+		"xru_H_MilCap_check3",
+		"H_MilCap_gry",
+		"H_Cap_Headphones",
+		"H_ShemagOpen_tan",
+		"H_ShemagOpen_khk",
+		"H_Shemag_olive_hs",
+		"H_Shemag_olive",
+		"H_Cap_tan",
+		"H_Cap_oli_hs",
+		"H_cap_oli",
+		"H_Cap_blk_ION",
+		"H_Cap_grn",
+		"H_Cap_blk_cmmg",
+		"H_Headbandage_clean_f",
+		"H_Headbandage_stained_f",
+		"H_Headbandage_bloody_f"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class o_SYND_medevac_doc: o_SYND_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Doctor";
+	backpack[]=
+	{
+		"B_Kitbag_rgr",
+		"B_TacticalPack_blk",
+		"B_TacticalPack_rgr",
+		"B_TacticalPack_oli"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_microDAGR",
+		"ACE_fieldDressing",
+		10,
+		"ACE_morphine",
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class o_SYND_medevac_tl: o_SYND_medevac_doc
+{
+	scope=1;
+	displayName="Medical Service Team Leader";
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+};
+class o_SYND_medevac_heli: o_SYND_medevac_common
+{
+	scope=1;
+	displayName="Medical Service Helicopter Pilot";
+	uniform[]=
+	{
+		"U_C_Man_casual_2_F",
+		"U_C_Man_casual_1_F",
+		"U_C_Man_casual_3_F"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"o_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_SEM52SL"
+	};
+	headgear[]=
+	{
+		"H_HeadSet_black_F",
+		"H_HeadSet_orange_F",
+		"H_HeadSet_red_F",
+		"H_HeadSet_white_F",
+		"H_HeadSet_yellow_F",
+		"H_Cap_Headphones",
+		"H_Cap_Marshal"
+	};
+	nvgs[]=
+	{
+		""
+	};
+};
+class o_SYND_medevac_drv: o_SYND_medevac_common
 {
 	scope=1;
 	displayName="Medical Service Driver";
@@ -104290,7 +121834,7 @@ class CommonOpforUSARMY_OCP: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USARMY_OCP_company_common: CommonOpforUSARMY_OCP
 {
@@ -104604,7 +122148,7 @@ class o_USARMY_OCP_platoon_jtac: o_USARMY_OCP_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -104615,8 +122159,6 @@ class o_USARMY_OCP_platoon_jtac: o_USARMY_OCP_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -104666,7 +122208,7 @@ class o_USARMY_OCP_platoon_medic: o_USARMY_OCP_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USARMY_OCP_squad_sl: CommonOpforUSARMY_OCP
 {
@@ -104710,20 +122252,23 @@ class o_USARMY_OCP_squad_sl: CommonOpforUSARMY_OCP
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -105113,7 +122658,7 @@ class o_USARMY_OCP_squad_cm: CommonOpforUSARMY_OCP
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USARMY_OCP_squad_dm: CommonOpforUSARMY_OCP
 {
@@ -105177,7 +122722,7 @@ class o_USARMY_OCP_squad_eng: CommonOpforUSARMY_OCP
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USARMY_OCP_weapons_common: CommonOpforUSARMY_OCP
 {
@@ -105660,7 +123205,7 @@ class o_USARMY_OCP_recon_common: CommonOpforUSARMY_OCP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USARMY_OCP_recon_rm: o_USARMY_OCP_recon_common
 {
@@ -105732,13 +123277,11 @@ class o_USARMY_OCP_recon_tl: o_USARMY_OCP_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -105811,7 +123354,7 @@ class o_USARMY_OCP_recon_ar: o_USARMY_OCP_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"acc_pointer_ir"
+		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -105936,7 +123479,7 @@ class o_USARMY_OCP_recon_cm: o_USARMY_OCP_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USARMY_OCP_recon_dm: o_USARMY_OCP_recon_common
 {
@@ -106048,7 +123591,7 @@ class o_USARMY_OCP_recon_exp: o_USARMY_OCP_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_USARMY_OCP_diver_common: o_USARMY_OCP_recon_common
 {
@@ -106220,7 +123763,7 @@ class o_USARMY_OCP_diver_exp: o_USARMY_OCP_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_USARMY_OCP_diver_cm: o_USARMY_OCP_diver_common
 {
@@ -106260,7 +123803,7 @@ class o_USARMY_OCP_diver_cm: o_USARMY_OCP_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USARMY_OCP_diver_dm: o_USARMY_OCP_diver_common
 {
@@ -106342,8 +123885,6 @@ class o_USARMY_OCP_diver_jtac: o_USARMY_OCP_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -106431,10 +123972,9 @@ class o_USARMY_OCP_sniper_spot: o_USARMY_OCP_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -106452,7 +123992,8 @@ class o_USARMY_OCP_sniper_spot: o_USARMY_OCP_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -106577,7 +124118,7 @@ class o_USARMY_OCP_sniper_exp: o_USARMY_OCP_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_USARMY_OCP_crew_common: CommonOpforUSARMY_OCP
 {
@@ -106629,7 +124170,7 @@ class o_USARMY_OCP_crew_common: CommonOpforUSARMY_OCP
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USARMY_OCP_crew_cmd: o_USARMY_OCP_crew_common
 {
@@ -106840,7 +124381,7 @@ class o_USARMY_OCP_logistics_common: CommonOpforUSARMY_OCP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USARMY_OCP_medevac_common: CommonOpforUSARMY_OCP
 {
@@ -106895,7 +124436,7 @@ class o_USARMY_OCP_medevac_common: CommonOpforUSARMY_OCP
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_USARMY_OCP_medevac_doc: o_USARMY_OCP_medevac_common
 {
@@ -106933,7 +124474,7 @@ class o_USARMY_OCP_medevac_doc: o_USARMY_OCP_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_USARMY_OCP_medevac_tl: o_USARMY_OCP_medevac_doc
 {
@@ -107147,7 +124688,7 @@ class CommonOpforUSMC_D: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_D_company_common: CommonOpforUSMC_D
 {
@@ -107460,7 +125001,7 @@ class o_USMC_D_platoon_jtac: o_USMC_D_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -107471,8 +125012,6 @@ class o_USMC_D_platoon_jtac: o_USMC_D_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -107521,7 +125060,7 @@ class o_USMC_D_platoon_medic: o_USMC_D_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_D_squad_sl: CommonOpforUSMC_D
 {
@@ -107579,20 +125118,23 @@ class o_USMC_D_squad_sl: CommonOpforUSMC_D
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -107996,7 +125538,7 @@ class o_USMC_D_squad_cm: CommonOpforUSMC_D
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_D_squad_dm: CommonOpforUSMC_D
 {
@@ -108060,7 +125602,7 @@ class o_USMC_D_squad_eng: CommonOpforUSMC_D
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_D_weapons_common: CommonOpforUSMC_D
 {
@@ -108541,7 +126083,7 @@ class o_USMC_D_recon_common: CommonOpforUSMC_D
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_D_recon_rm: o_USMC_D_recon_common
 {
@@ -108613,13 +126155,11 @@ class o_USMC_D_recon_tl: o_USMC_D_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -108706,7 +126246,7 @@ class o_USMC_D_recon_ar: o_USMC_D_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"acc_pointer_ir"
+		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -108831,7 +126371,7 @@ class o_USMC_D_recon_cm: o_USMC_D_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_D_recon_dm: o_USMC_D_recon_common
 {
@@ -108942,7 +126482,7 @@ class o_USMC_D_recon_exp: o_USMC_D_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_D_diver_common: o_USMC_D_recon_common
 {
@@ -109114,7 +126654,7 @@ class o_USMC_D_diver_exp: o_USMC_D_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_D_diver_cm: o_USMC_D_diver_common
 {
@@ -109154,7 +126694,7 @@ class o_USMC_D_diver_cm: o_USMC_D_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_D_diver_dm: o_USMC_D_diver_common
 {
@@ -109236,8 +126776,6 @@ class o_USMC_D_diver_jtac: o_USMC_D_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -109325,10 +126863,9 @@ class o_USMC_D_sniper_spot: o_USMC_D_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -109346,7 +126883,8 @@ class o_USMC_D_sniper_spot: o_USMC_D_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -109473,7 +127011,7 @@ class o_USMC_D_sniper_exp: o_USMC_D_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_D_crew_common: CommonOpforUSMC_D
 {
@@ -109525,7 +127063,7 @@ class o_USMC_D_crew_common: CommonOpforUSMC_D
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_D_crew_cmd: o_USMC_D_crew_common
 {
@@ -109733,7 +127271,7 @@ class o_USMC_D_logistics_common: CommonOpforUSMC_D
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_D_medevac_common: CommonOpforUSMC_D
 {
@@ -109788,7 +127326,7 @@ class o_USMC_D_medevac_common: CommonOpforUSMC_D
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_USMC_D_medevac_doc: o_USMC_D_medevac_common
 {
@@ -109825,7 +127363,7 @@ class o_USMC_D_medevac_doc: o_USMC_D_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_USMC_D_medevac_tl: o_USMC_D_medevac_doc
 {
@@ -110039,7 +127577,7 @@ class CommonOpforUSMC_W: CommonDefault
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", false, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_W_company_common: CommonOpforUSMC_W
 {
@@ -110352,7 +127890,7 @@ class o_USMC_W_platoon_jtac: o_USMC_W_platoon_common
 		"SmokeShellRed",
 		"SmokeShellGreen",
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
@@ -110363,8 +127901,6 @@ class o_USMC_W_platoon_jtac: o_USMC_W_platoon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
 		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_Smoke_Grenade_shell",
 		2,
 		"UGL_FlareGreen_F",
 		2,
@@ -110413,7 +127949,7 @@ class o_USMC_W_platoon_medic: o_USMC_W_platoon_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_W_squad_sl: CommonOpforUSMC_W
 {
@@ -110471,20 +128007,23 @@ class o_USMC_W_squad_sl: CommonOpforUSMC_W
 		2,
 		"SmokeShell",
 		2,
+		"ACE_HuntIR_M203",
+		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
+		"UGL_FlareRed_F",
 		2,
-		"ACE_HuntIR_M203",
-		4
+		"UGL_FlareYellow_F",
+		2
 	};
 	items[]=
 	{
@@ -110888,7 +128427,7 @@ class o_USMC_W_squad_cm: CommonOpforUSMC_W
 		2,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_W_squad_dm: CommonOpforUSMC_W
 {
@@ -110952,7 +128491,7 @@ class o_USMC_W_squad_eng: CommonOpforUSMC_W
 		"ACE_tourniquet",
 		"ToolKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_W_weapons_common: CommonOpforUSMC_W
 {
@@ -111433,7 +128972,7 @@ class o_USMC_W_recon_common: CommonOpforUSMC_W
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_W_recon_rm: o_USMC_W_recon_common
 {
@@ -111505,13 +129044,11 @@ class o_USMC_W_recon_tl: o_USMC_W_recon_common
 		10,
 		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"ACE_HuntIR_M203",
-		5,
+		"UGL_COL1",
 		"o_ir_grenade",
-		2
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -111598,7 +129135,7 @@ class o_USMC_W_recon_ar: o_USMC_W_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"acc_pointer_ir"
+		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -111723,7 +129260,7 @@ class o_USMC_W_recon_cm: o_USMC_W_recon_common
 		3,
 		"ACE_surgicalKit"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_W_recon_dm: o_USMC_W_recon_common
 {
@@ -111834,7 +129371,7 @@ class o_USMC_W_recon_exp: o_USMC_W_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_W_diver_common: o_USMC_W_recon_common
 {
@@ -112006,7 +129543,7 @@ class o_USMC_W_diver_exp: o_USMC_W_diver_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_W_diver_cm: o_USMC_W_diver_common
 {
@@ -112046,7 +129583,7 @@ class o_USMC_W_diver_cm: o_USMC_W_diver_common
 	{
 		"ACE_MX2A"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_W_diver_dm: o_USMC_W_diver_common
 {
@@ -112128,8 +129665,6 @@ class o_USMC_W_diver_jtac: o_USMC_W_diver_tl
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"1Rnd_SmokeOrange_Grenade_shell",
-		2,
 		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
 		"1Rnd_SmokePurple_Grenade_shell",
@@ -112217,10 +129752,9 @@ class o_USMC_W_sniper_spot: o_USMC_W_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeOrange_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell"
+		4,
+		"ACE_HuntIR_M203",
+		4
 	};
 	items[]=
 	{
@@ -112238,7 +129772,8 @@ class o_USMC_W_sniper_spot: o_USMC_W_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -112365,7 +129900,7 @@ class o_USMC_W_sniper_exp: o_USMC_W_recon_common
 		"ACE_DefusalKit",
 		"ACE_DeadManSwitch"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_W_crew_common: CommonOpforUSMC_W
 {
@@ -112417,7 +129952,7 @@ class o_USMC_W_crew_common: CommonOpforUSMC_W
 	{
 		"ACRE_PRC148"
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 1, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_W_crew_cmd: o_USMC_W_crew_common
 {
@@ -112625,7 +130160,7 @@ class o_USMC_W_logistics_common: CommonOpforUSMC_W
 	{
 		""
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_isEngineer"", 2, true];";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class o_USMC_W_medevac_common: CommonOpforUSMC_W
 {
@@ -112680,7 +130215,7 @@ class o_USMC_W_medevac_common: CommonOpforUSMC_W
 	{
 		""
 	};
-	preLoadout="(_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_USMC_W_medevac_doc: o_USMC_W_medevac_common
 {
@@ -112717,7 +130252,7 @@ class o_USMC_W_medevac_doc: o_USMC_W_medevac_common
 		"ACE_epinephrine",
 		30
 	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setCaptive true;";
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
 };
 class o_USMC_W_medevac_tl: o_USMC_W_medevac_doc
 {

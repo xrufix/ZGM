@@ -14,6 +14,9 @@
                 <English>CSAT - PLA of China (Green)</English>
                 <German>CSAT - Volksarmee China (Grün)</German>
             </Key>
+            <Key ID="STR_ZGM_FACTIONS_FIA">
+                <English>Freedom and Independece Army (Altis)</English>
+            </Key>
             <Key ID="STR_ZGM_FACTIONS_IDF">
                 <English>Israeli Defense Forces</English>
                 <German>Israelische Verteidigungsstreitkräfte</German>
@@ -44,6 +47,10 @@
             <Key ID="STR_ZGM_FACTIONS_NATO_WDL">
                 <English>NATO 2035 (Woodland)</English>
                 <German>NATO 2035 (Wald)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_SYND">
+                <English>Syndicat (Tanoa)</English>
+                <German>Syndikat (Tanoa)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_USARMY_OCP">
                 <English>US Army (OCP)</English>

@@ -10,6 +10,10 @@
 #include "..\loadouts\CHINA_GRN.hpp"
 #include "..\template.hpp"
 
+#define FACTION FIA
+#include "..\loadouts\CHINA_GRN.hpp"
+#include "..\template.hpp"
+
 #define FACTION IDF
 #include "..\loadouts\IDF.hpp"
 #include "..\template.hpp"
@@ -40,6 +44,10 @@
 
 #define FACTION NATO_WDL
 #include "..\loadouts\NATO_WDL.hpp"
+#include "..\template.hpp"
+
+#define FACTION SYND
+#include "..\loadouts\SYND.hpp"
 #include "..\template.hpp"
 
 #define FACTION USARMY_OCP

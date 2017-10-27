@@ -1,7 +1,8 @@
 class zgm_main {
     class functions {
         file = "zgm\main";
-        class iscurator {};     
+        class getSide {};
+        class isCurator {};     
         class initAddons {
             postInit = 1;
         };   
@@ -38,6 +39,7 @@ class zgm_loadouts {
         class factionBLUFOR {};
         class factionINDEP {};
         class factionOPFOR {};
+        class getFaction {};
         class selectLoadout {};
     };
 };
@@ -45,9 +47,6 @@ class zgm_loadouts {
 class zgm_loadoutScreen {
     class functions {
         file = "zgm\loadoutScreen";
-        class addAction {
-            postInit = 1;
-        };
         class applySelected {};
         class onLoad {};
         class resetDefault {};

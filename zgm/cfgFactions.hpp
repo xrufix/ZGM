@@ -13,6 +13,10 @@ class CfgFactions { // --------------------------//
         displayName = CSTRING(FACTIONS,CHINA_GRN);
         icon = "\A3\Ui_f\data\Map\Markers\Flags\viper_ca.paa";
     };
+    class FIA {
+        displayName = CSTRING(FACTIONS,FIA);
+        icon = "\a3\Data_f\cfgfactionclasses_ind_g_ca.paa";
+    };
     class IDF {
         displayName = CSTRING(FACTIONS,IDF);
     };
@@ -43,6 +47,10 @@ class CfgFactions { // --------------------------//
     class NATO_WDL {
         displayName = CSTRING(FACTIONS,NATO_WDL);
         icon = "\a3\Data_f\cfgFactionClasses_BLU_ca.paa";
+    };
+    class SYND {
+        displayName = CSTRING(FACTIONS,SYND);
+        icon = "\a3\Data_F_Exp\FactionIcons\icon_SYND_CA.paa";
     };
     class USARMY_OCP {
         displayName = CSTRING(FACTIONS,USARMY_OCP);

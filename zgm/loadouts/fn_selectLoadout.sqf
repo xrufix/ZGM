@@ -4,23 +4,13 @@ params ["_unit"];
 
 (_unit getVariable [QGVAR(role),["squad","light"]]) params ["_group","_role"];
 
-private _side = switch (side _unit) do {
-	case west : {"b";};
-	case east : {"o";};
-	case independent : {"i";};
-	default 	{"b"};
-};
-private _faction = switch (side _unit) do {
-	case west : {GVAR(BLUFOR)};
-	case east : {GVAR(OPFOR)};
-	case independent : {GVAR(INDEP)};
-	default		{GVAR(BLUFOR)};
-};
+private _side = [_unit] call EFUNC(main,getSide);
+private _faction = [_unit] call FUNC(getFaction);
 
 _loadout = format ["%1_%2_%3_%4",_side,_faction,_group,_role];
 
 if (isClass (missionConfigFile >> "CfgLoadouts" >> _loadout)) then {
-	_loadout
+    _loadout;
 } else {
-	[_unit] call poppy_fnc_selectLoadout
+    [_unit] call poppy_fnc_selectLoadout;
 };
