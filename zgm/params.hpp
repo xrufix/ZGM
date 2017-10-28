@@ -1,11 +1,11 @@
-#include "script_macros_cfg.hpp"
-
 #define FACTION_PARAM(var1,var2) \
     class DOUBLES(faction,var1) { \
         title = CSTRING(PARAMS,var1); \
-        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}; \
+        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18}; \
         texts[] = { \
             CSTRING(FACTIONS,AAF), \
+            CSTRING(FACTIONS,BW_FLECK), \
+            CSTRING(FACTIONS,BW_TROP), \
             CSTRING(FACTIONS,CHINA), \
             CSTRING(FACTIONS,CHINA_GRN), \
             CSTRING(FACTIONS,FIA), \
@@ -29,7 +29,7 @@
     };
 
 class params {
-    FACTION_PARAM(BLUFOR,9)
+    FACTION_PARAM(BLUFOR,11)
     FACTION_PARAM(INDEP,0)
     FACTION_PARAM(OPFOR,1)
 

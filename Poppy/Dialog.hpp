@@ -3,17 +3,17 @@ class RscPoppyMessageBox {
     movingEnable = 0;
     enableSimulation = 1;
     controlsBackground[] = {
-        pnlBackground,
-        lblHeader,
-        lblMessage,
-        imgBtnPrevious,
-        imgBtnNext,
-        imgBtnClose
+        "pnlBackground",
+        "lblHeader",
+        "lblMessage",
+        "imgBtnPrevious",
+        "imgBtnNext",
+        "imgBtnClose"
     };
     controls[] = {
-        btnPrevious,
-        btnNext,
-        btnClose
+        "btnPrevious",
+        "btnNext",
+        "btnClose"
     };
 
     class pnlBackground {
@@ -26,10 +26,10 @@ class RscPoppyMessageBox {
         sizeEx = 0.03;
         colorBackground[] = {0.2, 0.2, 0.2, 1};
         colorText[] = {0, 0, 0, 0};
-        x = safeZoneX + safeZoneW - 0.4;
-        y = safeZoneY + safeZoneH;
-        w = 0.4 + 0.1;
-        h = 0.25 + 0.1;
+        x = "safeZoneX + safeZoneW - 0.4";
+        y = "safeZoneY + safeZoneH";
+        w = "0.4 + 0.1";
+        h = "0.25 + 0.1";
     };
     class lblHeader {
         idc = 20;
@@ -41,10 +41,10 @@ class RscPoppyMessageBox {
         sizeEx = 0.04;
         colorBackground[] = {0, 0, 0, 0};
         colorText[] = {1, 1, 1, 1};
-        x = safeZoneX + safeZoneW - 0.4 + 0.015 * 3 / 4;
-        y = safeZoneY + safeZoneH + 0.01;
-        w = 0.4 - 0.03 * 3 / 4;
-        h = 0.06;
+        x = "safeZoneX + safeZoneW - 0.4 + 0.015 * 3 / 4";
+        y = "safeZoneY + safeZoneH + 0.01";
+        w = "0.4 - 0.03 * 3 / 4";
+        h = "0.06";
     };
     class lblMessage {
         idc = 21;
@@ -57,10 +57,10 @@ class RscPoppyMessageBox {
         sizeEx = 0.03;
         colorBackground[] = {0, 0, 0, 0};
         colorText[] = {1, 1, 1, 1};
-        x = safeZoneX + safeZoneW - 0.4 + 0.015 * 3 / 4;
-        y = safeZoneY + safeZoneH + 0.06;
-        w = 0.4 - 0.03 * 3 / 4;
-        h = 0.25 - 0.1;
+        x = "safeZoneX + safeZoneW - 0.4 + 0.015 * 3 / 4";
+        y = "safeZoneY + safeZoneH + 0.06";
+        w = "0.4 - 0.03 * 3 / 4";
+        h = "0.25 - 0.1";
     };
     class imgBtnPrevious {
         idc = 22;
@@ -72,22 +72,22 @@ class RscPoppyMessageBox {
         sizeEx = 0.03;
         colorBackground[] = {0.2, 0.2, 0.2, 1};
         colorText[] = {1, 1, 1, 1};
-        x = safeZoneX + safeZoneW - 0.03 * 3;
-        y = safeZoneY + safeZoneH + 0.02;
-        w = 0.03;
-        h = 0.03;
+        x = "safeZoneX + safeZoneW - 0.03 * 3";
+        y = "safeZoneY + safeZoneH + 0.02";
+        w = "0.03";
+        h = "0.03";
     };
     class imgBtnNext: imgBtnPrevious {
         idc = 23;
         text = "Poppy\UI\next.paa";
-        x = safeZoneX + safeZoneW - 0.03 * 2;
-        y = safeZoneY + safeZoneH + 0.02;
+        x = "safeZoneX + safeZoneW - 0.03 * 2";
+        y = "safeZoneY + safeZoneH + 0.02";
     };
     class imgBtnClose: imgBtnPrevious {
         idc = 24;
         text = "Poppy\UI\close.paa";
-        x = safeZoneX + safeZoneW - 0.03 * 2;
-        y = safeZoneY + safeZoneH + 0.02;
+        x = "safeZoneX + safeZoneW - 0.03 * 2";
+        y = "safeZoneY + safeZoneH + 0.02";
     };
 
     class btnPrevious {
@@ -116,22 +116,22 @@ class RscPoppyMessageBox {
         soundEnter[] = {"", 0, 1};
         soundEscape[] = {"", 0, 1};
         soundPush[] = {"", 0, 1};
-        x = safeZoneX + safeZoneW - 0.03 * 3;
-        y = safeZoneY + safeZoneH + 0.02;
-        w = 0.03;
-        h = 0.03;
+        x = "safeZoneX + safeZoneW - 0.03 * 3";
+        y = "safeZoneY + safeZoneH + 0.02";
+        w = "0.03";
+        h = "0.03";
         onButtonClick = "Poppy_logIndex = Poppy_logIndex - 1; [ctrlParent (_this select 0)] call Poppy_fnc_updateMessageBox;";
     };
     class btnNext: btnPrevious {
         idc = 11;
-        x = safeZoneX + safeZoneW - 0.03 * 2;
-        y = safeZoneY + safeZoneH + 0.02;
+        x = "safeZoneX + safeZoneW - 0.03 * 2";
+        y = "safeZoneY + safeZoneH + 0.02";
         onButtonClick = "Poppy_logIndex = Poppy_logIndex + 1; [ctrlParent (_this select 0)] call Poppy_fnc_updateMessageBox;";
     };
     class btnClose: btnPrevious {
         idc = 12;
-        x = safeZoneX + safeZoneW - 0.03 * 2;
-        y = safeZoneY + safeZoneH + 0.02;
+        x = "safeZoneX + safeZoneW - 0.03 * 2";
+        y = "safeZoneY + safeZoneH + 0.02";
         onButtonClick = "Poppy_log = []; (ctrlParent (_this select 0)) closeDisplay 1";
     };
 };

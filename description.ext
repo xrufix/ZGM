@@ -15,15 +15,15 @@ class Header {
 #include "W-Framework\description.hpp"
 
 class CfgFunctions {
-    #include "poppy\CfgFunctions.hpp"
+    #include "Poppy\CfgFunctions.hpp"
     #include "zgm\CfgFunctions.hpp"
 };
 
+#include "zgm\script_macros_cfg.hpp"
 #include "zgm\params.hpp"
 #include "zgm\loadoutScreen\dialog.hpp"
 #include "zgm\CfgFactions.hpp"
 #include "zgm\CfgRoles.hpp"
-
 #include "CfgPoppy.hpp"
 #include "CfgLoadouts.hpp"
 

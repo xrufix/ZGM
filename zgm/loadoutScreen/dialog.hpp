@@ -107,21 +107,21 @@ class RscZGMheader {
 //missionConfigfile >> "RscZGMLoadouts"
 class RscZGMLoadouts {
     idd = -1;
-    movingEnable = false;
-    enablesimulation = true;
+    movingEnable = "false";
+    enablesimulation = "true";
     controlsBackground[] = {
-		Background,
-        Side,
-        Faction,
-		Role,
-		headerSide,
-		headerFaction,
-		headerRole
+		"Background",
+        "Side",
+        "Faction",
+		"Role",
+		"headerSide",
+		"headerFaction",
+		"headerRole"
     };
     controls[] = {
-        Apply,
-        Reset,
-        Cancel
+        "Apply",
+        "Reset",
+        "Cancel"
 	};
 
 	onLoad = "_this call zgm_loadoutScreen_fnc_onLoad;";

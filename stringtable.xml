@@ -3,8 +3,14 @@
     <Package name="main">
         <Container name="main">
             <Key ID="STR_ZGM_FACTIONS_AAF">
-                <English>Altis Armed Forces</English>
-                <German>Altische Streitkräfte (AAF)</German>
+                <English>AAF - Altis Armed Forces</English>
+                <German>AAF - Altische Streitkräfte</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_BW_FLECK">
+                <German>Bundeswehr (Flecktarn)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_BW_TROP">
+                <German>Bundeswehr (Tropentarn)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_CHINA">
                 <English>CSAT - PLA of China (Brown)</English>
@@ -15,7 +21,7 @@
                 <German>CSAT - Volksarmee China (Grün)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_FIA">
-                <English>Freedom and Independece Army (Altis)</English>
+                <English>FIA - Freedom and Independece Army</English>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_IDF">
                 <English>Israeli Defense Forces</English>
@@ -34,8 +40,8 @@
                 <German>CSAT - Iranische Armee (Stadt)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_NATO_CTRG">
-                <English>British Army 2035 / CTRG</English>
-                <German>Britische Armee 2035 / CTRG</German>
+                <English>CTRG - British Army 2035</English>
+                <German>CTRG - Britische Armee 2035</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_NATO_MTP">
                 <English>NATO 2035 (MTP)</English>
@@ -53,10 +59,10 @@
                 <German>Syndikat (Tanoa)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_USARMY_OCP">
-                <English>US Army (OCP)</English>
+                <English>US Army (OCP - Desert)</English>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_USARMY_UCP">
-                <English>US Army (UCP)</English>
+                <English>US Army (UCP - Woodland)</English>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_USMC_D">
                 <English>US Marine Corps (Desert)</English>

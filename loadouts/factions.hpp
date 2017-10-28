@@ -2,6 +2,14 @@
 #include "..\loadouts\AAF.hpp"
 #include "..\template.hpp"
 
+#define FACTION BW_FLECK
+#include "..\loadouts\BW_FLECK.hpp"
+#include "..\template.hpp"
+
+#define FACTION BW_TROP
+#include "..\loadouts\BW_TROP.hpp"
+#include "..\template.hpp"
+
 #define FACTION CHINA
 #include "..\loadouts\CHINA.hpp"
 #include "..\template.hpp"
@@ -11,7 +19,7 @@
 #include "..\template.hpp"
 
 #define FACTION FIA
-#include "..\loadouts\CHINA_GRN.hpp"
+#include "..\loadouts\FIA.hpp"
 #include "..\template.hpp"
 
 #define FACTION IDF
@@ -51,6 +59,10 @@
 #include "..\template.hpp"
 
 #define FACTION USARMY_OCP
+#include "..\loadouts\USARMY_OCP.hpp"
+#include "..\template.hpp"
+
+#define FACTION USARMY_UCP
 #include "..\loadouts\USARMY_UCP.hpp"
 #include "..\template.hpp"
 

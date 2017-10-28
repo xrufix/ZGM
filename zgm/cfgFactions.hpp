@@ -1,9 +1,15 @@
-#include "script_macros_cfg.hpp"
-
 class CfgFactions { // --------------------------//
     class AAF {
         displayName = CSTRING(FACTIONS,AAF);
         icon = "\a3\Data_f\cfgFactionClasses_IND_ca.paa";
+    };
+    class BW_FLECK {
+        displayName = CSTRING(FACTIONS,BW_FLECK);
+        icon = "\bwa3_units\data\bwa3_faction_icon.paa";
+    };
+    class BW_TROP {
+        displayName = CSTRING(FACTIONS,BW_TROP);
+        icon = "\bwa3_units\data\bwa3_faction_icon.paa";
     };
     class CHINA {
         displayName = CSTRING(FACTIONS,CHINA);
