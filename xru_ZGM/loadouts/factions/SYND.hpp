@@ -1,8 +1,5 @@
-/* ###################### - DISPLAY NAMES - ###################### */
-#include "components\displayNames.hpp"
-// Definiere hier Namen, die vom Standard abweichen!
-
 /* ###################### - UGL-Magazines - ###################### */
+#include "components\indep.hpp"
 #include "components\ugl_rhsafrf.hpp"
 
 /* ###################### - UNIFORMS - ###################### */

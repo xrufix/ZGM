@@ -1,26 +1,5 @@
-/* ###################### - DISPLAY NAMES - ###################### */
-#include "components\displayNames.hpp"
-// Definiere hier Namen, die vom Standard abweichen!
-
-#define DN_RS_TL    "Squad Rifleman"   // Ohne Granatwerfer
-#define DN_RS_GRN   "Squad Fireteam Leader"
-#define DN_RS_AC    "Squad Assistant Automatic Rifleman"
-
-#define DN_WS_AT    "Weapon Squad AT (SMAW)"
-#define DN_WS_AAT   "Weapon Squad AT-Assistant"
-#define DN_WS_ATGM  "Weapon Squad ATGM (Javelin)"
-#define DN_WS_AATGM "Weapon Squad ATGM-Assistant"
-
-#define DN_SN_AP    "Sniper (M2010)"
-#define DN_SN_AM    "Sniper (M107)"
-
-#define DN_SP_LOG   "Logistician"
-#define DN_ME_DCT   "Corpsmen Doctor"
-#define DN_ME_TL    "Corpsmen Team Leader"
-#define DN_ME_PIL   "Corpsmen Helicopter Pilot"
-#define DN_ME_DRV   "Corpsmen Driver"
-
 /* ###################### - UGL-Magazines - ###################### */
+#include "components\blufor.hpp"
 #include "components\ugl_vanilla.hpp"
 
 
@@ -81,7 +60,7 @@
 
 
 /* ###################### - ATTACHMENTS- ###################### */
-#define LASERPOINTER_BK "rhsusf_acc_anpeq15side_bk"
+#define LASERPOINTER "rhsusf_acc_anpeq15side_bk"
 #define LASERPOINTER_TN "rhsusf_acc_anpeq15side"
 
 #define RCO_1 "rhsusf_acc_ACOG_USMC"
@@ -104,17 +83,17 @@
 #define RIFLE_2 "rhs_weap_m16a4_carryhandle_pmag"
 #define RIFLE_UGL "rhs_weap_m16a4_carryhandle_M203"
 #define RIFLE_RCO ARR_6(                      \
-    WEAPON(RIFLE_1,LASERPOINTER_BK,RCO_1,""), \
-    WEAPON(RIFLE_1,LASERPOINTER_BK,RCO_2,""), \
-    WEAPON(RIFLE_1,LASERPOINTER_BK,RCO_3,""), \
-    WEAPON(RIFLE_2,LASERPOINTER_BK,RCO_1,""), \
-    WEAPON(RIFLE_2,LASERPOINTER_BK,RCO_2,""), \
-    WEAPON(RIFLE_2,LASERPOINTER_BK,RCO_3,"")  \
+    WEAPON(RIFLE_1,LASERPOINTER,RCO_1,""), \
+    WEAPON(RIFLE_1,LASERPOINTER,RCO_2,""), \
+    WEAPON(RIFLE_1,LASERPOINTER,RCO_3,""), \
+    WEAPON(RIFLE_2,LASERPOINTER,RCO_1,""), \
+    WEAPON(RIFLE_2,LASERPOINTER,RCO_2,""), \
+    WEAPON(RIFLE_2,LASERPOINTER,RCO_3,"")  \
 )
 #define RIFLE_UGL_RCO ARR_3(                    \
-    WEAPON(RIFLE_UGL,LASERPOINTER_BK,RCO_1,""), \
-    WEAPON(RIFLE_UGL,LASERPOINTER_BK,RCO_2,""),	\
-    WEAPON(RIFLE_UGL,LASERPOINTER_BK,RCO_3,"")	\
+    WEAPON(RIFLE_UGL,LASERPOINTER,RCO_1,""), \
+    WEAPON(RIFLE_UGL,LASERPOINTER,RCO_2,""),	\
+    WEAPON(RIFLE_UGL,LASERPOINTER,RCO_3,"")	\
 )
 #define RIFLE_CCO RIFLE_RCO
 #define RIFLE_UGL_CCO RIFLE_UGL_RCO
@@ -138,14 +117,14 @@
 
 // SF CARBINES
 #define SF_CARBINE ARR_4(	                                                                        \
-    WEAPON("rhs_weap_mk18_bk","rhsusf_acc_nt4_black",LASERPOINTER_BK,"rhsusf_acc_SpecterDR"),   	\
-    WEAPON("rhs_weap_mk18","rhsusf_acc_nt4_tan",LASERPOINTER_BK,"rhsusf_acc_SpecterDR"),        	\
+    WEAPON("rhs_weap_mk18_bk","rhsusf_acc_nt4_black",LASERPOINTER,"rhsusf_acc_SpecterDR"),   	\
+    WEAPON("rhs_weap_mk18","rhsusf_acc_nt4_tan",LASERPOINTER,"rhsusf_acc_SpecterDR"),        	\
     WEAPON("rhs_weap_mk18_KAC_d","rhsusf_acc_nt4_tan",LASERPOINTER_TN,"rhsusf_acc_SpecterDR_D"),	\
     WEAPON("rhs_weap_mk18_d","rhsusf_acc_nt4_tan",LASERPOINTER_TN,"rhsusf_acc_SpecterDR_D")   	\
 )
 #define SF_CARBINE_UGL ARR_3(	                                                                            \
     WEAPON("rhs_weap_m4a1_blockII_M203","rhsusf_acc_nt4_tan",LASERPOINTER_TN,"rhsusf_acc_SpecterDR"),	    \
-    WEAPON("rhs_weap_m4a1_blockII_M203_bk","rhsusf_acc_nt4_black",LASERPOINTER_BK,"rhsusf_acc_SpecterDR"),	\
+    WEAPON("rhs_weap_m4a1_blockII_M203_bk","rhsusf_acc_nt4_black",LASERPOINTER,"rhsusf_acc_SpecterDR"),	\
     WEAPON("rhs_weap_m4a1_blockII_M203_d","rhsusf_acc_nt4_tan",LASERPOINTER_TN,"rhsusf_acc_SpecterDR_D")	\
 )
 #define SF_CARBINE_TN ARR_2(	                                                                    \
@@ -153,17 +132,17 @@
     WEAPON("rhs_weap_mk18_d","rhsusf_acc_nt4_tan",LASERPOINTER_TN,"rhsusf_acc_SpecterDR_D")	    \
 )
 #define SF_CARBINE_UGL_TN		WEAPON("rhs_weap_m4a1_blockII_M203_d","rhsusf_acc_nt4_tan",LASERPOINTER_TN,"rhsusf_acc_SpecterDR_D")
-#define SF_CARBINE_DIVER 		WEAPON("rhs_weap_mk18_KAC_bk","rhsusf_acc_nt4_black",LASERPOINTER_BK,CCO)
-#define SF_CARBINE_DIVER_UGL 	WEAPON("rhs_weap_m4a1_blockII_M203_bk","rhsusf_acc_nt4_black",LASERPOINTER_BK,CCO)
+#define SF_CARBINE_DIVER 		WEAPON("rhs_weap_mk18_KAC_bk","rhsusf_acc_nt4_black",LASERPOINTER,CCO)
+#define SF_CARBINE_DIVER_UGL 	WEAPON("rhs_weap_m4a1_blockII_M203_bk","rhsusf_acc_nt4_black",LASERPOINTER,CCO)
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR WEAPON("srifle_EBR_F",DMR_BIPOD,LASERPOINTER_BK,"rhsusf_acc_M8541_low")
+#define DMR WEAPON("srifle_EBR_F",DMR_BIPOD,LASERPOINTER,"rhsusf_acc_M8541_low")
 #define DMR_SF ARR_3(                                                                     	\
-    WEAPON("arifle_SPAR_03_blk_F","muzzle_snds_B",LASERPOINTER_BK,"optic_AMS"),         	\
+    WEAPON("arifle_SPAR_03_blk_F","muzzle_snds_B",LASERPOINTER,"optic_AMS"),         	\
     WEAPON("arifle_SPAR_03_khk_F","muzzle_snds_B_khk_F",LASERPOINTER_TN,"optic_AMS_khk"),	\
     WEAPON("arifle_SPAR_03_snd_F","muzzle_snds_B_snd_F",LASERPOINTER_TN,"optic_AMS_snd")	\
 )
-#define DMR_DIVER WEAPON("arifle_SPAR_03_blk_F","muzzle_snds_B",LASERPOINTER_BK,"rhsusf_acc_SpecterDR_A")
+#define DMR_DIVER WEAPON("arifle_SPAR_03_blk_F","muzzle_snds_B",LASERPOINTER,"rhsusf_acc_SpecterDR_A")
 #define SR_AP WEAPON("rhs_weap_m40a5_d",SNIPER_OPTIC,"rhsusf_acc_harris_swivel","")
 #define SR_AM WEAPON("rhs_weap_M107_d",SNIPER_OPTIC,"","")
 
@@ -171,19 +150,19 @@
 #define AUTORIFLE_1 "rhs_weap_m249_pip_S"
 #define AUTORIFLE_2 "rhs_weap_m249_pip_S_vfg"
 #define AUTORIFLE_RCO ARR_6(                    	\
-    WEAPON(AUTORIFLE_1,LASERPOINTER_BK,RCO_1,""),	\
-    WEAPON(AUTORIFLE_1,LASERPOINTER_BK,RCO_2,""),	\
-    WEAPON(AUTORIFLE_1,LASERPOINTER_BK,RCO_3,""),	\
-    WEAPON(AUTORIFLE_2,LASERPOINTER_BK,RCO_1,""),	\
-    WEAPON(AUTORIFLE_2,LASERPOINTER_BK,RCO_2,""),	\
-    WEAPON(AUTORIFLE_2,LASERPOINTER_BK,RCO_3,"")	\
+    WEAPON(AUTORIFLE_1,LASERPOINTER,RCO_1,""),	\
+    WEAPON(AUTORIFLE_1,LASERPOINTER,RCO_2,""),	\
+    WEAPON(AUTORIFLE_1,LASERPOINTER,RCO_3,""),	\
+    WEAPON(AUTORIFLE_2,LASERPOINTER,RCO_1,""),	\
+    WEAPON(AUTORIFLE_2,LASERPOINTER,RCO_2,""),	\
+    WEAPON(AUTORIFLE_2,LASERPOINTER,RCO_3,"")	\
 )
 #define AUTORIFLE_SF ARR_3(                                                                     	\
     WEAPON("arifle_SPAR_02_khk_F","rhsusf_acc_nt4_tan","bipod_01_F_khk","rhsusf_acc_SpecterDR_D"),	\
     WEAPON("arifle_SPAR_02_snd_F","rhsusf_acc_nt4_tan","bipod_01_F_snd","rhsusf_acc_SpecterDR_D"),	\
     WEAPON("arifle_SPAR_02_blk_F","rhsusf_acc_nt4_black","bipod_01_F_blk","rhsusf_acc_SpecterDR")	\
 )
-#define MMG WEAPON("rhs_weap_m240B","rhsusf_acc_ACOG_MDO",LASERPOINTER_BK,"")
+#define MMG WEAPON("rhs_weap_m240B","rhsusf_acc_ACOG_MDO",LASERPOINTER,"")
 
 
 

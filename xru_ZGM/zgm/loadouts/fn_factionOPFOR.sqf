@@ -2,6 +2,4 @@
 
 params ["_index"];
 
-private _factions = "true" configClasses (missionConfigFile >> "CfgFactions") apply {configName _x};
-
-GVAR(OPFOR) = _factions select _index;
+GVAR(OPFOR) = configName (("true" configClasses (missionConfigFile >> "CfgFactions")) select _index);

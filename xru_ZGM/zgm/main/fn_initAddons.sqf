@@ -17,12 +17,9 @@ ace_hearing_autoAddEarplugsToUnits = false;
 
 ace_weather_enableServerController = true;
 ace_weather_useACEWeather = true;
-ace_weather_syncRain = true;
-ace_weather_syncWind = true;
-ace_weather_syncMisc = true;
 ace_weather_serverUpdateInterval = 60;
 
-ace_map_mapIllumination = true;
+ace_map_mapIllumination = false;
 ace_map_mapGlow = true;
 ace_map_mapShake = true;
 ace_map_mapLimitZoom = false;

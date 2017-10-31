@@ -10,6 +10,9 @@ class Header {
     maxPlayers = 128;
 };
 
+// Standard loadouts
+#include "default_loadouts.hpp"
+
 // W-Framework und Medicsystem
 #define STANDARD
 #include "W-Framework\description.hpp"

@@ -1,11 +1,6 @@
 #include "USMC_D.hpp"
 // Definiere hier nur, was von USMC Desert abweicht!
 
-/* ###################### - DISPLAY NAMES - ###################### */
-/* Wie Desert */
-
-
-
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "rhs_uniform_FROG01_wd"
 #define UNIFORM             ARR_1(UNIFORM_SINGLE)
@@ -57,15 +52,15 @@
 
 // SF CARBINES
 #define SF_CARBINE ARR_4(	                                                                        \
-    WEAPON("rhs_weap_mk18_bk","rhsusf_acc_nt4_black",LASERPOINTER_BK,"rhsusf_acc_SpecterDR"),   	\
-    WEAPON("rhs_weap_mk18","rhsusf_acc_nt4_tan",LASERPOINTER_BK,"rhsusf_acc_SpecterDR"),        	\
-    WEAPON("rhs_weap_mk18_KAC_wd","rhsusf_acc_nt4_tan",LASERPOINTER_BK,"rhsusf_acc_SpecterDR_OD"),	\
-    WEAPON("rhs_weap_mk18_wd","rhsusf_acc_nt4_tan",LASERPOINTER_BK,"rhsusf_acc_SpecterDR_OD")   	\
+    WEAPON("rhs_weap_mk18_bk","rhsusf_acc_nt4_black",LASERPOINTER,"rhsusf_acc_SpecterDR"),   	\
+    WEAPON("rhs_weap_mk18","rhsusf_acc_nt4_tan",LASERPOINTER,"rhsusf_acc_SpecterDR"),        	\
+    WEAPON("rhs_weap_mk18_KAC_wd","rhsusf_acc_nt4_tan",LASERPOINTER,"rhsusf_acc_SpecterDR_OD"),	\
+    WEAPON("rhs_weap_mk18_wd","rhsusf_acc_nt4_tan",LASERPOINTER,"rhsusf_acc_SpecterDR_OD")   	\
 )
 #define SF_CARBINE_UGL ARR_3(	                                                                            \
-    WEAPON("rhs_weap_m4a1_blockII_M203","rhsusf_acc_nt4_tan",LASERPOINTER_BK,"rhsusf_acc_SpecterDR"),	    \
-    WEAPON("rhs_weap_m4a1_blockII_M203_bk","rhsusf_acc_nt4_black",LASERPOINTER_BK,"rhsusf_acc_SpecterDR"),	\
-    WEAPON("rhs_weap_m4a1_blockII_M203_wd","rhsusf_acc_nt4_tan",LASERPOINTER_BK,"rhsusf_acc_SpecterDR_OD")	\
+    WEAPON("rhs_weap_m4a1_blockII_M203","rhsusf_acc_nt4_tan",LASERPOINTER,"rhsusf_acc_SpecterDR"),	    \
+    WEAPON("rhs_weap_m4a1_blockII_M203_bk","rhsusf_acc_nt4_black",LASERPOINTER,"rhsusf_acc_SpecterDR"),	\
+    WEAPON("rhs_weap_m4a1_blockII_M203_wd","rhsusf_acc_nt4_tan",LASERPOINTER,"rhsusf_acc_SpecterDR_OD")	\
 )
 #define SF_CARBINE_TN ARR_2(	                                                                    \
     WEAPON("rhs_weap_mk18_KAC_wd","rhsusf_acc_nt4_tan",LASERPOINTER_TN,"rhsusf_acc_SpecterDR_OD"),	\

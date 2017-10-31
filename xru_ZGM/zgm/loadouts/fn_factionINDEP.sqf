@@ -2,6 +2,4 @@
 
 params ["_index"];
 
-private _factions = "true" configClasses (missionConfigFile >> "CfgFactions") apply {configName _x};
-
-GVAR(INDEP) = _factions select _index;
+GVAR(INDEP) = configName (("true" configClasses (missionConfigFile >> "CfgFactions")) select _index);

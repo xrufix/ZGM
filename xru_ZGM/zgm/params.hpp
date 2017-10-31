@@ -3,22 +3,22 @@
         title = CSTRING(PARAMS,var1); \
         values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18}; \
         texts[] = { \
-            CSTRING(FACTIONS,AAF), \
+/* 0 */     CSTRING(FACTIONS,AAF), \
             CSTRING(FACTIONS,BW_FLECK), \
             CSTRING(FACTIONS,BW_TROP), \
             CSTRING(FACTIONS,CHINA), \
             CSTRING(FACTIONS,CHINA_GRN), \
-            CSTRING(FACTIONS,FIA), \
+/* 5 */     CSTRING(FACTIONS,FIA), \
             CSTRING(FACTIONS,IDF), \
             CSTRING(FACTIONS,IRAN), \
             CSTRING(FACTIONS,IRAN_GRN), \
             CSTRING(FACTIONS,IRAN_URB), \
-            CSTRING(FACTIONS,NATO_CTRG), \
+/* 10 */    CSTRING(FACTIONS,NATO_CTRG), \
             CSTRING(FACTIONS,NATO_MTP), \
             CSTRING(FACTIONS,NATO_TRPC), \
             CSTRING(FACTIONS,NATO_WDL), \
             CSTRING(FACTIONS,SYND), \
-            CSTRING(FACTIONS,USARMY_OCP), \
+/* 15 */    CSTRING(FACTIONS,USARMY_OCP), \
             CSTRING(FACTIONS,USARMY_UCP), \
             CSTRING(FACTIONS,USMC_D), \
             CSTRING(FACTIONS,USMC_W) \
@@ -29,9 +29,9 @@
     };
 
 class params {
-    FACTION_PARAM(BLUFOR,11)
-    FACTION_PARAM(INDEP,0)
-    FACTION_PARAM(OPFOR,1)
+    FACTION_PARAM(BLUFOR,DEFAULT_B)
+    FACTION_PARAM(INDEP,DEFAULT_I)
+    FACTION_PARAM(OPFOR,DEFAULT_O)
 
     class GuerFriendly
     {

@@ -1,9 +1,5 @@
 #include "IRAN.hpp"
 
-/* ###################### - DISPLAY NAMES - ###################### */
-// Wie IRAN
-
-
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "U_O_CombatUniform_oucamo"
 #define UNIFORM_COMMAND     ARR_1("U_O_OfficerUniform_ocamo")

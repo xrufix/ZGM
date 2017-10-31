@@ -1,9 +1,5 @@
 #include "IRAN_GRN.hpp"
 
-/* ###################### - DISPLAY NAMES - ###################### */
-// Wie IRAN_GRN
-
-
 /* ###################### - UNIFORMS - ###################### */
 // Wie IRAN_GRN
 

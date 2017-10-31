@@ -2,6 +2,4 @@
 
 params ["_index"];
 
-private _factions = "true" configClasses (missionConfigFile >> "CfgFactions") apply {configName _x};
-
-GVAR(BLUFOR) = _factions select _index;
+GVAR(BLUFOR) = configName (("true" configClasses (missionConfigFile >> "CfgFactions")) select _index);

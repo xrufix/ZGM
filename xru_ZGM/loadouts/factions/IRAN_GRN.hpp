@@ -1,9 +1,5 @@
 #include "IRAN.hpp"
 
-/* ###################### - DISPLAY NAMES - ###################### */
-// Wie IRAN
-
-
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "U_O_T_Soldier_F"        // Für Inventar
 #define UNIFORM             ARR_1(UNIFORM_SINGLE)      // Für Zufallsauswahl

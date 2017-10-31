@@ -111,10 +111,8 @@ class RscZGMLoadouts {
     enablesimulation = "true";
     controlsBackground[] = {
 		"Background",
-        "Side",
         "Faction",
 		"Role",
-		"headerSide",
 		"headerFaction",
 		"headerRole"
     };
@@ -166,20 +164,13 @@ class RscZGMLoadouts {
 		w = "0.111588 * safezoneW";
 		h = "0.0560024 * safezoneH";
 	};
-	class Side: RscZGMListbox {
-		idc = 11;
-		x = "0.257132 * safezoneW + safezoneX";
-		y = "0.205987 * safezoneH + safezoneY";
-		w = "0.124716 * safezoneW";
-		h = "0.0840036 * safezoneH";
-	};
-	class Faction: RscZGMListbox {
-		idc = 12;
-		x = "0.257132 * safezoneW + safezoneX";
-		y = "0.345993 * safezoneH + safezoneY";
-		w = "0.22974 * safezoneW";
-		h = "0.392017 * safezoneH";
-	};
+    class Faction: RscZGMTree {
+        idc = 12;
+        x = "0.25719 * safezoneW + safezoneX";
+        y = "0.205987 * safezoneH + safezoneY";
+        w = "0.236304 * safezoneW";
+        h = "0.532023 * safezoneH";
+    };
 	class Role: RscZGMTree {
 		idc = 13;
 		x = "0.506564 * safezoneW + safezoneX";
@@ -187,21 +178,13 @@ class RscZGMLoadouts {
 		w = "0.236304 * safezoneW";
 		h = "0.532023 * safezoneH";
 	};
-	class headerSide : RscZGMheader {
-		idc = -1;
-		text = "Side"; //--- ToDo: Localize;
-		x = "0.257132 * safezoneW + safezoneX";
-		y = "0.177986 * safezoneH + safezoneY";
-		w = "0.124716 * safezoneW";
-		h = "0.0280012 * safezoneH";
-	};
 	class headerFaction : RscZGMheader {
 		idc = -1;
 		text = "Faction"; //--- ToDo: Localize;
-		x = "0.257132 * safezoneW + safezoneX";
-		y = "0.317992 * safezoneH + safezoneY";
-		w = "0.22974 * safezoneW";
-		h = "0.0280012 * safezoneH";
+        x = "0.25719 * safezoneW + safezoneX";
+        y = "0.177986 * safezoneH + safezoneY";
+        w = "0.236247 * safezoneW";
+        h = "0.0280012 * safezoneH";
 	};
 	class headerRole : RscZGMheader {
 		idc = -1;

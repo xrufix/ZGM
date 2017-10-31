@@ -1,8 +1,5 @@
-/* ###################### - DISPLAY NAMES - ###################### */
-#include "components\displayNames.hpp"
-// Definiere hier Namen, die vom Standard abweichen!
-
 /* ###################### - UGL-Magazines - ###################### */
+#include "components\indep.hpp"
 #include "components\ugl_vanilla.hpp"
 
 /* ###################### - UNIFORMS - ###################### */
@@ -62,7 +59,7 @@
 
 
 /* ###################### - ATTACHMENTS- ###################### */
-#define LASERPOINTER_BK "acc_pointer_ir"
+#define LASERPOINTER "acc_pointer_ir"
 
 #define RCO "optic_Holosight_blk_F"
 
@@ -93,12 +90,12 @@
 
 // SF CARBINES
 #define SF_CARBINE ARR_2(\
-    WEAPON(RIFLE,LASERPOINTER_BK,RCO,"rhsusf_acc_nt4_tan"),\
-    WEAPON(RIFLE,LASERPOINTER_BK,RCO,"rhsusf_acc_nt4_black")\
+    WEAPON(RIFLE,LASERPOINTER,RCO,"rhsusf_acc_nt4_tan"),\
+    WEAPON(RIFLE,LASERPOINTER,RCO,"rhsusf_acc_nt4_black")\
 )
 #define SF_CARBINE_UGL ARR_2(\
-    WEAPON(RIFLE_UGL,LASERPOINTER_BK,RCO,"rhsusf_acc_nt4_tan"),\
-    WEAPON(RIFLE_UGL,LASERPOINTER_BK,RCO,"rhsusf_acc_nt4_black")\
+    WEAPON(RIFLE_UGL,LASERPOINTER,RCO,"rhsusf_acc_nt4_tan"),\
+    WEAPON(RIFLE_UGL,LASERPOINTER,RCO,"rhsusf_acc_nt4_black")\
 )
 #define SF_CARBINE_TN           SF_CARBINE
 #define SF_CARBINE_UGL_TN		SF_CARBINE_UGL
@@ -106,11 +103,11 @@
 #define SF_CARBINE_DIVER_UGL 	SF_CARBINE_UGL
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR WEAPON("rhs_weap_sr25",DMR_BIPOD,LASERPOINTER_BK,"rhsusf_acc_ACOG3")
+#define DMR WEAPON("rhs_weap_sr25",DMR_BIPOD,LASERPOINTER,"rhsusf_acc_ACOG3")
 #define DMR_SF ARR_3(                                                                     	\
-    WEAPON("rhs_weap_sr25_ec","rhsusf_acc_sr25S",LASERPOINTER_BK,"rhsusf_acc_ACOG3"),         	\
-    WEAPON("rhs_weap_sr25_ec_wd","rhsusf_acc_sr25S",LASERPOINTER_BK,"rhsusf_acc_ACOG_wd"),	\
-    WEAPON("rhs_weap_sr25_ec_d","rhsusf_acc_sr25S",LASERPOINTER_BK,"rhsusf_acc_ACOG_d")	\
+    WEAPON("rhs_weap_sr25_ec","rhsusf_acc_sr25S",LASERPOINTER,"rhsusf_acc_ACOG3"),         	\
+    WEAPON("rhs_weap_sr25_ec_wd","rhsusf_acc_sr25S",LASERPOINTER,"rhsusf_acc_ACOG_wd"),	\
+    WEAPON("rhs_weap_sr25_ec_d","rhsusf_acc_sr25S",LASERPOINTER,"rhsusf_acc_ACOG_d")	\
 )
 #define DMR_DIVER DMR_SF
 #define SR_AP WEAPON("rhs_weap_m24sws_ghillie",SNIPER_OPTIC,"rhsusf_acc_harris_swivel","")
@@ -119,7 +116,7 @@
 // AUTOMATIC RIFLES & MACHINE GUNS
 #define AUTORIFLE "LMG_Zafir_F"
 #define AUTORIFLE_RCO WEAPON(AUTORIFLE,"",RCO,"")
-#define AUTORIFLE_SF WEAPON(AUTORIFLE,LASERPOINTER_BK,RCO,"")
+#define AUTORIFLE_SF WEAPON(AUTORIFLE,LASERPOINTER,RCO,"")
 #define MMG AUTORIFLE_SF
 
 

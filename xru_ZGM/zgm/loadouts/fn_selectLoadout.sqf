@@ -7,7 +7,7 @@ params ["_unit"];
 private _side = [_unit] call EFUNC(main,getSide);
 private _faction = [_unit] call FUNC(getFaction);
 
-_loadout = format ["%1_%2_%3_%4",_side,_faction,_group,_role];
+_loadout = format ["%1_%2_%3",_faction,_group,_role];
 
 if (isClass (missionConfigFile >> "CfgLoadouts" >> _loadout)) then {
     _loadout;
