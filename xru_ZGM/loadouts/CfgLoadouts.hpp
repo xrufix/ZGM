@@ -1,7 +1,7 @@
 class CommonDefault;
 
-#include "..\macros.hpp"
-#include "..\traits.hpp"
+#include "common\macros.hpp"
+#include "common\traits.hpp"
 
 
 #define COMMON Common##SIDE##FACTION
