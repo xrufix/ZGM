@@ -8,22 +8,22 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1342;
+		nextID=1354;
 	};
 	class MarkerIDProvider
 	{
-		nextID=3;
+		nextID=7;
 	};
 	class LayerIndexProvider
 	{
-		nextID=123;
+		nextID=132;
 	};
 	class Camera
 	{
-		pos[]={1267.8297,142.10384,29128.197};
-		dir[]={-0.87180823,-0.41339222,-0.26314449};
-		up[]={-0.3957732,0.91053492,-0.11946063};
-		aside[]={-0.2889868,-6.496648e-007,0.95742887};
+		pos[]={21812.404,232.8338,19406.373};
+		dir[]={-0.92532921,-0.37723535,-0.039239503};
+		up[]={-0.37690663,0.92610538,-0.015983107};
+		aside[]={-0.042362928,7.3005913e-007,0.99914128};
 	};
 };
 binarizationWanted=0;

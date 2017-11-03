@@ -2,8 +2,8 @@
 
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "U_O_CombatUniform_oucamo"
-#define UNIFORM_COMMAND     ARR_1("U_O_OfficerUniform_ocamo")
-#define UNIFORM_SPECIAL     UNIFORM_SINGLE
+#define UNIFORM_COMPANY     ARR_1("U_O_OfficerUniform_ocamo")
+#define UNIFORM_RECON     UNIFORM_SINGLE
 
 
 
@@ -16,10 +16,10 @@
 
 #define VEST_CREW		"V_LegStrapBag_black_F"
 
-#define VEST_SF			VEST_MEDIC
-#define VEST_SF_TL		VEST_RIFLEMAN
-#define VEST_SF_MG		VEST_MEDIC
-#define VEST_SF_GR		VEST_GRENADIER
+#define VEST_RECON			VEST_MEDIC
+#define VEST_RECON_TL		VEST_RIFLEMAN
+#define VEST_RECON_MG		VEST_MEDIC
+#define VEST_RECON_GR		VEST_GRENADIER
 
 #define VEST_BREATHER	ARR_1("V_RebreatherIR")
 #define VEST_DIVER		ARR_1("ACE_Banana")
@@ -60,19 +60,19 @@
 
 
 // SF CARBINES
-#define SF_CARBINE              WEAPON("arifle_ARX_blk_F",RCO,LASERPOINTER,"muzzle_snds_65_TI_blk_F")
-#define SF_CARBINE_TN           WEAPON("arifle_ARX_hex_F",RCO_TN,LASERPOINTER,"muzzle_snds_65_TI_hex_F")
+#define RIFLE_RECON              WEAPON("arifle_ARX_blk_F",RCO,LASERPOINTER,"muzzle_snds_65_TI_blk_F")
+#define RIFLE_RECON_TAN           WEAPON("arifle_ARX_hex_F",RCO_TN,LASERPOINTER,"muzzle_snds_65_TI_hex_F")
 
-#define MAG_CARBINE_SF          ARR_3("10Rnd_50BW_Mag_F",2,"30Rnd_65x39_caseless_green")
-#define MAG_CARBINE_SF_TRACER   ARR_1("30Rnd_65x39_caseless_green")
+#define MAG_RIFLE_RECON          ARR_3("10Rnd_50BW_Mag_F",2,"30Rnd_65x39_caseless_green")
+#define MAG_RIFLE_RECON_TRACER   ARR_1("30Rnd_65x39_caseless_green")
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR_SF      DMR_DIVER
+#define DMR_RECON      DMR_DIVER
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE_SF        WEAPON("arifle_CTARS_blk_F",LASERPOINTER,RCO,"muzzle_snds_58_blk_F")
+#define AUTORIFLE_RECON        WEAPON("arifle_CTARS_blk_F",LASERPOINTER,RCO,"muzzle_snds_58_blk_F")
 
 #define MMG                 WEAPON("MMG_01_tan_F",RCO_TN,LASERPOINTER,DMR_BIPOD)
 

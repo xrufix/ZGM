@@ -40,8 +40,9 @@ class COMMON : CommonDefault {
 
 /* ###################### - Company Command - ###################### */
 class LOADOUT(company,common) : COMMON {
-    uniform[] = {UNIFORM_COMMAND};
-    vest[] = {VEST_BELT};
+    uniform[] = {UNIFORM_COMPANY};
+    vest[] = {VEST_OFFICER};
+    backpack[] = {BACKPACK_RADIO};
     primary[] = {PDW};
     magazines[] = {
         MAG_PISTOL,3,
@@ -86,7 +87,8 @@ class LOADOUT(company,fo) : LOADOUT(company,common) {
 //PL Basis
 class LOADOUT(platoon,common): COMMON {
     vest[] = {VEST_LIGHT};
-    primary[] = {CARBINE_HOLO};
+    backpack[] = {BACKPACK_RADIO};
+    primary[] = {CARBINE_CCO};
     magazines[] = {
         MAG_PISTOL,3,
         MAG_CARBINE,5,
@@ -180,7 +182,7 @@ class LOADOUT(squad,ftl) : COMMON {
 //Automatic Rifleman
 class LOADOUT(squad,ar) : COMMON {
     vest[] = {VEST_MG};
-    primary[] = {AUTORIFLE_RCO};
+    primary[] = {AUTORIFLE};
     magazines[] = {
         MAGS_AUTORIFLE,
         MAG_PISTOL,3,
@@ -213,6 +215,7 @@ class LOADOUT(squad,light) : COMMON {
 };
 //Rifleman (Ass. Autorifleman)
 class LOADOUT(squad,aar) : COMMON {
+    backpack[] = {BACKPACK_KITBAG};
     primary[] = {RIFLE_RCO};
     vest[] = {VEST_RIFLEMAN};
     magazines[] = {
@@ -256,7 +259,7 @@ class LOADOUT(squad,dm) : COMMON {
 };
 //Combat Engineer
 class LOADOUT(squad,eng) : COMMON {
-    vest[] = {VEST_LIGHT};
+    vest[] = {VEST_RIFLEMAN};
     items[] += {"ToolKit"};
     preLoadout = TRAITS(0,1,false,false);
 };
@@ -269,7 +272,7 @@ class LOADOUT(weapons,common): COMMON {
     vest[] = {VEST_RIFLEMAN};
     magazines[] = {
         MAG_PISTOL,3,
-        MAG_RIFLE,7,
+        MAG_RIFLE,5,
         MAG_RIFLE_TRACER,2,
         GRENADES_RGO
     };
@@ -311,6 +314,7 @@ class LOADOUT(weapons,agmg) : LOADOUT(assistant,common) {
 };
 //MS AT
 class LOADOUT(weapons,at) : LOADOUT(weapons,common) {
+    backpack[] = {BACKPACK_AT_LIGHT};
     launcher[] = {AT_ROCKET};
 };
 //AMS AT
@@ -356,15 +360,15 @@ class LOADOUT(weapons,acmort) : LOADOUT(assistant,common) {
 /* ###################### - Reconnaissance - ###################### */
 //Common Recon
 class LOADOUT(recon,common): COMMON {
-    uniform[] = {UNIFORM_SPECIAL};
-    vest[] = {VEST_SF};
+    uniform[] = {UNIFORM_RECON};
+    vest[] = {VEST_RECON};
     backpack[] = {BACKPACK_RECON};
     secondary[] = {PISTOL_SF};
-    primary[] = {SF_CARBINE};
+    primary[] = {RIFLE_RECON};
     magazines[] = {
         MAG_PISTOL_SF,3,
-        MAG_CARBINE_SF,9,
-        MAG_CARBINE_SF_TRACER,2,
+        MAG_RIFLE_RECON,9,
+        MAG_RIFLE_RECON_TRACER,2,
         GRENADES_RGO
     };
     items[] += {
@@ -386,8 +390,8 @@ class LOADOUT(recon,rm) : LOADOUT(recon,common) {
 };
 //Teamlead
 class LOADOUT(recon,tl) : LOADOUT(recon,common) {
-    vest[] = {VEST_SF_TL};
-    primary[] = {SF_CARBINE_UGL};
+    vest[] = {VEST_RECON_TL};
+    primary[] = {RIFLE_UGL_RECON};
     magazines[] += {
         UGL_HE,10,
         UGL_SMK,2,
@@ -409,11 +413,11 @@ class LOADOUT(recon,tl) : LOADOUT(recon,common) {
 };
 //AR
 class LOADOUT(recon,ar) : LOADOUT(recon,common) {
-    vest[] = {VEST_SF_MG};
-    primary[] = {AUTORIFLE_SF};
+    vest[] = {VEST_RECON_MG};
+    primary[] = {AUTORIFLE_RECON};
     magazines[] = {
         MAG_PISTOL_SF,3,
-        MAGS_AUTORIFLE_SF,
+        MAGS_AUTORIFLE_RECON,
         GRENADES_RGO
     };
     items[] += {LASERPOINTER};
@@ -421,8 +425,8 @@ class LOADOUT(recon,ar) : LOADOUT(recon,common) {
 };
 //Grenadier
 class LOADOUT(recon,gl) : LOADOUT(recon,common) {
-    vest[] = {VEST_SF_GR};
-    primary[] = {SF_CARBINE_UGL};
+    vest[] = {VEST_RECON_GR};
+    primary[] = {RIFLE_UGL_RECON};
     magazines[] += {UGLS_GREN};
 };
 //LAT
@@ -446,10 +450,10 @@ class LOADOUT(recon,cm) : LOADOUT(recon,common) {
 };
 //Marksman
 class LOADOUT(recon,dm) : LOADOUT(recon,common) {
-    primary[] = {DMR_SF};
+    primary[] = {DMR_RECON};
     magazines[] = {
         MAG_PISTOL_SF,3,
-        MAG_DMR_SF,10,
+        MAG_DMR_RECON,10,
         GRENADES_RGO
     };
     items[] += {DMR_BIPOD};
@@ -478,12 +482,12 @@ class LOADOUT(diver,common) : LOADOUT(recon,common) {
     uniform[] = {UNIFORM_DIVER};
     vest[] = {VEST_BREATHER};
     backpack[] = {BACKPACK_DIVER};
-    primary[] = {SF_CARBINE_DIVER};
+    primary[] = {RIFLE_DIVER};
     secondary[] = {PISTOL_SF};
     gps[] = {EASYTRACK_PDA};
     magazines[] = {
         MAG_PISTOL,3,
-        MAG_CARBINE_SF,10,
+        MAG_RIFLE_RECON,10,
         GRENADES_BASIC,
         "ACE_M84",4
     };
@@ -538,7 +542,7 @@ class LOADOUT(diver,dm) : LOADOUT(diver,common) {
     primary[] = {DMR_DIVER};
     magazines[] = {
         MAG_PISTOL_SF,3,
-        MAG_DMR_SF,10,
+        MAG_DMR_RECON,10,
         GRENADES_RGO,
         "ACE_M84",4
     };
@@ -546,7 +550,7 @@ class LOADOUT(diver,dm) : LOADOUT(diver,common) {
 };
 // Diver TL/JTAC
 class LOADOUT(diver,jtac) : LOADOUT(diver,tl) {
-    primary[] = {SF_CARBINE_DIVER_UGL};
+    primary[] = {RIFLE_UGL_DIVER};
     binoculars[] = {DESIGNATOR};
     magazines[] += {
         "Laserbatteries",
@@ -566,15 +570,15 @@ class LOADOUT(sniper,common) : LOADOUT(recon,common) {
 };
 class LOADOUT(sniper,spot) : LOADOUT(recon,common) {
     uniform[] = {UNIFORM_SNIPER};
-    primary[] = {SF_CARBINE_UGL_TN};
+    primary[] = {RIFLE_UGL_RECON_TAN};
     gps[] = {EASYTRACK_PDA};
     binoculars[] = {RANGEFINDER};
     magazines[] = {
         MAG_PISTOL_SF,3,
         GRENADE_IR,
         GRENADES_RGO,
-        MAG_CARBINE_SF,8,
-        MAG_CARBINE_SF_TRACER,2,
+        MAG_RIFLE_RECON,8,
+        MAG_RIFLE_RECON_TRACER,2,
         UGL_HE,10,
         UGL_SMK,4
         #ifdef HUNTIR
@@ -615,7 +619,7 @@ class LOADOUT(sniper,am) : LOADOUT(sniper,common) {
 //Explosives
 class LOADOUT(sniper,exp) : LOADOUT(recon,common) {
     uniform[] = {UNIFORM_SNIPER};
-    primary[] = {SF_CARBINE_TN};
+    primary[] = {RIFLE_RECON_TAN};
     magazines[] += {
         "APERSTripMine_Wire_mag",2,
         "ClaymoreDirectionalMine_Remote_mag",2
@@ -762,4 +766,6 @@ class LOADOUT(medevac,drv) : LOADOUT(medevac,common) {
     items[] += {"ACE_Banana"};
 };
 
-#undef HUNTIR
+#ifdef HUNTIR
+    #undef HUNTIR
+#endif

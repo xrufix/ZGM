@@ -5,8 +5,8 @@
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      ARR_1("U_B_CTRG_1")        // Für Inventar
 #define UNIFORM             ARR_2(UNIFORM_SINGLE,"U_B_CTRG_3")      // Für Zufallsauswahl
-#define UNIFORM_COMMAND     UNIFORM_SINGLE
-#define UNIFORM_SPECIAL     ARR_2("U_B_CTRG_Soldier_F","U_B_CTRG_Soldier_3_F")
+#define UNIFORM_COMPANY     UNIFORM_SINGLE
+#define UNIFORM_RECON     ARR_2("U_B_CTRG_Soldier_F","U_B_CTRG_Soldier_3_F")
 #define UNIFORM_DIVER       ARR_1("U_B_Wetsuit")
 #define UNIFORM_CREW        ARR_1("U_B_CTRG_Soldier_urb_2_F")
 #define UNIFORM_HELICOPTER  ARR_1("U_B_CTRG_Soldier_urb_1_F")
@@ -17,7 +17,7 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      ARR_1("V_PlateCarrierL_CTRG")
-#define VEST_BELT       ARR_1("V_Rangemaster_belt")
+#define VEST_OFFICER       ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      VEST_EMPTY
 #define VEST_RIFLEMAN   VEST_LIGHT
 #define VEST_GRENADIER  ARR_1("V_PlateCarrierH_CTRG")
@@ -29,10 +29,10 @@
 
 #define VEST_CREW		ARR_1("V_Chestrig_blk")
 
-#define VEST_SF			ARR_1("V_PlateCarrier2_rgr_noflag_F") 
-#define VEST_SF_TL		ARR_1("V_PlateCarrierIAGL_oli") 
-#define VEST_SF_MG		ARR_1("V_PlateCarrier1_rgr_noflag_F") 
-#define VEST_SF_GR		VEST_SF_TL
+#define VEST_RECON			ARR_1("V_PlateCarrier2_rgr_noflag_F") 
+#define VEST_RECON_TL		ARR_1("V_PlateCarrierIAGL_oli") 
+#define VEST_RECON_MG		ARR_1("V_PlateCarrier1_rgr_noflag_F") 
+#define VEST_RECON_GR		VEST_RECON_TL
 
 #define VEST_BREATHER	ARR_1("V_RebreatherB")
 #define VEST_DIVER		ARR_1("V_TacVestIR_blk")
@@ -87,28 +87,28 @@
 #define CARBINE     ARR_1("arifle_MXC_Black_F")
 #define CARBINE_UGL	ARR_1("arifle_MX_GL_Black_F")
 
-#define CARBINE_HOLO        WEAPON(CARBINE,CCO,"","")
+#define CARBINE_CCO        WEAPON(CARBINE,CCO,"","")
 #define CARBINE_UGL_HOLO    WEAPON(CARBINE_UGL,CCO,"","")
 
 // SF CARBINES
-#define SF_CARBINE              WEAPON("arifle_SPAR_01_khk_F",LASERPOINTER,RCO_TN,"muzzle_snds_M_khk_f")
-#define SF_CARBINE_UGL          WEAPON("arifle_SPAR_01_gl_khk_F",LASERPOINTER,CCO_TN,"muzzle_snds_M_khk_f")
-#define SF_CARBINE_TN           SF_CARBINE
-#define SF_CARBINE_UGL_TN       SF_CARBINE_UGL
-#define SF_CARBINE_DIVER 		WEAPON("arifle_SPAR_01_blk_F",LASERPOINTER,RCO,"muzzle_snds_M")
-#define SF_CARBINE_DIVER_UGL 	WEAPON("arifle_SPAR_01_gl_blk_F",LASERPOINTER,CCO,"muzzle_snds_M")
+#define RIFLE_RECON              WEAPON("arifle_SPAR_01_khk_F",LASERPOINTER,RCO_TN,"muzzle_snds_M_khk_f")
+#define RIFLE_UGL_RECON          WEAPON("arifle_SPAR_01_gl_khk_F",LASERPOINTER,CCO_TN,"muzzle_snds_M_khk_f")
+#define RIFLE_RECON_TAN           RIFLE_RECON
+#define RIFLE_UGL_RECON_TAN       RIFLE_UGL_RECON
+#define RIFLE_DIVER 		WEAPON("arifle_SPAR_01_blk_F",LASERPOINTER,RCO,"muzzle_snds_M")
+#define RIFLE_UGL_DIVER 	WEAPON("arifle_SPAR_01_gl_blk_F",LASERPOINTER,CCO,"muzzle_snds_M")
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
 #define DMR         WEAPON("srifle_DMR_03_khaki_F",LASERPOINTER,"optic_AMS_khk",DMR_BIPOD)
-#define DMR_SF      WEAPON("arifle_SPAR_03_khk_F",LASERPOINTER,"optic_AMS_khk","muzzle_snds_b_khk_f")
+#define DMR_RECON      WEAPON("arifle_SPAR_03_khk_F",LASERPOINTER,"optic_AMS_khk","muzzle_snds_b_khk_f")
 #define DMR_DIVER   WEAPON("arifle_SPAR_03_blk_F",LASERPOINTER,"optic_ams","muzzle_snds_b")
 
 #define SR_AP       WEAPON("srifle_DMR_02_camo_F",SNIPER_OPTIC,DMR_BIPOD,"ACE_muzzle_mzls_338")
 #define SR_AM       WEAPON("srifle_lrr_tna_f",SNIPER_OPTIC,"","")
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE_RCO   WEAPON("LMG_03_F",LASERPOINTER,CCO,"")
-#define AUTORIFLE_SF    WEAPON("arifle_SPAR_02_khk_F",LASERPOINTER,RCO_TN,"muzzle_snds_M_khk_f")
+#define AUTORIFLE   WEAPON("LMG_03_F",LASERPOINTER,CCO,"")
+#define AUTORIFLE_RECON    WEAPON("arifle_SPAR_02_khk_F",LASERPOINTER,RCO_TN,"muzzle_snds_M_khk_f")
 #define MMG             WEAPON("MMG_02_black_F",LASERPOINTER,CCO,"bipod_01_F_blk")
 
 
@@ -137,19 +137,19 @@
 
 //  SF CARBINE
 
-#define MAG_CARBINE_SF          MAG_RIFLE
-#define MAG_CARBINE_SF_TRACER   MAG_RIFLE_TRACER
+#define MAG_RIFLE_RECON          MAG_RIFLE
+#define MAG_RIFLE_RECON_TRACER   MAG_RIFLE_TRACER
 
 //  AR & MG
 #define MAGS_AUTORIFLE      ARR_3("200Rnd_556x45_Box_Red_F",2,"200Rnd_556x45_Box_Tracer_Red_F")
 #define MAGS_AUTORIFLE_ASST MAGS_AUTORIFLE
 #define MAGS_MMG            ARR_2("130Rnd_338_Mag",3)
 #define MAGS_MMG_ASST       ARR_2("130Rnd_338_Mag",5)
-#define MAGS_AUTORIFLE_SF   ARR_2("150Rnd_556x45_Drum_Mag_F",7)
+#define MAGS_AUTORIFLE_RECON   ARR_2("150Rnd_556x45_Drum_Mag_F",7)
 
 //  DMR & SR
 #define MAG_DMR     ARR_1("20Rnd_762x51_Mag")
-#define MAG_DMR_SF  MAG_DMR
+#define MAG_DMR_RECON  MAG_DMR
 #define MAGS_SR_AP  ARR_4("10Rnd_338_Mag",10,"ACE_10Rnd_338_API526_Mag",5)
 #define MAGS_SR_AM  ARR_4("7Rnd_408_Mag",7,"ACE_7Rnd_408_305gr_Mag",3)
 

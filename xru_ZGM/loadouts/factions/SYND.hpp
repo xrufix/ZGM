@@ -5,18 +5,18 @@
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "U_I_C_Soldier_Para_1_F"        // Für Inventar
 #define UNIFORM             ARR_5("U_I_C_Soldier_Bandit_1_F","U_I_C_Soldier_Bandit_2_F","U_I_C_Soldier_Bandit_3_F","U_I_C_Soldier_Bandit_4_F","U_I_C_Soldier_Bandit_5_F")
-#define UNIFORM_COMMAND     ARR_1("U_I_C_Soldier_Camo_F")
-#define UNIFORM_SPECIAL     ARR_5("U_I_C_Soldier_Para_1_F","U_I_C_Soldier_Para_2_F","U_I_C_Soldier_Para_3_F","U_I_C_Soldier_Para_4_F","U_I_C_Soldier_Para_5_F")
+#define UNIFORM_COMPANY     ARR_1("U_I_C_Soldier_Camo_F")
+#define UNIFORM_RECON     ARR_5("U_I_C_Soldier_Para_1_F","U_I_C_Soldier_Para_2_F","U_I_C_Soldier_Para_3_F","U_I_C_Soldier_Para_4_F","U_I_C_Soldier_Para_5_F")
 #define UNIFORM_DIVER       ARR_1("U_I_Wetsuit")
 #define UNIFORM_CREW        ARR_1("xru_u_coveralls_bandit")
 #define UNIFORM_HELICOPTER  ARR_3("U_C_Man_casual_2_F","U_C_Man_casual_1_F","U_C_Man_casual_3_F")
 #define UNIFORM_JET         UNIFORM_HELICOPTER
-#define UNIFORM_SNIPER      UNIFORM_SPECIAL
+#define UNIFORM_SNIPER      UNIFORM_RECON
 
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      ARR_3("V_LegStrapBag_black_F","V_LegStrapBag_coyote_F","V_LegStrapBag_olive_F")
-#define VEST_BELT       ARR_1("V_Rangemaster_belt")
+#define VEST_OFFICER       ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      ARR_8("V_BandollierB_khk","V_BandollierB_cbr","V_BandollierB_rgr","V_BandollierB_blk","V_BandollierB_oli","V_Pocketed_black_F","V_Pocketed_coyote_F","V_Pocketed_olive_F")
 #define VEST_RIFLEMAN   ARR_5("V_Chestrig_khk","V_Chestrig_rgr","V_Chestrig_blk","V_Chestrig_oli","xru_V_Chestrig_cbr")
 #define VEST_GRENADIER  ARR_3("V_TacChestrig_grn_F","V_TacChestrig_oli_F","V_TacChestrig_cbr_F")
@@ -28,10 +28,10 @@
 
 #define VEST_CREW		VEST_EMPTY
 
-#define VEST_SF			VEST_RIFLEMAN
-#define VEST_SF_TL		VEST_SL
-#define VEST_SF_MG		VEST_GRENADIER
-#define VEST_SF_GR		VEST_GRENADIER
+#define VEST_RECON			VEST_RIFLEMAN
+#define VEST_RECON_TL		VEST_SL
+#define VEST_RECON_MG		VEST_GRENADIER
+#define VEST_RECON_GR		VEST_GRENADIER
 
 #define VEST_BREATHER	ARR_1("V_RebreatherB")
 #define VEST_DIVER		ARR_1("V_TacVestIR_blk")
@@ -108,7 +108,7 @@
 #define CARBINE ARR_2( \
     WEAPON(CARBINE_1,"rhs_acc_dtk","",""), \
     WEAPON(CARBINE_2,"rhs_acc_dtk","",""))
-#define CARBINE_HOLO CARBINE
+#define CARBINE_CCO CARBINE
 
 #define CARBINE_UGL         WEAPON("rhs_weap_aks74_gp25","rhs_acc_dtk","","")
 #define CARBINE_UGL_HOLO    CARBINE_UGL
@@ -125,40 +125,40 @@
 
 
 // SF CARBINES
-#define SF_CARBINE ARR_5( \
+#define RIFLE_RECON ARR_5( \
     WEAPON("rhs_weap_ak105","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_1p63"), \
     WEAPON("rhs_weap_ak74","rhs_acc_dtk","rhs_acc_2dpZenit",""), \
     WEAPON("rhs_weap_ak74m_2mag","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp1"), \
     WEAPON("rhs_weap_ak74m_camo","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp8_02"), \
     WEAPON("rhs_weap_ak74_2","rhs_acc_dtk","rhs_acc_2dpZenit",""))
 
-#define SF_CARBINE_UGL ARR_3( \
+#define RIFLE_UGL_RECON ARR_3( \
     WEAPON("rhs_weap_ak74_gp25","rhs_acc_dtk","rhs_acc_2dpZenit",""), \
     WEAPON("rhs_weap_ak74m_gp25","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp1"), \
     WEAPON("rhs_weap_ak74m_fullplum_gp25","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp8_02"))
 
-#define SF_CARBINE_TN ARR_3( \
+#define RIFLE_RECON_TAN ARR_3( \
     WEAPON("rhs_weap_ak74_3","rhs_acc_dtk","rhs_acc_2dpZenit",""), \
     WEAPON("rhs_weap_ak74m_camo","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp1"), \
     WEAPON("rhs_weap_ak74m_desert","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp8_02"))
-#define SF_CARBINE_UGL_TN		SF_CARBINE_UGL
-#define SF_CARBINE_DIVER 		SF_CARBINE
-#define SF_CARBINE_DIVER_UGL 	SF_CARBINE_UGL
+#define RIFLE_UGL_RECON_TAN		RIFLE_UGL_RECON
+#define RIFLE_DIVER 		RIFLE_RECON
+#define RIFLE_UGL_DIVER 	RIFLE_UGL_RECON
 
-#define MAG_CARBINE_SF          MAG_CARBINE
-#define MAG_CARBINE_SF_TRACER   MAG_CARBINE_TRACER
+#define MAG_RIFLE_RECON          MAG_CARBINE
+#define MAG_RIFLE_RECON_TRACER   MAG_CARBINE_TRACER
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
 #define DMR WEAPON("rhs_weap_ak103","rhs_acc_dtk","rhs_acc_pso1m2","")
 #define MAG_DMR MAG_RIFLE
 
-#define DMR_SF ARR_3( \
+#define DMR_RECON ARR_3( \
     WEAPON("hlc_rifle_M14dmr_Rail","optic_KHS_old","",""), \
     WEAPON("hlc_rifle_M21_Rail","optic_KHS_old","",""), \
     WEAPON("srifle_DMR_03_khaki_F","optic_KHS_old","","bipod_01_F_khk"))
-#define DMR_DIVER   DMR_SF
-#define MAG_DMR_SF  ARR_1("20Rnd_762x51_Mag")
+#define DMR_DIVER   DMR_RECON
+#define MAG_DMR_RECON  ARR_1("20Rnd_762x51_Mag")
 
 #define SR_AP       WEAPON("rhs_weap_m24sws_ghillie","rhsusf_acc_LEUPOLDMK4_2_d","rhsusf_acc_harris_swivel","")
 #define MAGS_SR_AP  ARR_2("rhsusf_5Rnd_762x51_m118_special_Mag",16)
@@ -168,14 +168,14 @@
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE_RCO       WEAPON("rhs_weap_pkm","","","")
+#define AUTORIFLE       WEAPON("rhs_weap_pkm","","","")
 
 #define MAG_AUTORIFLE       ARR_1("rhs_100Rnd_762x54mmR")
 #define MAGS_AUTORIFLE      ARR_2(MAG_AUTORIFLE,4)
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_AUTORIFLE,2)
 
-#define AUTORIFLE_SF        WEAPON("hlc_rifle_RPK12","rhs_acc_ekp8_18","","")
-#define MAGS_AUTORIFLE_SF   ARR_2("rhs_45Rnd_545X39_7N22_AK",8)
+#define AUTORIFLE_RECON        WEAPON("hlc_rifle_RPK12","rhs_acc_ekp8_18","","")
+#define MAGS_AUTORIFLE_RECON   ARR_2("rhs_45Rnd_545X39_7N22_AK",8)
 
 #define MMG                 WEAPON("rhs_weap_pkp","","","")
 #define MAGS_MMG            ARR_2(MAG_AUTORIFLE,3)

@@ -7,10 +7,14 @@
                 <German>AAF - Altische Streitkräfte</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_BW_FLECK">
-                <German>Bundeswehr (Flecktarn)</German>
+                <German>BW - Bundeswehr (Flecktarn)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_BW_TROP">
-                <German>Bundeswehr (Tropentarn)</German>
+                <German>BW - Bundeswehr (Tropentarn)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_CDF">
+                <English>CDF - Chernarussian Defense Forces</English>
+                <German>CDF - Chernarussische Verteidigungsstreitkräfte</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_CHINA">
                 <English>CSAT - PLA of China (Brown)</English>
@@ -24,8 +28,8 @@
                 <English>FIA - Freedom and Independece Army</English>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_IDF">
-                <English>Israeli Defense Forces</English>
-                <German>Israelische Verteidigungsstreitkräfte</German>
+                <English>IDF - Israeli Defense Forces</English>
+                <German>IDF - Israelische Verteidigungsstreitkräfte</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_IRAN">
                 <English>CSAT - Iranian Army (Brown)</English>
@@ -54,23 +58,39 @@
                 <English>NATO 2035 (Woodland)</English>
                 <German>NATO 2035 (Wald)</German>
             </Key>
+            <Key ID="STR_ZGM_FACTIONS_RU_DES">
+                <English>VDV - Russian Airborne Troops (EMR Desert)</English>
+                <German>VDV - Russische Luftlandetruppen (EMR Wüste)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_RU_EMR">
+                <English>VDV - Russian Airborne Troops (EMR Summer)</English>
+                <German>VDV - Russische Luftlandetruppen (EMR Sommer)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_RU_FLORA">
+                <English>VMF - Russian Naval Force (Flora)</English>
+                <German>VMF - Russische Marineinfanterie (Flora)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_RU_MOUNT">
+                <English>VMF - Russian Naval Force (Mountain Flora)</English>
+                <German>VMF - Russische Marineinfanterie (Berg)</German>
+            </Key>
             <Key ID="STR_ZGM_FACTIONS_SYND">
                 <English>Syndicat (Tanoa)</English>
                 <German>Syndikat (Tanoa)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_USARMY_OCP">
-                <English>US Army (OCP - Desert)</English>
+                <English>USA - United States Army (OCP)</English>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_USARMY_UCP">
-                <English>US Army (UCP - Woodland)</English>
+                <English>USA - United States Army (UCP)</English>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_USMC_D">
-                <English>US Marine Corps (Desert)</English>
-                <German>US Marine Corps (Wüste)</German>
+                <English>USMC - United States Marine Corps (Desert)</English>
+                <German>USMC - United States Marine Corps (Wüste)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_USMC_W">
-                <English>US Marine Corps (Woodland)</English>
-                <German>US Marine Corps (Wald)</German>
+                <English>USMC - United States Marine Corps (Woodland)</English>
+                <German>USMC - United States Marine Corps (Wald)</German>
             </Key>
             <Key ID="STR_ZGM_PARAMS_BLUFOR">
                 <English>Blufor Faction (Loadouts)</English>

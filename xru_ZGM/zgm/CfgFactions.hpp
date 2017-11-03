@@ -14,6 +14,11 @@ class CfgFactions {
         icon = "\bwa3_units\data\bwa3_faction_icon.paa";
         sideShort = "b";
     };
+    class CDF {
+        displayName = CSTRING(FACTIONS,CDF);
+        icon = "\ca\data\flag_chernarus_co.paa";
+        sideShort = "i";
+    };
     class CHINA {
         displayName = CSTRING(FACTIONS,CHINA);
         icon = "\A3\Ui_f\data\Map\Markers\Flags\viper_ca.paa";
@@ -67,6 +72,26 @@ class CfgFactions {
         displayName = CSTRING(FACTIONS,NATO_WDL);
         icon = "\a3\Data_f\cfgFactionClasses_BLU_ca.paa";
         sideShort = "b";
+    };
+    class RU_DES {
+        displayName = CSTRING(FACTIONS,RU_DES);
+        icon = "\rhsafrf\addons\rhs_main\data\icons\vdv.paa";
+        sideShort = "o";
+    };
+    class RU_EMR {
+        displayName = CSTRING(FACTIONS,RU_EMR);
+        icon = "\rhsafrf\addons\rhs_main\data\icons\vdv.paa";
+        sideShort = "o";
+    };
+    class RU_FLORA {
+        displayName = CSTRING(FACTIONS,RU_FLORA);
+        icon = "\rhsafrf\addons\rhs_main\data\icons\vmf.paa";
+        sideShort = "o";
+    };
+    class RU_MOUNT {
+        displayName = CSTRING(FACTIONS,RU_MOUNT);
+        icon = "\rhsafrf\addons\rhs_main\data\icons\vmf.paa";
+        sideShort = "o";
     };
     class SYND {
         displayName = CSTRING(FACTIONS,SYND);

@@ -3,8 +3,8 @@
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "U_O_T_Soldier_F"        // Für Inventar
 #define UNIFORM             ARR_1(UNIFORM_SINGLE)      // Für Zufallsauswahl
-#define UNIFORM_COMMAND     ARR_1("U_O_T_Officer_F")
-#define UNIFORM_SPECIAL     ARR_1("U_O_V_Soldier_Viper_F")
+#define UNIFORM_COMPANY     ARR_1("U_O_T_Officer_F")
+#define UNIFORM_RECON     ARR_1("U_O_V_Soldier_Viper_F")
 #define UNIFORM_SNIPER      ARR_1("U_O_T_FullGhillie_tna_F")
 
 
@@ -61,18 +61,18 @@
 
 
 // SF CARBINES
-#define SF_CARBINE              WEAPON("arifle_ARX_ghex_F",RCO_TN,LASERPOINTER,"muzzle_snds_65_TI_ghex_F")
+#define RIFLE_RECON              WEAPON("arifle_ARX_ghex_F",RCO_TN,LASERPOINTER,"muzzle_snds_65_TI_ghex_F")
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR_SF      DMR_DIVER
+#define DMR_RECON      DMR_DIVER
 
 #define SR_AP      WEAPON("srifle_DMR_05_blk_F","optic_LRPS",LASERPOINTER,DMR_BIPOD)
 #define SR_AM      WEAPON("srifle_GM6_ghex_F",SNIPER_OPTIC,"","")
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE_SF        WEAPON("arifle_CTARS_ghex_F",LASERPOINTER,RCO_TN,"muzzle_snds_58_ghex_F")
+#define AUTORIFLE_RECON        WEAPON("arifle_CTARS_ghex_F",LASERPOINTER,RCO_TN,"muzzle_snds_58_ghex_F")
 
 #define MMG                 WEAPON("MMG_01_tan_F",RCO,LASERPOINTER,DMR_BIPOD)
 

@@ -10,6 +10,10 @@
 #include "factions\BW_TROP.hpp"
 #include "common\template.hpp"
 
+#define FACTION CDF
+#include "factions\CDF.hpp"
+#include "common\template.hpp"
+
 #define FACTION CHINA
 #include "factions\CHINA.hpp"
 #include "common\template.hpp"
@@ -52,6 +56,22 @@
 
 #define FACTION NATO_WDL
 #include "factions\NATO_WDL.hpp"
+#include "common\template.hpp"
+
+#define FACTION RU_DES
+#include "factions\RU_DES.hpp"
+#include "common\template.hpp"
+
+#define FACTION RU_EMR
+#include "factions\RU_EMR.hpp"
+#include "common\template.hpp"
+
+#define FACTION RU_FLORA
+#include "factions\RU_FLORA.hpp"
+#include "common\template.hpp"
+
+#define FACTION RU_MOUNT
+#include "factions\RU_MOUNT.hpp"
 #include "common\template.hpp"
 
 #define FACTION SYND

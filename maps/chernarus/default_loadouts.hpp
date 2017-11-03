@@ -1,3 +1,3 @@
-#define DEFAULT_B   18  // USMC W
-#define DEFAULT_I   0   // CDF
-#define DEFAULT_O   4   // Russen
+#define DEFAULT_B   23  // USMC W
+#define DEFAULT_I   3   // CDF
+#define DEFAULT_O   16   // Russisch EMR

@@ -1,25 +1,30 @@
 #define FACTION_PARAM(var1,var2) \
     class DOUBLES(faction,var1) { \
         title = CSTRING(PARAMS,var1); \
-        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18}; \
+        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}; \
         texts[] = { \
 /* 0 */     CSTRING(FACTIONS,AAF), \
             CSTRING(FACTIONS,BW_FLECK), \
             CSTRING(FACTIONS,BW_TROP), \
+            CSTRING(FACTIONS,CDF), \
             CSTRING(FACTIONS,CHINA), \
             CSTRING(FACTIONS,CHINA_GRN), \
-/* 5 */     CSTRING(FACTIONS,FIA), \
+/* 6 */     CSTRING(FACTIONS,FIA), \
             CSTRING(FACTIONS,IDF), \
             CSTRING(FACTIONS,IRAN), \
             CSTRING(FACTIONS,IRAN_GRN), \
             CSTRING(FACTIONS,IRAN_URB), \
-/* 10 */    CSTRING(FACTIONS,NATO_CTRG), \
+/* 11 */    CSTRING(FACTIONS,NATO_CTRG), \
             CSTRING(FACTIONS,NATO_MTP), \
             CSTRING(FACTIONS,NATO_TRPC), \
             CSTRING(FACTIONS,NATO_WDL), \
+            CSTRING(FACTIONS,RU_DES), \
+/* 16 */    CSTRING(FACTIONS,RU_EMR), \
+            CSTRING(FACTIONS,RU_FLORA), \
+            CSTRING(FACTIONS,RU_MOUNT), \
             CSTRING(FACTIONS,SYND), \
-/* 15 */    CSTRING(FACTIONS,USARMY_OCP), \
-            CSTRING(FACTIONS,USARMY_UCP), \
+            CSTRING(FACTIONS,USARMY_OCP), \
+/* 21 */    CSTRING(FACTIONS,USARMY_UCP), \
             CSTRING(FACTIONS,USMC_D), \
             CSTRING(FACTIONS,USMC_W) \
         }; \

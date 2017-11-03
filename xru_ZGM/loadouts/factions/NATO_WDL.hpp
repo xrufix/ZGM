@@ -57,25 +57,25 @@
 #define CARBINE     "arifle_MXC_Black_F"
 #define CARBINE_UGL	RIFLE_UGL
 
-#define CARBINE_HOLO        WEAPON(CARBINE,CCO,"","")
+#define CARBINE_CCO        WEAPON(CARBINE,CCO,"","")
 #define CARBINE_UGL_HOLO    WEAPON(CARBINE_UGL,CCO,"","")
 
 // SF CARBINES
-#define SF_CARBINE ARR_2(\
+#define RIFLE_RECON ARR_2(\
     WEAPON("arifle_SPAR_01_blk_F",LASERPOINTER,"optic_ERCO_blk_F","muzzle_snds_M"),\
     WEAPON("arifle_SPAR_01_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")\
 )
-#define SF_CARBINE_UGL ARR_2(\
+#define RIFLE_UGL_RECON ARR_2(\
     WEAPON("arifle_SPAR_01_gl_blk_F",LASERPOINTER,"optic_ERCO_blk_F","muzzle_snds_M"),\
     WEAPON("arifle_SPAR_01_gl_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")\
 )
-#define SF_CARBINE_TN       WEAPON("arifle_SPAR_01_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")
-#define SF_CARBINE_UGL_TN   WEAPON("arifle_SPAR_01_gl_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")
+#define RIFLE_RECON_TAN       WEAPON("arifle_SPAR_01_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")
+#define RIFLE_UGL_RECON_TAN   WEAPON("arifle_SPAR_01_gl_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
 #define DMR WEAPON("arifle_MXM_Black_F",DMR_BIPOD,LASERPOINTER,"optic_SOS")
 
-#define DMR_SF ARR_2(\
+#define DMR_RECON ARR_2(\
     WEAPON("arifle_SPAR_03_blk_F",LASERPOINTER,"optic_ams","muzzle_snds_b"),\
     WEAPON("arifle_SPAR_03_khk_F",LASERPOINTER,"optic_ams_khk","muzzle_snds_b_khk_f")\
 )
@@ -84,8 +84,8 @@
 #define SR_AM WEAPON("srifle_lrr_tna_f",SNIPER_OPTIC,"","")
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE_RCO   WEAPON("arifle_MX_SW_Black_F",LASERPOINTER,RCO,DMR_BIPOD)
-#define AUTORIFLE_SF    ARR_2(\
+#define AUTORIFLE   WEAPON("arifle_MX_SW_Black_F",LASERPOINTER,RCO,DMR_BIPOD)
+#define AUTORIFLE_RECON    ARR_2(\
     WEAPON("arifle_SPAR_02_blk_F",LASERPOINTER,"optic_ERCO_blk_F","muzzle_snds_M"),\
     WEAPON("arifle_SPAR_02_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")\
 )
