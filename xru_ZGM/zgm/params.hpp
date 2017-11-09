@@ -1,7 +1,7 @@
 #define FACTION_PARAM(var1,var2) \
     class DOUBLES(faction,var1) { \
         title = CSTRING(PARAMS,var1); \
-        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}; \
+        values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25}; \
         texts[] = { \
 /* 0 */     CSTRING(FACTIONS,AAF), \
             CSTRING(FACTIONS,BW_FLECK), \
@@ -23,10 +23,12 @@
             CSTRING(FACTIONS,RU_FLORA), \
             CSTRING(FACTIONS,RU_MOUNT), \
             CSTRING(FACTIONS,SYND), \
+/* 20 */    CSTRING(FACTIONS,TAKI_INS), \
+            CSTRING(FACTIONS,TAKISTAN), \
             CSTRING(FACTIONS,USARMY_OCP), \
-/* 21 */    CSTRING(FACTIONS,USARMY_UCP), \
+            CSTRING(FACTIONS,USARMY_UCP), \
             CSTRING(FACTIONS,USMC_D), \
-            CSTRING(FACTIONS,USMC_W) \
+/* 25 */    CSTRING(FACTIONS,USMC_W) \
         }; \
         default = var2; \
         function = QEFUNC(loadouts,GLUE(faction,var1)); \

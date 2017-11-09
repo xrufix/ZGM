@@ -694,7 +694,7 @@ class LOADOUT(crew,helipilot) : LOADOUT(crew,heli) {
     goggles[] = {GOGGLES_PILOT};
     lrRadios[] = {RADIO_PACK};
     headgear[] = {HELMET_HELICOPTER};
-    nvgs[] = {NVG_SF};
+    nvgs[] = {"NVGoggles_OPFOR"};
 };
 
 /* ###################### - Logistik - ###################### */
@@ -721,7 +721,7 @@ class LOADOUT(logistics,common) : COMMON {
 //Common MEDEVAC
 class LOADOUT(medevac,common): COMMON {
     primary[] = {""};
-    secondary[] = {PISTOL};
+    secondary[] = {""};
     magazines[] = {GRENADES_BASIC};
     items[] += {"CL_Logitracker"};
     headgear[] = {HELMET_BARE};

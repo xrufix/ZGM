@@ -78,6 +78,14 @@
                 <English>Syndicat (Tanoa)</English>
                 <German>Syndikat (Tanoa)</German>
             </Key>
+            <Key ID="STR_ZGM_FACTIONS_TAKI_INS">
+                <English>Takistani Insurgents</English>
+                <German>Takistanische Rebellen</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_TAKISTAN">
+                <English>Takistani Army</English>
+                <German>Takistanische Armee</German>
+            </Key>
             <Key ID="STR_ZGM_FACTIONS_USARMY_OCP">
                 <English>USA - United States Army (OCP)</English>
             </Key>

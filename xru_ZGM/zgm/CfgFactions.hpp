@@ -98,6 +98,16 @@ class CfgFactions {
         icon = "\a3\Data_F_Exp\FactionIcons\icon_SYND_CA.paa";
         sideShort = "i";
     };
+    class TAKI_INS {
+        displayName = CSTRING(FACTIONS,TAKI_INS);
+        icon = "CUP\BaseConfigs\CUP_BaseConfigs\Data\Flags\flag_tkm_co.paa";
+        sideShort = "o";
+    };
+    class TAKISTAN {
+        displayName = CSTRING(FACTIONS,TAKISTAN);
+        icon = "CUP\BaseConfigs\CUP_BaseConfigs\Data\Flags\flag_tka_co.paa";
+        sideShort = "i";
+    };
     class USARMY_OCP {
         displayName = CSTRING(FACTIONS,USARMY_OCP);
         icon = "\rhsusf\addons\rhsusf_main\data\armylogo.paa";

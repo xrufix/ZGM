@@ -281,24 +281,10 @@
 
 /* ###################### - INSIGNIA - ###################### */
 // Kann in CfgLoadouts.hpp überschrieben werden.
-#ifndef INSIGNIA_COMMON
-    #define INSIGNIA_COMMON ARR_1("")
-#endif
-#ifndef INSIGNIA_SF
-    #define INSIGNIA_SF INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_TNK
-    #define INSIGNIA_TNK INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_HELI
-    #define INSIGNIA_HELI INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_JET
-    #define INSIGNIA_JET INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_MEV
-    #define INSIGNIA_MEV INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_SUPPORT
-    #define INSIGNIA_SUPPORT INSIGNIA_COMMON
-#endif
+#define INSIGNIA_COMMON ARR_1("")
+#define INSIGNIA_SF INSIGNIA_COMMON
+#define INSIGNIA_TNK INSIGNIA_COMMON
+#define INSIGNIA_HELI INSIGNIA_COMMON
+#define INSIGNIA_JET INSIGNIA_COMMON
+#define INSIGNIA_MEV INSIGNIA_COMMON
+#define INSIGNIA_SUPPORT INSIGNIA_COMMON

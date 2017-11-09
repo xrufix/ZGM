@@ -78,6 +78,14 @@
 #include "factions\SYND.hpp"
 #include "common\template.hpp"
 
+#define FACTION TAKISTAN
+#include "factions\TAKISTAN.hpp"
+#include "common\template.hpp"
+
+#define FACTION TAKI_INS
+#include "factions\TAKI_INS.hpp"
+#include "common\template.hpp"
+
 #define FACTION USARMY_OCP
 #include "factions\USARMY_OCP.hpp"
 #include "common\template.hpp"

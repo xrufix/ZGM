@@ -168,14 +168,14 @@
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE       WEAPON("rhs_weap_pkm","","","")
+#define AUTORIFLE           WEAPON("rhs_weap_pkm","","","")
 
 #define MAG_AUTORIFLE       ARR_1("rhs_100Rnd_762x54mmR")
 #define MAGS_AUTORIFLE      ARR_2(MAG_AUTORIFLE,4)
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_AUTORIFLE,2)
 
-#define AUTORIFLE_RECON        WEAPON("hlc_rifle_RPK12","rhs_acc_ekp8_18","","")
-#define MAGS_AUTORIFLE_RECON   ARR_2("rhs_45Rnd_545X39_7N22_AK",8)
+#define AUTORIFLE_RECON        WEAPON("hlc_rifle_RPK12_60rnd","rhs_acc_ekp8_18","","")
+#define MAGS_AUTORIFLE_RECON   ARR_2("hlc_60Rnd_545x39_t_rpk",8)
 
 #define MMG                 WEAPON("rhs_weap_pkp","","","")
 #define MAGS_MMG            ARR_2(MAG_AUTORIFLE,3)
@@ -269,24 +269,10 @@
 
 /* ###################### - INSIGNIA - ###################### */
 // Kann in CfgLoadouts.hpp überschrieben werden.
-#ifndef INSIGNIA_COMMON
-    #define INSIGNIA_COMMON ARR_1("")
-#endif
-#ifndef INSIGNIA_SF
-    #define INSIGNIA_SF INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_TNK
-    #define INSIGNIA_TNK INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_HELI
-    #define INSIGNIA_HELI INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_JET
-    #define INSIGNIA_JET INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_MEV
-    #define INSIGNIA_MEV INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_SUPPORT
-    #define INSIGNIA_SUPPORT INSIGNIA_COMMON
-#endif
+#define INSIGNIA_COMMON ARR_1("")
+#define INSIGNIA_SF INSIGNIA_COMMON
+#define INSIGNIA_TNK INSIGNIA_COMMON
+#define INSIGNIA_HELI INSIGNIA_COMMON
+#define INSIGNIA_JET INSIGNIA_COMMON
+#define INSIGNIA_MEV INSIGNIA_COMMON
+#define INSIGNIA_SUPPORT INSIGNIA_COMMON

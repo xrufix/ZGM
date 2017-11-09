@@ -6,7 +6,7 @@
 #define	UNIFORM_SINGLE      "U_B_CombatUniform_mcam"        // Für Inventar
 #define UNIFORM             ARR_2(UNIFORM_SINGLE,"U_B_CombatUniform_mcam_vest")      // Für Zufallsauswahl
 #define UNIFORM_COMPANY     UNIFORM
-#define UNIFORM_RECON     UNIFORM
+#define UNIFORM_RECON       ARR_2("xru_u_b_combatuniform_drt","xru_u_b_combatuniform_drt_vest")
 #define UNIFORM_DIVER       ARR_1("U_B_Wetsuit")
 #define UNIFORM_CREW        ARR_1("xru_u_b_combatuniform_sage_tshirt")
 #define UNIFORM_HELICOPTER  ARR_1("U_B_HeliPilotCoveralls")
@@ -268,27 +268,12 @@
 #define RADIO_PACK 	ARR_1("ACRE_PRC117F")
 
 
-
 /* ###################### - INSIGNIA - ###################### */
 // Kann in CfgLoadouts.hpp überschrieben werden.
-#ifndef INSIGNIA_COMMON
-    #define INSIGNIA_COMMON ARR_1("")
-#endif
-#ifndef INSIGNIA_SF
-    #define INSIGNIA_SF INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_TNK
-    #define INSIGNIA_TNK INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_HELI
-    #define INSIGNIA_HELI INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_JET
-    #define INSIGNIA_JET INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_MEV
-    #define INSIGNIA_MEV INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_SUPPORT
-    #define INSIGNIA_SUPPORT INSIGNIA_COMMON
-#endif
+#define INSIGNIA_COMMON ARR_1("")
+#define INSIGNIA_SF INSIGNIA_COMMON
+#define INSIGNIA_TNK INSIGNIA_COMMON
+#define INSIGNIA_HELI INSIGNIA_COMMON
+#define INSIGNIA_JET INSIGNIA_COMMON
+#define INSIGNIA_MEV INSIGNIA_COMMON
+#define INSIGNIA_SUPPORT INSIGNIA_COMMON

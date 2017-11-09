@@ -131,8 +131,8 @@
 #define MAGS_AUTORIFLE      ARR_2(MAG_AUTORIFLE,3)
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_AUTORIFLE,2)
 
-#define AUTORIFLE_RECON        WEAPON("hlc_rifle_rpk74n","rhs_acc_1p63","","rhs_acc_tgpa")
-#define MAGS_AUTORIFLE_RECON   ARR_4("rhs_45Rnd_545X39_7N22_AK",7,"rhs_45Rnd_545X39_AK_Green",4)
+#define AUTORIFLE_RECON        WEAPON("hlc_rifle_rpk_75rnd","rhs_acc_1p63","","hlc_muzzle_762SUP_AK")
+#define MAGS_AUTORIFLE_RECON   ARR_4("hlc_75Rnd_762x39_AP_rpk",4,"hlc_75Rnd_762x39_m_rpk",2)
 
 #define MMG                 AUTORIFLE
 #define MAGS_MMG            ARR_2(MAG_AUTORIFLE,2)
@@ -216,27 +216,12 @@
 #define RADIO_PACK 	ARR_1("ACRE_SEM70")
 
 
-
 /* ###################### - INSIGNIA - ###################### */
 // Kann in CfgLoadouts.hpp überschrieben werden.
-#ifndef INSIGNIA_COMMON
-    #define INSIGNIA_COMMON ARR_1("")
-#endif
-#ifndef INSIGNIA_SF
-    #define INSIGNIA_SF INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_TNK
-    #define INSIGNIA_TNK INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_HELI
-    #define INSIGNIA_HELI INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_JET
-    #define INSIGNIA_JET INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_MEV
-    #define INSIGNIA_MEV INSIGNIA_COMMON
-#endif
-#ifndef INSIGNIA_SUPPORT
-    #define INSIGNIA_SUPPORT INSIGNIA_COMMON
-#endif
+#define INSIGNIA_COMMON ARR_1("")
+#define INSIGNIA_SF INSIGNIA_COMMON
+#define INSIGNIA_TNK INSIGNIA_COMMON
+#define INSIGNIA_HELI INSIGNIA_COMMON
+#define INSIGNIA_JET INSIGNIA_COMMON
+#define INSIGNIA_MEV INSIGNIA_COMMON
+#define INSIGNIA_SUPPORT INSIGNIA_COMMON
