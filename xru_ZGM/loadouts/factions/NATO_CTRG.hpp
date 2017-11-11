@@ -129,7 +129,7 @@
 #define MAGS_AUTORIFLE      ARR_2("hlc_50rnd_556x45_EPR",11)
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_RIFLE,10)
 
-#define AUTORIFLE_RECON       WEAPON("arifle_SPAR_02_khk_F","optic_ERCO_khk_F",LASERPOINTER,"muzzle_snds_M_khk_f")
+#define AUTORIFLE_RECON       WEAPON("hlc_rifle_ACR_mid_green_x15","optic_ERCO_khk_F",LASERPOINTER,"muzzle_snds_M_khk_f")
 #define MAGS_AUTORIFLE_RECON  ARR_4("hlc_50rnd_556x45_EPR",8,MAG_RIFLE,8)
 
 #define MMG             WEAPON("MMG_02_black_F","optic_Holosight_blk_F",LASERPOINTER,"bipod_01_F_blk")

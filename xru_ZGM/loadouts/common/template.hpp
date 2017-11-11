@@ -420,7 +420,6 @@ class LOADOUT(recon,ar) : LOADOUT(recon,common) {
         MAGS_AUTORIFLE_RECON,
         GRENADES_RGO
     };
-    items[] += {LASERPOINTER};
     goggles[] = {GOGGLES_SF_FULL};
 };
 //Grenadier

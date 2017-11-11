@@ -1,6 +1,6 @@
 /* ###################### - UGL-Magazines - ###################### */
-#include "components\opfor.hpp"
-#include "components\ugl_rhsafrf.hpp"
+#include "components\indep.hpp"
+#include "components\ugl_vanilla.hpp"
 
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "rhs_uniform_m88_patchless"     // Für Inventar
@@ -95,8 +95,8 @@
 
 
 // SF CARBINES
-#define RIFLE_RECON             "rhs_weap_akmn"
-#define RIFLE_UGL_RECON         "rhs_weap_akmn_gp25"
+#define RIFLE_RECON             "arifle_AK12_F"
+#define RIFLE_UGL_RECON         "arifle_AK12_GL_F"
 #define RIFLE_RECON_TAN         RIFLE_RECON
 #define RIFLE_UGL_RECON_TAN		RIFLE_UGL_RECON
 #define RIFLE_DIVER 		    RIFLE_RECON
