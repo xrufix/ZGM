@@ -120,7 +120,7 @@ class LOADOUT(platoon,uav) : LOADOUT(platoon,common) {
 class LOADOUT(platoon,jtac) : LOADOUT(platoon,common) {
     vest[] = {VEST_GRENADIER};
     backpack[] = {BACKPACK_KITBAG};
-    primary[] = {CARBINE_UGL_HOLO};
+    primary[] = {CARBINE_UGL_CCO};
     binoculars[] = {DESIGNATOR};
     lrRadios[] += {RADIO_PACK};
     magazines[] += {
