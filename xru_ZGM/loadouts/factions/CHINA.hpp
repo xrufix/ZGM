@@ -55,7 +55,7 @@
 #define CARBINE_CCO        RIFLE_CCO
 
 #define CARBINE_UGL	        RIFLE_UGL
-#define CARBINE_UGL_HOLO    RIFLE_UGL_CCO
+#define CARBINE_UGL_CCO    RIFLE_UGL_CCO
 
 #define MAG_CARBINE         MAG_RIFLE
 #define MAG_CARBINE_TRACER  MAG_RIFLE_TRACER
@@ -89,8 +89,7 @@
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE           "arifle_CTARS_blk_F"
-#define AUTORIFLE       WEAPON(AUTORIFLE,"optic_Holosight_blk_F",LASERPOINTER,"")
+#define AUTORIFLE           WEAPON("arifle_CTARS_blk_F","optic_Holosight_blk_F",LASERPOINTER,"")
 #define MAG_AUTORIFLE       ARR_1("100Rnd_580x42_Mag_F")
 #define MAGS_AUTORIFLE      ARR_4(MAG_AUTORIFLE,5,"100Rnd_580x42_Mag_Tracer_F",2)
 #define MAGS_AUTORIFLE_ASST ARR_3(MAG_AUTORIFLE,4,"100Rnd_580x42_Mag_Tracer_F")

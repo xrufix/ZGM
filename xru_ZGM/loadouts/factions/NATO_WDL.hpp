@@ -38,6 +38,9 @@
 
 
 /* ###################### - ATTACHMENTS- ###################### */
+#define CCO "optic_Holosight_blk_F"
+#define RCO "optic_MRCO"
+
 #define SNIPER_OPTIC "optic_LRPS_tna_f"
 #define DMR_BIPOD "bipod_01_F_blk"
 
@@ -45,49 +48,52 @@
 
 /* ###################### - PRIMARY WEAPONS - ###################### */
 // STANDARD ISSUE ASSAULT RIFLE
-#define RIFLE           ARR_1("arifle_MX_Black_F")
-#define RIFLE_UGL       ARR_1("arifle_MX_GL_Black_F")
+#define RIFLE           ARR_1("rhs_weap_hk416d145")
+#define RIFLE_UGL       ARR_1("rhs_weap_hk416d145_m320")
 #define RIFLE_RCO       WEAPON(RIFLE,LASERPOINTER,RCO,"")
 #define RIFLE_UGL_RCO   WEAPON(RIFLE_UGL,LASERPOINTER,RCO,"")
 #define RIFLE_CCO       WEAPON(RIFLE,LASERPOINTER,CCO,"")
 #define RIFLE_UGL_CCO   WEAPON(RIFLE_UGL,LASERPOINTER,CCO,"")
 
-// CARBINE & PDW
+#define MAG_RIFLE			"30Rnd_556x45_Stanag"
+#define MAG_RIFLE_TRACER	"30Rnd_556x45_Stanag_Tracer_Red"
+
+// PDW
 #define PDW         ARR_4("smg_01_f",CCO,"acc_flashlight_smg_01","")
-#define CARBINE     "arifle_MXC_Black_F"
-#define CARBINE_UGL	RIFLE_UGL
+
+// Carbine
+#define CARBINE     "rhs_weap_hk416d10"
+#define CARBINE_UGL	"rhs_weap_hk416d10_m320"
 
 #define CARBINE_CCO        WEAPON(CARBINE,CCO,"","")
-#define CARBINE_UGL_HOLO    WEAPON(CARBINE_UGL,CCO,"","")
+#define CARBINE_UGL_CCO    WEAPON(CARBINE_UGL,CCO,"","")
 
 // SF CARBINES
 #define RIFLE_RECON ARR_2(\
-    WEAPON("arifle_SPAR_01_blk_F",LASERPOINTER,"optic_ERCO_blk_F","muzzle_snds_M"),\
-    WEAPON("arifle_SPAR_01_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")\
+    WEAPON("rhs_weap_hk416d145_wd",LASERPOINTER,RCO,"rhsusf_acc_nt4_tan"),\
+    WEAPON("rhs_weap_hk416d145_wd_2",LASERPOINTER,RCO,"rhsusf_acc_nt4_tan")\
 )
-#define RIFLE_UGL_RECON ARR_2(\
-    WEAPON("arifle_SPAR_01_gl_blk_F",LASERPOINTER,"optic_ERCO_blk_F","muzzle_snds_M"),\
-    WEAPON("arifle_SPAR_01_gl_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")\
-)
-#define RIFLE_RECON_TAN       WEAPON("arifle_SPAR_01_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")
-#define RIFLE_UGL_RECON_TAN   WEAPON("arifle_SPAR_01_gl_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")
+#define RIFLE_UGL_RECON       WEAPON("rhs_weap_hk416d145_m320",LASERPOINTER,CCO,"rhsusf_acc_nt4_black")
+#define RIFLE_RECON_TAN       RIFLE_RECON
+#define RIFLE_UGL_RECON_TAN   RIFLE_UGL_RECON
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR WEAPON("arifle_MXM_Black_F",DMR_BIPOD,LASERPOINTER,"optic_SOS")
+#define DMR WEAPON("srifle_EBR_F",DMR_BIPOD,LASERPOINTER,"optic_SOS")
+#define MAG_DMR MAG_DMR_RECON
 
-#define DMR_RECON ARR_2(\
-    WEAPON("arifle_SPAR_03_blk_F",LASERPOINTER,"optic_ams","muzzle_snds_b"),\
-    WEAPON("arifle_SPAR_03_khk_F",LASERPOINTER,"optic_ams_khk","muzzle_snds_b_khk_f")\
-)
+#define DMR_RECON WEAPON("srifle_EBR_F","muzzle_snds_B",LASERPOINTER,"optic_SOS")
 
 #define SR_AP WEAPON("srifle_DMR_02_camo_F",SNIPER_OPTIC,DMR_BIPOD,"ACE_muzzle_mzls_338")
 #define SR_AM WEAPON("srifle_lrr_tna_f",SNIPER_OPTIC,"","")
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE   WEAPON("arifle_MX_SW_Black_F",LASERPOINTER,RCO,DMR_BIPOD)
+#define AUTORIFLE   WEAPON("LMG_03_F",LASERPOINTER,CCO,"")
+#define MAGS_AUTORIFLE      ARR_3("200Rnd_556x45_Box_Red_F",4,"200Rnd_556x45_Box_Tracer_Red_F")
+#define MAGS_AUTORIFLE_ASST ARR_2("200Rnd_556x45_Box_Red_F",2)
+
 #define AUTORIFLE_RECON    ARR_2(\
-    WEAPON("arifle_SPAR_02_blk_F",LASERPOINTER,"optic_ERCO_blk_F","muzzle_snds_M"),\
-    WEAPON("arifle_SPAR_02_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")\
+    WEAPON("arifle_SPAR_02_blk_F",LASERPOINTER,CCO,"muzzle_snds_M"),\
+    WEAPON("arifle_SPAR_02_khk_F",LASERPOINTER,CCO,"muzzle_snds_M_khk_f")\
 )
 #define MMG WEAPON("MMG_02_black_F",LASERPOINTER,RCO,DMR_BIPOD)
 

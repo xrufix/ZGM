@@ -92,7 +92,7 @@
 #define CARBINE_CCO    CARBINE
 
 #define CARBINE_UGL         WEAPON("rhs_weap_akms_gp25","","","rhs_acc_dtkakm")
-#define CARBINE_UGL_HOLO    CARBINE_UGL
+#define CARBINE_UGL_CCO    CARBINE_UGL
 
 #define MAG_CARBINE         MAG_RIFLE
 #define MAG_CARBINE_TRACER  MAG_RIFLE_TRACER

@@ -6,7 +6,7 @@
 #define	UNIFORM_SINGLE      "U_O_CombatUniform_ocamo"        // Für Inventar
 #define UNIFORM             ARR_1(UNIFORM_SINGLE)      // Für Zufallsauswahl
 #define UNIFORM_COMPANY     ARR_1("U_O_OfficerUniform_ocamo")
-#define UNIFORM_RECON     ARR_1("U_O_V_Soldier_Viper_hex_F")
+#define UNIFORM_RECON       ARR_1("U_O_V_Soldier_Viper_hex_F")
 #define UNIFORM_DIVER       ARR_1("U_O_Wetsuit")
 #define UNIFORM_CREW        UNIFORM
 #define UNIFORM_HELICOPTER  UNIFORM
@@ -97,7 +97,7 @@
 #define CARBINE_CCO        WEAPON(CARBINE,CCO,"","")
 
 #define CARBINE_UGL	        RIFLE_UGL
-#define CARBINE_UGL_HOLO    RIFLE_UGL_CCO
+#define CARBINE_UGL_CCO    RIFLE_UGL_CCO
 
 #define MAG_CARBINE         MAG_RIFLE
 #define MAG_CARBINE_TRACER  MAG_RIFLE_TRACER
@@ -131,8 +131,7 @@
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE           "LMG_Zafir_F"
-#define AUTORIFLE       WEAPON(AUTORIFLE,"optic_Holosight_smg_blk_F",LASERPOINTER,"")
+#define AUTORIFLE           WEAPON("LMG_Zafir_F","optic_Holosight_smg_blk_F",LASERPOINTER,"")
 #define MAG_AUTORIFLE       ARR_1("150Rnd_762x54_Box")
 #define MAGS_AUTORIFLE      ARR_3(MAG_AUTORIFLE,3,"150Rnd_762x54_Box_Tracer")
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_AUTORIFLE,2)

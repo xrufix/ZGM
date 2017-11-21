@@ -4,8 +4,9 @@
 #define	UNIFORM_SINGLE      "U_O_T_Soldier_F"        // Für Inventar
 #define UNIFORM             ARR_1(UNIFORM_SINGLE)      // Für Zufallsauswahl
 #define UNIFORM_COMPANY     ARR_1("U_O_T_Officer_F")
-#define UNIFORM_RECON     ARR_1("U_O_V_Soldier_Viper_F")
+#define UNIFORM_RECON       ARR_1("U_O_V_Soldier_Viper_F")
 #define UNIFORM_SNIPER      ARR_1("U_O_T_FullGhillie_tna_F")
+#define UNIFORM_DIVER       ARR_1("xru_u_o_wetsuit_grn")
 
 
 

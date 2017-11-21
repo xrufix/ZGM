@@ -116,7 +116,7 @@
     WEAPON(CARBINE_2,"rhs_acc_ekp1","rhs_acc_2dpZenit","rhs_acc_dtk2"))
 
 #define CARBINE_UGL         WEAPON("rhs_weap_aks74n_gp25","","","rhs_acc_dtk3")
-#define CARBINE_UGL_HOLO    WEAPON("rhs_weap_aks74n_gp25","rhs_acc_pkas","","rhs_acc_dtk3")
+#define CARBINE_UGL_CCO    WEAPON("rhs_weap_aks74n_gp25","rhs_acc_pkas","","rhs_acc_dtk3")
 
 #define MAG_CARBINE         MAG_RIFLE
 #define MAG_CARBINE_TRACER  MAG_RIFLE_TRACER

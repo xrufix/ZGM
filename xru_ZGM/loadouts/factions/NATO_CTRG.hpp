@@ -88,7 +88,7 @@
 #define CARBINE_UGL	RIFLE_UGL
 
 #define CARBINE_CCO         WEAPON(CARBINE,"optic_Holosight_smg_blk_F","","")
-#define CARBINE_UGL_HOLO    RIFLE_UGL_CCO
+#define CARBINE_UGL_CCO    RIFLE_UGL_CCO
 
 #define MAG_CARBINE         MAG_RIFLE
 #define MAG_CARBINE_TRACER  MAG_RIFLE_TRACER

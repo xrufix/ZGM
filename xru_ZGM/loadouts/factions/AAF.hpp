@@ -86,7 +86,7 @@
 #define CARBINE_UGL	ARR_1("arifle_Mk20_GL_F")
 
 #define CARBINE_CCO        WEAPON(CARBINE,CCO,"","")
-#define CARBINE_UGL_HOLO    WEAPON(CARBINE_UGL,CCO,"","")
+#define CARBINE_UGL_CCO    WEAPON(CARBINE_UGL,CCO,"","")
 
 // SF CARBINES
 #define RIFLE_RECON              WEAPON("arifle_Mk20_plain_F",LASERPOINTER,RCO,"muzzle_snds_m_snd_F")

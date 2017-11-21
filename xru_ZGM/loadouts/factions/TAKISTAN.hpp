@@ -88,7 +88,7 @@
 #define CARBINE_CCO CARBINE
 
 #define CARBINE_UGL         "rhs_weap_akms_gp25"
-#define CARBINE_UGL_HOLO    CARBINE_UGL
+#define CARBINE_UGL_CCO    CARBINE_UGL
 
 #define MAG_CARBINE         "30Rnd_762x39_Mag_F"
 #define MAG_CARBINE_TRACER  "30Rnd_762x39_Mag_Tracer_F"

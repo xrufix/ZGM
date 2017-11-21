@@ -86,7 +86,7 @@
 #define CARBINE_UGL	ARR_1("arifle_MX_GL_Black_F")
 
 #define CARBINE_CCO        WEAPON(CARBINE,CCO,"","")
-#define CARBINE_UGL_HOLO    WEAPON(CARBINE_UGL,CCO,"","")
+#define CARBINE_UGL_CCO    WEAPON(CARBINE_UGL,CCO,"","")
 
 // SF CARBINES
 #define RIFLE_RECON ARR_3(\
@@ -148,7 +148,7 @@
 #define AT_LIGHT	    WEAPON("launch_nlaw_f","","","")
 #define AT_ROCKET	    WEAPON("launch_nlaw_f","","","")
 #define AA_MISSILE	    WEAPON("launch_B_Titan_F","","","")
-#define AT_MISSILE    WEAPON("launch_B_Titan_short_F","","","")
+#define AT_MISSILE      WEAPON("launch_B_Titan_short_F","","","")
 
 
 
