@@ -10,24 +10,26 @@ class Header {
     maxPlayers = 128;
 };
 
-// Standard loadouts
-#include "default_loadouts.hpp"
-
 // W-Framework und Medicsystem
 #define STANDARD
 #include "W-Framework\description.hpp"
+#include "CfgPoppy.hpp"
+#include "CfgLoadouts.hpp"
 
 class CfgFunctions {
     #include "Poppy\CfgFunctions.hpp"
     #include "zgm\CfgFunctions.hpp"
+    #include "xru\CfgFunctions.hpp"
 };
 
-#include "zgm\script_macros_cfg.hpp"
-#include "zgm\params.hpp"
-#include "zgm\loadoutScreen\dialog.hpp"
+class params {
+    #include "xru\params.hpp"
+    #include "zgm\params.hpp"
+};
+
+// xru_zgm
+#include "zgm\dialog.hpp"
 #include "zgm\CfgFactions.hpp"
 #include "zgm\CfgRoles.hpp"
-#include "CfgPoppy.hpp"
-#include "CfgLoadouts.hpp"
 
 allowFunctionsRecompile = 1;

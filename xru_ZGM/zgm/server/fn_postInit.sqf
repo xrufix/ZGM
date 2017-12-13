@@ -12,7 +12,6 @@ if (!isMultiplayer) then {
     } count _allAI;
 };
 
-
 // Add spawn positions to zeus, so they can be moved, and add players.
 {
     _x addCuratorEditableObjects [allMissionObjects "Site_Military_Base", false];

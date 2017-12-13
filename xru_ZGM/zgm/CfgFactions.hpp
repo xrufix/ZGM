@@ -1,3 +1,5 @@
+#include "config_macros.hpp"
+
 class CfgFactions {
     class AAF {
         displayName = CSTRING(FACTIONS,AAF);

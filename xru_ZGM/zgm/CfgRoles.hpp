@@ -1,3 +1,5 @@
+#include "config_macros.hpp"
+
 class cfgRoles {
     class company {
         displayName = "Company / TF Command";

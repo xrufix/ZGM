@@ -151,7 +151,7 @@
 
 /* ###################### - LAUNCHERS - ###################### */
 #define AT_LIGHT	            WEAPON("BWA3_Pzf3","BWA3_optic_NSA80","","")
-#define MAGS_AT_LIGHT           ARR_1("ace_banana")
+#define MAGS_AT_LIGHT           ARR_1("BWA3_Pzf3_IT")
 
 #define AT_ROCKET	            WEAPON("BWA3_CarlGustaf","BWA3_optic_CarlGustaf","","")
 #define MAGS_AT_ROCKET          ARR_3("BWA3_CarlGustaf_HEAT",2,"BWA3_CarlGustaf_HEDP")

@@ -980,11 +980,31 @@ class AAF_weapons_at: AAF_weapons_common
 	{
 		
 		{
-			"launch_nlaw_f",
+			"xru_rpg32_camo",
 			"",
 			"",
 			""
 		}
+	};
+	magazines[]=
+	{
+		"9Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		3,
+		"RPG32_HE_F"
 	};
 };
 class AAF_weapons_aat: AAF_assistant_common
@@ -1009,7 +1029,9 @@ class AAF_weapons_aat: AAF_assistant_common
 		2,
 		"SmokeShell",
 		2,
-		"9Rnd_45ACP_Mag"
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
 	};
 };
 class AAF_weapons_atgm: AAF_weapons_common
@@ -1391,19 +1413,6 @@ class AAF_recon_ar: AAF_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"acc_pointer_ir"
 	};
 	goggles[]=
 	{
@@ -3201,7 +3210,7 @@ class BW_FLECK_squad_lat: CommonBW_FLECK
 		2,
 		"SmokeShell",
 		2,
-		"ace_banana"
+		"BWA3_Pzf3_IT"
 	};
 };
 class BW_FLECK_squad_cm: CommonBW_FLECK
@@ -3436,6 +3445,26 @@ class BW_FLECK_weapons_at: BW_FLECK_weapons_common
 			"",
 			""
 		}
+	};
+	magazines[]=
+	{
+		"BWA3_15Rnd_9x19_P8",
+		3,
+		"hlc_30rnd_556x45_EPR_G36",
+		5,
+		"hlc_30rnd_556x45_Tracers_G36",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"BWA3_CarlGustaf_HEAT",
+		2,
+		"BWA3_CarlGustaf_HEDP"
 	};
 };
 class BW_FLECK_weapons_aat: BW_FLECK_assistant_common
@@ -3851,19 +3880,6 @@ class BW_FLECK_recon_ar: BW_FLECK_recon_common
 		"SmokeShell",
 		2
 	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ace_banana"
-	};
 	goggles[]=
 	{
 		"rhsusf_shemagh_gogg_grn",
@@ -3940,7 +3956,7 @@ class BW_FLECK_recon_lat: BW_FLECK_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"ace_banana"
+		"BWA3_Pzf3_IT"
 	};
 };
 class BW_FLECK_recon_cm: BW_FLECK_recon_common
@@ -5652,7 +5668,7 @@ class BW_TROP_squad_lat: CommonBW_TROP
 		2,
 		"SmokeShell",
 		2,
-		"ace_banana"
+		"BWA3_Pzf3_IT"
 	};
 };
 class BW_TROP_squad_cm: CommonBW_TROP
@@ -5887,6 +5903,26 @@ class BW_TROP_weapons_at: BW_TROP_weapons_common
 			"",
 			""
 		}
+	};
+	magazines[]=
+	{
+		"BWA3_15Rnd_9x19_P8",
+		3,
+		"hlc_30rnd_556x45_EPR_G36",
+		5,
+		"hlc_30rnd_556x45_Tracers_G36",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"BWA3_CarlGustaf_HEAT",
+		2,
+		"BWA3_CarlGustaf_HEDP"
 	};
 };
 class BW_TROP_weapons_aat: BW_TROP_assistant_common
@@ -6302,19 +6338,6 @@ class BW_TROP_recon_ar: BW_TROP_recon_common
 		"SmokeShell",
 		2
 	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ace_banana"
-	};
 	goggles[]=
 	{
 		"rhsusf_shemagh_gogg_grn",
@@ -6391,7 +6414,7 @@ class BW_TROP_recon_lat: BW_TROP_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"ace_banana"
+		"BWA3_Pzf3_IT"
 	};
 };
 class BW_TROP_recon_cm: BW_TROP_recon_common
@@ -8346,6 +8369,26 @@ class CDF_weapons_at: CDF_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_762x39_Mag_F",
+		5,
+		"30Rnd_762x39_Mag_Tracer_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7VR_mag",
+		2,
+		"rhs_rpg7_TBG7V_mag"
+	};
 };
 class CDF_weapons_aat: CDF_assistant_common
 {
@@ -8735,19 +8778,6 @@ class CDF_recon_ar: CDF_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -10380,7 +10410,7 @@ class CHINA_squad_ar: CommonCHINA
 	{
 		
 		{
-			"AUTORIFLE",
+			"arifle_CTARS_blk_F",
 			"optic_Holosight_blk_F",
 			"acc_pointer_ir",
 			""
@@ -10813,6 +10843,26 @@ class CHINA_weapons_at: CHINA_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		5,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
+	};
 };
 class CHINA_weapons_aat: CHINA_assistant_common
 {
@@ -11207,19 +11257,6 @@ class CHINA_recon_ar: CHINA_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"acc_pointer_ir"
 	};
 	goggles[]=
 	{
@@ -12860,7 +12897,7 @@ class CHINA_GRN_squad_ar: CommonCHINA_GRN
 	{
 		
 		{
-			"AUTORIFLE",
+			"arifle_CTARS_blk_F",
 			"optic_Holosight_blk_F",
 			"acc_pointer_ir",
 			""
@@ -13298,6 +13335,26 @@ class CHINA_GRN_weapons_at: CHINA_GRN_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_580x42_Mag_F",
+		5,
+		"30Rnd_580x42_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
+	};
 };
 class CHINA_GRN_weapons_aat: CHINA_GRN_assistant_common
 {
@@ -13696,19 +13753,6 @@ class CHINA_GRN_recon_ar: CHINA_GRN_recon_common
 		"SmokeShell",
 		2
 	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"acc_pointer_ir"
-	};
 	goggles[]=
 	{
 		""
@@ -13914,7 +13958,7 @@ class CHINA_GRN_diver_common: CHINA_GRN_recon_common
 {
 	uniform[]=
 	{
-		"U_O_Wetsuit"
+		"xru_u_o_wetsuit_grn"
 	};
 	vest[]=
 	{
@@ -16167,6 +16211,26 @@ class FIA_weapons_at: FIA_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Green",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
+	};
 };
 class FIA_weapons_aat: FIA_assistant_common
 {
@@ -16692,19 +16756,6 @@ class FIA_recon_ar: FIA_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -18767,7 +18818,7 @@ class IDF_squad_ar: CommonIDF
 	{
 		
 		{
-			"AUTORIFLE",
+			"LMG_Zafir_F",
 			"",
 			"optic_Holosight_blk_F",
 			""
@@ -19116,13 +19167,7 @@ class IDF_weapons_mg: IDF_weapons_common
 	{
 		
 		{
-			
-			{
-				"AUTORIFLE",
-				"",
-				"optic_Holosight_blk_F",
-				""
-			},
+			"LMG_Zafir_F",
 			"acc_pointer_ir",
 			"optic_Holosight_blk_F",
 			""
@@ -19212,6 +19257,24 @@ class IDF_weapons_at: IDF_weapons_common
 			"",
 			""
 		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_15Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"CUP_Dragon_EP1_M"
 	};
 };
 class IDF_weapons_aat: IDF_assistant_common
@@ -19615,13 +19678,7 @@ class IDF_recon_ar: IDF_recon_common
 	{
 		
 		{
-			
-			{
-				"AUTORIFLE",
-				"",
-				"optic_Holosight_blk_F",
-				""
-			},
+			"LMG_Zafir_F",
 			"acc_pointer_ir",
 			"optic_Holosight_blk_F",
 			""
@@ -19641,19 +19698,6 @@ class IDF_recon_ar: IDF_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"acc_pointer_ir"
 	};
 	goggles[]=
 	{
@@ -21349,7 +21393,7 @@ class IRAN_squad_ar: CommonIRAN
 	{
 		
 		{
-			"AUTORIFLE",
+			"LMG_Zafir_F",
 			"optic_Holosight_smg_blk_F",
 			"acc_pointer_ir",
 			""
@@ -21780,6 +21824,26 @@ class IRAN_weapons_at: IRAN_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_65x39_caseless_green",
+		5,
+		"30Rnd_65x39_caseless_green_mag_Tracer",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
+	};
 };
 class IRAN_weapons_aat: IRAN_assistant_common
 {
@@ -22177,19 +22241,6 @@ class IRAN_recon_ar: IRAN_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"acc_pointer_ir"
 	};
 	goggles[]=
 	{
@@ -23840,7 +23891,7 @@ class IRAN_GRN_squad_ar: CommonIRAN_GRN
 	{
 		
 		{
-			"AUTORIFLE",
+			"LMG_Zafir_F",
 			"optic_Holosight_smg_blk_F",
 			"acc_pointer_ir",
 			""
@@ -24276,6 +24327,26 @@ class IRAN_GRN_weapons_at: IRAN_GRN_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_65x39_caseless_green",
+		5,
+		"30Rnd_65x39_caseless_green_mag_Tracer",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
+	};
 };
 class IRAN_GRN_weapons_aat: IRAN_GRN_assistant_common
 {
@@ -24677,19 +24748,6 @@ class IRAN_GRN_recon_ar: IRAN_GRN_recon_common
 		"SmokeShell",
 		2
 	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"acc_pointer_ir"
-	};
 	goggles[]=
 	{
 		""
@@ -24899,7 +24957,7 @@ class IRAN_GRN_diver_common: IRAN_GRN_recon_common
 {
 	uniform[]=
 	{
-		"U_O_Wetsuit"
+		"xru_u_o_wetsuit_grn"
 	};
 	vest[]=
 	{
@@ -26326,7 +26384,7 @@ class IRAN_URB_squad_ar: CommonIRAN_URB
 	{
 		
 		{
-			"AUTORIFLE",
+			"LMG_Zafir_F",
 			"optic_Holosight_smg_blk_F",
 			"acc_pointer_ir",
 			""
@@ -26751,6 +26809,26 @@ class IRAN_URB_weapons_at: IRAN_URB_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_65x39_caseless_green",
+		5,
+		"30Rnd_65x39_caseless_green_mag_Tracer",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"RPG32_F",
+		2,
+		"RPG32_HE_F"
+	};
 };
 class IRAN_URB_weapons_aat: IRAN_URB_assistant_common
 {
@@ -27148,19 +27226,6 @@ class IRAN_URB_recon_ar: IRAN_URB_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"acc_pointer_ir"
 	};
 	goggles[]=
 	{
@@ -29229,6 +29294,24 @@ class NATO_CTRG_weapons_at: NATO_CTRG_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"hlc_15Rnd_9x19_B_P226"
+	};
 };
 class NATO_CTRG_weapons_aat: NATO_CTRG_assistant_common
 {
@@ -29600,7 +29683,7 @@ class NATO_CTRG_recon_ar: NATO_CTRG_recon_common
 	{
 		
 		{
-			"arifle_SPAR_02_khk_F",
+			"hlc_rifle_ACR_mid_green_x15",
 			"optic_ERCO_khk_F",
 			"acc_pointer_IR",
 			"muzzle_snds_M_khk_f"
@@ -29622,19 +29705,6 @@ class NATO_CTRG_recon_ar: NATO_CTRG_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"acc_pointer_IR"
 	};
 	goggles[]=
 	{
@@ -31730,6 +31800,24 @@ class NATO_MTP_weapons_at: NATO_MTP_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_65x39_caseless_mag",
+		5,
+		"30Rnd_65x39_caseless_mag_Tracer",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"16Rnd_9x21_Mag"
+	};
 };
 class NATO_MTP_weapons_aat: NATO_MTP_assistant_common
 {
@@ -32177,19 +32265,6 @@ class NATO_MTP_recon_ar: NATO_MTP_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"acc_pointer_ir"
 	};
 	goggles[]=
 	{
@@ -34295,6 +34370,24 @@ class NATO_TRPC_weapons_at: NATO_TRPC_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_65x39_caseless_mag",
+		5,
+		"30Rnd_65x39_caseless_mag_Tracer",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"16Rnd_9x21_Mag"
+	};
 };
 class NATO_TRPC_weapons_aat: NATO_TRPC_assistant_common
 {
@@ -34711,19 +34804,6 @@ class NATO_TRPC_recon_ar: NATO_TRPC_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"acc_pointer_ir"
 	};
 	goggles[]=
 	{
@@ -35821,9 +35901,9 @@ class CommonNATO_WDL: CommonDefault
 	{
 		
 		{
-			"arifle_MX_Black_F",
+			"rhs_weap_hk416d145",
 			"acc_pointer_ir",
-			"optic_aco_grn",
+			"optic_Holosight_blk_F",
 			""
 		}
 	};
@@ -35845,9 +35925,9 @@ class CommonNATO_WDL: CommonDefault
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -35932,7 +36012,7 @@ class NATO_WDL_company_common: CommonNATO_WDL
 	primary[]=
 	{
 		"smg_01_f",
-		"optic_aco_grn",
+		"optic_Holosight_blk_F",
 		"acc_flashlight_smg_01",
 		""
 	};
@@ -36052,8 +36132,8 @@ class NATO_WDL_platoon_common: CommonNATO_WDL
 	{
 		
 		{
-			"arifle_MXC_Black_F",
-			"optic_aco_grn",
+			"rhs_weap_hk416d10",
+			"optic_Holosight_blk_F",
 			"",
 			""
 		}
@@ -36062,9 +36142,9 @@ class NATO_WDL_platoon_common: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36162,8 +36242,8 @@ class NATO_WDL_platoon_jtac: NATO_WDL_platoon_common
 	{
 		
 		{
-			"arifle_MX_GL_Black_F",
-			"optic_aco_grn",
+			"rhs_weap_hk416d10_m320",
+			"optic_Holosight_blk_F",
 			"",
 			""
 		}
@@ -36181,9 +36261,9 @@ class NATO_WDL_platoon_jtac: NATO_WDL_platoon_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36266,9 +36346,9 @@ class NATO_WDL_squad_sl: CommonNATO_WDL
 	{
 		
 		{
-			"arifle_MX_GL_Black_F",
+			"rhs_weap_hk416d145_m320",
 			"acc_pointer_ir",
-			"optic_aco_grn",
+			"optic_Holosight_blk_F",
 			""
 		}
 	};
@@ -36276,9 +36356,9 @@ class NATO_WDL_squad_sl: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36357,18 +36437,17 @@ class NATO_WDL_squad_ar: CommonNATO_WDL
 	{
 		
 		{
-			"arifle_MX_SW_Black_F",
+			"LMG_03_F",
 			"acc_pointer_ir",
-			"optic_hamr",
-			"bipod_01_F_blk"
+			"optic_Holosight_blk_F",
+			""
 		}
 	};
 	magazines[]=
 	{
-		"100Rnd_65x39_caseless_mag",
-		7,
-		"100Rnd_65x39_caseless_mag_Tracer",
-		3,
+		"200Rnd_556x45_Box_Red_F",
+		4,
+		"200Rnd_556x45_Box_Tracer_Red_F",
 		"16Rnd_9x21_Mag",
 		3,
 		"ACE_Chemlight_Orange",
@@ -36394,9 +36473,9 @@ class NATO_WDL_squad_gl: CommonNATO_WDL
 	{
 		
 		{
-			"arifle_MX_GL_Black_F",
+			"rhs_weap_hk416d145_m320",
 			"acc_pointer_ir",
-			"optic_aco_grn",
+			"optic_Holosight_blk_F",
 			""
 		}
 	};
@@ -36404,9 +36483,9 @@ class NATO_WDL_squad_gl: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36458,9 +36537,9 @@ class NATO_WDL_squad_light: CommonNATO_WDL
 	{
 		
 		{
-			"arifle_MX_Black_F",
+			"rhs_weap_hk416d145",
 			"acc_pointer_ir",
-			"optic_hamr",
+			"optic_MRCO",
 			""
 		}
 	};
@@ -36479,9 +36558,9 @@ class NATO_WDL_squad_aar: CommonNATO_WDL
 	{
 		
 		{
-			"arifle_MX_Black_F",
+			"rhs_weap_hk416d145",
 			"acc_pointer_ir",
-			"optic_hamr",
+			"optic_MRCO",
 			""
 		}
 	};
@@ -36492,15 +36571,13 @@ class NATO_WDL_squad_aar: CommonNATO_WDL
 	magazines[]=
 	{
 		"ACE_SpareBarrel",
-		"100Rnd_65x39_caseless_mag",
-		4,
-		"100Rnd_65x39_caseless_mag_Tracer",
+		"200Rnd_556x45_Box_Red_F",
 		2,
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36536,9 +36613,9 @@ class NATO_WDL_squad_lat: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36593,7 +36670,7 @@ class NATO_WDL_squad_dm: CommonNATO_WDL
 	{
 		
 		{
-			"arifle_MXM_Black_F",
+			"srifle_EBR_F",
 			"bipod_01_F_blk",
 			"acc_pointer_ir",
 			"optic_SOS"
@@ -36613,7 +36690,7 @@ class NATO_WDL_squad_dm: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"20Rnd_762x51_Mag",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36657,9 +36734,9 @@ class NATO_WDL_weapons_common: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36694,7 +36771,7 @@ class NATO_WDL_weapons_mg: NATO_WDL_weapons_common
 		{
 			"MMG_02_black_F",
 			"acc_pointer_ir",
-			"optic_hamr",
+			"optic_MRCO",
 			"bipod_01_F_blk"
 		}
 	};
@@ -36720,9 +36797,9 @@ class NATO_WDL_weapons_amg: NATO_WDL_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36781,6 +36858,24 @@ class NATO_WDL_weapons_at: NATO_WDL_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"16Rnd_9x21_Mag"
+	};
 };
 class NATO_WDL_weapons_aat: NATO_WDL_assistant_common
 {
@@ -36792,9 +36887,9 @@ class NATO_WDL_weapons_aat: NATO_WDL_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36823,9 +36918,9 @@ class NATO_WDL_weapons_atgm: NATO_WDL_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36848,9 +36943,9 @@ class NATO_WDL_weapons_aatgm: NATO_WDL_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36881,9 +36976,9 @@ class NATO_WDL_weapons_aa: NATO_WDL_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36902,9 +36997,9 @@ class NATO_WDL_weapons_aaa: NATO_WDL_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_65x39_caseless_mag_Tracer",
+		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -36995,17 +37090,17 @@ class NATO_WDL_recon_common: CommonNATO_WDL
 	{
 		
 		{
-			"arifle_SPAR_01_blk_F",
+			"rhs_weap_hk416d145_wd",
 			"acc_pointer_ir",
-			"optic_ERCO_blk_F",
-			"muzzle_snds_M"
+			"optic_MRCO",
+			"rhsusf_acc_nt4_tan"
 		},
 		
 		{
-			"arifle_SPAR_01_khk_F",
+			"rhs_weap_hk416d145_wd_2",
 			"acc_pointer_ir",
-			"optic_ERCO_khk_F",
-			"muzzle_snds_M_khk_f"
+			"optic_MRCO",
+			"rhsusf_acc_nt4_tan"
 		}
 	};
 	magazines[]=
@@ -37093,17 +37188,10 @@ class NATO_WDL_recon_tl: NATO_WDL_recon_common
 	{
 		
 		{
-			"arifle_SPAR_01_gl_blk_F",
+			"rhs_weap_hk416d145_m320",
 			"acc_pointer_ir",
-			"optic_ERCO_blk_F",
-			"muzzle_snds_M"
-		},
-		
-		{
-			"arifle_SPAR_01_gl_khk_F",
-			"acc_pointer_ir",
-			"optic_ERCO_khk_F",
-			"muzzle_snds_M_khk_f"
+			"optic_Holosight_blk_F",
+			"rhsusf_acc_nt4_black"
 		}
 	};
 	magazines[]=
@@ -37175,14 +37263,14 @@ class NATO_WDL_recon_ar: NATO_WDL_recon_common
 		{
 			"arifle_SPAR_02_blk_F",
 			"acc_pointer_ir",
-			"optic_ERCO_blk_F",
+			"optic_Holosight_blk_F",
 			"muzzle_snds_M"
 		},
 		
 		{
 			"arifle_SPAR_02_khk_F",
 			"acc_pointer_ir",
-			"optic_ERCO_khk_F",
+			"optic_Holosight_blk_F",
 			"muzzle_snds_M_khk_f"
 		}
 	};
@@ -37201,19 +37289,6 @@ class NATO_WDL_recon_ar: NATO_WDL_recon_common
 		"SmokeShell",
 		2
 	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"acc_pointer_ir"
-	};
 	goggles[]=
 	{
 		"G_Balaclava_combat"
@@ -37229,17 +37304,10 @@ class NATO_WDL_recon_gl: NATO_WDL_recon_common
 	{
 		
 		{
-			"arifle_SPAR_01_gl_blk_F",
+			"rhs_weap_hk416d145_m320",
 			"acc_pointer_ir",
-			"optic_ERCO_blk_F",
-			"muzzle_snds_M"
-		},
-		
-		{
-			"arifle_SPAR_01_gl_khk_F",
-			"acc_pointer_ir",
-			"optic_ERCO_khk_F",
-			"muzzle_snds_M_khk_f"
+			"optic_Holosight_blk_F",
+			"rhsusf_acc_nt4_black"
 		}
 	};
 	magazines[]=
@@ -37332,17 +37400,10 @@ class NATO_WDL_recon_dm: NATO_WDL_recon_common
 	{
 		
 		{
-			"arifle_SPAR_03_blk_F",
+			"srifle_EBR_F",
+			"muzzle_snds_B",
 			"acc_pointer_ir",
-			"optic_ams",
-			"muzzle_snds_b"
-		},
-		
-		{
-			"arifle_SPAR_03_khk_F",
-			"acc_pointer_ir",
-			"optic_ams_khk",
-			"muzzle_snds_b_khk_f"
+			"optic_SOS"
 		}
 	};
 	magazines[]=
@@ -37750,10 +37811,10 @@ class NATO_WDL_sniper_spot: NATO_WDL_recon_common
 	{
 		
 		{
-			"arifle_SPAR_01_gl_khk_F",
+			"rhs_weap_hk416d145_m320",
 			"acc_pointer_ir",
-			"optic_ERCO_khk_F",
-			"muzzle_snds_M_khk_f"
+			"optic_Holosight_blk_F",
+			"rhsusf_acc_nt4_black"
 		}
 	};
 	gps[]=
@@ -37875,10 +37936,17 @@ class NATO_WDL_sniper_exp: NATO_WDL_recon_common
 	{
 		
 		{
-			"arifle_SPAR_01_khk_F",
+			"rhs_weap_hk416d145_wd",
 			"acc_pointer_ir",
-			"optic_ERCO_khk_F",
-			"muzzle_snds_M_khk_f"
+			"optic_MRCO",
+			"rhsusf_acc_nt4_tan"
+		},
+		
+		{
+			"rhs_weap_hk416d145_wd_2",
+			"acc_pointer_ir",
+			"optic_MRCO",
+			"rhsusf_acc_nt4_tan"
 		}
 	};
 	magazines[]=
@@ -37937,13 +38005,13 @@ class NATO_WDL_crew_common: CommonNATO_WDL
 	};
 	primary[]=
 	{
-		"arifle_MXC_Black_F"
+		"rhs_weap_hk416d10"
 	};
 	magazines[]=
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -38106,13 +38174,13 @@ class NATO_WDL_logistics_common: CommonNATO_WDL
 	};
 	primary[]=
 	{
-		"arifle_MXC_Black_F"
+		"rhs_weap_hk416d10"
 	};
 	magazines[]=
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_65x39_caseless_mag",
+		"30Rnd_556x45_Stanag",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -39366,6 +39434,26 @@ class RU_DES_weapons_at: RU_DES_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_545x39_Mag_F",
+		5,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7VR_mag",
+		2,
+		"rhs_rpg7_TBG7V_mag"
+	};
 };
 class RU_DES_weapons_aat: RU_DES_assistant_common
 {
@@ -39756,19 +39844,6 @@ class RU_DES_recon_ar: RU_DES_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"rhs_acc_perst1ik_ris"
 	};
 	goggles[]=
 	{
@@ -41943,6 +42018,26 @@ class RU_EMR_weapons_at: RU_EMR_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_545x39_Mag_F",
+		5,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7VR_mag",
+		2,
+		"rhs_rpg7_TBG7V_mag"
+	};
 };
 class RU_EMR_weapons_aat: RU_EMR_assistant_common
 {
@@ -42333,19 +42428,6 @@ class RU_EMR_recon_ar: RU_EMR_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"rhs_acc_perst1ik_ris"
 	};
 	goggles[]=
 	{
@@ -44506,6 +44588,26 @@ class RU_FLORA_weapons_at: RU_FLORA_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_545x39_Mag_F",
+		5,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7VR_mag",
+		2,
+		"rhs_rpg7_TBG7V_mag"
+	};
 };
 class RU_FLORA_weapons_aat: RU_FLORA_assistant_common
 {
@@ -44893,19 +44995,6 @@ class RU_FLORA_recon_ar: RU_FLORA_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"rhs_acc_perst1ik_ris"
 	};
 	goggles[]=
 	{
@@ -47060,6 +47149,26 @@ class RU_MOUNT_weapons_at: RU_MOUNT_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"16Rnd_9x21_Mag",
+		3,
+		"30Rnd_545x39_Mag_F",
+		5,
+		"30Rnd_545x39_Mag_Tracer_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7VR_mag",
+		2,
+		"rhs_rpg7_TBG7V_mag"
+	};
 };
 class RU_MOUNT_weapons_aat: RU_MOUNT_assistant_common
 {
@@ -47447,19 +47556,6 @@ class RU_MOUNT_recon_ar: RU_MOUNT_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"rhs_acc_perst1ik_ris"
 	};
 	goggles[]=
 	{
@@ -49855,6 +49951,25 @@ class SYND_weapons_at: SYND_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		5,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7V_mag",
+		1
+	};
 };
 class SYND_weapons_aat: SYND_assistant_common
 {
@@ -50347,19 +50462,6 @@ class SYND_recon_ar: SYND_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -51707,8 +51809,8 @@ class SYND_medevac_drv: SYND_medevac_common
 };
 class CommonTAKISTAN: CommonDefault
 {
-	side="Opfor";
-	sideShort="o";
+	side="Indep";
+	sideShort="i";
 	faction="TAKISTAN";
 	uniform[]=
 	{
@@ -51748,10 +51850,10 @@ class CommonTAKISTAN: CommonDefault
 		7,
 		"hlc_20rnd_762x51_b_G3",
 		4,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -51868,7 +51970,7 @@ class TAKISTAN_company_common: CommonTAKISTAN
 	};
 	gps[]=
 	{
-		"o_EasyTrack_PDA"
+		"i_EasyTrack_PDA"
 	};
 	lrRadios[]=
 	{
@@ -51887,7 +51989,7 @@ class TAKISTAN_company_xo: TAKISTAN_company_common
 {
 	gps[]=
 	{
-		"o_EasyTrack_Tablet"
+		"i_EasyTrack_Tablet"
 	};
 	headgear[]=
 	{
@@ -51898,7 +52000,7 @@ class TAKISTAN_company_mio: TAKISTAN_company_common
 {
 	gps[]=
 	{
-		"o_EasyTrack_Tablet"
+		"i_EasyTrack_Tablet"
 	};
 };
 class TAKISTAN_company_colo: TAKISTAN_company_common
@@ -51951,10 +52053,10 @@ class TAKISTAN_platoon_common: CommonTAKISTAN
 		5,
 		"30Rnd_762x39_Mag_Tracer_F",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen"
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
 	};
 	items[]=
 	{
@@ -51972,7 +52074,7 @@ class TAKISTAN_platoon_common: CommonTAKISTAN
 	};
 	gps[]=
 	{
-		"o_EasyTrack_PDA"
+		"i_EasyTrack_PDA"
 	};
 	map[]=
 	{
@@ -52005,7 +52107,7 @@ class TAKISTAN_platoon_psgt: TAKISTAN_platoon_common
 {
 	gps[]=
 	{
-		"o_EasyTrack_Tablet"
+		"i_EasyTrack_Tablet"
 	};
 	lrRadios[]=
 	{
@@ -52025,7 +52127,7 @@ class TAKISTAN_platoon_uav: TAKISTAN_platoon_common
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_UAVBattery",
-		"o_UavTerminal"
+		"i_UavTerminal"
 	};
 };
 class TAKISTAN_platoon_jtac: TAKISTAN_platoon_common
@@ -52059,28 +52161,28 @@ class TAKISTAN_platoon_jtac: TAKISTAN_platoon_common
 		5,
 		"30Rnd_762x39_Mag_Tracer_F",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"Laserbatteries",
-		"rhs_GRD40_White",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"rhs_GRD40_Green",
+		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
-		"rhs_GRD40_Red",
+		"1Rnd_SmokePurple_Grenade_shell",
 		2,
-		"rhs_VG40MD_Green",
+		"1Rnd_SmokeYellow_Grenade_shell",
 		2,
-		"rhs_VG40MD_Red",
+		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
-		"rhs_VG40MD_White",
+		"1Rnd_SmokeRed_Grenade_shell",
 		2,
-		"rhs_VG40OP_white",
+		"UGL_FlareGreen_F",
 		2,
-		"rhs_VG40OP_green",
+		"UGL_FlareRed_F",
 		2,
-		"rhs_VG40OP_red",
+		"UGL_FlareYellow_F",
 		2
 	};
 };
@@ -52130,7 +52232,7 @@ class TAKISTAN_squad_sl: CommonTAKISTAN
 	};
 	gps[]=
 	{
-		"o_EasyTrack_PDA"
+		"i_EasyTrack_PDA"
 	};
 	binoculars[]=
 	{
@@ -52148,28 +52250,30 @@ class TAKISTAN_squad_sl: CommonTAKISTAN
 		7,
 		"hlc_20rnd_762x51_b_G3",
 		4,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
 		2,
-		"rhs_VOG25",
+		"ACE_HuntIR_M203",
+		4,
+		"1Rnd_HE_Grenade_shell",
 		10,
-		"rhs_GRD40_White",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"rhs_GRD40_Green",
-		"rhs_GRD40_Red",
-		"rhs_VG40MD_Green",
-		"rhs_VG40MD_Red",
-		"rhs_VG40MD_White",
-		"rhs_VG40OP_white",
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
 		2,
-		"rhs_VG40OP_green",
+		"UGL_FlareRed_F",
 		2,
-		"rhs_VG40OP_red",
+		"UGL_FlareYellow_F",
 		2
 	};
 	items[]=
@@ -52180,7 +52284,8 @@ class TAKISTAN_squad_sl: CommonTAKISTAN
 		10,
 		"ACE_morphine",
 		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item"
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -52234,10 +52339,10 @@ class TAKISTAN_squad_ar: CommonTAKISTAN
 		4,
 		"rhsusf_mag_7x45acp_MHP",
 		3,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"MiniGrenade",
 		"SmokeShell",
 		2
@@ -52265,24 +52370,18 @@ class TAKISTAN_squad_gl: CommonTAKISTAN
 		7,
 		"hlc_20rnd_762x51_b_G3",
 		4,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
 		2,
-		"rhs_VOG25",
-		16,
-		"rhs_VOG25P",
-		6,
-		"rhs_VG40TB",
-		4,
-		"rhs_GRD40_White",
-		6,
-		"rhs_GDM40",
-		2
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
 	};
 };
 class TAKISTAN_squad_gl2: CommonTAKISTAN
@@ -52305,10 +52404,10 @@ class TAKISTAN_squad_gl2: CommonTAKISTAN
 		1,
 		"rhsusf_mag_6Rnd_M576_Buckshot",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -52351,10 +52450,10 @@ class TAKISTAN_squad_aar: CommonTAKISTAN
 		7,
 		"hlc_20rnd_762x51_b_G3",
 		4,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -52389,10 +52488,10 @@ class TAKISTAN_squad_lat: CommonTAKISTAN
 		7,
 		"hlc_20rnd_762x51_b_G3",
 		4,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -52464,10 +52563,10 @@ class TAKISTAN_squad_dm: CommonTAKISTAN
 		3,
 		"hlc_20rnd_762x51_b_G3",
 		10,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -52510,10 +52609,10 @@ class TAKISTAN_weapons_common: CommonTAKISTAN
 		5,
 		"hlc_20rnd_762x51_b_G3",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -52553,10 +52652,10 @@ class TAKISTAN_weapons_mg: TAKISTAN_weapons_common
 		3,
 		"rhs_100Rnd_762x54mmR_7N13",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen"
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
 	};
 	goggles[]=
 	{
@@ -52573,10 +52672,10 @@ class TAKISTAN_weapons_amg: TAKISTAN_assistant_common
 		5,
 		"hlc_20rnd_762x51_b_G3",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -52630,6 +52729,26 @@ class TAKISTAN_weapons_at: TAKISTAN_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"rhsusf_mag_7x45acp_MHP",
+		3,
+		"hlc_20rnd_762x51_b_G3",
+		5,
+		"hlc_20rnd_762x51_b_G3",
+		2,
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7VR_mag",
+		2,
+		"rhs_rpg7_TBG7V_mag"
+	};
 };
 class TAKISTAN_weapons_aat: TAKISTAN_assistant_common
 {
@@ -52645,10 +52764,10 @@ class TAKISTAN_weapons_aat: TAKISTAN_assistant_common
 		5,
 		"hlc_20rnd_762x51_b_G3",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -52679,10 +52798,10 @@ class TAKISTAN_weapons_atgm: TAKISTAN_weapons_common
 		5,
 		"hlc_20rnd_762x51_b_G3",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -52704,10 +52823,10 @@ class TAKISTAN_weapons_aatgm: TAKISTAN_assistant_common
 		5,
 		"hlc_20rnd_762x51_b_G3",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -52735,10 +52854,10 @@ class TAKISTAN_weapons_aa: TAKISTAN_weapons_common
 		5,
 		"hlc_20rnd_762x51_b_G3",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -52756,10 +52875,10 @@ class TAKISTAN_weapons_aaa: TAKISTAN_assistant_common
 		5,
 		"hlc_20rnd_762x51_b_G3",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -52842,7 +52961,7 @@ class TAKISTAN_recon_common: CommonTAKISTAN
 	};
 	primary[]=
 	{
-		"rhs_weap_akmn"
+		"arifle_AK12_F"
 	};
 	magazines[]=
 	{
@@ -52852,10 +52971,10 @@ class TAKISTAN_recon_common: CommonTAKISTAN
 		9,
 		"30Rnd_762x39_Mag_Tracer_F",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -52921,7 +53040,7 @@ class TAKISTAN_recon_tl: TAKISTAN_recon_common
 	};
 	primary[]=
 	{
-		"rhs_weap_akmn_gp25"
+		"arifle_AK12_GL_F"
 	};
 	magazines[]=
 	{
@@ -52931,25 +53050,27 @@ class TAKISTAN_recon_tl: TAKISTAN_recon_common
 		9,
 		"30Rnd_762x39_Mag_Tracer_F",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
 		2,
-		"rhs_VOG25",
+		"1Rnd_HE_Grenade_shell",
 		10,
-		"rhs_GRD40_White",
+		"1Rnd_Smoke_Grenade_shell",
 		2,
-		"rhs_GRD40_Green",
-		"rhs_GRD40_Red",
-		"rhs_VG40MD_Green",
-		"rhs_VG40MD_Red",
-		"rhs_VG40MD_White",
-		"o_ir_grenade",
-		2
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"i_ir_grenade",
+		2,
+		"ACE_HuntIR_M203",
+		5
 	};
 	items[]=
 	{
@@ -52962,7 +53083,8 @@ class TAKISTAN_recon_tl: TAKISTAN_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ACE_IR_Strobe_Item"
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
 	};
 	binoculars[]=
 	{
@@ -52970,7 +53092,7 @@ class TAKISTAN_recon_tl: TAKISTAN_recon_common
 	};
 	gps[]=
 	{
-		"o_EasyTrack_PDA"
+		"i_EasyTrack_PDA"
 	};
 	lrRadios[]=
 	{
@@ -53001,27 +53123,14 @@ class TAKISTAN_recon_ar: TAKISTAN_recon_common
 		4,
 		"hlc_75Rnd_762x39_AP_rpk",
 		3,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -53036,7 +53145,7 @@ class TAKISTAN_recon_gl: TAKISTAN_recon_common
 	};
 	primary[]=
 	{
-		"rhs_weap_akmn_gp25"
+		"arifle_AK12_GL_F"
 	};
 	magazines[]=
 	{
@@ -53046,24 +53155,18 @@ class TAKISTAN_recon_gl: TAKISTAN_recon_common
 		9,
 		"30Rnd_762x39_Mag_Tracer_F",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
 		2,
-		"rhs_VOG25",
-		16,
-		"rhs_VOG25P",
-		6,
-		"rhs_VG40TB",
-		4,
-		"rhs_GRD40_White",
-		6,
-		"rhs_GDM40",
-		2
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
 	};
 };
 class TAKISTAN_recon_lat: TAKISTAN_recon_common
@@ -53086,10 +53189,10 @@ class TAKISTAN_recon_lat: TAKISTAN_recon_common
 		9,
 		"30Rnd_762x39_Mag_Tracer_F",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -53146,10 +53249,10 @@ class TAKISTAN_recon_dm: TAKISTAN_recon_common
 		3,
 		"30Rnd_762x39_Mag_F",
 		10,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -53187,10 +53290,10 @@ class TAKISTAN_recon_exp: TAKISTAN_recon_common
 		9,
 		"30Rnd_762x39_Mag_Tracer_F",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -53236,7 +53339,7 @@ class TAKISTAN_diver_common: TAKISTAN_recon_common
 	};
 	primary[]=
 	{
-		"rhs_weap_akmn"
+		"arifle_AK12_F"
 	};
 	secondary[]=
 	{
@@ -53250,7 +53353,7 @@ class TAKISTAN_diver_common: TAKISTAN_recon_common
 	};
 	gps[]=
 	{
-		"o_EasyTrack_PDA"
+		"i_EasyTrack_PDA"
 	};
 	magazines[]=
 	{
@@ -53258,10 +53361,10 @@ class TAKISTAN_diver_common: TAKISTAN_recon_common
 		3,
 		"30Rnd_762x39_Mag_F",
 		10,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"ACE_M84",
 		4
 	};
@@ -53315,10 +53418,10 @@ class TAKISTAN_diver_tl: TAKISTAN_diver_common
 		3,
 		"30Rnd_762x39_Mag_F",
 		10,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"ACE_M84",
 		4,
 		"MiniGrenade",
@@ -53348,10 +53451,10 @@ class TAKISTAN_diver_exp: TAKISTAN_diver_common
 		3,
 		"30Rnd_762x39_Mag_F",
 		10,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"ACE_M84",
 		4,
 		"DemoCharge_Remote_Mag",
@@ -53434,10 +53537,10 @@ class TAKISTAN_diver_dm: TAKISTAN_diver_common
 		3,
 		"30Rnd_762x39_Mag_F",
 		10,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -53465,7 +53568,7 @@ class TAKISTAN_diver_jtac: TAKISTAN_diver_tl
 {
 	primary[]=
 	{
-		"rhs_weap_akmn_gp25"
+		"arifle_AK12_GL_F"
 	};
 	binoculars[]=
 	{
@@ -53477,24 +53580,24 @@ class TAKISTAN_diver_jtac: TAKISTAN_diver_tl
 		3,
 		"30Rnd_762x39_Mag_F",
 		10,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"ACE_M84",
 		4,
 		"MiniGrenade",
 		2,
 		"Laserbatteries",
-		"rhs_GRD40_Green",
+		"1Rnd_SmokeBlue_Grenade_shell",
 		2,
-		"rhs_GRD40_Red",
+		"1Rnd_SmokePurple_Grenade_shell",
 		2,
-		"rhs_VG40MD_Green",
+		"1Rnd_SmokeYellow_Grenade_shell",
 		2,
-		"rhs_VG40MD_Red",
+		"1Rnd_SmokeGreen_Grenade_shell",
 		2,
-		"rhs_VG40MD_White",
+		"1Rnd_SmokeRed_Grenade_shell",
 		2
 	};
 };
@@ -53535,11 +53638,11 @@ class TAKISTAN_sniper_spot: TAKISTAN_recon_common
 	};
 	primary[]=
 	{
-		"rhs_weap_akmn_gp25"
+		"arifle_AK12_GL_F"
 	};
 	gps[]=
 	{
-		"o_EasyTrack_PDA"
+		"i_EasyTrack_PDA"
 	};
 	binoculars[]=
 	{
@@ -53549,12 +53652,12 @@ class TAKISTAN_sniper_spot: TAKISTAN_recon_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"o_ir_grenade",
+		"i_ir_grenade",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -53563,9 +53666,11 @@ class TAKISTAN_sniper_spot: TAKISTAN_recon_common
 		8,
 		"30Rnd_762x39_Mag_Tracer_F",
 		2,
-		"rhs_VOG25",
+		"1Rnd_HE_Grenade_shell",
 		10,
-		"rhs_GRD40_White",
+		"1Rnd_Smoke_Grenade_shell",
+		4,
+		"ACE_HuntIR_M203",
 		4
 	};
 	items[]=
@@ -53584,7 +53689,8 @@ class TAKISTAN_sniper_spot: TAKISTAN_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500"
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
 	};
 	lrRadios[]=
 	{
@@ -53609,10 +53715,10 @@ class TAKISTAN_sniper_ap: TAKISTAN_sniper_common
 		3,
 		"rhs_10Rnd_762x54mmR_7N1",
 		20,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen"
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
 	};
 };
 class TAKISTAN_sniper_am: TAKISTAN_sniper_common
@@ -53637,10 +53743,10 @@ class TAKISTAN_sniper_am: TAKISTAN_sniper_common
 		5,
 		"ACE_5Rnd_127x99_API_Mag",
 		5,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen"
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
 	};
 };
 class TAKISTAN_sniper_exp: TAKISTAN_recon_common
@@ -53653,7 +53759,7 @@ class TAKISTAN_sniper_exp: TAKISTAN_recon_common
 	};
 	primary[]=
 	{
-		"rhs_weap_akmn"
+		"arifle_AK12_F"
 	};
 	magazines[]=
 	{
@@ -53663,10 +53769,10 @@ class TAKISTAN_sniper_exp: TAKISTAN_recon_common
 		9,
 		"30Rnd_762x39_Mag_Tracer_F",
 		2,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen",
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow",
 		"HandGrenade",
 		2,
 		"SmokeShell",
@@ -53719,10 +53825,10 @@ class TAKISTAN_crew_common: CommonTAKISTAN
 		3,
 		"30Rnd_762x39_Mag_F",
 		6,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen"
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
 	};
 	headgear[]=
 	{
@@ -53756,7 +53862,7 @@ class TAKISTAN_crew_cmd: TAKISTAN_crew_common
 	};
 	gps[]=
 	{
-		"o_EasyTrack_PDA"
+		"i_EasyTrack_PDA"
 	};
 	binoculars[]=
 	{
@@ -53785,10 +53891,10 @@ class TAKISTAN_crew_jet: CommonTAKISTAN
 	{
 		"rhsusf_mag_7x45acp_MHP",
 		3,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen"
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
 	};
 	headgear[]=
 	{
@@ -53801,7 +53907,7 @@ class TAKISTAN_crew_jet: CommonTAKISTAN
 	};
 	gps[]=
 	{
-		"o_EasyTrack_PDA"
+		"i_EasyTrack_PDA"
 	};
 	nvgs[]=
 	{
@@ -53852,7 +53958,7 @@ class TAKISTAN_crew_helipilot: TAKISTAN_crew_heli
 	};
 	gps[]=
 	{
-		"o_EasyTrack_PDA"
+		"i_EasyTrack_PDA"
 	};
 	goggles[]=
 	{
@@ -53892,10 +53998,10 @@ class TAKISTAN_logistics_common: CommonTAKISTAN
 		3,
 		"30Rnd_762x39_Mag_F",
 		6,
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen"
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
 	};
 	headgear[]=
 	{
@@ -53919,7 +54025,7 @@ class TAKISTAN_logistics_common: CommonTAKISTAN
 	};
 	gps[]=
 	{
-		"o_EasyTrack_PDA"
+		"i_EasyTrack_PDA"
 	};
 	map[]=
 	{
@@ -53943,10 +54049,10 @@ class TAKISTAN_medevac_common: CommonTAKISTAN
 	};
 	magazines[]=
 	{
-		"Chemlight_red",
-		"Chemlight_green",
-		"SmokeShellRed",
-		"SmokeShellGreen"
+		"Chemlight_blue",
+		"Chemlight_yellow",
+		"SmokeShellBlue",
+		"SmokeShellYellow"
 	};
 	items[]=
 	{
@@ -54012,7 +54118,7 @@ class TAKISTAN_medevac_tl: TAKISTAN_medevac_doc
 {
 	gps[]=
 	{
-		"o_EasyTrack_PDA"
+		"i_EasyTrack_PDA"
 	};
 	lrRadios[]=
 	{
@@ -54031,7 +54137,7 @@ class TAKISTAN_medevac_heli: TAKISTAN_medevac_common
 	};
 	gps[]=
 	{
-		"o_EasyTrack_PDA"
+		"i_EasyTrack_PDA"
 	};
 	goggles[]=
 	{
@@ -55577,6 +55683,25 @@ class TAKI_INS_weapons_at: TAKI_INS_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"rhs_mag_9x18_8_57N181S",
+		3,
+		"30Rnd_762x39_Mag_Green_F",
+		5,
+		"30Rnd_762x39_Mag_Tracer_Green_F",
+		2,
+		"Chemlight_red",
+		"Chemlight_green",
+		"SmokeShellRed",
+		"SmokeShellGreen",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_rpg7_PG7V_mag",
+		1
+	};
 };
 class TAKI_INS_weapons_aat: TAKI_INS_assistant_common
 {
@@ -56141,19 +56266,6 @@ class TAKI_INS_recon_ar: TAKI_INS_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ace_banana"
 	};
 	goggles[]=
 	{
@@ -58647,6 +58759,24 @@ class USARMY_OCP_weapons_at: USARMY_OCP_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"rhsusf_mag_15Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_mag_maaws_HEAT"
+	};
 };
 class USARMY_OCP_weapons_aat: USARMY_OCP_assistant_common
 {
@@ -59075,19 +59205,6 @@ class USARMY_OCP_recon_ar: USARMY_OCP_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"rhsusf_acc_anpeq15side_bk"
 	};
 	goggles[]=
 	{
@@ -61330,6 +61447,24 @@ class USARMY_UCP_weapons_at: USARMY_UCP_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"rhsusf_mag_15Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_mag_maaws_HEAT"
+	};
 };
 class USARMY_UCP_weapons_aat: USARMY_UCP_assistant_common
 {
@@ -61760,19 +61895,6 @@ class USARMY_UCP_recon_ar: USARMY_UCP_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"rhsusf_acc_anpeq15side_bk"
 	};
 	goggles[]=
 	{
@@ -64069,6 +64191,25 @@ class USMC_D_weapons_at: USMC_D_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"rhsusf_mag_15Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_mag_smaw_HEAA",
+		"rhs_mag_smaw_SR"
+	};
 };
 class USMC_D_weapons_aat: USMC_D_assistant_common
 {
@@ -64513,19 +64654,6 @@ class USMC_D_recon_ar: USMC_D_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"rhsusf_acc_anpeq15side_bk"
 	};
 	goggles[]=
 	{
@@ -66819,6 +66947,25 @@ class USMC_W_weapons_at: USMC_W_weapons_common
 			""
 		}
 	};
+	magazines[]=
+	{
+		"rhsusf_mag_15Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_mag_smaw_HEAA",
+		"rhs_mag_smaw_SR"
+	};
 };
 class USMC_W_weapons_aat: USMC_W_assistant_common
 {
@@ -67262,19 +67409,6 @@ class USMC_W_recon_ar: USMC_W_recon_common
 		2,
 		"SmokeShell",
 		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_microDAGR",
-		"ACE_fieldDressing",
-		10,
-		"ACE_morphine",
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"rhsusf_acc_anpeq15side_bk"
 	};
 	goggles[]=
 	{

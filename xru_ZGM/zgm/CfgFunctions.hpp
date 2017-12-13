@@ -2,10 +2,7 @@ class zgm_main {
     class functions {
         file = "zgm\main";
         class getSide {};
-        class isCurator {};     
-        class initAddons {
-            postInit = 1;
-        };   
+        class isCurator {};
         class isNearSpawn {};
     };
 };
@@ -13,7 +10,6 @@ class zgm_main {
 class zgm_server {
     class functions {
         file = "zgm\server";
-        class AISkill {};
         class daytime {};
         class groupEH {};
         class postInit {

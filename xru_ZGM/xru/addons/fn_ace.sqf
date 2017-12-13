@@ -1,8 +1,4 @@
-[] spawn CL_BFT_fnc_init;
-[] spawn CL_RFT_fnc_init;
-[] call CL_Logitrack_fnc_init;
-
-[false, false] call acre_api_fnc_setupMission;
+#include "script_component.hpp"
 
 ace_mk6mortar_airResistanceEnabled = false;
 ace_mk6mortar_allowComputerRangefinder = false;
@@ -42,8 +38,6 @@ ace_advanced_ballistics_simulationRadius = 2000;
 ace_explosives_RequireSpecialist = false;
 ace_explosives_PunishNonSpecialists = true;
 ace_explosives_ExplodeOnDefuse = true;
-
-ace_microdagr_MapDataAvailable = 1;
 
 ace_nightvision_disableNVGsWithSights = false;
 

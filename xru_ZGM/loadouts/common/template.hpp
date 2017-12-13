@@ -312,12 +312,13 @@ class LOADOUT(weapons,gmg) : LOADOUT(weapons,common) {
 class LOADOUT(weapons,agmg) : LOADOUT(assistant,common) {
     backpack[] = {GMG_TRIPOD};
 };
-//MS AT
+//RS AT
 class LOADOUT(weapons,at) : LOADOUT(weapons,common) {
     backpack[] = {BACKPACK_AT_LIGHT};
     launcher[] = {AT_ROCKET};
+    magazines[] += {MAGS_AT_ROCKET};    
 };
-//AMS AT
+//ARS AT
 class LOADOUT(weapons,aat) : LOADOUT(assistant,common) {
     backpack[] = {BACKPACK_CARRYALL};
     magazines[] += {MAGS_AT_ROCKET_ASST};
