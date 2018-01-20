@@ -137,6 +137,7 @@ class ScenarioData
 		minPlayers=1;
 		maxPlayers=128;
 	};
+};
 class CustomAttributes
 {
 	class Category0

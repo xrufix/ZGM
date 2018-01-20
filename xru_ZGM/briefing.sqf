@@ -17,12 +17,7 @@
 
 player createDiaryRecord ["Diary", [
     "Auftrag",
-    "Befreien Sie das Regierungszentrum in Pyrgos: <br/>"
-    + "- Vertreiben Sie die Rebellen <br/>"
-    + "- Befreien und versorgen Sie die Zivilisten"
+    "Erfülle den Auftrag, den dir der Zeus erteilt.<br/><br/>"
+    + "Checke auch deinen Tasks-Tab!"
 ]];
 
-player createDiaryRecord ["Diary", [
-    "Situation",
-    "Nach einem Aufstand der Bevölkerung herrscht pures Chaos auf Altis."
-]];

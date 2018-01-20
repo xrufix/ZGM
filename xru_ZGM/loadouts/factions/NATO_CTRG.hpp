@@ -95,8 +95,8 @@
 
 
 // PDW
-#define PDW         WEAPON("smg_05_f","optic_Holosight_blk_F","","")
-#define MAG_PDW	        ARR_1("30Rnd_9x21_Mag")
+#define PDW             WEAPON("smg_05_f","optic_Holosight_blk_F","","")
+#define MAG_PDW	        ARR_1("30Rnd_9x21_Mag_SMG_02")
 
 // SF CARBINES
 #define RIFLE_RECON         WEAPON("hlc_rifle_ACR_Carb_green","optic_ERCO_khk_F",LASERPOINTER,"muzzle_snds_M_khk_f")

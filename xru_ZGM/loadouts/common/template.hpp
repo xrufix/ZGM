@@ -18,7 +18,6 @@ class COMMON : CommonDefault {
         "ACE_EarPlugs",
         "ACE_microDAGR",
         "ACE_fieldDressing",10,
-        "ACE_morphine",
         "ACE_tourniquet"
     };
 
@@ -114,7 +113,8 @@ class LOADOUT(platoon,psgt) : LOADOUT(platoon,common) {
 };
 //UAV Operator
 class LOADOUT(platoon,uav) : LOADOUT(platoon,common) {
-    items[] += {"ACE_UAVBattery",TERMINAL};
+    items[] += {"ACE_UAVBattery"};
+    gps[] = {TERMINAL};
 };
 //JTAC
 class LOADOUT(platoon,jtac) : LOADOUT(platoon,common) {
@@ -123,6 +123,7 @@ class LOADOUT(platoon,jtac) : LOADOUT(platoon,common) {
     primary[] = {CARBINE_UGL_CCO};
     binoculars[] = {DESIGNATOR};
     lrRadios[] += {RADIO_PACK};
+    gps[] = {""};
     magazines[] += {
         "Laserbatteries",
         UGL_SMK,2,
@@ -134,8 +135,8 @@ class LOADOUT(platoon,jtac) : LOADOUT(platoon,common) {
 class LOADOUT(platoon,medic) : LOADOUT(platoon,common) {
     vest[] = {VEST_MEDIC};
     backpack[] = {BACKPACK_KITBAG};
+    gps[] = {""};
     items[] += {
-        "ACE_personalAidKit",2,
         "ACE_salineIV_500",10,
         "ACE_surgicalKit",
         "W_Defibrillator",
@@ -235,14 +236,10 @@ class LOADOUT(squad,lat) : COMMON {
 class LOADOUT(squad,cm) : COMMON {
     vest[] = {VEST_MEDIC};
     items[] += {
-        "ACE_fieldDressing",10,
-        "ACE_elasticBandage",30,
+        "ACE_fieldDressing",20,
+        "ACE_elasticBandage",40,
         "ACE_quikclot",20,
-        "ACE_tourniquet",4,
-        "ACE_morphine",10,
-        "ACE_epinephrine",10,
-        "ACE_salineIV_500",2,
-        "ACE_surgicalKit"
+        "ACE_tourniquet",4
     };
     preLoadout = TRAITS(1,0,false,false);
 };
@@ -456,7 +453,10 @@ class LOADOUT(recon,dm) : LOADOUT(recon,common) {
         MAG_DMR_RECON,10,
         GRENADES_RGO
     };
-    items[] += {DMR_BIPOD};
+    items[] += {
+        DMR_BIPOD,
+        "ACE_RangeCard"
+    };
 };
 //Explosive Specialist
 class LOADOUT(recon,exp) : LOADOUT(recon,common) {

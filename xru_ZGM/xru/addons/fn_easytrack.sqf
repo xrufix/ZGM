@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-params ["_setting"];
+params [["_setting",2,[1]]];
 
 if (_setting == 2) then {
 	[] spawn CL_RFT_fnc_init;

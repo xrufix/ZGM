@@ -7,7 +7,7 @@
 #define	UNIFORM_SINGLE      ARR_1("pbw_uniform3k_fleck")
 #define UNIFORM             ARR_7("pbw_uniform1_fleck","pbw_uniform1h_fleck","pbw_uniform2_fleck","pbw_uniform3_fleck","pbw_uniform3k_fleck","pbw_uniform4_fleck","pbw_uniform4k_fleck")
 #define UNIFORM_COMPANY     ARR_1("pbw_uniform1_fleck")
-#define UNIFORM_RECON     UNIFORM
+#define UNIFORM_RECON       UNIFORM
 #define UNIFORM_DIVER       ARR_1("U_B_Wetsuit")
 #define UNIFORM_CREW        UNIFORM
 #define UNIFORM_HELICOPTER  ARR_1("bwa3_uniform_helipilot")

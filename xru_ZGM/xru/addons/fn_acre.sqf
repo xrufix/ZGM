@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-params ["_setting"];
+params [["_setting",0,[0]]];
 
 _setting = switch _setting do {
 	case 1 : {true};

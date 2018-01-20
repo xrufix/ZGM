@@ -6,7 +6,7 @@
 #define	UNIFORM_SINGLE      "U_BG_Guerilla1_1"        // Für Inventar
 #define UNIFORM             ARR_3(UNIFORM_SINGLE,ARR_6("U_BG_Guerilla2_1","U_BG_Guerilla2_2","U_BG_Guerilla2_3","U_BG_Guerilla3_1","U_BG_leader","U_C_HunterBody_grn"),ARR_6("U_I_G_resistanceLeader_F","U_I_G_Story_Protagonist_F","xru_u_b_combatuniform_wdl_tshirt","xru_u_guerilla1_1","xru_u_guerilla1_2","U_BG_Guerilla1_2_F")      // Für Zufallsauswahl
 #define UNIFORM_COMPANY     UNIFORM
-#define UNIFORM_RECON     UNIFORM
+#define UNIFORM_RECON       UNIFORM
 #define UNIFORM_DIVER       ARR_1("U_B_Wetsuit")
 #define UNIFORM_CREW        UNIFORM
 #define UNIFORM_HELICOPTER  UNIFORM
@@ -17,7 +17,7 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      ARR_3("V_LegStrapBag_black_F","V_LegStrapBag_coyote_F","V_LegStrapBag_olive_F")
-#define VEST_OFFICER       ARR_1("V_Rangemaster_belt")
+#define VEST_OFFICER    ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      ARR_5("V_BandollierB_khk","V_BandollierB_cbr","V_BandollierB_rgr","V_BandollierB_blk","V_BandollierB_oli")
 #define VEST_RIFLEMAN   ARR_5("V_Chestrig_khk","V_Chestrig_rgr","V_Chestrig_blk","V_Chestrig_oli","xru_V_Chestrig_cbr")
 #define VEST_GRENADIER  ARR_3("V_TacChestrig_grn_F","V_TacChestrig_oli_F","V_TacChestrig_cbr_F")
@@ -128,10 +128,9 @@
 
 
 // PDW
-#define PDW ARR_3( \
+#define PDW ARR_2( \
     WEAPON("hgun_pdw2000_f","","",""), \
-    WEAPON("smg_02_f","optic_aco_grn_smg","",""), \
-    WEAPON("smg_05_f","","",""))
+    WEAPON("smg_02_f","optic_aco_grn_smg","",""))
 #define MAG_PDW ARR_1("30Rnd_9x21_Mag")
 
 

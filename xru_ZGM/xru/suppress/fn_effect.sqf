@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-params [["_hit",10],["_distance",5],["_radius",10]];
+params [["_hit",10,[1]],["_distance",5,[1]],["_radius",10,[1]]];
 private _hitFactor = 3 min (_hit / 10);
 GVAR(suppression) = (GVAR(suppression) + _hitFactor * GVAR(climbRate)) min MAXSUPPRESS;
 

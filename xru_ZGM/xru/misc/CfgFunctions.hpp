@@ -6,7 +6,7 @@ class xru_misc {
             postInit = 1;
         };
         class zeusHandle {
-            preInit = 1;
+            postInit = 1;
         };
     };
 };

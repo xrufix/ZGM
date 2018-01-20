@@ -76,7 +76,6 @@ class CommonAAF: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -158,7 +157,6 @@ class AAF_company_common: CommonAAF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -227,7 +225,6 @@ class AAF_company_colo: AAF_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -241,7 +238,6 @@ class AAF_company_fo: AAF_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -286,7 +282,6 @@ class AAF_platoon_common: CommonAAF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -345,10 +340,12 @@ class AAF_platoon_uav: AAF_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"i_UavTerminal"
 	};
 };
@@ -380,6 +377,10 @@ class AAF_platoon_jtac: AAF_platoon_common
 	{
 		"ACRE_PRC152",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -424,17 +425,18 @@ class AAF_platoon_medic: AAF_platoon_common
 	{
 		"xru_Kitbag_digi"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -516,7 +518,6 @@ class AAF_squad_sl: CommonAAF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -546,7 +547,6 @@ class AAF_squad_ftl: CommonAAF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -767,23 +767,15 @@ class AAF_squad_cm: CommonAAF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -809,7 +801,6 @@ class AAF_squad_dm: CommonAAF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -841,7 +832,6 @@ class AAF_squad_eng: CommonAAF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -1157,7 +1147,6 @@ class AAF_weapons_mort: AAF_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -1174,7 +1163,6 @@ class AAF_weapons_amort: AAF_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -1187,7 +1175,6 @@ class AAF_weapons_acmort: AAF_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -1250,7 +1237,6 @@ class AAF_recon_common: CommonAAF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -1300,7 +1286,6 @@ class AAF_recon_rm: AAF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -1360,7 +1345,6 @@ class AAF_recon_tl: AAF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -1503,7 +1487,6 @@ class AAF_recon_cm: AAF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -1559,12 +1542,12 @@ class AAF_recon_dm: AAF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_03_F_blk"
+		"bipod_03_F_blk",
+		"ACE_RangeCard"
 	};
 };
 class AAF_recon_exp: AAF_recon_common
@@ -1605,7 +1588,6 @@ class AAF_recon_exp: AAF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -1675,7 +1657,6 @@ class AAF_diver_common: AAF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -1741,7 +1722,6 @@ class AAF_diver_tl: AAF_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -1774,7 +1754,6 @@ class AAF_diver_exp: AAF_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -1797,7 +1776,6 @@ class AAF_diver_cm: AAF_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -1862,7 +1840,6 @@ class AAF_diver_dm: AAF_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -1933,7 +1910,6 @@ class AAF_sniper_common: AAF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -1999,7 +1975,6 @@ class AAF_sniper_spot: AAF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -2114,7 +2089,6 @@ class AAF_sniper_exp: AAF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -2335,7 +2309,6 @@ class AAF_logistics_common: CommonAAF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -2382,7 +2355,6 @@ class AAF_medevac_common: CommonAAF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -2414,7 +2386,6 @@ class AAF_medevac_doc: AAF_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -2486,7 +2457,6 @@ class AAF_medevac_drv: AAF_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -2556,7 +2526,6 @@ class CommonBW_FLECK: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -2644,7 +2613,6 @@ class BW_FLECK_company_common: CommonBW_FLECK
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -2713,7 +2681,6 @@ class BW_FLECK_company_colo: BW_FLECK_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -2727,7 +2694,6 @@ class BW_FLECK_company_fo: BW_FLECK_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -2772,7 +2738,6 @@ class BW_FLECK_platoon_common: CommonBW_FLECK
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -2832,10 +2797,12 @@ class BW_FLECK_platoon_uav: BW_FLECK_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"b_UavTerminal"
 	};
 };
@@ -2861,6 +2828,10 @@ class BW_FLECK_platoon_jtac: BW_FLECK_platoon_common
 	{
 		"ACRE_SEM52SL",
 		"ACRE_SEM70"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -2905,17 +2876,18 @@ class BW_FLECK_platoon_medic: BW_FLECK_platoon_common
 	{
 		"BWA3_Kitbag_Fleck"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -2991,7 +2963,6 @@ class BW_FLECK_squad_sl: CommonBW_FLECK
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -3021,7 +2992,6 @@ class BW_FLECK_squad_ftl: CommonBW_FLECK
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -3225,23 +3195,15 @@ class BW_FLECK_squad_cm: CommonBW_FLECK
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -3267,7 +3229,6 @@ class BW_FLECK_squad_dm: CommonBW_FLECK
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -3299,7 +3260,6 @@ class BW_FLECK_squad_eng: CommonBW_FLECK
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -3619,7 +3579,6 @@ class BW_FLECK_weapons_mort: BW_FLECK_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -3636,7 +3595,6 @@ class BW_FLECK_weapons_amort: BW_FLECK_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -3649,7 +3607,6 @@ class BW_FLECK_weapons_acmort: BW_FLECK_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -3720,7 +3677,6 @@ class BW_FLECK_recon_common: CommonBW_FLECK
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -3765,7 +3721,6 @@ class BW_FLECK_recon_rm: BW_FLECK_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -3827,7 +3782,6 @@ class BW_FLECK_recon_tl: BW_FLECK_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -3967,7 +3921,6 @@ class BW_FLECK_recon_cm: BW_FLECK_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -4023,12 +3976,12 @@ class BW_FLECK_recon_dm: BW_FLECK_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_01_F_blk"
+		"bipod_01_F_blk",
+		"ACE_RangeCard"
 	};
 };
 class BW_FLECK_recon_exp: BW_FLECK_recon_common
@@ -4069,7 +4022,6 @@ class BW_FLECK_recon_exp: BW_FLECK_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -4139,7 +4091,6 @@ class BW_FLECK_diver_common: BW_FLECK_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -4199,7 +4150,6 @@ class BW_FLECK_diver_tl: BW_FLECK_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -4232,7 +4182,6 @@ class BW_FLECK_diver_exp: BW_FLECK_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -4255,7 +4204,6 @@ class BW_FLECK_diver_cm: BW_FLECK_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -4320,7 +4268,6 @@ class BW_FLECK_diver_dm: BW_FLECK_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -4389,7 +4336,6 @@ class BW_FLECK_sniper_common: BW_FLECK_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -4453,7 +4399,6 @@ class BW_FLECK_sniper_spot: BW_FLECK_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -4566,7 +4511,6 @@ class BW_FLECK_sniper_exp: BW_FLECK_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -4794,7 +4738,6 @@ class BW_FLECK_logistics_common: CommonBW_FLECK
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -4841,7 +4784,6 @@ class BW_FLECK_medevac_common: CommonBW_FLECK
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -4874,7 +4816,6 @@ class BW_FLECK_medevac_doc: BW_FLECK_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -4946,7 +4887,6 @@ class BW_FLECK_medevac_drv: BW_FLECK_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -5016,7 +4956,6 @@ class CommonBW_TROP: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -5102,7 +5041,6 @@ class BW_TROP_company_common: CommonBW_TROP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -5171,7 +5109,6 @@ class BW_TROP_company_colo: BW_TROP_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -5185,7 +5122,6 @@ class BW_TROP_company_fo: BW_TROP_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -5230,7 +5166,6 @@ class BW_TROP_platoon_common: CommonBW_TROP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -5290,10 +5225,12 @@ class BW_TROP_platoon_uav: BW_TROP_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"b_UavTerminal"
 	};
 };
@@ -5319,6 +5256,10 @@ class BW_TROP_platoon_jtac: BW_TROP_platoon_common
 	{
 		"ACRE_SEM52SL",
 		"ACRE_SEM70"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -5363,17 +5304,18 @@ class BW_TROP_platoon_medic: BW_TROP_platoon_common
 	{
 		"BWA3_Kitbag_tropen"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -5449,7 +5391,6 @@ class BW_TROP_squad_sl: CommonBW_TROP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -5479,7 +5420,6 @@ class BW_TROP_squad_ftl: CommonBW_TROP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -5683,23 +5623,15 @@ class BW_TROP_squad_cm: CommonBW_TROP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -5725,7 +5657,6 @@ class BW_TROP_squad_dm: CommonBW_TROP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -5757,7 +5688,6 @@ class BW_TROP_squad_eng: CommonBW_TROP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -6077,7 +6007,6 @@ class BW_TROP_weapons_mort: BW_TROP_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -6094,7 +6023,6 @@ class BW_TROP_weapons_amort: BW_TROP_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -6107,7 +6035,6 @@ class BW_TROP_weapons_acmort: BW_TROP_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -6178,7 +6105,6 @@ class BW_TROP_recon_common: CommonBW_TROP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -6223,7 +6149,6 @@ class BW_TROP_recon_rm: BW_TROP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -6285,7 +6210,6 @@ class BW_TROP_recon_tl: BW_TROP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -6425,7 +6349,6 @@ class BW_TROP_recon_cm: BW_TROP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -6481,12 +6404,12 @@ class BW_TROP_recon_dm: BW_TROP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_01_F_blk"
+		"bipod_01_F_blk",
+		"ACE_RangeCard"
 	};
 };
 class BW_TROP_recon_exp: BW_TROP_recon_common
@@ -6527,7 +6450,6 @@ class BW_TROP_recon_exp: BW_TROP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -6597,7 +6519,6 @@ class BW_TROP_diver_common: BW_TROP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -6657,7 +6578,6 @@ class BW_TROP_diver_tl: BW_TROP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -6690,7 +6610,6 @@ class BW_TROP_diver_exp: BW_TROP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -6713,7 +6632,6 @@ class BW_TROP_diver_cm: BW_TROP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -6778,7 +6696,6 @@ class BW_TROP_diver_dm: BW_TROP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -6848,7 +6765,6 @@ class BW_TROP_sniper_common: BW_TROP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -6913,7 +6829,6 @@ class BW_TROP_sniper_spot: BW_TROP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -7027,7 +6942,6 @@ class BW_TROP_sniper_exp: BW_TROP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -7255,7 +7169,6 @@ class BW_TROP_logistics_common: CommonBW_TROP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -7302,7 +7215,6 @@ class BW_TROP_medevac_common: CommonBW_TROP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -7335,7 +7247,6 @@ class BW_TROP_medevac_doc: BW_TROP_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -7407,7 +7318,6 @@ class BW_TROP_medevac_drv: BW_TROP_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -7477,7 +7387,6 @@ class CommonCDF: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -7554,7 +7463,6 @@ class CDF_company_common: CommonCDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -7623,7 +7531,6 @@ class CDF_company_colo: CDF_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -7637,7 +7544,6 @@ class CDF_company_fo: CDF_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -7682,7 +7588,6 @@ class CDF_platoon_common: CommonCDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -7741,10 +7646,12 @@ class CDF_platoon_uav: CDF_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"i_UavTerminal"
 	};
 };
@@ -7776,6 +7683,10 @@ class CDF_platoon_jtac: CDF_platoon_common
 	{
 		"ACRE_SEM52SL",
 		"ACRE_SEM70"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -7820,17 +7731,18 @@ class CDF_platoon_medic: CDF_platoon_common
 	{
 		"B_Kitbag_rgr"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -7910,7 +7822,6 @@ class CDF_squad_sl: CommonCDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -7939,7 +7850,6 @@ class CDF_squad_ftl: CommonCDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -8157,23 +8067,15 @@ class CDF_squad_cm: CommonCDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -8199,7 +8101,6 @@ class CDF_squad_dm: CommonCDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -8231,7 +8132,6 @@ class CDF_squad_eng: CommonCDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -8539,7 +8439,6 @@ class CDF_weapons_mort: CDF_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -8556,7 +8455,6 @@ class CDF_weapons_amort: CDF_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -8569,7 +8467,6 @@ class CDF_weapons_acmort: CDF_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -8632,7 +8529,6 @@ class CDF_recon_common: CommonCDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -8668,7 +8564,6 @@ class CDF_recon_rm: CDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -8726,7 +8621,6 @@ class CDF_recon_tl: CDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -8868,7 +8762,6 @@ class CDF_recon_cm: CDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -8924,12 +8817,12 @@ class CDF_recon_dm: CDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ace_banana"
+		"ace_banana",
+		"ACE_RangeCard"
 	};
 };
 class CDF_recon_exp: CDF_recon_common
@@ -8970,7 +8863,6 @@ class CDF_recon_exp: CDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -9040,7 +8932,6 @@ class CDF_diver_common: CDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -9099,7 +8990,6 @@ class CDF_diver_tl: CDF_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -9132,7 +9022,6 @@ class CDF_diver_exp: CDF_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -9155,7 +9044,6 @@ class CDF_diver_cm: CDF_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -9220,7 +9108,6 @@ class CDF_diver_dm: CDF_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -9289,7 +9176,6 @@ class CDF_sniper_common: CDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -9351,7 +9237,6 @@ class CDF_sniper_spot: CDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -9459,7 +9344,6 @@ class CDF_sniper_exp: CDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -9696,7 +9580,6 @@ class CDF_logistics_common: CommonCDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -9743,7 +9626,6 @@ class CDF_medevac_common: CommonCDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -9775,7 +9657,6 @@ class CDF_medevac_doc: CDF_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -9848,7 +9729,6 @@ class CDF_medevac_drv: CDF_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -9921,7 +9801,6 @@ class CommonCHINA: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -10005,7 +9884,6 @@ class CHINA_company_common: CommonCHINA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -10076,7 +9954,6 @@ class CHINA_company_colo: CHINA_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -10090,7 +9967,6 @@ class CHINA_company_fo: CHINA_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -10135,7 +10011,6 @@ class CHINA_platoon_common: CommonCHINA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -10194,10 +10069,12 @@ class CHINA_platoon_uav: CHINA_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"o_UavTerminal"
 	};
 };
@@ -10229,6 +10106,10 @@ class CHINA_platoon_jtac: CHINA_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -10273,17 +10154,18 @@ class CHINA_platoon_medic: CHINA_platoon_common
 	{
 		"B_ViperLightHarness_hex_F"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -10365,7 +10247,6 @@ class CHINA_squad_sl: CommonCHINA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -10395,7 +10276,6 @@ class CHINA_squad_ftl: CommonCHINA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -10621,23 +10501,15 @@ class CHINA_squad_cm: CommonCHINA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -10663,7 +10535,6 @@ class CHINA_squad_dm: CommonCHINA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -10695,7 +10566,6 @@ class CHINA_squad_eng: CommonCHINA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -11015,7 +10885,6 @@ class CHINA_weapons_mort: CHINA_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -11032,7 +10901,6 @@ class CHINA_weapons_amort: CHINA_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -11045,7 +10913,6 @@ class CHINA_weapons_acmort: CHINA_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -11108,7 +10975,6 @@ class CHINA_recon_common: CommonCHINA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -11144,7 +11010,6 @@ class CHINA_recon_rm: CHINA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -11204,7 +11069,6 @@ class CHINA_recon_tl: CHINA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -11342,7 +11206,6 @@ class CHINA_recon_cm: CHINA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -11400,12 +11263,12 @@ class CHINA_recon_dm: CHINA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_02_f_blk"
+		"bipod_02_f_blk",
+		"ACE_RangeCard"
 	};
 };
 class CHINA_recon_exp: CHINA_recon_common
@@ -11446,7 +11309,6 @@ class CHINA_recon_exp: CHINA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -11516,7 +11378,6 @@ class CHINA_diver_common: CHINA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -11575,7 +11436,6 @@ class CHINA_diver_tl: CHINA_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -11608,7 +11468,6 @@ class CHINA_diver_exp: CHINA_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -11631,7 +11490,6 @@ class CHINA_diver_cm: CHINA_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -11698,7 +11556,6 @@ class CHINA_diver_dm: CHINA_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -11769,7 +11626,6 @@ class CHINA_sniper_common: CHINA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -11835,7 +11691,6 @@ class CHINA_sniper_spot: CHINA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -11954,7 +11809,6 @@ class CHINA_sniper_exp: CHINA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -12178,7 +12032,6 @@ class CHINA_logistics_common: CommonCHINA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -12225,7 +12078,6 @@ class CHINA_medevac_common: CommonCHINA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -12257,7 +12109,6 @@ class CHINA_medevac_doc: CHINA_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -12329,7 +12180,6 @@ class CHINA_medevac_drv: CHINA_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -12402,7 +12252,6 @@ class CommonCHINA_GRN: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -12488,7 +12337,6 @@ class CHINA_GRN_company_common: CommonCHINA_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -12559,7 +12407,6 @@ class CHINA_GRN_company_colo: CHINA_GRN_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -12573,7 +12420,6 @@ class CHINA_GRN_company_fo: CHINA_GRN_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -12621,7 +12467,6 @@ class CHINA_GRN_platoon_common: CommonCHINA_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -12680,10 +12525,12 @@ class CHINA_GRN_platoon_uav: CHINA_GRN_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"o_UavTerminal"
 	};
 };
@@ -12715,6 +12562,10 @@ class CHINA_GRN_platoon_jtac: CHINA_GRN_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -12760,17 +12611,18 @@ class CHINA_GRN_platoon_medic: CHINA_GRN_platoon_common
 	{
 		"B_ViperLightHarness_ghex_F"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -12852,7 +12704,6 @@ class CHINA_GRN_squad_sl: CommonCHINA_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -12882,7 +12733,6 @@ class CHINA_GRN_squad_ftl: CommonCHINA_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -13111,23 +12961,15 @@ class CHINA_GRN_squad_cm: CommonCHINA_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -13154,7 +12996,6 @@ class CHINA_GRN_squad_dm: CommonCHINA_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -13187,7 +13028,6 @@ class CHINA_GRN_squad_eng: CommonCHINA_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -13507,7 +13347,6 @@ class CHINA_GRN_weapons_mort: CHINA_GRN_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -13524,7 +13363,6 @@ class CHINA_GRN_weapons_amort: CHINA_GRN_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -13537,7 +13375,6 @@ class CHINA_GRN_weapons_acmort: CHINA_GRN_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -13601,7 +13438,6 @@ class CHINA_GRN_recon_common: CommonCHINA_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -13637,7 +13473,6 @@ class CHINA_GRN_recon_rm: CHINA_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -13698,7 +13533,6 @@ class CHINA_GRN_recon_tl: CHINA_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -13837,7 +13671,6 @@ class CHINA_GRN_recon_cm: CHINA_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -13895,12 +13728,12 @@ class CHINA_GRN_recon_dm: CHINA_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_02_f_blk"
+		"bipod_02_f_blk",
+		"ACE_RangeCard"
 	};
 };
 class CHINA_GRN_recon_exp: CHINA_GRN_recon_common
@@ -13941,7 +13774,6 @@ class CHINA_GRN_recon_exp: CHINA_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -14011,7 +13843,6 @@ class CHINA_GRN_diver_common: CHINA_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -14070,7 +13901,6 @@ class CHINA_GRN_diver_tl: CHINA_GRN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -14103,7 +13933,6 @@ class CHINA_GRN_diver_exp: CHINA_GRN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -14126,7 +13955,6 @@ class CHINA_GRN_diver_cm: CHINA_GRN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -14193,7 +14021,6 @@ class CHINA_GRN_diver_dm: CHINA_GRN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -14262,7 +14089,6 @@ class CHINA_GRN_sniper_common: CHINA_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -14326,7 +14152,6 @@ class CHINA_GRN_sniper_spot: CHINA_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -14443,7 +14268,6 @@ class CHINA_GRN_sniper_exp: CHINA_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -14669,7 +14493,6 @@ class CHINA_GRN_logistics_common: CommonCHINA_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -14716,7 +14539,6 @@ class CHINA_GRN_medevac_common: CommonCHINA_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -14748,7 +14570,6 @@ class CHINA_GRN_medevac_doc: CHINA_GRN_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -14820,7 +14641,6 @@ class CHINA_GRN_medevac_drv: CHINA_GRN_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -14935,7 +14755,6 @@ class CommonFIA: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -15076,13 +14895,6 @@ class FIA_company_common: CommonFIA
 			"optic_aco_grn_smg",
 			"",
 			""
-		},
-		
-		{
-			"smg_05_f",
-			"",
-			"",
-			""
 		}
 	};
 	magazines[]=
@@ -15098,7 +14910,6 @@ class FIA_company_common: CommonFIA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -15204,7 +15015,6 @@ class FIA_company_colo: FIA_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -15218,7 +15028,6 @@ class FIA_company_fo: FIA_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -15284,7 +15093,6 @@ class FIA_platoon_common: CommonFIA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -15380,10 +15188,12 @@ class FIA_platoon_uav: FIA_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"b_UavTerminal"
 	};
 };
@@ -15443,6 +15253,10 @@ class FIA_platoon_jtac: FIA_platoon_common
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
 	};
+	gps[]=
+	{
+		""
+	};
 	magazines[]=
 	{
 		"16Rnd_9x21_Mag",
@@ -15490,17 +15304,18 @@ class FIA_platoon_medic: FIA_platoon_common
 		"xru_Kitbag_blk",
 		"xru_Kitbag_digi"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -15608,7 +15423,6 @@ class FIA_squad_sl: CommonFIA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -15643,7 +15457,6 @@ class FIA_squad_ftl: CommonFIA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -15956,23 +15769,15 @@ class FIA_squad_cm: CommonFIA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -16016,7 +15821,6 @@ class FIA_squad_dm: CommonFIA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -16052,7 +15856,6 @@ class FIA_squad_eng: CommonFIA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -16389,7 +16192,6 @@ class FIA_weapons_mort: FIA_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -16406,7 +16208,6 @@ class FIA_weapons_amort: FIA_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -16419,7 +16220,6 @@ class FIA_weapons_acmort: FIA_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -16536,7 +16336,6 @@ class FIA_recon_common: CommonFIA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -16617,7 +16416,6 @@ class FIA_recon_rm: FIA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -16703,7 +16501,6 @@ class FIA_recon_tl: FIA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -16865,7 +16662,6 @@ class FIA_recon_cm: FIA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -16942,12 +16738,12 @@ class FIA_recon_dm: FIA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_03_F_oli"
+		"bipod_03_F_oli",
+		"ACE_RangeCard"
 	};
 };
 class FIA_recon_exp: FIA_recon_common
@@ -16992,7 +16788,6 @@ class FIA_recon_exp: FIA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -17090,7 +16885,6 @@ class FIA_diver_common: FIA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -17149,7 +16943,6 @@ class FIA_diver_tl: FIA_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -17182,7 +16975,6 @@ class FIA_diver_exp: FIA_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -17205,7 +16997,6 @@ class FIA_diver_cm: FIA_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -17291,7 +17082,6 @@ class FIA_diver_dm: FIA_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -17393,7 +17183,6 @@ class FIA_sniper_common: FIA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -17490,7 +17279,6 @@ class FIA_sniper_spot: FIA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -17664,7 +17452,6 @@ class FIA_sniper_exp: FIA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -18038,7 +17825,6 @@ class FIA_logistics_common: CommonFIA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -18085,7 +17871,6 @@ class FIA_medevac_common: CommonFIA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -18158,7 +17943,6 @@ class FIA_medevac_doc: FIA_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -18248,7 +18032,6 @@ class FIA_medevac_drv: FIA_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -18320,7 +18103,6 @@ class CommonIDF: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -18405,7 +18187,6 @@ class IDF_company_common: CommonIDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -18474,7 +18255,6 @@ class IDF_company_colo: IDF_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -18488,7 +18268,6 @@ class IDF_company_fo: IDF_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -18537,7 +18316,6 @@ class IDF_platoon_common: CommonIDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -18597,10 +18375,12 @@ class IDF_platoon_uav: IDF_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"i_UavTerminal"
 	};
 };
@@ -18633,6 +18413,10 @@ class IDF_platoon_jtac: IDF_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -18678,17 +18462,18 @@ class IDF_platoon_medic: IDF_platoon_common
 		"B_Kitbag_rgr",
 		"B_Kitbag_cbr"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -18770,7 +18555,6 @@ class IDF_squad_sl: CommonIDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -18800,7 +18584,6 @@ class IDF_squad_ftl: CommonIDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -19029,23 +18812,15 @@ class IDF_squad_cm: CommonIDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -19072,7 +18847,6 @@ class IDF_squad_dm: CommonIDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -19106,7 +18880,6 @@ class IDF_squad_eng: CommonIDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -19425,7 +19198,6 @@ class IDF_weapons_mort: IDF_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -19442,7 +19214,6 @@ class IDF_weapons_amort: IDF_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -19455,7 +19226,6 @@ class IDF_weapons_acmort: IDF_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -19530,7 +19300,6 @@ class IDF_recon_common: CommonIDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -19574,7 +19343,6 @@ class IDF_recon_rm: IDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -19644,7 +19412,6 @@ class IDF_recon_tl: IDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -19791,7 +19558,6 @@ class IDF_recon_cm: IDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -19861,12 +19627,12 @@ class IDF_recon_dm: IDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"rhsusf_acc_harris_bipod"
+		"rhsusf_acc_harris_bipod",
+		"ACE_RangeCard"
 	};
 };
 class IDF_recon_exp: IDF_recon_common
@@ -19908,7 +19674,6 @@ class IDF_recon_exp: IDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -19985,7 +19750,6 @@ class IDF_diver_common: IDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -20045,7 +19809,6 @@ class IDF_diver_tl: IDF_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -20078,7 +19841,6 @@ class IDF_diver_exp: IDF_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -20101,7 +19863,6 @@ class IDF_diver_cm: IDF_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -20180,7 +19941,6 @@ class IDF_diver_dm: IDF_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -20257,7 +20017,6 @@ class IDF_sniper_common: IDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -20329,7 +20088,6 @@ class IDF_sniper_spot: IDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -20448,7 +20206,6 @@ class IDF_sniper_exp: IDF_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -20678,7 +20435,6 @@ class IDF_logistics_common: CommonIDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -20725,7 +20481,6 @@ class IDF_medevac_common: CommonIDF
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -20759,7 +20514,6 @@ class IDF_medevac_doc: IDF_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -20831,7 +20585,6 @@ class IDF_medevac_drv: IDF_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -20904,7 +20657,6 @@ class CommonIRAN: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -20988,7 +20740,6 @@ class IRAN_company_common: CommonIRAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -21059,7 +20810,6 @@ class IRAN_company_colo: IRAN_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -21073,7 +20823,6 @@ class IRAN_company_fo: IRAN_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -21118,7 +20867,6 @@ class IRAN_platoon_common: CommonIRAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -21177,10 +20925,12 @@ class IRAN_platoon_uav: IRAN_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"o_UavTerminal"
 	};
 };
@@ -21212,6 +20962,10 @@ class IRAN_platoon_jtac: IRAN_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -21256,17 +21010,18 @@ class IRAN_platoon_medic: IRAN_platoon_common
 	{
 		"B_ViperLightHarness_hex_F"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -21348,7 +21103,6 @@ class IRAN_squad_sl: CommonIRAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -21378,7 +21132,6 @@ class IRAN_squad_ftl: CommonIRAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -21602,23 +21355,15 @@ class IRAN_squad_cm: CommonIRAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -21644,7 +21389,6 @@ class IRAN_squad_dm: CommonIRAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -21676,7 +21420,6 @@ class IRAN_squad_eng: CommonIRAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -21996,7 +21739,6 @@ class IRAN_weapons_mort: IRAN_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -22013,7 +21755,6 @@ class IRAN_weapons_amort: IRAN_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -22026,7 +21767,6 @@ class IRAN_weapons_acmort: IRAN_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -22091,7 +21831,6 @@ class IRAN_recon_common: CommonIRAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -22127,7 +21866,6 @@ class IRAN_recon_rm: IRAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -22189,7 +21927,6 @@ class IRAN_recon_tl: IRAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -22330,7 +22067,6 @@ class IRAN_recon_cm: IRAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -22386,12 +22122,12 @@ class IRAN_recon_dm: IRAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_02_f_blk"
+		"bipod_02_f_blk",
+		"ACE_RangeCard"
 	};
 };
 class IRAN_recon_exp: IRAN_recon_common
@@ -22434,7 +22170,6 @@ class IRAN_recon_exp: IRAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -22506,7 +22241,6 @@ class IRAN_diver_common: IRAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -22567,7 +22301,6 @@ class IRAN_diver_tl: IRAN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -22602,7 +22335,6 @@ class IRAN_diver_exp: IRAN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -22625,7 +22357,6 @@ class IRAN_diver_cm: IRAN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -22690,7 +22421,6 @@ class IRAN_diver_dm: IRAN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -22763,7 +22493,6 @@ class IRAN_sniper_common: IRAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -22831,7 +22560,6 @@ class IRAN_sniper_spot: IRAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -22948,7 +22676,6 @@ class IRAN_sniper_exp: IRAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -23172,7 +22899,6 @@ class IRAN_logistics_common: CommonIRAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -23219,7 +22945,6 @@ class IRAN_medevac_common: CommonIRAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -23251,7 +22976,6 @@ class IRAN_medevac_doc: IRAN_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -23323,7 +23047,6 @@ class IRAN_medevac_drv: IRAN_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -23396,7 +23119,6 @@ class CommonIRAN_GRN: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -23482,7 +23204,6 @@ class IRAN_GRN_company_common: CommonIRAN_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -23553,7 +23274,6 @@ class IRAN_GRN_company_colo: IRAN_GRN_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -23567,7 +23287,6 @@ class IRAN_GRN_company_fo: IRAN_GRN_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -23615,7 +23334,6 @@ class IRAN_GRN_platoon_common: CommonIRAN_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -23674,10 +23392,12 @@ class IRAN_GRN_platoon_uav: IRAN_GRN_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"o_UavTerminal"
 	};
 };
@@ -23709,6 +23429,10 @@ class IRAN_GRN_platoon_jtac: IRAN_GRN_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -23754,17 +23478,18 @@ class IRAN_GRN_platoon_medic: IRAN_GRN_platoon_common
 	{
 		"B_ViperLightHarness_ghex_F"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -23846,7 +23571,6 @@ class IRAN_GRN_squad_sl: CommonIRAN_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -23876,7 +23600,6 @@ class IRAN_GRN_squad_ftl: CommonIRAN_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -24103,23 +23826,15 @@ class IRAN_GRN_squad_cm: CommonIRAN_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -24146,7 +23861,6 @@ class IRAN_GRN_squad_dm: CommonIRAN_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -24179,7 +23893,6 @@ class IRAN_GRN_squad_eng: CommonIRAN_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -24499,7 +24212,6 @@ class IRAN_GRN_weapons_mort: IRAN_GRN_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -24516,7 +24228,6 @@ class IRAN_GRN_weapons_amort: IRAN_GRN_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -24529,7 +24240,6 @@ class IRAN_GRN_weapons_acmort: IRAN_GRN_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -24595,7 +24305,6 @@ class IRAN_GRN_recon_common: CommonIRAN_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -24631,7 +24340,6 @@ class IRAN_GRN_recon_rm: IRAN_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -24694,7 +24402,6 @@ class IRAN_GRN_recon_tl: IRAN_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -24836,7 +24543,6 @@ class IRAN_GRN_recon_cm: IRAN_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -24892,12 +24598,12 @@ class IRAN_GRN_recon_dm: IRAN_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_02_f_blk"
+		"bipod_02_f_blk",
+		"ACE_RangeCard"
 	};
 };
 class IRAN_GRN_recon_exp: IRAN_GRN_recon_common
@@ -24940,7 +24646,6 @@ class IRAN_GRN_recon_exp: IRAN_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -25012,7 +24717,6 @@ class IRAN_GRN_diver_common: IRAN_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -25073,7 +24777,6 @@ class IRAN_GRN_diver_tl: IRAN_GRN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -25108,7 +24811,6 @@ class IRAN_GRN_diver_exp: IRAN_GRN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -25131,7 +24833,6 @@ class IRAN_GRN_diver_cm: IRAN_GRN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -25196,7 +24897,6 @@ class IRAN_GRN_diver_dm: IRAN_GRN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -25267,7 +24967,6 @@ class IRAN_GRN_sniper_common: IRAN_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -25333,7 +25032,6 @@ class IRAN_GRN_sniper_spot: IRAN_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -25448,7 +25146,6 @@ class IRAN_GRN_sniper_exp: IRAN_GRN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -25674,7 +25371,6 @@ class IRAN_GRN_logistics_common: CommonIRAN_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -25721,7 +25417,6 @@ class IRAN_GRN_medevac_common: CommonIRAN_GRN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -25753,7 +25448,6 @@ class IRAN_GRN_medevac_doc: IRAN_GRN_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -25825,7 +25519,6 @@ class IRAN_GRN_medevac_drv: IRAN_GRN_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -25895,7 +25588,6 @@ class CommonIRAN_URB: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -25979,7 +25671,6 @@ class IRAN_URB_company_common: CommonIRAN_URB
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -26050,7 +25741,6 @@ class IRAN_URB_company_colo: IRAN_URB_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -26064,7 +25754,6 @@ class IRAN_URB_company_fo: IRAN_URB_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -26109,7 +25798,6 @@ class IRAN_URB_platoon_common: CommonIRAN_URB
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -26168,10 +25856,12 @@ class IRAN_URB_platoon_uav: IRAN_URB_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"o_UavTerminal"
 	};
 };
@@ -26203,6 +25893,10 @@ class IRAN_URB_platoon_jtac: IRAN_URB_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -26247,17 +25941,18 @@ class IRAN_URB_platoon_medic: IRAN_URB_platoon_common
 	{
 		"B_ViperLightHarness_blk_F"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -26339,7 +26034,6 @@ class IRAN_URB_squad_sl: CommonIRAN_URB
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -26369,7 +26063,6 @@ class IRAN_URB_squad_ftl: CommonIRAN_URB
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -26590,23 +26283,15 @@ class IRAN_URB_squad_cm: CommonIRAN_URB
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -26632,7 +26317,6 @@ class IRAN_URB_squad_dm: CommonIRAN_URB
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -26664,7 +26348,6 @@ class IRAN_URB_squad_eng: CommonIRAN_URB
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -26981,7 +26664,6 @@ class IRAN_URB_weapons_mort: IRAN_URB_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -26998,7 +26680,6 @@ class IRAN_URB_weapons_amort: IRAN_URB_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -27011,7 +26692,6 @@ class IRAN_URB_weapons_acmort: IRAN_URB_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -27076,7 +26756,6 @@ class IRAN_URB_recon_common: CommonIRAN_URB
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -27112,7 +26791,6 @@ class IRAN_URB_recon_rm: IRAN_URB_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -27174,7 +26852,6 @@ class IRAN_URB_recon_tl: IRAN_URB_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -27315,7 +26992,6 @@ class IRAN_URB_recon_cm: IRAN_URB_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -27371,12 +27047,12 @@ class IRAN_URB_recon_dm: IRAN_URB_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_02_f_blk"
+		"bipod_02_f_blk",
+		"ACE_RangeCard"
 	};
 };
 class IRAN_URB_recon_exp: IRAN_URB_recon_common
@@ -27419,7 +27095,6 @@ class IRAN_URB_recon_exp: IRAN_URB_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -27491,7 +27166,6 @@ class IRAN_URB_diver_common: IRAN_URB_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -27552,7 +27226,6 @@ class IRAN_URB_diver_tl: IRAN_URB_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -27587,7 +27260,6 @@ class IRAN_URB_diver_exp: IRAN_URB_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -27610,7 +27282,6 @@ class IRAN_URB_diver_cm: IRAN_URB_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -27675,7 +27346,6 @@ class IRAN_URB_diver_dm: IRAN_URB_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -27748,7 +27418,6 @@ class IRAN_URB_sniper_common: IRAN_URB_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -27816,7 +27485,6 @@ class IRAN_URB_sniper_spot: IRAN_URB_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -27933,7 +27601,6 @@ class IRAN_URB_sniper_exp: IRAN_URB_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -28154,7 +27821,6 @@ class IRAN_URB_logistics_common: CommonIRAN_URB
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -28201,7 +27867,6 @@ class IRAN_URB_medevac_common: CommonIRAN_URB
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -28233,7 +27898,6 @@ class IRAN_URB_medevac_doc: IRAN_URB_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -28305,7 +27969,6 @@ class IRAN_URB_medevac_drv: IRAN_URB_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -28376,7 +28039,6 @@ class CommonNATO_CTRG: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -28455,7 +28117,7 @@ class NATO_CTRG_company_common: CommonNATO_CTRG
 	{
 		"hlc_15Rnd_9x19_B_P226",
 		3,
-		"30Rnd_9x21_Mag",
+		"30Rnd_9x21_Mag_SMG_02",
 		3
 	};
 	items[]=
@@ -28464,7 +28126,6 @@ class NATO_CTRG_company_common: CommonNATO_CTRG
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -28533,7 +28194,6 @@ class NATO_CTRG_company_colo: NATO_CTRG_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -28547,7 +28207,6 @@ class NATO_CTRG_company_fo: NATO_CTRG_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -28592,7 +28251,6 @@ class NATO_CTRG_platoon_common: CommonNATO_CTRG
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -28656,10 +28314,12 @@ class NATO_CTRG_platoon_uav: NATO_CTRG_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"b_UavTerminal"
 	};
 };
@@ -28691,6 +28351,10 @@ class NATO_CTRG_platoon_jtac: NATO_CTRG_platoon_common
 	{
 		"ACRE_PRC152",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -28735,17 +28399,18 @@ class NATO_CTRG_platoon_medic: NATO_CTRG_platoon_common
 	{
 		"B_Kitbag_rgr"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -28827,7 +28492,6 @@ class NATO_CTRG_squad_sl: CommonNATO_CTRG
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -28857,7 +28521,6 @@ class NATO_CTRG_squad_ftl: CommonNATO_CTRG
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -29075,23 +28738,15 @@ class NATO_CTRG_squad_cm: CommonNATO_CTRG
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -29117,7 +28772,6 @@ class NATO_CTRG_squad_dm: CommonNATO_CTRG
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -29149,7 +28803,6 @@ class NATO_CTRG_squad_eng: CommonNATO_CTRG
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -29461,7 +29114,6 @@ class NATO_CTRG_weapons_mort: NATO_CTRG_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -29478,7 +29130,6 @@ class NATO_CTRG_weapons_amort: NATO_CTRG_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -29491,7 +29142,6 @@ class NATO_CTRG_weapons_acmort: NATO_CTRG_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -29555,7 +29205,6 @@ class NATO_CTRG_recon_common: CommonNATO_CTRG
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -29592,7 +29241,6 @@ class NATO_CTRG_recon_rm: NATO_CTRG_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -29652,7 +29300,6 @@ class NATO_CTRG_recon_tl: NATO_CTRG_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -29789,7 +29436,6 @@ class NATO_CTRG_recon_cm: NATO_CTRG_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -29845,12 +29491,12 @@ class NATO_CTRG_recon_dm: NATO_CTRG_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_01_F_blk"
+		"bipod_01_F_blk",
+		"ACE_RangeCard"
 	};
 };
 class NATO_CTRG_recon_exp: NATO_CTRG_recon_common
@@ -29891,7 +29537,6 @@ class NATO_CTRG_recon_exp: NATO_CTRG_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -29961,7 +29606,6 @@ class NATO_CTRG_diver_common: NATO_CTRG_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -30020,7 +29664,6 @@ class NATO_CTRG_diver_tl: NATO_CTRG_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -30053,7 +29696,6 @@ class NATO_CTRG_diver_exp: NATO_CTRG_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -30076,7 +29718,6 @@ class NATO_CTRG_diver_cm: NATO_CTRG_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -30141,7 +29782,6 @@ class NATO_CTRG_diver_dm: NATO_CTRG_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -30210,7 +29850,6 @@ class NATO_CTRG_sniper_common: NATO_CTRG_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -30274,7 +29913,6 @@ class NATO_CTRG_sniper_spot: NATO_CTRG_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -30387,7 +30025,6 @@ class NATO_CTRG_sniper_exp: NATO_CTRG_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -30613,7 +30250,6 @@ class NATO_CTRG_logistics_common: CommonNATO_CTRG
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -30660,7 +30296,6 @@ class NATO_CTRG_medevac_common: CommonNATO_CTRG
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -30697,7 +30332,6 @@ class NATO_CTRG_medevac_doc: NATO_CTRG_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -30769,7 +30403,6 @@ class NATO_CTRG_medevac_drv: NATO_CTRG_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -30845,7 +30478,6 @@ class CommonNATO_MTP: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -30937,7 +30569,6 @@ class NATO_MTP_company_common: CommonNATO_MTP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -31006,7 +30637,6 @@ class NATO_MTP_company_colo: NATO_MTP_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -31020,7 +30650,6 @@ class NATO_MTP_company_fo: NATO_MTP_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -31070,7 +30699,6 @@ class NATO_MTP_platoon_common: CommonNATO_MTP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -31134,10 +30762,12 @@ class NATO_MTP_platoon_uav: NATO_MTP_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"b_UavTerminal"
 	};
 };
@@ -31171,6 +30801,10 @@ class NATO_MTP_platoon_jtac: NATO_MTP_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -31217,17 +30851,18 @@ class NATO_MTP_platoon_medic: NATO_MTP_platoon_common
 		"B_Kitbag_mcamo",
 		"B_Kitbag_cbr"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -31310,7 +30945,6 @@ class NATO_MTP_squad_sl: CommonNATO_MTP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -31341,7 +30975,6 @@ class NATO_MTP_squad_ftl: CommonNATO_MTP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -31570,23 +31203,15 @@ class NATO_MTP_squad_cm: CommonNATO_MTP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -31613,7 +31238,6 @@ class NATO_MTP_squad_dm: CommonNATO_MTP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -31646,7 +31270,6 @@ class NATO_MTP_squad_eng: CommonNATO_MTP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -31967,7 +31590,6 @@ class NATO_MTP_weapons_mort: NATO_MTP_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -31984,7 +31606,6 @@ class NATO_MTP_weapons_amort: NATO_MTP_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -31997,7 +31618,6 @@ class NATO_MTP_weapons_acmort: NATO_MTP_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -32080,7 +31700,6 @@ class NATO_MTP_recon_common: CommonNATO_MTP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -32124,7 +31743,6 @@ class NATO_MTP_recon_rm: NATO_MTP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -32199,7 +31817,6 @@ class NATO_MTP_recon_tl: NATO_MTP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -32363,7 +31980,6 @@ class NATO_MTP_recon_cm: NATO_MTP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -32433,12 +32049,12 @@ class NATO_MTP_recon_dm: NATO_MTP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_01_F_snd"
+		"bipod_01_F_snd",
+		"ACE_RangeCard"
 	};
 };
 class NATO_MTP_recon_exp: NATO_MTP_recon_common
@@ -32480,7 +32096,6 @@ class NATO_MTP_recon_exp: NATO_MTP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -32550,7 +32165,6 @@ class NATO_MTP_diver_common: NATO_MTP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -32609,7 +32223,6 @@ class NATO_MTP_diver_tl: NATO_MTP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -32642,7 +32255,6 @@ class NATO_MTP_diver_exp: NATO_MTP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -32665,7 +32277,6 @@ class NATO_MTP_diver_cm: NATO_MTP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -32730,7 +32341,6 @@ class NATO_MTP_diver_dm: NATO_MTP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -32800,7 +32410,6 @@ class NATO_MTP_sniper_common: NATO_MTP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -32872,7 +32481,6 @@ class NATO_MTP_sniper_spot: NATO_MTP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -32993,7 +32601,6 @@ class NATO_MTP_sniper_exp: NATO_MTP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -33229,7 +32836,6 @@ class NATO_MTP_logistics_common: CommonNATO_MTP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -33276,7 +32882,6 @@ class NATO_MTP_medevac_common: CommonNATO_MTP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -33314,7 +32919,6 @@ class NATO_MTP_medevac_doc: NATO_MTP_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -33386,7 +32990,6 @@ class NATO_MTP_medevac_drv: NATO_MTP_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -33459,7 +33062,6 @@ class CommonNATO_TRPC: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -33542,7 +33144,6 @@ class NATO_TRPC_company_common: CommonNATO_TRPC
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -33611,7 +33212,6 @@ class NATO_TRPC_company_colo: NATO_TRPC_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -33625,7 +33225,6 @@ class NATO_TRPC_company_fo: NATO_TRPC_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -33671,7 +33270,6 @@ class NATO_TRPC_platoon_common: CommonNATO_TRPC
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -33730,10 +33328,12 @@ class NATO_TRPC_platoon_uav: NATO_TRPC_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"b_UavTerminal"
 	};
 };
@@ -33765,6 +33365,10 @@ class NATO_TRPC_platoon_jtac: NATO_TRPC_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -33809,17 +33413,18 @@ class NATO_TRPC_platoon_medic: NATO_TRPC_platoon_common
 	{
 		"B_Kitbag_rgr"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -33901,7 +33506,6 @@ class NATO_TRPC_squad_sl: CommonNATO_TRPC
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -33931,7 +33535,6 @@ class NATO_TRPC_squad_ftl: CommonNATO_TRPC
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -34152,23 +33755,15 @@ class NATO_TRPC_squad_cm: CommonNATO_TRPC
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -34194,7 +33789,6 @@ class NATO_TRPC_squad_dm: CommonNATO_TRPC
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -34226,7 +33820,6 @@ class NATO_TRPC_squad_eng: CommonNATO_TRPC
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -34537,7 +34130,6 @@ class NATO_TRPC_weapons_mort: NATO_TRPC_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -34554,7 +34146,6 @@ class NATO_TRPC_weapons_amort: NATO_TRPC_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -34567,7 +34158,6 @@ class NATO_TRPC_weapons_acmort: NATO_TRPC_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -34640,7 +34230,6 @@ class NATO_TRPC_recon_common: CommonNATO_TRPC
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -34679,7 +34268,6 @@ class NATO_TRPC_recon_rm: NATO_TRPC_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -34746,7 +34334,6 @@ class NATO_TRPC_recon_tl: NATO_TRPC_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -34894,7 +34481,6 @@ class NATO_TRPC_recon_cm: NATO_TRPC_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -34957,12 +34543,12 @@ class NATO_TRPC_recon_dm: NATO_TRPC_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_01_F_khk"
+		"bipod_01_F_khk",
+		"ACE_RangeCard"
 	};
 };
 class NATO_TRPC_recon_exp: NATO_TRPC_recon_common
@@ -35003,7 +34589,6 @@ class NATO_TRPC_recon_exp: NATO_TRPC_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -35073,7 +34658,6 @@ class NATO_TRPC_diver_common: NATO_TRPC_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -35132,7 +34716,6 @@ class NATO_TRPC_diver_tl: NATO_TRPC_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -35165,7 +34748,6 @@ class NATO_TRPC_diver_exp: NATO_TRPC_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -35188,7 +34770,6 @@ class NATO_TRPC_diver_cm: NATO_TRPC_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -35253,7 +34834,6 @@ class NATO_TRPC_diver_dm: NATO_TRPC_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -35322,7 +34902,6 @@ class NATO_TRPC_sniper_common: NATO_TRPC_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -35386,7 +34965,6 @@ class NATO_TRPC_sniper_spot: NATO_TRPC_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -35499,7 +35077,6 @@ class NATO_TRPC_sniper_exp: NATO_TRPC_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -35722,7 +35299,6 @@ class NATO_TRPC_logistics_common: CommonNATO_TRPC
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -35769,7 +35345,6 @@ class NATO_TRPC_medevac_common: CommonNATO_TRPC
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -35801,7 +35376,6 @@ class NATO_TRPC_medevac_doc: NATO_TRPC_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -35873,7 +35447,6 @@ class NATO_TRPC_medevac_drv: NATO_TRPC_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -35944,7 +35517,6 @@ class CommonNATO_WDL: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -36029,7 +35601,6 @@ class NATO_WDL_company_common: CommonNATO_WDL
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -36098,7 +35669,6 @@ class NATO_WDL_company_colo: NATO_WDL_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -36112,7 +35682,6 @@ class NATO_WDL_company_fo: NATO_WDL_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -36157,7 +35726,6 @@ class NATO_WDL_platoon_common: CommonNATO_WDL
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -36221,10 +35789,12 @@ class NATO_WDL_platoon_uav: NATO_WDL_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"b_UavTerminal"
 	};
 };
@@ -36256,6 +35826,10 @@ class NATO_WDL_platoon_jtac: NATO_WDL_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -36300,17 +35874,18 @@ class NATO_WDL_platoon_medic: NATO_WDL_platoon_common
 	{
 		"B_Kitbag_rgr"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -36392,7 +35967,6 @@ class NATO_WDL_squad_sl: CommonNATO_WDL
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -36422,7 +35996,6 @@ class NATO_WDL_squad_ftl: CommonNATO_WDL
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -36640,23 +36213,15 @@ class NATO_WDL_squad_cm: CommonNATO_WDL
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -36682,7 +36247,6 @@ class NATO_WDL_squad_dm: CommonNATO_WDL
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -36714,7 +36278,6 @@ class NATO_WDL_squad_eng: CommonNATO_WDL
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -37025,7 +36588,6 @@ class NATO_WDL_weapons_mort: NATO_WDL_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -37042,7 +36604,6 @@ class NATO_WDL_weapons_amort: NATO_WDL_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -37055,7 +36616,6 @@ class NATO_WDL_weapons_acmort: NATO_WDL_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -37126,7 +36686,6 @@ class NATO_WDL_recon_common: CommonNATO_WDL
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -37170,7 +36729,6 @@ class NATO_WDL_recon_rm: NATO_WDL_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -37230,7 +36788,6 @@ class NATO_WDL_recon_tl: NATO_WDL_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -37371,7 +36928,6 @@ class NATO_WDL_recon_cm: NATO_WDL_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -37427,12 +36983,12 @@ class NATO_WDL_recon_dm: NATO_WDL_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_01_F_blk"
+		"bipod_01_F_blk",
+		"ACE_RangeCard"
 	};
 };
 class NATO_WDL_recon_exp: NATO_WDL_recon_common
@@ -37473,7 +37029,6 @@ class NATO_WDL_recon_exp: NATO_WDL_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -37543,7 +37098,6 @@ class NATO_WDL_diver_common: NATO_WDL_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -37602,7 +37156,6 @@ class NATO_WDL_diver_tl: NATO_WDL_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -37635,7 +37188,6 @@ class NATO_WDL_diver_exp: NATO_WDL_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -37658,7 +37210,6 @@ class NATO_WDL_diver_cm: NATO_WDL_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -37723,7 +37274,6 @@ class NATO_WDL_diver_dm: NATO_WDL_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -37792,7 +37342,6 @@ class NATO_WDL_sniper_common: NATO_WDL_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -37856,7 +37405,6 @@ class NATO_WDL_sniper_spot: NATO_WDL_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -37976,7 +37524,6 @@ class NATO_WDL_sniper_exp: NATO_WDL_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -38202,7 +37749,6 @@ class NATO_WDL_logistics_common: CommonNATO_WDL
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -38249,7 +37795,6 @@ class NATO_WDL_medevac_common: CommonNATO_WDL
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -38286,7 +37831,6 @@ class NATO_WDL_medevac_doc: NATO_WDL_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -38358,7 +37902,6 @@ class NATO_WDL_medevac_drv: NATO_WDL_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -38430,9 +37973,9 @@ class CommonRU_DES: CommonDefault
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -38449,7 +37992,6 @@ class CommonRU_DES: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -38539,7 +38081,6 @@ class RU_DES_company_common: CommonRU_DES
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -38609,7 +38150,6 @@ class RU_DES_company_colo: RU_DES_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -38623,7 +38163,6 @@ class RU_DES_company_fo: RU_DES_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -38660,9 +38199,9 @@ class RU_DES_platoon_common: CommonRU_DES
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -38675,7 +38214,6 @@ class RU_DES_platoon_common: CommonRU_DES
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -38734,10 +38272,12 @@ class RU_DES_platoon_uav: RU_DES_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"o_UavTerminal"
 	};
 };
@@ -38771,13 +38311,17 @@ class RU_DES_platoon_jtac: RU_DES_platoon_common
 		"ACRE_SEM52SL",
 		"ACRE_SEM70"
 	};
+	gps[]=
+	{
+		""
+	};
 	magazines[]=
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -38814,17 +38358,18 @@ class RU_DES_platoon_medic: RU_DES_platoon_common
 	{
 		"rhssaf_kitbag_smb"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -38878,9 +38423,9 @@ class RU_DES_squad_sl: CommonRU_DES
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -38912,7 +38457,6 @@ class RU_DES_squad_sl: CommonRU_DES
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -38942,7 +38486,6 @@ class RU_DES_squad_ftl: CommonRU_DES
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -38956,13 +38499,20 @@ class RU_DES_squad_ar: CommonRU_DES
 	};
 	primary[]=
 	{
-		"rhs_weap_pkp"
+		
+		{
+			"hlc_rifle_rpk74n_45rnd",
+			"",
+			"",
+			"rhs_acc_dtk3"
+		}
 	};
 	magazines[]=
 	{
-		"rhs_100Rnd_762x54mmR_7N13",
-		3,
-		"rhs_100Rnd_762x54mmR_green",
+		"hlc_45Rnd_545x39_m_rpk",
+		5,
+		"hlc_45Rnd_545x39_t_rpk",
+		5,
 		"16Rnd_9x21_Mag",
 		3,
 		"Chemlight_red",
@@ -39006,9 +38556,9 @@ class RU_DES_squad_gl: CommonRU_DES
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39145,13 +38695,15 @@ class RU_DES_squad_aar: CommonRU_DES
 	magazines[]=
 	{
 		"ACE_SpareBarrel",
-		"rhs_100Rnd_762x54mmR_7N13",
+		"hlc_45Rnd_545x39_m_rpk",
+		2,
+		"hlc_45Rnd_545x39_t_rpk",
 		2,
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39188,9 +38740,9 @@ class RU_DES_squad_lat: CommonRU_DES
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39218,23 +38770,15 @@ class RU_DES_squad_cm: CommonRU_DES
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -39250,7 +38794,7 @@ class RU_DES_squad_dm: CommonRU_DES
 		
 		{
 			"rhs_weap_svdp",
-			"rhs_weap_svdp",
+			"rhs_acc_pso1m2",
 			"",
 			""
 		}
@@ -39261,7 +38805,6 @@ class RU_DES_squad_dm: CommonRU_DES
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -39294,7 +38837,6 @@ class RU_DES_squad_eng: CommonRU_DES
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -39315,9 +38857,9 @@ class RU_DES_weapons_common: CommonRU_DES
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39373,9 +38915,9 @@ class RU_DES_weapons_amg: RU_DES_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39438,9 +38980,9 @@ class RU_DES_weapons_at: RU_DES_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39465,9 +39007,9 @@ class RU_DES_weapons_aat: RU_DES_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39499,9 +39041,9 @@ class RU_DES_weapons_atgm: RU_DES_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39524,9 +39066,9 @@ class RU_DES_weapons_aatgm: RU_DES_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39555,9 +39097,9 @@ class RU_DES_weapons_aa: RU_DES_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39576,9 +39118,9 @@ class RU_DES_weapons_aaa: RU_DES_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39604,7 +39146,6 @@ class RU_DES_weapons_mort: RU_DES_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -39621,7 +39162,6 @@ class RU_DES_weapons_amort: RU_DES_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -39634,7 +39174,6 @@ class RU_DES_weapons_acmort: RU_DES_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -39679,9 +39218,9 @@ class RU_DES_recon_common: CommonRU_DES
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39698,7 +39237,6 @@ class RU_DES_recon_common: CommonRU_DES
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -39734,7 +39272,6 @@ class RU_DES_recon_rm: RU_DES_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -39754,7 +39291,7 @@ class RU_DES_recon_tl: RU_DES_recon_common
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -39763,9 +39300,9 @@ class RU_DES_recon_tl: RU_DES_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39793,7 +39330,6 @@ class RU_DES_recon_tl: RU_DES_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -39862,7 +39398,7 @@ class RU_DES_recon_gl: RU_DES_recon_common
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -39871,9 +39407,9 @@ class RU_DES_recon_gl: RU_DES_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39911,9 +39447,9 @@ class RU_DES_recon_lat: RU_DES_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -39937,7 +39473,6 @@ class RU_DES_recon_cm: RU_DES_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -39967,7 +39502,7 @@ class RU_DES_recon_dm: RU_DES_recon_common
 		
 		{
 			"rhs_weap_svdp_wd",
-			"rhs_acc_pso1m21",
+			"rhs_acc_pso1m2",
 			"",
 			"rhs_acc_tgpv2"
 		}
@@ -39993,12 +39528,12 @@ class RU_DES_recon_dm: RU_DES_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ace_banana"
+		"ace_banana",
+		"ACE_RangeCard"
 	};
 };
 class RU_DES_recon_exp: RU_DES_recon_common
@@ -40015,9 +39550,9 @@ class RU_DES_recon_exp: RU_DES_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -40039,7 +39574,6 @@ class RU_DES_recon_exp: RU_DES_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -40094,7 +39628,7 @@ class RU_DES_diver_common: RU_DES_recon_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -40109,7 +39643,6 @@ class RU_DES_diver_common: RU_DES_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -40152,7 +39685,7 @@ class RU_DES_diver_tl: RU_DES_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -40169,7 +39702,6 @@ class RU_DES_diver_tl: RU_DES_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -40186,7 +39718,7 @@ class RU_DES_diver_exp: RU_DES_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -40203,7 +39735,6 @@ class RU_DES_diver_exp: RU_DES_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -40227,7 +39758,6 @@ class RU_DES_diver_cm: RU_DES_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -40265,7 +39795,7 @@ class RU_DES_diver_dm: RU_DES_diver_common
 		
 		{
 			"rhs_weap_svds",
-			"rhs_acc_pso1m21",
+			"rhs_acc_pso1m2",
 			"",
 			"rhs_acc_tgpv2"
 		}
@@ -40293,7 +39823,6 @@ class RU_DES_diver_dm: RU_DES_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -40311,7 +39840,7 @@ class RU_DES_diver_jtac: RU_DES_diver_tl
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -40324,7 +39853,7 @@ class RU_DES_diver_jtac: RU_DES_diver_tl
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -40365,7 +39894,6 @@ class RU_DES_sniper_common: RU_DES_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -40387,7 +39915,7 @@ class RU_DES_sniper_spot: RU_DES_recon_common
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -40414,9 +39942,9 @@ class RU_DES_sniper_spot: RU_DES_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		8,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"rhs_VOG25",
 		10,
@@ -40429,7 +39957,6 @@ class RU_DES_sniper_spot: RU_DES_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -40516,9 +40043,9 @@ class RU_DES_sniper_exp: RU_DES_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -40539,7 +40066,6 @@ class RU_DES_sniper_exp: RU_DES_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -40587,7 +40113,7 @@ class RU_DES_crew_common: CommonRU_DES
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		6,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -40773,7 +40299,7 @@ class RU_DES_logistics_common: CommonRU_DES
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		6,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -40790,7 +40316,6 @@ class RU_DES_logistics_common: CommonRU_DES
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -40837,7 +40362,6 @@ class RU_DES_medevac_common: CommonRU_DES
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -40869,7 +40393,6 @@ class RU_DES_medevac_doc: RU_DES_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -40942,7 +40465,6 @@ class RU_DES_medevac_drv: RU_DES_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -41014,9 +40536,9 @@ class CommonRU_EMR: CommonDefault
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -41033,7 +40555,6 @@ class CommonRU_EMR: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -41123,7 +40644,6 @@ class RU_EMR_company_common: CommonRU_EMR
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -41193,7 +40713,6 @@ class RU_EMR_company_colo: RU_EMR_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -41207,7 +40726,6 @@ class RU_EMR_company_fo: RU_EMR_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -41244,9 +40762,9 @@ class RU_EMR_platoon_common: CommonRU_EMR
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -41259,7 +40777,6 @@ class RU_EMR_platoon_common: CommonRU_EMR
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -41318,10 +40835,12 @@ class RU_EMR_platoon_uav: RU_EMR_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"o_UavTerminal"
 	};
 };
@@ -41355,13 +40874,17 @@ class RU_EMR_platoon_jtac: RU_EMR_platoon_common
 		"ACRE_SEM52SL",
 		"ACRE_SEM70"
 	};
+	gps[]=
+	{
+		""
+	};
 	magazines[]=
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -41398,17 +40921,18 @@ class RU_EMR_platoon_medic: RU_EMR_platoon_common
 	{
 		"rhssaf_kitbag_smb"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -41462,9 +40986,9 @@ class RU_EMR_squad_sl: CommonRU_EMR
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -41496,7 +41020,6 @@ class RU_EMR_squad_sl: CommonRU_EMR
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -41526,7 +41049,6 @@ class RU_EMR_squad_ftl: CommonRU_EMR
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -41540,13 +41062,20 @@ class RU_EMR_squad_ar: CommonRU_EMR
 	};
 	primary[]=
 	{
-		"rhs_weap_pkp"
+		
+		{
+			"hlc_rifle_rpk74n_45rnd",
+			"",
+			"",
+			"rhs_acc_dtk3"
+		}
 	};
 	magazines[]=
 	{
-		"rhs_100Rnd_762x54mmR_7N13",
-		3,
-		"rhs_100Rnd_762x54mmR_green",
+		"hlc_45Rnd_545x39_m_rpk",
+		5,
+		"hlc_45Rnd_545x39_t_rpk",
+		5,
 		"16Rnd_9x21_Mag",
 		3,
 		"Chemlight_red",
@@ -41590,9 +41119,9 @@ class RU_EMR_squad_gl: CommonRU_EMR
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -41729,13 +41258,15 @@ class RU_EMR_squad_aar: CommonRU_EMR
 	magazines[]=
 	{
 		"ACE_SpareBarrel",
-		"rhs_100Rnd_762x54mmR_7N13",
+		"hlc_45Rnd_545x39_m_rpk",
+		2,
+		"hlc_45Rnd_545x39_t_rpk",
 		2,
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -41772,9 +41303,9 @@ class RU_EMR_squad_lat: CommonRU_EMR
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -41802,23 +41333,15 @@ class RU_EMR_squad_cm: CommonRU_EMR
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -41834,7 +41357,7 @@ class RU_EMR_squad_dm: CommonRU_EMR
 		
 		{
 			"rhs_weap_svdp",
-			"rhs_weap_svdp",
+			"rhs_acc_pso1m2",
 			"",
 			""
 		}
@@ -41845,7 +41368,6 @@ class RU_EMR_squad_dm: CommonRU_EMR
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -41878,7 +41400,6 @@ class RU_EMR_squad_eng: CommonRU_EMR
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -41899,9 +41420,9 @@ class RU_EMR_weapons_common: CommonRU_EMR
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -41957,9 +41478,9 @@ class RU_EMR_weapons_amg: RU_EMR_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42022,9 +41543,9 @@ class RU_EMR_weapons_at: RU_EMR_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42049,9 +41570,9 @@ class RU_EMR_weapons_aat: RU_EMR_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42083,9 +41604,9 @@ class RU_EMR_weapons_atgm: RU_EMR_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42108,9 +41629,9 @@ class RU_EMR_weapons_aatgm: RU_EMR_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42139,9 +41660,9 @@ class RU_EMR_weapons_aa: RU_EMR_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42160,9 +41681,9 @@ class RU_EMR_weapons_aaa: RU_EMR_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42188,7 +41709,6 @@ class RU_EMR_weapons_mort: RU_EMR_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -42205,7 +41725,6 @@ class RU_EMR_weapons_amort: RU_EMR_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -42218,7 +41737,6 @@ class RU_EMR_weapons_acmort: RU_EMR_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -42263,9 +41781,9 @@ class RU_EMR_recon_common: CommonRU_EMR
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42282,7 +41800,6 @@ class RU_EMR_recon_common: CommonRU_EMR
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -42318,7 +41835,6 @@ class RU_EMR_recon_rm: RU_EMR_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -42338,7 +41854,7 @@ class RU_EMR_recon_tl: RU_EMR_recon_common
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -42347,9 +41863,9 @@ class RU_EMR_recon_tl: RU_EMR_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42377,7 +41893,6 @@ class RU_EMR_recon_tl: RU_EMR_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -42446,7 +41961,7 @@ class RU_EMR_recon_gl: RU_EMR_recon_common
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -42455,9 +41970,9 @@ class RU_EMR_recon_gl: RU_EMR_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42495,9 +42010,9 @@ class RU_EMR_recon_lat: RU_EMR_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42521,7 +42036,6 @@ class RU_EMR_recon_cm: RU_EMR_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -42551,7 +42065,7 @@ class RU_EMR_recon_dm: RU_EMR_recon_common
 		
 		{
 			"rhs_weap_svdp_wd",
-			"rhs_acc_pso1m21",
+			"rhs_acc_pso1m2",
 			"",
 			"rhs_acc_tgpv2"
 		}
@@ -42577,12 +42091,12 @@ class RU_EMR_recon_dm: RU_EMR_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ace_banana"
+		"ace_banana",
+		"ACE_RangeCard"
 	};
 };
 class RU_EMR_recon_exp: RU_EMR_recon_common
@@ -42599,9 +42113,9 @@ class RU_EMR_recon_exp: RU_EMR_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42623,7 +42137,6 @@ class RU_EMR_recon_exp: RU_EMR_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -42678,7 +42191,7 @@ class RU_EMR_diver_common: RU_EMR_recon_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42693,7 +42206,6 @@ class RU_EMR_diver_common: RU_EMR_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -42736,7 +42248,7 @@ class RU_EMR_diver_tl: RU_EMR_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42753,7 +42265,6 @@ class RU_EMR_diver_tl: RU_EMR_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -42770,7 +42281,7 @@ class RU_EMR_diver_exp: RU_EMR_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42787,7 +42298,6 @@ class RU_EMR_diver_exp: RU_EMR_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -42811,7 +42321,6 @@ class RU_EMR_diver_cm: RU_EMR_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -42849,7 +42358,7 @@ class RU_EMR_diver_dm: RU_EMR_diver_common
 		
 		{
 			"rhs_weap_svds",
-			"rhs_acc_pso1m21",
+			"rhs_acc_pso1m2",
 			"",
 			"rhs_acc_tgpv2"
 		}
@@ -42877,7 +42386,6 @@ class RU_EMR_diver_dm: RU_EMR_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -42895,7 +42403,7 @@ class RU_EMR_diver_jtac: RU_EMR_diver_tl
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -42908,7 +42416,7 @@ class RU_EMR_diver_jtac: RU_EMR_diver_tl
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -42949,7 +42457,6 @@ class RU_EMR_sniper_common: RU_EMR_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -42971,7 +42478,7 @@ class RU_EMR_sniper_spot: RU_EMR_recon_common
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -42998,9 +42505,9 @@ class RU_EMR_sniper_spot: RU_EMR_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		8,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"rhs_VOG25",
 		10,
@@ -43013,7 +42520,6 @@ class RU_EMR_sniper_spot: RU_EMR_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -43100,9 +42606,9 @@ class RU_EMR_sniper_exp: RU_EMR_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -43123,7 +42629,6 @@ class RU_EMR_sniper_exp: RU_EMR_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -43171,7 +42676,7 @@ class RU_EMR_crew_common: CommonRU_EMR
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		6,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -43357,7 +42862,7 @@ class RU_EMR_logistics_common: CommonRU_EMR
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		6,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -43374,7 +42879,6 @@ class RU_EMR_logistics_common: CommonRU_EMR
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -43421,7 +42925,6 @@ class RU_EMR_medevac_common: CommonRU_EMR
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -43453,7 +42956,6 @@ class RU_EMR_medevac_doc: RU_EMR_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -43526,7 +43028,6 @@ class RU_EMR_medevac_drv: RU_EMR_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -43598,9 +43099,9 @@ class CommonRU_FLORA: CommonDefault
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -43617,7 +43118,6 @@ class CommonRU_FLORA: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -43707,7 +43207,6 @@ class RU_FLORA_company_common: CommonRU_FLORA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -43776,7 +43275,6 @@ class RU_FLORA_company_colo: RU_FLORA_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -43790,7 +43288,6 @@ class RU_FLORA_company_fo: RU_FLORA_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -43827,9 +43324,9 @@ class RU_FLORA_platoon_common: CommonRU_FLORA
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -43842,7 +43339,6 @@ class RU_FLORA_platoon_common: CommonRU_FLORA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -43901,10 +43397,12 @@ class RU_FLORA_platoon_uav: RU_FLORA_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"o_UavTerminal"
 	};
 };
@@ -43937,13 +43435,17 @@ class RU_FLORA_platoon_jtac: RU_FLORA_platoon_common
 		"ACRE_SEM52SL",
 		"ACRE_SEM70"
 	};
+	gps[]=
+	{
+		""
+	};
 	magazines[]=
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -43980,17 +43482,18 @@ class RU_FLORA_platoon_medic: RU_FLORA_platoon_common
 	{
 		"rhssaf_kitbag_smb"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -44043,9 +43546,9 @@ class RU_FLORA_squad_sl: CommonRU_FLORA
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44077,7 +43580,6 @@ class RU_FLORA_squad_sl: CommonRU_FLORA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -44106,7 +43608,6 @@ class RU_FLORA_squad_ftl: CommonRU_FLORA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -44119,13 +43620,20 @@ class RU_FLORA_squad_ar: CommonRU_FLORA
 	};
 	primary[]=
 	{
-		"rhs_weap_pkp"
+		
+		{
+			"hlc_rifle_rpk74n_45rnd",
+			"",
+			"",
+			"rhs_acc_dtk3"
+		}
 	};
 	magazines[]=
 	{
-		"rhs_100Rnd_762x54mmR_7N13",
-		3,
-		"rhs_100Rnd_762x54mmR_green",
+		"hlc_45Rnd_545x39_m_rpk",
+		5,
+		"hlc_45Rnd_545x39_t_rpk",
+		5,
 		"16Rnd_9x21_Mag",
 		3,
 		"Chemlight_red",
@@ -44168,9 +43676,9 @@ class RU_FLORA_squad_gl: CommonRU_FLORA
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44304,13 +43812,15 @@ class RU_FLORA_squad_aar: CommonRU_FLORA
 	magazines[]=
 	{
 		"ACE_SpareBarrel",
-		"rhs_100Rnd_762x54mmR_7N13",
+		"hlc_45Rnd_545x39_m_rpk",
+		2,
+		"hlc_45Rnd_545x39_t_rpk",
 		2,
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44346,9 +43856,9 @@ class RU_FLORA_squad_lat: CommonRU_FLORA
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44376,23 +43886,15 @@ class RU_FLORA_squad_cm: CommonRU_FLORA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -44407,7 +43909,7 @@ class RU_FLORA_squad_dm: CommonRU_FLORA
 		
 		{
 			"rhs_weap_svdp",
-			"rhs_weap_svdp",
+			"rhs_acc_pso1m2",
 			"",
 			""
 		}
@@ -44418,7 +43920,6 @@ class RU_FLORA_squad_dm: CommonRU_FLORA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -44450,7 +43951,6 @@ class RU_FLORA_squad_eng: CommonRU_FLORA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -44470,9 +43970,9 @@ class RU_FLORA_weapons_common: CommonRU_FLORA
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44527,9 +44027,9 @@ class RU_FLORA_weapons_amg: RU_FLORA_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44592,9 +44092,9 @@ class RU_FLORA_weapons_at: RU_FLORA_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44619,9 +44119,9 @@ class RU_FLORA_weapons_aat: RU_FLORA_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44653,9 +44153,9 @@ class RU_FLORA_weapons_atgm: RU_FLORA_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44678,9 +44178,9 @@ class RU_FLORA_weapons_aatgm: RU_FLORA_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44709,9 +44209,9 @@ class RU_FLORA_weapons_aa: RU_FLORA_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44730,9 +44230,9 @@ class RU_FLORA_weapons_aaa: RU_FLORA_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44758,7 +44258,6 @@ class RU_FLORA_weapons_mort: RU_FLORA_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -44775,7 +44274,6 @@ class RU_FLORA_weapons_amort: RU_FLORA_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -44788,7 +44286,6 @@ class RU_FLORA_weapons_acmort: RU_FLORA_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -44832,9 +44329,9 @@ class RU_FLORA_recon_common: CommonRU_FLORA
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44851,7 +44348,6 @@ class RU_FLORA_recon_common: CommonRU_FLORA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -44887,7 +44383,6 @@ class RU_FLORA_recon_rm: RU_FLORA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -44906,7 +44401,7 @@ class RU_FLORA_recon_tl: RU_FLORA_recon_common
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -44915,9 +44410,9 @@ class RU_FLORA_recon_tl: RU_FLORA_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -44945,7 +44440,6 @@ class RU_FLORA_recon_tl: RU_FLORA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -45012,7 +44506,7 @@ class RU_FLORA_recon_gl: RU_FLORA_recon_common
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -45021,9 +44515,9 @@ class RU_FLORA_recon_gl: RU_FLORA_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -45061,9 +44555,9 @@ class RU_FLORA_recon_lat: RU_FLORA_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -45087,7 +44581,6 @@ class RU_FLORA_recon_cm: RU_FLORA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -45117,7 +44610,7 @@ class RU_FLORA_recon_dm: RU_FLORA_recon_common
 		
 		{
 			"rhs_weap_svdp_wd",
-			"rhs_acc_pso1m21",
+			"rhs_acc_pso1m2",
 			"",
 			"rhs_acc_tgpv2"
 		}
@@ -45143,12 +44636,12 @@ class RU_FLORA_recon_dm: RU_FLORA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ace_banana"
+		"ace_banana",
+		"ACE_RangeCard"
 	};
 };
 class RU_FLORA_recon_exp: RU_FLORA_recon_common
@@ -45165,9 +44658,9 @@ class RU_FLORA_recon_exp: RU_FLORA_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -45189,7 +44682,6 @@ class RU_FLORA_recon_exp: RU_FLORA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -45244,7 +44736,7 @@ class RU_FLORA_diver_common: RU_FLORA_recon_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -45259,7 +44751,6 @@ class RU_FLORA_diver_common: RU_FLORA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -45301,7 +44792,7 @@ class RU_FLORA_diver_tl: RU_FLORA_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -45318,7 +44809,6 @@ class RU_FLORA_diver_tl: RU_FLORA_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -45334,7 +44824,7 @@ class RU_FLORA_diver_exp: RU_FLORA_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -45351,7 +44841,6 @@ class RU_FLORA_diver_exp: RU_FLORA_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -45374,7 +44863,6 @@ class RU_FLORA_diver_cm: RU_FLORA_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -45411,7 +44899,7 @@ class RU_FLORA_diver_dm: RU_FLORA_diver_common
 		
 		{
 			"rhs_weap_svds",
-			"rhs_acc_pso1m21",
+			"rhs_acc_pso1m2",
 			"",
 			"rhs_acc_tgpv2"
 		}
@@ -45439,7 +44927,6 @@ class RU_FLORA_diver_dm: RU_FLORA_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -45456,7 +44943,7 @@ class RU_FLORA_diver_jtac: RU_FLORA_diver_tl
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -45469,7 +44956,7 @@ class RU_FLORA_diver_jtac: RU_FLORA_diver_tl
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -45510,7 +44997,6 @@ class RU_FLORA_sniper_common: RU_FLORA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -45532,7 +45018,7 @@ class RU_FLORA_sniper_spot: RU_FLORA_recon_common
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -45559,9 +45045,9 @@ class RU_FLORA_sniper_spot: RU_FLORA_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		8,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"rhs_VOG25",
 		10,
@@ -45574,7 +45060,6 @@ class RU_FLORA_sniper_spot: RU_FLORA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -45661,9 +45146,9 @@ class RU_FLORA_sniper_exp: RU_FLORA_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -45684,7 +45169,6 @@ class RU_FLORA_sniper_exp: RU_FLORA_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -45732,7 +45216,7 @@ class RU_FLORA_crew_common: CommonRU_FLORA
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		6,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -45918,7 +45402,7 @@ class RU_FLORA_logistics_common: CommonRU_FLORA
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		6,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -45935,7 +45419,6 @@ class RU_FLORA_logistics_common: CommonRU_FLORA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -45982,7 +45465,6 @@ class RU_FLORA_medevac_common: CommonRU_FLORA
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -46014,7 +45496,6 @@ class RU_FLORA_medevac_doc: RU_FLORA_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -46087,7 +45568,6 @@ class RU_FLORA_medevac_drv: RU_FLORA_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -46159,9 +45639,9 @@ class CommonRU_MOUNT: CommonDefault
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -46178,7 +45658,6 @@ class CommonRU_MOUNT: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -46268,7 +45747,6 @@ class RU_MOUNT_company_common: CommonRU_MOUNT
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -46337,7 +45815,6 @@ class RU_MOUNT_company_colo: RU_MOUNT_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -46351,7 +45828,6 @@ class RU_MOUNT_company_fo: RU_MOUNT_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -46388,9 +45864,9 @@ class RU_MOUNT_platoon_common: CommonRU_MOUNT
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -46403,7 +45879,6 @@ class RU_MOUNT_platoon_common: CommonRU_MOUNT
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -46462,10 +45937,12 @@ class RU_MOUNT_platoon_uav: RU_MOUNT_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"o_UavTerminal"
 	};
 };
@@ -46498,13 +45975,17 @@ class RU_MOUNT_platoon_jtac: RU_MOUNT_platoon_common
 		"ACRE_SEM52SL",
 		"ACRE_SEM70"
 	};
+	gps[]=
+	{
+		""
+	};
 	magazines[]=
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -46541,17 +46022,18 @@ class RU_MOUNT_platoon_medic: RU_MOUNT_platoon_common
 	{
 		"rhssaf_kitbag_smb"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -46604,9 +46086,9 @@ class RU_MOUNT_squad_sl: CommonRU_MOUNT
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -46638,7 +46120,6 @@ class RU_MOUNT_squad_sl: CommonRU_MOUNT
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -46667,7 +46148,6 @@ class RU_MOUNT_squad_ftl: CommonRU_MOUNT
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -46680,13 +46160,20 @@ class RU_MOUNT_squad_ar: CommonRU_MOUNT
 	};
 	primary[]=
 	{
-		"rhs_weap_pkp"
+		
+		{
+			"hlc_rifle_rpk74n_45rnd",
+			"",
+			"",
+			"rhs_acc_dtk3"
+		}
 	};
 	magazines[]=
 	{
-		"rhs_100Rnd_762x54mmR_7N13",
-		3,
-		"rhs_100Rnd_762x54mmR_green",
+		"hlc_45Rnd_545x39_m_rpk",
+		5,
+		"hlc_45Rnd_545x39_t_rpk",
+		5,
 		"16Rnd_9x21_Mag",
 		3,
 		"Chemlight_red",
@@ -46729,9 +46216,9 @@ class RU_MOUNT_squad_gl: CommonRU_MOUNT
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -46865,13 +46352,15 @@ class RU_MOUNT_squad_aar: CommonRU_MOUNT
 	magazines[]=
 	{
 		"ACE_SpareBarrel",
-		"rhs_100Rnd_762x54mmR_7N13",
+		"hlc_45Rnd_545x39_m_rpk",
+		2,
+		"hlc_45Rnd_545x39_t_rpk",
 		2,
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -46907,9 +46396,9 @@ class RU_MOUNT_squad_lat: CommonRU_MOUNT
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		7,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		4,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -46937,23 +46426,15 @@ class RU_MOUNT_squad_cm: CommonRU_MOUNT
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -46968,7 +46449,7 @@ class RU_MOUNT_squad_dm: CommonRU_MOUNT
 		
 		{
 			"rhs_weap_svdp",
-			"rhs_weap_svdp",
+			"rhs_acc_pso1m2",
 			"",
 			""
 		}
@@ -46979,7 +46460,6 @@ class RU_MOUNT_squad_dm: CommonRU_MOUNT
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -47011,7 +46491,6 @@ class RU_MOUNT_squad_eng: CommonRU_MOUNT
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -47031,9 +46510,9 @@ class RU_MOUNT_weapons_common: CommonRU_MOUNT
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47088,9 +46567,9 @@ class RU_MOUNT_weapons_amg: RU_MOUNT_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47153,9 +46632,9 @@ class RU_MOUNT_weapons_at: RU_MOUNT_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47180,9 +46659,9 @@ class RU_MOUNT_weapons_aat: RU_MOUNT_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47214,9 +46693,9 @@ class RU_MOUNT_weapons_atgm: RU_MOUNT_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47239,9 +46718,9 @@ class RU_MOUNT_weapons_aatgm: RU_MOUNT_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47270,9 +46749,9 @@ class RU_MOUNT_weapons_aa: RU_MOUNT_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47291,9 +46770,9 @@ class RU_MOUNT_weapons_aaa: RU_MOUNT_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		5,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47319,7 +46798,6 @@ class RU_MOUNT_weapons_mort: RU_MOUNT_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -47336,7 +46814,6 @@ class RU_MOUNT_weapons_amort: RU_MOUNT_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -47349,7 +46826,6 @@ class RU_MOUNT_weapons_acmort: RU_MOUNT_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -47393,9 +46869,9 @@ class RU_MOUNT_recon_common: CommonRU_MOUNT
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47412,7 +46888,6 @@ class RU_MOUNT_recon_common: CommonRU_MOUNT
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -47448,7 +46923,6 @@ class RU_MOUNT_recon_rm: RU_MOUNT_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -47467,7 +46941,7 @@ class RU_MOUNT_recon_tl: RU_MOUNT_recon_common
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -47476,9 +46950,9 @@ class RU_MOUNT_recon_tl: RU_MOUNT_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47506,7 +46980,6 @@ class RU_MOUNT_recon_tl: RU_MOUNT_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -47573,7 +47046,7 @@ class RU_MOUNT_recon_gl: RU_MOUNT_recon_common
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -47582,9 +47055,9 @@ class RU_MOUNT_recon_gl: RU_MOUNT_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47622,9 +47095,9 @@ class RU_MOUNT_recon_lat: RU_MOUNT_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47648,7 +47121,6 @@ class RU_MOUNT_recon_cm: RU_MOUNT_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -47678,7 +47150,7 @@ class RU_MOUNT_recon_dm: RU_MOUNT_recon_common
 		
 		{
 			"rhs_weap_svdp_wd",
-			"rhs_acc_pso1m21",
+			"rhs_acc_pso1m2",
 			"",
 			"rhs_acc_tgpv2"
 		}
@@ -47704,12 +47176,12 @@ class RU_MOUNT_recon_dm: RU_MOUNT_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ace_banana"
+		"ace_banana",
+		"ACE_RangeCard"
 	};
 };
 class RU_MOUNT_recon_exp: RU_MOUNT_recon_common
@@ -47726,9 +47198,9 @@ class RU_MOUNT_recon_exp: RU_MOUNT_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47750,7 +47222,6 @@ class RU_MOUNT_recon_exp: RU_MOUNT_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -47805,7 +47276,7 @@ class RU_MOUNT_diver_common: RU_MOUNT_recon_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47820,7 +47291,6 @@ class RU_MOUNT_diver_common: RU_MOUNT_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -47862,7 +47332,7 @@ class RU_MOUNT_diver_tl: RU_MOUNT_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47879,7 +47349,6 @@ class RU_MOUNT_diver_tl: RU_MOUNT_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -47895,7 +47364,7 @@ class RU_MOUNT_diver_exp: RU_MOUNT_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -47912,7 +47381,6 @@ class RU_MOUNT_diver_exp: RU_MOUNT_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -47935,7 +47403,6 @@ class RU_MOUNT_diver_cm: RU_MOUNT_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -47972,7 +47439,7 @@ class RU_MOUNT_diver_dm: RU_MOUNT_diver_common
 		
 		{
 			"rhs_weap_svds",
-			"rhs_acc_pso1m21",
+			"rhs_acc_pso1m2",
 			"",
 			"rhs_acc_tgpv2"
 		}
@@ -48000,7 +47467,6 @@ class RU_MOUNT_diver_dm: RU_MOUNT_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -48017,7 +47483,7 @@ class RU_MOUNT_diver_jtac: RU_MOUNT_diver_tl
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -48030,7 +47496,7 @@ class RU_MOUNT_diver_jtac: RU_MOUNT_diver_tl
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		10,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -48071,7 +47537,6 @@ class RU_MOUNT_sniper_common: RU_MOUNT_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -48093,7 +47558,7 @@ class RU_MOUNT_sniper_spot: RU_MOUNT_recon_common
 		
 		{
 			"hlc_rifle_ak12GL",
-			"rhs_acc_1p87",
+			"rhs_acc_ekp8_18",
 			"rhs_acc_perst3",
 			"rhs_acc_tgpa"
 		}
@@ -48120,9 +47585,9 @@ class RU_MOUNT_sniper_spot: RU_MOUNT_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		8,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"rhs_VOG25",
 		10,
@@ -48135,7 +47600,6 @@ class RU_MOUNT_sniper_spot: RU_MOUNT_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -48222,9 +47686,9 @@ class RU_MOUNT_sniper_exp: RU_MOUNT_recon_common
 	{
 		"rhs_mag_9x18_8_57N181S",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		9,
-		"30Rnd_545x39_Mag_Tracer_F",
+		"rhs_30Rnd_545x39_AK_green",
 		2,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -48245,7 +47709,6 @@ class RU_MOUNT_sniper_exp: RU_MOUNT_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -48293,7 +47756,7 @@ class RU_MOUNT_crew_common: CommonRU_MOUNT
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		6,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -48479,7 +47942,7 @@ class RU_MOUNT_logistics_common: CommonRU_MOUNT
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_545x39_Mag_F",
+		"rhs_30Rnd_545x39_7N22_AK",
 		6,
 		"Chemlight_red",
 		"Chemlight_green",
@@ -48496,7 +47959,6 @@ class RU_MOUNT_logistics_common: CommonRU_MOUNT
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -48543,7 +48005,6 @@ class RU_MOUNT_medevac_common: CommonRU_MOUNT
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -48575,7 +48036,6 @@ class RU_MOUNT_medevac_doc: RU_MOUNT_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -48648,7 +48108,6 @@ class RU_MOUNT_medevac_drv: RU_MOUNT_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -48749,7 +48208,6 @@ class CommonSYND: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -48884,7 +48342,6 @@ class SYND_company_common: CommonSYND
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -48987,7 +48444,6 @@ class SYND_company_colo: SYND_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -49001,7 +48457,6 @@ class SYND_company_fo: SYND_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -49064,7 +48519,6 @@ class SYND_platoon_common: CommonSYND
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -49157,10 +48611,12 @@ class SYND_platoon_uav: SYND_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"i_UavTerminal"
 	};
 };
@@ -49197,6 +48653,10 @@ class SYND_platoon_jtac: SYND_platoon_common
 	{
 		"ACRE_SEM52SL",
 		"ACRE_SEM52SL"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -49248,17 +48708,18 @@ class SYND_platoon_medic: SYND_platoon_common
 		"B_TacticalPack_rgr",
 		"B_TacticalPack_oli"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -49364,7 +48825,6 @@ class SYND_squad_sl: CommonSYND
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -49398,7 +48858,6 @@ class SYND_squad_ftl: CommonSYND
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -49713,23 +49172,15 @@ class SYND_squad_cm: CommonSYND
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -49759,7 +49210,6 @@ class SYND_squad_dm: CommonSYND
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -49795,7 +49245,6 @@ class SYND_squad_eng: CommonSYND
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -50122,7 +49571,6 @@ class SYND_weapons_mort: SYND_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -50139,7 +49587,6 @@ class SYND_weapons_amort: SYND_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -50152,7 +49599,6 @@ class SYND_weapons_acmort: SYND_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -50255,7 +49701,6 @@ class SYND_recon_common: CommonSYND
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -50333,7 +49778,6 @@ class SYND_recon_rm: SYND_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -50410,7 +49854,6 @@ class SYND_recon_tl: SYND_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -50571,7 +50014,6 @@ class SYND_recon_cm: SYND_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -50641,12 +50083,12 @@ class SYND_recon_dm: SYND_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"bipod_03_F_oli"
+		"bipod_03_F_oli",
+		"ACE_RangeCard"
 	};
 };
 class SYND_recon_exp: SYND_recon_common
@@ -50690,7 +50132,6 @@ class SYND_recon_exp: SYND_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -50789,7 +50230,6 @@ class SYND_diver_common: SYND_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -50848,7 +50288,6 @@ class SYND_diver_tl: SYND_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -50881,7 +50320,6 @@ class SYND_diver_exp: SYND_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -50904,7 +50342,6 @@ class SYND_diver_cm: SYND_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -50983,7 +50420,6 @@ class SYND_diver_dm: SYND_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -51070,7 +50506,6 @@ class SYND_sniper_common: SYND_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -51150,7 +50585,6 @@ class SYND_sniper_spot: SYND_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -51276,7 +50710,6 @@ class SYND_sniper_exp: SYND_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -51605,7 +51038,6 @@ class SYND_logistics_common: CommonSYND
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -51652,7 +51084,6 @@ class SYND_medevac_common: CommonSYND
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -51721,7 +51152,6 @@ class SYND_medevac_doc: SYND_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -51801,7 +51231,6 @@ class SYND_medevac_drv: SYND_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -51865,7 +51294,6 @@ class CommonTAKISTAN: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -51942,7 +51370,6 @@ class TAKISTAN_company_common: CommonTAKISTAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -52011,7 +51438,6 @@ class TAKISTAN_company_colo: TAKISTAN_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -52025,7 +51451,6 @@ class TAKISTAN_company_fo: TAKISTAN_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -52064,7 +51489,6 @@ class TAKISTAN_platoon_common: CommonTAKISTAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -52123,10 +51547,12 @@ class TAKISTAN_platoon_uav: TAKISTAN_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"i_UavTerminal"
 	};
 };
@@ -52152,6 +51578,10 @@ class TAKISTAN_platoon_jtac: TAKISTAN_platoon_common
 	{
 		"ACRE_SEM52SL",
 		"ACRE_SEM70"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -52196,17 +51626,18 @@ class TAKISTAN_platoon_medic: TAKISTAN_platoon_common
 	{
 		"rhssaf_kitbag_smb"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -52282,7 +51713,6 @@ class TAKISTAN_squad_sl: CommonTAKISTAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -52312,7 +51742,6 @@ class TAKISTAN_squad_ftl: CommonTAKISTAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -52511,23 +51940,15 @@ class TAKISTAN_squad_cm: CommonTAKISTAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -52553,7 +51974,6 @@ class TAKISTAN_squad_dm: CommonTAKISTAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -52585,7 +52005,6 @@ class TAKISTAN_squad_eng: CommonTAKISTAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -52899,7 +52318,6 @@ class TAKISTAN_weapons_mort: TAKISTAN_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -52916,7 +52334,6 @@ class TAKISTAN_weapons_amort: TAKISTAN_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -52929,7 +52346,6 @@ class TAKISTAN_weapons_acmort: TAKISTAN_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -52986,7 +52402,6 @@ class TAKISTAN_recon_common: CommonTAKISTAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -53024,7 +52439,6 @@ class TAKISTAN_recon_rm: TAKISTAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -53078,7 +52492,6 @@ class TAKISTAN_recon_tl: TAKISTAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -53208,7 +52621,6 @@ class TAKISTAN_recon_cm: TAKISTAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -53264,12 +52676,12 @@ class TAKISTAN_recon_dm: TAKISTAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ace_banana"
+		"ace_banana",
+		"ACE_RangeCard"
 	};
 };
 class TAKISTAN_recon_exp: TAKISTAN_recon_common
@@ -53310,7 +52722,6 @@ class TAKISTAN_recon_exp: TAKISTAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -53374,7 +52785,6 @@ class TAKISTAN_diver_common: TAKISTAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -53433,7 +52843,6 @@ class TAKISTAN_diver_tl: TAKISTAN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -53466,7 +52875,6 @@ class TAKISTAN_diver_exp: TAKISTAN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -53489,7 +52897,6 @@ class TAKISTAN_diver_cm: TAKISTAN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -53554,7 +52961,6 @@ class TAKISTAN_diver_dm: TAKISTAN_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -53619,7 +53025,6 @@ class TAKISTAN_sniper_common: TAKISTAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -53679,7 +53084,6 @@ class TAKISTAN_sniper_spot: TAKISTAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -53788,7 +53192,6 @@ class TAKISTAN_sniper_exp: TAKISTAN_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -54013,7 +53416,6 @@ class TAKISTAN_logistics_common: CommonTAKISTAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -54060,7 +53462,6 @@ class TAKISTAN_medevac_common: CommonTAKISTAN
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -54092,7 +53493,6 @@ class TAKISTAN_medevac_doc: TAKISTAN_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -54165,7 +53565,6 @@ class TAKISTAN_medevac_drv: TAKISTAN_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -54250,7 +53649,6 @@ class CommonTAKI_INS: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -54378,7 +53776,6 @@ class TAKI_INS_company_common: CommonTAKI_INS
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -54477,7 +53874,6 @@ class TAKI_INS_company_colo: TAKI_INS_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -54491,7 +53887,6 @@ class TAKI_INS_company_fo: TAKI_INS_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -54540,7 +53935,6 @@ class TAKI_INS_platoon_common: CommonTAKI_INS
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -54629,10 +54023,12 @@ class TAKI_INS_platoon_uav: TAKI_INS_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"o_UavTerminal"
 	};
 };
@@ -54688,6 +54084,10 @@ class TAKI_INS_platoon_jtac: TAKI_INS_platoon_common
 	{
 		"ACRE_SEM52SL",
 		"ACRE_SEM52SL"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -54761,17 +54161,18 @@ class TAKI_INS_platoon_medic: TAKI_INS_platoon_common
 	{
 		"CUP_B_AlicePack_Khaki"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -54876,7 +54277,6 @@ class TAKI_INS_squad_sl: CommonTAKI_INS
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -54934,7 +54334,6 @@ class TAKI_INS_squad_ftl: CommonTAKI_INS
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -55349,23 +54748,15 @@ class TAKI_INS_squad_cm: CommonTAKI_INS
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -55420,7 +54811,6 @@ class TAKI_INS_squad_dm: CommonTAKI_INS
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -55481,7 +54871,6 @@ class TAKI_INS_squad_eng: CommonTAKI_INS
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -55854,7 +55243,6 @@ class TAKI_INS_weapons_mort: TAKI_INS_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -55871,7 +55259,6 @@ class TAKI_INS_weapons_amort: TAKI_INS_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -55884,7 +55271,6 @@ class TAKI_INS_weapons_acmort: TAKI_INS_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -56018,7 +55404,6 @@ class TAKI_INS_recon_common: CommonTAKI_INS
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -56086,7 +55471,6 @@ class TAKI_INS_recon_rm: TAKI_INS_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -56187,7 +55571,6 @@ class TAKI_INS_recon_tl: TAKI_INS_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -56399,7 +55782,6 @@ class TAKI_INS_recon_cm: TAKI_INS_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -56455,12 +55837,12 @@ class TAKI_INS_recon_dm: TAKI_INS_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ace_banana"
+		"ace_banana",
+		"ACE_RangeCard"
 	};
 };
 class TAKI_INS_recon_exp: TAKI_INS_recon_common
@@ -56501,7 +55883,6 @@ class TAKI_INS_recon_exp: TAKI_INS_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -56599,7 +55980,6 @@ class TAKI_INS_diver_common: TAKI_INS_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -56690,7 +56070,6 @@ class TAKI_INS_diver_tl: TAKI_INS_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -56723,7 +56102,6 @@ class TAKI_INS_diver_exp: TAKI_INS_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -56746,7 +56124,6 @@ class TAKI_INS_diver_cm: TAKI_INS_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -56811,7 +56188,6 @@ class TAKI_INS_diver_dm: TAKI_INS_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -56905,7 +56281,6 @@ class TAKI_INS_sniper_common: TAKI_INS_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -56992,7 +56367,6 @@ class TAKI_INS_sniper_spot: TAKI_INS_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -57125,7 +56499,6 @@ class TAKI_INS_sniper_exp: TAKI_INS_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -57435,7 +56808,6 @@ class TAKI_INS_logistics_common: CommonTAKI_INS
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -57482,7 +56854,6 @@ class TAKI_INS_medevac_common: CommonTAKI_INS
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -57544,7 +56915,6 @@ class TAKI_INS_medevac_doc: TAKI_INS_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -57628,7 +56998,6 @@ class TAKI_INS_medevac_drv: TAKI_INS_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -57705,7 +57074,6 @@ class CommonUSARMY_OCP: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -57791,7 +57159,6 @@ class USARMY_OCP_company_common: CommonUSARMY_OCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -57860,7 +57227,6 @@ class USARMY_OCP_company_colo: USARMY_OCP_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -57874,7 +57240,6 @@ class USARMY_OCP_company_fo: USARMY_OCP_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -57940,7 +57305,6 @@ class USARMY_OCP_platoon_common: CommonUSARMY_OCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -58004,10 +57368,12 @@ class USARMY_OCP_platoon_uav: USARMY_OCP_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"b_UavTerminal"
 	};
 };
@@ -58040,6 +57406,10 @@ class USARMY_OCP_platoon_jtac: USARMY_OCP_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -58085,17 +57455,18 @@ class USARMY_OCP_platoon_medic: USARMY_OCP_platoon_common
 		"B_Kitbag_rgr",
 		"B_Kitbag_cbr"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -58177,7 +57548,6 @@ class USARMY_OCP_squad_sl: CommonUSARMY_OCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -58207,7 +57577,6 @@ class USARMY_OCP_squad_ftl: CommonUSARMY_OCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -58535,23 +57904,15 @@ class USARMY_OCP_squad_cm: CommonUSARMY_OCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -58577,7 +57938,6 @@ class USARMY_OCP_squad_dm: CommonUSARMY_OCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -58609,7 +57969,6 @@ class USARMY_OCP_squad_eng: CommonUSARMY_OCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -58926,7 +58285,6 @@ class USARMY_OCP_weapons_mort: USARMY_OCP_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -58943,7 +58301,6 @@ class USARMY_OCP_weapons_amort: USARMY_OCP_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -58956,7 +58313,6 @@ class USARMY_OCP_weapons_acmort: USARMY_OCP_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -59040,7 +58396,6 @@ class USARMY_OCP_recon_common: CommonUSARMY_OCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -59087,7 +58442,6 @@ class USARMY_OCP_recon_rm: USARMY_OCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -59154,7 +58508,6 @@ class USARMY_OCP_recon_tl: USARMY_OCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -59298,7 +58651,6 @@ class USARMY_OCP_recon_cm: USARMY_OCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -59368,12 +58720,12 @@ class USARMY_OCP_recon_dm: USARMY_OCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"rhsusf_acc_harris_bipod"
+		"rhsusf_acc_harris_bipod",
+		"ACE_RangeCard"
 	};
 };
 class USARMY_OCP_recon_exp: USARMY_OCP_recon_common
@@ -59415,7 +58767,6 @@ class USARMY_OCP_recon_exp: USARMY_OCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -59485,7 +58836,6 @@ class USARMY_OCP_diver_common: USARMY_OCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -59545,7 +58895,6 @@ class USARMY_OCP_diver_tl: USARMY_OCP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -59578,7 +58927,6 @@ class USARMY_OCP_diver_exp: USARMY_OCP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -59601,7 +58949,6 @@ class USARMY_OCP_diver_cm: USARMY_OCP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -59666,7 +59013,6 @@ class USARMY_OCP_diver_dm: USARMY_OCP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -59736,7 +59082,6 @@ class USARMY_OCP_sniper_common: USARMY_OCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -59801,7 +59146,6 @@ class USARMY_OCP_sniper_spot: USARMY_OCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -59920,7 +59264,6 @@ class USARMY_OCP_sniper_exp: USARMY_OCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -60158,7 +59501,6 @@ class USARMY_OCP_logistics_common: CommonUSARMY_OCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -60205,7 +59547,6 @@ class USARMY_OCP_medevac_common: CommonUSARMY_OCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -60243,7 +59584,6 @@ class USARMY_OCP_medevac_doc: USARMY_OCP_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -60316,7 +59656,6 @@ class USARMY_OCP_medevac_drv: USARMY_OCP_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -60393,7 +59732,6 @@ class CommonUSARMY_UCP: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -60479,7 +59817,6 @@ class USARMY_UCP_company_common: CommonUSARMY_UCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -60548,7 +59885,6 @@ class USARMY_UCP_company_colo: USARMY_UCP_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -60562,7 +59898,6 @@ class USARMY_UCP_company_fo: USARMY_UCP_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -60628,7 +59963,6 @@ class USARMY_UCP_platoon_common: CommonUSARMY_UCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -60692,10 +60026,12 @@ class USARMY_UCP_platoon_uav: USARMY_UCP_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"b_UavTerminal"
 	};
 };
@@ -60728,6 +60064,10 @@ class USARMY_UCP_platoon_jtac: USARMY_UCP_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -60773,17 +60113,18 @@ class USARMY_UCP_platoon_medic: USARMY_UCP_platoon_common
 		"B_Kitbag_rgr",
 		"B_Kitbag_cbr"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -60865,7 +60206,6 @@ class USARMY_UCP_squad_sl: CommonUSARMY_UCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -60895,7 +60235,6 @@ class USARMY_UCP_squad_ftl: CommonUSARMY_UCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -61223,23 +60562,15 @@ class USARMY_UCP_squad_cm: CommonUSARMY_UCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -61265,7 +60596,6 @@ class USARMY_UCP_squad_dm: CommonUSARMY_UCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -61297,7 +60627,6 @@ class USARMY_UCP_squad_eng: CommonUSARMY_UCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -61616,7 +60945,6 @@ class USARMY_UCP_weapons_mort: USARMY_UCP_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -61633,7 +60961,6 @@ class USARMY_UCP_weapons_amort: USARMY_UCP_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -61646,7 +60973,6 @@ class USARMY_UCP_weapons_acmort: USARMY_UCP_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -61730,7 +61056,6 @@ class USARMY_UCP_recon_common: CommonUSARMY_UCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -61777,7 +61102,6 @@ class USARMY_UCP_recon_rm: USARMY_UCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -61844,7 +61168,6 @@ class USARMY_UCP_recon_tl: USARMY_UCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -61988,7 +61311,6 @@ class USARMY_UCP_recon_cm: USARMY_UCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -62058,12 +61380,12 @@ class USARMY_UCP_recon_dm: USARMY_UCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"rhsusf_acc_harris_bipod"
+		"rhsusf_acc_harris_bipod",
+		"ACE_RangeCard"
 	};
 };
 class USARMY_UCP_recon_exp: USARMY_UCP_recon_common
@@ -62105,7 +61427,6 @@ class USARMY_UCP_recon_exp: USARMY_UCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -62175,7 +61496,6 @@ class USARMY_UCP_diver_common: USARMY_UCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -62235,7 +61555,6 @@ class USARMY_UCP_diver_tl: USARMY_UCP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -62268,7 +61587,6 @@ class USARMY_UCP_diver_exp: USARMY_UCP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -62291,7 +61609,6 @@ class USARMY_UCP_diver_cm: USARMY_UCP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -62356,7 +61673,6 @@ class USARMY_UCP_diver_dm: USARMY_UCP_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -62426,7 +61742,6 @@ class USARMY_UCP_sniper_common: USARMY_UCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -62491,7 +61806,6 @@ class USARMY_UCP_sniper_spot: USARMY_UCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -62610,7 +61924,6 @@ class USARMY_UCP_sniper_exp: USARMY_UCP_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -62849,7 +62162,6 @@ class USARMY_UCP_logistics_common: CommonUSARMY_UCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -62896,7 +62208,6 @@ class USARMY_UCP_medevac_common: CommonUSARMY_UCP
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -62934,7 +62245,6 @@ class USARMY_UCP_medevac_doc: USARMY_UCP_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -63007,7 +62317,6 @@ class USARMY_UCP_medevac_drv: USARMY_UCP_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -63114,7 +62423,6 @@ class CommonUSMC_D: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -63206,7 +62514,6 @@ class USMC_D_company_common: CommonUSMC_D
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -63275,7 +62582,6 @@ class USMC_D_company_colo: USMC_D_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -63289,7 +62595,6 @@ class USMC_D_company_fo: USMC_D_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -63357,7 +62662,6 @@ class USMC_D_platoon_common: CommonUSMC_D
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -63421,10 +62725,12 @@ class USMC_D_platoon_uav: USMC_D_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"b_UavTerminal"
 	};
 };
@@ -63457,6 +62763,10 @@ class USMC_D_platoon_jtac: USMC_D_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -63502,17 +62812,18 @@ class USMC_D_platoon_medic: USMC_D_platoon_common
 		"B_Kitbag_rgr",
 		"B_Kitbag_cbr"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -63608,7 +62919,6 @@ class USMC_D_squad_sl: CommonUSMC_D
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -63638,7 +62948,6 @@ class USMC_D_squad_ftl: CommonUSMC_D
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -63965,23 +63274,15 @@ class USMC_D_squad_cm: CommonUSMC_D
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -64007,7 +63308,6 @@ class USMC_D_squad_dm: CommonUSMC_D
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -64039,7 +63339,6 @@ class USMC_D_squad_eng: CommonUSMC_D
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -64359,7 +63658,6 @@ class USMC_D_weapons_mort: USMC_D_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -64376,7 +63674,6 @@ class USMC_D_weapons_amort: USMC_D_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -64389,7 +63686,6 @@ class USMC_D_weapons_acmort: USMC_D_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -64475,7 +63771,6 @@ class USMC_D_recon_common: CommonUSMC_D
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -64522,7 +63817,6 @@ class USMC_D_recon_rm: USMC_D_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -64589,7 +63883,6 @@ class USMC_D_recon_tl: USMC_D_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -64747,7 +64040,6 @@ class USMC_D_recon_cm: USMC_D_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -64817,12 +64109,12 @@ class USMC_D_recon_dm: USMC_D_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"rhsusf_acc_harris_bipod"
+		"rhsusf_acc_harris_bipod",
+		"ACE_RangeCard"
 	};
 };
 class USMC_D_recon_exp: USMC_D_recon_common
@@ -64864,7 +64156,6 @@ class USMC_D_recon_exp: USMC_D_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -64934,7 +64225,6 @@ class USMC_D_diver_common: USMC_D_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -64994,7 +64284,6 @@ class USMC_D_diver_tl: USMC_D_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -65027,7 +64316,6 @@ class USMC_D_diver_exp: USMC_D_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -65050,7 +64338,6 @@ class USMC_D_diver_cm: USMC_D_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -65115,7 +64402,6 @@ class USMC_D_diver_dm: USMC_D_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -65185,7 +64471,6 @@ class USMC_D_sniper_common: USMC_D_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -65250,7 +64535,6 @@ class USMC_D_sniper_spot: USMC_D_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -65371,7 +64655,6 @@ class USMC_D_sniper_exp: USMC_D_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -65614,7 +64897,6 @@ class USMC_D_logistics_common: CommonUSMC_D
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -65661,7 +64943,6 @@ class USMC_D_medevac_common: CommonUSMC_D
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -65699,7 +64980,6 @@ class USMC_D_medevac_doc: USMC_D_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -65772,7 +65052,6 @@ class USMC_D_medevac_drv: USMC_D_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"
@@ -65878,7 +65157,6 @@ class CommonUSMC_W: CommonDefault
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet"
 	};
 	headgear[]=
@@ -65969,7 +65247,6 @@ class USMC_W_company_common: CommonUSMC_W
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -66038,7 +65315,6 @@ class USMC_W_company_colo: USMC_W_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"CL_Logitracker"
@@ -66052,7 +65328,6 @@ class USMC_W_company_fo: USMC_W_company_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
@@ -66119,7 +65394,6 @@ class USMC_W_platoon_common: CommonUSMC_W
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools"
 	};
@@ -66183,10 +65457,12 @@ class USMC_W_platoon_uav: USMC_W_platoon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_UAVBattery",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
 		"b_UavTerminal"
 	};
 };
@@ -66218,6 +65494,10 @@ class USMC_W_platoon_jtac: USMC_W_platoon_common
 	{
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
 	};
 	magazines[]=
 	{
@@ -66262,17 +65542,18 @@ class USMC_W_platoon_medic: USMC_W_platoon_common
 	{
 		"B_Kitbag_rgr"
 	};
+	gps[]=
+	{
+		""
+	};
 	items[]=
 	{
 		"ACE_EarPlugs",
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_MapTools",
-		"ACE_personalAidKit",
-		2,
 		"ACE_salineIV_500",
 		10,
 		"ACE_surgicalKit",
@@ -66368,7 +65649,6 @@ class USMC_W_squad_sl: CommonUSMC_W
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
@@ -66398,7 +65678,6 @@ class USMC_W_squad_ftl: CommonUSMC_W
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item"
 	};
@@ -66723,23 +66002,15 @@ class USMC_W_squad_cm: CommonUSMC_W
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_fieldDressing",
-		10,
+		20,
 		"ACE_elasticBandage",
-		30,
+		40,
 		"ACE_quikclot",
 		20,
 		"ACE_tourniquet",
-		4,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV_500",
-		2,
-		"ACE_surgicalKit"
+		4
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -66765,7 +66036,6 @@ class USMC_W_squad_dm: CommonUSMC_W
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeCard"
 	};
@@ -66797,7 +66067,6 @@ class USMC_W_squad_eng: CommonUSMC_W
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ToolKit"
 	};
@@ -67115,7 +66384,6 @@ class USMC_W_weapons_mort: USMC_W_weapons_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -67132,7 +66400,6 @@ class USMC_W_weapons_amort: USMC_W_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
@@ -67145,7 +66412,6 @@ class USMC_W_weapons_acmort: USMC_W_assistant_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_1Rnd_82mm_Mo_HE",
 		5
@@ -67230,7 +66496,6 @@ class USMC_W_recon_common: CommonUSMC_W
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -67277,7 +66542,6 @@ class USMC_W_recon_rm: USMC_W_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -67344,7 +66608,6 @@ class USMC_W_recon_tl: USMC_W_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -67502,7 +66765,6 @@ class USMC_W_recon_cm: USMC_W_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -67572,12 +66834,12 @@ class USMC_W_recon_dm: USMC_W_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"rhsusf_acc_harris_bipod"
+		"rhsusf_acc_harris_bipod",
+		"ACE_RangeCard"
 	};
 };
 class USMC_W_recon_exp: USMC_W_recon_common
@@ -67618,7 +66880,6 @@ class USMC_W_recon_exp: USMC_W_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -67688,7 +66949,6 @@ class USMC_W_diver_common: USMC_W_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -67748,7 +67008,6 @@ class USMC_W_diver_tl: USMC_W_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -67781,7 +67040,6 @@ class USMC_W_diver_exp: USMC_W_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -67804,7 +67062,6 @@ class USMC_W_diver_cm: USMC_W_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -67869,7 +67126,6 @@ class USMC_W_diver_dm: USMC_W_diver_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -67939,7 +67195,6 @@ class USMC_W_sniper_common: USMC_W_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -68004,7 +67259,6 @@ class USMC_W_sniper_spot: USMC_W_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -68125,7 +67379,6 @@ class USMC_W_sniper_exp: USMC_W_recon_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
@@ -68366,7 +67619,6 @@ class USMC_W_logistics_common: CommonUSMC_W
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ToolKit"
@@ -68413,7 +67665,6 @@ class USMC_W_medevac_common: CommonUSMC_W
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker"
 	};
@@ -68450,7 +67701,6 @@ class USMC_W_medevac_doc: USMC_W_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_personalAidKit",
@@ -68523,7 +67773,6 @@ class USMC_W_medevac_drv: USMC_W_medevac_common
 		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
-		"ACE_morphine",
 		"ACE_tourniquet",
 		"CL_Logitracker",
 		"ACE_Banana"

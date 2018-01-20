@@ -9,6 +9,9 @@
 #ifndef ACE_MICRODAGR_MAPFILL
     #define ACE_MICRODAGR_MAPFILL 1
 #endif
+#ifndef ACE_INTERACTION_TEAMMANAGEMENT
+    #define ACE_INTERACTION_TEAMMANAGEMENT 0
+#endif
 
 class GVAR(easytrack) {
     title = "xru_addons: [Easytrack] Allow BFT/RFT";
@@ -43,5 +46,16 @@ class GVAR(ace_microdagr) {
     };
     default = ACE_MICRODAGR_MAPFILL;
     function = QFUNC(ace_microdagr);
+    isGlobal = 1;
+};
+class GVAR(ace_teamManagement) {
+    title = "xru_addons: [ACE] Team Management";
+    values[] = {0,1};
+    texts[] = {
+        "Disabled",
+        "Enabled"
+    };
+    default = ACE_INTERACTION_TEAMMANAGEMENT;
+    function = QFUNC(ace_teamManagement);
     isGlobal = 1;
 };

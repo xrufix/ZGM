@@ -15,6 +15,8 @@
 
 #include "script_component.hpp"
 
+if !isServer exitWith {};
+
 ["CaManBase", "init", {
 	private _unit = (_this select 0);
 	if (isPlayer _unit) exitWith {};

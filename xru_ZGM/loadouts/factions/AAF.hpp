@@ -6,7 +6,7 @@
 #define	UNIFORM_SINGLE      ARR_1("U_I_CombatUniform")        // Für Inventar
 #define UNIFORM             ARR_2(UNIFORM_SINGLE,"U_I_CombatUniform_shortsleeve")      // Für Zufallsauswahl
 #define UNIFORM_COMPANY     ARR_1("U_I_OfficerUniform")  
-#define UNIFORM_RECON     ARR_1("xru_u_coveralls_urbancamo")
+#define UNIFORM_RECON       ARR_1("xru_u_coveralls_urbancamo")
 #define UNIFORM_DIVER       ARR_1("U_i_Wetsuit")
 #define UNIFORM_CREW        ARR_1("U_C_WorkerCoveralls")
 #define UNIFORM_HELICOPTER  ARR_1("u_i_helipilotcoveralls")
@@ -17,7 +17,7 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      ARR_1("V_EOD_olive_F")
-#define VEST_OFFICER       ARR_1("V_Rangemaster_belt")
+#define VEST_OFFICER    ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      ARR_1("V_PlateCarrierIA1_dgtl")
 #define VEST_RIFLEMAN   ARR_1("V_PlateCarrierIA2_dgtl")
 #define VEST_GRENADIER  ARR_1("V_PlateCarrierIAGL_dgtl")
@@ -99,19 +99,19 @@
 #define MAG_CARBINE_TRACER  MAG_RIFLE_TRACER
 
 // SF CARBINES
-#define RIFLE_RECON              WEAPON("arifle_Mk20_plain_F",LASERPOINTER,RCO,"muzzle_snds_m_snd_F")
-#define RIFLE_UGL_RECON          WEAPON("arifle_Mk20_GL_plain_F",LASERPOINTER,CCO,"muzzle_snds_m_snd_F")
-#define RIFLE_RECON_TAN           RIFLE_RECON
-#define RIFLE_UGL_RECON_TAN       RIFLE_UGL_RECON
-#define RIFLE_DIVER 		WEAPON("arifle_TRG21_F",LASERPOINTER,RCO,"muzzle_snds_m_khk_F")
-#define RIFLE_UGL_DIVER 	WEAPON("arifle_TRG21_gl_F",LASERPOINTER,CCO,"muzzle_snds_m_khk_F")
+#define RIFLE_RECON             WEAPON("arifle_Mk20_plain_F",LASERPOINTER,RCO,"muzzle_snds_m_snd_F")
+#define RIFLE_UGL_RECON         WEAPON("arifle_Mk20_GL_plain_F",LASERPOINTER,CCO,"muzzle_snds_m_snd_F")
+#define RIFLE_RECON_TAN         RIFLE_RECON
+#define RIFLE_UGL_RECON_TAN     RIFLE_UGL_RECON
+#define RIFLE_DIVER 		    WEAPON("arifle_TRG21_F",LASERPOINTER,RCO,"muzzle_snds_m_khk_F")
+#define RIFLE_UGL_DIVER 	    WEAPON("arifle_TRG21_gl_F",LASERPOINTER,CCO,"muzzle_snds_m_khk_F")
 
 #define MAG_RIFLE_RECON          MAG_RIFLE
 #define MAG_RIFLE_RECON_TRACER   MAG_RIFLE_TRACER
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
 #define DMR         WEAPON("srifle_DMR_03_khaki_F",LASERPOINTER,"optic_KHS_blk",DMR_BIPOD)
-#define DMR_RECON      WEAPON("srifle_DMR_03_woodland_F",LASERPOINTER,"optic_KHS_blk","muzzle_snds_B_khk_F")
+#define DMR_RECON   WEAPON("srifle_DMR_03_woodland_F",LASERPOINTER,"optic_KHS_blk","muzzle_snds_B_khk_F")
 #define DMR_DIVER   WEAPON("srifle_DMR_03_F",LASERPOINTER,"optic_KHS_blk","muzzle_snds_b")
 
 #define MAG_DMR     ARR_1("20Rnd_762x51_Mag")
@@ -179,7 +179,7 @@
 #define GOGGLES         ARR_1("")
 #define GOGGLES_OFFICER ARR_3("","G_Spectacles","G_Aviator")
 #define GOGGLES_FULL    ARR_2("G_Combat","G_Balaclava_combat")
-#define GOGGLES_SF		ARR_8("","G_Balaclava_blk","G_Balaclava_lowprofile","g_bandana_shades","g_bandana_blk","G_Squares","G_Tactical_Clear","G_Tactical_black")
+#define GOGGLES_SF		ARR_8("","G_Balaclava_blk","G_Balaclava_lowprofile","g_bandana_shades","g_bandanna_blk","G_Squares","G_Tactical_Clear","G_Tactical_black")
 #define GOGGLES_SF_FULL GOGGLES_SF
 #define GOGGLES_DIVER	ARR_1("G_i_Diving")
 #define GOGGLES_PILOT	ARR_1("G_Aviator")
