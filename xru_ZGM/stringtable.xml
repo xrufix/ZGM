@@ -6,6 +6,10 @@
                 <English>AAF - Altis Armed Forces</English>
                 <German>AAF - Altische Streitkräfte</German>
             </Key>
+            <Key ID="STR_ZGM_FACTIONS_BHEER">
+                <English>AT - Austrian Federal Army</English>
+                <German>AT - Österreichisches Bundesheer</German>
+            </Key>
             <Key ID="STR_ZGM_FACTIONS_BW_FLECK">
                 <German>BW - Bundeswehr (Flecktarn)</German>
             </Key>

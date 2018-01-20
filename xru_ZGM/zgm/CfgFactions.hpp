@@ -6,6 +6,11 @@ class CfgFactions {
         icon = "\a3\Data_f\cfgFactionClasses_IND_ca.paa";
         sideShort = "i";
     };
+    class BHEER {
+        displayName = CSTRING(FACTIONS,BHEER);
+        icon = "zgm\ui\flags\bheer.paa";
+        sideShort = "i";
+    };
     class BW_FLECK {
         displayName = CSTRING(FACTIONS,BW_FLECK);
         icon = "\bwa3_units\data\bwa3_faction_icon.paa";
@@ -38,6 +43,7 @@ class CfgFactions {
     };
     class IDF {
         displayName = CSTRING(FACTIONS,IDF);
+        icon = "zgm\ui\flags\idf.paa";
         sideShort = "i";
     };
     class IRAN {

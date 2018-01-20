@@ -29,7 +29,7 @@ class params {
 };
 
 // xru_zgm
-#include "zgm\dialog.hpp"
+#include "zgm\ui\dialog.hpp"
 #include "zgm\CfgFactions.hpp"
 #include "zgm\CfgRoles.hpp"
 

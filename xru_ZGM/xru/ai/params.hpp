@@ -1,5 +1,5 @@
 #define COMPONENT ai
-
+/*
 class GVAR(skill) {
     title = "xru_ai: AI Skill";
     values[] = {0,2,4,6,8,10};
@@ -15,3 +15,4 @@ class GVAR(skill) {
     function = QFUNC(skill);
     isGlobal = 0;
 };
+*/

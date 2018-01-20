@@ -2,6 +2,10 @@
 #include "factions\AAF.hpp"
 #include "common\template.hpp"
 
+#define FACTION BHEER
+#include "factions\BHEER.hpp"
+#include "common\template.hpp"
+
 #define FACTION BW_FLECK
 #include "factions\BW_FLECK.hpp"
 #include "common\template.hpp"
