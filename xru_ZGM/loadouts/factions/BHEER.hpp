@@ -85,13 +85,12 @@
 #define MAG_RIFLE_TRACER ARR_1("hlc_30Rnd_556x45_T_AUG")
 
 // PDW
-#define PDW     WEAPON("hgun_PDW2000_F","","","")
-
-#define MAG_PDW	ARR_1("30Rnd_9x21_Mag")
+#define PDW     ARR_1("hlc_rifle_auga2carb")
+#define MAG_PDW	MAG_RIFLE
 
 // CARBINE
 
-#define CARBINE     ARR_1("hlc_rifle_auga2carb")
+#define CARBINE     WEAPON("hlc_rifle_auga2carb",FLASHLIGHT,RCO,"")
 #define CARBINE_UGL	RIFLE_UGL_CCO
 
 #define CARBINE_CCO        CARBINE
@@ -112,7 +111,7 @@
 #define MAG_RIFLE_RECON_TRACER   ARR_1("hlc_30Rnd_556x45_TDIM_AUG")
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR           WEAPON("hlc_rifle_auga3","","optic_dms","")
+#define DMR           WEAPON("hlc_rifle_auga2lsw_b","","optic_dms","")
 #define MAG_DMR       ARR_1("hlc_30Rnd_556x45_SOST_AUG")
 
 #define DMR_RECON     WEAPON("srifle_DMR_03_multicam_F",LASERPOINTER,"optic_dms","muzzle_snds_B_khk_F")
@@ -124,7 +123,6 @@
 
 #define SR_AM         WEAPON("rhs_weap_M107_w","rhsusf_acc_premier","","")
 #define MAGS_SR_AM    ARR_2("rhsusf_mag_10Rnd_STD_50BMG_M33",6)
-
 
 // AUTOMATIC RIFLES & MACHINE GUNS
 #define AUTORIFLE            WEAPON("hlc_lmg_MG3","","","")
@@ -138,14 +136,12 @@
 #define MAGS_MMG      ARR_2("hlc_100Rnd_762x51_M_MG3",2)
 #define MAGS_MMG_ASST ARR_2("hlc_100Rnd_762x51_M_MG3",4)
 
-
 /* ###################### - SIDEARMS - ###################### */
 #define PISTOL		WEAPON("rhsusf_weap_glock17g4","","","")
 #define PISTOL_SF	WEAPON("rhsusf_weap_glock17g4","rhsusf_acc_omega9k","acc_flashlight_pistol","")
 
 #define MAG_PISTOL 		ARR_1("rhsusf_mag_17Rnd_9x19_FMJ")
 #define MAG_PISTOL_SF 	ARR_1("rhsusf_mag_17Rnd_9x19_FMJ")
-
 
 /* ###################### - LAUNCHERS - ###################### */
 #define AT_LIGHT	    WEAPON("rhs_weap_m72a7","","","")
@@ -162,8 +158,6 @@
 #define AT_MISSILE              WEAPON("launch_nlaw_f","","","")
 #define MAGS_AT_MISSILE         ARR_1("ace_chemlight_white")
 #define MAGS_AT_MISSILE_ASST    MAGS_AT_MISSILE
-
-
 
 /* ###################### - HEADGEAR - ###################### */
 // GENERAL INFANTRY
@@ -184,8 +178,6 @@
 #define CAP_XO      ARR_1("H_Beret_blk")
 #define CAP_OFFICER ARR_1("h_cap_blk")
 
-
-
 /* ###################### - GOGGLES / FACEWEAR - ###################### */
 #define GOGGLES         ARR_1("")
 #define GOGGLES_OFFICER ARR_3("","G_Spectacles","G_Aviator")
@@ -195,26 +187,18 @@
 #define GOGGLES_DIVER	ARR_1("G_B_Diving")
 #define GOGGLES_PILOT	ARR_1("G_Aviator")
 
-
-
 /* ###################### - NIGHT VISION DEVICES - ###################### */
 #define NVG	    ARR_1("")
 #define NVG_SF  ARR_1("CUP_NVG_PVS7")
-
-
 
 /* ###################### - BINOCULARS - ###################### */
 #define BINOCULAR	ARR_1("Binocular")
 #define RANGEFINDER	ARR_1("ACE_Vector")
 #define DESIGNATOR	ARR_1("Laserdesignator_01_khk_f")
 
-
-
 /* ###################### - RADIOS - ###################### */
 #define RADIO_HAND	ARR_1("ACRE_SEM52SL")
 #define RADIO_PACK 	ARR_1("ACRE_SEM70")
-
-
 
 /* ###################### - INSIGNIA - ###################### */
 // Kann in CfgLoadouts.hpp überschrieben werden.
