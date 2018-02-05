@@ -15,3 +15,5 @@ if (!isMultiplayer)  then     { [localHC] execVM "initHC.sqf" };
 
 // Hier wird das Briefing automatisch eingefügt und ausgeführt
 #include "briefing.sqf"
+
+{_x enableChannel false} forEach (getArray (missionConfigFile >> "disableChannels"));
