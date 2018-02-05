@@ -2586,19 +2586,13 @@ class BHEER_company_common: CommonBHEER
 	};
 	primary[]=
 	{
-		
-		{
-			"hgun_PDW2000_F",
-			"",
-			"",
-			""
-		}
+		"hlc_rifle_auga2carb"
 	};
 	magazines[]=
 	{
 		"rhsusf_mag_17Rnd_9x19_FMJ",
 		3,
-		"30Rnd_9x21_Mag",
+		"hlc_30Rnd_556x45_B_AUG",
 		3
 	};
 	items[]=
@@ -2705,7 +2699,13 @@ class BHEER_platoon_common: CommonBHEER
 	};
 	primary[]=
 	{
-		"hlc_rifle_auga2carb"
+		
+		{
+			"hlc_rifle_auga2carb",
+			"acc_flashlight",
+			"optic_mrco",
+			""
+		}
 	};
 	magazines[]=
 	{
@@ -3233,7 +3233,7 @@ class BHEER_squad_dm: CommonBHEER
 	{
 		
 		{
-			"hlc_rifle_auga3",
+			"hlc_rifle_auga2lsw_b",
 			"",
 			"optic_dms",
 			""
@@ -4535,7 +4535,13 @@ class BHEER_crew_common: CommonBHEER
 	};
 	primary[]=
 	{
-		"hlc_rifle_auga2carb"
+		
+		{
+			"hlc_rifle_auga2carb",
+			"acc_flashlight",
+			"optic_mrco",
+			""
+		}
 	};
 	magazines[]=
 	{
@@ -4704,7 +4710,13 @@ class BHEER_logistics_common: CommonBHEER
 	};
 	primary[]=
 	{
-		"hlc_rifle_auga2carb"
+		
+		{
+			"hlc_rifle_auga2carb",
+			"acc_flashlight",
+			"optic_mrco",
+			""
+		}
 	};
 	magazines[]=
 	{
