@@ -4,35 +4,67 @@
 #define FACTION_PARAM(var1,var2) \
 class DOUBLES(faction,var1) { \
     title = CSTRING(PARAMS,var1); \
-    values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26}; \
+    values[] = { \
+        100, \
+        125, \
+        150, \
+        175, \
+        200, \
+        225, \
+        250, \
+        275, \
+        300, \
+        325, \
+        350, \
+        375, \
+        400, \
+        425, \
+        450, \
+        475, \
+        500, \
+        525, \
+        550, \
+        575, \
+        600, \
+        625, \
+        650, \
+        675, \
+        700, \
+        725, \
+        750, \
+        775, \
+        800 \
+    }; \
     texts[] = { \
-/* 0 */ CSTRING(FACTIONS,AAF), \
-        CSTRING(FACTIONS,BHEER), \
-        CSTRING(FACTIONS,BW_FLECK), \
-        CSTRING(FACTIONS,BW_TROP), \
-        CSTRING(FACTIONS,CDF), \
-        CSTRING(FACTIONS,CHINA), \
-        CSTRING(FACTIONS,CHINA_GRN), \
-/* 7 */ CSTRING(FACTIONS,FIA), \
-        CSTRING(FACTIONS,IDF), \
-        CSTRING(FACTIONS,IRAN), \
-        CSTRING(FACTIONS,IRAN_GRN), \
-        CSTRING(FACTIONS,IRAN_URB), \
-/* 12 */CSTRING(FACTIONS,NATO_CTRG), \
-        CSTRING(FACTIONS,NATO_MTP), \
-        CSTRING(FACTIONS,NATO_TRPC), \
-        CSTRING(FACTIONS,NATO_WDL), \
-        CSTRING(FACTIONS,RU_DES), \
-/* 17 */CSTRING(FACTIONS,RU_EMR), \
-        CSTRING(FACTIONS,RU_FLORA), \
-        CSTRING(FACTIONS,RU_MOUNT), \
-        CSTRING(FACTIONS,SYND), \
-/* 21 */CSTRING(FACTIONS,TAKI_INS), \
-        CSTRING(FACTIONS,TAKISTAN), \
-        CSTRING(FACTIONS,USARMY_OCP), \
-        CSTRING(FACTIONS,USARMY_UCP), \
-        CSTRING(FACTIONS,USMC_D), \
-/* 26 */CSTRING(FACTIONS,USMC_W) \
+/* 100 */   CSTRING(FACTIONS,AAF), \
+/* 125 */   CSTRING(FACTIONS,BEL_DES), \
+/* 150 */   CSTRING(FACTIONS,BEL_WDL), \
+/* 175 */   CSTRING(FACTIONS,BHEER), \
+/* 200 */   CSTRING(FACTIONS,BW_FLECK), \
+/* 225 */   CSTRING(FACTIONS,BW_TROP), \
+/* 250 */   CSTRING(FACTIONS,CDF), \
+/* 275 */   CSTRING(FACTIONS,CHINA), \
+/* 300 */   CSTRING(FACTIONS,CHINA_GRN), \
+/* 325 */   CSTRING(FACTIONS,FIA), \
+/* 350 */   CSTRING(FACTIONS,IDF), \
+/* 375 */   CSTRING(FACTIONS,IRAN), \
+/* 400 */   CSTRING(FACTIONS,IRAN_GRN), \
+/* 425 */   CSTRING(FACTIONS,IRAN_URB), \
+/* 450 */   CSTRING(FACTIONS,NATO_CTRG), \
+/* 475 */   CSTRING(FACTIONS,NATO_MTP), \
+/* 500 */   CSTRING(FACTIONS,NATO_TRPC), \
+/* 525 */   CSTRING(FACTIONS,NATO_WDL), \
+/* 550 */   CSTRING(FACTIONS,RU_DES), \
+/* 575 */   CSTRING(FACTIONS,RU_EMR), \
+/* 600 */   CSTRING(FACTIONS,RU_FLORA), \
+/* 625 */   CSTRING(FACTIONS,RU_MOUNT), \
+/* 650 */   CSTRING(FACTIONS,SYND), \
+/* 675 */   CSTRING(FACTIONS,TAKI_INS), \
+/* 700 */   CSTRING(FACTIONS,TAKISTAN), \
+/* 725 */   CSTRING(FACTIONS,USARMY_OCP), \
+/* 750 */   CSTRING(FACTIONS,USARMY_UCP), \
+/* 775 */   CSTRING(FACTIONS,USMC_D), \
+/* 800 */   CSTRING(FACTIONS,USMC_W) \
     }; \
     default = var2; \
     function = QEFUNC(loadouts,GLUE(faction,var1)); \
