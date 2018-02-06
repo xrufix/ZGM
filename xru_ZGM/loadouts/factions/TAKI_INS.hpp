@@ -2,6 +2,9 @@
 #include "components\opfor.hpp"
 #include "components\ugl_rhsafrf.hpp"
 
+// #define EASYTRACK
+// #define HUNTIR
+
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "CUP_O_TKI_Khet_Jeans_04"        // Für Inventar
 #define UNIFORM             ARR_2( \

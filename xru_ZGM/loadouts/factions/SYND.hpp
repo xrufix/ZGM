@@ -2,6 +2,9 @@
 #include "components\indep.hpp"
 #include "components\ugl_rhsafrf.hpp"
 
+// #define EASYTRACK
+// #define HUNTIR
+
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "U_I_C_Soldier_Para_1_F"        // Für Inventar
 #define UNIFORM             ARR_5("U_I_C_Soldier_Bandit_1_F","U_I_C_Soldier_Bandit_2_F","U_I_C_Soldier_Bandit_3_F","U_I_C_Soldier_Bandit_4_F","U_I_C_Soldier_Bandit_5_F")

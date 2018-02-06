@@ -73,7 +73,6 @@ class CommonAAF: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -154,10 +153,10 @@ class AAF_company_common: CommonAAF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -222,10 +221,10 @@ class AAF_company_colo: AAF_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -235,10 +234,10 @@ class AAF_company_fo: AAF_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -279,10 +278,10 @@ class AAF_platoon_common: CommonAAF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -337,10 +336,10 @@ class AAF_platoon_uav: AAF_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -432,10 +431,10 @@ class AAF_platoon_medic: AAF_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -451,6 +450,10 @@ class AAF_platoon_medic: AAF_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -515,10 +518,10 @@ class AAF_squad_sl: CommonAAF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -544,7 +547,6 @@ class AAF_squad_ftl: CommonAAF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -601,7 +603,7 @@ class AAF_squad_gl: CommonAAF
 		{
 			"arifle_Mk20_GL_F",
 			"acc_pointer_ir",
-			"optic_aco",
+			"optic_mrco",
 			""
 		}
 	};
@@ -764,7 +766,6 @@ class AAF_squad_cm: CommonAAF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -798,7 +799,6 @@ class AAF_squad_dm: CommonAAF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -829,7 +829,6 @@ class AAF_squad_eng: CommonAAF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -1144,7 +1143,6 @@ class AAF_weapons_mort: AAF_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -1160,7 +1158,6 @@ class AAF_weapons_amort: AAF_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -1172,7 +1169,6 @@ class AAF_weapons_acmort: AAF_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -1234,10 +1230,10 @@ class AAF_recon_common: CommonAAF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -1247,7 +1243,7 @@ class AAF_recon_common: CommonAAF
 		"",
 		"G_Balaclava_blk",
 		"G_Balaclava_lowprofile",
-		"g_bandana_shades",
+		"g_bandanna_shades",
 		"g_bandanna_blk",
 		"G_Squares",
 		"G_Tactical_Clear",
@@ -1283,10 +1279,10 @@ class AAF_recon_rm: AAF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -1342,10 +1338,10 @@ class AAF_recon_tl: AAF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -1403,7 +1399,7 @@ class AAF_recon_ar: AAF_recon_common
 		"",
 		"G_Balaclava_blk",
 		"G_Balaclava_lowprofile",
-		"g_bandana_shades",
+		"g_bandanna_shades",
 		"g_bandanna_blk",
 		"G_Squares",
 		"G_Tactical_Clear",
@@ -1484,10 +1480,10 @@ class AAF_recon_cm: AAF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -1539,10 +1535,10 @@ class AAF_recon_dm: AAF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -1585,10 +1581,10 @@ class AAF_recon_exp: AAF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -1654,10 +1650,10 @@ class AAF_diver_common: AAF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -1719,10 +1715,10 @@ class AAF_diver_tl: AAF_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -1751,10 +1747,10 @@ class AAF_diver_exp: AAF_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -1773,10 +1769,10 @@ class AAF_diver_cm: AAF_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -1837,10 +1833,10 @@ class AAF_diver_dm: AAF_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -1907,10 +1903,10 @@ class AAF_sniper_common: AAF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -1972,10 +1968,10 @@ class AAF_sniper_spot: AAF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -2086,10 +2082,10 @@ class AAF_sniper_exp: AAF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -2167,6 +2163,15 @@ class AAF_crew_cmd: AAF_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class AAF_crew_jet: CommonAAF
 {
@@ -2223,6 +2228,15 @@ class AAF_crew_jet: CommonAAF
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class AAF_crew_heli: AAF_crew_common
 {
@@ -2273,6 +2287,15 @@ class AAF_crew_helipilot: AAF_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class AAF_logistics_common: CommonAAF
 {
@@ -2306,10 +2329,11 @@ class AAF_logistics_common: CommonAAF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -2352,7 +2376,6 @@ class AAF_medevac_common: CommonAAF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -2383,7 +2406,6 @@ class AAF_medevac_doc: AAF_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -2416,6 +2438,33 @@ class AAF_medevac_tl: AAF_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC152"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class AAF_medevac_heli: AAF_medevac_common
@@ -2454,7 +2503,4892 @@ class AAF_medevac_drv: AAF_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_Banana"
+	};
+};
+class CommonBEL_DES: CommonDefault
+{
+	side="Blufor";
+	sideShort="b";
+	faction="BEL_DES";
+	uniform[]=
+	{
+		"tfa_bel_des",
+		"tfa_bel_des_rs"
+	};
+	vest[]=
+	{
+		"rhsusf_mbav"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_cbr"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_STD_FG",
+			"acc_flashlight",
+			"",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Pistol_heavy_01_F",
+			"",
+			"",
+			""
+		}
+	};
+	launcher[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet"
+	};
+	headgear[]=
+	{
+		"TFAX_H_HelmetIA_bel2"
+	};
+	goggles[]=
+	{
+		""
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		""
+	};
+	map[]=
+	{
+		""
+	};
+	gps[]=
+	{
+		""
+	};
+	compass[]=
+	{
+		"ItemCompass"
+	};
+	watch[]=
+	{
+		"ItemWatch"
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_DES_company_common: CommonBEL_DES
+{
+	uniform[]=
+	{
+		"tfa_bel_des",
+		"tfa_bel_des_rs"
+	};
+	vest[]=
+	{
+		"rhsusf_mbav_light"
+	};
+	backpack[]=
+	{
+		"B_TacticalPack_oli"
+	};
+	primary[]=
+	{
+		"CUP_arifle_Mk16_CQC_black"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		3
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
 		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"h_cap_blk"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+};
+class BEL_DES_company_co: BEL_DES_company_common
+{
+	displayName="DN_CO_CO";
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class BEL_DES_company_xo: BEL_DES_company_common
+{
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class BEL_DES_company_mio: BEL_DES_company_common
+{
+};
+class BEL_DES_company_colo: BEL_DES_company_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class BEL_DES_company_fo: BEL_DES_company_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_RangeTable_82mm"
+	};
+};
+class BEL_DES_platoon_common: CommonBEL_DES
+{
+	vest[]=
+	{
+		"rhsusf_mbav_light"
+	};
+	backpack[]=
+	{
+		"B_TacticalPack_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC",
+			"acc_flashlight",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"TFAX_H_HelmetIA_bel2"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BEL_DES_platoon_pl: BEL_DES_platoon_common
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+};
+class BEL_DES_platoon_psgt: BEL_DES_platoon_common
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+};
+class BEL_DES_platoon_uav: BEL_DES_platoon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
+		"b_UavTerminal"
+	};
+};
+class BEL_DES_platoon_jtac: BEL_DES_platoon_common
+{
+	vest[]=
+	{
+		"rhsusf_mbav_grenadier"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_cbr"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM",
+			"acc_flashlight",
+			"",
+			""
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"Laserbatteries",
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2,
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+};
+class BEL_DES_platoon_medic: BEL_DES_platoon_common
+{
+	vest[]=
+	{
+		"rhsusf_mbav_medic"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_cbr"
+	};
+	gps[]=
+	{
+		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		50,
+		"ACE_quikclot",
+		30,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_DES_squad_sl: CommonBEL_DES
+{
+	vest[]=
+	{
+		"rhsusf_mbav_grenadier"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_STD_EGLM",
+			"acc_flashlight",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_HuntIR_M203",
+		4,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class BEL_DES_squad_ftl: CommonBEL_DES
+{
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item"
+	};
+};
+class BEL_DES_squad_ar: CommonBEL_DES
+{
+	vest[]=
+	{
+		"rhsusf_mbav_mg"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_lmg_minimipara_long",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"200Rnd_556x45_Box_Red_F",
+		4,
+		"200Rnd_556x45_Box_Tracer_Red_F",
+		"11Rnd_45ACP_Mag",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"MiniGrenade",
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"G_Combat"
+	};
+};
+class BEL_DES_squad_gl: CommonBEL_DES
+{
+	vest[]=
+	{
+		"rhsusf_mbav_grenadier"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_STD_EGLM",
+			"acc_flashlight",
+			"rhsusf_acc_eotech_552",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class BEL_DES_squad_gl2: CommonBEL_DES
+{
+	vest[]=
+	{
+		"rhsusf_mbav_grenadier"
+	};
+	primary[]=
+	{
+		"rhs_weap_m32"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		5,
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		5,
+		"rhsusf_mag_6Rnd_M714_white",
+		1,
+		"rhsusf_mag_6Rnd_M576_Buckshot",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BEL_DES_squad_light: CommonBEL_DES
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_STD_FG",
+			"acc_flashlight",
+			"rhsusf_acc_eotech_552",
+			""
+		}
+	};
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+};
+class BEL_DES_squad_aar: CommonBEL_DES
+{
+	backpack[]=
+	{
+		"B_Kitbag_cbr"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_STD_FG",
+			"acc_flashlight",
+			"rhsusf_acc_eotech_552",
+			""
+		}
+	};
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+	magazines[]=
+	{
+		"ACE_SpareBarrel",
+		"200Rnd_556x45_Box_Red_F",
+		2,
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BEL_DES_squad_lat: CommonBEL_DES
+{
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_m72a7",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_m72a7_mag"
+	};
+};
+class BEL_DES_squad_cm: CommonBEL_DES
+{
+	vest[]=
+	{
+		"rhsusf_mbav_medic"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_fieldDressing",
+		20,
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		4
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_DES_squad_dm: CommonBEL_DES
+{
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_SV",
+			"bipod_01_F_blk",
+			"rhsusf_acc_ACOG_d",
+			"acc_pointer_ir"
+		}
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeCard"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BEL_DES_squad_eng: CommonBEL_DES
+{
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ToolKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_DES_weapons_common: CommonBEL_DES
+{
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BEL_DES_assistant_common: BEL_DES_weapons_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_cbr"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class BEL_DES_weapons_mg: BEL_DES_weapons_common
+{
+	vest[]=
+	{
+		"rhsusf_mbav_mg"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_lmg_mk48",
+			"bipod_01_F_blk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"hlc_100Rnd_762x51_M_M60E4",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	goggles[]=
+	{
+		"G_Combat"
+	};
+};
+class BEL_DES_weapons_amg: BEL_DES_assistant_common
+{
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"hlc_100Rnd_762x51_M_M60E4",
+		4,
+		"ACE_SpareBarrel"
+	};
+};
+class BEL_DES_weapons_hmg: BEL_DES_weapons_common
+{
+	backpack[]=
+	{
+		"RHS_M2_Gun_Bag"
+	};
+};
+class BEL_DES_weapons_ahmg: BEL_DES_assistant_common
+{
+	backpack[]=
+	{
+		"RHS_M2_MiniTripod_Bag"
+	};
+};
+class BEL_DES_weapons_gmg: BEL_DES_weapons_common
+{
+	backpack[]=
+	{
+		"RHS_Mk19_Gun_Bag"
+	};
+};
+class BEL_DES_weapons_agmg: BEL_DES_assistant_common
+{
+	backpack[]=
+	{
+		"RHS_Mk19_Tripod_Bag"
+	};
+};
+class BEL_DES_weapons_at: BEL_DES_weapons_common
+{
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"BWA3_RGW90",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"BWA3_RGW90_HH"
+	};
+};
+class BEL_DES_weapons_aat: BEL_DES_assistant_common
+{
+	backpack[]=
+	{
+		"B_Carryall_cbr"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"BWA3_RGW90_HH"
+	};
+};
+class BEL_DES_weapons_atgm: BEL_DES_weapons_common
+{
+	launcher[]=
+	{
+		
+		{
+			"launch_I_Titan_short_F",
+			"acc_OmniLight",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT"
+	};
+};
+class BEL_DES_weapons_aatgm: BEL_DES_assistant_common
+{
+	backpack[]=
+	{
+		"B_Carryall_cbr"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT",
+		2,
+		"Titan_AP"
+	};
+};
+class BEL_DES_weapons_aa: BEL_DES_weapons_common
+{
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_fim92",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_fim92_mag"
+	};
+};
+class BEL_DES_weapons_aaa: BEL_DES_assistant_common
+{
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_fim92_mag",
+		2
+	};
+};
+class BEL_DES_weapons_mort: BEL_DES_weapons_common
+{
+	backpack[]=
+	{
+		"i_Mortar_01_weapon_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class BEL_DES_weapons_amort: BEL_DES_assistant_common
+{
+	backpack[]=
+	{
+		"i_Mortar_01_support_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class BEL_DES_weapons_acmort: BEL_DES_assistant_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_1Rnd_82mm_Mo_HE",
+		5
+	};
+};
+class BEL_DES_recon_common: CommonBEL_DES
+{
+	uniform[]=
+	{
+		"rhs_uniform_g3_mc"
+	};
+	vest[]=
+	{
+		"VSM_RAV_operator_Multicam"
+	};
+	backpack[]=
+	{
+		"B_TacticalPack_mcamo"
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Pistol_heavy_01_F",
+			"muzzle_snds_acp",
+			"",
+			""
+		}
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_FG",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		},
+		
+		{
+			"CUP_arifle_Mk16_CQC_SFG",
+			"rhsusf_acc_g33_xps3_tan",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_blk",
+		"G_Balaclava_lowprofile",
+		"g_bandanna_shades",
+		"g_bandanna_blk",
+		"G_Squares",
+		"G_Tactical_Clear",
+		"G_Tactical_black"
+	};
+	headgear[]=
+	{
+		"rhsusf_opscore_mc_cover_pelt",
+		"rhsusf_opscore_mc_cover_pelt_nsw",
+		"rhsusf_opscore_mc_cover_pelt_cam"
+	};
+	nvgs[]=
+	{
+		"rhsusf_ANPVS_14"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_DES_recon_rm: BEL_DES_recon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_wirecutter"
+	};
+};
+class BEL_DES_recon_tl: BEL_DES_recon_common
+{
+	vest[]=
+	{
+		"VSM_LBT6094_operator_Multicam"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		},
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM",
+			"rhsusf_acc_g33_xps3",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"b_ir_grenade",
+		2,
+		"ACE_HuntIR_M203",
+		5
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BEL_DES_recon_ar: BEL_DES_recon_common
+{
+	vest[]=
+	{
+		"VSM_RAV_MG_Multicam"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_lmg_mk46mod1",
+			"ACE_muzzle_mzls_B",
+			"acc_pointer_ir",
+			"rhsusf_acc_eotech_xps3"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"hlc_200rnd_556x45_Mdim_SAW",
+		5,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_blk",
+		"G_Balaclava_lowprofile",
+		"g_bandanna_shades",
+		"g_bandanna_blk",
+		"G_Squares",
+		"G_Tactical_Clear",
+		"G_Tactical_black"
+	};
+};
+class BEL_DES_recon_gl: BEL_DES_recon_common
+{
+	vest[]=
+	{
+		"VSM_RAV_operator_Multicam"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		},
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM",
+			"rhsusf_acc_g33_xps3",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class BEL_DES_recon_lat: BEL_DES_recon_common
+{
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_m72a7",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_m72a7_mag"
+	};
+};
+class BEL_DES_recon_cm: BEL_DES_recon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		6,
+		"ACE_epinephrine",
+		12,
+		"ACE_salineIV_500",
+		3,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_DES_recon_dm: BEL_DES_recon_common
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk17_STD_FG",
+			"bipod_01_F_blk",
+			"rhsusf_acc_ACOG_MDO",
+			"CUP_muzzle_snds_SCAR_H"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"bipod_03_F_blk",
+		"ACE_RangeCard"
+	};
+};
+class BEL_DES_recon_exp: BEL_DES_recon_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_cbr"
+	};
+	secondary[]=
+	{
+		"ACE_VMM3"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"DemoCharge_Remote_Mag",
+		4,
+		"SatchelCharge_Remote_Mag",
+		"SLAMDirectionalMine_Wire_Mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BEL_DES_diver_common: BEL_DES_recon_common
+{
+	uniform[]=
+	{
+		"U_B_Wetsuit"
+	};
+	vest[]=
+	{
+		"V_RebreatherB"
+	};
+	backpack[]=
+	{
+		"xru_Carryall_blk"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_FG",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		},
+		
+		{
+			"CUP_arifle_Mk16_CQC_SFG",
+			"rhsusf_acc_g33_xps3_tan",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Pistol_heavy_01_F",
+			"muzzle_snds_acp",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"VSM_RAV_operator_Multicam",
+		"tfa_bel_des"
+	};
+	goggles[]=
+	{
+		"G_B_Diving"
+	};
+	headgear[]=
+	{
+		"rhsusf_opscore_mc_pelt",
+		"rhsusf_opscore_mc_pelt_nsw"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+};
+class BEL_DES_diver_rm: BEL_DES_diver_common
+{
+};
+class BEL_DES_diver_tl: BEL_DES_diver_common
+{
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"VSM_RAV_operator_Multicam",
+		"tfa_bel_des",
+		"ACE_MapTools"
+	};
+};
+class BEL_DES_diver_exp: BEL_DES_diver_common
+{
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"DemoCharge_Remote_Mag",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"VSM_RAV_operator_Multicam",
+		"tfa_bel_des",
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BEL_DES_diver_cm: BEL_DES_diver_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"VSM_RAV_operator_Multicam",
+		"tfa_bel_des",
+		"W_Defibrillator",
+		"ACE_fieldDressing",
+		5,
+		"ACE_elasticBandage",
+		15,
+		"ACE_quikclot",
+		15,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV",
+		4,
+		"ACE_surgicalKit"
+	};
+	binoculars[]=
+	{
+		"ACE_MX2A"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_DES_diver_dm: BEL_DES_diver_common
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk17_STD_FG",
+			"bipod_01_F_blk",
+			"rhsusf_acc_ACOG_MDO",
+			"CUP_muzzle_snds_SCAR_H"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"VSM_RAV_operator_Multicam",
+		"tfa_bel_des",
+		"bipod_03_F_blk"
+	};
+};
+class BEL_DES_diver_jtac: BEL_DES_diver_tl
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		},
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM",
+			"rhsusf_acc_g33_xps3",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2,
+		"Laserbatteries",
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2
+	};
+};
+class BEL_DES_sniper_common: BEL_DES_recon_common
+{
+	uniform[]=
+	{
+		"U_i_FullGhillie_ard"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"rhsusf_acc_ACOG_anpvs27",
+		"ACE_Rangecard"
+	};
+};
+class BEL_DES_sniper_spot: BEL_DES_recon_common
+{
+	uniform[]=
+	{
+		"U_i_FullGhillie_ard"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_Mk20_GL_plain_F",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"muzzle_snds_m_snd_F"
+		}
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"b_ir_grenade",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag",
+		8,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		4,
+		"ACE_HuntIR_M203",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_SpottingScope",
+		"ACE_Tripod",
+		"ACE_ATragMX",
+		"ACE_IR_Strobe_Item",
+		"ACE_Rangecard",
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BEL_DES_sniper_ap: BEL_DES_sniper_common
+{
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_awMagnum_FDE_ghillie",
+			"",
+			"rhsusf_acc_LEUPOLDMK4",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"hlc_5rnd_300WM_mk248_AWM",
+		5,
+		"hlc_5rnd_300WM_AP_AWM",
+		5,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class BEL_DES_sniper_am: BEL_DES_sniper_common
+{
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_M107_d",
+			"rhsusf_acc_premier",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"rhsusf_mag_10Rnd_STD_50BMG_M33",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class BEL_DES_sniper_exp: BEL_DES_recon_common
+{
+	uniform[]=
+	{
+		"U_i_FullGhillie_ard"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_Mk20_plain_F",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"muzzle_snds_m_snd_F"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"APERSTripMine_Wire_mag",
+		2,
+		"ClaymoreDirectionalMine_Remote_mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BEL_DES_crew_common: CommonBEL_DES
+{
+	uniform[]=
+	{
+		"tfa_bel_des",
+		"tfa_bel_des_rs"
+	};
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"rhsusf_mbav_light"
+	};
+	primary[]=
+	{
+		"CUP_arifle_Mk16_CQC"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"rhsusf_cvc_alt_helmet"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_DES_crew_cmd: BEL_DES_crew_common
+{
+	backpack[]=
+	{
+		"B_TacticalPack_oli"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BEL_DES_crew_jet: CommonBEL_DES
+{
+	uniform[]=
+	{
+		"U_B_PilotCoveralls"
+	};
+	vest[]=
+	{
+		""
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetFighter_B"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	watch[]=
+	{
+		"ACE_Altimeter"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BEL_DES_crew_heli: BEL_DES_crew_common
+{
+	uniform[]=
+	{
+		"tfa_bel_des",
+		"tfa_bel_des_rs"
+	};
+	headgear[]=
+	{
+		"rhsusf_hgu56p_mask"
+	};
+	map[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+};
+class BEL_DES_crew_helipilot: BEL_DES_crew_heli
+{
+	backpack[]=
+	{
+		"B_AssaultPack_cbr"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"rhsusf_hgu56p"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BEL_DES_logistics_common: CommonBEL_DES
+{
+	vest[]=
+	{
+		"rhsusf_mbav_light"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_cbr"
+	};
+	primary[]=
+	{
+		"CUP_arifle_Mk16_CQC"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"TFAX_H_HelmetIA_bel2"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker",
+		"ToolKit"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F",
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_DES_medevac_common: CommonBEL_DES
+{
+	primary[]=
+	{
+		""
+	};
+	secondary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker"
+	};
+	headgear[]=
+	{
+		"TFAX_H_HelmetIA_bel2"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class BEL_DES_medevac_doc: BEL_DES_medevac_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_cbr"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class BEL_DES_medevac_tl: BEL_DES_medevac_doc
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class BEL_DES_medevac_heli: BEL_DES_medevac_common
+{
+	uniform[]=
+	{
+		"tfa_bel_des",
+		"tfa_bel_des_rs"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"rhsusf_hgu56p"
+	};
+	nvgs[]=
+	{
+		"rhsusf_ANPVS_14"
+	};
+};
+class BEL_DES_medevac_drv: BEL_DES_medevac_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_Banana"
+	};
+};
+class CommonBEL_WDL: CommonDefault
+{
+	side="Blufor";
+	sideShort="b";
+	faction="BEL_WDL";
+	uniform[]=
+	{
+		"tfa_bel_wdl",
+		"tfa_bel_wdl_rs"
+	};
+	vest[]=
+	{
+		"rhsusf_mbav"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_rgr"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_STD_FG_woodland",
+			"acc_flashlight",
+			"",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Pistol_heavy_01_F",
+			"",
+			"",
+			""
+		}
+	};
+	launcher[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet"
+	};
+	headgear[]=
+	{
+		"TFAX_H_HelmetIA_bel"
+	};
+	goggles[]=
+	{
+		""
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		""
+	};
+	map[]=
+	{
+		""
+	};
+	gps[]=
+	{
+		""
+	};
+	compass[]=
+	{
+		"ItemCompass"
+	};
+	watch[]=
+	{
+		"ItemWatch"
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_WDL_company_common: CommonBEL_WDL
+{
+	uniform[]=
+	{
+		"tfa_bel_wdl",
+		"tfa_bel_wdl_rs"
+	};
+	vest[]=
+	{
+		"rhsusf_mbav_light"
+	};
+	backpack[]=
+	{
+		"B_TacticalPack_rgr"
+	};
+	primary[]=
+	{
+		"CUP_arifle_Mk16_CQC_black"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		3
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"h_cap_blk"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+};
+class BEL_WDL_company_co: BEL_WDL_company_common
+{
+	displayName="DN_CO_CO";
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class BEL_WDL_company_xo: BEL_WDL_company_common
+{
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class BEL_WDL_company_mio: BEL_WDL_company_common
+{
+};
+class BEL_WDL_company_colo: BEL_WDL_company_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class BEL_WDL_company_fo: BEL_WDL_company_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_RangeTable_82mm"
+	};
+};
+class BEL_WDL_platoon_common: CommonBEL_WDL
+{
+	vest[]=
+	{
+		"rhsusf_mbav_light"
+	};
+	backpack[]=
+	{
+		"B_TacticalPack_rgr"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_woodland",
+			"acc_flashlight",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"TFAX_H_HelmetIA_bel"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BEL_WDL_platoon_pl: BEL_WDL_platoon_common
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+};
+class BEL_WDL_platoon_psgt: BEL_WDL_platoon_common
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+};
+class BEL_WDL_platoon_uav: BEL_WDL_platoon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
+		"b_UavTerminal"
+	};
+};
+class BEL_WDL_platoon_jtac: BEL_WDL_platoon_common
+{
+	vest[]=
+	{
+		"rhsusf_mbav_grenadier"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM_woodland",
+			"acc_flashlight",
+			"",
+			""
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator_01_khk_f"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"Laserbatteries",
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2,
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+};
+class BEL_WDL_platoon_medic: BEL_WDL_platoon_common
+{
+	vest[]=
+	{
+		"rhsusf_mbav_medic"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	gps[]=
+	{
+		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		50,
+		"ACE_quikclot",
+		30,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_WDL_squad_sl: CommonBEL_WDL
+{
+	vest[]=
+	{
+		"rhsusf_mbav_grenadier"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_STD_EGLM_woodland",
+			"acc_flashlight",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_HuntIR_M203",
+		4,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class BEL_WDL_squad_ftl: CommonBEL_WDL
+{
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_IR_Strobe_Item"
+	};
+};
+class BEL_WDL_squad_ar: CommonBEL_WDL
+{
+	vest[]=
+	{
+		"rhsusf_mbav_mg"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_lmg_minimipara_long",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"200Rnd_556x45_Box_Red_F",
+		4,
+		"200Rnd_556x45_Box_Tracer_Red_F",
+		"11Rnd_45ACP_Mag",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"MiniGrenade",
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"G_Combat"
+	};
+};
+class BEL_WDL_squad_gl: CommonBEL_WDL
+{
+	vest[]=
+	{
+		"rhsusf_mbav_grenadier"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_STD_EGLM_woodland",
+			"acc_flashlight",
+			"rhsusf_acc_eotech_552_d",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class BEL_WDL_squad_gl2: CommonBEL_WDL
+{
+	vest[]=
+	{
+		"rhsusf_mbav_grenadier"
+	};
+	primary[]=
+	{
+		"rhs_weap_m32"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		5,
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		5,
+		"rhsusf_mag_6Rnd_M714_white",
+		1,
+		"rhsusf_mag_6Rnd_M576_Buckshot",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BEL_WDL_squad_light: CommonBEL_WDL
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_STD_FG_woodland",
+			"acc_flashlight",
+			"rhsusf_acc_eotech_552_d",
+			""
+		}
+	};
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+};
+class BEL_WDL_squad_aar: CommonBEL_WDL
+{
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_STD_FG_woodland",
+			"acc_flashlight",
+			"rhsusf_acc_eotech_552_d",
+			""
+		}
+	};
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+	magazines[]=
+	{
+		"ACE_SpareBarrel",
+		"200Rnd_556x45_Box_Red_F",
+		2,
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BEL_WDL_squad_lat: CommonBEL_WDL
+{
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_m72a7",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_m72a7_mag"
+	};
+};
+class BEL_WDL_squad_cm: CommonBEL_WDL
+{
+	vest[]=
+	{
+		"rhsusf_mbav_medic"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_fieldDressing",
+		20,
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		4
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_WDL_squad_dm: CommonBEL_WDL
+{
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_SV_woodland",
+			"bipod_01_F_blk",
+			"rhsusf_acc_ACOG_wd",
+			"acc_pointer_ir"
+		}
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeCard"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BEL_WDL_squad_eng: CommonBEL_WDL
+{
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ToolKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_WDL_weapons_common: CommonBEL_WDL
+{
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"rhsusf_mbav_rifleman"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BEL_WDL_assistant_common: BEL_WDL_weapons_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class BEL_WDL_weapons_mg: BEL_WDL_weapons_common
+{
+	vest[]=
+	{
+		"rhsusf_mbav_mg"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_lmg_mk48",
+			"bipod_01_F_blk",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"hlc_100Rnd_762x51_M_M60E4",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	goggles[]=
+	{
+		"G_Combat"
+	};
+};
+class BEL_WDL_weapons_amg: BEL_WDL_assistant_common
+{
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"hlc_100Rnd_762x51_M_M60E4",
+		4,
+		"ACE_SpareBarrel"
+	};
+};
+class BEL_WDL_weapons_hmg: BEL_WDL_weapons_common
+{
+	backpack[]=
+	{
+		"RHS_M2_Gun_Bag"
+	};
+};
+class BEL_WDL_weapons_ahmg: BEL_WDL_assistant_common
+{
+	backpack[]=
+	{
+		"RHS_M2_MiniTripod_Bag"
+	};
+};
+class BEL_WDL_weapons_gmg: BEL_WDL_weapons_common
+{
+	backpack[]=
+	{
+		"RHS_Mk19_Gun_Bag"
+	};
+};
+class BEL_WDL_weapons_agmg: BEL_WDL_assistant_common
+{
+	backpack[]=
+	{
+		"RHS_Mk19_Tripod_Bag"
+	};
+};
+class BEL_WDL_weapons_at: BEL_WDL_weapons_common
+{
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"BWA3_RGW90",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"BWA3_RGW90_HH"
+	};
+};
+class BEL_WDL_weapons_aat: BEL_WDL_assistant_common
+{
+	backpack[]=
+	{
+		"B_Carryall_oli"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"BWA3_RGW90_HH"
+	};
+};
+class BEL_WDL_weapons_atgm: BEL_WDL_weapons_common
+{
+	launcher[]=
+	{
+		
+		{
+			"launch_I_Titan_short_F",
+			"acc_OmniLight",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT"
+	};
+};
+class BEL_WDL_weapons_aatgm: BEL_WDL_assistant_common
+{
+	backpack[]=
+	{
+		"B_Carryall_oli"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT",
+		2,
+		"Titan_AP"
+	};
+};
+class BEL_WDL_weapons_aa: BEL_WDL_weapons_common
+{
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_fim92",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_fim92_mag"
+	};
+};
+class BEL_WDL_weapons_aaa: BEL_WDL_assistant_common
+{
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_fim92_mag",
+		2
+	};
+};
+class BEL_WDL_weapons_mort: BEL_WDL_weapons_common
+{
+	backpack[]=
+	{
+		"i_Mortar_01_weapon_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class BEL_WDL_weapons_amort: BEL_WDL_assistant_common
+{
+	backpack[]=
+	{
+		"i_Mortar_01_support_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+};
+class BEL_WDL_weapons_acmort: BEL_WDL_assistant_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_1Rnd_82mm_Mo_HE",
+		5
+	};
+};
+class BEL_WDL_recon_common: CommonBEL_WDL
+{
+	uniform[]=
+	{
+		"rhs_uniform_g3_mc"
+	};
+	vest[]=
+	{
+		"VSM_RAV_operator_Multicam"
+	};
+	backpack[]=
+	{
+		"B_TacticalPack_mcamo"
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Pistol_heavy_01_F",
+			"muzzle_snds_acp",
+			"",
+			""
+		}
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_FG_woodland",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		},
+		
+		{
+			"CUP_arifle_Mk16_CQC_SFG_woodland",
+			"rhsusf_acc_g33_xps3",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_blk",
+		"G_Balaclava_lowprofile",
+		"g_bandanna_shades",
+		"g_bandanna_blk",
+		"G_Squares",
+		"G_Tactical_Clear",
+		"G_Tactical_black"
+	};
+	headgear[]=
+	{
+		"rhsusf_opscore_mc_cover_pelt",
+		"rhsusf_opscore_mc_cover_pelt_nsw",
+		"rhsusf_opscore_mc_cover_pelt_cam"
+	};
+	nvgs[]=
+	{
+		"rhsusf_ANPVS_14"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_WDL_recon_rm: BEL_WDL_recon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_wirecutter"
+	};
+};
+class BEL_WDL_recon_tl: BEL_WDL_recon_common
+{
+	vest[]=
+	{
+		"VSM_LBT6094_operator_Multicam"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM_woodland",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		},
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM_woodland",
+			"rhsusf_acc_g33_xps3",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"b_ir_grenade",
+		2,
+		"ACE_HuntIR_M203",
+		5
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BEL_WDL_recon_ar: BEL_WDL_recon_common
+{
+	vest[]=
+	{
+		"VSM_RAV_MG_Multicam"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_lmg_mk46mod1",
+			"ACE_muzzle_mzls_B",
+			"acc_pointer_ir",
+			"rhsusf_acc_eotech_xps3"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"hlc_200rnd_556x45_Mdim_SAW",
+		5,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"",
+		"G_Balaclava_blk",
+		"G_Balaclava_lowprofile",
+		"g_bandanna_shades",
+		"g_bandanna_blk",
+		"G_Squares",
+		"G_Tactical_Clear",
+		"G_Tactical_black"
+	};
+};
+class BEL_WDL_recon_gl: BEL_WDL_recon_common
+{
+	vest[]=
+	{
+		"VSM_RAV_operator_Multicam"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM_woodland",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		},
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM_woodland",
+			"rhsusf_acc_g33_xps3",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class BEL_WDL_recon_lat: BEL_WDL_recon_common
+{
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_m72a7",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_m72a7_mag"
+	};
+};
+class BEL_WDL_recon_cm: BEL_WDL_recon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		6,
+		"ACE_epinephrine",
+		12,
+		"ACE_salineIV_500",
+		3,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_WDL_recon_dm: BEL_WDL_recon_common
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk17_STD_FG_woodland",
+			"bipod_01_F_blk",
+			"rhsusf_acc_ACOG_MDO",
+			"CUP_muzzle_snds_SCAR_H"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"bipod_03_F_blk",
+		"ACE_RangeCard"
+	};
+};
+class BEL_WDL_recon_exp: BEL_WDL_recon_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	secondary[]=
+	{
+		"ACE_VMM3"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"DemoCharge_Remote_Mag",
+		4,
+		"SatchelCharge_Remote_Mag",
+		"SLAMDirectionalMine_Wire_Mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BEL_WDL_diver_common: BEL_WDL_recon_common
+{
+	uniform[]=
+	{
+		"U_B_Wetsuit"
+	};
+	vest[]=
+	{
+		"V_RebreatherB"
+	};
+	backpack[]=
+	{
+		"xru_Carryall_blk"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_FG_woodland",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		},
+		
+		{
+			"CUP_arifle_Mk16_CQC_SFG_woodland",
+			"rhsusf_acc_g33_xps3",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"hgun_Pistol_heavy_01_F",
+			"muzzle_snds_acp",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"VSM_RAV_operator_Multicam",
+		"tfa_bel_wdl"
+	};
+	goggles[]=
+	{
+		"G_B_Diving"
+	};
+	headgear[]=
+	{
+		"rhsusf_opscore_mc_pelt",
+		"rhsusf_opscore_mc_pelt_nsw"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+};
+class BEL_WDL_diver_rm: BEL_WDL_diver_common
+{
+};
+class BEL_WDL_diver_tl: BEL_WDL_diver_common
+{
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"VSM_RAV_operator_Multicam",
+		"tfa_bel_wdl",
+		"ACE_MapTools"
+	};
+};
+class BEL_WDL_diver_exp: BEL_WDL_diver_common
+{
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"DemoCharge_Remote_Mag",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"VSM_RAV_operator_Multicam",
+		"tfa_bel_wdl",
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BEL_WDL_diver_cm: BEL_WDL_diver_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"VSM_RAV_operator_Multicam",
+		"tfa_bel_wdl",
+		"W_Defibrillator",
+		"ACE_fieldDressing",
+		5,
+		"ACE_elasticBandage",
+		15,
+		"ACE_quikclot",
+		15,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV",
+		4,
+		"ACE_surgicalKit"
+	};
+	binoculars[]=
+	{
+		"ACE_MX2A"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_WDL_diver_dm: BEL_WDL_diver_common
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk17_STD_FG_woodland",
+			"bipod_01_F_blk",
+			"rhsusf_acc_ACOG_MDO",
+			"CUP_muzzle_snds_SCAR_H"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"VSM_RAV_operator_Multicam",
+		"tfa_bel_wdl",
+		"bipod_03_F_blk"
+	};
+};
+class BEL_WDL_diver_jtac: BEL_WDL_diver_tl
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM_woodland",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		},
+		
+		{
+			"CUP_arifle_Mk16_CQC_EGLM_woodland",
+			"rhsusf_acc_g33_xps3",
+			"acc_pointer_ir",
+			"CUP_muzzle_snds_SCAR_L"
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator_01_khk_f"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2,
+		"Laserbatteries",
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2
+	};
+};
+class BEL_WDL_sniper_common: BEL_WDL_recon_common
+{
+	uniform[]=
+	{
+		"U_i_FullGhillie_lsh"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"rhsusf_acc_ACOG_anpvs27",
+		"ACE_Rangecard"
+	};
+};
+class BEL_WDL_sniper_spot: BEL_WDL_recon_common
+{
+	uniform[]=
+	{
+		"U_i_FullGhillie_lsh"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_Mk20_GL_plain_F",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"muzzle_snds_m_snd_F"
+		}
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"b_ir_grenade",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag",
+		8,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		4,
+		"ACE_HuntIR_M203",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_SpottingScope",
+		"ACE_Tripod",
+		"ACE_ATragMX",
+		"ACE_IR_Strobe_Item",
+		"ACE_Rangecard",
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BEL_WDL_sniper_ap: BEL_WDL_sniper_common
+{
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_awMagnum_OD_ghillie",
+			"",
+			"rhsusf_acc_LEUPOLDMK4",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"hlc_5rnd_300WM_mk248_AWM",
+		5,
+		"hlc_5rnd_300WM_AP_AWM",
+		5,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class BEL_WDL_sniper_am: BEL_WDL_sniper_common
+{
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_M107_w",
+			"rhsusf_acc_premier",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"rhsusf_mag_10Rnd_STD_50BMG_M33",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class BEL_WDL_sniper_exp: BEL_WDL_recon_common
+{
+	uniform[]=
+	{
+		"U_i_FullGhillie_lsh"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_Mk20_plain_F",
+			"rhsusf_acc_g33_T1",
+			"acc_pointer_ir",
+			"muzzle_snds_m_snd_F"
+		}
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"APERSTripMine_Wire_mag",
+		2,
+		"ClaymoreDirectionalMine_Remote_mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BEL_WDL_crew_common: CommonBEL_WDL
+{
+	uniform[]=
+	{
+		"tfa_bel_wdl",
+		"tfa_bel_wdl_rs"
+	};
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"rhsusf_mbav_light"
+	};
+	primary[]=
+	{
+		"CUP_arifle_Mk16_CQC_woodland"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"rhsusf_cvc_green_alt_helmet"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_WDL_crew_cmd: BEL_WDL_crew_common
+{
+	backpack[]=
+	{
+		"B_TacticalPack_rgr"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BEL_WDL_crew_jet: CommonBEL_WDL
+{
+	uniform[]=
+	{
+		"U_B_PilotCoveralls"
+	};
+	vest[]=
+	{
+		""
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetFighter_B"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	watch[]=
+	{
+		"ACE_Altimeter"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BEL_WDL_crew_heli: BEL_WDL_crew_common
+{
+	uniform[]=
+	{
+		"tfa_bel_wdl",
+		"tfa_bel_wdl_rs"
+	};
+	headgear[]=
+	{
+		"rhsusf_hgu56p_mask"
+	};
+	map[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+};
+class BEL_WDL_crew_helipilot: BEL_WDL_crew_heli
+{
+	backpack[]=
+	{
+		"B_AssaultPack_rgr"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"rhsusf_hgu56p"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BEL_WDL_logistics_common: CommonBEL_WDL
+{
+	vest[]=
+	{
+		"rhsusf_mbav_light"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	primary[]=
+	{
+		"CUP_arifle_Mk16_CQC_woodland"
+	};
+	magazines[]=
+	{
+		"11Rnd_45ACP_Mag",
+		3,
+		"30Rnd_556x45_Stanag",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"TFAX_H_HelmetIA_bel"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker",
+		"ToolKit"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F",
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BEL_WDL_medevac_common: CommonBEL_WDL
+{
+	primary[]=
+	{
+		""
+	};
+	secondary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker"
+	};
+	headgear[]=
+	{
+		"TFAX_H_HelmetIA_bel"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		"Belgium"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class BEL_WDL_medevac_doc: BEL_WDL_medevac_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class BEL_WDL_medevac_tl: BEL_WDL_medevac_doc
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class BEL_WDL_medevac_heli: BEL_WDL_medevac_common
+{
+	uniform[]=
+	{
+		"tfa_bel_wdl",
+		"tfa_bel_wdl_rs"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"rhsusf_hgu56p"
+	};
+	nvgs[]=
+	{
+		"rhsusf_ANPVS_14"
+	};
+};
+class BEL_WDL_medevac_drv: BEL_WDL_medevac_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -2523,7 +7457,6 @@ class CommonBHEER: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -2598,10 +7531,10 @@ class BHEER_company_common: CommonBHEER
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -2666,10 +7599,10 @@ class BHEER_company_colo: BHEER_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -2679,10 +7612,10 @@ class BHEER_company_fo: BHEER_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -2723,10 +7656,10 @@ class BHEER_platoon_common: CommonBHEER
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -2781,10 +7714,10 @@ class BHEER_platoon_uav: BHEER_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -2876,10 +7809,10 @@ class BHEER_platoon_medic: BHEER_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -2895,6 +7828,10 @@ class BHEER_platoon_medic: BHEER_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -2959,10 +7896,10 @@ class BHEER_squad_sl: CommonBHEER
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -2988,7 +7925,6 @@ class BHEER_squad_ftl: CommonBHEER
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -3044,7 +7980,7 @@ class BHEER_squad_gl: CommonBHEER
 		{
 			"hlc_rifle_auga3_GL",
 			"acc_flashlight",
-			"optic_Holosight_blk_F",
+			"optic_mrco",
 			""
 		}
 	};
@@ -3208,7 +8144,6 @@ class BHEER_squad_cm: CommonBHEER
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -3242,7 +8177,6 @@ class BHEER_squad_dm: CommonBHEER
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -3273,7 +8207,6 @@ class BHEER_squad_eng: CommonBHEER
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -3583,7 +8516,6 @@ class BHEER_weapons_mort: BHEER_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -3599,7 +8531,6 @@ class BHEER_weapons_amort: BHEER_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -3611,7 +8542,6 @@ class BHEER_weapons_acmort: BHEER_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -3673,10 +8603,10 @@ class BHEER_recon_common: CommonBHEER
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -3686,7 +8616,7 @@ class BHEER_recon_common: CommonBHEER
 		"",
 		"G_Balaclava_blk",
 		"G_Balaclava_lowprofile",
-		"g_bandana_shades",
+		"g_bandanna_shades",
 		"g_bandanna_blk",
 		"G_Squares",
 		"G_Tactical_Clear",
@@ -3717,10 +8647,10 @@ class BHEER_recon_rm: BHEER_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -3776,10 +8706,10 @@ class BHEER_recon_tl: BHEER_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -3837,7 +8767,7 @@ class BHEER_recon_ar: BHEER_recon_common
 		"",
 		"G_Balaclava_blk",
 		"G_Balaclava_lowprofile",
-		"g_bandana_shades",
+		"g_bandanna_shades",
 		"g_bandanna_blk",
 		"G_Squares",
 		"G_Tactical_Clear",
@@ -3918,10 +8848,10 @@ class BHEER_recon_cm: BHEER_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -3973,10 +8903,10 @@ class BHEER_recon_dm: BHEER_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -4019,10 +8949,10 @@ class BHEER_recon_exp: BHEER_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -4088,10 +9018,10 @@ class BHEER_diver_common: BHEER_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -4147,10 +9077,10 @@ class BHEER_diver_tl: BHEER_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -4179,10 +9109,10 @@ class BHEER_diver_exp: BHEER_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -4201,10 +9131,10 @@ class BHEER_diver_cm: BHEER_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -4265,10 +9195,10 @@ class BHEER_diver_dm: BHEER_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -4333,10 +9263,10 @@ class BHEER_sniper_common: BHEER_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -4396,10 +9326,10 @@ class BHEER_sniper_spot: BHEER_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -4504,10 +9434,10 @@ class BHEER_sniper_exp: BHEER_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -4591,6 +9521,15 @@ class BHEER_crew_cmd: BHEER_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class BHEER_crew_jet: CommonBHEER
 {
@@ -4647,6 +9586,15 @@ class BHEER_crew_jet: CommonBHEER
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class BHEER_crew_heli: BHEER_crew_common
 {
@@ -4697,6 +9645,15 @@ class BHEER_crew_helipilot: BHEER_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class BHEER_logistics_common: CommonBHEER
 {
@@ -4736,10 +9693,11 @@ class BHEER_logistics_common: CommonBHEER
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -4782,7 +9740,6 @@ class BHEER_medevac_common: CommonBHEER
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -4813,7 +9770,6 @@ class BHEER_medevac_doc: BHEER_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -4846,6 +9802,33 @@ class BHEER_medevac_tl: BHEER_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class BHEER_medevac_heli: BHEER_medevac_common
@@ -4884,7 +9867,6 @@ class BHEER_medevac_drv: BHEER_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -4953,7 +9935,6 @@ class CommonBW_FLECK: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -5040,10 +10021,10 @@ class BW_FLECK_company_common: CommonBW_FLECK
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -5108,10 +10089,10 @@ class BW_FLECK_company_colo: BW_FLECK_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -5121,10 +10102,10 @@ class BW_FLECK_company_fo: BW_FLECK_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -5165,10 +10146,10 @@ class BW_FLECK_platoon_common: CommonBW_FLECK
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -5224,10 +10205,10 @@ class BW_FLECK_platoon_uav: BW_FLECK_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -5313,10 +10294,10 @@ class BW_FLECK_platoon_medic: BW_FLECK_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -5332,6 +10313,10 @@ class BW_FLECK_platoon_medic: BW_FLECK_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -5390,10 +10375,10 @@ class BW_FLECK_squad_sl: CommonBW_FLECK
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -5419,7 +10404,6 @@ class BW_FLECK_squad_ftl: CommonBW_FLECK
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -5622,7 +10606,6 @@ class BW_FLECK_squad_cm: CommonBW_FLECK
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -5656,7 +10639,6 @@ class BW_FLECK_squad_dm: CommonBW_FLECK
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -5687,7 +10669,6 @@ class BW_FLECK_squad_eng: CommonBW_FLECK
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -6006,7 +10987,6 @@ class BW_FLECK_weapons_mort: BW_FLECK_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -6022,7 +11002,6 @@ class BW_FLECK_weapons_amort: BW_FLECK_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -6034,7 +11013,6 @@ class BW_FLECK_weapons_acmort: BW_FLECK_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -6104,10 +11082,10 @@ class BW_FLECK_recon_common: CommonBW_FLECK
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -6148,10 +11126,10 @@ class BW_FLECK_recon_rm: BW_FLECK_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -6209,10 +11187,10 @@ class BW_FLECK_recon_tl: BW_FLECK_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -6348,10 +11326,10 @@ class BW_FLECK_recon_cm: BW_FLECK_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -6403,10 +11381,10 @@ class BW_FLECK_recon_dm: BW_FLECK_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -6449,10 +11427,10 @@ class BW_FLECK_recon_exp: BW_FLECK_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -6518,10 +11496,10 @@ class BW_FLECK_diver_common: BW_FLECK_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -6577,10 +11555,10 @@ class BW_FLECK_diver_tl: BW_FLECK_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -6609,10 +11587,10 @@ class BW_FLECK_diver_exp: BW_FLECK_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -6631,10 +11609,10 @@ class BW_FLECK_diver_cm: BW_FLECK_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -6695,10 +11673,10 @@ class BW_FLECK_diver_dm: BW_FLECK_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -6763,10 +11741,10 @@ class BW_FLECK_sniper_common: BW_FLECK_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -6826,10 +11804,10 @@ class BW_FLECK_sniper_spot: BW_FLECK_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -6938,10 +11916,10 @@ class BW_FLECK_sniper_exp: BW_FLECK_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -7025,6 +12003,15 @@ class BW_FLECK_crew_cmd: BW_FLECK_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class BW_FLECK_crew_jet: CommonBW_FLECK
 {
@@ -7081,6 +12068,15 @@ class BW_FLECK_crew_jet: CommonBW_FLECK
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class BW_FLECK_crew_heli: BW_FLECK_crew_common
 {
@@ -7131,6 +12127,15 @@ class BW_FLECK_crew_helipilot: BW_FLECK_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class BW_FLECK_logistics_common: CommonBW_FLECK
 {
@@ -7165,10 +12170,11 @@ class BW_FLECK_logistics_common: CommonBW_FLECK
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -7211,7 +12217,6 @@ class BW_FLECK_medevac_common: CommonBW_FLECK
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -7243,7 +12248,6 @@ class BW_FLECK_medevac_doc: BW_FLECK_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -7276,6 +12280,33 @@ class BW_FLECK_medevac_tl: BW_FLECK_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class BW_FLECK_medevac_heli: BW_FLECK_medevac_common
@@ -7314,7 +12345,6 @@ class BW_FLECK_medevac_drv: BW_FLECK_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -7383,7 +12413,6 @@ class CommonBW_TROP: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -7468,10 +12497,10 @@ class BW_TROP_company_common: CommonBW_TROP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -7536,10 +12565,10 @@ class BW_TROP_company_colo: BW_TROP_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -7549,10 +12578,10 @@ class BW_TROP_company_fo: BW_TROP_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -7593,10 +12622,10 @@ class BW_TROP_platoon_common: CommonBW_TROP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -7652,10 +12681,10 @@ class BW_TROP_platoon_uav: BW_TROP_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -7741,10 +12770,10 @@ class BW_TROP_platoon_medic: BW_TROP_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -7760,6 +12789,10 @@ class BW_TROP_platoon_medic: BW_TROP_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -7818,10 +12851,10 @@ class BW_TROP_squad_sl: CommonBW_TROP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -7847,7 +12880,6 @@ class BW_TROP_squad_ftl: CommonBW_TROP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -8050,7 +13082,6 @@ class BW_TROP_squad_cm: CommonBW_TROP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -8084,7 +13115,6 @@ class BW_TROP_squad_dm: CommonBW_TROP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -8115,7 +13145,6 @@ class BW_TROP_squad_eng: CommonBW_TROP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -8434,7 +13463,6 @@ class BW_TROP_weapons_mort: BW_TROP_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -8450,7 +13478,6 @@ class BW_TROP_weapons_amort: BW_TROP_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -8462,7 +13489,6 @@ class BW_TROP_weapons_acmort: BW_TROP_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -8532,10 +13558,10 @@ class BW_TROP_recon_common: CommonBW_TROP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -8576,10 +13602,10 @@ class BW_TROP_recon_rm: BW_TROP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -8637,10 +13663,10 @@ class BW_TROP_recon_tl: BW_TROP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -8776,10 +13802,10 @@ class BW_TROP_recon_cm: BW_TROP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -8831,10 +13857,10 @@ class BW_TROP_recon_dm: BW_TROP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -8877,10 +13903,10 @@ class BW_TROP_recon_exp: BW_TROP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -8946,10 +13972,10 @@ class BW_TROP_diver_common: BW_TROP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -9005,10 +14031,10 @@ class BW_TROP_diver_tl: BW_TROP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -9037,10 +14063,10 @@ class BW_TROP_diver_exp: BW_TROP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -9059,10 +14085,10 @@ class BW_TROP_diver_cm: BW_TROP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -9123,10 +14149,10 @@ class BW_TROP_diver_dm: BW_TROP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -9192,10 +14218,10 @@ class BW_TROP_sniper_common: BW_TROP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -9256,10 +14282,10 @@ class BW_TROP_sniper_spot: BW_TROP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -9369,10 +14395,10 @@ class BW_TROP_sniper_exp: BW_TROP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -9456,6 +14482,15 @@ class BW_TROP_crew_cmd: BW_TROP_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class BW_TROP_crew_jet: CommonBW_TROP
 {
@@ -9512,6 +14547,15 @@ class BW_TROP_crew_jet: CommonBW_TROP
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class BW_TROP_crew_heli: BW_TROP_crew_common
 {
@@ -9562,6 +14606,15 @@ class BW_TROP_crew_helipilot: BW_TROP_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class BW_TROP_logistics_common: CommonBW_TROP
 {
@@ -9596,10 +14649,11 @@ class BW_TROP_logistics_common: CommonBW_TROP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -9642,7 +14696,6 @@ class BW_TROP_medevac_common: CommonBW_TROP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -9674,7 +14727,6 @@ class BW_TROP_medevac_doc: BW_TROP_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -9707,6 +14759,33 @@ class BW_TROP_medevac_tl: BW_TROP_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class BW_TROP_medevac_heli: BW_TROP_medevac_common
@@ -9745,7 +14824,6 @@ class BW_TROP_medevac_drv: BW_TROP_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -9814,7 +14892,6 @@ class CommonCDF: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -9890,10 +14967,10 @@ class CDF_company_common: CommonCDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -9958,10 +15035,10 @@ class CDF_company_colo: CDF_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -9971,10 +15048,10 @@ class CDF_company_fo: CDF_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -10015,10 +15092,10 @@ class CDF_platoon_common: CommonCDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -10073,10 +15150,10 @@ class CDF_platoon_uav: CDF_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -10168,10 +15245,10 @@ class CDF_platoon_medic: CDF_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -10187,6 +15264,10 @@ class CDF_platoon_medic: CDF_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -10249,10 +15330,10 @@ class CDF_squad_sl: CommonCDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
@@ -10277,7 +15358,6 @@ class CDF_squad_ftl: CommonCDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -10324,7 +15404,7 @@ class CDF_squad_gl: CommonCDF
 		
 		{
 			"rhs_weap_m70b3n_pbg40",
-			"",
+			"rhs_acc_pkas",
 			"",
 			"rhs_acc_dtkakm"
 		}
@@ -10494,7 +15574,6 @@ class CDF_squad_cm: CommonCDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -10528,7 +15607,6 @@ class CDF_squad_dm: CommonCDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -10559,7 +15637,6 @@ class CDF_squad_eng: CommonCDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -10866,7 +15943,6 @@ class CDF_weapons_mort: CDF_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -10882,7 +15958,6 @@ class CDF_weapons_amort: CDF_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -10894,7 +15969,6 @@ class CDF_weapons_acmort: CDF_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -10956,10 +16030,10 @@ class CDF_recon_common: CommonCDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -10991,10 +16065,10 @@ class CDF_recon_rm: CDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11048,10 +16122,10 @@ class CDF_recon_tl: CDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11189,10 +16263,10 @@ class CDF_recon_cm: CDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11244,10 +16318,10 @@ class CDF_recon_dm: CDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11290,10 +16364,10 @@ class CDF_recon_exp: CDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11359,10 +16433,10 @@ class CDF_diver_common: CDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11417,10 +16491,10 @@ class CDF_diver_tl: CDF_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11449,10 +16523,10 @@ class CDF_diver_exp: CDF_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11471,10 +16545,10 @@ class CDF_diver_cm: CDF_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11535,10 +16609,10 @@ class CDF_diver_dm: CDF_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11603,10 +16677,10 @@ class CDF_sniper_common: CDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11664,10 +16738,10 @@ class CDF_sniper_spot: CDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11771,10 +16845,10 @@ class CDF_sniper_exp: CDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -11859,6 +16933,15 @@ class CDF_crew_cmd: CDF_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class CDF_crew_jet: CommonCDF
 {
@@ -11916,6 +16999,15 @@ class CDF_crew_jet: CommonCDF
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class CDF_crew_heli: CDF_crew_common
 {
@@ -11968,6 +17060,15 @@ class CDF_crew_helipilot: CDF_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class CDF_logistics_common: CommonCDF
 {
@@ -12007,10 +17108,11 @@ class CDF_logistics_common: CommonCDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -12053,7 +17155,6 @@ class CDF_medevac_common: CommonCDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -12084,7 +17185,6 @@ class CDF_medevac_doc: CDF_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -12117,6 +17217,33 @@ class CDF_medevac_tl: CDF_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class CDF_medevac_heli: CDF_medevac_common
@@ -12156,7 +17283,6 @@ class CDF_medevac_drv: CDF_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -12228,7 +17354,6 @@ class CommonCHINA: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -12311,10 +17436,10 @@ class CHINA_company_common: CommonCHINA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -12381,10 +17506,10 @@ class CHINA_company_colo: CHINA_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -12394,10 +17519,10 @@ class CHINA_company_fo: CHINA_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -12438,10 +17563,10 @@ class CHINA_platoon_common: CommonCHINA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -12496,10 +17621,10 @@ class CHINA_platoon_uav: CHINA_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -12591,10 +17716,10 @@ class CHINA_platoon_medic: CHINA_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -12610,6 +17735,10 @@ class CHINA_platoon_medic: CHINA_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -12674,10 +17803,10 @@ class CHINA_squad_sl: CommonCHINA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -12703,7 +17832,6 @@ class CHINA_squad_ftl: CommonCHINA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -12760,7 +17888,7 @@ class CHINA_squad_gl: CommonCHINA
 		{
 			"arifle_CTAR_gl_blk_f",
 			"acc_pointer_ir",
-			"optic_aco",
+			"optic_arco_blk_f",
 			""
 		}
 	};
@@ -12928,7 +18056,6 @@ class CHINA_squad_cm: CommonCHINA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -12962,7 +18089,6 @@ class CHINA_squad_dm: CommonCHINA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -12993,7 +18119,6 @@ class CHINA_squad_eng: CommonCHINA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -13312,7 +18437,6 @@ class CHINA_weapons_mort: CHINA_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -13328,7 +18452,6 @@ class CHINA_weapons_amort: CHINA_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -13340,7 +18463,6 @@ class CHINA_weapons_acmort: CHINA_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -13402,10 +18524,10 @@ class CHINA_recon_common: CommonCHINA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -13437,10 +18559,10 @@ class CHINA_recon_rm: CHINA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -13496,10 +18618,10 @@ class CHINA_recon_tl: CHINA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -13633,10 +18755,10 @@ class CHINA_recon_cm: CHINA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -13690,10 +18812,10 @@ class CHINA_recon_dm: CHINA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -13736,10 +18858,10 @@ class CHINA_recon_exp: CHINA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -13805,10 +18927,10 @@ class CHINA_diver_common: CHINA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -13863,10 +18985,10 @@ class CHINA_diver_tl: CHINA_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -13895,10 +19017,10 @@ class CHINA_diver_exp: CHINA_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -13917,10 +19039,10 @@ class CHINA_diver_cm: CHINA_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -13983,10 +19105,10 @@ class CHINA_diver_dm: CHINA_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -14053,10 +19175,10 @@ class CHINA_sniper_common: CHINA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -14118,10 +19240,10 @@ class CHINA_sniper_spot: CHINA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -14236,10 +19358,10 @@ class CHINA_sniper_exp: CHINA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -14317,6 +19439,15 @@ class CHINA_crew_cmd: CHINA_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class CHINA_crew_jet: CommonCHINA
 {
@@ -14373,6 +19504,15 @@ class CHINA_crew_jet: CommonCHINA
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class CHINA_crew_heli: CHINA_crew_common
 {
@@ -14426,6 +19566,15 @@ class CHINA_crew_helipilot: CHINA_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class CHINA_logistics_common: CommonCHINA
 {
@@ -14459,10 +19608,11 @@ class CHINA_logistics_common: CommonCHINA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -14505,7 +19655,6 @@ class CHINA_medevac_common: CommonCHINA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -14536,7 +19685,6 @@ class CHINA_medevac_doc: CHINA_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -14569,6 +19717,33 @@ class CHINA_medevac_tl: CHINA_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class CHINA_medevac_heli: CHINA_medevac_common
@@ -14607,7 +19782,6 @@ class CHINA_medevac_drv: CHINA_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -14679,7 +19853,6 @@ class CommonCHINA_GRN: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -14764,10 +19937,10 @@ class CHINA_GRN_company_common: CommonCHINA_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -14834,10 +20007,10 @@ class CHINA_GRN_company_colo: CHINA_GRN_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -14847,10 +20020,10 @@ class CHINA_GRN_company_fo: CHINA_GRN_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -14894,10 +20067,10 @@ class CHINA_GRN_platoon_common: CommonCHINA_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -14952,10 +20125,10 @@ class CHINA_GRN_platoon_uav: CHINA_GRN_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -15048,10 +20221,10 @@ class CHINA_GRN_platoon_medic: CHINA_GRN_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -15067,6 +20240,10 @@ class CHINA_GRN_platoon_medic: CHINA_GRN_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -15131,10 +20308,10 @@ class CHINA_GRN_squad_sl: CommonCHINA_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -15160,7 +20337,6 @@ class CHINA_GRN_squad_ftl: CommonCHINA_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -15217,7 +20393,7 @@ class CHINA_GRN_squad_gl: CommonCHINA_GRN
 		{
 			"arifle_CTAR_gl_blk_f",
 			"acc_pointer_ir",
-			"optic_aco_grn",
+			"optic_arco_blk_f",
 			""
 		}
 	};
@@ -15388,7 +20564,6 @@ class CHINA_GRN_squad_cm: CommonCHINA_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -15423,7 +20598,6 @@ class CHINA_GRN_squad_dm: CommonCHINA_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -15455,7 +20629,6 @@ class CHINA_GRN_squad_eng: CommonCHINA_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -15774,7 +20947,6 @@ class CHINA_GRN_weapons_mort: CHINA_GRN_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -15790,7 +20962,6 @@ class CHINA_GRN_weapons_amort: CHINA_GRN_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -15802,7 +20973,6 @@ class CHINA_GRN_weapons_acmort: CHINA_GRN_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -15865,10 +21035,10 @@ class CHINA_GRN_recon_common: CommonCHINA_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -15900,10 +21070,10 @@ class CHINA_GRN_recon_rm: CHINA_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -15960,10 +21130,10 @@ class CHINA_GRN_recon_tl: CHINA_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -16098,10 +21268,10 @@ class CHINA_GRN_recon_cm: CHINA_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -16155,10 +21325,10 @@ class CHINA_GRN_recon_dm: CHINA_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -16201,10 +21371,10 @@ class CHINA_GRN_recon_exp: CHINA_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -16270,10 +21440,10 @@ class CHINA_GRN_diver_common: CHINA_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -16328,10 +21498,10 @@ class CHINA_GRN_diver_tl: CHINA_GRN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -16360,10 +21530,10 @@ class CHINA_GRN_diver_exp: CHINA_GRN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -16382,10 +21552,10 @@ class CHINA_GRN_diver_cm: CHINA_GRN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -16448,10 +21618,10 @@ class CHINA_GRN_diver_dm: CHINA_GRN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -16516,10 +21686,10 @@ class CHINA_GRN_sniper_common: CHINA_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -16579,10 +21749,10 @@ class CHINA_GRN_sniper_spot: CHINA_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -16695,10 +21865,10 @@ class CHINA_GRN_sniper_exp: CHINA_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -16778,6 +21948,15 @@ class CHINA_GRN_crew_cmd: CHINA_GRN_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class CHINA_GRN_crew_jet: CommonCHINA_GRN
 {
@@ -16834,6 +22013,15 @@ class CHINA_GRN_crew_jet: CommonCHINA_GRN
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class CHINA_GRN_crew_heli: CHINA_GRN_crew_common
 {
@@ -16886,6 +22074,15 @@ class CHINA_GRN_crew_helipilot: CHINA_GRN_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class CHINA_GRN_logistics_common: CommonCHINA_GRN
 {
@@ -16920,10 +22117,11 @@ class CHINA_GRN_logistics_common: CommonCHINA_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -16966,7 +22164,6 @@ class CHINA_GRN_medevac_common: CommonCHINA_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -16997,7 +22194,6 @@ class CHINA_GRN_medevac_doc: CHINA_GRN_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -17030,6 +22226,33 @@ class CHINA_GRN_medevac_tl: CHINA_GRN_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class CHINA_GRN_medevac_heli: CHINA_GRN_medevac_common
@@ -17068,7 +22291,6 @@ class CHINA_GRN_medevac_drv: CHINA_GRN_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -17182,7 +22404,6 @@ class CommonFIA: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -17337,10 +22558,10 @@ class FIA_company_common: CommonFIA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -17402,10 +22623,6 @@ class FIA_company_common: CommonFIA
 	{
 		"ItemMap"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	lrRadios[]=
 	{
 		"ACRE_PRC117F"
@@ -17421,10 +22638,6 @@ class FIA_company_co: FIA_company_common
 };
 class FIA_company_xo: FIA_company_common
 {
-	gps[]=
-	{
-		"b_EasyTrack_Tablet"
-	};
 	headgear[]=
 	{
 		"H_Hat_Safari_sand_F"
@@ -17432,20 +22645,16 @@ class FIA_company_xo: FIA_company_common
 };
 class FIA_company_mio: FIA_company_common
 {
-	gps[]=
-	{
-		"b_EasyTrack_Tablet"
-	};
 };
 class FIA_company_colo: FIA_company_common
 {
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -17455,10 +22664,10 @@ class FIA_company_fo: FIA_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -17520,10 +22729,10 @@ class FIA_platoon_common: CommonFIA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -17567,10 +22776,6 @@ class FIA_platoon_common: CommonFIA
 		"H_Headbandage_stained_f",
 		"H_Headbandage_bloody_f"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	map[]=
 	{
 		"ItemMap"
@@ -17600,10 +22805,6 @@ class FIA_platoon_pl: FIA_platoon_common
 };
 class FIA_platoon_psgt: FIA_platoon_common
 {
-	gps[]=
-	{
-		"b_EasyTrack_Tablet"
-	};
 	lrRadios[]=
 	{
 		"ACRE_PRC148",
@@ -17615,10 +22816,10 @@ class FIA_platoon_uav: FIA_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -17741,10 +22942,10 @@ class FIA_platoon_medic: FIA_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -17761,6 +22962,10 @@ class FIA_platoon_medic: FIA_platoon_common
 		"ACE_epinephrine",
 		30
 	};
+	lrRadios[]=
+	{
+		""
+	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class FIA_squad_sl: CommonFIA
@@ -17773,10 +22978,6 @@ class FIA_squad_sl: CommonFIA
 		"V_TacVest_oli",
 		"V_TacVest_blk",
 		"V_TacVest_camo"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	binoculars[]=
 	{
@@ -17850,10 +23051,10 @@ class FIA_squad_sl: CommonFIA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -17884,7 +23085,6 @@ class FIA_squad_ftl: CommonFIA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -17952,30 +23152,30 @@ class FIA_squad_gl: CommonFIA
 		
 		{
 			"arifle_TRG21_GL_F",
+			"optic_aco",
 			"",
-			"",
-			"acc_flashlight"
+			""
 		},
 		
 		{
 			"arifle_TRG21_GL_F",
-			"",
-			"",
-			""
-		},
-		
-		{
-			"arifle_Mk20_GL_plain_F",
-			"",
+			"optic_aco_grn",
 			"",
 			"acc_flashlight"
 		},
 		
 		{
-			"arifle_Mk20_GL_F",
-			"",
+			"arifle_Mk20_GL_plain_F",
+			"optic_aco_smg",
 			"",
 			""
+		},
+		
+		{
+			"arifle_Mk20_GL_F",
+			"optic_aco_grn_smg",
+			"",
+			"acc_flashlight"
 		}
 	};
 	magazines[]=
@@ -18196,7 +23396,6 @@ class FIA_squad_cm: CommonFIA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -18248,7 +23447,6 @@ class FIA_squad_dm: CommonFIA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -18283,7 +23481,6 @@ class FIA_squad_eng: CommonFIA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -18619,7 +23816,6 @@ class FIA_weapons_mort: FIA_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -18635,7 +23831,6 @@ class FIA_weapons_amort: FIA_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -18647,7 +23842,6 @@ class FIA_weapons_acmort: FIA_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -18763,10 +23957,10 @@ class FIA_recon_common: CommonFIA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -18843,10 +24037,10 @@ class FIA_recon_rm: FIA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -18928,10 +24122,10 @@ class FIA_recon_tl: FIA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -18941,10 +24135,6 @@ class FIA_recon_tl: FIA_recon_common
 	binoculars[]=
 	{
 		"Binocular"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	lrRadios[]=
 	{
@@ -19089,10 +24279,10 @@ class FIA_recon_cm: FIA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -19165,10 +24355,10 @@ class FIA_recon_dm: FIA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -19215,10 +24405,10 @@ class FIA_recon_exp: FIA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -19292,10 +24482,6 @@ class FIA_diver_common: FIA_recon_common
 			""
 		}
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	magazines[]=
 	{
 		"16Rnd_9x21_Mag",
@@ -19312,10 +24498,10 @@ class FIA_diver_common: FIA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -19370,10 +24556,10 @@ class FIA_diver_tl: FIA_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -19402,10 +24588,10 @@ class FIA_diver_exp: FIA_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -19424,10 +24610,10 @@ class FIA_diver_cm: FIA_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -19509,10 +24695,10 @@ class FIA_diver_dm: FIA_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -19610,10 +24796,10 @@ class FIA_sniper_common: FIA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -19670,10 +24856,6 @@ class FIA_sniper_spot: FIA_recon_common
 			"acc_flashlight"
 		}
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	binoculars[]=
 	{
 		"Binocular"
@@ -19706,10 +24888,10 @@ class FIA_sniper_spot: FIA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -19879,10 +25061,10 @@ class FIA_sniper_exp: FIA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -19995,13 +25177,18 @@ class FIA_crew_cmd: FIA_crew_common
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	binoculars[]=
 	{
 		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class FIA_crew_jet: CommonFIA
@@ -20057,10 +25244,6 @@ class FIA_crew_jet: CommonFIA
 	{
 		"itemMap"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	nvgs[]=
 	{
 		""
@@ -20076,6 +25259,15 @@ class FIA_crew_jet: CommonFIA
 	insignia[]=
 	{
 		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class FIA_crew_heli: FIA_crew_common
@@ -20135,10 +25327,6 @@ class FIA_crew_helipilot: FIA_crew_heli
 	{
 		"itemMap"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	goggles[]=
 	{
 		"G_Aviator"
@@ -20160,6 +25348,15 @@ class FIA_crew_helipilot: FIA_crew_heli
 	nvgs[]=
 	{
 		"NVGoggles_OPFOR"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class FIA_logistics_common: CommonFIA
@@ -20252,10 +25449,11 @@ class FIA_logistics_common: CommonFIA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -20263,10 +25461,6 @@ class FIA_logistics_common: CommonFIA
 	{
 		"ACRE_PRC117F",
 		"ACRE_PRC148"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	map[]=
 	{
@@ -20298,7 +25492,6 @@ class FIA_medevac_common: CommonFIA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -20370,7 +25563,6 @@ class FIA_medevac_doc: FIA_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -20396,13 +25588,36 @@ class FIA_medevac_doc: FIA_medevac_common
 };
 class FIA_medevac_tl: FIA_medevac_doc
 {
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class FIA_medevac_heli: FIA_medevac_common
@@ -20426,10 +25641,6 @@ class FIA_medevac_heli: FIA_medevac_common
 	map[]=
 	{
 		"itemMap"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	goggles[]=
 	{
@@ -20459,7 +25670,6 @@ class FIA_medevac_drv: FIA_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -20530,7 +25740,6 @@ class CommonIDF: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -20614,10 +25823,10 @@ class IDF_company_common: CommonIDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -20682,10 +25891,10 @@ class IDF_company_colo: IDF_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -20695,10 +25904,10 @@ class IDF_company_fo: IDF_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -20743,10 +25952,10 @@ class IDF_platoon_common: CommonIDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -20802,10 +26011,10 @@ class IDF_platoon_uav: IDF_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -20899,10 +26108,10 @@ class IDF_platoon_medic: IDF_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -20918,6 +26127,10 @@ class IDF_platoon_medic: IDF_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -20982,10 +26195,10 @@ class IDF_squad_sl: CommonIDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -21011,7 +26224,6 @@ class IDF_squad_ftl: CommonIDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -21239,7 +26451,6 @@ class IDF_squad_cm: CommonIDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -21274,7 +26485,6 @@ class IDF_squad_dm: CommonIDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -21307,7 +26517,6 @@ class IDF_squad_eng: CommonIDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -21625,7 +26834,6 @@ class IDF_weapons_mort: IDF_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -21641,7 +26849,6 @@ class IDF_weapons_amort: IDF_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -21653,7 +26860,6 @@ class IDF_weapons_acmort: IDF_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -21727,10 +26933,10 @@ class IDF_recon_common: CommonIDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -21770,10 +26976,10 @@ class IDF_recon_rm: IDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -21839,10 +27045,10 @@ class IDF_recon_tl: IDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -21985,10 +27191,10 @@ class IDF_recon_cm: IDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -22054,10 +27260,10 @@ class IDF_recon_dm: IDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -22101,10 +27307,10 @@ class IDF_recon_exp: IDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -22177,10 +27383,10 @@ class IDF_diver_common: IDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -22236,10 +27442,10 @@ class IDF_diver_tl: IDF_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -22268,10 +27474,10 @@ class IDF_diver_exp: IDF_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -22290,10 +27496,10 @@ class IDF_diver_cm: IDF_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -22368,10 +27574,10 @@ class IDF_diver_dm: IDF_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -22444,10 +27650,10 @@ class IDF_sniper_common: IDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -22515,10 +27721,10 @@ class IDF_sniper_spot: IDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -22633,10 +27839,10 @@ class IDF_sniper_exp: IDF_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -22717,6 +27923,15 @@ class IDF_crew_cmd: IDF_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class IDF_crew_jet: CommonIDF
 {
@@ -22773,6 +27988,15 @@ class IDF_crew_jet: CommonIDF
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class IDF_crew_heli: IDF_crew_common
 {
@@ -22825,6 +28049,15 @@ class IDF_crew_helipilot: IDF_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class IDF_logistics_common: CommonIDF
 {
@@ -22862,10 +28095,11 @@ class IDF_logistics_common: CommonIDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -22908,7 +28142,6 @@ class IDF_medevac_common: CommonIDF
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -22941,7 +28174,6 @@ class IDF_medevac_doc: IDF_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -22974,6 +28206,33 @@ class IDF_medevac_tl: IDF_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class IDF_medevac_heli: IDF_medevac_common
@@ -23012,7 +28271,6 @@ class IDF_medevac_drv: IDF_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -23084,7 +28342,6 @@ class CommonIRAN: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -23167,10 +28424,10 @@ class IRAN_company_common: CommonIRAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -23237,10 +28494,10 @@ class IRAN_company_colo: IRAN_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -23250,10 +28507,10 @@ class IRAN_company_fo: IRAN_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -23294,10 +28551,10 @@ class IRAN_platoon_common: CommonIRAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -23352,10 +28609,10 @@ class IRAN_platoon_uav: IRAN_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -23447,10 +28704,10 @@ class IRAN_platoon_medic: IRAN_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -23466,6 +28723,10 @@ class IRAN_platoon_medic: IRAN_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -23530,10 +28791,10 @@ class IRAN_squad_sl: CommonIRAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -23559,7 +28820,6 @@ class IRAN_squad_ftl: CommonIRAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -23615,7 +28875,7 @@ class IRAN_squad_gl: CommonIRAN
 		{
 			"arifle_katiba_gl_f",
 			"acc_pointer_ir",
-			"optic_aco",
+			"optic_arco_blk_f",
 			""
 		}
 	};
@@ -23782,7 +29042,6 @@ class IRAN_squad_cm: CommonIRAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -23816,7 +29075,6 @@ class IRAN_squad_dm: CommonIRAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -23847,7 +29105,6 @@ class IRAN_squad_eng: CommonIRAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -24166,7 +29423,6 @@ class IRAN_weapons_mort: IRAN_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -24182,7 +29438,6 @@ class IRAN_weapons_amort: IRAN_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -24194,7 +29449,6 @@ class IRAN_weapons_acmort: IRAN_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -24258,10 +29512,10 @@ class IRAN_recon_common: CommonIRAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -24293,10 +29547,10 @@ class IRAN_recon_rm: IRAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -24354,10 +29608,10 @@ class IRAN_recon_tl: IRAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -24494,10 +29748,10 @@ class IRAN_recon_cm: IRAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -24549,10 +29803,10 @@ class IRAN_recon_dm: IRAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -24597,10 +29851,10 @@ class IRAN_recon_exp: IRAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -24668,10 +29922,10 @@ class IRAN_diver_common: IRAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -24728,10 +29982,10 @@ class IRAN_diver_tl: IRAN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -24762,10 +30016,10 @@ class IRAN_diver_exp: IRAN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -24784,10 +30038,10 @@ class IRAN_diver_cm: IRAN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -24848,10 +30102,10 @@ class IRAN_diver_dm: IRAN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -24920,10 +30174,10 @@ class IRAN_sniper_common: IRAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -24987,10 +30241,10 @@ class IRAN_sniper_spot: IRAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -25103,10 +30357,10 @@ class IRAN_sniper_exp: IRAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -25184,6 +30438,15 @@ class IRAN_crew_cmd: IRAN_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class IRAN_crew_jet: CommonIRAN
 {
@@ -25240,6 +30503,15 @@ class IRAN_crew_jet: CommonIRAN
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class IRAN_crew_heli: IRAN_crew_common
 {
@@ -25293,6 +30565,15 @@ class IRAN_crew_helipilot: IRAN_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class IRAN_logistics_common: CommonIRAN
 {
@@ -25326,10 +30607,11 @@ class IRAN_logistics_common: CommonIRAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -25372,7 +30654,6 @@ class IRAN_medevac_common: CommonIRAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -25403,7 +30684,6 @@ class IRAN_medevac_doc: IRAN_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -25436,6 +30716,33 @@ class IRAN_medevac_tl: IRAN_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class IRAN_medevac_heli: IRAN_medevac_common
@@ -25474,7 +30781,6 @@ class IRAN_medevac_drv: IRAN_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -25546,7 +30852,6 @@ class CommonIRAN_GRN: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -25631,10 +30936,10 @@ class IRAN_GRN_company_common: CommonIRAN_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -25701,10 +31006,10 @@ class IRAN_GRN_company_colo: IRAN_GRN_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -25714,10 +31019,10 @@ class IRAN_GRN_company_fo: IRAN_GRN_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -25761,10 +31066,10 @@ class IRAN_GRN_platoon_common: CommonIRAN_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -25819,10 +31124,10 @@ class IRAN_GRN_platoon_uav: IRAN_GRN_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -25915,10 +31220,10 @@ class IRAN_GRN_platoon_medic: IRAN_GRN_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -25934,6 +31239,10 @@ class IRAN_GRN_platoon_medic: IRAN_GRN_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -25998,10 +31307,10 @@ class IRAN_GRN_squad_sl: CommonIRAN_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -26027,7 +31336,6 @@ class IRAN_GRN_squad_ftl: CommonIRAN_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -26083,7 +31391,7 @@ class IRAN_GRN_squad_gl: CommonIRAN_GRN
 		{
 			"arifle_katiba_gl_f",
 			"acc_pointer_ir",
-			"optic_aco_grn",
+			"optic_arco_blk_f",
 			""
 		}
 	};
@@ -26253,7 +31561,6 @@ class IRAN_GRN_squad_cm: CommonIRAN_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -26288,7 +31595,6 @@ class IRAN_GRN_squad_dm: CommonIRAN_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -26320,7 +31626,6 @@ class IRAN_GRN_squad_eng: CommonIRAN_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -26639,7 +31944,6 @@ class IRAN_GRN_weapons_mort: IRAN_GRN_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -26655,7 +31959,6 @@ class IRAN_GRN_weapons_amort: IRAN_GRN_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -26667,7 +31970,6 @@ class IRAN_GRN_weapons_acmort: IRAN_GRN_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -26732,10 +32034,10 @@ class IRAN_GRN_recon_common: CommonIRAN_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -26767,10 +32069,10 @@ class IRAN_GRN_recon_rm: IRAN_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -26829,10 +32131,10 @@ class IRAN_GRN_recon_tl: IRAN_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -26970,10 +32272,10 @@ class IRAN_GRN_recon_cm: IRAN_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -27025,10 +32327,10 @@ class IRAN_GRN_recon_dm: IRAN_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -27073,10 +32375,10 @@ class IRAN_GRN_recon_exp: IRAN_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -27144,10 +32446,10 @@ class IRAN_GRN_diver_common: IRAN_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -27204,10 +32506,10 @@ class IRAN_GRN_diver_tl: IRAN_GRN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -27238,10 +32540,10 @@ class IRAN_GRN_diver_exp: IRAN_GRN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -27260,10 +32562,10 @@ class IRAN_GRN_diver_cm: IRAN_GRN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -27324,10 +32626,10 @@ class IRAN_GRN_diver_dm: IRAN_GRN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -27394,10 +32696,10 @@ class IRAN_GRN_sniper_common: IRAN_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -27459,10 +32761,10 @@ class IRAN_GRN_sniper_spot: IRAN_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -27573,10 +32875,10 @@ class IRAN_GRN_sniper_exp: IRAN_GRN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -27656,6 +32958,15 @@ class IRAN_GRN_crew_cmd: IRAN_GRN_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class IRAN_GRN_crew_jet: CommonIRAN_GRN
 {
@@ -27712,6 +33023,15 @@ class IRAN_GRN_crew_jet: CommonIRAN_GRN
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class IRAN_GRN_crew_heli: IRAN_GRN_crew_common
 {
@@ -27764,6 +33084,15 @@ class IRAN_GRN_crew_helipilot: IRAN_GRN_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class IRAN_GRN_logistics_common: CommonIRAN_GRN
 {
@@ -27798,10 +33127,11 @@ class IRAN_GRN_logistics_common: CommonIRAN_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -27844,7 +33174,6 @@ class IRAN_GRN_medevac_common: CommonIRAN_GRN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -27875,7 +33204,6 @@ class IRAN_GRN_medevac_doc: IRAN_GRN_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -27908,6 +33236,33 @@ class IRAN_GRN_medevac_tl: IRAN_GRN_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class IRAN_GRN_medevac_heli: IRAN_GRN_medevac_common
@@ -27946,7 +33301,6 @@ class IRAN_GRN_medevac_drv: IRAN_GRN_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -28015,7 +33369,6 @@ class CommonIRAN_URB: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -28098,10 +33451,10 @@ class IRAN_URB_company_common: CommonIRAN_URB
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -28168,10 +33521,10 @@ class IRAN_URB_company_colo: IRAN_URB_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -28181,10 +33534,10 @@ class IRAN_URB_company_fo: IRAN_URB_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -28225,10 +33578,10 @@ class IRAN_URB_platoon_common: CommonIRAN_URB
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -28283,10 +33636,10 @@ class IRAN_URB_platoon_uav: IRAN_URB_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -28378,10 +33731,10 @@ class IRAN_URB_platoon_medic: IRAN_URB_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -28397,6 +33750,10 @@ class IRAN_URB_platoon_medic: IRAN_URB_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -28461,10 +33818,10 @@ class IRAN_URB_squad_sl: CommonIRAN_URB
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -28490,7 +33847,6 @@ class IRAN_URB_squad_ftl: CommonIRAN_URB
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -28546,7 +33902,7 @@ class IRAN_URB_squad_gl: CommonIRAN_URB
 		{
 			"arifle_katiba_gl_f",
 			"acc_pointer_ir",
-			"optic_aco",
+			"optic_arco_blk_f",
 			""
 		}
 	};
@@ -28710,7 +34066,6 @@ class IRAN_URB_squad_cm: CommonIRAN_URB
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -28744,7 +34099,6 @@ class IRAN_URB_squad_dm: CommonIRAN_URB
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -28775,7 +34129,6 @@ class IRAN_URB_squad_eng: CommonIRAN_URB
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -29091,7 +34444,6 @@ class IRAN_URB_weapons_mort: IRAN_URB_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -29107,7 +34459,6 @@ class IRAN_URB_weapons_amort: IRAN_URB_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -29119,7 +34470,6 @@ class IRAN_URB_weapons_acmort: IRAN_URB_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -29183,10 +34533,10 @@ class IRAN_URB_recon_common: CommonIRAN_URB
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -29218,10 +34568,10 @@ class IRAN_URB_recon_rm: IRAN_URB_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -29279,10 +34629,10 @@ class IRAN_URB_recon_tl: IRAN_URB_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -29419,10 +34769,10 @@ class IRAN_URB_recon_cm: IRAN_URB_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -29474,10 +34824,10 @@ class IRAN_URB_recon_dm: IRAN_URB_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -29522,10 +34872,10 @@ class IRAN_URB_recon_exp: IRAN_URB_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -29593,10 +34943,10 @@ class IRAN_URB_diver_common: IRAN_URB_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -29653,10 +35003,10 @@ class IRAN_URB_diver_tl: IRAN_URB_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -29687,10 +35037,10 @@ class IRAN_URB_diver_exp: IRAN_URB_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -29709,10 +35059,10 @@ class IRAN_URB_diver_cm: IRAN_URB_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -29773,10 +35123,10 @@ class IRAN_URB_diver_dm: IRAN_URB_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -29845,10 +35195,10 @@ class IRAN_URB_sniper_common: IRAN_URB_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -29912,10 +35262,10 @@ class IRAN_URB_sniper_spot: IRAN_URB_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -30028,10 +35378,10 @@ class IRAN_URB_sniper_exp: IRAN_URB_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -30109,6 +35459,15 @@ class IRAN_URB_crew_cmd: IRAN_URB_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class IRAN_URB_crew_jet: CommonIRAN_URB
 {
@@ -30165,6 +35524,15 @@ class IRAN_URB_crew_jet: CommonIRAN_URB
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class IRAN_URB_crew_heli: IRAN_URB_crew_common
 {
@@ -30215,6 +35583,15 @@ class IRAN_URB_crew_helipilot: IRAN_URB_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class IRAN_URB_logistics_common: CommonIRAN_URB
 {
@@ -30248,10 +35625,11 @@ class IRAN_URB_logistics_common: CommonIRAN_URB
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -30294,7 +35672,6 @@ class IRAN_URB_medevac_common: CommonIRAN_URB
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -30325,7 +35702,6 @@ class IRAN_URB_medevac_doc: IRAN_URB_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -30358,6 +35734,33 @@ class IRAN_URB_medevac_tl: IRAN_URB_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class IRAN_URB_medevac_heli: IRAN_URB_medevac_common
@@ -30396,7 +35799,6 @@ class IRAN_URB_medevac_drv: IRAN_URB_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -30466,7 +35868,6 @@ class CommonNATO_CTRG: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -30553,10 +35954,10 @@ class NATO_CTRG_company_common: CommonNATO_CTRG
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -30621,10 +36022,10 @@ class NATO_CTRG_company_colo: NATO_CTRG_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -30634,10 +36035,10 @@ class NATO_CTRG_company_fo: NATO_CTRG_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -30678,10 +36079,10 @@ class NATO_CTRG_platoon_common: CommonNATO_CTRG
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -30741,10 +36142,10 @@ class NATO_CTRG_platoon_uav: NATO_CTRG_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -30836,10 +36237,10 @@ class NATO_CTRG_platoon_medic: NATO_CTRG_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -30855,6 +36256,10 @@ class NATO_CTRG_platoon_medic: NATO_CTRG_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -30919,10 +36324,10 @@ class NATO_CTRG_squad_sl: CommonNATO_CTRG
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -30948,7 +36353,6 @@ class NATO_CTRG_squad_ftl: CommonNATO_CTRG
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -31165,7 +36569,6 @@ class NATO_CTRG_squad_cm: CommonNATO_CTRG
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -31199,7 +36602,6 @@ class NATO_CTRG_squad_dm: CommonNATO_CTRG
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -31230,7 +36632,6 @@ class NATO_CTRG_squad_eng: CommonNATO_CTRG
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -31541,7 +36942,6 @@ class NATO_CTRG_weapons_mort: NATO_CTRG_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -31557,7 +36957,6 @@ class NATO_CTRG_weapons_amort: NATO_CTRG_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -31569,7 +36968,6 @@ class NATO_CTRG_weapons_acmort: NATO_CTRG_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -31632,10 +37030,10 @@ class NATO_CTRG_recon_common: CommonNATO_CTRG
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -31668,10 +37066,10 @@ class NATO_CTRG_recon_rm: NATO_CTRG_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -31727,10 +37125,10 @@ class NATO_CTRG_recon_tl: NATO_CTRG_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -31863,10 +37261,10 @@ class NATO_CTRG_recon_cm: NATO_CTRG_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -31918,10 +37316,10 @@ class NATO_CTRG_recon_dm: NATO_CTRG_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -31964,10 +37362,10 @@ class NATO_CTRG_recon_exp: NATO_CTRG_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -32033,10 +37431,10 @@ class NATO_CTRG_diver_common: NATO_CTRG_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -32091,10 +37489,10 @@ class NATO_CTRG_diver_tl: NATO_CTRG_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -32123,10 +37521,10 @@ class NATO_CTRG_diver_exp: NATO_CTRG_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -32145,10 +37543,10 @@ class NATO_CTRG_diver_cm: NATO_CTRG_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -32209,10 +37607,10 @@ class NATO_CTRG_diver_dm: NATO_CTRG_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -32277,10 +37675,10 @@ class NATO_CTRG_sniper_common: NATO_CTRG_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -32340,10 +37738,10 @@ class NATO_CTRG_sniper_spot: NATO_CTRG_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -32452,10 +37850,10 @@ class NATO_CTRG_sniper_exp: NATO_CTRG_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -32533,6 +37931,15 @@ class NATO_CTRG_crew_cmd: NATO_CTRG_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class NATO_CTRG_crew_jet: CommonNATO_CTRG
 {
@@ -32589,6 +37996,15 @@ class NATO_CTRG_crew_jet: CommonNATO_CTRG
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class NATO_CTRG_crew_heli: NATO_CTRG_crew_common
 {
@@ -32639,6 +38055,15 @@ class NATO_CTRG_crew_helipilot: NATO_CTRG_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class NATO_CTRG_logistics_common: CommonNATO_CTRG
 {
@@ -32677,10 +38102,11 @@ class NATO_CTRG_logistics_common: CommonNATO_CTRG
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -32723,7 +38149,6 @@ class NATO_CTRG_medevac_common: CommonNATO_CTRG
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -32759,7 +38184,6 @@ class NATO_CTRG_medevac_doc: NATO_CTRG_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -32792,6 +38216,33 @@ class NATO_CTRG_medevac_tl: NATO_CTRG_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC152"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class NATO_CTRG_medevac_heli: NATO_CTRG_medevac_common
@@ -32830,7 +38281,6 @@ class NATO_CTRG_medevac_drv: NATO_CTRG_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -32905,7 +38355,6 @@ class CommonNATO_MTP: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -32996,10 +38445,10 @@ class NATO_MTP_company_common: CommonNATO_MTP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -33064,10 +38513,10 @@ class NATO_MTP_company_colo: NATO_MTP_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -33077,10 +38526,10 @@ class NATO_MTP_company_fo: NATO_MTP_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -33126,10 +38575,10 @@ class NATO_MTP_platoon_common: CommonNATO_MTP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -33189,10 +38638,10 @@ class NATO_MTP_platoon_uav: NATO_MTP_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -33288,10 +38737,10 @@ class NATO_MTP_platoon_medic: NATO_MTP_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -33307,6 +38756,10 @@ class NATO_MTP_platoon_medic: NATO_MTP_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -33372,10 +38825,10 @@ class NATO_MTP_squad_sl: CommonNATO_MTP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -33402,7 +38855,6 @@ class NATO_MTP_squad_ftl: CommonNATO_MTP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -33460,7 +38912,7 @@ class NATO_MTP_squad_gl: CommonNATO_MTP
 		{
 			"arifle_MX_GL_F",
 			"acc_pointer_ir",
-			"optic_aco_grn",
+			"optic_hamr",
 			""
 		}
 	};
@@ -33630,7 +39082,6 @@ class NATO_MTP_squad_cm: CommonNATO_MTP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -33665,7 +39116,6 @@ class NATO_MTP_squad_dm: CommonNATO_MTP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -33697,7 +39147,6 @@ class NATO_MTP_squad_eng: CommonNATO_MTP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -34017,7 +39466,6 @@ class NATO_MTP_weapons_mort: NATO_MTP_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -34033,7 +39481,6 @@ class NATO_MTP_weapons_amort: NATO_MTP_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -34045,7 +39492,6 @@ class NATO_MTP_weapons_acmort: NATO_MTP_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -34127,10 +39573,10 @@ class NATO_MTP_recon_common: CommonNATO_MTP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -34170,10 +39616,10 @@ class NATO_MTP_recon_rm: NATO_MTP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -34244,10 +39690,10 @@ class NATO_MTP_recon_tl: NATO_MTP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -34407,10 +39853,10 @@ class NATO_MTP_recon_cm: NATO_MTP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -34476,10 +39922,10 @@ class NATO_MTP_recon_dm: NATO_MTP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -34523,10 +39969,10 @@ class NATO_MTP_recon_exp: NATO_MTP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -34592,10 +40038,10 @@ class NATO_MTP_diver_common: NATO_MTP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -34650,10 +40096,10 @@ class NATO_MTP_diver_tl: NATO_MTP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -34682,10 +40128,10 @@ class NATO_MTP_diver_exp: NATO_MTP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -34704,10 +40150,10 @@ class NATO_MTP_diver_cm: NATO_MTP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -34768,10 +40214,10 @@ class NATO_MTP_diver_dm: NATO_MTP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -34837,10 +40283,10 @@ class NATO_MTP_sniper_common: NATO_MTP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -34908,10 +40354,10 @@ class NATO_MTP_sniper_spot: NATO_MTP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -35028,10 +40474,10 @@ class NATO_MTP_sniper_exp: NATO_MTP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -35113,6 +40559,15 @@ class NATO_MTP_crew_cmd: NATO_MTP_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class NATO_MTP_crew_jet: CommonNATO_MTP
 {
@@ -35169,6 +40624,15 @@ class NATO_MTP_crew_jet: CommonNATO_MTP
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class NATO_MTP_crew_heli: NATO_MTP_crew_common
 {
@@ -35223,6 +40687,15 @@ class NATO_MTP_crew_helipilot: NATO_MTP_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class NATO_MTP_logistics_common: CommonNATO_MTP
 {
@@ -35263,10 +40736,11 @@ class NATO_MTP_logistics_common: CommonNATO_MTP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -35309,7 +40783,6 @@ class NATO_MTP_medevac_common: CommonNATO_MTP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -35346,7 +40819,6 @@ class NATO_MTP_medevac_doc: NATO_MTP_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -35379,6 +40851,33 @@ class NATO_MTP_medevac_tl: NATO_MTP_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class NATO_MTP_medevac_heli: NATO_MTP_medevac_common
@@ -35417,7 +40916,6 @@ class NATO_MTP_medevac_drv: NATO_MTP_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -35489,7 +40987,6 @@ class CommonNATO_TRPC: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -35571,10 +41068,10 @@ class NATO_TRPC_company_common: CommonNATO_TRPC
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -35639,10 +41136,10 @@ class NATO_TRPC_company_colo: NATO_TRPC_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -35652,10 +41149,10 @@ class NATO_TRPC_company_fo: NATO_TRPC_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -35697,10 +41194,10 @@ class NATO_TRPC_platoon_common: CommonNATO_TRPC
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -35755,10 +41252,10 @@ class NATO_TRPC_platoon_uav: NATO_TRPC_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -35850,10 +41347,10 @@ class NATO_TRPC_platoon_medic: NATO_TRPC_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -35869,6 +41366,10 @@ class NATO_TRPC_platoon_medic: NATO_TRPC_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -35933,10 +41434,10 @@ class NATO_TRPC_squad_sl: CommonNATO_TRPC
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -35962,7 +41463,6 @@ class NATO_TRPC_squad_ftl: CommonNATO_TRPC
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -36018,7 +41518,7 @@ class NATO_TRPC_squad_gl: CommonNATO_TRPC
 		{
 			"arifle_MX_GL_khk_F",
 			"acc_pointer_ir",
-			"optic_aco",
+			"optic_hamr_khk_f",
 			""
 		}
 	};
@@ -36182,7 +41682,6 @@ class NATO_TRPC_squad_cm: CommonNATO_TRPC
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -36216,7 +41715,6 @@ class NATO_TRPC_squad_dm: CommonNATO_TRPC
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -36247,7 +41745,6 @@ class NATO_TRPC_squad_eng: CommonNATO_TRPC
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -36557,7 +42054,6 @@ class NATO_TRPC_weapons_mort: NATO_TRPC_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -36573,7 +42069,6 @@ class NATO_TRPC_weapons_amort: NATO_TRPC_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -36585,7 +42080,6 @@ class NATO_TRPC_weapons_acmort: NATO_TRPC_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -36657,10 +42151,10 @@ class NATO_TRPC_recon_common: CommonNATO_TRPC
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -36695,10 +42189,10 @@ class NATO_TRPC_recon_rm: NATO_TRPC_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -36761,10 +42255,10 @@ class NATO_TRPC_recon_tl: NATO_TRPC_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -36908,10 +42402,10 @@ class NATO_TRPC_recon_cm: NATO_TRPC_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -36970,10 +42464,10 @@ class NATO_TRPC_recon_dm: NATO_TRPC_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -37016,10 +42510,10 @@ class NATO_TRPC_recon_exp: NATO_TRPC_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -37085,10 +42579,10 @@ class NATO_TRPC_diver_common: NATO_TRPC_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -37143,10 +42637,10 @@ class NATO_TRPC_diver_tl: NATO_TRPC_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -37175,10 +42669,10 @@ class NATO_TRPC_diver_exp: NATO_TRPC_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -37197,10 +42691,10 @@ class NATO_TRPC_diver_cm: NATO_TRPC_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -37261,10 +42755,10 @@ class NATO_TRPC_diver_dm: NATO_TRPC_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -37329,10 +42823,10 @@ class NATO_TRPC_sniper_common: NATO_TRPC_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -37392,10 +42886,10 @@ class NATO_TRPC_sniper_spot: NATO_TRPC_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -37504,10 +42998,10 @@ class NATO_TRPC_sniper_exp: NATO_TRPC_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -37586,6 +43080,15 @@ class NATO_TRPC_crew_cmd: NATO_TRPC_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class NATO_TRPC_crew_jet: CommonNATO_TRPC
 {
@@ -37642,6 +43145,15 @@ class NATO_TRPC_crew_jet: CommonNATO_TRPC
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class NATO_TRPC_crew_heli: NATO_TRPC_crew_common
 {
@@ -37693,6 +43205,15 @@ class NATO_TRPC_crew_helipilot: NATO_TRPC_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class NATO_TRPC_logistics_common: CommonNATO_TRPC
 {
@@ -37726,10 +43247,11 @@ class NATO_TRPC_logistics_common: CommonNATO_TRPC
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -37772,7 +43294,6 @@ class NATO_TRPC_medevac_common: CommonNATO_TRPC
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -37803,7 +43324,6 @@ class NATO_TRPC_medevac_doc: NATO_TRPC_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -37836,6 +43356,33 @@ class NATO_TRPC_medevac_tl: NATO_TRPC_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class NATO_TRPC_medevac_heli: NATO_TRPC_medevac_common
@@ -37874,7 +43421,6 @@ class NATO_TRPC_medevac_drv: NATO_TRPC_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -37944,7 +43490,6 @@ class CommonNATO_WDL: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -38028,10 +43573,10 @@ class NATO_WDL_company_common: CommonNATO_WDL
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -38096,10 +43641,10 @@ class NATO_WDL_company_colo: NATO_WDL_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -38109,10 +43654,10 @@ class NATO_WDL_company_fo: NATO_WDL_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -38153,10 +43698,10 @@ class NATO_WDL_platoon_common: CommonNATO_WDL
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -38216,10 +43761,10 @@ class NATO_WDL_platoon_uav: NATO_WDL_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -38311,10 +43856,10 @@ class NATO_WDL_platoon_medic: NATO_WDL_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -38330,6 +43875,10 @@ class NATO_WDL_platoon_medic: NATO_WDL_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -38394,10 +43943,10 @@ class NATO_WDL_squad_sl: CommonNATO_WDL
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -38423,7 +43972,6 @@ class NATO_WDL_squad_ftl: CommonNATO_WDL
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -38478,7 +44026,7 @@ class NATO_WDL_squad_gl: CommonNATO_WDL
 		{
 			"rhs_weap_hk416d145_m320",
 			"acc_pointer_ir",
-			"optic_Holosight_blk_F",
+			"optic_MRCO",
 			""
 		}
 	};
@@ -38640,7 +44188,6 @@ class NATO_WDL_squad_cm: CommonNATO_WDL
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -38674,7 +44221,6 @@ class NATO_WDL_squad_dm: CommonNATO_WDL
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -38705,7 +44251,6 @@ class NATO_WDL_squad_eng: CommonNATO_WDL
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -39015,7 +44560,6 @@ class NATO_WDL_weapons_mort: NATO_WDL_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -39031,7 +44575,6 @@ class NATO_WDL_weapons_amort: NATO_WDL_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -39043,7 +44586,6 @@ class NATO_WDL_weapons_acmort: NATO_WDL_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -39113,10 +44655,10 @@ class NATO_WDL_recon_common: CommonNATO_WDL
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -39156,10 +44698,10 @@ class NATO_WDL_recon_rm: NATO_WDL_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -39215,10 +44757,10 @@ class NATO_WDL_recon_tl: NATO_WDL_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -39355,10 +44897,10 @@ class NATO_WDL_recon_cm: NATO_WDL_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -39410,10 +44952,10 @@ class NATO_WDL_recon_dm: NATO_WDL_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -39456,10 +44998,10 @@ class NATO_WDL_recon_exp: NATO_WDL_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -39525,10 +45067,10 @@ class NATO_WDL_diver_common: NATO_WDL_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -39583,10 +45125,10 @@ class NATO_WDL_diver_tl: NATO_WDL_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -39615,10 +45157,10 @@ class NATO_WDL_diver_exp: NATO_WDL_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -39637,10 +45179,10 @@ class NATO_WDL_diver_cm: NATO_WDL_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -39701,10 +45243,10 @@ class NATO_WDL_diver_dm: NATO_WDL_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -39769,10 +45311,10 @@ class NATO_WDL_sniper_common: NATO_WDL_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -39832,10 +45374,10 @@ class NATO_WDL_sniper_spot: NATO_WDL_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -39951,10 +45493,10 @@ class NATO_WDL_sniper_exp: NATO_WDL_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -40032,6 +45574,15 @@ class NATO_WDL_crew_cmd: NATO_WDL_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class NATO_WDL_crew_jet: CommonNATO_WDL
 {
@@ -40088,6 +45639,15 @@ class NATO_WDL_crew_jet: CommonNATO_WDL
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class NATO_WDL_crew_heli: NATO_WDL_crew_common
 {
@@ -40138,6 +45698,15 @@ class NATO_WDL_crew_helipilot: NATO_WDL_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class NATO_WDL_logistics_common: CommonNATO_WDL
 {
@@ -40176,10 +45745,11 @@ class NATO_WDL_logistics_common: CommonNATO_WDL
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -40222,7 +45792,6 @@ class NATO_WDL_medevac_common: CommonNATO_WDL
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -40258,7 +45827,6 @@ class NATO_WDL_medevac_doc: NATO_WDL_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -40291,6 +45859,33 @@ class NATO_WDL_medevac_tl: NATO_WDL_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class NATO_WDL_medevac_heli: NATO_WDL_medevac_common
@@ -40329,7 +45924,6 @@ class NATO_WDL_medevac_drv: NATO_WDL_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -40419,7 +46013,6 @@ class CommonRU_DES: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -40508,10 +46101,10 @@ class RU_DES_company_common: CommonRU_DES
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -40577,10 +46170,10 @@ class RU_DES_company_colo: RU_DES_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -40590,10 +46183,10 @@ class RU_DES_company_fo: RU_DES_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -40641,10 +46234,10 @@ class RU_DES_platoon_common: CommonRU_DES
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -40699,10 +46292,10 @@ class RU_DES_platoon_uav: RU_DES_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -40795,10 +46388,10 @@ class RU_DES_platoon_medic: RU_DES_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -40814,6 +46407,10 @@ class RU_DES_platoon_medic: RU_DES_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -40884,10 +46481,10 @@ class RU_DES_squad_sl: CommonRU_DES
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
@@ -40913,7 +46510,6 @@ class RU_DES_squad_ftl: CommonRU_DES
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -40970,14 +46566,14 @@ class RU_DES_squad_gl: CommonRU_DES
 		
 		{
 			"rhs_weap_ak74m_gp25",
-			"",
+			"rhs_acc_pkas",
 			"",
 			"rhs_acc_dtk2"
 		},
 		
 		{
 			"rhs_weap_ak74m_fullplum_gp25",
-			"",
+			"rhs_acc_pkas",
 			"",
 			"rhs_acc_dtk3"
 		}
@@ -41197,7 +46793,6 @@ class RU_DES_squad_cm: CommonRU_DES
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -41232,7 +46827,6 @@ class RU_DES_squad_dm: CommonRU_DES
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -41264,7 +46858,6 @@ class RU_DES_squad_eng: CommonRU_DES
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -41573,7 +47166,6 @@ class RU_DES_weapons_mort: RU_DES_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -41589,7 +47181,6 @@ class RU_DES_weapons_amort: RU_DES_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -41601,7 +47192,6 @@ class RU_DES_weapons_acmort: RU_DES_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -41664,10 +47254,10 @@ class RU_DES_recon_common: CommonRU_DES
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -41699,10 +47289,10 @@ class RU_DES_recon_rm: RU_DES_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -41757,10 +47347,10 @@ class RU_DES_recon_tl: RU_DES_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -41900,10 +47490,10 @@ class RU_DES_recon_cm: RU_DES_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -41955,10 +47545,10 @@ class RU_DES_recon_dm: RU_DES_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -42001,10 +47591,10 @@ class RU_DES_recon_exp: RU_DES_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -42070,10 +47660,10 @@ class RU_DES_diver_common: RU_DES_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -42129,10 +47719,10 @@ class RU_DES_diver_tl: RU_DES_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -42162,10 +47752,10 @@ class RU_DES_diver_exp: RU_DES_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -42185,10 +47775,10 @@ class RU_DES_diver_cm: RU_DES_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -42250,10 +47840,10 @@ class RU_DES_diver_dm: RU_DES_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -42321,10 +47911,10 @@ class RU_DES_sniper_common: RU_DES_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -42384,10 +47974,10 @@ class RU_DES_sniper_spot: RU_DES_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -42493,10 +48083,10 @@ class RU_DES_sniper_exp: RU_DES_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -42588,6 +48178,15 @@ class RU_DES_crew_cmd: RU_DES_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class RU_DES_crew_jet: CommonRU_DES
 {
@@ -42645,6 +48244,15 @@ class RU_DES_crew_jet: CommonRU_DES
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class RU_DES_crew_heli: RU_DES_crew_common
 {
@@ -42697,6 +48305,15 @@ class RU_DES_crew_helipilot: RU_DES_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class RU_DES_logistics_common: CommonRU_DES
 {
@@ -42743,10 +48360,11 @@ class RU_DES_logistics_common: CommonRU_DES
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -42789,7 +48407,6 @@ class RU_DES_medevac_common: CommonRU_DES
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -42820,7 +48437,6 @@ class RU_DES_medevac_doc: RU_DES_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -42853,6 +48469,33 @@ class RU_DES_medevac_tl: RU_DES_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class RU_DES_medevac_heli: RU_DES_medevac_common
@@ -42892,7 +48535,6 @@ class RU_DES_medevac_drv: RU_DES_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -42982,7 +48624,6 @@ class CommonRU_EMR: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -43071,10 +48712,10 @@ class RU_EMR_company_common: CommonRU_EMR
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -43140,10 +48781,10 @@ class RU_EMR_company_colo: RU_EMR_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -43153,10 +48794,10 @@ class RU_EMR_company_fo: RU_EMR_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -43204,10 +48845,10 @@ class RU_EMR_platoon_common: CommonRU_EMR
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -43262,10 +48903,10 @@ class RU_EMR_platoon_uav: RU_EMR_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -43358,10 +48999,10 @@ class RU_EMR_platoon_medic: RU_EMR_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -43377,6 +49018,10 @@ class RU_EMR_platoon_medic: RU_EMR_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -43447,10 +49092,10 @@ class RU_EMR_squad_sl: CommonRU_EMR
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
@@ -43476,7 +49121,6 @@ class RU_EMR_squad_ftl: CommonRU_EMR
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -43533,14 +49177,14 @@ class RU_EMR_squad_gl: CommonRU_EMR
 		
 		{
 			"rhs_weap_ak74m_gp25",
-			"",
+			"rhs_acc_pkas",
 			"",
 			"rhs_acc_dtk2"
 		},
 		
 		{
 			"rhs_weap_ak74m_fullplum_gp25",
-			"",
+			"rhs_acc_pkas",
 			"",
 			"rhs_acc_dtk3"
 		}
@@ -43760,7 +49404,6 @@ class RU_EMR_squad_cm: CommonRU_EMR
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -43795,7 +49438,6 @@ class RU_EMR_squad_dm: CommonRU_EMR
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -43827,7 +49469,6 @@ class RU_EMR_squad_eng: CommonRU_EMR
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -44136,7 +49777,6 @@ class RU_EMR_weapons_mort: RU_EMR_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -44152,7 +49792,6 @@ class RU_EMR_weapons_amort: RU_EMR_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -44164,7 +49803,6 @@ class RU_EMR_weapons_acmort: RU_EMR_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -44227,10 +49865,10 @@ class RU_EMR_recon_common: CommonRU_EMR
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -44262,10 +49900,10 @@ class RU_EMR_recon_rm: RU_EMR_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -44320,10 +49958,10 @@ class RU_EMR_recon_tl: RU_EMR_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -44463,10 +50101,10 @@ class RU_EMR_recon_cm: RU_EMR_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -44518,10 +50156,10 @@ class RU_EMR_recon_dm: RU_EMR_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -44564,10 +50202,10 @@ class RU_EMR_recon_exp: RU_EMR_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -44633,10 +50271,10 @@ class RU_EMR_diver_common: RU_EMR_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -44692,10 +50330,10 @@ class RU_EMR_diver_tl: RU_EMR_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -44725,10 +50363,10 @@ class RU_EMR_diver_exp: RU_EMR_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -44748,10 +50386,10 @@ class RU_EMR_diver_cm: RU_EMR_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -44813,10 +50451,10 @@ class RU_EMR_diver_dm: RU_EMR_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -44884,10 +50522,10 @@ class RU_EMR_sniper_common: RU_EMR_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -44947,10 +50585,10 @@ class RU_EMR_sniper_spot: RU_EMR_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -45056,10 +50694,10 @@ class RU_EMR_sniper_exp: RU_EMR_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -45151,6 +50789,15 @@ class RU_EMR_crew_cmd: RU_EMR_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class RU_EMR_crew_jet: CommonRU_EMR
 {
@@ -45208,6 +50855,15 @@ class RU_EMR_crew_jet: CommonRU_EMR
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class RU_EMR_crew_heli: RU_EMR_crew_common
 {
@@ -45260,6 +50916,15 @@ class RU_EMR_crew_helipilot: RU_EMR_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class RU_EMR_logistics_common: CommonRU_EMR
 {
@@ -45306,10 +50971,11 @@ class RU_EMR_logistics_common: CommonRU_EMR
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -45352,7 +51018,6 @@ class RU_EMR_medevac_common: CommonRU_EMR
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -45383,7 +51048,6 @@ class RU_EMR_medevac_doc: RU_EMR_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -45416,6 +51080,33 @@ class RU_EMR_medevac_tl: RU_EMR_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class RU_EMR_medevac_heli: RU_EMR_medevac_common
@@ -45455,7 +51146,6 @@ class RU_EMR_medevac_drv: RU_EMR_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -45545,7 +51235,6 @@ class CommonRU_FLORA: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -45634,10 +51323,10 @@ class RU_FLORA_company_common: CommonRU_FLORA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -45702,10 +51391,10 @@ class RU_FLORA_company_colo: RU_FLORA_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -45715,10 +51404,10 @@ class RU_FLORA_company_fo: RU_FLORA_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -45766,10 +51455,10 @@ class RU_FLORA_platoon_common: CommonRU_FLORA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -45824,10 +51513,10 @@ class RU_FLORA_platoon_uav: RU_FLORA_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -45919,10 +51608,10 @@ class RU_FLORA_platoon_medic: RU_FLORA_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -45938,6 +51627,10 @@ class RU_FLORA_platoon_medic: RU_FLORA_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -46007,10 +51700,10 @@ class RU_FLORA_squad_sl: CommonRU_FLORA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
@@ -46035,7 +51728,6 @@ class RU_FLORA_squad_ftl: CommonRU_FLORA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -46090,14 +51782,14 @@ class RU_FLORA_squad_gl: CommonRU_FLORA
 		
 		{
 			"rhs_weap_ak74m_gp25",
-			"",
+			"rhs_acc_pkas",
 			"",
 			"rhs_acc_dtk2"
 		},
 		
 		{
 			"rhs_weap_ak74m_fullplum_gp25",
-			"",
+			"rhs_acc_pkas",
 			"",
 			"rhs_acc_dtk3"
 		}
@@ -46313,7 +52005,6 @@ class RU_FLORA_squad_cm: CommonRU_FLORA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -46347,7 +52038,6 @@ class RU_FLORA_squad_dm: CommonRU_FLORA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -46378,7 +52068,6 @@ class RU_FLORA_squad_eng: CommonRU_FLORA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -46685,7 +52374,6 @@ class RU_FLORA_weapons_mort: RU_FLORA_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -46701,7 +52389,6 @@ class RU_FLORA_weapons_amort: RU_FLORA_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -46713,7 +52400,6 @@ class RU_FLORA_weapons_acmort: RU_FLORA_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -46775,10 +52461,10 @@ class RU_FLORA_recon_common: CommonRU_FLORA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -46810,10 +52496,10 @@ class RU_FLORA_recon_rm: RU_FLORA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -46867,10 +52553,10 @@ class RU_FLORA_recon_tl: RU_FLORA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -47008,10 +52694,10 @@ class RU_FLORA_recon_cm: RU_FLORA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -47063,10 +52749,10 @@ class RU_FLORA_recon_dm: RU_FLORA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -47109,10 +52795,10 @@ class RU_FLORA_recon_exp: RU_FLORA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -47178,10 +52864,10 @@ class RU_FLORA_diver_common: RU_FLORA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -47236,10 +52922,10 @@ class RU_FLORA_diver_tl: RU_FLORA_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -47268,10 +52954,10 @@ class RU_FLORA_diver_exp: RU_FLORA_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -47290,10 +52976,10 @@ class RU_FLORA_diver_cm: RU_FLORA_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -47354,10 +53040,10 @@ class RU_FLORA_diver_dm: RU_FLORA_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -47424,10 +53110,10 @@ class RU_FLORA_sniper_common: RU_FLORA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -47487,10 +53173,10 @@ class RU_FLORA_sniper_spot: RU_FLORA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -47596,10 +53282,10 @@ class RU_FLORA_sniper_exp: RU_FLORA_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -47691,6 +53377,15 @@ class RU_FLORA_crew_cmd: RU_FLORA_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class RU_FLORA_crew_jet: CommonRU_FLORA
 {
@@ -47748,6 +53443,15 @@ class RU_FLORA_crew_jet: CommonRU_FLORA
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class RU_FLORA_crew_heli: RU_FLORA_crew_common
 {
@@ -47800,6 +53504,15 @@ class RU_FLORA_crew_helipilot: RU_FLORA_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class RU_FLORA_logistics_common: CommonRU_FLORA
 {
@@ -47846,10 +53559,11 @@ class RU_FLORA_logistics_common: CommonRU_FLORA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -47892,7 +53606,6 @@ class RU_FLORA_medevac_common: CommonRU_FLORA
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -47923,7 +53636,6 @@ class RU_FLORA_medevac_doc: RU_FLORA_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -47956,6 +53668,33 @@ class RU_FLORA_medevac_tl: RU_FLORA_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class RU_FLORA_medevac_heli: RU_FLORA_medevac_common
@@ -47995,7 +53734,6 @@ class RU_FLORA_medevac_drv: RU_FLORA_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -48085,7 +53823,6 @@ class CommonRU_MOUNT: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -48174,10 +53911,10 @@ class RU_MOUNT_company_common: CommonRU_MOUNT
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -48242,10 +53979,10 @@ class RU_MOUNT_company_colo: RU_MOUNT_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -48255,10 +53992,10 @@ class RU_MOUNT_company_fo: RU_MOUNT_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -48306,10 +54043,10 @@ class RU_MOUNT_platoon_common: CommonRU_MOUNT
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -48364,10 +54101,10 @@ class RU_MOUNT_platoon_uav: RU_MOUNT_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -48459,10 +54196,10 @@ class RU_MOUNT_platoon_medic: RU_MOUNT_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -48478,6 +54215,10 @@ class RU_MOUNT_platoon_medic: RU_MOUNT_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -48547,10 +54288,10 @@ class RU_MOUNT_squad_sl: CommonRU_MOUNT
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
@@ -48575,7 +54316,6 @@ class RU_MOUNT_squad_ftl: CommonRU_MOUNT
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -48630,14 +54370,14 @@ class RU_MOUNT_squad_gl: CommonRU_MOUNT
 		
 		{
 			"rhs_weap_ak74m_gp25",
-			"",
+			"rhs_acc_pkas",
 			"",
 			"rhs_acc_dtk2"
 		},
 		
 		{
 			"rhs_weap_ak74m_fullplum_gp25",
-			"",
+			"rhs_acc_pkas",
 			"",
 			"rhs_acc_dtk3"
 		}
@@ -48853,7 +54593,6 @@ class RU_MOUNT_squad_cm: CommonRU_MOUNT
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -48887,7 +54626,6 @@ class RU_MOUNT_squad_dm: CommonRU_MOUNT
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -48918,7 +54656,6 @@ class RU_MOUNT_squad_eng: CommonRU_MOUNT
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -49225,7 +54962,6 @@ class RU_MOUNT_weapons_mort: RU_MOUNT_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -49241,7 +54977,6 @@ class RU_MOUNT_weapons_amort: RU_MOUNT_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -49253,7 +54988,6 @@ class RU_MOUNT_weapons_acmort: RU_MOUNT_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -49315,10 +55049,10 @@ class RU_MOUNT_recon_common: CommonRU_MOUNT
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -49350,10 +55084,10 @@ class RU_MOUNT_recon_rm: RU_MOUNT_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -49407,10 +55141,10 @@ class RU_MOUNT_recon_tl: RU_MOUNT_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -49548,10 +55282,10 @@ class RU_MOUNT_recon_cm: RU_MOUNT_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -49603,10 +55337,10 @@ class RU_MOUNT_recon_dm: RU_MOUNT_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -49649,10 +55383,10 @@ class RU_MOUNT_recon_exp: RU_MOUNT_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -49718,10 +55452,10 @@ class RU_MOUNT_diver_common: RU_MOUNT_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -49776,10 +55510,10 @@ class RU_MOUNT_diver_tl: RU_MOUNT_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -49808,10 +55542,10 @@ class RU_MOUNT_diver_exp: RU_MOUNT_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -49830,10 +55564,10 @@ class RU_MOUNT_diver_cm: RU_MOUNT_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -49894,10 +55628,10 @@ class RU_MOUNT_diver_dm: RU_MOUNT_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -49964,10 +55698,10 @@ class RU_MOUNT_sniper_common: RU_MOUNT_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -50027,10 +55761,10 @@ class RU_MOUNT_sniper_spot: RU_MOUNT_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -50136,10 +55870,10 @@ class RU_MOUNT_sniper_exp: RU_MOUNT_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -50231,6 +55965,15 @@ class RU_MOUNT_crew_cmd: RU_MOUNT_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class RU_MOUNT_crew_jet: CommonRU_MOUNT
 {
@@ -50288,6 +56031,15 @@ class RU_MOUNT_crew_jet: CommonRU_MOUNT
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class RU_MOUNT_crew_heli: RU_MOUNT_crew_common
 {
@@ -50340,6 +56092,15 @@ class RU_MOUNT_crew_helipilot: RU_MOUNT_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class RU_MOUNT_logistics_common: CommonRU_MOUNT
 {
@@ -50386,10 +56147,11 @@ class RU_MOUNT_logistics_common: CommonRU_MOUNT
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -50432,7 +56194,6 @@ class RU_MOUNT_medevac_common: CommonRU_MOUNT
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -50463,7 +56224,6 @@ class RU_MOUNT_medevac_doc: RU_MOUNT_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -50496,6 +56256,33 @@ class RU_MOUNT_medevac_tl: RU_MOUNT_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class RU_MOUNT_medevac_heli: RU_MOUNT_medevac_common
@@ -50535,7 +56322,6 @@ class RU_MOUNT_medevac_drv: RU_MOUNT_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -50635,7 +56421,6 @@ class CommonSYND: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -50769,10 +56554,10 @@ class SYND_company_common: CommonSYND
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -50831,10 +56616,6 @@ class SYND_company_common: CommonSYND
 	{
 		"ItemMap"
 	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
@@ -50850,10 +56631,6 @@ class SYND_company_co: SYND_company_common
 };
 class SYND_company_xo: SYND_company_common
 {
-	gps[]=
-	{
-		"i_EasyTrack_Tablet"
-	};
 	headgear[]=
 	{
 		"H_Hat_Safari_sand_F"
@@ -50861,20 +56638,16 @@ class SYND_company_xo: SYND_company_common
 };
 class SYND_company_mio: SYND_company_common
 {
-	gps[]=
-	{
-		"i_EasyTrack_Tablet"
-	};
 };
 class SYND_company_colo: SYND_company_common
 {
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -50884,10 +56657,10 @@ class SYND_company_fo: SYND_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -50946,10 +56719,10 @@ class SYND_platoon_common: CommonSYND
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -50990,10 +56763,6 @@ class SYND_platoon_common: CommonSYND
 		"H_Headbandage_stained_f",
 		"H_Headbandage_bloody_f"
 	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	map[]=
 	{
 		"ItemMap"
@@ -51023,10 +56792,6 @@ class SYND_platoon_pl: SYND_platoon_common
 };
 class SYND_platoon_psgt: SYND_platoon_common
 {
-	gps[]=
-	{
-		"i_EasyTrack_Tablet"
-	};
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL",
@@ -51038,10 +56803,10 @@ class SYND_platoon_uav: SYND_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -51145,10 +56910,10 @@ class SYND_platoon_medic: SYND_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -51165,6 +56930,10 @@ class SYND_platoon_medic: SYND_platoon_common
 		"ACE_epinephrine",
 		30
 	};
+	lrRadios[]=
+	{
+		""
+	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class SYND_squad_sl: CommonSYND
@@ -51177,10 +56946,6 @@ class SYND_squad_sl: CommonSYND
 		"V_TacVest_oli",
 		"V_TacVest_blk",
 		"V_TacVest_camo"
-	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
 	};
 	binoculars[]=
 	{
@@ -51252,10 +57017,10 @@ class SYND_squad_sl: CommonSYND
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
@@ -51285,7 +57050,6 @@ class SYND_squad_ftl: CommonSYND
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -51345,30 +57109,30 @@ class SYND_squad_gl: CommonSYND
 		
 		{
 			"rhs_weap_ak103_gp25",
+			"rhs_acc_ekp8_02",
 			"rhs_acc_dtk",
-			"",
-			""
+			"rhs_acc_2dpZenit"
 		},
 		
 		{
 			"rhs_weap_akmn_gp25",
-			"",
+			"rhs_acc_1p63",
 			"",
 			""
 		},
 		
 		{
 			"rhs_weap_akms_gp25",
+			"rhs_acc_ekp1",
 			"rhs_acc_dtk",
-			"",
-			""
+			"rhs_acc_2dpZenit"
 		},
 		
 		{
 			"rhs_weap_akm_gp25",
+			"rhs_acc_pkas",
 			"rhs_acc_dtk",
-			"",
-			""
+			"rhs_acc_2dpZenit"
 		}
 	};
 	magazines[]=
@@ -51599,7 +57363,6 @@ class SYND_squad_cm: CommonSYND
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -51637,7 +57400,6 @@ class SYND_squad_dm: CommonSYND
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -51672,7 +57434,6 @@ class SYND_squad_eng: CommonSYND
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -51998,7 +57759,6 @@ class SYND_weapons_mort: SYND_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -52014,7 +57774,6 @@ class SYND_weapons_amort: SYND_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -52026,7 +57785,6 @@ class SYND_weapons_acmort: SYND_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -52128,10 +57886,10 @@ class SYND_recon_common: CommonSYND
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -52205,10 +57963,10 @@ class SYND_recon_rm: SYND_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -52281,10 +58039,10 @@ class SYND_recon_tl: SYND_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -52293,10 +58051,6 @@ class SYND_recon_tl: SYND_recon_common
 	binoculars[]=
 	{
 		"Binocular"
-	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
 	};
 	lrRadios[]=
 	{
@@ -52441,10 +58195,10 @@ class SYND_recon_cm: SYND_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -52510,10 +58264,10 @@ class SYND_recon_dm: SYND_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -52559,10 +58313,10 @@ class SYND_recon_exp: SYND_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -52637,10 +58391,6 @@ class SYND_diver_common: SYND_recon_common
 			""
 		}
 	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	magazines[]=
 	{
 		"rhsusf_mag_7x45acp_MHP",
@@ -52657,10 +58407,10 @@ class SYND_diver_common: SYND_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -52715,10 +58465,10 @@ class SYND_diver_tl: SYND_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -52747,10 +58497,10 @@ class SYND_diver_exp: SYND_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -52769,10 +58519,10 @@ class SYND_diver_cm: SYND_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -52847,10 +58597,10 @@ class SYND_diver_dm: SYND_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -52933,10 +58683,10 @@ class SYND_sniper_common: SYND_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -52978,10 +58728,6 @@ class SYND_sniper_spot: SYND_recon_common
 			"rhs_acc_ekp8_02"
 		}
 	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	binoculars[]=
 	{
 		"Binocular"
@@ -53012,10 +58758,10 @@ class SYND_sniper_spot: SYND_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -53137,10 +58883,10 @@ class SYND_sniper_exp: SYND_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -53235,13 +58981,18 @@ class SYND_crew_cmd: SYND_crew_common
 		"ACRE_SEM52SL",
 		"ACRE_SEM52SL"
 	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	binoculars[]=
 	{
 		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class SYND_crew_jet: CommonSYND
@@ -53287,10 +59038,6 @@ class SYND_crew_jet: CommonSYND
 	{
 		"itemMap"
 	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	nvgs[]=
 	{
 		""
@@ -53306,6 +59053,15 @@ class SYND_crew_jet: CommonSYND
 	insignia[]=
 	{
 		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class SYND_crew_heli: SYND_crew_common
@@ -53349,10 +59105,6 @@ class SYND_crew_helipilot: SYND_crew_heli
 	{
 		"itemMap"
 	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	goggles[]=
 	{
 		"G_Aviator"
@@ -53374,6 +59126,15 @@ class SYND_crew_helipilot: SYND_crew_heli
 	nvgs[]=
 	{
 		"NVGoggles_OPFOR"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class SYND_logistics_common: CommonSYND
@@ -53465,10 +59226,11 @@ class SYND_logistics_common: CommonSYND
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -53476,10 +59238,6 @@ class SYND_logistics_common: CommonSYND
 	{
 		"ACRE_SEM52SL",
 		"ACRE_SEM52SL"
-	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
 	};
 	map[]=
 	{
@@ -53511,7 +59269,6 @@ class SYND_medevac_common: CommonSYND
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -53579,7 +59336,6 @@ class SYND_medevac_doc: SYND_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -53605,13 +59361,36 @@ class SYND_medevac_doc: SYND_medevac_common
 };
 class SYND_medevac_tl: SYND_medevac_doc
 {
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class SYND_medevac_heli: SYND_medevac_common
@@ -53625,10 +59404,6 @@ class SYND_medevac_heli: SYND_medevac_common
 	map[]=
 	{
 		"itemMap"
-	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
 	};
 	goggles[]=
 	{
@@ -53658,7 +59433,6 @@ class SYND_medevac_drv: SYND_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -53721,7 +59495,6 @@ class CommonTAKISTAN: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -53797,10 +59570,10 @@ class TAKISTAN_company_common: CommonTAKISTAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -53825,10 +59598,6 @@ class TAKISTAN_company_common: CommonTAKISTAN
 	{
 		"ItemMap"
 	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	lrRadios[]=
 	{
 		"ACRE_SEM70"
@@ -53844,10 +59613,6 @@ class TAKISTAN_company_co: TAKISTAN_company_common
 };
 class TAKISTAN_company_xo: TAKISTAN_company_common
 {
-	gps[]=
-	{
-		"i_EasyTrack_Tablet"
-	};
 	headgear[]=
 	{
 		"rhs_beret_mp1"
@@ -53855,20 +59620,16 @@ class TAKISTAN_company_xo: TAKISTAN_company_common
 };
 class TAKISTAN_company_mio: TAKISTAN_company_common
 {
-	gps[]=
-	{
-		"i_EasyTrack_Tablet"
-	};
 };
 class TAKISTAN_company_colo: TAKISTAN_company_common
 {
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -53878,10 +59639,10 @@ class TAKISTAN_company_fo: TAKISTAN_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -53916,19 +59677,15 @@ class TAKISTAN_platoon_common: CommonTAKISTAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
 	{
 		"rhs_ssh68"
-	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
 	};
 	map[]=
 	{
@@ -53959,10 +59716,6 @@ class TAKISTAN_platoon_pl: TAKISTAN_platoon_common
 };
 class TAKISTAN_platoon_psgt: TAKISTAN_platoon_common
 {
-	gps[]=
-	{
-		"i_EasyTrack_Tablet"
-	};
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL",
@@ -53974,10 +59727,10 @@ class TAKISTAN_platoon_uav: TAKISTAN_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -54063,10 +59816,10 @@ class TAKISTAN_platoon_medic: TAKISTAN_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -54083,6 +59836,10 @@ class TAKISTAN_platoon_medic: TAKISTAN_platoon_common
 		"ACE_epinephrine",
 		30
 	};
+	lrRadios[]=
+	{
+		""
+	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class TAKISTAN_squad_sl: CommonTAKISTAN
@@ -54090,10 +59847,6 @@ class TAKISTAN_squad_sl: CommonTAKISTAN
 	vest[]=
 	{
 		"rhs_6sh92_vsr_vog_headset"
-	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
 	};
 	binoculars[]=
 	{
@@ -54140,10 +59893,10 @@ class TAKISTAN_squad_sl: CommonTAKISTAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -54169,7 +59922,6 @@ class TAKISTAN_squad_ftl: CommonTAKISTAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -54367,7 +60119,6 @@ class TAKISTAN_squad_cm: CommonTAKISTAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -54401,7 +60152,6 @@ class TAKISTAN_squad_dm: CommonTAKISTAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -54432,7 +60182,6 @@ class TAKISTAN_squad_eng: CommonTAKISTAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -54745,7 +60494,6 @@ class TAKISTAN_weapons_mort: TAKISTAN_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -54761,7 +60509,6 @@ class TAKISTAN_weapons_amort: TAKISTAN_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -54773,7 +60520,6 @@ class TAKISTAN_weapons_acmort: TAKISTAN_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -54829,10 +60575,10 @@ class TAKISTAN_recon_common: CommonTAKISTAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -54866,10 +60612,10 @@ class TAKISTAN_recon_rm: TAKISTAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -54919,10 +60665,10 @@ class TAKISTAN_recon_tl: TAKISTAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -54932,10 +60678,6 @@ class TAKISTAN_recon_tl: TAKISTAN_recon_common
 	binoculars[]=
 	{
 		"ace_vector"
-	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
 	};
 	lrRadios[]=
 	{
@@ -55048,10 +60790,10 @@ class TAKISTAN_recon_cm: TAKISTAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -55103,10 +60845,10 @@ class TAKISTAN_recon_dm: TAKISTAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -55149,10 +60891,10 @@ class TAKISTAN_recon_exp: TAKISTAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -55192,10 +60934,6 @@ class TAKISTAN_diver_common: TAKISTAN_recon_common
 			""
 		}
 	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	magazines[]=
 	{
 		"rhsusf_mag_7x45acp_MHP",
@@ -55212,10 +60950,10 @@ class TAKISTAN_diver_common: TAKISTAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -55270,10 +61008,10 @@ class TAKISTAN_diver_tl: TAKISTAN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -55302,10 +61040,10 @@ class TAKISTAN_diver_exp: TAKISTAN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -55324,10 +61062,10 @@ class TAKISTAN_diver_cm: TAKISTAN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -55388,10 +61126,10 @@ class TAKISTAN_diver_dm: TAKISTAN_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -55452,10 +61190,10 @@ class TAKISTAN_sniper_common: TAKISTAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -55474,10 +61212,6 @@ class TAKISTAN_sniper_spot: TAKISTAN_recon_common
 	primary[]=
 	{
 		"arifle_AK12_GL_F"
-	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
 	};
 	binoculars[]=
 	{
@@ -55511,10 +61245,10 @@ class TAKISTAN_sniper_spot: TAKISTAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -55619,10 +61353,10 @@ class TAKISTAN_sniper_exp: TAKISTAN_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -55693,13 +61427,18 @@ class TAKISTAN_crew_cmd: TAKISTAN_crew_common
 		"ACRE_SEM52SL",
 		"ACRE_SEM70"
 	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	binoculars[]=
 	{
 		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class TAKISTAN_crew_jet: CommonTAKISTAN
@@ -55738,10 +61477,6 @@ class TAKISTAN_crew_jet: CommonTAKISTAN
 	{
 		"itemMap"
 	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	nvgs[]=
 	{
 		""
@@ -55757,6 +61492,15 @@ class TAKISTAN_crew_jet: CommonTAKISTAN
 	insignia[]=
 	{
 		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class TAKISTAN_crew_heli: TAKISTAN_crew_common
@@ -55789,10 +61533,6 @@ class TAKISTAN_crew_helipilot: TAKISTAN_crew_heli
 	{
 		"itemMap"
 	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	goggles[]=
 	{
 		"G_Aviator"
@@ -55809,6 +61549,15 @@ class TAKISTAN_crew_helipilot: TAKISTAN_crew_heli
 	nvgs[]=
 	{
 		"NVGoggles_OPFOR"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class TAKISTAN_logistics_common: CommonTAKISTAN
@@ -55843,10 +61592,11 @@ class TAKISTAN_logistics_common: CommonTAKISTAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -55854,10 +61604,6 @@ class TAKISTAN_logistics_common: CommonTAKISTAN
 	{
 		"ACRE_SEM70",
 		"ACRE_SEM52SL"
-	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
 	};
 	map[]=
 	{
@@ -55889,7 +61635,6 @@ class TAKISTAN_medevac_common: CommonTAKISTAN
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -55920,7 +61665,6 @@ class TAKISTAN_medevac_doc: TAKISTAN_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -55946,13 +61690,36 @@ class TAKISTAN_medevac_doc: TAKISTAN_medevac_common
 };
 class TAKISTAN_medevac_tl: TAKISTAN_medevac_doc
 {
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
-	};
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class TAKISTAN_medevac_heli: TAKISTAN_medevac_common
@@ -55964,10 +61731,6 @@ class TAKISTAN_medevac_heli: TAKISTAN_medevac_common
 	map[]=
 	{
 		"itemMap"
-	};
-	gps[]=
-	{
-		"i_EasyTrack_PDA"
 	};
 	goggles[]=
 	{
@@ -55992,7 +61755,6 @@ class TAKISTAN_medevac_drv: TAKISTAN_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -56076,7 +61838,6 @@ class CommonTAKI_INS: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -56203,10 +61964,10 @@ class TAKI_INS_company_common: CommonTAKI_INS
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -56261,10 +62022,6 @@ class TAKI_INS_company_common: CommonTAKI_INS
 	{
 		"ItemMap"
 	};
-	gps[]=
-	{
-		"o_EasyTrack_PDA"
-	};
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
@@ -56280,10 +62037,6 @@ class TAKI_INS_company_co: TAKI_INS_company_common
 };
 class TAKI_INS_company_xo: TAKI_INS_company_common
 {
-	gps[]=
-	{
-		"o_EasyTrack_Tablet"
-	};
 	headgear[]=
 	{
 		""
@@ -56291,20 +62044,16 @@ class TAKI_INS_company_xo: TAKI_INS_company_common
 };
 class TAKI_INS_company_mio: TAKI_INS_company_common
 {
-	gps[]=
-	{
-		"o_EasyTrack_Tablet"
-	};
 };
 class TAKI_INS_company_colo: TAKI_INS_company_common
 {
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -56314,10 +62063,10 @@ class TAKI_INS_company_fo: TAKI_INS_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -56362,10 +62111,10 @@ class TAKI_INS_platoon_common: CommonTAKI_INS
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -56404,10 +62153,6 @@ class TAKI_INS_platoon_common: CommonTAKI_INS
 		"CUP_H_TKI_Lungee_Open_05",
 		"CUP_H_TKI_Lungee_Open_06"
 	};
-	gps[]=
-	{
-		"o_EasyTrack_PDA"
-	};
 	map[]=
 	{
 		"ItemMap"
@@ -56435,10 +62180,6 @@ class TAKI_INS_platoon_pl: TAKI_INS_platoon_common
 };
 class TAKI_INS_platoon_psgt: TAKI_INS_platoon_common
 {
-	gps[]=
-	{
-		"o_EasyTrack_Tablet"
-	};
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL",
@@ -56450,10 +62191,10 @@ class TAKI_INS_platoon_uav: TAKI_INS_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -56598,10 +62339,10 @@ class TAKI_INS_platoon_medic: TAKI_INS_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -56617,6 +62358,10 @@ class TAKI_INS_platoon_medic: TAKI_INS_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -56654,10 +62399,6 @@ class TAKI_INS_squad_sl: CommonTAKI_INS
 		"CUP_V_OI_TKI_Jacket6_04",
 		"CUP_V_OI_TKI_Jacket6_05",
 		"CUP_V_OI_TKI_Jacket6_06"
-	};
-	gps[]=
-	{
-		"o_EasyTrack_PDA"
 	};
 	binoculars[]=
 	{
@@ -56704,10 +62445,10 @@ class TAKI_INS_squad_sl: CommonTAKI_INS
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
@@ -56761,7 +62502,6 @@ class TAKI_INS_squad_ftl: CommonTAKI_INS
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -57175,7 +62915,6 @@ class TAKI_INS_squad_cm: CommonTAKI_INS
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -57238,7 +62977,6 @@ class TAKI_INS_squad_dm: CommonTAKI_INS
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -57298,7 +63036,6 @@ class TAKI_INS_squad_eng: CommonTAKI_INS
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -57670,7 +63407,6 @@ class TAKI_INS_weapons_mort: TAKI_INS_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -57686,7 +63422,6 @@ class TAKI_INS_weapons_amort: TAKI_INS_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -57698,7 +63433,6 @@ class TAKI_INS_weapons_acmort: TAKI_INS_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -57831,10 +63565,10 @@ class TAKI_INS_recon_common: CommonTAKI_INS
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -57898,10 +63632,10 @@ class TAKI_INS_recon_rm: TAKI_INS_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -57998,10 +63732,10 @@ class TAKI_INS_recon_tl: TAKI_INS_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -58010,10 +63744,6 @@ class TAKI_INS_recon_tl: TAKI_INS_recon_common
 	binoculars[]=
 	{
 		"Binocular"
-	};
-	gps[]=
-	{
-		"o_EasyTrack_PDA"
 	};
 	lrRadios[]=
 	{
@@ -58209,10 +63939,10 @@ class TAKI_INS_recon_cm: TAKI_INS_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -58264,10 +63994,10 @@ class TAKI_INS_recon_dm: TAKI_INS_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -58310,10 +64040,10 @@ class TAKI_INS_recon_exp: TAKI_INS_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -58387,10 +64117,6 @@ class TAKI_INS_diver_common: TAKI_INS_recon_common
 			""
 		}
 	};
-	gps[]=
-	{
-		"o_EasyTrack_PDA"
-	};
 	magazines[]=
 	{
 		"rhs_mag_9x18_8_57N181S",
@@ -58407,10 +64133,10 @@ class TAKI_INS_diver_common: TAKI_INS_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -58497,10 +64223,10 @@ class TAKI_INS_diver_tl: TAKI_INS_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -58529,10 +64255,10 @@ class TAKI_INS_diver_exp: TAKI_INS_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -58551,10 +64277,10 @@ class TAKI_INS_diver_cm: TAKI_INS_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -58615,10 +64341,10 @@ class TAKI_INS_diver_dm: TAKI_INS_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -58708,10 +64434,10 @@ class TAKI_INS_sniper_common: TAKI_INS_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -58760,10 +64486,6 @@ class TAKI_INS_sniper_spot: TAKI_INS_recon_common
 			""
 		}
 	};
-	gps[]=
-	{
-		"o_EasyTrack_PDA"
-	};
 	binoculars[]=
 	{
 		"Binocular"
@@ -58794,10 +64516,10 @@ class TAKI_INS_sniper_spot: TAKI_INS_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -58926,10 +64648,10 @@ class TAKI_INS_sniper_exp: TAKI_INS_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -59021,13 +64743,18 @@ class TAKI_INS_crew_cmd: TAKI_INS_crew_common
 		"ACRE_SEM52SL",
 		"ACRE_SEM52SL"
 	};
-	gps[]=
-	{
-		"o_EasyTrack_PDA"
-	};
 	binoculars[]=
 	{
 		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class TAKI_INS_crew_jet: CommonTAKI_INS
@@ -59077,10 +64804,6 @@ class TAKI_INS_crew_jet: CommonTAKI_INS
 	{
 		"itemMap"
 	};
-	gps[]=
-	{
-		"o_EasyTrack_PDA"
-	};
 	nvgs[]=
 	{
 		""
@@ -59096,6 +64819,15 @@ class TAKI_INS_crew_jet: CommonTAKI_INS
 	insignia[]=
 	{
 		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class TAKI_INS_crew_heli: TAKI_INS_crew_common
@@ -59142,10 +64874,6 @@ class TAKI_INS_crew_helipilot: TAKI_INS_crew_heli
 	{
 		"itemMap"
 	};
-	gps[]=
-	{
-		"o_EasyTrack_PDA"
-	};
 	goggles[]=
 	{
 		""
@@ -59162,6 +64890,15 @@ class TAKI_INS_crew_helipilot: TAKI_INS_crew_heli
 	nvgs[]=
 	{
 		"NVGoggles_OPFOR"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class TAKI_INS_logistics_common: CommonTAKI_INS
@@ -59235,10 +64972,11 @@ class TAKI_INS_logistics_common: CommonTAKI_INS
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -59246,10 +64984,6 @@ class TAKI_INS_logistics_common: CommonTAKI_INS
 	{
 		"ACRE_SEM52SL",
 		"ACRE_SEM52SL"
-	};
-	gps[]=
-	{
-		"o_EasyTrack_PDA"
 	};
 	map[]=
 	{
@@ -59281,7 +65015,6 @@ class TAKI_INS_medevac_common: CommonTAKI_INS
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -59342,7 +65075,6 @@ class TAKI_INS_medevac_doc: TAKI_INS_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -59368,13 +65100,36 @@ class TAKI_INS_medevac_doc: TAKI_INS_medevac_common
 };
 class TAKI_INS_medevac_tl: TAKI_INS_medevac_doc
 {
-	gps[]=
-	{
-		"o_EasyTrack_PDA"
-	};
 	lrRadios[]=
 	{
 		"ACRE_SEM52SL"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class TAKI_INS_medevac_heli: TAKI_INS_medevac_common
@@ -59397,10 +65152,6 @@ class TAKI_INS_medevac_heli: TAKI_INS_medevac_common
 	map[]=
 	{
 		"itemMap"
-	};
-	gps[]=
-	{
-		"o_EasyTrack_PDA"
 	};
 	goggles[]=
 	{
@@ -59425,7 +65176,6 @@ class TAKI_INS_medevac_drv: TAKI_INS_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -59501,7 +65251,6 @@ class CommonUSARMY_OCP: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -59586,10 +65335,10 @@ class USARMY_OCP_company_common: CommonUSARMY_OCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -59654,10 +65403,10 @@ class USARMY_OCP_company_colo: USARMY_OCP_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -59667,10 +65416,10 @@ class USARMY_OCP_company_fo: USARMY_OCP_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -59732,10 +65481,10 @@ class USARMY_OCP_platoon_common: CommonUSARMY_OCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -59795,10 +65544,10 @@ class USARMY_OCP_platoon_uav: USARMY_OCP_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -59892,10 +65641,10 @@ class USARMY_OCP_platoon_medic: USARMY_OCP_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -59911,6 +65660,10 @@ class USARMY_OCP_platoon_medic: USARMY_OCP_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -59975,10 +65728,10 @@ class USARMY_OCP_squad_sl: CommonUSARMY_OCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -60004,7 +65757,6 @@ class USARMY_OCP_squad_ftl: CommonUSARMY_OCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -60098,7 +65850,21 @@ class USARMY_OCP_squad_gl: CommonUSARMY_OCP
 		{
 			"rhs_weap_m4a1_carryhandle_m203",
 			"rhsusf_acc_anpeq15side_bk",
-			"rhsusf_acc_compm4",
+			"rhsusf_acc_ACOG",
+			""
+		},
+		
+		{
+			"rhs_weap_m4a1_carryhandle_m203",
+			"rhsusf_acc_anpeq15side_bk",
+			"rhsusf_acc_ACOG2",
+			""
+		},
+		
+		{
+			"rhs_weap_m4a1_carryhandle_m203",
+			"rhsusf_acc_anpeq15side_bk",
+			"rhsusf_acc_ACOG3",
 			""
 		}
 	};
@@ -60331,7 +66097,6 @@ class USARMY_OCP_squad_cm: CommonUSARMY_OCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -60365,7 +66130,6 @@ class USARMY_OCP_squad_dm: CommonUSARMY_OCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -60396,7 +66160,6 @@ class USARMY_OCP_squad_eng: CommonUSARMY_OCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -60712,7 +66475,6 @@ class USARMY_OCP_weapons_mort: USARMY_OCP_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -60728,7 +66490,6 @@ class USARMY_OCP_weapons_amort: USARMY_OCP_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -60740,7 +66501,6 @@ class USARMY_OCP_weapons_acmort: USARMY_OCP_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -60823,10 +66583,10 @@ class USARMY_OCP_recon_common: CommonUSARMY_OCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -60869,10 +66629,10 @@ class USARMY_OCP_recon_rm: USARMY_OCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -60935,10 +66695,10 @@ class USARMY_OCP_recon_tl: USARMY_OCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -61078,10 +66838,10 @@ class USARMY_OCP_recon_cm: USARMY_OCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -61147,10 +66907,10 @@ class USARMY_OCP_recon_dm: USARMY_OCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -61194,10 +66954,10 @@ class USARMY_OCP_recon_exp: USARMY_OCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -61263,10 +67023,10 @@ class USARMY_OCP_diver_common: USARMY_OCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -61322,10 +67082,10 @@ class USARMY_OCP_diver_tl: USARMY_OCP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -61354,10 +67114,10 @@ class USARMY_OCP_diver_exp: USARMY_OCP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -61376,10 +67136,10 @@ class USARMY_OCP_diver_cm: USARMY_OCP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -61440,10 +67200,10 @@ class USARMY_OCP_diver_dm: USARMY_OCP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -61509,10 +67269,10 @@ class USARMY_OCP_sniper_common: USARMY_OCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -61573,10 +67333,10 @@ class USARMY_OCP_sniper_spot: USARMY_OCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -61691,10 +67451,10 @@ class USARMY_OCP_sniper_exp: USARMY_OCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -61776,6 +67536,15 @@ class USARMY_OCP_crew_cmd: USARMY_OCP_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class USARMY_OCP_crew_jet: CommonUSARMY_OCP
 {
@@ -61832,6 +67601,15 @@ class USARMY_OCP_crew_jet: CommonUSARMY_OCP
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class USARMY_OCP_crew_heli: USARMY_OCP_crew_common
 {
@@ -61886,6 +67664,15 @@ class USARMY_OCP_crew_helipilot: USARMY_OCP_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class USARMY_OCP_logistics_common: CommonUSARMY_OCP
 {
@@ -61928,10 +67715,11 @@ class USARMY_OCP_logistics_common: CommonUSARMY_OCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -61974,7 +67762,6 @@ class USARMY_OCP_medevac_common: CommonUSARMY_OCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -62011,7 +67798,6 @@ class USARMY_OCP_medevac_doc: USARMY_OCP_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -62044,6 +67830,33 @@ class USARMY_OCP_medevac_tl: USARMY_OCP_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class USARMY_OCP_medevac_heli: USARMY_OCP_medevac_common
@@ -62083,7 +67896,6 @@ class USARMY_OCP_medevac_drv: USARMY_OCP_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -62159,7 +67971,6 @@ class CommonUSARMY_UCP: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -62244,10 +68055,10 @@ class USARMY_UCP_company_common: CommonUSARMY_UCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -62312,10 +68123,10 @@ class USARMY_UCP_company_colo: USARMY_UCP_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -62325,10 +68136,10 @@ class USARMY_UCP_company_fo: USARMY_UCP_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -62390,10 +68201,10 @@ class USARMY_UCP_platoon_common: CommonUSARMY_UCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -62453,10 +68264,10 @@ class USARMY_UCP_platoon_uav: USARMY_UCP_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -62550,10 +68361,10 @@ class USARMY_UCP_platoon_medic: USARMY_UCP_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -62569,6 +68380,10 @@ class USARMY_UCP_platoon_medic: USARMY_UCP_platoon_common
 		15,
 		"ACE_epinephrine",
 		30
+	};
+	lrRadios[]=
+	{
+		""
 	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
@@ -62633,10 +68448,10 @@ class USARMY_UCP_squad_sl: CommonUSARMY_UCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -62662,7 +68477,6 @@ class USARMY_UCP_squad_ftl: CommonUSARMY_UCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -62756,7 +68570,21 @@ class USARMY_UCP_squad_gl: CommonUSARMY_UCP
 		{
 			"rhs_weap_m4a1_carryhandle_m203",
 			"rhsusf_acc_anpeq15side_bk",
-			"rhsusf_acc_compm4",
+			"rhsusf_acc_ACOG",
+			""
+		},
+		
+		{
+			"rhs_weap_m4a1_carryhandle_m203",
+			"rhsusf_acc_anpeq15side_bk",
+			"rhsusf_acc_ACOG2",
+			""
+		},
+		
+		{
+			"rhs_weap_m4a1_carryhandle_m203",
+			"rhsusf_acc_anpeq15side_bk",
+			"rhsusf_acc_ACOG3",
 			""
 		}
 	};
@@ -62989,7 +68817,6 @@ class USARMY_UCP_squad_cm: CommonUSARMY_UCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -63023,7 +68850,6 @@ class USARMY_UCP_squad_dm: CommonUSARMY_UCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -63054,7 +68880,6 @@ class USARMY_UCP_squad_eng: CommonUSARMY_UCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -63372,7 +69197,6 @@ class USARMY_UCP_weapons_mort: USARMY_UCP_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -63388,7 +69212,6 @@ class USARMY_UCP_weapons_amort: USARMY_UCP_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -63400,7 +69223,6 @@ class USARMY_UCP_weapons_acmort: USARMY_UCP_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -63483,10 +69305,10 @@ class USARMY_UCP_recon_common: CommonUSARMY_UCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -63529,10 +69351,10 @@ class USARMY_UCP_recon_rm: USARMY_UCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -63595,10 +69417,10 @@ class USARMY_UCP_recon_tl: USARMY_UCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -63738,10 +69560,10 @@ class USARMY_UCP_recon_cm: USARMY_UCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -63807,10 +69629,10 @@ class USARMY_UCP_recon_dm: USARMY_UCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -63854,10 +69676,10 @@ class USARMY_UCP_recon_exp: USARMY_UCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -63923,10 +69745,10 @@ class USARMY_UCP_diver_common: USARMY_UCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -63982,10 +69804,10 @@ class USARMY_UCP_diver_tl: USARMY_UCP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -64014,10 +69836,10 @@ class USARMY_UCP_diver_exp: USARMY_UCP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -64036,10 +69858,10 @@ class USARMY_UCP_diver_cm: USARMY_UCP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -64100,10 +69922,10 @@ class USARMY_UCP_diver_dm: USARMY_UCP_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -64169,10 +69991,10 @@ class USARMY_UCP_sniper_common: USARMY_UCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -64233,10 +70055,10 @@ class USARMY_UCP_sniper_spot: USARMY_UCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -64351,10 +70173,10 @@ class USARMY_UCP_sniper_exp: USARMY_UCP_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -64436,6 +70258,15 @@ class USARMY_UCP_crew_cmd: USARMY_UCP_crew_common
 	{
 		"Binocular"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class USARMY_UCP_crew_jet: CommonUSARMY_UCP
 {
@@ -64492,6 +70323,15 @@ class USARMY_UCP_crew_jet: CommonUSARMY_UCP
 	{
 		""
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class USARMY_UCP_crew_heli: USARMY_UCP_crew_common
 {
@@ -64547,6 +70387,15 @@ class USARMY_UCP_crew_helipilot: USARMY_UCP_crew_heli
 	{
 		"NVGoggles_OPFOR"
 	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
 };
 class USARMY_UCP_logistics_common: CommonUSARMY_UCP
 {
@@ -64589,10 +70438,11 @@ class USARMY_UCP_logistics_common: CommonUSARMY_UCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -64635,7 +70485,6 @@ class USARMY_UCP_medevac_common: CommonUSARMY_UCP
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -64672,7 +70521,6 @@ class USARMY_UCP_medevac_doc: USARMY_UCP_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -64705,6 +70553,33 @@ class USARMY_UCP_medevac_tl: USARMY_UCP_medevac_doc
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class USARMY_UCP_medevac_heli: USARMY_UCP_medevac_common
@@ -64744,7 +70619,6 @@ class USARMY_UCP_medevac_drv: USARMY_UCP_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -64850,7 +70724,6 @@ class CommonUSMC_D: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -64941,10 +70814,10 @@ class USMC_D_company_common: CommonUSMC_D
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -64969,10 +70842,6 @@ class USMC_D_company_common: CommonUSMC_D
 	{
 		"ItemMap"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	lrRadios[]=
 	{
 		"ACRE_PRC117F"
@@ -64988,10 +70857,6 @@ class USMC_D_company_co: USMC_D_company_common
 };
 class USMC_D_company_xo: USMC_D_company_common
 {
-	gps[]=
-	{
-		"b_EasyTrack_Tablet"
-	};
 	headgear[]=
 	{
 		"H_Beret_blk"
@@ -64999,20 +70864,16 @@ class USMC_D_company_xo: USMC_D_company_common
 };
 class USMC_D_company_mio: USMC_D_company_common
 {
-	gps[]=
-	{
-		"b_EasyTrack_Tablet"
-	};
 };
 class USMC_D_company_colo: USMC_D_company_common
 {
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -65022,10 +70883,10 @@ class USMC_D_company_fo: USMC_D_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -65089,10 +70950,10 @@ class USMC_D_platoon_common: CommonUSMC_D
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -65103,10 +70964,6 @@ class USMC_D_platoon_common: CommonUSMC_D
 		"rhsusf_mich_bare_norotos_tan",
 		"rhsusf_mich_bare_norotos_alt_tan",
 		"rhsusf_mich_bare_norotos_alt_tan_headset"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	map[]=
 	{
@@ -65137,10 +70994,6 @@ class USMC_D_platoon_pl: USMC_D_platoon_common
 };
 class USMC_D_platoon_psgt: USMC_D_platoon_common
 {
-	gps[]=
-	{
-		"b_EasyTrack_Tablet"
-	};
 	lrRadios[]=
 	{
 		"ACRE_PRC148",
@@ -65152,10 +71005,10 @@ class USMC_D_platoon_uav: USMC_D_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -65249,10 +71102,10 @@ class USMC_D_platoon_medic: USMC_D_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -65269,6 +71122,10 @@ class USMC_D_platoon_medic: USMC_D_platoon_common
 		"ACE_epinephrine",
 		30
 	};
+	lrRadios[]=
+	{
+		""
+	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class USMC_D_squad_sl: CommonUSMC_D
@@ -65276,10 +71133,6 @@ class USMC_D_squad_sl: CommonUSMC_D
 	vest[]=
 	{
 		"rhsusf_spc_teamleader"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	binoculars[]=
 	{
@@ -65346,10 +71199,10 @@ class USMC_D_squad_sl: CommonUSMC_D
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -65375,7 +71228,6 @@ class USMC_D_squad_ftl: CommonUSMC_D
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -65701,7 +71553,6 @@ class USMC_D_squad_cm: CommonUSMC_D
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -65735,7 +71586,6 @@ class USMC_D_squad_dm: CommonUSMC_D
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -65766,7 +71616,6 @@ class USMC_D_squad_eng: CommonUSMC_D
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -66085,7 +71934,6 @@ class USMC_D_weapons_mort: USMC_D_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -66101,7 +71949,6 @@ class USMC_D_weapons_amort: USMC_D_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -66113,7 +71960,6 @@ class USMC_D_weapons_acmort: USMC_D_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -66198,10 +72044,10 @@ class USMC_D_recon_common: CommonUSMC_D
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -66244,10 +72090,10 @@ class USMC_D_recon_rm: USMC_D_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -66310,10 +72156,10 @@ class USMC_D_recon_tl: USMC_D_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -66323,10 +72169,6 @@ class USMC_D_recon_tl: USMC_D_recon_common
 	binoculars[]=
 	{
 		"ACE_Vector"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	lrRadios[]=
 	{
@@ -66467,10 +72309,10 @@ class USMC_D_recon_cm: USMC_D_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -66536,10 +72378,10 @@ class USMC_D_recon_dm: USMC_D_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -66583,10 +72425,10 @@ class USMC_D_recon_exp: USMC_D_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -66632,10 +72474,6 @@ class USMC_D_diver_common: USMC_D_recon_common
 			""
 		}
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	magazines[]=
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
@@ -66652,10 +72490,10 @@ class USMC_D_diver_common: USMC_D_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -66711,10 +72549,10 @@ class USMC_D_diver_tl: USMC_D_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -66743,10 +72581,10 @@ class USMC_D_diver_exp: USMC_D_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -66765,10 +72603,10 @@ class USMC_D_diver_cm: USMC_D_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -66829,10 +72667,10 @@ class USMC_D_diver_dm: USMC_D_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -66898,10 +72736,10 @@ class USMC_D_sniper_common: USMC_D_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -66925,10 +72763,6 @@ class USMC_D_sniper_spot: USMC_D_recon_common
 			"rhsusf_acc_anpeq15side",
 			"muzzle_snds_m_snd_F"
 		}
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	binoculars[]=
 	{
@@ -66962,10 +72796,10 @@ class USMC_D_sniper_spot: USMC_D_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -67082,10 +72916,10 @@ class USMC_D_sniper_exp: USMC_D_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -67161,13 +72995,18 @@ class USMC_D_crew_cmd: USMC_D_crew_common
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	binoculars[]=
 	{
 		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class USMC_D_crew_jet: CommonUSMC_D
@@ -67206,10 +73045,6 @@ class USMC_D_crew_jet: CommonUSMC_D
 	{
 		"itemMap"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	nvgs[]=
 	{
 		""
@@ -67225,6 +73060,15 @@ class USMC_D_crew_jet: CommonUSMC_D
 	insignia[]=
 	{
 		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class USMC_D_crew_heli: USMC_D_crew_common
@@ -67261,10 +73105,6 @@ class USMC_D_crew_helipilot: USMC_D_crew_heli
 	{
 		"itemMap"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	goggles[]=
 	{
 		"G_Aviator"
@@ -67281,6 +73121,15 @@ class USMC_D_crew_helipilot: USMC_D_crew_heli
 	nvgs[]=
 	{
 		"NVGoggles_OPFOR"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class USMC_D_logistics_common: CommonUSMC_D
@@ -67324,10 +73173,11 @@ class USMC_D_logistics_common: CommonUSMC_D
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -67335,10 +73185,6 @@ class USMC_D_logistics_common: CommonUSMC_D
 	{
 		"ACRE_PRC117F",
 		"ACRE_PRC148"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	map[]=
 	{
@@ -67370,7 +73216,6 @@ class USMC_D_medevac_common: CommonUSMC_D
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -67407,7 +73252,6 @@ class USMC_D_medevac_doc: USMC_D_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -67433,13 +73277,36 @@ class USMC_D_medevac_doc: USMC_D_medevac_common
 };
 class USMC_D_medevac_tl: USMC_D_medevac_doc
 {
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class USMC_D_medevac_heli: USMC_D_medevac_common
@@ -67451,10 +73318,6 @@ class USMC_D_medevac_heli: USMC_D_medevac_common
 	map[]=
 	{
 		"itemMap"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	goggles[]=
 	{
@@ -67479,7 +73342,6 @@ class USMC_D_medevac_drv: USMC_D_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -67584,7 +73446,6 @@ class CommonUSMC_W: CommonDefault
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet"
@@ -67674,10 +73535,10 @@ class USMC_W_company_common: CommonUSMC_W
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -67702,10 +73563,6 @@ class USMC_W_company_common: CommonUSMC_W
 	{
 		"ItemMap"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	lrRadios[]=
 	{
 		"ACRE_PRC117F"
@@ -67721,10 +73578,6 @@ class USMC_W_company_co: USMC_W_company_common
 };
 class USMC_W_company_xo: USMC_W_company_common
 {
-	gps[]=
-	{
-		"b_EasyTrack_Tablet"
-	};
 	headgear[]=
 	{
 		"H_Beret_blk"
@@ -67732,20 +73585,16 @@ class USMC_W_company_xo: USMC_W_company_common
 };
 class USMC_W_company_mio: USMC_W_company_common
 {
-	gps[]=
-	{
-		"b_EasyTrack_Tablet"
-	};
 };
 class USMC_W_company_colo: USMC_W_company_common
 {
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"CL_Logitracker"
 	};
@@ -67755,10 +73604,10 @@ class USMC_W_company_fo: USMC_W_company_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_RangeTable_82mm"
 	};
@@ -67821,10 +73670,10 @@ class USMC_W_platoon_common: CommonUSMC_W
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools"
 	};
 	headgear[]=
@@ -67835,10 +73684,6 @@ class USMC_W_platoon_common: CommonUSMC_W
 		"rhsusf_mich_bare_norotos",
 		"rhsusf_mich_bare_norotos_alt",
 		"rhsusf_mich_bare_norotos_alt_headset"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	map[]=
 	{
@@ -67869,10 +73714,6 @@ class USMC_W_platoon_pl: USMC_W_platoon_common
 };
 class USMC_W_platoon_psgt: USMC_W_platoon_common
 {
-	gps[]=
-	{
-		"b_EasyTrack_Tablet"
-	};
 	lrRadios[]=
 	{
 		"ACRE_PRC148",
@@ -67884,10 +73725,10 @@ class USMC_W_platoon_uav: USMC_W_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_UAVBattery"
 	};
@@ -67979,10 +73820,10 @@ class USMC_W_platoon_medic: USMC_W_platoon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		"ACE_salineIV_500",
 		10,
@@ -67999,6 +73840,10 @@ class USMC_W_platoon_medic: USMC_W_platoon_common
 		"ACE_epinephrine",
 		30
 	};
+	lrRadios[]=
+	{
+		""
+	};
 	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
 };
 class USMC_W_squad_sl: CommonUSMC_W
@@ -68006,10 +73851,6 @@ class USMC_W_squad_sl: CommonUSMC_W
 	vest[]=
 	{
 		"rhsusf_spc_teamleader"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	binoculars[]=
 	{
@@ -68076,10 +73917,10 @@ class USMC_W_squad_sl: CommonUSMC_W
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_HuntIR_monitor"
 	};
@@ -68105,7 +73946,6 @@ class USMC_W_squad_ftl: CommonUSMC_W
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -68429,7 +74269,6 @@ class USMC_W_squad_cm: CommonUSMC_W
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -68463,7 +74302,6 @@ class USMC_W_squad_dm: CommonUSMC_W
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -68494,7 +74332,6 @@ class USMC_W_squad_eng: CommonUSMC_W
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -68811,7 +74648,6 @@ class USMC_W_weapons_mort: USMC_W_weapons_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -68827,7 +74663,6 @@ class USMC_W_weapons_amort: USMC_W_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -68839,7 +74674,6 @@ class USMC_W_weapons_acmort: USMC_W_assistant_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -68923,10 +74757,10 @@ class USMC_W_recon_common: CommonUSMC_W
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2
@@ -68969,10 +74803,10 @@ class USMC_W_recon_rm: USMC_W_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69035,10 +74869,10 @@ class USMC_W_recon_tl: USMC_W_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69048,10 +74882,6 @@ class USMC_W_recon_tl: USMC_W_recon_common
 	binoculars[]=
 	{
 		"ACE_Vector"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	lrRadios[]=
 	{
@@ -69192,10 +75022,10 @@ class USMC_W_recon_cm: USMC_W_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69261,10 +75091,10 @@ class USMC_W_recon_dm: USMC_W_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69307,10 +75137,10 @@ class USMC_W_recon_exp: USMC_W_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69356,10 +75186,6 @@ class USMC_W_diver_common: USMC_W_recon_common
 			""
 		}
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	magazines[]=
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
@@ -69376,10 +75202,10 @@ class USMC_W_diver_common: USMC_W_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69435,10 +75261,10 @@ class USMC_W_diver_tl: USMC_W_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69467,10 +75293,10 @@ class USMC_W_diver_exp: USMC_W_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69489,10 +75315,10 @@ class USMC_W_diver_cm: USMC_W_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69553,10 +75379,10 @@ class USMC_W_diver_dm: USMC_W_diver_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69622,10 +75448,10 @@ class USMC_W_sniper_common: USMC_W_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69649,10 +75475,6 @@ class USMC_W_sniper_spot: USMC_W_recon_common
 			"rhsusf_acc_anpeq15side_bk",
 			"rhsusf_acc_nt4_tan"
 		}
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	binoculars[]=
 	{
@@ -69686,10 +75508,10 @@ class USMC_W_sniper_spot: USMC_W_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69806,10 +75628,10 @@ class USMC_W_sniper_exp: USMC_W_recon_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
@@ -69884,13 +75706,18 @@ class USMC_W_crew_cmd: USMC_W_crew_common
 		"ACRE_PRC148",
 		"ACRE_PRC117F"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	binoculars[]=
 	{
 		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class USMC_W_crew_jet: CommonUSMC_W
@@ -69928,10 +75755,6 @@ class USMC_W_crew_jet: CommonUSMC_W
 	{
 		"itemMap"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	nvgs[]=
 	{
 		""
@@ -69947,6 +75770,15 @@ class USMC_W_crew_jet: CommonUSMC_W
 	insignia[]=
 	{
 		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class USMC_W_crew_heli: USMC_W_crew_common
@@ -69984,10 +75816,6 @@ class USMC_W_crew_helipilot: USMC_W_crew_heli
 	{
 		"itemMap"
 	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	goggles[]=
 	{
 		"G_Aviator"
@@ -70004,6 +75832,15 @@ class USMC_W_crew_helipilot: USMC_W_crew_heli
 	nvgs[]=
 	{
 		"NVGoggles_OPFOR"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
 	};
 };
 class USMC_W_logistics_common: CommonUSMC_W
@@ -70046,10 +75883,11 @@ class USMC_W_logistics_common: CommonUSMC_W
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
 		"CL_Logitracker",
 		"ToolKit"
 	};
@@ -70057,10 +75895,6 @@ class USMC_W_logistics_common: CommonUSMC_W
 	{
 		"ACRE_PRC117F",
 		"ACRE_PRC148"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	map[]=
 	{
@@ -70092,7 +75926,6 @@ class USMC_W_medevac_common: CommonUSMC_W
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -70128,7 +75961,6 @@ class USMC_W_medevac_doc: USMC_W_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
@@ -70154,13 +75986,36 @@ class USMC_W_medevac_doc: USMC_W_medevac_common
 };
 class USMC_W_medevac_tl: USMC_W_medevac_doc
 {
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
 	lrRadios[]=
 	{
 		"ACRE_PRC148"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
 	};
 };
 class USMC_W_medevac_heli: USMC_W_medevac_common
@@ -70172,10 +76027,6 @@ class USMC_W_medevac_heli: USMC_W_medevac_common
 	map[]=
 	{
 		"itemMap"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
 	};
 	goggles[]=
 	{
@@ -70200,7 +76051,6 @@ class USMC_W_medevac_drv: USMC_W_medevac_common
 	items[]=
 	{
 		"ACE_EarPlugs",
-		"ACE_microDAGR",
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",

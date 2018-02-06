@@ -16,7 +16,6 @@ class COMMON : CommonDefault {
     magazines[] = {MAGS_COMMON};
     items[] = {
         "ACE_EarPlugs",
-        "ACE_microDAGR",
         "ACE_fieldDressing",10,
         "ACE_tourniquet"
     };
@@ -47,7 +46,10 @@ class LOADOUT(company,common) : COMMON {
         MAG_PISTOL,3,
         MAG_PDW,3
     };
-    items[] += {"ACE_MapTools"};
+    items[] += {
+        "ACE_microDAGR",
+        "ACE_MapTools"
+    };
 
     headgear[] = {CAP_OFFICER};
     goggles[] = {GOGGLES_OFFICER};
@@ -55,7 +57,9 @@ class LOADOUT(company,common) : COMMON {
     binoculars[] = {RANGEFINDER};
 
     map[] = {"ItemMap"};
-    gps[] = {EASYTRACK_PDA};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_PDA};
+    #endif
 
     lrRadios[] = {RADIO_PACK};
 };
@@ -66,12 +70,16 @@ class LOADOUT(company,co) : LOADOUT(company,common) {
 };
 //XO
 class LOADOUT(company,xo) : LOADOUT(company,common) {
-    gps[] = {EASYTRACK_TABLET};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_TABLET};
+    #endif
     headgear[] = {CAP_XO};
 };
 //MIO
 class LOADOUT(company,mio) : LOADOUT(company,common) {
-    gps[] = {EASYTRACK_TABLET};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_TABLET};
+    #endif
 };
 //CoLo
 class LOADOUT(company,colo) : LOADOUT(company,common) {
@@ -94,9 +102,14 @@ class LOADOUT(platoon,common): COMMON {
         MAG_CARBINE_TRACER,2,
         GRENADES_BASIC
     };
-    items[] += {"ACE_MapTools"};
+    items[] += {
+        "ACE_microDAGR",
+        "ACE_MapTools"
+    };
     headgear[] = {HELMET_BARE};
-    gps[] = {EASYTRACK_PDA};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_PDA};
+    #endif
     map[] = {"ItemMap"};
     binoculars[] = {RANGEFINDER};
     goggles[] = {GOGGLES_OFFICER};
@@ -108,7 +121,9 @@ class LOADOUT(platoon,pl) : LOADOUT(platoon,common) {
 };
 //PSgt
 class LOADOUT(platoon,psgt) : LOADOUT(platoon,common) {
-    gps[] = {EASYTRACK_TABLET};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_TABLET};
+    #endif
     lrRadios[] += {RADIO_PACK};
 };
 //UAV Operator
@@ -146,6 +161,7 @@ class LOADOUT(platoon,medic) : LOADOUT(platoon,common) {
         "ACE_morphine",15,
         "ACE_epinephrine",30
     };
+    lrRadios[] = {""};
     preLoadout = TRAITS(2,0,false,false);
 };
 
@@ -153,7 +169,9 @@ class LOADOUT(platoon,medic) : LOADOUT(platoon,common) {
 //Squadleader
 class LOADOUT(squad,sl) : COMMON {
     vest[] = {VEST_SL};
-    gps[] = {EASYTRACK_PDA};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_PDA};
+    #endif
     binoculars[] = {RANGEFINDER};
     primary[] = {RIFLE_UGL_CCO};
     magazines[] += {
@@ -166,6 +184,7 @@ class LOADOUT(squad,sl) : COMMON {
         UGLS_FLR
     };
     items[] += {
+        "ACE_microDAGR",
         "ACE_IR_Strobe_Item"
         #ifdef HUNTIR
             ,"ACE_HuntIR_monitor"
@@ -194,7 +213,7 @@ class LOADOUT(squad,ar) : COMMON {
 //Grenadier
 class LOADOUT(squad,gl) : COMMON {
     vest[] = {VEST_GRENADIER};
-    primary[] = {RIFLE_UGL_CCO};
+    primary[] = {RIFLE_UGL_RCO};
     magazines[] += {UGLS_GREN};
 };
 //Grenadier M32
@@ -370,6 +389,7 @@ class LOADOUT(recon,common): COMMON {
         GRENADES_RGO
     };
     items[] += {
+        "ACE_microDAGR",
         "ACE_IR_Strobe_Item",
         "ACE_CableTie",2
     };
@@ -406,7 +426,9 @@ class LOADOUT(recon,tl) : LOADOUT(recon,common) {
         #endif
     };
     binoculars[] = {RANGEFINDER};
-    gps[] = {EASYTRACK_PDA};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_PDA};
+    #endif
     lrRadios[] = {RADIO_HAND};
 };
 //AR
@@ -484,7 +506,9 @@ class LOADOUT(diver,common) : LOADOUT(recon,common) {
     backpack[] = {BACKPACK_DIVER};
     primary[] = {RIFLE_DIVER};
     secondary[] = {PISTOL_SF};
-    gps[] = {EASYTRACK_PDA};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_PDA};
+    #endif
     magazines[] = {
         MAG_PISTOL,3,
         MAG_RIFLE_RECON,10,
@@ -571,7 +595,9 @@ class LOADOUT(sniper,common) : LOADOUT(recon,common) {
 class LOADOUT(sniper,spot) : LOADOUT(recon,common) {
     uniform[] = {UNIFORM_SNIPER};
     primary[] = {RIFLE_UGL_RECON_TAN};
-    gps[] = {EASYTRACK_PDA};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_PDA};
+    #endif    
     binoculars[] = {RANGEFINDER};
     magazines[] = {
         MAG_PISTOL_SF,3,
@@ -656,8 +682,14 @@ class LOADOUT(crew,common) : COMMON {
 class LOADOUT(crew,cmd) : LOADOUT(crew,common) {
     backpack[] = {BACKPACK_RADIO};
     lrRadios[] += {RADIO_PACK};
-    gps[] = {EASYTRACK_PDA};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_PDA};
+    #endif
     binoculars[] = {BINOCULAR};
+    items[] += {
+        "ACE_microDAGR",
+        "ACE_MapTools"
+    };
 };
 
 /* ###################### - Aircraft - ###################### */
@@ -673,11 +705,17 @@ class LOADOUT(crew,jet) : COMMON {
     };
     headgear[] = {HELMET_JET};
     map[] = {"itemMap"};
-    gps[] = {EASYTRACK_PDA};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_PDA};
+    #endif    
     nvgs[] = {""};
     watch[] = {"ACE_Altimeter"};
     goggles[] = {GOGGLES_PILOT};
     insignia[] = {INSIGNIA_JET};
+    items[] += {
+        "ACE_microDAGR",
+        "ACE_MapTools"
+    };
 };
 //HeliCrew
 class LOADOUT(crew,heli) : LOADOUT(crew,common) {
@@ -690,11 +728,17 @@ class LOADOUT(crew,heli) : LOADOUT(crew,common) {
 class LOADOUT(crew,helipilot) : LOADOUT(crew,heli) {
     backpack[] = {BACKPACK_ASSAULT};
     map[] = {"itemMap"};
-    gps[] = {EASYTRACK_PDA};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_PDA};
+    #endif
     goggles[] = {GOGGLES_PILOT};
     lrRadios[] = {RADIO_PACK};
     headgear[] = {HELMET_HELICOPTER};
     nvgs[] = {"NVGoggles_OPFOR"};
+    items[] += {
+        "ACE_microDAGR",
+        "ACE_MapTools"
+    };
 };
 
 /* ###################### - Logistik - ###################### */
@@ -709,9 +753,16 @@ class LOADOUT(logistics,common) : COMMON {
         GRENADES_BASIC
     };
     headgear[] = {HELMET_BARE};
-    items[] += {"CL_Logitracker","ToolKit"};
+    items[] += {
+        "ACE_microDAGR",
+        "ACE_MapTools",
+        "CL_Logitracker",
+        "ToolKit"
+    };
     lrRadios[] = {RADIO_PACK,RADIO_HAND};
-    gps[] = {EASYTRACK_PDA};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_PDA};
+    #endif
     map[] = {"ItemMap"};
     insignia[] = {INSIGNIA_SUPPORT};
     preLoadout = TRAITS(0,2,false,false);
@@ -748,14 +799,23 @@ class LOADOUT(medevac,doc) : LOADOUT(medevac,common) {
 };
 //Doctor TL
 class LOADOUT(medevac,tl) : LOADOUT(medevac,doc) {
-    gps[] = {EASYTRACK_PDA};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_PDA};
+    #endif
     lrRadios[] = {RADIO_HAND};
+    items[] += {
+        "ACE_microDAGR",
+        "ACE_MapTools",
+        "CL_Logitracker"
+    };
 };
 //MEDEVAC Pilot
 class LOADOUT(medevac,heli) : LOADOUT(medevac,common) {
     uniform[] = {UNIFORM_HELICOPTER};
     map[] = {"itemMap"};
-    gps[] = {EASYTRACK_PDA};
+    #ifdef EASYTRACK
+        gps[] = {EASYTRACK_PDA};
+    #endif
     goggles[] = {GOGGLES_PILOT};
     lrRadios[] = {RADIO_PACK};
     headgear[] = {HELMET_HELICOPTER};
@@ -768,4 +828,7 @@ class LOADOUT(medevac,drv) : LOADOUT(medevac,common) {
 
 #ifdef HUNTIR
     #undef HUNTIR
+#endif
+#ifdef EASYTRACK
+    #undef EASYTRACK
 #endif

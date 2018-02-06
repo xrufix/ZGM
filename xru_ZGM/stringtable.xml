@@ -6,6 +6,14 @@
                 <English>AAF - Altis Armed Forces</English>
                 <German>AAF - Altische Streitkräfte</German>
             </Key>
+            <Key ID="STR_ZGM_FACTIONS_BEL_DES">
+                <English>BEL – Belgium (Desert)</English>
+                <German>BEL – Belgien (Wüste)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_BEL_WDL">
+                <English>BEL – Belgium (Woodland)</English>
+                <German>BEL – Belgien (Wald)</German>
+            </Key>
             <Key ID="STR_ZGM_FACTIONS_BHEER">
                 <English>AT - Austrian Federal Army</English>
                 <German>AT - Österreichisches Bundesheer</German>

@@ -2,6 +2,9 @@
 #include "components\opfor.hpp"
 #include "components\ugl_rhsafrf.hpp"
 
+#define EASYTRACK
+// #define HUNTIR
+
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "rhs_uniform_vmf_flora_subdued"        // Für Inventar
 #define UNIFORM             ARR_1(UNIFORM_SINGLE)      // Für Zufallsauswahl

@@ -2,6 +2,14 @@
 #include "factions\AAF.hpp"
 #include "common\template.hpp"
 
+#define FACTION BEL_DES
+#include "factions\BEL_DES.hpp"
+#include "common\template.hpp"
+
+#define FACTION BEL_WDL
+#include "factions\BEL_WDL.hpp"
+#include "common\template.hpp"
+
 #define FACTION BHEER
 #include "factions\BHEER.hpp"
 #include "common\template.hpp"

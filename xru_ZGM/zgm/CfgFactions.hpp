@@ -6,6 +6,16 @@ class CfgFactions {
         icon = "\a3\Data_f\cfgFactionClasses_IND_ca.paa";
         sideShort = "i";
     };
+    class BEL_DES {
+        displayName = CSTRING(FACTIONS,BEL_DES);
+        icon = "\A3\ui_f\data\map\markers\flags\Belgium_ca.paa";
+        sideShort = "b";
+    };
+    class BEL_WDL {
+        displayName = CSTRING(FACTIONS,BEL_WDL);
+        icon = "\A3\ui_f\data\map\markers\flags\Belgium_ca.paa";
+        sideShort = "b";
+    };
     class BHEER {
         displayName = CSTRING(FACTIONS,BHEER);
         icon = "zgm\ui\flags\bheer.paa";

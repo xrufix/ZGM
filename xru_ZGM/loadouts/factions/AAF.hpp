@@ -2,6 +2,9 @@
 #include "components\indep.hpp"
 #include "components\ugl_vanilla.hpp"
 
+#define EASYTRACK
+// #define HUNTIR
+
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      ARR_1("U_I_CombatUniform")        // Für Inventar
 #define UNIFORM             ARR_2(UNIFORM_SINGLE,"U_I_CombatUniform_shortsleeve")      // Für Zufallsauswahl
@@ -179,7 +182,7 @@
 #define GOGGLES         ARR_1("")
 #define GOGGLES_OFFICER ARR_3("","G_Spectacles","G_Aviator")
 #define GOGGLES_FULL    ARR_2("G_Combat","G_Balaclava_combat")
-#define GOGGLES_SF		ARR_8("","G_Balaclava_blk","G_Balaclava_lowprofile","g_bandana_shades","g_bandanna_blk","G_Squares","G_Tactical_Clear","G_Tactical_black")
+#define GOGGLES_SF		ARR_8("","G_Balaclava_blk","G_Balaclava_lowprofile","g_bandanna_shades","g_bandanna_blk","G_Squares","G_Tactical_Clear","G_Tactical_black")
 #define GOGGLES_SF_FULL GOGGLES_SF
 #define GOGGLES_DIVER	ARR_1("G_i_Diving")
 #define GOGGLES_PILOT	ARR_1("G_Aviator")

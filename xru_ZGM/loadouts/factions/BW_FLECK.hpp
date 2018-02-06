@@ -2,6 +2,8 @@
 #include "components\blufor.hpp"
 #include "components\ugl_vanilla.hpp"
 
+#define EASYTRACK
+// #define HUNTIR
 
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      ARR_1("pbw_uniform3k_fleck")

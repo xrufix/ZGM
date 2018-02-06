@@ -2,6 +2,8 @@
 #include "components\indep.hpp"
 #include "components\ugl_rhsafrf.hpp"
 
+// #define EASYTRACK
+// #define HUNTIR
 
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "rhs_uniform_g3_rgr"
