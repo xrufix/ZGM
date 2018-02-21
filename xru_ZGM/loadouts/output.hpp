@@ -59,7 +59,7 @@ class CommonAAF: CommonDefault
 		3,
 		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		4,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -268,7 +268,7 @@ class AAF_platoon_common: CommonAAF
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -387,7 +387,7 @@ class AAF_platoon_jtac: AAF_platoon_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -487,7 +487,7 @@ class AAF_squad_sl: CommonAAF
 		3,
 		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		4,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -497,8 +497,6 @@ class AAF_squad_sl: CommonAAF
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -522,8 +520,7 @@ class AAF_squad_sl: CommonAAF
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -550,6 +547,7 @@ class AAF_squad_ftl: CommonAAF
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -613,7 +611,7 @@ class AAF_squad_gl: CommonAAF
 		3,
 		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		4,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -706,7 +704,7 @@ class AAF_squad_aar: CommonAAF
 		3,
 		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		4,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -744,7 +742,7 @@ class AAF_squad_lat: CommonAAF
 		3,
 		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		4,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -852,7 +850,7 @@ class AAF_weapons_common: CommonAAF
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -916,7 +914,7 @@ class AAF_weapons_amg: AAF_assistant_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -981,7 +979,7 @@ class AAF_weapons_at: AAF_weapons_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -1008,7 +1006,7 @@ class AAF_weapons_aat: AAF_assistant_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -1041,7 +1039,7 @@ class AAF_weapons_atgm: AAF_weapons_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -1066,7 +1064,7 @@ class AAF_weapons_aatgm: AAF_assistant_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -1099,7 +1097,7 @@ class AAF_weapons_aa: AAF_weapons_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -1120,7 +1118,7 @@ class AAF_weapons_aaa: AAF_assistant_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -1148,6 +1146,10 @@ class AAF_weapons_mort: AAF_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class AAF_weapons_amort: AAF_assistant_common
 {
@@ -1162,6 +1164,10 @@ class AAF_weapons_amort: AAF_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class AAF_weapons_acmort: AAF_assistant_common
@@ -1216,7 +1222,7 @@ class AAF_recon_common: CommonAAF
 		3,
 		"30Rnd_556x45_Stanag",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -1311,7 +1317,7 @@ class AAF_recon_tl: AAF_recon_common
 		3,
 		"30Rnd_556x45_Stanag",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -1331,9 +1337,7 @@ class AAF_recon_tl: AAF_recon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		"1Rnd_SmokeRed_Grenade_shell",
 		"i_ir_grenade",
-		2,
-		"ACE_HuntIR_M203",
-		5
+		2
 	};
 	items[]=
 	{
@@ -1345,8 +1349,7 @@ class AAF_recon_tl: AAF_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	binoculars[]=
 	{
@@ -1428,7 +1431,7 @@ class AAF_recon_gl: AAF_recon_common
 		3,
 		"30Rnd_556x45_Stanag",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -1462,7 +1465,7 @@ class AAF_recon_lat: AAF_recon_common
 		3,
 		"30Rnd_556x45_Stanag",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -1562,7 +1565,7 @@ class AAF_recon_exp: AAF_recon_common
 		3,
 		"30Rnd_556x45_Stanag",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -1956,13 +1959,11 @@ class AAF_sniper_spot: AAF_recon_common
 		2,
 		"30Rnd_556x45_Stanag",
 		8,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		4,
-		"ACE_HuntIR_M203",
 		4
 	};
 	items[]=
@@ -1980,8 +1981,7 @@ class AAF_sniper_spot: AAF_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500",
-		"ACE_HuntIR_monitor"
+		"ACE_Kestrel4500"
 	};
 	lrRadios[]=
 	{
@@ -2064,7 +2064,7 @@ class AAF_sniper_exp: AAF_recon_common
 		3,
 		"30Rnd_556x45_Stanag",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -2510,6 +2510,7399 @@ class AAF_medevac_drv: AAF_medevac_common
 		"ACE_Banana"
 	};
 };
+class CommonBAF_CTRG: CommonDefault
+{
+	side="Blufor";
+	sideShort="b";
+	faction="BAF_CTRG";
+	uniform[]=
+	{
+		"U_B_CTRG_1",
+		"U_B_CTRG_3"
+	};
+	vest[]=
+	{
+		"V_PlateCarrierL_CTRG"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_rgr"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_ACR_Carb_tan",
+			"optic_ERCO_snd_f",
+			"acc_pointer_IR",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"hlc_pistol_P226R_Combat",
+			"hlc_acc_TLR1",
+			"",
+			""
+		}
+	};
+	launcher[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet"
+	};
+	headgear[]=
+	{
+		"H_HelmetSpecB",
+		"H_HelmetSpecB_paint1",
+		"H_HelmetSpecB_paint2",
+		"H_HelmetSpecB_blk",
+		"H_HelmetSpecB_sand",
+		"H_HelmetSpecB_snakeskin"
+	};
+	goggles[]=
+	{
+		"G_Tactical_Clear",
+		"G_Tactical_Black"
+	};
+	nvgs[]=
+	{
+		"NVGoggles"
+	};
+	binoculars[]=
+	{
+		""
+	};
+	map[]=
+	{
+		""
+	};
+	gps[]=
+	{
+		""
+	};
+	compass[]=
+	{
+		"ItemCompass"
+	};
+	watch[]=
+	{
+		"ItemWatch"
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_CTRG_company_common: CommonBAF_CTRG
+{
+	uniform[]=
+	{
+		"U_B_CTRG_1"
+	};
+	vest[]=
+	{
+		"V_Rangemaster_belt"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_rgr"
+	};
+	primary[]=
+	{
+		
+		{
+			"smg_05_f",
+			"optic_Holosight_blk_F",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_9x21_Mag_SMG_02",
+		3
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_Cap_khaki_specops_UK"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+};
+class BAF_CTRG_company_co: BAF_CTRG_company_common
+{
+	displayName="DN_CO_CO";
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class BAF_CTRG_company_xo: BAF_CTRG_company_common
+{
+	gps[]=
+	{
+		"b_EasyTrack_Tablet"
+	};
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class BAF_CTRG_company_mio: BAF_CTRG_company_common
+{
+	gps[]=
+	{
+		"b_EasyTrack_Tablet"
+	};
+};
+class BAF_CTRG_company_colo: BAF_CTRG_company_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class BAF_CTRG_company_fo: BAF_CTRG_company_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_RangeTable_82mm"
+	};
+};
+class BAF_CTRG_platoon_common: CommonBAF_CTRG
+{
+	vest[]=
+	{
+		"V_PlateCarrierL_CTRG"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_rgr"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_ACR_SBR_black",
+			"optic_Holosight_smg_blk_F",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_HelmetB",
+		"H_HelmetB_black",
+		"H_HelmetB_desert",
+		"H_HelmetB_grass",
+		"H_HelmetB_sand",
+		"H_HelmetB_snakeskin"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BAF_CTRG_platoon_pl: BAF_CTRG_platoon_common
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+};
+class BAF_CTRG_platoon_psgt: BAF_CTRG_platoon_common
+{
+	gps[]=
+	{
+		"b_EasyTrack_Tablet"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+};
+class BAF_CTRG_platoon_uav: BAF_CTRG_platoon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
+		"b_UavTerminal"
+	};
+};
+class BAF_CTRG_platoon_jtac: BAF_CTRG_platoon_common
+{
+	vest[]=
+	{
+		"V_PlateCarrierH_CTRG"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_SPAR_01_GL_snd_F",
+			"optic_ERCO_snd_f",
+			"acc_pointer_IR",
+			""
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator_03"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"Laserbatteries",
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2,
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+};
+class BAF_CTRG_platoon_medic: BAF_CTRG_platoon_common
+{
+	vest[]=
+	{
+		"V_PlateCarrierL_CTRG"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	gps[]=
+	{
+		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		50,
+		"ACE_quikclot",
+		30,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_CTRG_squad_sl: CommonBAF_CTRG
+{
+	vest[]=
+	{
+		"V_PlateCarrierH_CTRG"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_SPAR_01_GL_snd_F",
+			"optic_ERCO_snd_f",
+			"acc_pointer_IR",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class BAF_CTRG_squad_ftl: CommonBAF_CTRG
+{
+	vest[]=
+	{
+		"V_PlateCarrierH_CTRG"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item"
+	};
+};
+class BAF_CTRG_squad_ar: CommonBAF_CTRG
+{
+	vest[]=
+	{
+		"V_PlateCarrierH_CTRG"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_ACR_mid_tan_x15",
+			"optic_Holosight",
+			"acc_pointer_IR",
+			"bipod_01_F_blk"
+		}
+	};
+	magazines[]=
+	{
+		"hlc_50rnd_556x45_EPR",
+		11,
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"MiniGrenade",
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"G_Combat",
+		"G_Balaclava_combat"
+	};
+};
+class BAF_CTRG_squad_gl: CommonBAF_CTRG
+{
+	vest[]=
+	{
+		"V_PlateCarrierH_CTRG"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_SPAR_01_GL_snd_F",
+			"optic_ERCO_snd_f",
+			"acc_pointer_IR",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class BAF_CTRG_squad_gl2: CommonBAF_CTRG
+{
+	vest[]=
+	{
+		"V_PlateCarrierH_CTRG"
+	};
+	primary[]=
+	{
+		"rhs_weap_m32"
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		5,
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		5,
+		"rhsusf_mag_6Rnd_M714_white",
+		1,
+		"rhsusf_mag_6Rnd_M576_Buckshot",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BAF_CTRG_squad_light: CommonBAF_CTRG
+{
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_ACR_Carb_tan",
+			"optic_ERCO_snd_f",
+			"acc_pointer_IR",
+			""
+		}
+	};
+	vest[]=
+	{
+		"V_PlateCarrierL_CTRG"
+	};
+};
+class BAF_CTRG_squad_aar: CommonBAF_CTRG
+{
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_ACR_Carb_tan",
+			"optic_ERCO_snd_f",
+			"acc_pointer_IR",
+			""
+		}
+	};
+	vest[]=
+	{
+		"V_PlateCarrierL_CTRG"
+	};
+	magazines[]=
+	{
+		"ACE_SpareBarrel",
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BAF_CTRG_squad_lat: CommonBAF_CTRG
+{
+	vest[]=
+	{
+		"V_PlateCarrierL_CTRG"
+	};
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_nlaw_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"hlc_15Rnd_9x19_B_P226"
+	};
+};
+class BAF_CTRG_squad_cm: CommonBAF_CTRG
+{
+	vest[]=
+	{
+		"V_PlateCarrierL_CTRG"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_fieldDressing",
+		20,
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		4
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_CTRG_squad_dm: CommonBAF_CTRG
+{
+	vest[]=
+	{
+		"V_PlateCarrierL_CTRG"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_ACR68_full_tan",
+			"optic_SOS",
+			"acc_pointer_IR",
+			"bipod_01_F_blk"
+		}
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeCard"
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"hlc_30rnd_68x43_FMJ",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BAF_CTRG_squad_eng: CommonBAF_CTRG
+{
+	vest[]=
+	{
+		"V_PlateCarrierL_CTRG"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ToolKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_CTRG_weapons_common: CommonBAF_CTRG
+{
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"V_PlateCarrierL_CTRG"
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BAF_CTRG_assistant_common: BAF_CTRG_weapons_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class BAF_CTRG_weapons_mg: BAF_CTRG_weapons_common
+{
+	vest[]=
+	{
+		"V_PlateCarrierH_CTRG"
+	};
+	primary[]=
+	{
+		
+		{
+			"MMG_02_black_F",
+			"optic_Holosight_blk_F",
+			"acc_pointer_IR",
+			"bipod_01_F_blk"
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"130Rnd_338_Mag",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	goggles[]=
+	{
+		"G_Combat",
+		"G_Balaclava_combat"
+	};
+};
+class BAF_CTRG_weapons_amg: BAF_CTRG_assistant_common
+{
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"130Rnd_338_Mag",
+		5,
+		"ACE_SpareBarrel"
+	};
+};
+class BAF_CTRG_weapons_hmg: BAF_CTRG_weapons_common
+{
+	backpack[]=
+	{
+		"i_HMG_01_weapon_F"
+	};
+};
+class BAF_CTRG_weapons_ahmg: BAF_CTRG_assistant_common
+{
+	backpack[]=
+	{
+		"i_HMG_01_support_F"
+	};
+};
+class BAF_CTRG_weapons_gmg: BAF_CTRG_weapons_common
+{
+	backpack[]=
+	{
+		"i_GMG_01_weapon_F"
+	};
+};
+class BAF_CTRG_weapons_agmg: BAF_CTRG_assistant_common
+{
+	backpack[]=
+	{
+		"i_HMG_01_support_F"
+	};
+};
+class BAF_CTRG_weapons_at: BAF_CTRG_weapons_common
+{
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_nlaw_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"hlc_15Rnd_9x19_B_P226"
+	};
+};
+class BAF_CTRG_weapons_aat: BAF_CTRG_assistant_common
+{
+	backpack[]=
+	{
+		"B_Carryall_oli"
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"hlc_15Rnd_9x19_B_P226"
+	};
+};
+class BAF_CTRG_weapons_atgm: BAF_CTRG_weapons_common
+{
+	launcher[]=
+	{
+		
+		{
+			"launch_i_Titan_short_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT"
+	};
+};
+class BAF_CTRG_weapons_aatgm: BAF_CTRG_assistant_common
+{
+	backpack[]=
+	{
+		"B_Carryall_oli"
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AT",
+		2,
+		"Titan_AP"
+	};
+};
+class BAF_CTRG_weapons_aa: BAF_CTRG_weapons_common
+{
+	launcher[]=
+	{
+		
+		{
+			"launch_b_Titan_F",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AA"
+	};
+};
+class BAF_CTRG_weapons_aaa: BAF_CTRG_assistant_common
+{
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AA",
+		2
+	};
+};
+class BAF_CTRG_weapons_mort: BAF_CTRG_weapons_common
+{
+	backpack[]=
+	{
+		"i_Mortar_01_weapon_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class BAF_CTRG_weapons_amort: BAF_CTRG_assistant_common
+{
+	backpack[]=
+	{
+		"i_Mortar_01_support_F"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class BAF_CTRG_weapons_acmort: BAF_CTRG_assistant_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_1Rnd_82mm_Mo_HE",
+		5
+	};
+};
+class BAF_CTRG_recon_common: CommonBAF_CTRG
+{
+	uniform[]=
+	{
+		"U_B_CTRG_Soldier_F",
+		"U_B_CTRG_Soldier_3_F"
+	};
+	vest[]=
+	{
+		"VSM_FAPC_Operator_OGA_OD"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_rgr"
+	};
+	secondary[]=
+	{
+		
+		{
+			"hlc_pistol_P229R_Elite",
+			"HLC_Optic228_Docter_CADEX",
+			"hlc_muzzle_Evo9",
+			"hlc_acc_TLR1"
+		}
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_ACR_Carb_green",
+			"optic_ERCO_khk_F",
+			"acc_pointer_IR",
+			"muzzle_snds_M_khk_f"
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_SD_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2
+	};
+	goggles[]=
+	{
+		"G_Balaclava_TI_tna_F",
+		"G_Balaclava_TI_blk_F"
+	};
+	headgear[]=
+	{
+		"H_HelmetB_TI_tna_F"
+	};
+	nvgs[]=
+	{
+		"NVGogglesB_grn_F"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_CTRG_recon_rm: BAF_CTRG_recon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_wirecutter"
+	};
+};
+class BAF_CTRG_recon_tl: BAF_CTRG_recon_common
+{
+	vest[]=
+	{
+		"VSM_LBT6094_operator_OGA_OD"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_SPAR_01_gl_khk_F",
+			"optic_Holosight_khk_F",
+			"acc_pointer_IR",
+			"muzzle_snds_M_khk_f"
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_SD_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"b_ir_grenade",
+		2,
+		"ACE_HuntIR_M203",
+		5
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_IR_Strobe_Item",
+		"ACE_HuntIR_monitor"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BAF_CTRG_recon_ar: BAF_CTRG_recon_common
+{
+	vest[]=
+	{
+		"VSM_FAPC_MG_OGA_OD"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_ACR_mid_green_x15",
+			"optic_ERCO_khk_F",
+			"acc_pointer_IR",
+			"muzzle_snds_M_khk_f"
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_SD_P226",
+		3,
+		"hlc_50rnd_556x45_EPR",
+		8,
+		"30Rnd_556x45_Stanag_red",
+		8,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"G_Balaclava_TI_G_tna_F",
+		"G_Balaclava_TI_G_blk_F"
+	};
+};
+class BAF_CTRG_recon_gl: BAF_CTRG_recon_common
+{
+	vest[]=
+	{
+		"VSM_RAV_operator_OGA_OD"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_SPAR_01_gl_khk_F",
+			"optic_Holosight_khk_F",
+			"acc_pointer_IR",
+			"muzzle_snds_M_khk_f"
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_SD_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class BAF_CTRG_recon_lat: BAF_CTRG_recon_common
+{
+	launcher[]=
+	{
+		
+		{
+			"launch_nlaw_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_SD_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"hlc_15Rnd_9x19_B_P226"
+	};
+};
+class BAF_CTRG_recon_cm: BAF_CTRG_recon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		6,
+		"ACE_epinephrine",
+		12,
+		"ACE_salineIV_500",
+		3,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_CTRG_recon_dm: BAF_CTRG_recon_common
+{
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_ACR68_full_green",
+			"optic_SOS_khk_F",
+			"acc_pointer_IR",
+			"muzzle_snds_B_khk_F"
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_SD_P226",
+		3,
+		"hlc_30rnd_68x43_FMJ",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"bipod_01_F_blk",
+		"ACE_RangeCard"
+	};
+};
+class BAF_CTRG_recon_exp: BAF_CTRG_recon_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	secondary[]=
+	{
+		"ACE_VMM3"
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_SD_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"DemoCharge_Remote_Mag",
+		4,
+		"SatchelCharge_Remote_Mag",
+		"SLAMDirectionalMine_Wire_Mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BAF_CTRG_diver_common: BAF_CTRG_recon_common
+{
+	uniform[]=
+	{
+		"U_B_Wetsuit"
+	};
+	vest[]=
+	{
+		"V_RebreatherB"
+	};
+	backpack[]=
+	{
+		"xru_Carryall_blk"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_ACR_SBR_black",
+			"optic_Holosight_blk_F",
+			"acc_pointer_IR",
+			"muzzle_snds_M"
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"hlc_pistol_P229R_Elite",
+			"HLC_Optic228_Docter_CADEX",
+			"hlc_muzzle_Evo9",
+			"hlc_acc_TLR1"
+		}
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_B_CTRG_1"
+	};
+	goggles[]=
+	{
+		"G_B_Diving"
+	};
+	headgear[]=
+	{
+		"H_HelmetB_light_black"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+};
+class BAF_CTRG_diver_rm: BAF_CTRG_diver_common
+{
+};
+class BAF_CTRG_diver_tl: BAF_CTRG_diver_common
+{
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_B_CTRG_1",
+		"ACE_MapTools"
+	};
+};
+class BAF_CTRG_diver_exp: BAF_CTRG_diver_common
+{
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"DemoCharge_Remote_Mag",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_B_CTRG_1",
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BAF_CTRG_diver_cm: BAF_CTRG_diver_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_B_CTRG_1",
+		"W_Defibrillator",
+		"ACE_fieldDressing",
+		5,
+		"ACE_elasticBandage",
+		15,
+		"ACE_quikclot",
+		15,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV",
+		4,
+		"ACE_surgicalKit"
+	};
+	binoculars[]=
+	{
+		"ACE_MX2A"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_CTRG_diver_dm: BAF_CTRG_diver_common
+{
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_ACR68_full_black",
+			"optic_SOS",
+			"acc_pointer_IR",
+			"muzzle_snds_b"
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_SD_P226",
+		3,
+		"hlc_30rnd_68x43_FMJ",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"V_TacVestIR_blk",
+		"U_B_CTRG_1",
+		"bipod_01_F_blk"
+	};
+};
+class BAF_CTRG_diver_jtac: BAF_CTRG_diver_tl
+{
+	primary[]=
+	{
+		
+		{
+			"arifle_SPAR_01_gl_blk_F",
+			"optic_Holosight_blk_F",
+			"acc_pointer_IR",
+			"muzzle_snds_M"
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator_03"
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2,
+		"Laserbatteries",
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2
+	};
+};
+class BAF_CTRG_sniper_common: BAF_CTRG_recon_common
+{
+	uniform[]=
+	{
+		"U_B_FullGhillie_lsh"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"optic_NVS",
+		"ACE_Rangecard"
+	};
+};
+class BAF_CTRG_sniper_spot: BAF_CTRG_recon_common
+{
+	uniform[]=
+	{
+		"U_B_FullGhillie_lsh"
+	};
+	primary[]=
+	{
+		
+		{
+			"arifle_SPAR_01_gl_khk_F",
+			"optic_Holosight_khk_F",
+			"acc_pointer_IR",
+			"muzzle_snds_M_khk_f"
+		}
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_SD_P226",
+		3,
+		"b_ir_grenade",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag_red",
+		8,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		4,
+		"ACE_HuntIR_M203",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_SpottingScope",
+		"ACE_Tripod",
+		"ACE_ATragMX",
+		"ACE_IR_Strobe_Item",
+		"ACE_Rangecard",
+		"ACE_Kestrel4500",
+		"ACE_HuntIR_monitor"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BAF_CTRG_sniper_ap: BAF_CTRG_sniper_common
+{
+	primary[]=
+	{
+		
+		{
+			"srifle_DMR_02_camo_F",
+			"optic_LRPS",
+			"bipod_01_F_snd",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_SD_P226",
+		3,
+		"10Rnd_338_Mag",
+		10,
+		"ACE_10Rnd_338_API526_Mag",
+		5,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class BAF_CTRG_sniper_am: BAF_CTRG_sniper_common
+{
+	primary[]=
+	{
+		
+		{
+			"srifle_lrr_tna_f",
+			"optic_LRPS_tna_F",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_SD_P226",
+		3,
+		"7Rnd_408_Mag",
+		7,
+		"ACE_7Rnd_408_305gr_Mag",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class BAF_CTRG_sniper_exp: BAF_CTRG_recon_common
+{
+	uniform[]=
+	{
+		"U_B_FullGhillie_lsh"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_ACR_Carb_green",
+			"optic_ERCO_khk_F",
+			"acc_pointer_IR",
+			"muzzle_snds_M_khk_f"
+		}
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_SD_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"APERSTripMine_Wire_mag",
+		2,
+		"ClaymoreDirectionalMine_Remote_mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BAF_CTRG_crew_common: CommonBAF_CTRG
+{
+	uniform[]=
+	{
+		"U_B_CTRG_Soldier_urb_2_F"
+	};
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"V_Chestrig_blk"
+	};
+	primary[]=
+	{
+		"hlc_rifle_ACR_SBR_black"
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"xru_H_HelmetCrew_Blk"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_CTRG_crew_cmd: BAF_CTRG_crew_common
+{
+	backpack[]=
+	{
+		"B_AssaultPack_rgr"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BAF_CTRG_crew_jet: CommonBAF_CTRG
+{
+	uniform[]=
+	{
+		"U_B_PilotCoveralls"
+	};
+	vest[]=
+	{
+		""
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetFighter_B"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	watch[]=
+	{
+		"ACE_Altimeter"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BAF_CTRG_crew_heli: BAF_CTRG_crew_common
+{
+	uniform[]=
+	{
+		"U_B_CTRG_Soldier_urb_1_F"
+	};
+	headgear[]=
+	{
+		"H_CrewHelmetHeli_B"
+	};
+	map[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class BAF_CTRG_crew_helipilot: BAF_CTRG_crew_heli
+{
+	backpack[]=
+	{
+		"B_AssaultPack_rgr"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetHeli_B"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BAF_CTRG_logistics_common: CommonBAF_CTRG
+{
+	vest[]=
+	{
+		"V_PlateCarrierL_CTRG"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	primary[]=
+	{
+		"hlc_rifle_ACR_SBR_black"
+	};
+	magazines[]=
+	{
+		"hlc_15Rnd_9x19_B_P226",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"H_HelmetB",
+		"H_HelmetB_black",
+		"H_HelmetB_desert",
+		"H_HelmetB_grass",
+		"H_HelmetB_sand",
+		"H_HelmetB_snakeskin"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker",
+		"ToolKit"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F",
+		"ACRE_PRC152"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_CTRG_medevac_common: CommonBAF_CTRG
+{
+	primary[]=
+	{
+		""
+	};
+	secondary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker"
+	};
+	headgear[]=
+	{
+		"H_HelmetB",
+		"H_HelmetB_black",
+		"H_HelmetB_desert",
+		"H_HelmetB_grass",
+		"H_HelmetB_sand",
+		"H_HelmetB_snakeskin"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class BAF_CTRG_medevac_doc: BAF_CTRG_medevac_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class BAF_CTRG_medevac_tl: BAF_CTRG_medevac_doc
+{
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class BAF_CTRG_medevac_heli: BAF_CTRG_medevac_common
+{
+	uniform[]=
+	{
+		"U_B_CTRG_Soldier_urb_1_F"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	gps[]=
+	{
+		"b_EasyTrack_PDA"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetHeli_B"
+	};
+	nvgs[]=
+	{
+		"NVGogglesB_grn_F"
+	};
+};
+class BAF_CTRG_medevac_drv: BAF_CTRG_medevac_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_Banana"
+	};
+};
+class CommonBAF_DPM: CommonDefault
+{
+	side="Blufor";
+	sideShort="b";
+	faction="BAF_DPM";
+	uniform[]=
+	{
+		"CUP_U_B_BAF_DPM_S2_UnRolled",
+		"CUP_U_B_BAF_DPM_S1_RolledUp"
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Empty"
+	};
+	backpack[]=
+	{
+		"B_FieldPack_oli"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_NG",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		},
+		
+		{
+			"CUP_arifle_L85A2_G",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhsusf_weap_glock17g4",
+			"",
+			"",
+			""
+		}
+	};
+	launcher[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet"
+	};
+	headgear[]=
+	{
+		"CUP_H_BAF_Helmet_3_DPM"
+	};
+	goggles[]=
+	{
+		"rhs_googles_black",
+		"rhs_googles_yellow",
+		"rhs_googles_orange",
+		"rhs_googles_clear"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		""
+	};
+	map[]=
+	{
+		""
+	};
+	gps[]=
+	{
+		""
+	};
+	compass[]=
+	{
+		"ItemCompass"
+	};
+	watch[]=
+	{
+		"ItemWatch"
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_DPM_company_common: CommonBAF_DPM
+{
+	uniform[]=
+	{
+		"CUP_U_B_BAF_DPM_S2_UnRolled"
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Empty"
+	};
+	backpack[]=
+	{
+		"B_TacticalPack_oli"
+	};
+	primary[]=
+	{
+		"hlc_smg_mp5a3"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"hlc_30Rnd_9x19_GD_MP5",
+		3
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_Cap_oli_hs"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+};
+class BAF_DPM_company_co: BAF_DPM_company_common
+{
+	displayName="DN_CO_CO";
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class BAF_DPM_company_xo: BAF_DPM_company_common
+{
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class BAF_DPM_company_mio: BAF_DPM_company_common
+{
+};
+class BAF_DPM_company_colo: BAF_DPM_company_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class BAF_DPM_company_fo: BAF_DPM_company_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_RangeTable_82mm"
+	};
+};
+class BAF_DPM_platoon_common: CommonBAF_DPM
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Scout"
+	};
+	backpack[]=
+	{
+		"B_TacticalPack_oli"
+	};
+	primary[]=
+	{
+		"CUP_arifle_L85A2"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"CUP_H_BAF_Helmet_3_DPM"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BAF_DPM_platoon_pl: BAF_DPM_platoon_common
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+};
+class BAF_DPM_platoon_psgt: BAF_DPM_platoon_common
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+};
+class BAF_DPM_platoon_uav: BAF_DPM_platoon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
+		"b_UavTerminal"
+	};
+};
+class BAF_DPM_platoon_jtac: BAF_DPM_platoon_common
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Grenadier"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"Laserbatteries",
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2,
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+};
+class BAF_DPM_platoon_medic: BAF_DPM_platoon_common
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Medic"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	gps[]=
+	{
+		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		50,
+		"ACE_quikclot",
+		30,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_DPM_squad_sl: CommonBAF_DPM
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Officer"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class BAF_DPM_squad_ftl: CommonBAF_DPM
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Officer"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item"
+	};
+};
+class BAF_DPM_squad_ar: CommonBAF_DPM
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Sapper"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_lmg_minimipara_long_railed",
+			"",
+			"rhsusf_acc_ACOG",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"200Rnd_556x45_Box_Red_F",
+		4,
+		"200Rnd_556x45_Box_Tracer_Red_F",
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"MiniGrenade",
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"rhsusf_oakley_goggles_blk",
+		"rhsusf_oakley_goggles_clr",
+		"rhsusf_oakley_goggles_ylw"
+	};
+};
+class BAF_DPM_squad_gl: CommonBAF_DPM
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Grenadier"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class BAF_DPM_squad_gl2: CommonBAF_DPM
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Grenadier"
+	};
+	primary[]=
+	{
+		"rhs_weap_m32"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		5,
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		5,
+		"rhsusf_mag_6Rnd_M714_white",
+		1,
+		"rhsusf_mag_6Rnd_M576_Buckshot",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BAF_DPM_squad_light: CommonBAF_DPM
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_NG",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		},
+		
+		{
+			"CUP_arifle_L85A2_G",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		}
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier2"
+	};
+};
+class BAF_DPM_squad_aar: CommonBAF_DPM
+{
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_NG",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		},
+		
+		{
+			"CUP_arifle_L85A2_G",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		}
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier2"
+	};
+	magazines[]=
+	{
+		"ACE_SpareBarrel",
+		"200Rnd_556x45_Box_Red_F",
+		2,
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BAF_DPM_squad_lat: CommonBAF_DPM
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier2"
+	};
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_nlaw_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag_red"
+	};
+};
+class BAF_DPM_squad_cm: CommonBAF_DPM
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Medic"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_fieldDressing",
+		20,
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		4
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_DPM_squad_dm: CommonBAF_DPM
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Sapper"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_srifle_L129A1",
+			"bipod_01_F_blk",
+			"rhsusf_acc_ACOG_MDO",
+			"cup_acc_llm"
+		}
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeCard"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"20Rnd_762x51_Mag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BAF_DPM_squad_eng: CommonBAF_DPM
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier2"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ToolKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_DPM_weapons_common: CommonBAF_DPM
+{
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier2"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BAF_DPM_assistant_common: BAF_DPM_weapons_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class BAF_DPM_weapons_mg: BAF_DPM_weapons_common
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Sapper"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_m240B_CAP",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"rhsusf_50Rnd_762x51",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	goggles[]=
+	{
+		"rhsusf_oakley_goggles_blk",
+		"rhsusf_oakley_goggles_clr",
+		"rhsusf_oakley_goggles_ylw"
+	};
+};
+class BAF_DPM_weapons_amg: BAF_DPM_assistant_common
+{
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhsusf_50Rnd_762x51",
+		8,
+		"ACE_SpareBarrel"
+	};
+};
+class BAF_DPM_weapons_hmg: BAF_DPM_weapons_common
+{
+	backpack[]=
+	{
+		"RHS_M2_Gun_Bag"
+	};
+};
+class BAF_DPM_weapons_ahmg: BAF_DPM_assistant_common
+{
+	backpack[]=
+	{
+		"RHS_M2_MiniTripod_Bag"
+	};
+};
+class BAF_DPM_weapons_gmg: BAF_DPM_weapons_common
+{
+	backpack[]=
+	{
+		"RHS_Mk19_Gun_Bag"
+	};
+};
+class BAF_DPM_weapons_agmg: BAF_DPM_assistant_common
+{
+	backpack[]=
+	{
+		"RHS_Mk19_Tripod_Bag"
+	};
+};
+class BAF_DPM_weapons_at: BAF_DPM_weapons_common
+{
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_nlaw_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag_red"
+	};
+};
+class BAF_DPM_weapons_aat: BAF_DPM_assistant_common
+{
+	backpack[]=
+	{
+		"B_Carryall_oli"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag_red"
+	};
+};
+class BAF_DPM_weapons_atgm: BAF_DPM_weapons_common
+{
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_fgm148",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_fgm148_magazine_AT"
+	};
+};
+class BAF_DPM_weapons_aatgm: BAF_DPM_assistant_common
+{
+	backpack[]=
+	{
+		"B_Carryall_oli"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_fgm148_magazine_AT"
+	};
+};
+class BAF_DPM_weapons_aa: BAF_DPM_weapons_common
+{
+	launcher[]=
+	{
+		
+		{
+			"launch_b_titan_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AA"
+	};
+};
+class BAF_DPM_weapons_aaa: BAF_DPM_assistant_common
+{
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AA",
+		2
+	};
+};
+class BAF_DPM_weapons_mort: BAF_DPM_weapons_common
+{
+	backpack[]=
+	{
+		"NDS_B_M224_Mortar"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class BAF_DPM_weapons_amort: BAF_DPM_assistant_common
+{
+	backpack[]=
+	{
+		"NDS_M224_B_Ammo"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class BAF_DPM_weapons_acmort: BAF_DPM_assistant_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_1Rnd_82mm_Mo_HE",
+		5
+	};
+};
+class BAF_DPM_recon_common: CommonBAF_DPM
+{
+	uniform[]=
+	{
+		"CUP_U_B_BAF_DPM_S1_RolledUp"
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier2"
+	};
+	backpack[]=
+	{
+		"B_TacticalPack_oli"
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhsusf_weap_glock17g4",
+			"hlc_muzzle_TiRant9S",
+			"acc_flashlight_pistol",
+			""
+		}
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_NG",
+			"rhsusf_acc_ACOG",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		},
+		
+		{
+			"CUP_arifle_L85A2_G",
+			"rhsusf_acc_ACOG",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2
+	};
+	goggles[]=
+	{
+		"rhsusf_shemagh_gogg_grn",
+		"rhsusf_shemagh2_gogg_grn",
+		"rhsusf_shemagh_gogg_od",
+		"rhsusf_shemagh2_gogg_od",
+		"rhsusf_shemagh_gogg_tan",
+		"rhsusf_shemagh2_gogg_tan",
+		"rhsusf_shemagh_grn",
+		"rhsusf_shemagh2_grn",
+		"rhsusf_shemagh_od",
+		"rhsusf_shemagh2_od",
+		"rhsusf_shemagh_tan",
+		"rhsusf_shemagh2_tan"
+	};
+	headgear[]=
+	{
+		"CUP_H_BAF_Helmet_1_DPM"
+	};
+	nvgs[]=
+	{
+		"rhsusf_ANPVS_14"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_DPM_recon_rm: BAF_DPM_recon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_wirecutter"
+	};
+};
+class BAF_DPM_recon_tl: BAF_DPM_recon_common
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Officer"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"rhsusf_acc_ACOG",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"b_ir_grenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_IR_Strobe_Item"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BAF_DPM_recon_ar: BAF_DPM_recon_common
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Sapper"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L86A2",
+			"CUP_muzzle_snds_L85",
+			"rhsusf_acc_ACOG",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		5,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"rhsusf_shemagh_gogg_grn",
+		"rhsusf_shemagh2_gogg_grn",
+		"rhsusf_shemagh_gogg_od",
+		"rhsusf_shemagh2_gogg_od",
+		"rhsusf_shemagh_gogg_tan",
+		"rhsusf_shemagh2_gogg_tan"
+	};
+};
+class BAF_DPM_recon_gl: BAF_DPM_recon_common
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Grenadier"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"rhsusf_acc_ACOG",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class BAF_DPM_recon_lat: BAF_DPM_recon_common
+{
+	launcher[]=
+	{
+		
+		{
+			"launch_nlaw_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag_red"
+	};
+};
+class BAF_DPM_recon_cm: BAF_DPM_recon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		6,
+		"ACE_epinephrine",
+		12,
+		"ACE_salineIV_500",
+		3,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_DPM_recon_dm: BAF_DPM_recon_common
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_srifle_L129A1_hg",
+			"muzzle_snds_B_snd_F",
+			"rhsusf_acc_ACOG_MDO",
+			"cup_acc_llm"
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"20Rnd_762x51_Mag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"bipod_03_F_blk",
+		"ACE_RangeCard"
+	};
+};
+class BAF_DPM_recon_exp: BAF_DPM_recon_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	secondary[]=
+	{
+		"ACE_VMM3"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"DemoCharge_Remote_Mag",
+		4,
+		"SatchelCharge_Remote_Mag",
+		"SLAMDirectionalMine_Wire_Mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BAF_DPM_diver_common: BAF_DPM_recon_common
+{
+	uniform[]=
+	{
+		"U_B_Wetsuit"
+	};
+	vest[]=
+	{
+		"V_RebreatherB"
+	};
+	backpack[]=
+	{
+		"xru_Carryall_blk"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_NG",
+			"rhsusf_acc_ACOG",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		},
+		
+		{
+			"CUP_arifle_L85A2_G",
+			"rhsusf_acc_ACOG",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhsusf_weap_glock17g4",
+			"hlc_muzzle_TiRant9S",
+			"acc_flashlight_pistol",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier2",
+		"CUP_U_B_BAF_DPM_S1_RolledUp"
+	};
+	goggles[]=
+	{
+		"G_B_Diving"
+	};
+	headgear[]=
+	{
+		"CUP_H_BAF_Helmet_1_DPM"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+};
+class BAF_DPM_diver_rm: BAF_DPM_diver_common
+{
+};
+class BAF_DPM_diver_tl: BAF_DPM_diver_common
+{
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier2",
+		"CUP_U_B_BAF_DPM_S1_RolledUp",
+		"ACE_MapTools"
+	};
+};
+class BAF_DPM_diver_exp: BAF_DPM_diver_common
+{
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"DemoCharge_Remote_Mag",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier2",
+		"CUP_U_B_BAF_DPM_S1_RolledUp",
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BAF_DPM_diver_cm: BAF_DPM_diver_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier2",
+		"CUP_U_B_BAF_DPM_S1_RolledUp",
+		"W_Defibrillator",
+		"ACE_fieldDressing",
+		5,
+		"ACE_elasticBandage",
+		15,
+		"ACE_quikclot",
+		15,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV",
+		4,
+		"ACE_surgicalKit"
+	};
+	binoculars[]=
+	{
+		"ACE_MX2A"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_DPM_diver_dm: BAF_DPM_diver_common
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_srifle_L129A1_hg",
+			"muzzle_snds_B_snd_F",
+			"rhsusf_acc_ACOG_MDO",
+			"cup_acc_llm"
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"20Rnd_762x51_Mag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier1",
+		"CUP_V_BAF_Osprey_Mk2_DPM_Soldier2",
+		"CUP_U_B_BAF_DPM_S1_RolledUp",
+		"bipod_03_F_blk"
+	};
+};
+class BAF_DPM_diver_jtac: BAF_DPM_diver_tl
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"rhsusf_acc_ACOG",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2,
+		"Laserbatteries",
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2
+	};
+};
+class BAF_DPM_sniper_common: BAF_DPM_recon_common
+{
+	uniform[]=
+	{
+		"U_B_FullGhillie_lsh"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"rhsusf_acc_ACOG_anpvs27",
+		"ACE_Rangecard"
+	};
+};
+class BAF_DPM_sniper_spot: BAF_DPM_recon_common
+{
+	uniform[]=
+	{
+		"U_B_FullGhillie_lsh"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"rhsusf_acc_ACOG",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"b_ir_grenade",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag_red",
+		8,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_SpottingScope",
+		"ACE_Tripod",
+		"ACE_ATragMX",
+		"ACE_IR_Strobe_Item",
+		"ACE_Rangecard",
+		"ACE_Kestrel4500"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BAF_DPM_sniper_ap: BAF_DPM_sniper_common
+{
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_awMagnum_OD_ghillie",
+			"",
+			"rhsusf_acc_M8541",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"hlc_5rnd_300WM_mk248_AWM",
+		5,
+		"hlc_5rnd_300WM_AP_AWM",
+		5,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class BAF_DPM_sniper_am: BAF_DPM_sniper_common
+{
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_m82a1",
+			"rhsusf_acc_premier",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"rhsusf_mag_10Rnd_STD_50BMG_M33",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class BAF_DPM_sniper_exp: BAF_DPM_recon_common
+{
+	uniform[]=
+	{
+		"U_B_FullGhillie_lsh"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_NG",
+			"rhsusf_acc_ACOG",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		},
+		
+		{
+			"CUP_arifle_L85A2_G",
+			"rhsusf_acc_ACOG",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"APERSTripMine_Wire_mag",
+		2,
+		"ClaymoreDirectionalMine_Remote_mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BAF_DPM_crew_common: CommonBAF_DPM
+{
+	uniform[]=
+	{
+		"CUP_U_B_BAF_DPM_Tshirt"
+	};
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Crewman"
+	};
+	primary[]=
+	{
+		"CUP_arifle_L85A2"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"CUP_H_BAF_Crew_Helmet_DPM"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_DPM_crew_cmd: BAF_DPM_crew_common
+{
+	backpack[]=
+	{
+		"B_TacticalPack_oli"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BAF_DPM_crew_jet: CommonBAF_DPM
+{
+	uniform[]=
+	{
+		"U_B_PilotCoveralls"
+	};
+	vest[]=
+	{
+		""
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetFighter_B"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	watch[]=
+	{
+		"ACE_Altimeter"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BAF_DPM_crew_heli: BAF_DPM_crew_common
+{
+	uniform[]=
+	{
+		"CUP_U_B_BAF_DPM_S2_UnRolled"
+	};
+	headgear[]=
+	{
+		"rhsusf_hgu56p_mask"
+	};
+	map[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		""
+	};
+};
+class BAF_DPM_crew_helipilot: BAF_DPM_crew_heli
+{
+	backpack[]=
+	{
+		"B_FieldPack_oli"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"rhsusf_hgu56p"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BAF_DPM_logistics_common: CommonBAF_DPM
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Scout"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	primary[]=
+	{
+		"CUP_arifle_L85A2"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"CUP_H_BAF_Helmet_3_DPM"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker",
+		"ToolKit"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F",
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_DPM_medevac_common: CommonBAF_DPM
+{
+	primary[]=
+	{
+		""
+	};
+	secondary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker"
+	};
+	headgear[]=
+	{
+		"CUP_H_BAF_Helmet_3_DPM"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class BAF_DPM_medevac_doc: BAF_DPM_medevac_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_rgr"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class BAF_DPM_medevac_tl: BAF_DPM_medevac_doc
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class BAF_DPM_medevac_heli: BAF_DPM_medevac_common
+{
+	uniform[]=
+	{
+		"CUP_U_B_BAF_DPM_S2_UnRolled"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"rhsusf_hgu56p"
+	};
+	nvgs[]=
+	{
+		"rhsusf_ANPVS_14"
+	};
+};
+class BAF_DPM_medevac_drv: BAF_DPM_medevac_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_Banana"
+	};
+};
+class CommonBAF_MTP: CommonDefault
+{
+	side="Blufor";
+	sideShort="b";
+	faction="BAF_MTP";
+	uniform[]=
+	{
+		"rhs_uniform_g3_mc"
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DDPM_Empty"
+	};
+	backpack[]=
+	{
+		"B_AssaultPack_mcamo"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_NG",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		},
+		
+		{
+			"CUP_arifle_L85A2_G",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhsusf_weap_glock17g4",
+			"",
+			"",
+			""
+		}
+	};
+	launcher[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet"
+	};
+	headgear[]=
+	{
+		"CUP_H_BAF_Helmet_1_MTP"
+	};
+	goggles[]=
+	{
+		"rhs_googles_black",
+		"rhs_googles_yellow",
+		"rhs_googles_orange",
+		"rhs_googles_clear"
+	};
+	nvgs[]=
+	{
+		"rhsusf_ANPVS_14"
+	};
+	binoculars[]=
+	{
+		""
+	};
+	map[]=
+	{
+		""
+	};
+	gps[]=
+	{
+		""
+	};
+	compass[]=
+	{
+		"ItemCompass"
+	};
+	watch[]=
+	{
+		"ItemWatch"
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		"uksub"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_MTP_company_common: CommonBAF_MTP
+{
+	uniform[]=
+	{
+		"rhs_uniform_g3_mc"
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"
+	};
+	backpack[]=
+	{
+		"B_TacticalPack_mcamo"
+	};
+	primary[]=
+	{
+		"hlc_smg_mp5a3"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"hlc_30Rnd_9x19_GD_MP5",
+		3
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"H_MilCap_mcamo"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+};
+class BAF_MTP_company_co: BAF_MTP_company_common
+{
+	displayName="DN_CO_CO";
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class BAF_MTP_company_xo: BAF_MTP_company_common
+{
+	headgear[]=
+	{
+		"H_Beret_blk"
+	};
+};
+class BAF_MTP_company_mio: BAF_MTP_company_common
+{
+};
+class BAF_MTP_company_colo: BAF_MTP_company_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class BAF_MTP_company_fo: BAF_MTP_company_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_RangeTable_82mm"
+	};
+};
+class BAF_MTP_platoon_common: CommonBAF_MTP
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"
+	};
+	backpack[]=
+	{
+		"B_TacticalPack_mcamo"
+	};
+	primary[]=
+	{
+		"CUP_arifle_L85A2"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+	headgear[]=
+	{
+		"CUP_H_BAF_Helmet_3_MTP"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BAF_MTP_platoon_pl: BAF_MTP_platoon_common
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+};
+class BAF_MTP_platoon_psgt: BAF_MTP_platoon_common
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+};
+class BAF_MTP_platoon_uav: BAF_MTP_platoon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_UAVBattery"
+	};
+	gps[]=
+	{
+		"b_UavTerminal"
+	};
+};
+class BAF_MTP_platoon_jtac: BAF_MTP_platoon_common
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Grenadier"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_mcamo"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+	gps[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"Laserbatteries",
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2,
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+};
+class BAF_MTP_platoon_medic: BAF_MTP_platoon_common
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_mcamo"
+	};
+	gps[]=
+	{
+		""
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		50,
+		"ACE_quikclot",
+		30,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	lrRadios[]=
+	{
+		""
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_MTP_squad_sl: CommonBAF_MTP
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"UGL_FlareGreen_F",
+		2,
+		"UGL_FlareRed_F",
+		2,
+		"UGL_FlareYellow_F",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class BAF_MTP_squad_ftl: CommonBAF_MTP
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item"
+	};
+};
+class BAF_MTP_squad_ar: CommonBAF_MTP
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_MachineGunner"
+	};
+	primary[]=
+	{
+		
+		{
+			"hlc_lmg_minimipara_long_railed",
+			"",
+			"rhsusf_acc_ACOG",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"200Rnd_556x45_Box_Red_F",
+		4,
+		"200Rnd_556x45_Box_Tracer_Red_F",
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"MiniGrenade",
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"rhsusf_oakley_goggles_blk",
+		"rhsusf_oakley_goggles_clr",
+		"rhsusf_oakley_goggles_ylw"
+	};
+};
+class BAF_MTP_squad_gl: CommonBAF_MTP
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Grenadier"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG_RMR",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class BAF_MTP_squad_gl2: CommonBAF_MTP
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Grenadier"
+	};
+	primary[]=
+	{
+		"rhs_weap_m32"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		5,
+		"rhsusf_mag_6Rnd_M433_HEDP",
+		5,
+		"rhsusf_mag_6Rnd_M714_white",
+		1,
+		"rhsusf_mag_6Rnd_M576_Buckshot",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BAF_MTP_squad_light: CommonBAF_MTP
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_NG",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG_RMR",
+			""
+		},
+		
+		{
+			"CUP_arifle_L85A2_G",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG_RMR",
+			""
+		}
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"
+	};
+};
+class BAF_MTP_squad_aar: CommonBAF_MTP
+{
+	backpack[]=
+	{
+		"B_Kitbag_mcamo"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_NG",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG_RMR",
+			""
+		},
+		
+		{
+			"CUP_arifle_L85A2_G",
+			"cup_acc_llm",
+			"rhsusf_acc_ACOG_RMR",
+			""
+		}
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"
+	};
+	magazines[]=
+	{
+		"ACE_SpareBarrel",
+		"200Rnd_556x45_Box_Red_F",
+		2,
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BAF_MTP_squad_lat: CommonBAF_MTP
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"
+	};
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_nlaw_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		7,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		4,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag_red"
+	};
+};
+class BAF_MTP_squad_cm: CommonBAF_MTP
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_fieldDressing",
+		20,
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		4
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_MTP_squad_dm: CommonBAF_MTP
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_srifle_L129A1",
+			"bipod_01_F_blk",
+			"rhsusf_acc_ACOG_MDO",
+			"cup_acc_llm"
+		}
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeCard"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"20Rnd_762x51_Mag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BAF_MTP_squad_eng: CommonBAF_MTP
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ToolKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_MTP_weapons_common: CommonBAF_MTP
+{
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+};
+class BAF_MTP_assistant_common: BAF_MTP_weapons_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_mcamo"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+};
+class BAF_MTP_weapons_mg: BAF_MTP_weapons_common
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_MachineGunner"
+	};
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_m240B_CAP",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"rhsusf_50Rnd_762x51",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	goggles[]=
+	{
+		"rhsusf_oakley_goggles_blk",
+		"rhsusf_oakley_goggles_clr",
+		"rhsusf_oakley_goggles_ylw"
+	};
+};
+class BAF_MTP_weapons_amg: BAF_MTP_assistant_common
+{
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhsusf_50Rnd_762x51",
+		8,
+		"ACE_SpareBarrel"
+	};
+};
+class BAF_MTP_weapons_hmg: BAF_MTP_weapons_common
+{
+	backpack[]=
+	{
+		"RHS_M2_Gun_Bag"
+	};
+};
+class BAF_MTP_weapons_ahmg: BAF_MTP_assistant_common
+{
+	backpack[]=
+	{
+		"RHS_M2_MiniTripod_Bag"
+	};
+};
+class BAF_MTP_weapons_gmg: BAF_MTP_weapons_common
+{
+	backpack[]=
+	{
+		"RHS_Mk19_Gun_Bag"
+	};
+};
+class BAF_MTP_weapons_agmg: BAF_MTP_assistant_common
+{
+	backpack[]=
+	{
+		"RHS_Mk19_Tripod_Bag"
+	};
+};
+class BAF_MTP_weapons_at: BAF_MTP_weapons_common
+{
+	backpack[]=
+	{
+		""
+	};
+	launcher[]=
+	{
+		
+		{
+			"launch_nlaw_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag_red"
+	};
+};
+class BAF_MTP_weapons_aat: BAF_MTP_assistant_common
+{
+	backpack[]=
+	{
+		"B_Carryall_mcamo"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag_red"
+	};
+};
+class BAF_MTP_weapons_atgm: BAF_MTP_weapons_common
+{
+	launcher[]=
+	{
+		
+		{
+			"rhs_weap_fgm148",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_fgm148_magazine_AT"
+	};
+};
+class BAF_MTP_weapons_aatgm: BAF_MTP_assistant_common
+{
+	backpack[]=
+	{
+		"B_Carryall_mcamo"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"rhs_fgm148_magazine_AT"
+	};
+};
+class BAF_MTP_weapons_aa: BAF_MTP_weapons_common
+{
+	launcher[]=
+	{
+		
+		{
+			"launch_b_titan_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AA"
+	};
+};
+class BAF_MTP_weapons_aaa: BAF_MTP_assistant_common
+{
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		5,
+		"30Rnd_556x45_Stanag_Tracer_Red",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"Titan_AA",
+		2
+	};
+};
+class BAF_MTP_weapons_mort: BAF_MTP_weapons_common
+{
+	backpack[]=
+	{
+		"NDS_B_M224_Mortar"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class BAF_MTP_weapons_amort: BAF_MTP_assistant_common
+{
+	backpack[]=
+	{
+		"NDS_M224_B_Ammo"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+};
+class BAF_MTP_weapons_acmort: BAF_MTP_assistant_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_1Rnd_82mm_Mo_HE",
+		5
+	};
+};
+class BAF_MTP_recon_common: CommonBAF_MTP
+{
+	uniform[]=
+	{
+		"rhs_uniform_g3_mc"
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"
+	};
+	backpack[]=
+	{
+		"B_TacticalPack_mcamo"
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhsusf_weap_glock17g4",
+			"hlc_muzzle_TiRant9S",
+			"acc_flashlight_pistol",
+			""
+		}
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_NG",
+			"rhsusf_acc_ACOG_RMR",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		},
+		
+		{
+			"CUP_arifle_L85A2_G",
+			"rhsusf_acc_ACOG_RMR",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2
+	};
+	goggles[]=
+	{
+		"rhsusf_shemagh_gogg_grn",
+		"rhsusf_shemagh2_gogg_grn",
+		"rhsusf_shemagh_gogg_od",
+		"rhsusf_shemagh2_gogg_od",
+		"rhsusf_shemagh_gogg_tan",
+		"rhsusf_shemagh2_gogg_tan",
+		"rhsusf_shemagh_grn",
+		"rhsusf_shemagh2_grn",
+		"rhsusf_shemagh_od",
+		"rhsusf_shemagh2_od",
+		"rhsusf_shemagh_tan",
+		"rhsusf_shemagh2_tan"
+	};
+	headgear[]=
+	{
+		"rhsusf_opscore_mc_cover_pelt",
+		"rhsusf_opscore_mc_cover_pelt_nsw",
+		"rhsusf_opscore_mc_cover_pelt_cam"
+	};
+	nvgs[]=
+	{
+		"rhsusf_ANPVS_14"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		"uksub"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_MTP_recon_rm: BAF_MTP_recon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_wirecutter"
+	};
+};
+class BAF_MTP_recon_tl: BAF_MTP_recon_common
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"rhsusf_acc_ACOG_RMR",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		2,
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"b_ir_grenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_IR_Strobe_Item"
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BAF_MTP_recon_ar: BAF_MTP_recon_common
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_MachineGunner"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L86A2",
+			"CUP_muzzle_snds_L85",
+			"rhsusf_acc_ACOG_RMR",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		5,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	goggles[]=
+	{
+		"rhsusf_shemagh_gogg_grn",
+		"rhsusf_shemagh2_gogg_grn",
+		"rhsusf_shemagh_gogg_od",
+		"rhsusf_shemagh2_gogg_od",
+		"rhsusf_shemagh_gogg_tan",
+		"rhsusf_shemagh2_gogg_tan"
+	};
+};
+class BAF_MTP_recon_gl: BAF_MTP_recon_common
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Grenadier"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"rhsusf_acc_ACOG_RMR",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		24,
+		"1Rnd_Smoke_Grenade_shell",
+		8
+	};
+};
+class BAF_MTP_recon_lat: BAF_MTP_recon_common
+{
+	launcher[]=
+	{
+		
+		{
+			"launch_nlaw_f",
+			"",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag_red"
+	};
+};
+class BAF_MTP_recon_cm: BAF_MTP_recon_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_fieldDressing",
+		10,
+		"ACE_elasticBandage",
+		30,
+		"ACE_quikclot",
+		20,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		6,
+		"ACE_epinephrine",
+		12,
+		"ACE_salineIV_500",
+		3,
+		"ACE_surgicalKit"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_MTP_recon_dm: BAF_MTP_recon_common
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_srifle_L129A1_hg",
+			"muzzle_snds_B_snd_F",
+			"rhsusf_acc_ACOG_MDO",
+			"cup_acc_llm"
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"20Rnd_762x51_Mag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"bipod_03_F_blk",
+		"ACE_RangeCard"
+	};
+};
+class BAF_MTP_recon_exp: BAF_MTP_recon_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_mcamo"
+	};
+	secondary[]=
+	{
+		"ACE_VMM3"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"DemoCharge_Remote_Mag",
+		4,
+		"SatchelCharge_Remote_Mag",
+		"SLAMDirectionalMine_Wire_Mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BAF_MTP_diver_common: BAF_MTP_recon_common
+{
+	uniform[]=
+	{
+		"U_B_Wetsuit"
+	};
+	vest[]=
+	{
+		"V_RebreatherB"
+	};
+	backpack[]=
+	{
+		"xru_Carryall_blk"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_NG",
+			"rhsusf_acc_ACOG_RMR",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		},
+		
+		{
+			"CUP_arifle_L85A2_G",
+			"rhsusf_acc_ACOG_RMR",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	secondary[]=
+	{
+		
+		{
+			"rhsusf_weap_glock17g4",
+			"hlc_muzzle_TiRant9S",
+			"acc_flashlight_pistol",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman",
+		"rhs_uniform_g3_mc"
+	};
+	goggles[]=
+	{
+		"G_B_Diving"
+	};
+	headgear[]=
+	{
+		"rhsusf_opscore_mc_pelt",
+		"rhsusf_opscore_mc_pelt_nsw"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+};
+class BAF_MTP_diver_rm: BAF_MTP_diver_common
+{
+};
+class BAF_MTP_diver_tl: BAF_MTP_diver_common
+{
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman",
+		"rhs_uniform_g3_mc",
+		"ACE_MapTools"
+	};
+};
+class BAF_MTP_diver_exp: BAF_MTP_diver_common
+{
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"DemoCharge_Remote_Mag",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman",
+		"rhs_uniform_g3_mc",
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BAF_MTP_diver_cm: BAF_MTP_diver_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman",
+		"rhs_uniform_g3_mc",
+		"W_Defibrillator",
+		"ACE_fieldDressing",
+		5,
+		"ACE_elasticBandage",
+		15,
+		"ACE_quikclot",
+		15,
+		"ACE_tourniquet",
+		3,
+		"ACE_morphine",
+		10,
+		"ACE_epinephrine",
+		10,
+		"ACE_salineIV",
+		4,
+		"ACE_surgicalKit"
+	};
+	binoculars[]=
+	{
+		"ACE_MX2A"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_MTP_diver_dm: BAF_MTP_diver_common
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_srifle_L129A1_hg",
+			"muzzle_snds_B_snd_F",
+			"rhsusf_acc_ACOG_MDO",
+			"cup_acc_llm"
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"20Rnd_762x51_Mag",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"ACE_M84",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman",
+		"rhs_uniform_g3_mc",
+		"bipod_03_F_blk"
+	};
+};
+class BAF_MTP_diver_jtac: BAF_MTP_diver_tl
+{
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"rhsusf_acc_ACOG_RMR",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	binoculars[]=
+	{
+		"Laserdesignator"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		10,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"ACE_M84",
+		4,
+		"MiniGrenade",
+		2,
+		"Laserbatteries",
+		"1Rnd_SmokeBlue_Grenade_shell",
+		2,
+		"1Rnd_SmokePurple_Grenade_shell",
+		2,
+		"1Rnd_SmokeYellow_Grenade_shell",
+		2,
+		"1Rnd_SmokeGreen_Grenade_shell",
+		2,
+		"1Rnd_SmokeRed_Grenade_shell",
+		2
+	};
+};
+class BAF_MTP_sniper_common: BAF_MTP_recon_common
+{
+	uniform[]=
+	{
+		"U_B_FullGhillie_sard"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"rhsusf_acc_ACOG_anpvs27",
+		"ACE_Rangecard"
+	};
+};
+class BAF_MTP_sniper_spot: BAF_MTP_recon_common
+{
+	uniform[]=
+	{
+		"U_B_FullGhillie_sard"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_GL",
+			"rhsusf_acc_ACOG_RMR",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	binoculars[]=
+	{
+		"ACE_Vector"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"b_ir_grenade",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"30Rnd_556x45_Stanag_red",
+		8,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"1Rnd_HE_Grenade_shell",
+		10,
+		"1Rnd_Smoke_Grenade_shell",
+		4
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_SpottingScope",
+		"ACE_Tripod",
+		"ACE_ATragMX",
+		"ACE_IR_Strobe_Item",
+		"ACE_Rangecard",
+		"ACE_Kestrel4500"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+};
+class BAF_MTP_sniper_ap: BAF_MTP_sniper_common
+{
+	primary[]=
+	{
+		
+		{
+			"hlc_rifle_awMagnum_OD_ghillie",
+			"",
+			"rhsusf_acc_M8541",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"hlc_5rnd_300WM_mk248_AWM",
+		5,
+		"hlc_5rnd_300WM_AP_AWM",
+		5,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class BAF_MTP_sniper_am: BAF_MTP_sniper_common
+{
+	primary[]=
+	{
+		
+		{
+			"rhs_weap_m82a1",
+			"rhsusf_acc_premier",
+			"",
+			""
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"rhsusf_mag_10Rnd_STD_50BMG_M33",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+};
+class BAF_MTP_sniper_exp: BAF_MTP_recon_common
+{
+	uniform[]=
+	{
+		"U_B_FullGhillie_sard"
+	};
+	primary[]=
+	{
+		
+		{
+			"CUP_arifle_L85A2_NG",
+			"rhsusf_acc_ACOG_RMR",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		},
+		
+		{
+			"CUP_arifle_L85A2_G",
+			"rhsusf_acc_ACOG_RMR",
+			"cup_acc_llm",
+			"CUP_muzzle_snds_L85"
+		}
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		9,
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
+		2,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple",
+		"HandGrenade",
+		2,
+		"SmokeShell",
+		2,
+		"APERSTripMine_Wire_mag",
+		2,
+		"ClaymoreDirectionalMine_Remote_mag",
+		2
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_IR_Strobe_Item",
+		"ACE_CableTie",
+		2,
+		"ACE_Clacker",
+		"ACE_SpraypaintRed",
+		"ACE_SpraypaintGreen",
+		"ACE_DefusalKit",
+		"ACE_DeadManSwitch"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
+};
+class BAF_MTP_crew_common: CommonBAF_MTP
+{
+	uniform[]=
+	{
+		"rhs_uniform_g3_mc"
+	};
+	backpack[]=
+	{
+		""
+	};
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk2_DPM_Crewman"
+	};
+	primary[]=
+	{
+		"CUP_arifle_L85A2"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"CUP_H_BAF_Crew_Helmet_MTP"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		"uksub"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_MTP_crew_cmd: BAF_MTP_crew_common
+{
+	backpack[]=
+	{
+		"B_TacticalPack_mcamo"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC152",
+		"ACRE_PRC117F"
+	};
+	binoculars[]=
+	{
+		"Binocular"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BAF_MTP_crew_jet: CommonBAF_MTP
+{
+	uniform[]=
+	{
+		"U_B_PilotCoveralls"
+	};
+	vest[]=
+	{
+		""
+	};
+	backpack[]=
+	{
+		""
+	};
+	primary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"H_PilotHelmetFighter_B"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	nvgs[]=
+	{
+		""
+	};
+	watch[]=
+	{
+		"ACE_Altimeter"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		"uksub"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BAF_MTP_crew_heli: BAF_MTP_crew_common
+{
+	uniform[]=
+	{
+		"rhs_uniform_g3_mc"
+	};
+	headgear[]=
+	{
+		"rhsusf_hgu56p_mask"
+	};
+	map[]=
+	{
+		""
+	};
+	insignia[]=
+	{
+		"uksub"
+	};
+};
+class BAF_MTP_crew_helipilot: BAF_MTP_crew_heli
+{
+	backpack[]=
+	{
+		"B_AssaultPack_mcamo"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"rhsusf_hgu56p"
+	};
+	nvgs[]=
+	{
+		"NVGoggles_OPFOR"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools"
+	};
+};
+class BAF_MTP_logistics_common: CommonBAF_MTP
+{
+	vest[]=
+	{
+		"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman"
+	};
+	backpack[]=
+	{
+		"B_Kitbag_mcamo"
+	};
+	primary[]=
+	{
+		"CUP_arifle_L85A2"
+	};
+	magazines[]=
+	{
+		"rhsusf_mag_17Rnd_9x19_JHP",
+		3,
+		"30Rnd_556x45_Stanag_red",
+		6,
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	headgear[]=
+	{
+		"CUP_H_BAF_Helmet_3_MTP"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker",
+		"ToolKit"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F",
+		"ACRE_PRC152"
+	};
+	map[]=
+	{
+		"ItemMap"
+	};
+	insignia[]=
+	{
+		"uksub"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
+};
+class BAF_MTP_medevac_common: CommonBAF_MTP
+{
+	primary[]=
+	{
+		""
+	};
+	secondary[]=
+	{
+		""
+	};
+	magazines[]=
+	{
+		"ACE_Chemlight_Orange",
+		"ACE_Chemlight_White",
+		"SmokeShellOrange",
+		"SmokeShellPurple"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker"
+	};
+	headgear[]=
+	{
+		"CUP_H_BAF_Helmet_3_MTP"
+	};
+	goggles[]=
+	{
+		"",
+		"G_Spectacles",
+		"G_Aviator"
+	};
+	insignia[]=
+	{
+		"uksub"
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class BAF_MTP_medevac_doc: BAF_MTP_medevac_common
+{
+	backpack[]=
+	{
+		"B_Kitbag_mcamo"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30
+	};
+	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
+};
+class BAF_MTP_medevac_tl: BAF_MTP_medevac_doc
+{
+	lrRadios[]=
+	{
+		"ACRE_PRC152"
+	};
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_personalAidKit",
+		4,
+		"ACE_salineIV_500",
+		10,
+		"ACE_surgicalKit",
+		"W_Defibrillator",
+		"ACE_elasticBandage",
+		40,
+		"ACE_quikclot",
+		40,
+		"ACE_tourniquet",
+		6,
+		"ACE_morphine",
+		15,
+		"ACE_epinephrine",
+		30,
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"CL_Logitracker"
+	};
+};
+class BAF_MTP_medevac_heli: BAF_MTP_medevac_common
+{
+	uniform[]=
+	{
+		"rhs_uniform_g3_mc"
+	};
+	map[]=
+	{
+		"itemMap"
+	};
+	goggles[]=
+	{
+		"G_Aviator"
+	};
+	lrRadios[]=
+	{
+		"ACRE_PRC117F"
+	};
+	headgear[]=
+	{
+		"rhsusf_hgu56p"
+	};
+	nvgs[]=
+	{
+		"rhsusf_ANPVS_14"
+	};
+};
+class BAF_MTP_medevac_drv: BAF_MTP_medevac_common
+{
+	items[]=
+	{
+		"ACE_EarPlugs",
+		"ACE_fieldDressing",
+		10,
+		"ACE_tourniquet",
+		"CL_Logitracker",
+		"ACE_Banana"
+	};
+};
 class CommonBEL_DES: CommonDefault
 {
 	side="Blufor";
@@ -2534,7 +9927,7 @@ class CommonBEL_DES: CommonDefault
 		{
 			"CUP_arifle_Mk16_STD_FG",
 			"acc_flashlight",
-			"",
+			"rhsusf_acc_T1_low",
 			""
 		}
 	};
@@ -2556,7 +9949,7 @@ class CommonBEL_DES: CommonDefault
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -2641,7 +10034,7 @@ class BEL_DES_company_common: CommonBEL_DES
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		3
 	};
 	items[]=
@@ -2740,7 +10133,7 @@ class BEL_DES_platoon_common: CommonBEL_DES
 		{
 			"CUP_arifle_Mk16_CQC",
 			"acc_flashlight",
-			"",
+			"rhsusf_acc_T1_low",
 			""
 		}
 	};
@@ -2748,7 +10141,7 @@ class BEL_DES_platoon_common: CommonBEL_DES
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -2838,7 +10231,7 @@ class BEL_DES_platoon_jtac: BEL_DES_platoon_common
 		{
 			"CUP_arifle_Mk16_CQC_EGLM",
 			"acc_flashlight",
-			"",
+			"rhsusf_acc_T1_low",
 			""
 		}
 	};
@@ -2859,7 +10252,7 @@ class BEL_DES_platoon_jtac: BEL_DES_platoon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -2947,7 +10340,7 @@ class BEL_DES_squad_sl: CommonBEL_DES
 		{
 			"CUP_arifle_Mk16_STD_EGLM",
 			"acc_flashlight",
-			"",
+			"rhsusf_acc_T1_low",
 			""
 		}
 	};
@@ -2955,7 +10348,7 @@ class BEL_DES_squad_sl: CommonBEL_DES
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -2967,8 +10360,6 @@ class BEL_DES_squad_sl: CommonBEL_DES
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -2992,8 +10383,7 @@ class BEL_DES_squad_sl: CommonBEL_DES
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -3020,6 +10410,7 @@ class BEL_DES_squad_ftl: CommonBEL_DES
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -3079,7 +10470,7 @@ class BEL_DES_squad_gl: CommonBEL_DES
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -3171,7 +10562,7 @@ class BEL_DES_squad_aar: CommonBEL_DES
 		2,
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -3209,7 +10600,7 @@ class BEL_DES_squad_lat: CommonBEL_DES
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -3275,7 +10666,7 @@ class BEL_DES_squad_dm: CommonBEL_DES
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -3317,7 +10708,7 @@ class BEL_DES_weapons_common: CommonBEL_DES
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -3380,7 +10771,7 @@ class BEL_DES_weapons_amg: BEL_DES_assistant_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -3445,7 +10836,7 @@ class BEL_DES_weapons_at: BEL_DES_weapons_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -3470,7 +10861,7 @@ class BEL_DES_weapons_aat: BEL_DES_assistant_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -3501,7 +10892,7 @@ class BEL_DES_weapons_atgm: BEL_DES_weapons_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -3526,7 +10917,7 @@ class BEL_DES_weapons_aatgm: BEL_DES_assistant_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -3559,7 +10950,7 @@ class BEL_DES_weapons_aa: BEL_DES_weapons_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -3580,7 +10971,7 @@ class BEL_DES_weapons_aaa: BEL_DES_assistant_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -3610,6 +11001,10 @@ class BEL_DES_weapons_mort: BEL_DES_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class BEL_DES_weapons_amort: BEL_DES_assistant_common
 {
@@ -3624,6 +11019,10 @@ class BEL_DES_weapons_amort: BEL_DES_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class BEL_DES_weapons_acmort: BEL_DES_assistant_common
@@ -3683,7 +11082,7 @@ class BEL_DES_recon_common: CommonBEL_DES
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
@@ -3780,7 +11179,7 @@ class BEL_DES_recon_tl: BEL_DES_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
@@ -3802,9 +11201,7 @@ class BEL_DES_recon_tl: BEL_DES_recon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		"1Rnd_SmokeRed_Grenade_shell",
 		"b_ir_grenade",
-		2,
-		"ACE_HuntIR_M203",
-		5
+		2
 	};
 	items[]=
 	{
@@ -3816,8 +11213,7 @@ class BEL_DES_recon_tl: BEL_DES_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	binoculars[]=
 	{
@@ -3898,7 +11294,7 @@ class BEL_DES_recon_gl: BEL_DES_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
@@ -3932,7 +11328,7 @@ class BEL_DES_recon_lat: BEL_DES_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
@@ -3993,7 +11389,7 @@ class BEL_DES_recon_dm: BEL_DES_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -4032,7 +11428,7 @@ class BEL_DES_recon_exp: BEL_DES_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
@@ -4113,7 +11509,7 @@ class BEL_DES_diver_common: BEL_DES_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -4170,7 +11566,7 @@ class BEL_DES_diver_tl: BEL_DES_diver_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -4202,7 +11598,7 @@ class BEL_DES_diver_exp: BEL_DES_diver_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -4286,7 +11682,7 @@ class BEL_DES_diver_dm: BEL_DES_diver_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -4341,7 +11737,7 @@ class BEL_DES_diver_jtac: BEL_DES_diver_tl
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -4422,15 +11818,13 @@ class BEL_DES_sniper_spot: BEL_DES_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		8,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		4,
-		"ACE_HuntIR_M203",
 		4
 	};
 	items[]=
@@ -4448,8 +11842,7 @@ class BEL_DES_sniper_spot: BEL_DES_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500",
-		"ACE_HuntIR_monitor"
+		"ACE_Kestrel4500"
 	};
 	lrRadios[]=
 	{
@@ -4526,7 +11919,7 @@ class BEL_DES_sniper_exp: BEL_DES_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
@@ -4584,7 +11977,7 @@ class BEL_DES_crew_common: CommonBEL_DES
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -4769,7 +12162,7 @@ class BEL_DES_logistics_common: CommonBEL_DES
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -4977,7 +12370,7 @@ class CommonBEL_WDL: CommonDefault
 		{
 			"CUP_arifle_Mk16_STD_FG_woodland",
 			"acc_flashlight",
-			"",
+			"rhsusf_acc_T1_low",
 			""
 		}
 	};
@@ -4999,7 +12392,7 @@ class CommonBEL_WDL: CommonDefault
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -5084,7 +12477,7 @@ class BEL_WDL_company_common: CommonBEL_WDL
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		3
 	};
 	items[]=
@@ -5183,7 +12576,7 @@ class BEL_WDL_platoon_common: CommonBEL_WDL
 		{
 			"CUP_arifle_Mk16_CQC_woodland",
 			"acc_flashlight",
-			"",
+			"rhsusf_acc_T1_low",
 			""
 		}
 	};
@@ -5191,7 +12584,7 @@ class BEL_WDL_platoon_common: CommonBEL_WDL
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -5281,7 +12674,7 @@ class BEL_WDL_platoon_jtac: BEL_WDL_platoon_common
 		{
 			"CUP_arifle_Mk16_CQC_EGLM_woodland",
 			"acc_flashlight",
-			"",
+			"rhsusf_acc_T1_low",
 			""
 		}
 	};
@@ -5302,7 +12695,7 @@ class BEL_WDL_platoon_jtac: BEL_WDL_platoon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -5390,7 +12783,7 @@ class BEL_WDL_squad_sl: CommonBEL_WDL
 		{
 			"CUP_arifle_Mk16_STD_EGLM_woodland",
 			"acc_flashlight",
-			"",
+			"rhsusf_acc_T1_low",
 			""
 		}
 	};
@@ -5398,7 +12791,7 @@ class BEL_WDL_squad_sl: CommonBEL_WDL
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -5410,8 +12803,6 @@ class BEL_WDL_squad_sl: CommonBEL_WDL
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -5435,8 +12826,7 @@ class BEL_WDL_squad_sl: CommonBEL_WDL
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -5463,6 +12853,7 @@ class BEL_WDL_squad_ftl: CommonBEL_WDL
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -5522,7 +12913,7 @@ class BEL_WDL_squad_gl: CommonBEL_WDL
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -5614,7 +13005,7 @@ class BEL_WDL_squad_aar: CommonBEL_WDL
 		2,
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -5652,7 +13043,7 @@ class BEL_WDL_squad_lat: CommonBEL_WDL
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -5718,7 +13109,7 @@ class BEL_WDL_squad_dm: CommonBEL_WDL
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -5760,7 +13151,7 @@ class BEL_WDL_weapons_common: CommonBEL_WDL
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -5823,7 +13214,7 @@ class BEL_WDL_weapons_amg: BEL_WDL_assistant_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -5888,7 +13279,7 @@ class BEL_WDL_weapons_at: BEL_WDL_weapons_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -5913,7 +13304,7 @@ class BEL_WDL_weapons_aat: BEL_WDL_assistant_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -5944,7 +13335,7 @@ class BEL_WDL_weapons_atgm: BEL_WDL_weapons_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -5969,7 +13360,7 @@ class BEL_WDL_weapons_aatgm: BEL_WDL_assistant_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -6002,7 +13393,7 @@ class BEL_WDL_weapons_aa: BEL_WDL_weapons_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -6023,7 +13414,7 @@ class BEL_WDL_weapons_aaa: BEL_WDL_assistant_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -6053,6 +13444,10 @@ class BEL_WDL_weapons_mort: BEL_WDL_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class BEL_WDL_weapons_amort: BEL_WDL_assistant_common
 {
@@ -6067,6 +13462,10 @@ class BEL_WDL_weapons_amort: BEL_WDL_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class BEL_WDL_weapons_acmort: BEL_WDL_assistant_common
@@ -6126,7 +13525,7 @@ class BEL_WDL_recon_common: CommonBEL_WDL
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
@@ -6223,7 +13622,7 @@ class BEL_WDL_recon_tl: BEL_WDL_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
@@ -6245,9 +13644,7 @@ class BEL_WDL_recon_tl: BEL_WDL_recon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		"1Rnd_SmokeRed_Grenade_shell",
 		"b_ir_grenade",
-		2,
-		"ACE_HuntIR_M203",
-		5
+		2
 	};
 	items[]=
 	{
@@ -6259,8 +13656,7 @@ class BEL_WDL_recon_tl: BEL_WDL_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	binoculars[]=
 	{
@@ -6341,7 +13737,7 @@ class BEL_WDL_recon_gl: BEL_WDL_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
@@ -6375,7 +13771,7 @@ class BEL_WDL_recon_lat: BEL_WDL_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
@@ -6436,7 +13832,7 @@ class BEL_WDL_recon_dm: BEL_WDL_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -6475,7 +13871,7 @@ class BEL_WDL_recon_exp: BEL_WDL_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
@@ -6556,7 +13952,7 @@ class BEL_WDL_diver_common: BEL_WDL_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -6613,7 +14009,7 @@ class BEL_WDL_diver_tl: BEL_WDL_diver_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -6645,7 +14041,7 @@ class BEL_WDL_diver_exp: BEL_WDL_diver_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -6729,7 +14125,7 @@ class BEL_WDL_diver_dm: BEL_WDL_diver_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -6784,7 +14180,7 @@ class BEL_WDL_diver_jtac: BEL_WDL_diver_tl
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -6865,15 +14261,13 @@ class BEL_WDL_sniper_spot: BEL_WDL_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		8,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		4,
-		"ACE_HuntIR_M203",
 		4
 	};
 	items[]=
@@ -6891,8 +14285,7 @@ class BEL_WDL_sniper_spot: BEL_WDL_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500",
-		"ACE_HuntIR_monitor"
+		"ACE_Kestrel4500"
 	};
 	lrRadios[]=
 	{
@@ -6969,7 +14362,7 @@ class BEL_WDL_sniper_exp: BEL_WDL_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
@@ -7027,7 +14420,7 @@ class BEL_WDL_crew_common: CommonBEL_WDL
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -7212,7 +14605,7 @@ class BEL_WDL_logistics_common: CommonBEL_WDL
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -7875,8 +15268,6 @@ class BHEER_squad_sl: CommonBHEER
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -7900,8 +15291,7 @@ class BHEER_squad_sl: CommonBHEER
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -7928,6 +15318,7 @@ class BHEER_squad_ftl: CommonBHEER
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -8521,6 +15912,10 @@ class BHEER_weapons_mort: BHEER_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class BHEER_weapons_amort: BHEER_assistant_common
 {
@@ -8535,6 +15930,10 @@ class BHEER_weapons_amort: BHEER_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class BHEER_weapons_acmort: BHEER_assistant_common
@@ -8699,9 +16098,7 @@ class BHEER_recon_tl: BHEER_recon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		"1Rnd_SmokeRed_Grenade_shell",
 		"i_ir_grenade",
-		2,
-		"ACE_HuntIR_M203",
-		5
+		2
 	};
 	items[]=
 	{
@@ -8713,8 +16110,7 @@ class BHEER_recon_tl: BHEER_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	binoculars[]=
 	{
@@ -9319,8 +16715,6 @@ class BHEER_sniper_spot: BHEER_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		4,
-		"ACE_HuntIR_M203",
 		4
 	};
 	items[]=
@@ -9338,8 +16732,7 @@ class BHEER_sniper_spot: BHEER_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500",
-		"ACE_HuntIR_monitor"
+		"ACE_Kestrel4500"
 	};
 	lrRadios[]=
 	{
@@ -9899,7 +17292,13 @@ class CommonBW_FLECK: CommonDefault
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36A1"
+		
+		{
+			"hlc_rifle_G36A1",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	secondary[]=
 	{
@@ -10126,7 +17525,7 @@ class BW_FLECK_platoon_common: CommonBW_FLECK
 		{
 			"hlc_rifle_G36C",
 			"optic_Holosight_blk_F",
-			"",
+			"ACE_muzzle_mzls_L",
 			""
 		}
 	};
@@ -10221,7 +17620,7 @@ class BW_FLECK_platoon_jtac: BW_FLECK_platoon_common
 {
 	vest[]=
 	{
-		"BWA3_Vest_Grenadier_Fleck"
+		"BWA3_Vest_grenadier_Fleck"
 	};
 	backpack[]=
 	{
@@ -10229,7 +17628,13 @@ class BW_FLECK_platoon_jtac: BW_FLECK_platoon_common
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36A1AG36"
+		
+		{
+			"hlc_rifle_G36A1AG36",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	binoculars[]=
 	{
@@ -10336,7 +17741,13 @@ class BW_FLECK_squad_sl: CommonBW_FLECK
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36A1AG36"
+		
+		{
+			"hlc_rifle_G36A1AG36",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	magazines[]=
 	{
@@ -10354,8 +17765,6 @@ class BW_FLECK_squad_sl: CommonBW_FLECK
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -10379,8 +17788,7 @@ class BW_FLECK_squad_sl: CommonBW_FLECK
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -10407,6 +17815,7 @@ class BW_FLECK_squad_ftl: CommonBW_FLECK
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -10453,11 +17862,17 @@ class BW_FLECK_squad_gl: CommonBW_FLECK
 {
 	vest[]=
 	{
-		"BWA3_Vest_Grenadier_Fleck"
+		"BWA3_Vest_grenadier_Fleck"
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36A1AG36"
+		
+		{
+			"hlc_rifle_G36A1AG36",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	magazines[]=
 	{
@@ -10485,7 +17900,7 @@ class BW_FLECK_squad_gl2: CommonBW_FLECK
 {
 	vest[]=
 	{
-		"BWA3_Vest_Grenadier_Fleck"
+		"BWA3_Vest_grenadier_Fleck"
 	};
 	primary[]=
 	{
@@ -10515,7 +17930,13 @@ class BW_FLECK_squad_light: CommonBW_FLECK
 {
 	primary[]=
 	{
-		"hlc_rifle_G36A1"
+		
+		{
+			"hlc_rifle_G36A1",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	vest[]=
 	{
@@ -10530,7 +17951,13 @@ class BW_FLECK_squad_aar: CommonBW_FLECK
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36A1"
+		
+		{
+			"hlc_rifle_G36A1",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	vest[]=
 	{
@@ -10992,6 +18419,10 @@ class BW_FLECK_weapons_mort: BW_FLECK_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class BW_FLECK_weapons_amort: BW_FLECK_assistant_common
 {
@@ -11006,6 +18437,10 @@ class BW_FLECK_weapons_amort: BW_FLECK_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class BW_FLECK_weapons_acmort: BW_FLECK_assistant_common
@@ -11180,9 +18615,7 @@ class BW_FLECK_recon_tl: BW_FLECK_recon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		"1Rnd_SmokeRed_Grenade_shell",
 		"b_ir_grenade",
-		2,
-		"ACE_HuntIR_M203",
-		5
+		2
 	};
 	items[]=
 	{
@@ -11194,8 +18627,7 @@ class BW_FLECK_recon_tl: BW_FLECK_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	binoculars[]=
 	{
@@ -11797,8 +19229,6 @@ class BW_FLECK_sniper_spot: BW_FLECK_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		4,
-		"ACE_HuntIR_M203",
 		4
 	};
 	items[]=
@@ -11816,8 +19246,7 @@ class BW_FLECK_sniper_spot: BW_FLECK_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500",
-		"ACE_HuntIR_monitor"
+		"ACE_Kestrel4500"
 	};
 	lrRadios[]=
 	{
@@ -11953,7 +19382,13 @@ class BW_FLECK_crew_common: CommonBW_FLECK
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36C"
+		
+		{
+			"hlc_rifle_G36C",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	magazines[]=
 	{
@@ -12149,7 +19584,13 @@ class BW_FLECK_logistics_common: CommonBW_FLECK
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36C"
+		
+		{
+			"hlc_rifle_G36C",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	magazines[]=
 	{
@@ -12377,7 +19818,13 @@ class CommonBW_TROP: CommonDefault
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36A1"
+		
+		{
+			"hlc_rifle_G36A1",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	secondary[]=
 	{
@@ -12602,7 +20049,7 @@ class BW_TROP_platoon_common: CommonBW_TROP
 		{
 			"hlc_rifle_G36C",
 			"optic_Holosight_blk_F",
-			"",
+			"ACE_muzzle_mzls_L",
 			""
 		}
 	};
@@ -12705,7 +20152,13 @@ class BW_TROP_platoon_jtac: BW_TROP_platoon_common
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36A1AG36"
+		
+		{
+			"hlc_rifle_G36A1AG36",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	binoculars[]=
 	{
@@ -12812,7 +20265,13 @@ class BW_TROP_squad_sl: CommonBW_TROP
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36A1AG36"
+		
+		{
+			"hlc_rifle_G36A1AG36",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	magazines[]=
 	{
@@ -12830,8 +20289,6 @@ class BW_TROP_squad_sl: CommonBW_TROP
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -12855,8 +20312,7 @@ class BW_TROP_squad_sl: CommonBW_TROP
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -12883,6 +20339,7 @@ class BW_TROP_squad_ftl: CommonBW_TROP
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -12933,7 +20390,13 @@ class BW_TROP_squad_gl: CommonBW_TROP
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36A1AG36"
+		
+		{
+			"hlc_rifle_G36A1AG36",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	magazines[]=
 	{
@@ -12991,7 +20454,13 @@ class BW_TROP_squad_light: CommonBW_TROP
 {
 	primary[]=
 	{
-		"hlc_rifle_G36A1"
+		
+		{
+			"hlc_rifle_G36A1",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	vest[]=
 	{
@@ -13006,7 +20475,13 @@ class BW_TROP_squad_aar: CommonBW_TROP
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36A1"
+		
+		{
+			"hlc_rifle_G36A1",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	vest[]=
 	{
@@ -13468,6 +20943,10 @@ class BW_TROP_weapons_mort: BW_TROP_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class BW_TROP_weapons_amort: BW_TROP_assistant_common
 {
@@ -13482,6 +20961,10 @@ class BW_TROP_weapons_amort: BW_TROP_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class BW_TROP_weapons_acmort: BW_TROP_assistant_common
@@ -13656,9 +21139,7 @@ class BW_TROP_recon_tl: BW_TROP_recon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		"1Rnd_SmokeRed_Grenade_shell",
 		"b_ir_grenade",
-		2,
-		"ACE_HuntIR_M203",
-		5
+		2
 	};
 	items[]=
 	{
@@ -13670,8 +21151,7 @@ class BW_TROP_recon_tl: BW_TROP_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	binoculars[]=
 	{
@@ -14275,8 +21755,6 @@ class BW_TROP_sniper_spot: BW_TROP_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		4,
-		"ACE_HuntIR_M203",
 		4
 	};
 	items[]=
@@ -14294,8 +21772,7 @@ class BW_TROP_sniper_spot: BW_TROP_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500",
-		"ACE_HuntIR_monitor"
+		"ACE_Kestrel4500"
 	};
 	lrRadios[]=
 	{
@@ -14432,7 +21909,13 @@ class BW_TROP_crew_common: CommonBW_TROP
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36C"
+		
+		{
+			"hlc_rifle_G36C",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	magazines[]=
 	{
@@ -14628,7 +22111,13 @@ class BW_TROP_logistics_common: CommonBW_TROP
 	};
 	primary[]=
 	{
-		"hlc_rifle_G36C"
+		
+		{
+			"hlc_rifle_G36C",
+			"ACE_muzzle_mzls_L",
+			"",
+			""
+		}
 	};
 	magazines[]=
 	{
@@ -15361,6 +22850,7 @@ class CDF_squad_ftl: CommonCDF
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -15948,6 +23438,10 @@ class CDF_weapons_mort: CDF_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class CDF_weapons_amort: CDF_assistant_common
 {
@@ -15962,6 +23456,10 @@ class CDF_weapons_amort: CDF_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class CDF_weapons_acmort: CDF_assistant_common
@@ -17782,8 +25280,6 @@ class CHINA_squad_sl: CommonCHINA
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -17807,8 +25303,7 @@ class CHINA_squad_sl: CommonCHINA
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -17835,6 +25330,7 @@ class CHINA_squad_ftl: CommonCHINA
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -18442,6 +25938,10 @@ class CHINA_weapons_mort: CHINA_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class CHINA_weapons_amort: CHINA_assistant_common
 {
@@ -18456,6 +25956,10 @@ class CHINA_weapons_amort: CHINA_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class CHINA_weapons_acmort: CHINA_assistant_common
@@ -20287,8 +27791,6 @@ class CHINA_GRN_squad_sl: CommonCHINA_GRN
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -20312,8 +27814,7 @@ class CHINA_GRN_squad_sl: CommonCHINA_GRN
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -20340,6 +27841,7 @@ class CHINA_GRN_squad_ftl: CommonCHINA_GRN
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -20952,6 +28454,10 @@ class CHINA_GRN_weapons_mort: CHINA_GRN_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class CHINA_GRN_weapons_amort: CHINA_GRN_assistant_common
 {
@@ -20966,6 +28472,10 @@ class CHINA_GRN_weapons_amort: CHINA_GRN_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class CHINA_GRN_weapons_acmort: CHINA_GRN_assistant_common
@@ -22390,7 +29900,7 @@ class CommonFIA: CommonDefault
 		3,
 		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		4,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -22719,7 +30229,7 @@ class FIA_platoon_common: CommonFIA
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -22894,7 +30404,7 @@ class FIA_platoon_jtac: FIA_platoon_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23020,7 +30530,7 @@ class FIA_squad_sl: CommonFIA
 		3,
 		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		4,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23030,8 +30540,6 @@ class FIA_squad_sl: CommonFIA
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -23055,8 +30563,7 @@ class FIA_squad_sl: CommonFIA
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -23088,6 +30595,7 @@ class FIA_squad_ftl: CommonFIA
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -23184,7 +30692,7 @@ class FIA_squad_gl: CommonFIA
 		3,
 		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		4,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23332,7 +30840,7 @@ class FIA_squad_aar: CommonFIA
 		3,
 		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		4,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23374,7 +30882,7 @@ class FIA_squad_lat: CommonFIA
 		3,
 		"30Rnd_556x45_Stanag",
 		7,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		4,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23508,7 +31016,7 @@ class FIA_weapons_common: CommonFIA
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23581,7 +31089,7 @@ class FIA_weapons_amg: FIA_assistant_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23647,7 +31155,7 @@ class FIA_weapons_at: FIA_weapons_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23677,7 +31185,7 @@ class FIA_weapons_aat: FIA_assistant_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23711,7 +31219,7 @@ class FIA_weapons_atgm: FIA_weapons_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23739,7 +31247,7 @@ class FIA_weapons_aatgm: FIA_assistant_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23772,7 +31280,7 @@ class FIA_weapons_aa: FIA_weapons_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23793,7 +31301,7 @@ class FIA_weapons_aaa: FIA_assistant_common
 		3,
 		"30Rnd_556x45_Stanag",
 		5,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"30Rnd_556x45_Stanag_Tracer_yellow",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -23821,6 +31329,10 @@ class FIA_weapons_mort: FIA_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class FIA_weapons_amort: FIA_assistant_common
 {
@@ -23835,6 +31347,10 @@ class FIA_weapons_amort: FIA_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class FIA_weapons_acmort: FIA_assistant_common
@@ -23943,7 +31459,7 @@ class FIA_recon_common: CommonFIA
 		3,
 		"30Rnd_556x45_Stanag",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -24095,7 +31611,7 @@ class FIA_recon_tl: FIA_recon_common
 		3,
 		"30Rnd_556x45_Stanag",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -24115,9 +31631,7 @@ class FIA_recon_tl: FIA_recon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		"1Rnd_SmokeRed_Grenade_shell",
 		"b_ir_grenade",
-		2,
-		"ACE_HuntIR_M203",
-		5
+		2
 	};
 	items[]=
 	{
@@ -24129,8 +31643,7 @@ class FIA_recon_tl: FIA_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	binoculars[]=
 	{
@@ -24227,7 +31740,7 @@ class FIA_recon_gl: FIA_recon_common
 		3,
 		"30Rnd_556x45_Stanag",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -24261,7 +31774,7 @@ class FIA_recon_lat: FIA_recon_common
 		3,
 		"30Rnd_556x45_Stanag",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -24386,7 +31899,7 @@ class FIA_recon_exp: FIA_recon_common
 		3,
 		"30Rnd_556x45_Stanag",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -24876,13 +32389,11 @@ class FIA_sniper_spot: FIA_recon_common
 		2,
 		"30Rnd_556x45_Stanag",
 		8,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		4,
-		"ACE_HuntIR_M203",
 		4
 	};
 	items[]=
@@ -24900,8 +32411,7 @@ class FIA_sniper_spot: FIA_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500",
-		"ACE_HuntIR_monitor"
+		"ACE_Kestrel4500"
 	};
 	lrRadios[]=
 	{
@@ -25043,7 +32553,7 @@ class FIA_sniper_exp: FIA_recon_common
 		3,
 		"30Rnd_556x45_Stanag",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Green",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -25724,7 +33234,7 @@ class CommonIDF: CommonDefault
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -25940,7 +33450,7 @@ class IDF_platoon_common: CommonIDF
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -26061,7 +33571,7 @@ class IDF_platoon_jtac: IDF_platoon_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -26162,7 +33672,7 @@ class IDF_squad_sl: CommonIDF
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -26174,8 +33684,6 @@ class IDF_squad_sl: CommonIDF
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -26199,8 +33707,7 @@ class IDF_squad_sl: CommonIDF
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -26227,6 +33734,7 @@ class IDF_squad_ftl: CommonIDF
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -26288,7 +33796,7 @@ class IDF_squad_gl: CommonIDF
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -26385,7 +33893,7 @@ class IDF_squad_aar: CommonIDF
 		2,
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -26427,7 +33935,7 @@ class IDF_squad_lat: CommonIDF
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -26540,7 +34048,7 @@ class IDF_weapons_common: CommonIDF
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -26607,7 +34115,7 @@ class IDF_weapons_amg: IDF_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -26674,7 +34182,7 @@ class IDF_weapons_at: IDF_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -26699,7 +34207,7 @@ class IDF_weapons_aat: IDF_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -26731,7 +34239,7 @@ class IDF_weapons_atgm: IDF_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -26756,7 +34264,7 @@ class IDF_weapons_aatgm: IDF_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -26788,7 +34296,7 @@ class IDF_weapons_aa: IDF_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -26809,7 +34317,7 @@ class IDF_weapons_aaa: IDF_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -26839,6 +34347,10 @@ class IDF_weapons_mort: IDF_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class IDF_weapons_amort: IDF_assistant_common
 {
@@ -26853,6 +34365,10 @@ class IDF_weapons_amort: IDF_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class IDF_weapons_acmort: IDF_assistant_common
@@ -26917,9 +34433,9 @@ class IDF_recon_common: CommonIDF
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -27016,9 +34532,9 @@ class IDF_recon_tl: IDF_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -27137,9 +34653,9 @@ class IDF_recon_gl: IDF_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -27171,9 +34687,9 @@ class IDF_recon_lat: IDF_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -27286,9 +34802,9 @@ class IDF_recon_exp: IDF_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -27371,7 +34887,7 @@ class IDF_diver_common: IDF_recon_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -27428,7 +34944,7 @@ class IDF_diver_tl: IDF_diver_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -27460,7 +34976,7 @@ class IDF_diver_exp: IDF_diver_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -27613,7 +35129,7 @@ class IDF_diver_jtac: IDF_diver_tl
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -27707,9 +35223,9 @@ class IDF_sniper_spot: IDF_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		8,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"1Rnd_HE_Grenade_shell",
 		10,
@@ -27819,9 +35335,9 @@ class IDF_sniper_exp: IDF_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -27877,7 +35393,7 @@ class IDF_crew_common: CommonIDF
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -28080,7 +35596,7 @@ class IDF_logistics_common: CommonIDF
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"Chemlight_blue",
 		"Chemlight_yellow",
@@ -28770,8 +36286,6 @@ class IRAN_squad_sl: CommonIRAN
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -28795,8 +36309,7 @@ class IRAN_squad_sl: CommonIRAN
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -28823,6 +36336,7 @@ class IRAN_squad_ftl: CommonIRAN
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -29428,6 +36942,10 @@ class IRAN_weapons_mort: IRAN_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class IRAN_weapons_amort: IRAN_assistant_common
 {
@@ -29442,6 +36960,10 @@ class IRAN_weapons_amort: IRAN_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class IRAN_weapons_acmort: IRAN_assistant_common
@@ -31286,8 +38808,6 @@ class IRAN_GRN_squad_sl: CommonIRAN_GRN
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -31311,8 +38831,7 @@ class IRAN_GRN_squad_sl: CommonIRAN_GRN
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -31339,6 +38858,7 @@ class IRAN_GRN_squad_ftl: CommonIRAN_GRN
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -31949,6 +39469,10 @@ class IRAN_GRN_weapons_mort: IRAN_GRN_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class IRAN_GRN_weapons_amort: IRAN_GRN_assistant_common
 {
@@ -31963,6 +39487,10 @@ class IRAN_GRN_weapons_amort: IRAN_GRN_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class IRAN_GRN_weapons_acmort: IRAN_GRN_assistant_common
@@ -33797,8 +41325,6 @@ class IRAN_URB_squad_sl: CommonIRAN_URB
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -33822,8 +41348,7 @@ class IRAN_URB_squad_sl: CommonIRAN_URB
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -33850,6 +41375,7 @@ class IRAN_URB_squad_ftl: CommonIRAN_URB
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -34449,6 +41975,10 @@ class IRAN_URB_weapons_mort: IRAN_URB_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class IRAN_URB_weapons_amort: IRAN_URB_assistant_common
 {
@@ -34463,6 +41993,10 @@ class IRAN_URB_weapons_amort: IRAN_URB_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class IRAN_URB_weapons_acmort: IRAN_URB_assistant_common
@@ -35806,2488 +43340,6 @@ class IRAN_URB_medevac_drv: IRAN_URB_medevac_common
 		"ACE_Banana"
 	};
 };
-class CommonNATO_CTRG: CommonDefault
-{
-	side="Blufor";
-	sideShort="b";
-	faction="NATO_CTRG";
-	uniform[]=
-	{
-		"U_B_CTRG_1",
-		"U_B_CTRG_3"
-	};
-	vest[]=
-	{
-		"V_PlateCarrierL_CTRG"
-	};
-	backpack[]=
-	{
-		"B_AssaultPack_rgr"
-	};
-	primary[]=
-	{
-		
-		{
-			"hlc_rifle_ACR_Carb_tan",
-			"optic_ERCO_snd_f",
-			"acc_pointer_IR",
-			""
-		}
-	};
-	secondary[]=
-	{
-		
-		{
-			"hlc_pistol_P226R_Combat",
-			"hlc_acc_TLR1",
-			"",
-			""
-		}
-	};
-	launcher[]=
-	{
-		""
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		7,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		4,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet"
-	};
-	headgear[]=
-	{
-		"H_HelmetSpecB",
-		"H_HelmetSpecB_paint1",
-		"H_HelmetSpecB_paint2",
-		"H_HelmetSpecB_blk",
-		"H_HelmetSpecB_sand",
-		"H_HelmetSpecB_snakeskin"
-	};
-	goggles[]=
-	{
-		"G_Tactical_Clear",
-		"G_Tactical_Black"
-	};
-	nvgs[]=
-	{
-		"NVGoggles"
-	};
-	binoculars[]=
-	{
-		""
-	};
-	map[]=
-	{
-		""
-	};
-	gps[]=
-	{
-		""
-	};
-	compass[]=
-	{
-		"ItemCompass"
-	};
-	watch[]=
-	{
-		"ItemWatch"
-	};
-	lrRadios[]=
-	{
-		""
-	};
-	insignia[]=
-	{
-		""
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
-};
-class NATO_CTRG_company_common: CommonNATO_CTRG
-{
-	uniform[]=
-	{
-		"U_B_CTRG_1"
-	};
-	vest[]=
-	{
-		"V_Rangemaster_belt"
-	};
-	backpack[]=
-	{
-		"B_AssaultPack_rgr"
-	};
-	primary[]=
-	{
-		
-		{
-			"smg_05_f",
-			"optic_Holosight_blk_F",
-			"",
-			""
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_9x21_Mag_SMG_02",
-		3
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_MapTools"
-	};
-	headgear[]=
-	{
-		"H_Cap_khaki_specops_UK"
-	};
-	goggles[]=
-	{
-		"",
-		"G_Spectacles",
-		"G_Aviator"
-	};
-	nvgs[]=
-	{
-		""
-	};
-	binoculars[]=
-	{
-		"ACE_Vector"
-	};
-	map[]=
-	{
-		"ItemMap"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC117F"
-	};
-};
-class NATO_CTRG_company_co: NATO_CTRG_company_common
-{
-	displayName="DN_CO_CO";
-	headgear[]=
-	{
-		"H_Beret_blk"
-	};
-};
-class NATO_CTRG_company_xo: NATO_CTRG_company_common
-{
-	gps[]=
-	{
-		"b_EasyTrack_Tablet"
-	};
-	headgear[]=
-	{
-		"H_Beret_blk"
-	};
-};
-class NATO_CTRG_company_mio: NATO_CTRG_company_common
-{
-	gps[]=
-	{
-		"b_EasyTrack_Tablet"
-	};
-};
-class NATO_CTRG_company_colo: NATO_CTRG_company_common
-{
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_MapTools",
-		"CL_Logitracker"
-	};
-};
-class NATO_CTRG_company_fo: NATO_CTRG_company_common
-{
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_MapTools",
-		"ACE_RangeTable_82mm"
-	};
-};
-class NATO_CTRG_platoon_common: CommonNATO_CTRG
-{
-	vest[]=
-	{
-		"V_PlateCarrierL_CTRG"
-	};
-	backpack[]=
-	{
-		"B_AssaultPack_rgr"
-	};
-	primary[]=
-	{
-		
-		{
-			"hlc_rifle_ACR_SBR_black",
-			"optic_Holosight_smg_blk_F",
-			"",
-			""
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_MapTools"
-	};
-	headgear[]=
-	{
-		"H_HelmetB",
-		"H_HelmetB_black",
-		"H_HelmetB_desert",
-		"H_HelmetB_grass",
-		"H_HelmetB_sand",
-		"H_HelmetB_snakeskin"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
-	map[]=
-	{
-		"ItemMap"
-	};
-	binoculars[]=
-	{
-		"ACE_Vector"
-	};
-	goggles[]=
-	{
-		"",
-		"G_Spectacles",
-		"G_Aviator"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC152"
-	};
-};
-class NATO_CTRG_platoon_pl: NATO_CTRG_platoon_common
-{
-	lrRadios[]=
-	{
-		"ACRE_PRC152",
-		"ACRE_PRC117F"
-	};
-};
-class NATO_CTRG_platoon_psgt: NATO_CTRG_platoon_common
-{
-	gps[]=
-	{
-		"b_EasyTrack_Tablet"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC152",
-		"ACRE_PRC117F"
-	};
-};
-class NATO_CTRG_platoon_uav: NATO_CTRG_platoon_common
-{
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_MapTools",
-		"ACE_UAVBattery"
-	};
-	gps[]=
-	{
-		"b_UavTerminal"
-	};
-};
-class NATO_CTRG_platoon_jtac: NATO_CTRG_platoon_common
-{
-	vest[]=
-	{
-		"V_PlateCarrierH_CTRG"
-	};
-	backpack[]=
-	{
-		"B_Kitbag_rgr"
-	};
-	primary[]=
-	{
-		
-		{
-			"arifle_SPAR_01_GL_snd_F",
-			"optic_ERCO_snd_f",
-			"acc_pointer_IR",
-			""
-		}
-	};
-	binoculars[]=
-	{
-		"Laserdesignator_03"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC152",
-		"ACRE_PRC117F"
-	};
-	gps[]=
-	{
-		""
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"Laserbatteries",
-		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeBlue_Grenade_shell",
-		2,
-		"1Rnd_SmokePurple_Grenade_shell",
-		2,
-		"1Rnd_SmokeYellow_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2,
-		"UGL_FlareGreen_F",
-		2,
-		"UGL_FlareRed_F",
-		2,
-		"UGL_FlareYellow_F",
-		2
-	};
-};
-class NATO_CTRG_platoon_medic: NATO_CTRG_platoon_common
-{
-	vest[]=
-	{
-		"V_PlateCarrierL_CTRG"
-	};
-	backpack[]=
-	{
-		"B_Kitbag_rgr"
-	};
-	gps[]=
-	{
-		""
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_MapTools",
-		"ACE_salineIV_500",
-		10,
-		"ACE_surgicalKit",
-		"W_Defibrillator",
-		"ACE_elasticBandage",
-		50,
-		"ACE_quikclot",
-		30,
-		"ACE_tourniquet",
-		6,
-		"ACE_morphine",
-		15,
-		"ACE_epinephrine",
-		30
-	};
-	lrRadios[]=
-	{
-		""
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
-};
-class NATO_CTRG_squad_sl: CommonNATO_CTRG
-{
-	vest[]=
-	{
-		"V_PlateCarrierH_CTRG"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
-	binoculars[]=
-	{
-		"ACE_Vector"
-	};
-	primary[]=
-	{
-		
-		{
-			"arifle_SPAR_01_GL_snd_F",
-			"optic_ERCO_snd_f",
-			"acc_pointer_IR",
-			""
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		7,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		4,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"ACE_HuntIR_M203",
-		4,
-		"1Rnd_HE_Grenade_shell",
-		10,
-		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeBlue_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeYellow_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"1Rnd_SmokeRed_Grenade_shell",
-		"UGL_FlareGreen_F",
-		2,
-		"UGL_FlareRed_F",
-		2,
-		"UGL_FlareYellow_F",
-		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC152"
-	};
-	map[]=
-	{
-		"ItemMap"
-	};
-};
-class NATO_CTRG_squad_ftl: CommonNATO_CTRG
-{
-	vest[]=
-	{
-		"V_PlateCarrierH_CTRG"
-	};
-	binoculars[]=
-	{
-		"Binocular"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_IR_Strobe_Item"
-	};
-};
-class NATO_CTRG_squad_ar: CommonNATO_CTRG
-{
-	vest[]=
-	{
-		"V_PlateCarrierH_CTRG"
-	};
-	primary[]=
-	{
-		
-		{
-			"hlc_rifle_ACR_mid_tan_x15",
-			"optic_Holosight",
-			"acc_pointer_IR",
-			"bipod_01_F_blk"
-		}
-	};
-	magazines[]=
-	{
-		"hlc_50rnd_556x45_EPR",
-		11,
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"MiniGrenade",
-		"SmokeShell",
-		2
-	};
-	goggles[]=
-	{
-		"G_Combat",
-		"G_Balaclava_combat"
-	};
-};
-class NATO_CTRG_squad_gl: CommonNATO_CTRG
-{
-	vest[]=
-	{
-		"V_PlateCarrierH_CTRG"
-	};
-	primary[]=
-	{
-		
-		{
-			"arifle_SPAR_01_GL_snd_F",
-			"optic_ERCO_snd_f",
-			"acc_pointer_IR",
-			""
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		7,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		4,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"1Rnd_HE_Grenade_shell",
-		24,
-		"1Rnd_Smoke_Grenade_shell",
-		8
-	};
-};
-class NATO_CTRG_squad_gl2: CommonNATO_CTRG
-{
-	vest[]=
-	{
-		"V_PlateCarrierH_CTRG"
-	};
-	primary[]=
-	{
-		"rhs_weap_m32"
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		5,
-		"rhsusf_mag_6Rnd_M433_HEDP",
-		5,
-		"rhsusf_mag_6Rnd_M714_white",
-		1,
-		"rhsusf_mag_6Rnd_M576_Buckshot",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2
-	};
-};
-class NATO_CTRG_squad_light: CommonNATO_CTRG
-{
-	primary[]=
-	{
-		
-		{
-			"hlc_rifle_ACR_Carb_tan",
-			"optic_ERCO_snd_f",
-			"acc_pointer_IR",
-			""
-		}
-	};
-	vest[]=
-	{
-		"V_PlateCarrierL_CTRG"
-	};
-};
-class NATO_CTRG_squad_aar: CommonNATO_CTRG
-{
-	backpack[]=
-	{
-		"B_Kitbag_rgr"
-	};
-	primary[]=
-	{
-		
-		{
-			"hlc_rifle_ACR_Carb_tan",
-			"optic_ERCO_snd_f",
-			"acc_pointer_IR",
-			""
-		}
-	};
-	vest[]=
-	{
-		"V_PlateCarrierL_CTRG"
-	};
-	magazines[]=
-	{
-		"ACE_SpareBarrel",
-		"30Rnd_556x45_Stanag",
-		10,
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		7,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		4,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2
-	};
-};
-class NATO_CTRG_squad_lat: CommonNATO_CTRG
-{
-	vest[]=
-	{
-		"V_PlateCarrierL_CTRG"
-	};
-	backpack[]=
-	{
-		""
-	};
-	launcher[]=
-	{
-		
-		{
-			"launch_nlaw_f",
-			"",
-			"",
-			""
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		7,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		4,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"hlc_15Rnd_9x19_B_P226"
-	};
-};
-class NATO_CTRG_squad_cm: CommonNATO_CTRG
-{
-	vest[]=
-	{
-		"V_PlateCarrierL_CTRG"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_fieldDressing",
-		20,
-		"ACE_elasticBandage",
-		40,
-		"ACE_quikclot",
-		20,
-		"ACE_tourniquet",
-		4
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
-};
-class NATO_CTRG_squad_dm: CommonNATO_CTRG
-{
-	vest[]=
-	{
-		"V_PlateCarrierL_CTRG"
-	};
-	primary[]=
-	{
-		
-		{
-			"hlc_rifle_ACR68_full_tan",
-			"optic_SOS",
-			"acc_pointer_IR",
-			"bipod_01_F_blk"
-		}
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_RangeCard"
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"hlc_30rnd_68x43_FMJ",
-		10,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2
-	};
-};
-class NATO_CTRG_squad_eng: CommonNATO_CTRG
-{
-	vest[]=
-	{
-		"V_PlateCarrierL_CTRG"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ToolKit"
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
-};
-class NATO_CTRG_weapons_common: CommonNATO_CTRG
-{
-	backpack[]=
-	{
-		""
-	};
-	vest[]=
-	{
-		"V_PlateCarrierL_CTRG"
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2
-	};
-};
-class NATO_CTRG_assistant_common: NATO_CTRG_weapons_common
-{
-	backpack[]=
-	{
-		"B_Kitbag_rgr"
-	};
-	binoculars[]=
-	{
-		"Binocular"
-	};
-};
-class NATO_CTRG_weapons_mg: NATO_CTRG_weapons_common
-{
-	vest[]=
-	{
-		"V_PlateCarrierH_CTRG"
-	};
-	primary[]=
-	{
-		
-		{
-			"MMG_02_black_F",
-			"optic_Holosight_blk_F",
-			"acc_pointer_IR",
-			"bipod_01_F_blk"
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"130Rnd_338_Mag",
-		3,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple"
-	};
-	goggles[]=
-	{
-		"G_Combat",
-		"G_Balaclava_combat"
-	};
-};
-class NATO_CTRG_weapons_amg: NATO_CTRG_assistant_common
-{
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"130Rnd_338_Mag",
-		5,
-		"ACE_SpareBarrel"
-	};
-};
-class NATO_CTRG_weapons_hmg: NATO_CTRG_weapons_common
-{
-	backpack[]=
-	{
-		"i_HMG_01_weapon_F"
-	};
-};
-class NATO_CTRG_weapons_ahmg: NATO_CTRG_assistant_common
-{
-	backpack[]=
-	{
-		"i_HMG_01_support_F"
-	};
-};
-class NATO_CTRG_weapons_gmg: NATO_CTRG_weapons_common
-{
-	backpack[]=
-	{
-		"i_GMG_01_weapon_F"
-	};
-};
-class NATO_CTRG_weapons_agmg: NATO_CTRG_assistant_common
-{
-	backpack[]=
-	{
-		"i_HMG_01_support_F"
-	};
-};
-class NATO_CTRG_weapons_at: NATO_CTRG_weapons_common
-{
-	backpack[]=
-	{
-		""
-	};
-	launcher[]=
-	{
-		
-		{
-			"launch_nlaw_f",
-			"",
-			"",
-			""
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"hlc_15Rnd_9x19_B_P226"
-	};
-};
-class NATO_CTRG_weapons_aat: NATO_CTRG_assistant_common
-{
-	backpack[]=
-	{
-		"B_Carryall_oli"
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"hlc_15Rnd_9x19_B_P226"
-	};
-};
-class NATO_CTRG_weapons_atgm: NATO_CTRG_weapons_common
-{
-	launcher[]=
-	{
-		
-		{
-			"launch_i_Titan_short_F",
-			"",
-			"",
-			""
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"Titan_AT"
-	};
-};
-class NATO_CTRG_weapons_aatgm: NATO_CTRG_assistant_common
-{
-	backpack[]=
-	{
-		"B_Carryall_oli"
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"Titan_AT",
-		2,
-		"Titan_AP"
-	};
-};
-class NATO_CTRG_weapons_aa: NATO_CTRG_weapons_common
-{
-	launcher[]=
-	{
-		
-		{
-			"launch_b_Titan_F",
-			"",
-			"",
-			""
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"Titan_AA"
-	};
-};
-class NATO_CTRG_weapons_aaa: NATO_CTRG_assistant_common
-{
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		5,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"Titan_AA",
-		2
-	};
-};
-class NATO_CTRG_weapons_mort: NATO_CTRG_weapons_common
-{
-	backpack[]=
-	{
-		"i_Mortar_01_weapon_F"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_RangeTable_82mm"
-	};
-};
-class NATO_CTRG_weapons_amort: NATO_CTRG_assistant_common
-{
-	backpack[]=
-	{
-		"i_Mortar_01_support_F"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_RangeTable_82mm"
-	};
-};
-class NATO_CTRG_weapons_acmort: NATO_CTRG_assistant_common
-{
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_1Rnd_82mm_Mo_HE",
-		5
-	};
-};
-class NATO_CTRG_recon_common: CommonNATO_CTRG
-{
-	uniform[]=
-	{
-		"U_B_CTRG_Soldier_F",
-		"U_B_CTRG_Soldier_3_F"
-	};
-	vest[]=
-	{
-		"VSM_FAPC_Operator_OGA_OD"
-	};
-	backpack[]=
-	{
-		"B_AssaultPack_rgr"
-	};
-	secondary[]=
-	{
-		
-		{
-			"hlc_pistol_P229R_Elite",
-			"HLC_Optic228_Docter_CADEX",
-			"hlc_muzzle_Evo9",
-			"hlc_acc_TLR1"
-		}
-	};
-	primary[]=
-	{
-		
-		{
-			"hlc_rifle_ACR_Carb_green",
-			"optic_ERCO_khk_F",
-			"acc_pointer_IR",
-			"muzzle_snds_M_khk_f"
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_SD_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2
-	};
-	goggles[]=
-	{
-		"G_Balaclava_TI_tna_F",
-		"G_Balaclava_TI_blk_F"
-	};
-	headgear[]=
-	{
-		"H_HelmetB_TI_tna_F"
-	};
-	nvgs[]=
-	{
-		"NVGogglesB_grn_F"
-	};
-	map[]=
-	{
-		"ItemMap"
-	};
-	insignia[]=
-	{
-		""
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
-};
-class NATO_CTRG_recon_rm: NATO_CTRG_recon_common
-{
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ACE_wirecutter"
-	};
-};
-class NATO_CTRG_recon_tl: NATO_CTRG_recon_common
-{
-	vest[]=
-	{
-		"VSM_LBT6094_operator_OGA_OD"
-	};
-	primary[]=
-	{
-		
-		{
-			"arifle_SPAR_01_gl_khk_F",
-			"optic_Holosight_khk_F",
-			"acc_pointer_IR",
-			"muzzle_snds_M_khk_f"
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_SD_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"1Rnd_HE_Grenade_shell",
-		10,
-		"1Rnd_Smoke_Grenade_shell",
-		2,
-		"1Rnd_SmokeBlue_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeYellow_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"1Rnd_SmokeRed_Grenade_shell",
-		"b_ir_grenade",
-		2,
-		"ACE_HuntIR_M203",
-		5
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
-	};
-	binoculars[]=
-	{
-		"ACE_Vector"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC152"
-	};
-};
-class NATO_CTRG_recon_ar: NATO_CTRG_recon_common
-{
-	vest[]=
-	{
-		"VSM_FAPC_MG_OGA_OD"
-	};
-	primary[]=
-	{
-		
-		{
-			"hlc_rifle_ACR_mid_green_x15",
-			"optic_ERCO_khk_F",
-			"acc_pointer_IR",
-			"muzzle_snds_M_khk_f"
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_SD_P226",
-		3,
-		"hlc_50rnd_556x45_EPR",
-		8,
-		"30Rnd_556x45_Stanag",
-		8,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2
-	};
-	goggles[]=
-	{
-		"G_Balaclava_TI_G_tna_F",
-		"G_Balaclava_TI_G_blk_F"
-	};
-};
-class NATO_CTRG_recon_gl: NATO_CTRG_recon_common
-{
-	vest[]=
-	{
-		"VSM_RAV_operator_OGA_OD"
-	};
-	primary[]=
-	{
-		
-		{
-			"arifle_SPAR_01_gl_khk_F",
-			"optic_Holosight_khk_F",
-			"acc_pointer_IR",
-			"muzzle_snds_M_khk_f"
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_SD_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"1Rnd_HE_Grenade_shell",
-		24,
-		"1Rnd_Smoke_Grenade_shell",
-		8
-	};
-};
-class NATO_CTRG_recon_lat: NATO_CTRG_recon_common
-{
-	launcher[]=
-	{
-		
-		{
-			"launch_nlaw_f",
-			"",
-			"",
-			""
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_SD_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"hlc_15Rnd_9x19_B_P226"
-	};
-};
-class NATO_CTRG_recon_cm: NATO_CTRG_recon_common
-{
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ACE_fieldDressing",
-		10,
-		"ACE_elasticBandage",
-		30,
-		"ACE_quikclot",
-		20,
-		"ACE_tourniquet",
-		3,
-		"ACE_morphine",
-		6,
-		"ACE_epinephrine",
-		12,
-		"ACE_salineIV_500",
-		3,
-		"ACE_surgicalKit"
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
-};
-class NATO_CTRG_recon_dm: NATO_CTRG_recon_common
-{
-	primary[]=
-	{
-		
-		{
-			"hlc_rifle_ACR68_full_green",
-			"optic_SOS_khk_F",
-			"acc_pointer_IR",
-			"muzzle_snds_B_khk_F"
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_SD_P226",
-		3,
-		"hlc_30rnd_68x43_FMJ",
-		10,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"bipod_01_F_blk",
-		"ACE_RangeCard"
-	};
-};
-class NATO_CTRG_recon_exp: NATO_CTRG_recon_common
-{
-	backpack[]=
-	{
-		"B_Kitbag_rgr"
-	};
-	secondary[]=
-	{
-		"ACE_VMM3"
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_SD_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"DemoCharge_Remote_Mag",
-		4,
-		"SatchelCharge_Remote_Mag",
-		"SLAMDirectionalMine_Wire_Mag",
-		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ACE_Clacker",
-		"ACE_SpraypaintRed",
-		"ACE_SpraypaintGreen",
-		"ACE_DefusalKit",
-		"ACE_DeadManSwitch"
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
-};
-class NATO_CTRG_diver_common: NATO_CTRG_recon_common
-{
-	uniform[]=
-	{
-		"U_B_Wetsuit"
-	};
-	vest[]=
-	{
-		"V_RebreatherB"
-	};
-	backpack[]=
-	{
-		"xru_Carryall_blk"
-	};
-	primary[]=
-	{
-		
-		{
-			"hlc_rifle_ACR_SBR_black",
-			"optic_Holosight_blk_F",
-			"acc_pointer_IR",
-			"muzzle_snds_M"
-		}
-	};
-	secondary[]=
-	{
-		
-		{
-			"hlc_pistol_P229R_Elite",
-			"HLC_Optic228_Docter_CADEX",
-			"hlc_muzzle_Evo9",
-			"hlc_acc_TLR1"
-		}
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		10,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"ACE_M84",
-		4
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"V_TacVestIR_blk",
-		"U_B_CTRG_1"
-	};
-	goggles[]=
-	{
-		"G_B_Diving"
-	};
-	headgear[]=
-	{
-		"H_HelmetB_light_black"
-	};
-	nvgs[]=
-	{
-		"NVGoggles_OPFOR"
-	};
-};
-class NATO_CTRG_diver_rm: NATO_CTRG_diver_common
-{
-};
-class NATO_CTRG_diver_tl: NATO_CTRG_diver_common
-{
-	binoculars[]=
-	{
-		"ACE_Vector"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC152"
-	};
-	map[]=
-	{
-		"ItemMap"
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		10,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"ACE_M84",
-		4,
-		"MiniGrenade",
-		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"V_TacVestIR_blk",
-		"U_B_CTRG_1",
-		"ACE_MapTools"
-	};
-};
-class NATO_CTRG_diver_exp: NATO_CTRG_diver_common
-{
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		10,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"ACE_M84",
-		4,
-		"DemoCharge_Remote_Mag",
-		4
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"V_TacVestIR_blk",
-		"U_B_CTRG_1",
-		"ACE_Clacker",
-		"ACE_SpraypaintRed",
-		"ACE_SpraypaintGreen",
-		"ACE_DefusalKit",
-		"ACE_DeadManSwitch"
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
-};
-class NATO_CTRG_diver_cm: NATO_CTRG_diver_common
-{
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"V_TacVestIR_blk",
-		"U_B_CTRG_1",
-		"W_Defibrillator",
-		"ACE_fieldDressing",
-		5,
-		"ACE_elasticBandage",
-		15,
-		"ACE_quikclot",
-		15,
-		"ACE_tourniquet",
-		3,
-		"ACE_morphine",
-		10,
-		"ACE_epinephrine",
-		10,
-		"ACE_salineIV",
-		4,
-		"ACE_surgicalKit"
-	};
-	binoculars[]=
-	{
-		"ACE_MX2A"
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
-};
-class NATO_CTRG_diver_dm: NATO_CTRG_diver_common
-{
-	primary[]=
-	{
-		
-		{
-			"hlc_rifle_ACR68_full_black",
-			"optic_SOS",
-			"acc_pointer_IR",
-			"muzzle_snds_b"
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_SD_P226",
-		3,
-		"hlc_30rnd_68x43_FMJ",
-		10,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"ACE_M84",
-		4
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"V_TacVestIR_blk",
-		"U_B_CTRG_1",
-		"bipod_01_F_blk"
-	};
-};
-class NATO_CTRG_diver_jtac: NATO_CTRG_diver_tl
-{
-	primary[]=
-	{
-		
-		{
-			"arifle_SPAR_01_gl_blk_F",
-			"optic_Holosight_blk_F",
-			"acc_pointer_IR",
-			"muzzle_snds_M"
-		}
-	};
-	binoculars[]=
-	{
-		"Laserdesignator_03"
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		10,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"ACE_M84",
-		4,
-		"MiniGrenade",
-		2,
-		"Laserbatteries",
-		"1Rnd_SmokeBlue_Grenade_shell",
-		2,
-		"1Rnd_SmokePurple_Grenade_shell",
-		2,
-		"1Rnd_SmokeYellow_Grenade_shell",
-		2,
-		"1Rnd_SmokeGreen_Grenade_shell",
-		2,
-		"1Rnd_SmokeRed_Grenade_shell",
-		2
-	};
-};
-class NATO_CTRG_sniper_common: NATO_CTRG_recon_common
-{
-	uniform[]=
-	{
-		"U_B_FullGhillie_lsh"
-	};
-	map[]=
-	{
-		"ItemMap"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"optic_NVS",
-		"ACE_Rangecard"
-	};
-};
-class NATO_CTRG_sniper_spot: NATO_CTRG_recon_common
-{
-	uniform[]=
-	{
-		"U_B_FullGhillie_lsh"
-	};
-	primary[]=
-	{
-		
-		{
-			"arifle_SPAR_01_gl_khk_F",
-			"optic_Holosight_khk_F",
-			"acc_pointer_IR",
-			"muzzle_snds_M_khk_f"
-		}
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
-	binoculars[]=
-	{
-		"ACE_Vector"
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_SD_P226",
-		3,
-		"b_ir_grenade",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"30Rnd_556x45_Stanag",
-		8,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"1Rnd_HE_Grenade_shell",
-		10,
-		"1Rnd_Smoke_Grenade_shell",
-		4,
-		"ACE_HuntIR_M203",
-		4
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ACE_SpottingScope",
-		"ACE_Tripod",
-		"ACE_ATragMX",
-		"ACE_IR_Strobe_Item",
-		"ACE_Rangecard",
-		"ACE_Kestrel4500",
-		"ACE_HuntIR_monitor"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC152"
-	};
-};
-class NATO_CTRG_sniper_ap: NATO_CTRG_sniper_common
-{
-	primary[]=
-	{
-		
-		{
-			"srifle_DMR_02_camo_F",
-			"optic_LRPS",
-			"bipod_01_F_snd",
-			""
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_SD_P226",
-		3,
-		"10Rnd_338_Mag",
-		10,
-		"ACE_10Rnd_338_API526_Mag",
-		5,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple"
-	};
-};
-class NATO_CTRG_sniper_am: NATO_CTRG_sniper_common
-{
-	primary[]=
-	{
-		
-		{
-			"srifle_lrr_tna_f",
-			"optic_LRPS_tna_F",
-			"",
-			""
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_SD_P226",
-		3,
-		"7Rnd_408_Mag",
-		7,
-		"ACE_7Rnd_408_305gr_Mag",
-		3,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple"
-	};
-};
-class NATO_CTRG_sniper_exp: NATO_CTRG_recon_common
-{
-	uniform[]=
-	{
-		"U_B_FullGhillie_lsh"
-	};
-	primary[]=
-	{
-		
-		{
-			"hlc_rifle_ACR_Carb_green",
-			"optic_ERCO_khk_F",
-			"acc_pointer_IR",
-			"muzzle_snds_M_khk_f"
-		}
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_SD_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
-		2,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple",
-		"HandGrenade",
-		2,
-		"SmokeShell",
-		2,
-		"APERSTripMine_Wire_mag",
-		2,
-		"ClaymoreDirectionalMine_Remote_mag",
-		2
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_CableTie",
-		2,
-		"ACE_Clacker",
-		"ACE_SpraypaintRed",
-		"ACE_SpraypaintGreen",
-		"ACE_DefusalKit",
-		"ACE_DeadManSwitch"
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  1,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", true, true]; (_this select 0) setCaptive false;";
-};
-class NATO_CTRG_crew_common: CommonNATO_CTRG
-{
-	uniform[]=
-	{
-		"U_B_CTRG_Soldier_urb_2_F"
-	};
-	backpack[]=
-	{
-		""
-	};
-	vest[]=
-	{
-		"V_Chestrig_blk"
-	};
-	primary[]=
-	{
-		"hlc_rifle_ACR_SBR_black"
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		6,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple"
-	};
-	headgear[]=
-	{
-		"xru_H_HelmetCrew_Blk"
-	};
-	map[]=
-	{
-		"ItemMap"
-	};
-	insignia[]=
-	{
-		""
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC152"
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 1, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
-};
-class NATO_CTRG_crew_cmd: NATO_CTRG_crew_common
-{
-	backpack[]=
-	{
-		"B_AssaultPack_rgr"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC152",
-		"ACRE_PRC117F"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
-	binoculars[]=
-	{
-		"Binocular"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_MapTools"
-	};
-};
-class NATO_CTRG_crew_jet: CommonNATO_CTRG
-{
-	uniform[]=
-	{
-		"U_B_PilotCoveralls"
-	};
-	vest[]=
-	{
-		""
-	};
-	backpack[]=
-	{
-		""
-	};
-	primary[]=
-	{
-		""
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple"
-	};
-	headgear[]=
-	{
-		"H_PilotHelmetFighter_B"
-	};
-	map[]=
-	{
-		"itemMap"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
-	nvgs[]=
-	{
-		""
-	};
-	watch[]=
-	{
-		"ACE_Altimeter"
-	};
-	goggles[]=
-	{
-		"G_Aviator"
-	};
-	insignia[]=
-	{
-		""
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_MapTools"
-	};
-};
-class NATO_CTRG_crew_heli: NATO_CTRG_crew_common
-{
-	uniform[]=
-	{
-		"U_B_CTRG_Soldier_urb_1_F"
-	};
-	headgear[]=
-	{
-		"H_CrewHelmetHeli_B"
-	};
-	map[]=
-	{
-		""
-	};
-	insignia[]=
-	{
-		""
-	};
-};
-class NATO_CTRG_crew_helipilot: NATO_CTRG_crew_heli
-{
-	backpack[]=
-	{
-		"B_AssaultPack_rgr"
-	};
-	map[]=
-	{
-		"itemMap"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
-	goggles[]=
-	{
-		"G_Aviator"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC117F"
-	};
-	headgear[]=
-	{
-		"H_PilotHelmetHeli_B"
-	};
-	nvgs[]=
-	{
-		"NVGoggles_OPFOR"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_MapTools"
-	};
-};
-class NATO_CTRG_logistics_common: CommonNATO_CTRG
-{
-	vest[]=
-	{
-		"V_PlateCarrierL_CTRG"
-	};
-	backpack[]=
-	{
-		"B_Kitbag_rgr"
-	};
-	primary[]=
-	{
-		"hlc_rifle_ACR_SBR_black"
-	};
-	magazines[]=
-	{
-		"hlc_15Rnd_9x19_B_P226",
-		3,
-		"30Rnd_556x45_Stanag",
-		6,
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple"
-	};
-	headgear[]=
-	{
-		"H_HelmetB",
-		"H_HelmetB_black",
-		"H_HelmetB_desert",
-		"H_HelmetB_grass",
-		"H_HelmetB_sand",
-		"H_HelmetB_snakeskin"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"ACE_microDAGR",
-		"ACE_MapTools",
-		"CL_Logitracker",
-		"ToolKit"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC117F",
-		"ACRE_PRC152"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
-	map[]=
-	{
-		"ItemMap"
-	};
-	insignia[]=
-	{
-		""
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 2, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive false;";
-};
-class NATO_CTRG_medevac_common: CommonNATO_CTRG
-{
-	primary[]=
-	{
-		""
-	};
-	secondary[]=
-	{
-		""
-	};
-	magazines[]=
-	{
-		"ACE_Chemlight_Orange",
-		"ACE_Chemlight_White",
-		"SmokeShellOrange",
-		"SmokeShellPurple"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"CL_Logitracker"
-	};
-	headgear[]=
-	{
-		"H_HelmetB",
-		"H_HelmetB_black",
-		"H_HelmetB_desert",
-		"H_HelmetB_grass",
-		"H_HelmetB_sand",
-		"H_HelmetB_snakeskin"
-	};
-	goggles[]=
-	{
-		"",
-		"G_Spectacles",
-		"G_Aviator"
-	};
-	insignia[]=
-	{
-		""
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  0,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
-};
-class NATO_CTRG_medevac_doc: NATO_CTRG_medevac_common
-{
-	backpack[]=
-	{
-		"B_Kitbag_rgr"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"CL_Logitracker",
-		"ACE_personalAidKit",
-		4,
-		"ACE_salineIV_500",
-		10,
-		"ACE_surgicalKit",
-		"W_Defibrillator",
-		"ACE_elasticBandage",
-		40,
-		"ACE_quikclot",
-		40,
-		"ACE_tourniquet",
-		6,
-		"ACE_morphine",
-		15,
-		"ACE_epinephrine",
-		30
-	};
-	preLoadout="(_this select 0) setVariable [""ACE_medical_medicClass"",  2,  true]; (_this select 0) setVariable [""ACE_isEngineer"", 0, true]; (_this select 0) setVariable [""ACE_isEOD"", false, true]; (_this select 0) setCaptive true;";
-};
-class NATO_CTRG_medevac_tl: NATO_CTRG_medevac_doc
-{
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC152"
-	};
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"CL_Logitracker",
-		"ACE_personalAidKit",
-		4,
-		"ACE_salineIV_500",
-		10,
-		"ACE_surgicalKit",
-		"W_Defibrillator",
-		"ACE_elasticBandage",
-		40,
-		"ACE_quikclot",
-		40,
-		"ACE_tourniquet",
-		6,
-		"ACE_morphine",
-		15,
-		"ACE_epinephrine",
-		30,
-		"ACE_microDAGR",
-		"ACE_MapTools",
-		"CL_Logitracker"
-	};
-};
-class NATO_CTRG_medevac_heli: NATO_CTRG_medevac_common
-{
-	uniform[]=
-	{
-		"U_B_CTRG_Soldier_urb_1_F"
-	};
-	map[]=
-	{
-		"itemMap"
-	};
-	gps[]=
-	{
-		"b_EasyTrack_PDA"
-	};
-	goggles[]=
-	{
-		"G_Aviator"
-	};
-	lrRadios[]=
-	{
-		"ACRE_PRC117F"
-	};
-	headgear[]=
-	{
-		"H_PilotHelmetHeli_B"
-	};
-	nvgs[]=
-	{
-		"NVGogglesB_grn_F"
-	};
-};
-class NATO_CTRG_medevac_drv: NATO_CTRG_medevac_common
-{
-	items[]=
-	{
-		"ACE_EarPlugs",
-		"ACE_fieldDressing",
-		10,
-		"ACE_tourniquet",
-		"CL_Logitracker",
-		"ACE_Banana"
-	};
-};
 class CommonNATO_MTP: CommonDefault
 {
 	side="Blufor";
@@ -38804,8 +43856,6 @@ class NATO_MTP_squad_sl: CommonNATO_MTP
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -38829,8 +43879,7 @@ class NATO_MTP_squad_sl: CommonNATO_MTP
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -38858,6 +43907,7 @@ class NATO_MTP_squad_ftl: CommonNATO_MTP
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -39471,6 +44521,10 @@ class NATO_MTP_weapons_mort: NATO_MTP_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class NATO_MTP_weapons_amort: NATO_MTP_assistant_common
 {
@@ -39485,6 +44539,10 @@ class NATO_MTP_weapons_amort: NATO_MTP_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class NATO_MTP_weapons_acmort: NATO_MTP_assistant_common
@@ -39557,9 +44615,9 @@ class NATO_MTP_recon_common: CommonNATO_MTP
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -39661,9 +44719,9 @@ class NATO_MTP_recon_tl: NATO_MTP_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -39799,9 +44857,9 @@ class NATO_MTP_recon_gl: NATO_MTP_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -39833,9 +44891,9 @@ class NATO_MTP_recon_lat: NATO_MTP_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -39948,9 +45006,9 @@ class NATO_MTP_recon_exp: NATO_MTP_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -40026,7 +45084,7 @@ class NATO_MTP_diver_common: NATO_MTP_recon_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -40082,7 +45140,7 @@ class NATO_MTP_diver_tl: NATO_MTP_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -40114,7 +45172,7 @@ class NATO_MTP_diver_exp: NATO_MTP_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -40246,7 +45304,7 @@ class NATO_MTP_diver_jtac: NATO_MTP_diver_tl
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -40340,9 +45398,9 @@ class NATO_MTP_sniper_spot: NATO_MTP_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		8,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"1Rnd_HE_Grenade_shell",
 		10,
@@ -40454,9 +45512,9 @@ class NATO_MTP_sniper_exp: NATO_MTP_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -41413,8 +46471,6 @@ class NATO_TRPC_squad_sl: CommonNATO_TRPC
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -41438,8 +46494,7 @@ class NATO_TRPC_squad_sl: CommonNATO_TRPC
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -41466,6 +46521,7 @@ class NATO_TRPC_squad_ftl: CommonNATO_TRPC
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -42059,6 +47115,10 @@ class NATO_TRPC_weapons_mort: NATO_TRPC_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class NATO_TRPC_weapons_amort: NATO_TRPC_assistant_common
 {
@@ -42073,6 +47133,10 @@ class NATO_TRPC_weapons_amort: NATO_TRPC_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class NATO_TRPC_weapons_acmort: NATO_TRPC_assistant_common
@@ -42135,9 +47199,9 @@ class NATO_TRPC_recon_common: CommonNATO_TRPC
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -42226,9 +47290,9 @@ class NATO_TRPC_recon_tl: NATO_TRPC_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -42348,9 +47412,9 @@ class NATO_TRPC_recon_gl: NATO_TRPC_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -42382,9 +47446,9 @@ class NATO_TRPC_recon_lat: NATO_TRPC_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -42489,9 +47553,9 @@ class NATO_TRPC_recon_exp: NATO_TRPC_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -42567,7 +47631,7 @@ class NATO_TRPC_diver_common: NATO_TRPC_recon_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -42623,7 +47687,7 @@ class NATO_TRPC_diver_tl: NATO_TRPC_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -42655,7 +47719,7 @@ class NATO_TRPC_diver_exp: NATO_TRPC_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -42787,7 +47851,7 @@ class NATO_TRPC_diver_jtac: NATO_TRPC_diver_tl
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -42872,9 +47936,9 @@ class NATO_TRPC_sniper_spot: NATO_TRPC_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		8,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"1Rnd_HE_Grenade_shell",
 		10,
@@ -42978,9 +48042,9 @@ class NATO_TRPC_sniper_exp: NATO_TRPC_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -43474,7 +48538,7 @@ class CommonNATO_WDL: CommonDefault
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -43686,7 +48750,7 @@ class NATO_WDL_platoon_common: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -43810,7 +48874,7 @@ class NATO_WDL_platoon_jtac: NATO_WDL_platoon_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -43910,7 +48974,7 @@ class NATO_WDL_squad_sl: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -43922,8 +48986,6 @@ class NATO_WDL_squad_sl: CommonNATO_WDL
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -43947,8 +49009,7 @@ class NATO_WDL_squad_sl: CommonNATO_WDL
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -43975,6 +49036,7 @@ class NATO_WDL_squad_ftl: CommonNATO_WDL
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -44034,7 +49096,7 @@ class NATO_WDL_squad_gl: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -44126,7 +49188,7 @@ class NATO_WDL_squad_aar: CommonNATO_WDL
 		2,
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -44164,7 +49226,7 @@ class NATO_WDL_squad_lat: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -44272,7 +49334,7 @@ class NATO_WDL_weapons_common: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -44335,7 +49397,7 @@ class NATO_WDL_weapons_amg: NATO_WDL_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -44400,7 +49462,7 @@ class NATO_WDL_weapons_at: NATO_WDL_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -44425,7 +49487,7 @@ class NATO_WDL_weapons_aat: NATO_WDL_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -44456,7 +49518,7 @@ class NATO_WDL_weapons_atgm: NATO_WDL_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -44481,7 +49543,7 @@ class NATO_WDL_weapons_aatgm: NATO_WDL_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -44514,7 +49576,7 @@ class NATO_WDL_weapons_aa: NATO_WDL_weapons_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -44535,7 +49597,7 @@ class NATO_WDL_weapons_aaa: NATO_WDL_assistant_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -44565,6 +49627,10 @@ class NATO_WDL_weapons_mort: NATO_WDL_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class NATO_WDL_weapons_amort: NATO_WDL_assistant_common
 {
@@ -44579,6 +49645,10 @@ class NATO_WDL_weapons_amort: NATO_WDL_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class NATO_WDL_weapons_acmort: NATO_WDL_assistant_common
@@ -44639,9 +49709,9 @@ class NATO_WDL_recon_common: CommonNATO_WDL
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -44728,9 +49798,9 @@ class NATO_WDL_recon_tl: NATO_WDL_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -44843,9 +49913,9 @@ class NATO_WDL_recon_gl: NATO_WDL_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -44877,9 +49947,9 @@ class NATO_WDL_recon_lat: NATO_WDL_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -44977,9 +50047,9 @@ class NATO_WDL_recon_exp: NATO_WDL_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -45055,7 +50125,7 @@ class NATO_WDL_diver_common: NATO_WDL_recon_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -45111,7 +50181,7 @@ class NATO_WDL_diver_tl: NATO_WDL_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -45143,7 +50213,7 @@ class NATO_WDL_diver_exp: NATO_WDL_diver_common
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -45275,7 +50345,7 @@ class NATO_WDL_diver_jtac: NATO_WDL_diver_tl
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -45360,9 +50430,9 @@ class NATO_WDL_sniper_spot: NATO_WDL_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		8,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"1Rnd_HE_Grenade_shell",
 		10,
@@ -45473,9 +50543,9 @@ class NATO_WDL_sniper_exp: NATO_WDL_recon_common
 	{
 		"11Rnd_45ACP_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
-		"30Rnd_556x45_Stanag_Tracer_Red",
+		"ACE_30Rnd_556x45_Stanag_Tracer_Dim",
 		2,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -45530,7 +50600,7 @@ class NATO_WDL_crew_common: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -45726,7 +50796,7 @@ class NATO_WDL_logistics_common: CommonNATO_WDL
 	{
 		"16Rnd_9x21_Mag",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -46513,6 +51583,7 @@ class RU_DES_squad_ftl: CommonRU_DES
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -47171,6 +52242,10 @@ class RU_DES_weapons_mort: RU_DES_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class RU_DES_weapons_amort: RU_DES_assistant_common
 {
@@ -47185,6 +52260,10 @@ class RU_DES_weapons_amort: RU_DES_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class RU_DES_weapons_acmort: RU_DES_assistant_common
@@ -49124,6 +54203,7 @@ class RU_EMR_squad_ftl: CommonRU_EMR
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -49782,6 +54862,10 @@ class RU_EMR_weapons_mort: RU_EMR_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class RU_EMR_weapons_amort: RU_EMR_assistant_common
 {
@@ -49796,6 +54880,10 @@ class RU_EMR_weapons_amort: RU_EMR_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class RU_EMR_weapons_acmort: RU_EMR_assistant_common
@@ -51731,6 +56819,7 @@ class RU_FLORA_squad_ftl: CommonRU_FLORA
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -52379,6 +57468,10 @@ class RU_FLORA_weapons_mort: RU_FLORA_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class RU_FLORA_weapons_amort: RU_FLORA_assistant_common
 {
@@ -52393,6 +57486,10 @@ class RU_FLORA_weapons_amort: RU_FLORA_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class RU_FLORA_weapons_acmort: RU_FLORA_assistant_common
@@ -54319,6 +59416,7 @@ class RU_MOUNT_squad_ftl: CommonRU_MOUNT
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -54967,6 +60065,10 @@ class RU_MOUNT_weapons_mort: RU_MOUNT_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class RU_MOUNT_weapons_amort: RU_MOUNT_assistant_common
 {
@@ -54981,6 +60083,10 @@ class RU_MOUNT_weapons_amort: RU_MOUNT_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class RU_MOUNT_weapons_acmort: RU_MOUNT_assistant_common
@@ -57053,6 +62159,7 @@ class SYND_squad_ftl: CommonSYND
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -57764,6 +62871,10 @@ class SYND_weapons_mort: SYND_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class SYND_weapons_amort: SYND_assistant_common
 {
@@ -57778,6 +62889,10 @@ class SYND_weapons_amort: SYND_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class SYND_weapons_acmort: SYND_assistant_common
@@ -59872,8 +64987,6 @@ class TAKISTAN_squad_sl: CommonTAKISTAN
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -59897,8 +65010,7 @@ class TAKISTAN_squad_sl: CommonTAKISTAN
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -59925,6 +65037,7 @@ class TAKISTAN_squad_ftl: CommonTAKISTAN
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -60499,6 +65612,10 @@ class TAKISTAN_weapons_mort: TAKISTAN_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class TAKISTAN_weapons_amort: TAKISTAN_assistant_common
 {
@@ -60513,6 +65630,10 @@ class TAKISTAN_weapons_amort: TAKISTAN_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class TAKISTAN_weapons_acmort: TAKISTAN_assistant_common
@@ -60658,9 +65779,7 @@ class TAKISTAN_recon_tl: TAKISTAN_recon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		"1Rnd_SmokeRed_Grenade_shell",
 		"i_ir_grenade",
-		2,
-		"ACE_HuntIR_M203",
-		5
+		2
 	};
 	items[]=
 	{
@@ -60672,8 +65791,7 @@ class TAKISTAN_recon_tl: TAKISTAN_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	binoculars[]=
 	{
@@ -61238,8 +66356,6 @@ class TAKISTAN_sniper_spot: TAKISTAN_recon_common
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		4,
-		"ACE_HuntIR_M203",
 		4
 	};
 	items[]=
@@ -61257,8 +66373,7 @@ class TAKISTAN_sniper_spot: TAKISTAN_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500",
-		"ACE_HuntIR_monitor"
+		"ACE_Kestrel4500"
 	};
 	lrRadios[]=
 	{
@@ -62505,6 +67620,7 @@ class TAKI_INS_squad_ftl: CommonTAKI_INS
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -63412,6 +68528,10 @@ class TAKI_INS_weapons_mort: TAKI_INS_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class TAKI_INS_weapons_amort: TAKI_INS_assistant_common
 {
@@ -63426,6 +68546,10 @@ class TAKI_INS_weapons_amort: TAKI_INS_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class TAKI_INS_weapons_acmort: TAKI_INS_assistant_common
@@ -65235,7 +70359,7 @@ class CommonUSARMY_OCP: CommonDefault
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -65469,7 +70593,7 @@ class USARMY_OCP_platoon_common: CommonUSARMY_OCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -65594,7 +70718,7 @@ class USARMY_OCP_platoon_jtac: USARMY_OCP_platoon_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -65695,7 +70819,7 @@ class USARMY_OCP_squad_sl: CommonUSARMY_OCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -65707,8 +70831,6 @@ class USARMY_OCP_squad_sl: CommonUSARMY_OCP
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -65732,8 +70854,7 @@ class USARMY_OCP_squad_sl: CommonUSARMY_OCP
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -65760,6 +70881,7 @@ class USARMY_OCP_squad_ftl: CommonUSARMY_OCP
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -65872,7 +70994,7 @@ class USARMY_OCP_squad_gl: CommonUSARMY_OCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -66035,7 +71157,7 @@ class USARMY_OCP_squad_aar: CommonUSARMY_OCP
 		3,
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -66073,7 +71195,7 @@ class USARMY_OCP_squad_lat: CommonUSARMY_OCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -66181,7 +71303,7 @@ class USARMY_OCP_weapons_common: CommonUSARMY_OCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -66250,7 +71372,7 @@ class USARMY_OCP_weapons_amg: USARMY_OCP_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -66315,7 +71437,7 @@ class USARMY_OCP_weapons_at: USARMY_OCP_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -66340,7 +71462,7 @@ class USARMY_OCP_weapons_aat: USARMY_OCP_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -66373,7 +71495,7 @@ class USARMY_OCP_weapons_atgm: USARMY_OCP_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -66398,7 +71520,7 @@ class USARMY_OCP_weapons_aatgm: USARMY_OCP_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -66429,7 +71551,7 @@ class USARMY_OCP_weapons_aa: USARMY_OCP_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -66450,7 +71572,7 @@ class USARMY_OCP_weapons_aaa: USARMY_OCP_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -66480,6 +71602,10 @@ class USARMY_OCP_weapons_mort: USARMY_OCP_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class USARMY_OCP_weapons_amort: USARMY_OCP_assistant_common
 {
@@ -66494,6 +71620,10 @@ class USARMY_OCP_weapons_amort: USARMY_OCP_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class USARMY_OCP_weapons_acmort: USARMY_OCP_assistant_common
@@ -66567,7 +71697,7 @@ class USARMY_OCP_recon_common: CommonUSARMY_OCP
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -66666,7 +71796,7 @@ class USARMY_OCP_recon_tl: USARMY_OCP_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -66784,7 +71914,7 @@ class USARMY_OCP_recon_gl: USARMY_OCP_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -66818,7 +71948,7 @@ class USARMY_OCP_recon_lat: USARMY_OCP_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -66933,7 +72063,7 @@ class USARMY_OCP_recon_exp: USARMY_OCP_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -67011,7 +72141,7 @@ class USARMY_OCP_diver_common: USARMY_OCP_recon_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -67068,7 +72198,7 @@ class USARMY_OCP_diver_tl: USARMY_OCP_diver_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -67100,7 +72230,7 @@ class USARMY_OCP_diver_exp: USARMY_OCP_diver_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -67232,7 +72362,7 @@ class USARMY_OCP_diver_jtac: USARMY_OCP_diver_tl
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -67319,7 +72449,7 @@ class USARMY_OCP_sniper_spot: USARMY_OCP_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		8,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -67431,7 +72561,7 @@ class USARMY_OCP_sniper_exp: USARMY_OCP_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -67491,7 +72621,7 @@ class USARMY_OCP_crew_common: CommonUSARMY_OCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -67696,7 +72826,7 @@ class USARMY_OCP_logistics_common: CommonUSARMY_OCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -67955,7 +73085,7 @@ class CommonUSARMY_UCP: CommonDefault
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -68189,7 +73319,7 @@ class USARMY_UCP_platoon_common: CommonUSARMY_UCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -68314,7 +73444,7 @@ class USARMY_UCP_platoon_jtac: USARMY_UCP_platoon_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -68415,7 +73545,7 @@ class USARMY_UCP_squad_sl: CommonUSARMY_UCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -68427,8 +73557,6 @@ class USARMY_UCP_squad_sl: CommonUSARMY_UCP
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -68452,8 +73580,7 @@ class USARMY_UCP_squad_sl: CommonUSARMY_UCP
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -68480,6 +73607,7 @@ class USARMY_UCP_squad_ftl: CommonUSARMY_UCP
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -68592,7 +73720,7 @@ class USARMY_UCP_squad_gl: CommonUSARMY_UCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -68755,7 +73883,7 @@ class USARMY_UCP_squad_aar: CommonUSARMY_UCP
 		3,
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -68793,7 +73921,7 @@ class USARMY_UCP_squad_lat: CommonUSARMY_UCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -68901,7 +74029,7 @@ class USARMY_UCP_weapons_common: CommonUSARMY_UCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -68970,7 +74098,7 @@ class USARMY_UCP_weapons_amg: USARMY_UCP_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -69035,7 +74163,7 @@ class USARMY_UCP_weapons_at: USARMY_UCP_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -69061,7 +74189,7 @@ class USARMY_UCP_weapons_aat: USARMY_UCP_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -69094,7 +74222,7 @@ class USARMY_UCP_weapons_atgm: USARMY_UCP_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -69120,7 +74248,7 @@ class USARMY_UCP_weapons_aatgm: USARMY_UCP_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -69151,7 +74279,7 @@ class USARMY_UCP_weapons_aa: USARMY_UCP_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -69172,7 +74300,7 @@ class USARMY_UCP_weapons_aaa: USARMY_UCP_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -69202,6 +74330,10 @@ class USARMY_UCP_weapons_mort: USARMY_UCP_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class USARMY_UCP_weapons_amort: USARMY_UCP_assistant_common
 {
@@ -69216,6 +74348,10 @@ class USARMY_UCP_weapons_amort: USARMY_UCP_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class USARMY_UCP_weapons_acmort: USARMY_UCP_assistant_common
@@ -69289,7 +74425,7 @@ class USARMY_UCP_recon_common: CommonUSARMY_UCP
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -69388,7 +74524,7 @@ class USARMY_UCP_recon_tl: USARMY_UCP_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -69506,7 +74642,7 @@ class USARMY_UCP_recon_gl: USARMY_UCP_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -69540,7 +74676,7 @@ class USARMY_UCP_recon_lat: USARMY_UCP_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -69655,7 +74791,7 @@ class USARMY_UCP_recon_exp: USARMY_UCP_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -69733,7 +74869,7 @@ class USARMY_UCP_diver_common: USARMY_UCP_recon_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -69790,7 +74926,7 @@ class USARMY_UCP_diver_tl: USARMY_UCP_diver_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -69822,7 +74958,7 @@ class USARMY_UCP_diver_exp: USARMY_UCP_diver_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -69954,7 +75090,7 @@ class USARMY_UCP_diver_jtac: USARMY_UCP_diver_tl
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -70041,7 +75177,7 @@ class USARMY_UCP_sniper_spot: USARMY_UCP_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		8,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -70153,7 +75289,7 @@ class USARMY_UCP_sniper_exp: USARMY_UCP_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -70213,7 +75349,7 @@ class USARMY_UCP_crew_common: CommonUSARMY_UCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -70419,7 +75555,7 @@ class USARMY_UCP_logistics_common: CommonUSARMY_UCP
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -70708,7 +75844,7 @@ class CommonUSMC_D: CommonDefault
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -70938,7 +76074,7 @@ class USMC_D_platoon_common: CommonUSMC_D
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -71055,7 +76191,7 @@ class USMC_D_platoon_jtac: USMC_D_platoon_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -71166,7 +76302,7 @@ class USMC_D_squad_sl: CommonUSMC_D
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -71178,8 +76314,6 @@ class USMC_D_squad_sl: CommonUSMC_D
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -71203,8 +76337,7 @@ class USMC_D_squad_sl: CommonUSMC_D
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -71231,6 +76364,7 @@ class USMC_D_squad_ftl: CommonUSMC_D
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -71266,7 +76400,7 @@ class USMC_D_squad_ar: CommonUSMC_D
 	};
 	magazines[]=
 	{
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		15,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		5,
@@ -71324,7 +76458,7 @@ class USMC_D_squad_gl: CommonUSMC_D
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -71483,13 +76617,13 @@ class USMC_D_squad_aar: CommonUSMC_D
 	magazines[]=
 	{
 		"ACE_SpareBarrel",
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		5,
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -71529,7 +76663,7 @@ class USMC_D_squad_lat: CommonUSMC_D
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -71637,7 +76771,7 @@ class USMC_D_weapons_common: CommonUSMC_D
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -71706,7 +76840,7 @@ class USMC_D_weapons_amg: USMC_D_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -71773,7 +76907,7 @@ class USMC_D_weapons_at: USMC_D_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -71799,7 +76933,7 @@ class USMC_D_weapons_aat: USMC_D_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -71832,7 +76966,7 @@ class USMC_D_weapons_atgm: USMC_D_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -71857,7 +76991,7 @@ class USMC_D_weapons_aatgm: USMC_D_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -71888,7 +77022,7 @@ class USMC_D_weapons_aa: USMC_D_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -71909,7 +77043,7 @@ class USMC_D_weapons_aaa: USMC_D_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -71939,6 +77073,10 @@ class USMC_D_weapons_mort: USMC_D_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class USMC_D_weapons_amort: USMC_D_assistant_common
 {
@@ -71953,6 +77091,10 @@ class USMC_D_weapons_amort: USMC_D_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class USMC_D_weapons_acmort: USMC_D_assistant_common
@@ -72028,7 +77170,7 @@ class USMC_D_recon_common: CommonUSMC_D
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -72127,7 +77269,7 @@ class USMC_D_recon_tl: USMC_D_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -72149,9 +77291,7 @@ class USMC_D_recon_tl: USMC_D_recon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		"1Rnd_SmokeRed_Grenade_shell",
 		"b_ir_grenade",
-		2,
-		"ACE_HuntIR_M203",
-		5
+		2
 	};
 	items[]=
 	{
@@ -72163,8 +77303,7 @@ class USMC_D_recon_tl: USMC_D_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	binoculars[]=
 	{
@@ -72255,7 +77394,7 @@ class USMC_D_recon_gl: USMC_D_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -72289,7 +77428,7 @@ class USMC_D_recon_lat: USMC_D_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -72404,7 +77543,7 @@ class USMC_D_recon_exp: USMC_D_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -72478,7 +77617,7 @@ class USMC_D_diver_common: USMC_D_recon_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -72535,7 +77674,7 @@ class USMC_D_diver_tl: USMC_D_diver_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -72567,7 +77706,7 @@ class USMC_D_diver_exp: USMC_D_diver_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -72699,7 +77838,7 @@ class USMC_D_diver_jtac: USMC_D_diver_tl
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -72782,15 +77921,13 @@ class USMC_D_sniper_spot: USMC_D_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		8,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		4,
-		"ACE_HuntIR_M203",
 		4
 	};
 	items[]=
@@ -72808,8 +77945,7 @@ class USMC_D_sniper_spot: USMC_D_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500",
-		"ACE_HuntIR_monitor"
+		"ACE_Kestrel4500"
 	};
 	lrRadios[]=
 	{
@@ -72896,7 +78032,7 @@ class USMC_D_sniper_exp: USMC_D_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -72956,7 +78092,7 @@ class USMC_D_crew_common: CommonUSMC_D
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -73154,7 +78290,7 @@ class USMC_D_logistics_common: CommonUSMC_D
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -73430,7 +78566,7 @@ class CommonUSMC_W: CommonDefault
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -73658,7 +78794,7 @@ class USMC_W_platoon_common: CommonUSMC_W
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -73774,7 +78910,7 @@ class USMC_W_platoon_jtac: USMC_W_platoon_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -73884,7 +79020,7 @@ class USMC_W_squad_sl: CommonUSMC_W
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -73896,8 +79032,6 @@ class USMC_W_squad_sl: CommonUSMC_W
 		2,
 		"SmokeShell",
 		2,
-		"ACE_HuntIR_M203",
-		4,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
@@ -73921,8 +79055,7 @@ class USMC_W_squad_sl: CommonUSMC_W
 		10,
 		"ACE_tourniquet",
 		"ACE_microDAGR",
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	lrRadios[]=
 	{
@@ -73949,6 +79082,7 @@ class USMC_W_squad_ftl: CommonUSMC_W
 		"ACE_fieldDressing",
 		10,
 		"ACE_tourniquet",
+		"ACE_microDAGR",
 		"ACE_IR_Strobe_Item"
 	};
 };
@@ -73984,7 +79118,7 @@ class USMC_W_squad_ar: CommonUSMC_W
 	};
 	magazines[]=
 	{
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		15,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		5,
@@ -74042,7 +79176,7 @@ class USMC_W_squad_gl: CommonUSMC_W
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -74200,13 +79334,13 @@ class USMC_W_squad_aar: CommonUSMC_W
 	magazines[]=
 	{
 		"ACE_SpareBarrel",
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		5,
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -74245,7 +79379,7 @@ class USMC_W_squad_lat: CommonUSMC_W
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		7,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		4,
@@ -74353,7 +79487,7 @@ class USMC_W_weapons_common: CommonUSMC_W
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -74421,7 +79555,7 @@ class USMC_W_weapons_amg: USMC_W_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -74487,7 +79621,7 @@ class USMC_W_weapons_at: USMC_W_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -74513,7 +79647,7 @@ class USMC_W_weapons_aat: USMC_W_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -74546,7 +79680,7 @@ class USMC_W_weapons_atgm: USMC_W_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -74571,7 +79705,7 @@ class USMC_W_weapons_aatgm: USMC_W_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -74602,7 +79736,7 @@ class USMC_W_weapons_aa: USMC_W_weapons_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -74623,7 +79757,7 @@ class USMC_W_weapons_aaa: USMC_W_assistant_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		5,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -74653,6 +79787,10 @@ class USMC_W_weapons_mort: USMC_W_weapons_common
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
 	};
+	map[]=
+	{
+		"ItemMap"
+	};
 };
 class USMC_W_weapons_amort: USMC_W_assistant_common
 {
@@ -74667,6 +79805,10 @@ class USMC_W_weapons_amort: USMC_W_assistant_common
 		10,
 		"ACE_tourniquet",
 		"ACE_RangeTable_82mm"
+	};
+	map[]=
+	{
+		"ItemMap"
 	};
 };
 class USMC_W_weapons_acmort: USMC_W_assistant_common
@@ -74741,7 +79883,7 @@ class USMC_W_recon_common: CommonUSMC_W
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -74840,7 +79982,7 @@ class USMC_W_recon_tl: USMC_W_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -74862,9 +80004,7 @@ class USMC_W_recon_tl: USMC_W_recon_common
 		"1Rnd_SmokeGreen_Grenade_shell",
 		"1Rnd_SmokeRed_Grenade_shell",
 		"b_ir_grenade",
-		2,
-		"ACE_HuntIR_M203",
-		5
+		2
 	};
 	items[]=
 	{
@@ -74876,8 +80016,7 @@ class USMC_W_recon_tl: USMC_W_recon_common
 		"ACE_IR_Strobe_Item",
 		"ACE_CableTie",
 		2,
-		"ACE_IR_Strobe_Item",
-		"ACE_HuntIR_monitor"
+		"ACE_IR_Strobe_Item"
 	};
 	binoculars[]=
 	{
@@ -74968,7 +80107,7 @@ class USMC_W_recon_gl: USMC_W_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -75002,7 +80141,7 @@ class USMC_W_recon_lat: USMC_W_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -75116,7 +80255,7 @@ class USMC_W_recon_exp: USMC_W_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -75190,7 +80329,7 @@ class USMC_W_diver_common: USMC_W_recon_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -75247,7 +80386,7 @@ class USMC_W_diver_tl: USMC_W_diver_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -75279,7 +80418,7 @@ class USMC_W_diver_exp: USMC_W_diver_common
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -75411,7 +80550,7 @@ class USMC_W_diver_jtac: USMC_W_diver_tl
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		10,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -75494,15 +80633,13 @@ class USMC_W_sniper_spot: USMC_W_recon_common
 		2,
 		"SmokeShell",
 		2,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		8,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
 		"1Rnd_HE_Grenade_shell",
 		10,
 		"1Rnd_Smoke_Grenade_shell",
-		4,
-		"ACE_HuntIR_M203",
 		4
 	};
 	items[]=
@@ -75520,8 +80657,7 @@ class USMC_W_sniper_spot: USMC_W_recon_common
 		"ACE_ATragMX",
 		"ACE_IR_Strobe_Item",
 		"ACE_Rangecard",
-		"ACE_Kestrel4500",
-		"ACE_HuntIR_monitor"
+		"ACE_Kestrel4500"
 	};
 	lrRadios[]=
 	{
@@ -75608,7 +80744,7 @@ class USMC_W_sniper_exp: USMC_W_recon_common
 	{
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		9,
 		"30Rnd_556x45_Stanag_Tracer_Red",
 		2,
@@ -75668,7 +80804,7 @@ class USMC_W_crew_common: CommonUSMC_W
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
@@ -75864,7 +81000,7 @@ class USMC_W_logistics_common: CommonUSMC_W
 	{
 		"rhsusf_mag_15Rnd_9x19_JHP",
 		3,
-		"30Rnd_556x45_Stanag",
+		"30Rnd_556x45_Stanag_red",
 		6,
 		"ACE_Chemlight_Orange",
 		"ACE_Chemlight_White",
