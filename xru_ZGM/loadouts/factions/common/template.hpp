@@ -133,7 +133,7 @@ class LOADOUT(platoon,uav) : LOADOUT(platoon,common) {
 };
 //JTAC
 class LOADOUT(platoon,jtac) : LOADOUT(platoon,common) {
-    vest[] = {VEST_GRENADIER};
+    vest[] = {VEST_GR};
     backpack[] = {BACKPACK_KITBAG};
     primary[] = {CARBINE_UGL_CCO};
     binoculars[] = {DESIGNATOR};
@@ -148,7 +148,7 @@ class LOADOUT(platoon,jtac) : LOADOUT(platoon,common) {
 };
 //Platoon-Medic
 class LOADOUT(platoon,medic) : LOADOUT(platoon,common) {
-    vest[] = {VEST_MEDIC};
+    vest[] = {VEST_CM};
     backpack[] = {BACKPACK_KITBAG};
     gps[] = {""};
     items[] += {
@@ -175,9 +175,6 @@ class LOADOUT(squad,sl) : COMMON {
     binoculars[] = {RANGEFINDER};
     primary[] = {RIFLE_UGL_CCO};
     magazines[] += {
-        #ifdef HUNTIR
-            "ACE_HuntIR_M203",4,
-        #endif
         UGL_HE,10,
         UGL_SMK,2,
         UGLS_COL1,
@@ -186,9 +183,6 @@ class LOADOUT(squad,sl) : COMMON {
     items[] += {
         "ACE_microDAGR",
         "ACE_IR_Strobe_Item"
-        #ifdef HUNTIR
-            ,"ACE_HuntIR_monitor"
-        #endif
     };
     lrRadios[] = {RADIO_HAND};
     map[] = {"ItemMap"};
@@ -197,7 +191,10 @@ class LOADOUT(squad,sl) : COMMON {
 class LOADOUT(squad,ftl) : COMMON {
     vest[] = {VEST_TL};
     binoculars[] = {BINOCULAR};
-    items[] += {"ACE_IR_Strobe_Item"};
+    items[] += {
+        "ACE_microDAGR",
+        "ACE_IR_Strobe_Item"
+    };
 };
 //Automatic Rifleman
 class LOADOUT(squad,ar) : COMMON {
@@ -212,13 +209,13 @@ class LOADOUT(squad,ar) : COMMON {
 };
 //Grenadier
 class LOADOUT(squad,gl) : COMMON {
-    vest[] = {VEST_GRENADIER};
+    vest[] = {VEST_GR};
     primary[] = {RIFLE_UGL_RCO};
     magazines[] += {UGLS_GREN};
 };
 //Grenadier M32
 class LOADOUT(squad,gl2) : COMMON {
-    vest[] = {VEST_GRENADIER};
+    vest[] = {VEST_GR};
     primary[] = {"rhs_weap_m32"};
     magazines[] = {
         MAG_PISTOL,5,
@@ -231,13 +228,13 @@ class LOADOUT(squad,gl2) : COMMON {
 //Rifleman (Light)
 class LOADOUT(squad,light) : COMMON {
     primary[] = {RIFLE_RCO};
-    vest[] = {VEST_RIFLEMAN};
+    vest[] = {VEST_RM};
 };
 //Rifleman (Ass. Autorifleman)
 class LOADOUT(squad,aar) : COMMON {
     backpack[] = {BACKPACK_KITBAG};
     primary[] = {RIFLE_RCO};
-    vest[] = {VEST_RIFLEMAN};
+    vest[] = {VEST_RM};
     magazines[] = {
         "ACE_SpareBarrel",
         MAGS_AUTORIFLE_ASST,
@@ -246,14 +243,14 @@ class LOADOUT(squad,aar) : COMMON {
 };
 //Rifleman AT
 class LOADOUT(squad,lat) : COMMON {
-    vest[] = {VEST_RIFLEMAN};
+    vest[] = {VEST_RM};
     backpack[] = {BACKPACK_AT_LIGHT};
     launcher[] = {AT_LIGHT};
     magazines[] += {MAGS_AT_LIGHT};
 };
 //Combat Medic
 class LOADOUT(squad,cm) : COMMON {
-    vest[] = {VEST_MEDIC};
+    vest[] = {VEST_CM};
     items[] += {
         "ACE_fieldDressing",20,
         "ACE_elasticBandage",40,
@@ -275,7 +272,7 @@ class LOADOUT(squad,dm) : COMMON {
 };
 //Combat Engineer
 class LOADOUT(squad,eng) : COMMON {
-    vest[] = {VEST_RIFLEMAN};
+    vest[] = {VEST_RM};
     items[] += {"ToolKit"};
     preLoadout = TRAITS(0,1,false,false);
 };
@@ -285,7 +282,7 @@ class LOADOUT(squad,eng) : COMMON {
 //Common
 class LOADOUT(weapons,common): COMMON {
     backpack[] = {""};
-    vest[] = {VEST_RIFLEMAN};
+    vest[] = {VEST_RM};
     magazines[] = {
         MAG_PISTOL,3,
         MAG_RIFLE,5,
@@ -362,11 +359,13 @@ class LOADOUT(weapons,aaa) : LOADOUT(assistant,common) {
 class LOADOUT(weapons,mort) : LOADOUT(weapons,common) {
     backpack[] = {MORTAR_GUN};
     items[] += {"ACE_RangeTable_82mm"};
+    map[] = {"ItemMap"};
 };
 //M252 Assistant
 class LOADOUT(weapons,amort) : LOADOUT(assistant,common) {
     backpack[] = {MORTAR_POD};
     items[] += {"ACE_RangeTable_82mm"};
+    map[] = {"ItemMap"};
 };
 
 class LOADOUT(weapons,acmort) : LOADOUT(assistant,common) {
