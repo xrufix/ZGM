@@ -10,7 +10,19 @@ class CfgFactions {
     class BAF_CTRG {
         displayName = CSTRING(FACTIONS,BAF_CTRG);
         icon = "\a3\Data_F_Exp\FactionIcons\icon_CTRG_CA.paa";
-        index = 450;
+        index = 110;
+        sideShort = "b";
+    };
+    class BAF_DPM {
+        displayName = CSTRING(FACTIONS,BAF_DPM);
+        icon = "\a3\ui_f\data\map\markers\flags\uk_ca.paa";
+        index = 113;
+        sideShort = "b";
+    };
+    class BAF_MTP {
+        displayName = CSTRING(FACTIONS,BAF_MTP);
+        icon = "\a3\ui_f\data\map\markers\flags\uk_ca.paa";
+        index = 115;
         sideShort = "b";
     };
     class BEL_DES {
