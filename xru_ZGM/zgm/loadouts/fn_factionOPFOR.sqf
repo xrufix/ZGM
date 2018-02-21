@@ -2,4 +2,4 @@
 
 params ["_index"];
 
-GVAR(OPFOR) = configName (("true" configClasses (missionConfigFile >> "CfgFactions")) select _index);
+GVAR(OPFOR) = configName (("getNumber (_x >> 'index') == _index" configClasses (missionConfigFile >> "CfgFactions")) select 0);

@@ -2,4 +2,4 @@
 
 params ["_index"];
 
-GVAR(BLUFOR) = configName (("true" configClasses (missionConfigFile >> "CfgFactions")) select _index);
+GVAR(BLUFOR) = configName (("getNumber (_x >> 'index') == _index" configClasses (missionConfigFile >> "CfgFactions")) select 0);
