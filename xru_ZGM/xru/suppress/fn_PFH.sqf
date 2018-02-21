@@ -2,6 +2,23 @@
 
 private _timeFactor = (time - GVAR(lastReduce));
 
+GVAR(bullets) = GVAR(bullets) select {
+	_x params ["_bullet","_hit","_radius"];
+	private _distance = _bullet distance ((position player) vectorAdd (player selectionPosition "head"));
+	switch true do {
+		case (!alive _bullet) : {			// Remove bullets which are no longer present.
+			false
+		};
+		case (_distance < _radius) : {		// Create suppression effects for all bullets near player.
+			[_hit,_distance,_radius] call FUNC(effect);
+			true
+		};
+		default {							// Keep all other bullets.
+			true
+		};
+	};
+};
+
 if (time - GVAR(lastshotat) > 3) then {
 	GVAR(suppression) = 0 max (GVAR(suppression) - GVAR(sinkRate) * _timeFactor);
 };

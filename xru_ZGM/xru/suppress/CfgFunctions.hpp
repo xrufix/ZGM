@@ -7,10 +7,9 @@ class xru_suppress {
         class preInit {
             preInit = 1;
         };
-        class bulletPFH {};
         class firedEH {};
         class effect {};
-        class reducePFH {};
+        class PFH {};
         class setBlinking {};
         class setCamshake {};
         class setClimbRate {};

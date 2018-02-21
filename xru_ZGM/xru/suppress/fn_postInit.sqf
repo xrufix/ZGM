@@ -6,11 +6,8 @@ if (!hasInterface) exitWith {};
 // Add Fired Eventhandler to all classes.
 ["All", "Fired", {call FUNC(firedEH)}, true] call CBA_fnc_addClassEventHandler;
 
-// Add PFH tracking bullets.
-[{call FUNC(bulletPFH)}] call CBA_fnc_addPerFrameHandler;
-
-// Add PFH reducing suppression
-[{call FUNC(reducePFH)}] call CBA_fnc_addPerFrameHandler;
+// Add PFH for effects
+[{call FUNC(PFH)}] call CBA_fnc_addPerFrameHandler;
 
 // Initialize PPE
 GVAR(suppressionCC) = ppEffectCreate ["colorCorrections", 1452];
@@ -26,7 +23,7 @@ GVAR(impactBlur) ppEffectForceInNVG true;
 GVAR(impactBlur) ppEffectCommit 0;
 
 #ifdef DEBUG_MODE
-	player addAction["Effect",{[10,5] call xru_suppress_fnc_effect},nil,1.5,true,true,"defaultAction"];
+	player addAction["Effect",{[10, 2, 5] call xru_suppress_fnc_effect},nil,1.5,true,true,"defaultAction"];
 #endif
 
 ADDON = true;
