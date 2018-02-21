@@ -32,5 +32,3 @@
     ARR_2(UGL_TB,4), \
     ARR_2(UGL_SMK,6), \
     ARR_2(UGL_GDM,2))
-
-// #define HUNTIR

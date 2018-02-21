@@ -28,5 +28,3 @@
 #define UGLS_GREN ARR_2( \
     ARR_2(UGL_HE,24), \
     ARR_2(UGL_SMK,8))
-
-#define HUNTIR
