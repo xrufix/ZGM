@@ -9,20 +9,20 @@
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      ARR_1("rhsusf_iotv_ucp")
 #define VEST_LIGHT      ARR_1("rhsusf_iotv_ucp_Repair")
-#define VEST_RIFLEMAN   ARR_1("rhsusf_iotv_ucp_Rifleman")
-#define VEST_GRENADIER  ARR_1("rhsusf_iotv_ucp_Grenadier")
-#define VEST_MEDIC      ARR_1("rhsusf_iotv_ucp_Medic")
+#define VEST_RM         ARR_1("rhsusf_iotv_ucp_Rifleman")
+#define VEST_GR         ARR_1("rhsusf_iotv_ucp_Grenadier")
+#define VEST_CM         ARR_1("rhsusf_iotv_ucp_Medic")
 #define VEST_SL         ARR_1("rhsusf_iotv_ucp_Squadleader")
 #define VEST_TL         ARR_1("rhsusf_iotv_ucp_Teamleader")
 #define VEST_MG         ARR_1("rhsusf_iotv_ucp_SAW")
-#define VEST_DM         VEST_RIFLEMAN
+#define VEST_DM         VEST_RM
 
 #define VEST_CREW		ARR_1("rhsusf_iotv_ucp_Repair")
 
-#define VEST_RECON			VEST_RIFLEMAN
+#define VEST_RECON			VEST_RM
 #define VEST_RECON_TL		VEST_TL
 #define VEST_RECON_MG		VEST_MG
-#define VEST_RECON_GR		VEST_GRENADIER
+#define VEST_RECON_GR		VEST_GR
 
 
 

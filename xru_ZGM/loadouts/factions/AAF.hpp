@@ -22,12 +22,12 @@
 #define VEST_EMPTY      ARR_1("V_EOD_olive_F")
 #define VEST_OFFICER    ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      ARR_1("V_PlateCarrierIA1_dgtl")
-#define VEST_RIFLEMAN   ARR_1("V_PlateCarrierIA2_dgtl")
-#define VEST_GRENADIER  ARR_1("V_PlateCarrierIAGL_dgtl")
-#define VEST_MEDIC      VEST_LIGHT
-#define VEST_SL         VEST_RIFLEMAN
-#define VEST_TL         VEST_GRENADIER
-#define VEST_MG         VEST_RIFLEMAN
+#define VEST_RM         ARR_1("V_PlateCarrierIA2_dgtl")
+#define VEST_GR         ARR_1("V_PlateCarrierIAGL_dgtl")
+#define VEST_CM         VEST_LIGHT
+#define VEST_SL         VEST_RM
+#define VEST_TL         VEST_GR
+#define VEST_MG         VEST_RM
 #define VEST_DM         VEST_LIGHT
 
 #define VEST_CREW		ARR_1("V_TacVest_khk")
@@ -84,7 +84,7 @@
 #define RIFLE_UGL_CCO   WEAPON(RIFLE_UGL,LASERPOINTER,CCO,"")
 
 #define MAG_RIFLE			ARR_1("30Rnd_556x45_Stanag")
-#define MAG_RIFLE_TRACER	ARR_1("30Rnd_556x45_Stanag_Tracer_Red")
+#define MAG_RIFLE_TRACER	ARR_1("30Rnd_556x45_Stanag_Tracer_yellow")
 
 // PDW
 #define PDW         WEAPON("hgun_PDW2000_F","","","")

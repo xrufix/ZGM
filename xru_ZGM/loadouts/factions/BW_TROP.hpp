@@ -12,11 +12,11 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      ARR_1("BWA3_Vest_tropen")
-#define VEST_OFFICER       VEST_EMPTY
+#define VEST_OFFICER    VEST_EMPTY
 #define VEST_LIGHT      ARR_1("BWA3_Vest_Rifleman1_tropen")
-#define VEST_RIFLEMAN   VEST_LIGHT
-#define VEST_GRENADIER  ARR_1("BWA3_Vest_Grenadier_tropen")
-#define VEST_MEDIC      ARR_1("BWA3_Vest_Medic_tropen")
+#define VEST_RM         VEST_LIGHT
+#define VEST_GR         ARR_1("BWA3_Vest_Grenadier_tropen")
+#define VEST_CM         ARR_1("BWA3_Vest_Medic_tropen")
 #define VEST_SL         ARR_1("BWA3_Vest_Leader_tropen")
 #define VEST_TL         VEST_SL
 #define VEST_MG         ARR_1("BWA3_Vest_Autorifleman_tropen")

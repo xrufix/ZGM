@@ -20,22 +20,22 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      ARR_1("rhsusf_iotv_ocp")
-#define VEST_OFFICER       ARR_1("V_Rangemaster_belt")
+#define VEST_OFFICER    ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      ARR_1("rhsusf_iotv_ocp_Repair")
-#define VEST_RIFLEMAN   ARR_1("rhsusf_iotv_ocp_Rifleman")
-#define VEST_GRENADIER  ARR_1("rhsusf_iotv_ocp_Grenadier")
-#define VEST_MEDIC      ARR_1("rhsusf_iotv_ocp_Medic")
+#define VEST_RM         ARR_1("rhsusf_iotv_ocp_Rifleman")
+#define VEST_GR         ARR_1("rhsusf_iotv_ocp_Grenadier")
+#define VEST_CM         ARR_1("rhsusf_iotv_ocp_Medic")
 #define VEST_SL         ARR_1("rhsusf_iotv_ocp_Squadleader")
 #define VEST_TL         ARR_1("rhsusf_iotv_ocp_Teamleader")
 #define VEST_MG         ARR_1("rhsusf_iotv_ocp_SAW")
-#define VEST_DM         VEST_RIFLEMAN
+#define VEST_DM         VEST_RM
 
 #define VEST_CREW		ARR_1("rhsusf_iotv_ocp_Repair")
 
-#define VEST_RECON			VEST_RIFLEMAN
+#define VEST_RECON			VEST_RM
 #define VEST_RECON_TL		VEST_TL
 #define VEST_RECON_MG		VEST_MG
-#define VEST_RECON_GR		VEST_GRENADIER
+#define VEST_RECON_GR		VEST_GR
 
 #define VEST_BREATHER	ARR_1("V_RebreatherB")
 #define VEST_DIVER		ARR_1("VSM_LBT1961_Black")
@@ -100,7 +100,7 @@
     WEAPON(RIFLE_2,LASERPOINTER,CCO,""))
 #define RIFLE_UGL_CCO ARR_1(                  \
     WEAPON(RIFLE_UGL,LASERPOINTER,CCO,""))
-#define MAG_RIFLE			ARR_1("30Rnd_556x45_Stanag")
+#define MAG_RIFLE			ARR_1("30Rnd_556x45_Stanag_red")
 #define MAG_RIFLE_TRACER	ARR_1("30Rnd_556x45_Stanag_Tracer_Red")
 
 // PDW

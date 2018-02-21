@@ -22,9 +22,9 @@
 #define VEST_EMPTY      ARR_1("")
 #define VEST_OFFICER    ARR_1("")
 #define VEST_LIGHT      ARR_1("")
-#define VEST_RIFLEMAN   ARR_1("V_PlateCarrier1_rgr_noflag_F")
-#define VEST_GRENADIER  ARR_1("")
-#define VEST_MEDIC      ARR_1("")
+#define VEST_RM         ARR_1("V_PlateCarrier1_rgr_noflag_F")
+#define VEST_GR         ARR_1("")
+#define VEST_CM         ARR_1("")
 #define VEST_SL         ARR_1("")
 #define VEST_TL         VEST_SL
 #define VEST_MG         ARR_1("")

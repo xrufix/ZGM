@@ -22,9 +22,9 @@
 #define VEST_EMPTY      VEST_LIGHT
 #define VEST_OFFICER       "v_rangemaster_belt"
 #define VEST_LIGHT      "v_chestrig_khk"
-#define VEST_RIFLEMAN   VEST_LIGHT
-#define VEST_GRENADIER  "v_harnessogl_brn"
-#define VEST_MEDIC      "v_tacchestrig_cbr_f"
+#define VEST_RM         VEST_LIGHT
+#define VEST_GR         "v_harnessogl_brn"
+#define VEST_CM         "v_tacchestrig_cbr_f"
 #define VEST_SL         "v_harnesso_brn"
 #define VEST_TL         VEST_SL
 #define VEST_MG         VEST_SL
@@ -32,10 +32,10 @@
 
 #define VEST_CREW		"V_LegStrapBag_coyote_F"
 
-#define VEST_RECON			VEST_MEDIC
-#define VEST_RECON_TL		VEST_RIFLEMAN
-#define VEST_RECON_MG		VEST_MEDIC
-#define VEST_RECON_GR		VEST_GRENADIER
+#define VEST_RECON			VEST_CM
+#define VEST_RECON_TL		VEST_RM
+#define VEST_RECON_MG		VEST_CM
+#define VEST_RECON_GR		VEST_GR
 
 #define VEST_BREATHER	ARR_1("V_RebreatherIR")
 #define VEST_DIVER		ARR_1("ACE_Banana")

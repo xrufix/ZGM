@@ -23,25 +23,25 @@
 #define VEST_EMPTY      ARR_6("CUP_V_OI_TKI_Jacket1_01","CUP_V_OI_TKI_Jacket1_02","CUP_V_OI_TKI_Jacket1_03","CUP_V_OI_TKI_Jacket1_04","CUP_V_OI_TKI_Jacket1_05","CUP_V_OI_TKI_Jacket1_06")
 #define VEST_OFFICER    VEST_EMPTY
 #define VEST_LIGHT      VEST_EMPTY
-#define VEST_RIFLEMAN   ARR_5( \
+#define VEST_RM         ARR_5( \
     ARR_6("CUP_V_OI_TKI_Jacket2_01","CUP_V_OI_TKI_Jacket2_02","CUP_V_OI_TKI_Jacket2_03","CUP_V_OI_TKI_Jacket2_04","CUP_V_OI_TKI_Jacket2_05","CUP_V_OI_TKI_Jacket2_06"), \
     ARR_6("CUP_V_OI_TKI_Jacket3_01","CUP_V_OI_TKI_Jacket3_02","CUP_V_OI_TKI_Jacket3_03","CUP_V_OI_TKI_Jacket3_04","CUP_V_OI_TKI_Jacket3_05","CUP_V_OI_TKI_Jacket3_06"), \
     ARR_6("CUP_V_OI_TKI_Jacket4_01","CUP_V_OI_TKI_Jacket4_02","CUP_V_OI_TKI_Jacket4_03","CUP_V_OI_TKI_Jacket4_04","CUP_V_OI_TKI_Jacket4_05","CUP_V_OI_TKI_Jacket4_06"), \
     ARR_6("CUP_V_OI_TKI_Jacket5_01","CUP_V_OI_TKI_Jacket5_02","CUP_V_OI_TKI_Jacket5_03","CUP_V_OI_TKI_Jacket5_04","CUP_V_OI_TKI_Jacket5_05","CUP_V_OI_TKI_Jacket5_06"), \
     ARR_6("CUP_V_OI_TKI_Jacket6_01","CUP_V_OI_TKI_Jacket6_02","CUP_V_OI_TKI_Jacket6_03","CUP_V_OI_TKI_Jacket6_04","CUP_V_OI_TKI_Jacket6_05","CUP_V_OI_TKI_Jacket6_06"))
-#define VEST_GRENADIER  VEST_RIFLEMAN
-#define VEST_MEDIC      VEST_RIFLEMAN
-#define VEST_SL         VEST_RIFLEMAN
-#define VEST_TL         VEST_RIFLEMAN
-#define VEST_MG         VEST_RIFLEMAN
-#define VEST_DM         VEST_RIFLEMAN
+#define VEST_GR         VEST_RM
+#define VEST_CM         VEST_RM
+#define VEST_SL         VEST_RM
+#define VEST_TL         VEST_RM
+#define VEST_MG         VEST_RM
+#define VEST_DM         VEST_RM
 
 #define VEST_CREW		VEST_EMPTY
 
-#define VEST_RECON			VEST_RIFLEMAN
-#define VEST_RECON_TL		VEST_RIFLEMAN
-#define VEST_RECON_MG		VEST_RIFLEMAN
-#define VEST_RECON_GR		VEST_RIFLEMAN
+#define VEST_RECON			VEST_RM
+#define VEST_RECON_TL		VEST_RM
+#define VEST_RECON_MG		VEST_RM
+#define VEST_RECON_GR		VEST_RM
 
 #define VEST_BREATHER	ARR_1("V_RebreatherB")
 #define VEST_DIVER		ARR_1("V_TacVestIR_blk")

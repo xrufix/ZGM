@@ -22,13 +22,13 @@
 #define VEST_EMPTY      ARR_1("rhsusf_mbav")
 #define VEST_OFFICER    ARR_1("rhsusf_mbav_light")
 #define VEST_LIGHT      ARR_1("rhsusf_mbav_light")
-#define VEST_RIFLEMAN   ARR_1("rhsusf_mbav_rifleman")
-#define VEST_GRENADIER  ARR_1("rhsusf_mbav_grenadier")
-#define VEST_MEDIC      ARR_1("rhsusf_mbav_medic")
-#define VEST_SL         VEST_GRENADIER
-#define VEST_TL         VEST_RIFLEMAN
+#define VEST_RM         ARR_1("rhsusf_mbav_rifleman")
+#define VEST_GR         ARR_1("rhsusf_mbav_grenadier")
+#define VEST_CM         ARR_1("rhsusf_mbav_medic")
+#define VEST_SL         VEST_GR
+#define VEST_TL         VEST_RM
 #define VEST_MG         ARR_1("rhsusf_mbav_mg")
-#define VEST_DM         VEST_RIFLEMAN
+#define VEST_DM         VEST_RM
 
 #define VEST_CREW		VEST_LIGHT
 
@@ -66,7 +66,7 @@
 #define FLASHLIGHT   "acc_flashlight"
 
 #define RCO     "rhsusf_acc_eotech_552_d"
-#define CCO     ""
+#define CCO     "rhsusf_acc_T1_low"
 
 #define SNIPER_OPTIC    "rhsusf_acc_LEUPOLDMK4"
 #define SNIPER_OPTIC_NV "rhsusf_acc_ACOG_anpvs27"
@@ -84,7 +84,7 @@
 #define RIFLE_CCO       WEAPON(RIFLE,FLASHLIGHT,CCO,"")
 #define RIFLE_UGL_CCO   WEAPON(RIFLE_UGL,FLASHLIGHT,CCO,"")
 
-#define MAG_RIFLE		 ARR_1("30Rnd_556x45_Stanag")
+#define MAG_RIFLE		 ARR_1("30Rnd_556x45_Stanag_red")
 #define MAG_RIFLE_TRACER ARR_1("30Rnd_556x45_Stanag_Tracer_Red")
 
 // PDW

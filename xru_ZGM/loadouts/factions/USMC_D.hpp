@@ -20,11 +20,11 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      ARR_1("rhsusf_spc")
-#define VEST_OFFICER       ARR_1("V_Rangemaster_belt")
+#define VEST_OFFICER    ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      ARR_1("rhsusf_spc_light")
-#define VEST_RIFLEMAN   ARR_1("rhsusf_spc_rifleman")
-#define VEST_GRENADIER  ARR_1("rhsusf_spc_teamleader")
-#define VEST_MEDIC      ARR_1("rhsusf_spc_corpsman")
+#define VEST_RM         ARR_1("rhsusf_spc_rifleman")
+#define VEST_GR         ARR_1("rhsusf_spc_teamleader")
+#define VEST_CM         ARR_1("rhsusf_spc_corpsman")
 #define VEST_SL         ARR_1("rhsusf_spc_teamleader")
 #define VEST_TL         VEST_SL
 #define VEST_MG         ARR_1("rhsusf_spc_mg")
@@ -100,7 +100,7 @@
 #define RIFLE_CCO RIFLE_RCO
 #define RIFLE_UGL_CCO RIFLE_UGL_RCO
 
-#define MAG_RIFLE			"30Rnd_556x45_Stanag"
+#define MAG_RIFLE			"30Rnd_556x45_Stanag_red"
 #define MAG_RIFLE_TRACER	"30Rnd_556x45_Stanag_Tracer_Red"
 
 // PDW

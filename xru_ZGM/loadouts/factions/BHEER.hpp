@@ -22,9 +22,9 @@
 #define VEST_EMPTY      ARR_1("V_TacVest_oli")
 #define VEST_OFFICER    VEST_EMPTY
 #define VEST_LIGHT      VEST_EMPTY
-#define VEST_RIFLEMAN   VEST_EMPTY
-#define VEST_GRENADIER  VEST_EMPTY
-#define VEST_MEDIC      VEST_EMPTY
+#define VEST_RM         VEST_EMPTY
+#define VEST_GR         VEST_EMPTY
+#define VEST_CM         VEST_EMPTY
 #define VEST_SL         "VSM_FAPC_Operator_OGA_OD"
 #define VEST_TL         VEST_SL
 #define VEST_MG         VEST_EMPTY

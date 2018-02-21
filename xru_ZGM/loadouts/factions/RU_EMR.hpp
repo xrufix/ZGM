@@ -10,15 +10,15 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      "rhs_6b23_digi"
-#define VEST_OFFICER       "rhs_6b23_digi_crewofficer"
+#define VEST_OFFICER    "rhs_6b23_digi_crewofficer"
 #define VEST_LIGHT      "rhs_6b23_digi_6sh92_spetsnaz2"
-#define VEST_RIFLEMAN   ARR_2("rhs_6b23_6sh116","rhs_6b23_digi_6sh92")
-#define VEST_GRENADIER  ARR_2("rhs_6b23_6sh116_vog","rhs_6b23_digi_6sh92_vog")
-#define VEST_MEDIC      "rhs_6b23_digi_medic"
+#define VEST_RM         ARR_2("rhs_6b23_6sh116","rhs_6b23_digi_6sh92")
+#define VEST_GR         ARR_2("rhs_6b23_6sh116_vog","rhs_6b23_digi_6sh92_vog")
+#define VEST_CM         "rhs_6b23_digi_medic"
 #define VEST_TL         ARR_2("rhs_6b23_digi_6sh92_headset","rhs_6b23_digi_6sh92_radio")
 #define VEST_SL         ARR_2("rhs_6b23_digi_6sh92_vog_headset","rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz")
-#define VEST_MG         VEST_RIFLEMAN
-#define VEST_DM         VEST_RIFLEMAN
+#define VEST_MG         VEST_RM
+#define VEST_DM         VEST_RM
 
 #define VEST_CREW		"rhs_6b23_crew"
 

@@ -22,20 +22,20 @@
 #define VEST_EMPTY      ARR_2("V_PlateCarrier1_rgr","xru_V_PlateCarrier1_khk")
 #define VEST_OFFICER       ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      VEST_EMPTY
-#define VEST_RIFLEMAN   ARR_2("V_PlateCarrier2_rgr","xru_V_PlateCarrier2_khk")
-#define VEST_GRENADIER  VEST_RIFLEMAN
-#define VEST_MEDIC      VEST_RIFLEMAN
-#define VEST_SL         VEST_RIFLEMAN
-#define VEST_TL         VEST_RIFLEMAN
-#define VEST_MG         VEST_RIFLEMAN
-#define VEST_DM         VEST_RIFLEMAN
+#define VEST_RM         ARR_2("V_PlateCarrier2_rgr","xru_V_PlateCarrier2_khk")
+#define VEST_GR         VEST_RM
+#define VEST_CM         VEST_RM
+#define VEST_SL         VEST_RM
+#define VEST_TL         VEST_RM
+#define VEST_MG         VEST_RM
+#define VEST_DM         VEST_RM
 
 #define VEST_CREW		ARR_1("V_Chestrig_oli")
 
 #define VEST_RECON			VEST_LIGHT
-#define VEST_RECON_TL		VEST_RIFLEMAN
+#define VEST_RECON_TL		VEST_RM
 #define VEST_RECON_MG		VEST_LIGHT
-#define VEST_RECON_GR		VEST_RIFLEMAN
+#define VEST_RECON_GR		VEST_RM
 
 #define VEST_BREATHER	ARR_1("V_RebreatherB")
 #define VEST_DIVER		ARR_1("V_TacVestIR_blk")
@@ -165,8 +165,8 @@
 
 //  SF CARBINE
 
-#define MAG_RIFLE_RECON          ARR_1("30Rnd_556x45_Stanag")
-#define MAG_RIFLE_RECON_TRACER   ARR_1("30Rnd_556x45_Stanag_Tracer_Red")
+#define MAG_RIFLE_RECON          ARR_1("30Rnd_556x45_Stanag_red")
+#define MAG_RIFLE_RECON_TRACER   ARR_1("ACE_30Rnd_556x45_Stanag_Tracer_Dim")
 
 //  AR & MG
 #define MAGS_AUTORIFLE      ARR_4("100Rnd_65x39_caseless_mag",7,"100Rnd_65x39_caseless_mag_Tracer",3)

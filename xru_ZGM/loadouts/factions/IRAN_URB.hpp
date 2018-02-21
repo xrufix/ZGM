@@ -9,17 +9,17 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_LIGHT      "v_chestrig_blk"
-#define VEST_RIFLEMAN   VEST_LIGHT
-#define VEST_GRENADIER  "v_harnessogl_gry"
-#define VEST_MEDIC      VEST_LIGHT
+#define VEST_RM         VEST_LIGHT
+#define VEST_GR         "v_harnessogl_gry"
+#define VEST_CM         VEST_LIGHT
 #define VEST_SL         "v_harnesso_gry"
 
 #define VEST_CREW		"V_LegStrapBag_black_F"
 
-#define VEST_RECON			VEST_MEDIC
-#define VEST_RECON_TL		VEST_RIFLEMAN
-#define VEST_RECON_MG		VEST_MEDIC
-#define VEST_RECON_GR		VEST_GRENADIER
+#define VEST_RECON			VEST_CM
+#define VEST_RECON_TL		VEST_RM
+#define VEST_RECON_MG		VEST_CM
+#define VEST_RECON_GR		VEST_GR
 
 #define VEST_BREATHER	ARR_1("V_RebreatherIR")
 #define VEST_DIVER		ARR_1("ACE_Banana")

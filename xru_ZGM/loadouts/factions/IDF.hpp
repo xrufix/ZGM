@@ -22,11 +22,11 @@
 #define VEST_EMPTY      ARR_1("VSM_LBT1961_OGA_OD")
 #define VEST_OFFICER       ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      ARR_3("V_Chestrig_rgr","V_Chestrig_khk","V_Chestrig_oli")
-#define VEST_RIFLEMAN   ARR_3("V_TacVest_oli","V_TacVest_khk","V_TacVest_brn")
-#define VEST_GRENADIER  ARR_1("V_PlateCarrier1_rgr_noflag_F")
-#define VEST_MEDIC      ARR_1("VSM_LBT6094_operator_OGA_OD")
+#define VEST_RM         ARR_3("V_TacVest_oli","V_TacVest_khk","V_TacVest_brn")
+#define VEST_GR         ARR_1("V_PlateCarrier1_rgr_noflag_F")
+#define VEST_CM         ARR_1("VSM_LBT6094_operator_OGA_OD")
 #define VEST_SL         ARR_1("V_PlateCarrier2_rgr_noflag_F")
-#define VEST_TL         VEST_GRENADIER
+#define VEST_TL         VEST_GR
 #define VEST_MG         ARR_4("VSM_FAPC_MG_OGA_OD","VSM_CarrierRig_Gunner_OGA_OD","VSM_LBT6094_MG_OGA_OD","VSM_RAV_MG_OGA_OD")
 #define VEST_DM         ARR_2("VSM_CarrierRig_Operator_OGA_OD","VSM_FAPC_Operator_OGA_OD")
 
@@ -139,14 +139,14 @@
 
 /* ###################### - MAGAZINES - ###################### */
 //  RIFLE & CARBINE
-#define MAG_RIFLE			    ARR_1("30Rnd_556x45_Stanag")
+#define MAG_RIFLE			    ARR_1("30Rnd_556x45_Stanag_red")
 #define MAG_RIFLE_TRACER	    ARR_1("30Rnd_556x45_Stanag_Tracer_Red")
 
 #define MAG_CARBINE             MAG_RIFLE
 #define MAG_CARBINE_TRACER      MAG_RIFLE_TRACER
 
 #define MAG_RIFLE_RECON          MAG_RIFLE
-#define MAG_RIFLE_RECON_TRACER   MAG_RIFLE_TRACER
+#define MAG_RIFLE_RECON_TRACER   ARR_1("ACE_30Rnd_556x45_Stanag_Tracer_Dim")
 
 //  AR & MG
 #define MAG_AUTORIFLE       ARR_1("150Rnd_762x54_Box")

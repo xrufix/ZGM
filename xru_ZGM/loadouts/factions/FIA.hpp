@@ -22,20 +22,20 @@
 #define VEST_EMPTY      ARR_3("V_LegStrapBag_black_F","V_LegStrapBag_coyote_F","V_LegStrapBag_olive_F")
 #define VEST_OFFICER    ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      ARR_5("V_BandollierB_khk","V_BandollierB_cbr","V_BandollierB_rgr","V_BandollierB_blk","V_BandollierB_oli")
-#define VEST_RIFLEMAN   ARR_5("V_Chestrig_khk","V_Chestrig_rgr","V_Chestrig_blk","V_Chestrig_oli","xru_V_Chestrig_cbr")
-#define VEST_GRENADIER  ARR_3("V_TacChestrig_grn_F","V_TacChestrig_oli_F","V_TacChestrig_cbr_F")
-#define VEST_MEDIC      ARR_1("V_TacVestIR_blk")
+#define VEST_RM         ARR_5("V_Chestrig_khk","V_Chestrig_rgr","V_Chestrig_blk","V_Chestrig_oli","xru_V_Chestrig_cbr")
+#define VEST_GR         ARR_3("V_TacChestrig_grn_F","V_TacChestrig_oli_F","V_TacChestrig_cbr_F")
+#define VEST_CM         ARR_1("V_TacVestIR_blk")
 #define VEST_SL         ARR_6("V_I_G_resistanceLeader_F","V_TacVest_khk","V_TacVest_brn","V_TacVest_oli","V_TacVest_blk","V_TacVest_camo")
 #define VEST_TL         VEST_SL
-#define VEST_MG         VEST_GRENADIER
-#define VEST_DM         VEST_RIFLEMAN
+#define VEST_MG         VEST_GR
+#define VEST_DM         VEST_RM
 
 #define VEST_CREW		VEST_EMPTY
 
-#define VEST_RECON			VEST_RIFLEMAN
+#define VEST_RECON			VEST_RM
 #define VEST_RECON_TL		VEST_SL
-#define VEST_RECON_MG		VEST_GRENADIER
-#define VEST_RECON_GR		VEST_GRENADIER
+#define VEST_RECON_MG		VEST_GR
+#define VEST_RECON_GR		VEST_GR
 
 #define VEST_BREATHER	ARR_1("V_RebreatherB")
 #define VEST_DIVER		ARR_1("V_TacVestIR_blk")
@@ -111,7 +111,7 @@
     WEAPON(RIFLE_UGL_3,"optic_aco_grn_smg","",LIGHT))
 
 #define MAG_RIFLE           ARR_1("30Rnd_556x45_Stanag")
-#define MAG_RIFLE_TRACER    ARR_1("30Rnd_556x45_Stanag_Tracer_Green")
+#define MAG_RIFLE_TRACER    ARR_1("30Rnd_556x45_Stanag_Tracer_yellow")
 
 
 // CARBINE
@@ -157,7 +157,7 @@
 #define RIFLE_UGL_DIVER 	RIFLE_UGL_RECON
 
 #define MAG_RIFLE_RECON          MAG_CARBINE
-#define MAG_RIFLE_RECON_TRACER   MAG_CARBINE_TRACER
+#define MAG_RIFLE_RECON_TRACER   ARR_1("ACE_30Rnd_556x45_Stanag_Tracer_Dim")
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES

@@ -22,13 +22,13 @@
 #define VEST_EMPTY      "rhs_6b23"
 #define VEST_OFFICER    "rhs_6b23_crewofficer"
 #define VEST_LIGHT      "rhs_6b23_6sh92"
-#define VEST_RIFLEMAN   VEST_LIGHT
-#define VEST_GRENADIER  "rhs_6b23_6sh92_vog"
-#define VEST_MEDIC      "rhs_6b23_medic"
+#define VEST_RM         VEST_LIGHT
+#define VEST_GR         "rhs_6b23_6sh92_vog"
+#define VEST_CM         "rhs_6b23_medic"
 #define VEST_TL         "rhs_6b23_6sh92_headset_mapcase"
 #define VEST_SL         "rhs_6b23_6sh92_vog_headset"
-#define VEST_MG         VEST_RIFLEMAN
-#define VEST_DM         VEST_RIFLEMAN
+#define VEST_MG         VEST_RM
+#define VEST_DM         VEST_RM
 
 #define VEST_CREW		"rhs_6b23_crew"
 

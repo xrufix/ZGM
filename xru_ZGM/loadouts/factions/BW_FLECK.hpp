@@ -20,11 +20,11 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      ARR_1("BWA3_Vest_Fleck")
-#define VEST_OFFICER       VEST_EMPTY
+#define VEST_OFFICER    VEST_EMPTY
 #define VEST_LIGHT      ARR_1("BWA3_Vest_Rifleman1_Fleck")
-#define VEST_RIFLEMAN   VEST_LIGHT
-#define VEST_GRENADIER  ARR_1("BWA3_Vest_Grenadier_Fleck")
-#define VEST_MEDIC      ARR_1("BWA3_Vest_Medic_Fleck")
+#define VEST_RM         VEST_LIGHT
+#define VEST_GR         ARR_1("BWA3_Vest_grenadier_Fleck")
+#define VEST_CM         ARR_1("BWA3_Vest_Medic_Fleck")
 #define VEST_SL         ARR_1("BWA3_Vest_Leader_Fleck")
 #define VEST_TL         VEST_SL
 #define VEST_MG         ARR_1("BWA3_Vest_Autorifleman_Fleck")
@@ -74,11 +74,11 @@
 
 /* ###################### - PRIMARY WEAPONS - ###################### */
 // STANDARD ISSUE ASSAULT RIFLE
-#define RIFLE           "hlc_rifle_G36A1"
+#define RIFLE           WEAPON("hlc_rifle_G36A1","ACE_muzzle_mzls_L","","")
 #define RIFLE_RCO       RIFLE
 #define RIFLE_CCO       RIFLE
 
-#define RIFLE_UGL       "hlc_rifle_G36A1AG36"
+#define RIFLE_UGL       WEAPON("hlc_rifle_G36A1AG36","ACE_muzzle_mzls_L","","")
 #define RIFLE_UGL_RCO   RIFLE_UGL
 #define RIFLE_UGL_CCO   RIFLE_UGL
 
@@ -91,8 +91,8 @@
 
 
 // CARBINE
-#define CARBINE             "hlc_rifle_G36C"
-#define CARBINE_CCO        WEAPON(CARBINE,"optic_Holosight_blk_F","","")
+#define CARBINE            WEAPON("hlc_rifle_G36C","ACE_muzzle_mzls_L","","")
+#define CARBINE_CCO        WEAPON("hlc_rifle_G36C","optic_Holosight_blk_F","ACE_muzzle_mzls_L","")
 
 #define CARBINE_UGL	        RIFLE_UGL
 #define CARBINE_UGL_CCO    RIFLE_UGL_CCO
@@ -104,10 +104,10 @@
 // SF CARBINES
 #define RIFLE_RECON              WEAPON("hlc_rifle_G36KA1KSK","rhsusf_acc_g33_xps3","BWA3_acc_VarioRay_irlaser","hlc_muzzle_556NATO_KAC")
 #define RIFLE_UGL_RECON          WEAPON("HLC_Rifle_G36KSKAG36","rhsusf_acc_g33_xps3","BWA3_acc_VarioRay_irlaser","hlc_muzzle_556NATO_KAC")
-#define RIFLE_RECON_TAN           WEAPON("hlc_rifle_g36KTac","rhsusf_acc_g33_xps3","BWA3_acc_VarioRay_irlaser","hlc_muzzle_556NATO_KAC")
-#define RIFLE_UGL_RECON_TAN		RIFLE_UGL_RECON
-#define RIFLE_DIVER 		RIFLE_RECON
-#define RIFLE_UGL_DIVER 	RIFLE_UGL_RECON
+#define RIFLE_RECON_TAN          WEAPON("hlc_rifle_g36KTac","rhsusf_acc_g33_xps3","BWA3_acc_VarioRay_irlaser","hlc_muzzle_556NATO_KAC")
+#define RIFLE_UGL_RECON_TAN		 RIFLE_UGL_RECON
+#define RIFLE_DIVER 		     RIFLE_RECON
+#define RIFLE_UGL_DIVER 	     RIFLE_UGL_RECON
 
 #define MAG_RIFLE_RECON          MAG_RIFLE
 #define MAG_RIFLE_RECON_TRACER   MAG_RIFLE_TRACER

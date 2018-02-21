@@ -20,11 +20,11 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      "rhsgref_6b23_khaki"
-#define VEST_OFFICER       "rhsgref_6b23_khaki_nco"
+#define VEST_OFFICER    "rhsgref_6b23_khaki_nco"
 #define VEST_LIGHT      "rhsgref_6b23_ttsko_mountain_rifleman"
-#define VEST_RIFLEMAN   VEST_LIGHT
-#define VEST_GRENADIER  "rhs_6b23_6sh116_vog_od"
-#define VEST_MEDIC      "rhsgref_6b23_ttsko_mountain_medic"
+#define VEST_RM         VEST_LIGHT
+#define VEST_GR         "rhs_6b23_6sh116_vog_od"
+#define VEST_CM         "rhsgref_6b23_ttsko_mountain_medic"
 #define VEST_TL         VEST_LIGHT
 #define VEST_SL         "rhs_6b23_6sh116_vog_od"
 #define VEST_MG         VEST_LIGHT

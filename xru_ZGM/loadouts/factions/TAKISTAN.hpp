@@ -22,13 +22,13 @@
 #define VEST_EMPTY      "rhs_6sh46"
 #define VEST_OFFICER    "rhs_vest_commander"
 #define VEST_LIGHT      "rhs_6sh92_vsr"
-#define VEST_RIFLEMAN   VEST_LIGHT
-#define VEST_GRENADIER  "rhs_6sh92_vsr_vog"
-#define VEST_MEDIC      VEST_RIFLEMAN
+#define VEST_RM         VEST_LIGHT
+#define VEST_GR         "rhs_6sh92_vsr_vog"
+#define VEST_CM         VEST_RM
 #define VEST_TL         "rhs_6sh92_vsr_headset"
 #define VEST_SL         "rhs_6sh92_vsr_vog_headset"
-#define VEST_MG         VEST_RIFLEMAN
-#define VEST_DM         VEST_RIFLEMAN
+#define VEST_MG         VEST_RM
+#define VEST_DM         VEST_RM
 
 #define VEST_CREW		VEST_EMPTY
 
@@ -38,7 +38,7 @@
 #define VEST_RECON_GR		VEST_RECON_TL
 
 #define VEST_BREATHER	ARR_1("V_RebreatherIR")
-#define VEST_DIVER		VEST_RIFLEMAN
+#define VEST_DIVER		VEST_RM
 
 
 
