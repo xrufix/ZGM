@@ -22,12 +22,12 @@
 #define VEST_EMPTY      ARR_1("V_PlateCarrierL_CTRG")
 #define VEST_OFFICER    ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      VEST_EMPTY
-#define VEST_RIFLEMAN   VEST_LIGHT
-#define VEST_GRENADIER  ARR_1("V_PlateCarrierH_CTRG")
-#define VEST_MEDIC      VEST_LIGHT
-#define VEST_SL         VEST_GRENADIER
-#define VEST_TL         VEST_GRENADIER
-#define VEST_MG         VEST_GRENADIER
+#define VEST_RM         VEST_LIGHT
+#define VEST_GR         ARR_1("V_PlateCarrierH_CTRG")
+#define VEST_CM         VEST_LIGHT
+#define VEST_SL         VEST_GR
+#define VEST_TL         VEST_GR
+#define VEST_MG         VEST_GR
 #define VEST_DM         VEST_LIGHT
 
 #define VEST_CREW		ARR_1("V_Chestrig_blk")
@@ -83,7 +83,7 @@
 #define RIFLE_CCO       WEAPON(RIFLE,RCO,LASERPOINTER,"")
 #define RIFLE_UGL_CCO   WEAPON(RIFLE_UGL,RCO,LASERPOINTER,"")
 
-#define MAG_RIFLE			ARR_1("30Rnd_556x45_Stanag")
+#define MAG_RIFLE			ARR_1("30Rnd_556x45_Stanag_red")
 #define MAG_RIFLE_TRACER	ARR_1("30Rnd_556x45_Stanag_Tracer_Red")
 
 
@@ -110,7 +110,7 @@
 #define RIFLE_UGL_DIVER 	WEAPON("arifle_SPAR_01_gl_blk_F","optic_Holosight_blk_F",LASERPOINTER,"muzzle_snds_M")
 
 #define MAG_RIFLE_RECON          MAG_RIFLE
-#define MAG_RIFLE_RECON_TRACER   MAG_RIFLE_TRACER
+#define MAG_RIFLE_RECON_TRACER   ARR_1("ACE_30Rnd_556x45_Stanag_Tracer_Dim")
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
 #define DMR         WEAPON("hlc_rifle_ACR68_full_tan","optic_SOS",LASERPOINTER,DMR_BIPOD)

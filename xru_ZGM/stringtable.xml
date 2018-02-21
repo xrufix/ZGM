@@ -6,6 +6,18 @@
                 <English>AAF - Altis Armed Forces</English>
                 <German>AAF - Altische Streitkräfte</German>
             </Key>
+            <Key ID="STR_ZGM_FACTIONS_BAF_CTRG">
+                <English>BAF - British Army 2035 (CTRG)</English>
+                <German>BAF - Britische Armee 2035 (CTRG)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_BAF_DPM">
+                <English>BAF - British Army 2008 (DPM, woodland)</English>
+                <German>BAF - British Army 2008 (DPM, Wald)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_BAF_MTP">
+                <English>BAF - British Army 2017 (MTP)</English>
+                <German>BAF - British Army 2017 (MTP)</German>
+            </Key>
             <Key ID="STR_ZGM_FACTIONS_BEL_DES">
                 <English>BEL – Belgium (Desert)</English>
                 <German>BEL – Belgien (Wüste)</German>
@@ -54,10 +66,6 @@
             <Key ID="STR_ZGM_FACTIONS_IRAN_URB">
                 <English>CSAT - Iranian Army (Urban)</English>
                 <German>CSAT - Iranische Armee (Stadt)</German>
-            </Key>
-            <Key ID="STR_ZGM_FACTIONS_NATO_CTRG">
-                <English>CTRG - British Army 2035</English>
-                <German>CTRG - Britische Armee 2035</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_NATO_MTP">
                 <English>NATO 2035 (MTP)</English>

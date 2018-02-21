@@ -2,6 +2,18 @@
 #include "factions\AAF.hpp"
 #include "common\template.hpp"
 
+#define FACTION BAF_CTRG
+#include "factions\BAF_CTRG.hpp"
+#include "common\template.hpp"
+
+#define FACTION BAF_DPM
+#include "factions\BAF_DPM.hpp"
+#include "common\template.hpp"
+
+#define FACTION BAF_MTP
+#include "factions\BAF_MTP.hpp"
+#include "common\template.hpp"
+
 #define FACTION BEL_DES
 #include "factions\BEL_DES.hpp"
 #include "common\template.hpp"
@@ -52,10 +64,6 @@
 
 #define FACTION IRAN_URB
 #include "factions\IRAN_URB.hpp"
-#include "common\template.hpp"
-
-#define FACTION NATO_CTRG
-#include "factions\NATO_CTRG.hpp"
 #include "common\template.hpp"
 
 #define FACTION NATO_MTP

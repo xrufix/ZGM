@@ -6,6 +6,9 @@ class DOUBLES(faction,var1) { \
     title = CSTRING(PARAMS,var1); \
     values[] = { \
         100, \
+        110, \
+        113, \
+        115, \
         125, \
         150, \
         175, \
@@ -19,7 +22,6 @@ class DOUBLES(faction,var1) { \
         375, \
         400, \
         425, \
-        450, \
         475, \
         500, \
         525, \
@@ -37,6 +39,9 @@ class DOUBLES(faction,var1) { \
     }; \
     texts[] = { \
 /* 100 */   CSTRING(FACTIONS,AAF), \
+/* 110 */   CSTRING(FACTIONS,BAF_CTRG), \
+/* 113 */   CSTRING(FACTIONS,BAF_DPM), \
+/* 115 */   CSTRING(FACTIONS,BAF_MTP), \
 /* 125 */   CSTRING(FACTIONS,BEL_DES), \
 /* 150 */   CSTRING(FACTIONS,BEL_WDL), \
 /* 175 */   CSTRING(FACTIONS,BHEER), \
@@ -50,7 +55,6 @@ class DOUBLES(faction,var1) { \
 /* 375 */   CSTRING(FACTIONS,IRAN), \
 /* 400 */   CSTRING(FACTIONS,IRAN_GRN), \
 /* 425 */   CSTRING(FACTIONS,IRAN_URB), \
-/* 450 */   CSTRING(FACTIONS,NATO_CTRG), \
 /* 475 */   CSTRING(FACTIONS,NATO_MTP), \
 /* 500 */   CSTRING(FACTIONS,NATO_TRPC), \
 /* 525 */   CSTRING(FACTIONS,NATO_WDL), \
