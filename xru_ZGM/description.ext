@@ -22,7 +22,6 @@ class CfgFunctions {
     #include "xru\CfgFunctions.hpp"
 };
 
-#define ACE_INTERACTION_TEAMMANAGEMENT 1
 class params {
     #include "xru\params.hpp"
     #include "zgm\params.hpp"
