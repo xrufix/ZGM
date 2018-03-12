@@ -100,8 +100,8 @@
 #define RIFLE_CCO RIFLE_RCO
 #define RIFLE_UGL_CCO RIFLE_UGL_RCO
 
-#define MAG_RIFLE			"30Rnd_556x45_Stanag_red"
-#define MAG_RIFLE_TRACER	"30Rnd_556x45_Stanag_Tracer_Red"
+#define MAG_RIFLE			"rhs_mag_30Rnd_556x45_M855_Stanag"
+#define MAG_RIFLE_TRACER	"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red"
 
 // PDW
 #define PDW WEAPON("SMG_05_F","","","")
@@ -170,8 +170,8 @@
     WEAPON("rhs_weap_m27iar_grip",LASERPOINTER,RCO_2,"rhsusf_acc_harris_bipod"),	\
     WEAPON("rhs_weap_m27iar_grip",LASERPOINTER,RCO_3,"rhsusf_acc_harris_bipod"))
 #define MAG_AUTORIFLE       MAG_RIFLE
-#define MAGS_AUTORIFLE      ARR_4(MAG_RIFLE,15,MAG_RIFLE_TRACER,5)
-#define MAGS_AUTORIFLE_ASST ARR_4(MAG_RIFLE,10,MAG_RIFLE_TRACER,5)
+#define MAGS_AUTORIFLE      ARR_4(MAG_RIFLE,12,MAG_RIFLE_TRACER,4)
+#define MAGS_AUTORIFLE_ASST ARR_4(MAG_RIFLE,8,MAG_RIFLE_TRACER,4)
 
 #define AUTORIFLE_RECON ARR_3(                                                                     	\
     WEAPON("arifle_SPAR_02_khk_F","rhsusf_acc_nt4_tan","bipod_01_F_khk","rhsusf_acc_SpecterDR_D"),	\

@@ -9,7 +9,7 @@
 #define	UNIFORM_SINGLE      "rhs_uniform_cu_ocp"
 #define UNIFORM             ARR_1(UNIFORM_SINGLE)
 #define UNIFORM_COMPANY     UNIFORM
-#define UNIFORM_RECON     ARR_1("rhs_uniform_g3_mc")
+#define UNIFORM_RECON       ARR_1("rhs_uniform_g3_mc")
 #define UNIFORM_DIVER       ARR_1("U_I_Wetsuit")
 #define UNIFORM_CREW        UNIFORM
 #define UNIFORM_HELICOPTER  ARR_1("U_B_HeliPilotCoveralls")
@@ -100,8 +100,8 @@
     WEAPON(RIFLE_2,LASERPOINTER,CCO,""))
 #define RIFLE_UGL_CCO ARR_1(                  \
     WEAPON(RIFLE_UGL,LASERPOINTER,CCO,""))
-#define MAG_RIFLE			ARR_1("30Rnd_556x45_Stanag_red")
-#define MAG_RIFLE_TRACER	ARR_1("30Rnd_556x45_Stanag_Tracer_Red")
+#define MAG_RIFLE			"rhs_mag_30Rnd_556x45_M855_Stanag"
+#define MAG_RIFLE_TRACER	"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red"
 
 // PDW
 #define PDW     WEAPON("SMG_05_F","","","")
