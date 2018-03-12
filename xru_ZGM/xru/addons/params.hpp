@@ -48,14 +48,3 @@ class GVAR(ace_microdagr) {
     function = QFUNC(ace_microdagr);
     isGlobal = 1;
 };
-class GVAR(ace_teamManagement) {
-    title = "xru_addons: [ACE] Team Management";
-    values[] = {0,1};
-    texts[] = {
-        "Disabled",
-        "Enabled"
-    };
-    default = ACE_INTERACTION_TEAMMANAGEMENT;
-    function = QFUNC(ace_teamManagement);
-    isGlobal = 1;
-};

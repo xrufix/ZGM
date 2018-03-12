@@ -16,6 +16,6 @@ GVAR(impactBlur) ppEffectCommit 0;
 GVAR(impactBlur) ppEffectAdjust [0];
 GVAR(impactBlur) ppEffectCommit (0.2 + _impact / 10);
 
-//[player, "xru_suppress", 1 + GVAR(weaponSway) * 9 * (_suppression ^ 1.5)] call ace_common_fnc_setAimCoef;
+//[ace_player, "xru_suppress", 1 + GVAR(weaponSway) * 9 * (_suppression ^ 1.5)] call ace_common_fnc_setAimCoef;
 
 GVAR(lastShotAt) = time;

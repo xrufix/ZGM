@@ -8,7 +8,6 @@ class xru_addons {
             preInit = 1;
         };
         class ace_microdagr {};
-        class ace_teamManagement {};
         class acre {};
         class easytrack {};
         class logitrack {
