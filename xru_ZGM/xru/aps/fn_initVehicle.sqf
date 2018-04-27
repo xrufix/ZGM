@@ -11,7 +11,7 @@
  * Return Value:
  * NONE
  *
- * Example: [tankymctankface, 20] call xru_hardkill_fnc_initVehicle
+ * Example: [tankymctankface, 20] call xru_aps_fnc_initVehicle
  *
  * Public: Yes
  *
@@ -19,6 +19,9 @@
 #include "script_component.hpp"
 
 params [["_vehicle", objNull, [objNull]], ["_ammo", 10, [1]], ["_activate", true, [true]], ["_addActions", true, [true]]];
+#ifdef DEBUG_MODE_FULL
+    (format ["Init Vehicle %1: _ammo = %2; _activate = %3; _addActions = %4", _vehicle, _ammo, _activate, _addActions]) remoteExec ["hint"];
+#endif
 
 _vehicle setVariable [QGVAR(ammo), _ammo, true];
 

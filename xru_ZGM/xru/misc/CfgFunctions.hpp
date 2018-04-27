@@ -5,6 +5,9 @@ class xru_misc {
         class insigniaFix {
             postInit = 1;
         };
+        class tankFlip {
+            preInit = 1;
+        };
         class zeusHandle {
             postInit = 1;
         };

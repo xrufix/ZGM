@@ -10,7 +10,7 @@
  * Return Value:
  * NONE
  *
- * Example: [player] call xru_hardkill_fnc_showVehicleHud
+ * Example: [ace_player] call xru_aps_fnc_showVehicleHud
  *
  * Public: No 
  *

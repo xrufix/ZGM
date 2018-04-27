@@ -4,7 +4,7 @@ private _timeFactor = (time - GVAR(lastReduce));
 
 GVAR(bullets) = GVAR(bullets) select {
 	_x params ["_bullet","_hit","_radius"];
-	private _distance = _bullet distance ((position ace_player) vectorAdd (ace_player selectionPosition "head"));
+	private _distance = (getPosASL _bullet) distance (eyePos ace_player);
 	switch true do {
 		case (!alive _bullet) : {			// Remove bullets which are no longer present.
 			false

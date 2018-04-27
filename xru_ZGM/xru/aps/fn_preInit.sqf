@@ -8,7 +8,7 @@
  * Return Value:
  * NONE
  *
- * Example: [] call xru_hardkill_fnc_preInit
+ * Example: [] call xru_aps_fnc_preInit
  *
  * Public: No 
  *
@@ -16,9 +16,9 @@
 #include "script_component.hpp"
 
 // Init GVARs
-GVAR(classHash) = [];
 GVAR(trackedProjectiles) = [];
 GVAR(hudPfId) = -1;
+GVAR(classHash) = call CBA_fnc_createNamespace;
 
 // Create CBA EventHandlers
 [QGVAR(enablePFH), {
@@ -55,9 +55,9 @@ GVAR(interaction_disable) = [QGVAR(interaction_disable), "Disengage", "", {
 
 GVAR(interaction_rearm) = [QGVAR(interaction_rearm), "Rearm APS", "", {
 	params ["_target", "", ""];
-	_target setVariable [QGVAR(ammo), [_target, 1] call FUNC(getHash), true];
+	_target setVariable [QGVAR(ammo), [_target, 0] call FUNC(getHash), true];
 }, {
 	params ["_target", "", ""];
 	private _vehicles = (_target nearObjects ["all", 20]) select {(typeOf _x) in ace_rearm_configTypesAdded};
-	(count _vehicles > 0) && ((_target getVariable [QGVAR(ammo), 0]) < ([_target, 1] call FUNC(getHash)))
+	(count _vehicles > 0) && ((_target getVariable [QGVAR(ammo), 0]) < ([_target, 0] call FUNC(getHash)))
 }] call ace_interact_menu_fnc_createAction;

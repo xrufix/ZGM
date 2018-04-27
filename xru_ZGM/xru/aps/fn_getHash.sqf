@@ -4,12 +4,12 @@
  *
  * Arguments:
  * 0: Vehicle <OBJECT> or Classname <STRING>
- * 1: Index (1 for ammo count, 2 for activation, 3 for inheritance) <NUMBER><OPTIONAL>
+ * 1: Index (0 for ammo count, 1 for activation, 2 for inheritance) <NUMBER><OPTIONAL>
  *
  * Return Value:
- * Array (classname, ammo count, activation, inheritance) or false (when class name was not found or index is wrong) or classname/ammo count/activation/inheritance.
+ * Array (ammo count, activation, inheritance) or ammo count/activation/inheritance or nil (when class name was not found or index is wrong).
  *
- * Example: ["my_tank_class"] call xru_hardkill_fnc_getHash
+ * Example: ["my_tank_class"] call xru_aps_fnc_getHash
  *
  * Public: No
  *
@@ -19,22 +19,27 @@
 params [["_class", "", ["", objNull]], ["_index", -1, [1]]];
 
 if (_class isEqualType objNull) then {
-	_class = typeOf _class
+	_class = tolower (typeOf _class);
 };
 
-private _hash = GVAR(classHash) select {_x select 0 == _class};
-if (count _hash == 0) then {
-	_hash = GVAR(classHash) select {(_class isKindOf (_x select 0)) && (_x select 3)}
-	
+private _hash = GVAR(classHash) getVariable [_class, 0];
+
+if (_hash isEqualTo 0) then {
+	private _parents = ([(configFile >> "CfgVehicles" >> _class), true] call BIS_fnc_returnParents) apply {tolower _x};
+	_hash = {
+		private _currentHash = GVAR(classHash) getVariable [_x, 0];
+		if (!(_currentHash isEqualTo 0)) exitWith {_currentHash};
+	} count _parents;
 };
-if (count _hash == 0) exitWith {
+
+if (_hash isEqualTo 0) exitWith {
 	WARNING("Class " + _class + " not found in classHash");
-	false
+	nil
 };
 
-if (_index == -1) exitWith {_hash select 0};
+if (_index == -1) exitWith {_hash};
 
-if (_index in [0, 1, 2, 3]) exitWith {_hash select 0 select _index};
+if (_index in [0, 1, 2]) exitWith {_hash select _index};
 
 ERROR("given index invalid");
-false
+nil

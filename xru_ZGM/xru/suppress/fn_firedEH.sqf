@@ -15,7 +15,7 @@ if (isNull _projectile) then {
 
 private _hit = getNumber (configfile >> "CfgAmmo" >> _ammo >> "hit");
 
-if (lineIntersects [getPosASL _projectile, (getPosASL ace_player) vectorAdd (ace_player selectionPosition "head"), _unit, ace_player]) then {
+if (lineIntersects [getPosASL _projectile, eyePos ace_player, _unit, ace_player]) then {
     _hit = _hit / 3;
 };
 

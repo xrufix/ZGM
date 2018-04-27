@@ -11,7 +11,7 @@
  * Return Value:
  * NONE
  *
- * Example: ["tank", 20, false, true] call xru_hardkill_fnc_initClass
+ * Example: ["tank", 20, false, true] call xru_aps_fnc_initClass
  *
  * Public: Yes
  *

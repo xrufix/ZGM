@@ -10,7 +10,7 @@
  * Return Value:
  * NONE
  *
- * Example: [tankymctankface, 2] call xru_hardkill_fnc_pfh
+ * Example: [tankymctankface, 2] call xru_aps_fnc_pfh
  *
  * Public: No 
  *

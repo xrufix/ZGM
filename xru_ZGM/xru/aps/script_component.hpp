@@ -1,3 +1,5 @@
+// #define DEBUG_MODE_FULL
+
 #define COMPONENT aps
 #include "..\script_component.hpp"
 
