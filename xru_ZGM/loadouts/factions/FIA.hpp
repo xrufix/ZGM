@@ -168,10 +168,10 @@
 #define MAG_DMR ARR_1("20Rnd_762x51_Mag")
 
 #define DMR_RECON ARR_4( \
-    WEAPON("srifle_DMR_06_camo_F",SNIPER_OPTIC,"",DMR_BIPOD), \
-    WEAPON("srifle_ebr_f",SNIPER_OPTIC,"",DMR_BIPOD), \
-    WEAPON("srifle_DMR_03_multicam_F",SNIPER_OPTIC,"",DMR_BIPOD), \
-    WEAPON("srifle_DMR_03_woodland_F",SNIPER_OPTIC,"",DMR_BIPOD))
+    WEAPON("srifle_DMR_06_camo_F",SNIPER_OPTIC,"",""), \
+    WEAPON("srifle_ebr_f",SNIPER_OPTIC,"",""), \
+    WEAPON("srifle_DMR_03_multicam_F",SNIPER_OPTIC,"",""), \
+    WEAPON("srifle_DMR_03_woodland_F",SNIPER_OPTIC,"",""))
 #define DMR_DIVER   DMR_RECON
 #define MAG_DMR_RECON  MAG_DMR
 
