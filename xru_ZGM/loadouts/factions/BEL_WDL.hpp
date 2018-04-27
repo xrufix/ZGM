@@ -125,7 +125,7 @@
 
 #define DMR_RECON     WEAPON("CUP_arifle_Mk17_STD_FG_woodland","bipod_01_F_blk","rhsusf_acc_ACOG_MDO","CUP_muzzle_snds_SCAR_H")
 #define DMR_DIVER     DMR_RECON
-#define MAG_DMR_RECON MAG_DMR
+#define MAG_DMR_RECON "CUP_20Rnd_762x51_B_SCAR"
 
 #define SR_AP         WEAPON("hlc_rifle_awMagnum_OD_ghillie","",SNIPER_OPTIC,"")
 #define MAGS_SR_AP    ARR_4("hlc_5rnd_300WM_mk248_AWM",5,"hlc_5rnd_300WM_AP_AWM",5)
