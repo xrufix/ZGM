@@ -118,7 +118,7 @@
 #define MAG_DMR     ARR_1("20Rnd_762x51_Mag")
 
 #define DMR_RECON      WEAPON("arifle_SPAR_03_khk_F","rhsusf_acc_LEUPOLDMK4_2","bipod_01_F_blk","hlc_muzzle_300blk_KAC")
-#define DMR_DIVER   WEAPON("arifle_SPAR_03_blk_F","rhsusf_acc_LEUPOLDMK4_2","bipod_01_F_blk","hlc_muzzle_300blk_KAC")
+#define DMR_DIVER      WEAPON("arifle_SPAR_03_blk_F","rhsusf_acc_LEUPOLDMK4_2","bipod_01_F_blk","hlc_muzzle_300blk_KAC")
 #define MAG_DMR_RECON  ARR_1("20Rnd_762x51_Mag")
 
 #define SR_AP       WEAPON("hlc_rifle_awMagnum_OD_ghillie","rhsusf_acc_LEUPOLDMK4_2","","")
