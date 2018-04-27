@@ -7,12 +7,6 @@ class CfgFactions {
         index = 100;
         sideShort = "i";
     };
-    class BAF_CTRG {
-        displayName = CSTRING(FACTIONS,BAF_CTRG);
-        icon = "\a3\Data_F_Exp\FactionIcons\icon_CTRG_CA.paa";
-        index = 110;
-        sideShort = "b";
-    };
     class BAF_DPM {
         displayName = CSTRING(FACTIONS,BAF_DPM);
         icon = "\a3\ui_f\data\map\markers\flags\uk_ca.paa";
@@ -72,6 +66,18 @@ class CfgFactions {
         icon = "\A3\Ui_f\data\Map\Markers\Flags\viper_ca.paa";
         index = 300;
         sideShort = "o";
+    };
+    class CTRG_DES {
+        displayName = CSTRING(FACTIONS,CTRG_DES);
+        icon = "\a3\Data_F_Exp\FactionIcons\icon_CTRG_CA.paa";
+        index = 310;
+        sideShort = "b";
+    };
+    class CTRG_WDL {
+        displayName = CSTRING(FACTIONS,CTRG_WDL);
+        icon = "\a3\Data_F_Exp\FactionIcons\icon_CTRG_CA.paa";
+        index = 315;
+        sideShort = "b";
     };
     class FIA {
         displayName = CSTRING(FACTIONS,FIA);

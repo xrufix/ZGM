@@ -6,10 +6,6 @@
                 <English>AAF - Altis Armed Forces</English>
                 <German>AAF - Altische Streitkräfte</German>
             </Key>
-            <Key ID="STR_ZGM_FACTIONS_BAF_CTRG">
-                <English>BAF - British Army 2035 (CTRG)</English>
-                <German>BAF - Britische Armee 2035 (CTRG)</German>
-            </Key>
             <Key ID="STR_ZGM_FACTIONS_BAF_DPM">
                 <English>BAF - British Army 2008 (DPM, woodland)</English>
                 <German>BAF - British Army 2008 (DPM, Wald)</German>
@@ -47,6 +43,14 @@
             <Key ID="STR_ZGM_FACTIONS_CHINA_GRN">
                 <English>CSAT - PLA of China (Green)</English>
                 <German>CSAT - Volksarmee China (Grün)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_CTRG_DES">
+                <English>CTRG - Mediteranean</English>
+                <German>CTRG - Mediteran</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_CTRG_WDL">
+                <English>CTRG - Woodland</English>
+                <German>CTRG - Wald</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_FIA">
                 <English>FIA - Freedom and Independece Army</English>

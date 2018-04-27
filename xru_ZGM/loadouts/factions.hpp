@@ -2,10 +2,6 @@
 #include "factions\AAF.hpp"
 #include "common\template.hpp"
 
-#define FACTION BAF_CTRG
-#include "factions\BAF_CTRG.hpp"
-#include "common\template.hpp"
-
 #define FACTION BAF_DPM
 #include "factions\BAF_DPM.hpp"
 #include "common\template.hpp"
@@ -44,6 +40,14 @@
 
 #define FACTION CHINA_GRN
 #include "factions\CHINA_GRN.hpp"
+#include "common\template.hpp"
+
+#define FACTION CTRG_DES
+#include "factions\CTRG_DES.hpp"
+#include "common\template.hpp"
+
+#define FACTION CTRG_WDL
+#include "factions\CTRG_WDL.hpp"
 #include "common\template.hpp"
 
 #define FACTION FIA
