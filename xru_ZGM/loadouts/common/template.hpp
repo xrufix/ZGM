@@ -509,8 +509,8 @@ class LOADOUT(diver,common) : LOADOUT(recon,common) {
         gps[] = {EASYTRACK_PDA};
     #endif
     magazines[] = {
-        MAG_PISTOL,3,
-        MAG_RIFLE_RECON,10,
+        MAG_PISTOL_SF, 3,
+        MAG_RIFLE_RECON, 10,
         GRENADES_BASIC,
         "ACE_M84",4
     };
@@ -548,14 +548,14 @@ class LOADOUT(diver,exp) : LOADOUT(diver,common) {
 class LOADOUT(diver,cm) : LOADOUT(diver,common) {
     items[] += {
         "W_Defibrillator",
-        "ACE_fieldDressing",5,
+        "ACE_surgicalKit",
+        "ACE_salineIV",4,
         "ACE_elasticBandage",15,
+        "ACE_fieldDressing",5,
         "ACE_quikclot",15,
         "ACE_tourniquet",3,
         "ACE_morphine",10,
-        "ACE_epinephrine",10,
-        "ACE_salineIV",4,
-        "ACE_surgicalKit"
+        "ACE_epinephrine",10
     };
     binoculars[] = {"ACE_MX2A"};
     preLoadout = TRAITS(2,0,false,false);
