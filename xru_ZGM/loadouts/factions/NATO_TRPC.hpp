@@ -94,35 +94,10 @@
 
 
 /* ###################### - LAUNCHERS - ###################### */
-#define AT_LIGHT	    WEAPON("launch_nlaw_f","","","")
-#define AT_ROCKET	    WEAPON("launch_nlaw_f","","","")
-#define AA_MISSILE	    WEAPON("launch_B_Titan_tna_F","","","")
-#define AT_MISSILE    WEAPON("launch_B_Titan_short_tna_F","","","")
-
-
-
-/* ###################### - MAGAZINES - ###################### */
-//  RIFLE & CARBINE
-/* Wie MTP */
-
-//  SF CARBINE
-/* Wie MTP */
-
-//  AR & MG
-/* Wie MTP */
-
-//  DMR & SR
-/* Wie MTP */
-
-//  PDW & SIDEARMS
-/* Wie MTP */
-
-//  ROCKETS & MISSILES
-/* Wie MTP */
-
-//  GRENADES
-/* Wie MTP */
-
+#define AT_LIGHT    WEAPON("launch_nlaw_f","","","")
+#define AT_ROCKET   WEAPON("launch_MRAWS_green_F",LASERPOINTER,"","")
+#define AA_MISSILE  WEAPON("launch_B_Titan_tna_F","","","")
+#define AT_MISSILE  WEAPON("launch_B_Titan_short_tna_F","","","")
 
 
 /* ###################### - HEADGEAR - ###################### */

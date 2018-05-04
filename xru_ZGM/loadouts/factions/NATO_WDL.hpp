@@ -87,7 +87,7 @@
 #define SR_AM WEAPON("srifle_lrr_tna_f",SNIPER_OPTIC,"","")
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE   WEAPON("LMG_03_F",LASERPOINTER,CCO,"")
+#define AUTORIFLE           WEAPON("LMG_03_F",LASERPOINTER,CCO,"")
 #define MAGS_AUTORIFLE      ARR_3("200Rnd_556x45_Box_Red_F",4,"200Rnd_556x45_Box_Tracer_Red_F")
 #define MAGS_AUTORIFLE_ASST ARR_2("200Rnd_556x45_Box_Red_F",2)
 
@@ -105,33 +105,9 @@
 
 
 /* ###################### - LAUNCHERS - ###################### */
-#define AA_MISSILE	    WEAPON("launch_B_Titan_tna_F","","","")
-#define AT_MISSILE      WEAPON("launch_B_Titan_short_tna_F","","","")
-
-
-
-/* ###################### - MAGAZINES - ###################### */
-//  RIFLE & CARBINE
-/* Wie MTP */
-
-//  SF CARBINE
-/* Wie MTP */
-
-//  AR & MG
-/* Wie MTP */
-
-//  DMR & SR
-/* Wie MTP */
-
-//  PDW & SIDEARMS
-/* Wie MTP */
-
-//  ROCKETS & MISSILES
-/* Wie MTP */
-
-//  GRENADES
-/* Wie MTP */
-
+#define AA_MISSILE	WEAPON("launch_B_Titan_tna_F","","","")
+#define AT_ROCKET   WEAPON("launch_MRAWS_olive_F",LASERPOINTER,"","")
+#define AT_MISSILE  WEAPON("launch_B_Titan_short_tna_F","","","")
 
 
 /* ###################### - HEADGEAR - ###################### */
