@@ -168,9 +168,9 @@
 #define MAGS_AA_MISSILE         ARR_1("Titan_AA")
 #define MAGS_AA_MISSILE_ASST    ARR_2("Titan_AA",2)
 
-#define AT_MISSILE              WEAPON("launch_O_Titan_short_F","","","")
-#define MAGS_AT_MISSILE         ARR_1("Titan_AT")
-#define MAGS_AT_MISSILE_ASST    ARR_3("Titan_AT",2,"Titan_AP")
+#define AT_MISSILE              WEAPON("launch_O_Vorona_brown_F","","","")
+#define MAGS_AT_MISSILE         ARR_1("Vorona_HEAT")
+#define MAGS_AT_MISSILE_ASST    ARR_3("Vorona_HEAT",2,"Vorona_HE")
 
 
 
@@ -186,7 +186,7 @@
 #define HELMET_SF ARR_1("H_HelmetO_ViperSP_hex_F")
 #define HELMET_DIVER ARR_1("H_HelmetSpecO_blk")
 // VEHICLE CREWS
-#define HELMET_CREW 		ARR_1("H_HelmetCrew_O")
+#define HELMET_CREW 		ARR_1("H_Tank_black_F")
 #define HELMET_HELICOPTER	ARR_1("H_PilotHelmetHeli_O")
 #define HELMET_HELI_CREW	ARR_1("H_CrewHelmetHeli_O")
 #define HELMET_JET			ARR_1("H_PilotHelmetFighter_O")

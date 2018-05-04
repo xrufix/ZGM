@@ -87,7 +87,7 @@
 
 #define AA_MISSILE	            WEAPON("launch_O_Titan_ghex_F","","","")
 
-#define AT_MISSILE              WEAPON("launch_O_Titan_short_ghex_F","","","")
+#define AT_MISSILE              WEAPON("launch_O_Vorona_green_F","","","")
 
 
 /* ###################### - HEADGEAR - ###################### */
@@ -101,7 +101,7 @@
 // SPECIAL FORCES INFANTRY
 #define HELMET_SF ARR_1("H_HelmetO_ViperSP_ghex_F")
 // VEHICLE CREWS
-#define HELMET_CREW 		ARR_1("H_HelmetCrew_O_ghex_f")
+#define HELMET_CREW 		ARR_1("H_Tank_black_F")
 
 // COMMANDERS
 #define CAP_CO      ARR_1("H_Beret_blk")
