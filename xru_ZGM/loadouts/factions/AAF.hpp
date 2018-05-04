@@ -11,7 +11,7 @@
 #define UNIFORM_COMPANY     ARR_1("U_I_OfficerUniform")  
 #define UNIFORM_RECON       ARR_1("xru_u_coveralls_urbancamo")
 #define UNIFORM_DIVER       ARR_1("U_i_Wetsuit")
-#define UNIFORM_CREW        ARR_1("U_C_WorkerCoveralls")
+#define UNIFORM_CREW        ARR_1("U_Tank_green_F")
 #define UNIFORM_HELICOPTER  ARR_1("u_i_helipilotcoveralls")
 #define UNIFORM_JET         ARR_1("U_i_PilotCoveralls")
 #define UNIFORM_SNIPER      ARR_3("U_i_FullGhillie_lsh","U_i_FullGhillie_ard","U_i_FullGhillie_sard")
