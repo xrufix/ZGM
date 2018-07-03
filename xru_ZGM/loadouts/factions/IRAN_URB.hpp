@@ -2,8 +2,8 @@
 
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "U_O_CombatUniform_oucamo"
-#define UNIFORM_COMPANY     ARR_1("U_O_OfficerUniform_ocamo")
-#define UNIFORM_RECON     UNIFORM_SINGLE
+#define UNIFORM_COMPANY     "U_O_OfficerUniform_ocamo"
+#define UNIFORM_RECON       "w_u_viper_urban"
 
 
 
@@ -28,10 +28,10 @@
 
 /* ###################### - BACKPACKS - ###################### */
 #define BACKPACK_ASSAULT    ARR_1("B_FieldPack_oucamo")
-#define BACKPACK_KITBAG     ARR_1("B_ViperLightHarness_blk_F")
+#define BACKPACK_KITBAG     ARR_1("w_b_viperlightharness_urban")
 #define BACKPACK_CARRYALL   ARR_1("B_Carryall_oucamo")
 #define BACKPACK_DIVER      ARR_1("b_viperharness_blk_f")
-#define BACKPACK_RECON      ARR_1("b_viperharness_blk_f")
+#define BACKPACK_RECON      ARR_1("w_b_viperharness_urban")
 
 //	CSW-BACKPACKS
 // Wie IRAN
@@ -95,7 +95,7 @@
 // NON-COMBAT INFANTRY
 #define HELMET_BARE ARR_1("H_HelmetSpecO_blk")
 // SPECIAL FORCES INFANTRY
-#define HELMET_SF HELMET_BARE
+#define HELMET_SF "w_h_helmeto_vipersp_urban"
 #define HELMET_DIVER HELMET_BARE
 // VEHICLE CREWS
 #define HELMET_CREW 		ARR_1("xru_H_HelmetCrew_blk")
@@ -111,7 +111,7 @@
 
 /* ###################### - NIGHT VISION DEVICES - ###################### */
 #define NVG	    ARR_1("O_NVGoggles_urb_f")
-#define NVG_SF	NVG
+#define NVG_SF	""
 
 
 
