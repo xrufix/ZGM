@@ -177,7 +177,7 @@
 
 #define AT_ROCKET	    WEAPON("launch_MRAWS_sand_F",LASERPOINTER,"","")
 #define MAGS_AT_ROCKET          ARR_1("MRAWS_HEAT_F")
-#define MAGS_AT_ROCKET_ASST     ARR_2("MRAWS_HEAT_F",4,"MRAWS_HE_F",2)
+#define MAGS_AT_ROCKET_ASST     ARR_4("MRAWS_HEAT_F",4,"MRAWS_HE_F",2)
 
 #define AA_MISSILE	    WEAPON("launch_B_Titan_F","","","")
 #define MAGS_AA_MISSILE         ARR_1("Titan_AA")
