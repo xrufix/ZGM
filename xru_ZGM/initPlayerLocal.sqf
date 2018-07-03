@@ -10,8 +10,8 @@
 
 // Hier wird die initHC ausgeführt - der Rest der initPlayerLocal.sqf wird für
 // Headless Clients nicht mehr ausgeführt!
-if (isHC && !didJIP) exitWith { [localHC] execVM "initHC.sqf" };
-if (!isMultiplayer)  then     { [localHC] execVM "initHC.sqf" };
+if (isMultiplayer && isHC && !didJIP) exitWith {[localHC] execVM "initHC.sqf"};
+if (!isMultiplayer) then {[objNull] execVM "initHC.sqf"};
 
 // Hier wird das Briefing automatisch eingefügt und ausgeführt
 #include "briefing.sqf"

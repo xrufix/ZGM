@@ -1,4 +1,4 @@
-template_version = 5.1.0;
+template_version = 5.1.1;
 #ifdef STANDARD
     medical_system = "standard";
 #endif
@@ -18,9 +18,4 @@ enableDebugConsole = 1;
 saving = 0;
 #ifndef ENABLE_CHAT_CHANNELS
     disableChannels[] = {0,1,2,3,6};
-#endif
-
-// - ACE Settings -------------------------------------------------------------
-#ifndef CUSTOM_ACE_SETTINGS
-    #include "ACE_Settings.hpp"
 #endif
