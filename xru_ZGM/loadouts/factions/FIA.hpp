@@ -49,7 +49,7 @@
 #define BACKPACK_KITBAG     ARR_5("B_Kitbag_cbr","B_Kitbag_rgr","B_Kitbag_sgg","xru_Kitbag_blk","xru_Kitbag_digi")
 #define BACKPACK_CARRYALL   ARR_4("xru_Carryall_blk","B_Carryall_cbr","B_Carryall_khk","B_Carryall_oli")
 #define BACKPACK_RADIO      BACKPACK_ASSAULT
-#define BACKPACK_AT_LIGHT 	ARR_1("")
+#define BACKPACK_AT_LIGHT 	BACKPACK_ASSAULT
 #define BACKPACK_DIVER      ARR_1("xru_Carryall_blk")
 #define BACKPACK_RECON      BACKPACK_ASSAULT
 
@@ -79,43 +79,45 @@
 /* ###################### - PRIMARY WEAPONS - ###################### */
 // STANDARD ISSUE ASSAULT RIFLE
 #define RIFLE_1 ARR_1("arifle_TRG21_F")
-#define RIFLE_2 ARR_1("arifle_Mk20_plain_F")
-#define RIFLE_3 ARR_1("arifle_Mk20_F")
+#define RIFLE_2 ARR_1("w_arifle_trg21_black")
+#define RIFLE_3 ARR_1("arifle_Mk20_plain_F")
+#define RIFLE_4 ARR_1("w_arifle_mk20_grey")
 
 #define RIFLE_CCO ARR_4( \
     WEAPON(RIFLE_1,"","",LIGHT), \
-    WEAPON(RIFLE_1,"","",""), \
-    WEAPON(RIFLE_2,"","",LIGHT), \
-    WEAPON(RIFLE_3,"","",""))
+    WEAPON(RIFLE_2,"","",""), \
+    WEAPON(RIFLE_3,"","",LIGHT), \
+    WEAPON(RIFLE_4,"","",""))
 #define RIFLE_RCO ARR_4( \
     WEAPON(RIFLE_1,"optic_aco","",""), \
     WEAPON(RIFLE_2,"optic_aco_grn","",LIGHT), \
-    WEAPON(RIFLE_2,"optic_aco_smg","",""), \
-    WEAPON(RIFLE_3,"optic_aco_grn_smg","",LIGHT))
+    WEAPON(RIFLE_3,"optic_aco_smg","",""), \
+    WEAPON(RIFLE_4,"optic_aco_grn_smg","",LIGHT))
 
 
 // GRENADIER ASSAULT RIFLE
 #define RIFLE_UGL_1     ARR_1("arifle_TRG21_GL_F")
 #define RIFLE_UGL_2     ARR_1("arifle_Mk20_GL_plain_F")
-#define RIFLE_UGL_3     ARR_1("arifle_Mk20_GL_F")
+#define RIFLE_UGL_3     ARR_1("w_arifle_mk20_gl_black")
+#define RIFLE_UGL_3     ARR_1("w_arifle_trg21_gl_black")
 
 #define RIFLE_UGL_CCO ARR_4( \
     WEAPON(RIFLE_UGL_1,"","",LIGHT), \
-    WEAPON(RIFLE_UGL_1,"","",""), \
-    WEAPON(RIFLE_UGL_2,"","",LIGHT), \
-    WEAPON(RIFLE_UGL_3,"","",""))
+    WEAPON(RIFLE_UGL_2,"","",""), \
+    WEAPON(RIFLE_UGL_3,"","",LIGHT), \
+    WEAPON(RIFLE_UGL_4,"","",""))
 #define RIFLE_UGL_RCO ARR_4( \
     WEAPON(RIFLE_UGL_1,"optic_aco","",""), \
-    WEAPON(RIFLE_UGL_1,"optic_aco_grn","",LIGHT), \
-    WEAPON(RIFLE_UGL_2,"optic_aco_smg","",""), \
-    WEAPON(RIFLE_UGL_3,"optic_aco_grn_smg","",LIGHT))
+    WEAPON(RIFLE_UGL_2,"optic_aco_grn","",LIGHT), \
+    WEAPON(RIFLE_UGL_3,"optic_aco_smg","",""), \
+    WEAPON(RIFLE_UGL_4,"optic_aco_grn_smg","",LIGHT))
 
 #define MAG_RIFLE           ARR_1("30Rnd_556x45_Stanag")
 #define MAG_RIFLE_TRACER    ARR_1("30Rnd_556x45_Stanag_Tracer_yellow")
 
 
 // CARBINE
-#define CARBINE_1   "arifle_TRG20_F"
+#define CARBINE_1   "w_arifle_trg20_black"
 #define CARBINE_2   "arifle_Mk20C_plain_F"
 
 #define CARBINE ARR_2( \
@@ -138,18 +140,19 @@
 
 
 // SF CARBINES
-#define RIFLE_RECON ARR_5( \
+#define RIFLE_RECON ARR_6( \
     WEAPON(RIFLE_1,RCO,"",LIGHT), \
     WEAPON(RIFLE_2,RCO,"",LIGHT), \
     WEAPON(RIFLE_3,RCO,"",LIGHT), \
+    WEAPON(RIFLE_4,RCO,"",LIGHT), \
     WEAPON(CARBINE_1,RCO,"",LIGHT), \
     WEAPON(CARBINE_2,RCO,"",LIGHT))
 
 #define RIFLE_UGL_RECON ARR_4( \
     WEAPON(RIFLE_UGL_1,"optic_aco","",LIGHT), \
     WEAPON(RIFLE_UGL_2,"optic_aco_grn","",LIGHT), \
-    WEAPON(RIFLE_UGL_2,"optic_aco_smg","",LIGHT), \
-    WEAPON(RIFLE_UGL_3,"optic_aco_grn_smg","",LIGHT))
+    WEAPON(RIFLE_UGL_3,"optic_aco_smg","",LIGHT), \
+    WEAPON(RIFLE_UGL_4,"optic_aco_grn_smg","",LIGHT))
 
 #define RIFLE_RECON_TAN           RIFLE_RECON
 #define RIFLE_UGL_RECON_TAN		RIFLE_UGL_RECON
@@ -209,12 +212,12 @@
 
 
 /* ###################### - LAUNCHERS - ###################### */
-#define AT_LIGHT	            WEAPON("launch_nlaw_f","","","")
-#define MAGS_AT_LIGHT           "ace_banana"
-
-#define AT_ROCKET	            WEAPON("launch_rpg32_f","","","")
+#define AT_LIGHT	            ARR_2(WEAPON("xru_rpg32_camo","","",""),WEAPON("xru_rpg32_green","","",""))
 #define MAGS_AT_ROCKET          ARR_3("RPG32_F",2,"RPG32_HE_F")
-#define MAGS_AT_ROCKET_ASST     ARR_4("RPG32_F",2,"RPG32_HE_F",2)
+
+#define AT_ROCKET	            ARR_2(WEAPON("launch_MRAWS_green_rail_F","acc_pointer_ir","",""),WEAPON("launch_MRAWS_olive_rail_F","acc_pointer_ir","",""))
+#define MAGS_AT_ROCKET          ARR_3("MRAWS_HEAT_F",3,"MRAWS_HE_F")
+#define MAGS_AT_ROCKET_ASST     ARR_3("MRAWS_HEAT_F",2,"MRAWS_HE_F")
 
 #define AA_MISSILE	            WEAPON("launch_i_Titan_F","","","")
 #define MAGS_AA_MISSILE         ARR_1("Titan_AA")

@@ -153,8 +153,8 @@
 #define AT_MISSILE      WEAPON("launch_i_Titan_short_F","","","")
 
 #define MAGS_AT_LIGHT           MAG_PISTOL
-#define MAGS_AT_ROCKET          ARR_3("RPG32_F",3,"RPG32_HE_F")
-#define MAGS_AT_ROCKET_ASST     ARR_3("RPG32_F",2,"RPG32_HE_F")
+#define MAGS_AT_ROCKET          ARR_3("MRAWS_HEAT_F",3,"MRAWS_HE_F")
+#define MAGS_AT_ROCKET_ASST     ARR_3("MRAWS_HEAT_F",2,"MRAWS_HE_F")
 #define MAGS_AT_MISSILE         ARR_1("Titan_AT")
 #define MAGS_AT_MISSILE_ASST    ARR_3("Titan_AT",2,"Titan_AP")
 #define MAGS_AA_MISSILE         ARR_1("Titan_AA")
