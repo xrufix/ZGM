@@ -20,7 +20,7 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      ARR_1("VSM_LBT1961_OGA_OD")
-#define VEST_OFFICER       ARR_1("V_Rangemaster_belt")
+#define VEST_OFFICER    ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      ARR_3("V_Chestrig_rgr","V_Chestrig_khk","V_Chestrig_oli")
 #define VEST_RM         ARR_3("V_TacVest_oli","V_TacVest_khk","V_TacVest_brn")
 #define VEST_GR         ARR_1("V_PlateCarrier1_rgr_noflag_F")
@@ -64,7 +64,8 @@
 /* ###################### - ATTACHMENTS- ###################### */
 #define LASERPOINTER "acc_pointer_ir"
 
-#define RCO "optic_Holosight_blk_F"
+#define CCO "optic_aco"
+#define RCO "optic_holosight_blk_f"
 
 #define SNIPER_OPTIC "optic_LRPS"
 #define SNIPER_OPTIC_NV "optic_NVS"
@@ -75,12 +76,12 @@
 
 /* ###################### - PRIMARY WEAPONS - ###################### */
 // STANDARD ISSUE ASSAULT RIFLE
-#define RIFLE "arifle_TRG21_F"
-#define RIFLE_UGL "arifle_TRG21_GL_F"
+#define RIFLE "w_arifle_trg21_black"
+#define RIFLE_UGL "w_arifle_trg21_gl_black"
 #define RIFLE_RCO WEAPON(RIFLE,"",RCO,"")
 #define RIFLE_UGL_RCO WEAPON(RIFLE_UGL,"",RCO,"")
-#define RIFLE_CCO RIFLE_RCO
-#define RIFLE_UGL_CCO RIFLE_UGL_RCO
+#define RIFLE_CCO WEAPON(RIFLE,"",CCO,"")
+#define RIFLE_UGL_CCO WEAPON(RIFLE_UGL,"",CCO,"")
 
 // CARBINE & PDW
 #define PDW WEAPON("hgun_PDW2000_F","","","")
@@ -88,22 +89,22 @@
 #define CARBINE_UGL	RIFLE_UGL
 
 #define CARBINE ARR_1(CARBINE_1)
-#define CARBINE_CCO WEAPON(CARBINE_1,RCO,"","")
-#define CARBINE_UGL_CCO WEAPON(CARBINE_UGL,RCO,"","")
+#define CARBINE_CCO WEAPON(CARBINE_1,CCO,"","")
+#define CARBINE_UGL_CCO WEAPON(CARBINE_UGL,CCO,"","")
 
 // SF CARBINES
 #define RIFLE_RECON ARR_2(\
-    WEAPON(RIFLE,LASERPOINTER,RCO,"rhsusf_acc_nt4_tan"),\
-    WEAPON(RIFLE,LASERPOINTER,RCO,"rhsusf_acc_nt4_black")\
+    WEAPON("arifle_TRG20_F",LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_tan"),\
+    WEAPON("arifle_TRG20_F",LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_black")\
 )
 #define RIFLE_UGL_RECON ARR_2(\
-    WEAPON(RIFLE_UGL,LASERPOINTER,RCO,"rhsusf_acc_nt4_tan"),\
-    WEAPON(RIFLE_UGL,LASERPOINTER,RCO,"rhsusf_acc_nt4_black")\
+    WEAPON("arifle_TRG21_GL_F",LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_tan"),\
+    WEAPON("arifle_TRG21_GL_F",LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_black")\
 )
-#define RIFLE_RECON_TAN           RIFLE_RECON
-#define RIFLE_UGL_RECON_TAN		RIFLE_UGL_RECON
-#define RIFLE_DIVER 		RIFLE_RECON
-#define RIFLE_UGL_DIVER 	RIFLE_UGL_RECON
+#define RIFLE_RECON_TAN     RIFLE_RECON
+#define RIFLE_UGL_RECON_TAN	RIFLE_UGL_RECON
+#define RIFLE_DIVER 		WEAPON(RIFLE,LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_black")
+#define RIFLE_UGL_DIVER 	WEAPON(RIFLE_UGL,LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_black")
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
 #define DMR WEAPON("rhs_weap_sr25",DMR_BIPOD,LASERPOINTER,"rhsusf_acc_ACOG3")
