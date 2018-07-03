@@ -1,4 +1,4 @@
 class CfgLoadouts {
-    #include "loadouts\output.hpp"
+    #include "loadouts\CfgLoadouts.hpp"
     class HeadlessClient_F : CommonDefault {};
 };

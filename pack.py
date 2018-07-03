@@ -27,6 +27,14 @@ def createTemp():
                 if name not in ["mission.sqm", "default_loadouts.hpp"]:
                     target = tempDir + root[len(missionDir):] + "\\" + name
                     shutil.copyfile(os.path.join(root, name), target)
+    subprocess.run([
+        "C:\Steam\steamapps\common\Arma 3 Tools\CfgConvert\CfgConvert.exe",
+        "-txt",
+        "-dst",
+        tempDir + "\\CfgLoadouts.hpp",
+        missionDir + "\\CfgLoadouts.hpp"
+    ], stdout = subprocess.PIPE)
+    #"C:\Steam\steamapps\common\Arma 3 Tools\CfgConvert\CfgConvert.exe" -txt -dst output.hpp CfgLoadouts.hpp
 
 def clearTemp():
     global tempDir
