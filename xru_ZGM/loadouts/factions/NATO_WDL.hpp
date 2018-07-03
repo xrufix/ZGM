@@ -78,10 +78,11 @@
 #define RIFLE_UGL_RECON_TAN   RIFLE_UGL_RECON
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR WEAPON("srifle_EBR_F",DMR_BIPOD,LASERPOINTER,"optic_SOS")
+#define DMR WEAPON("w_srifle_ebr_khaki","bipod_01_f_khk",LASERPOINTER,"optic_sos_khk_f")
 #define MAG_DMR MAG_DMR_RECON
 
-#define DMR_RECON WEAPON("srifle_EBR_F","muzzle_snds_B",LASERPOINTER,"optic_SOS")
+#define DMR_RECON WEAPON("w_srifle_ebr_khaki","muzzle_snds_B",LASERPOINTER,"optic_sos_khk_f")
+#define DMR_DIVER WEAPON("w_srifle_ebr_black",LASERPOINTER,"optic_sos","muzzle_snds_b")
 
 #define SR_AP WEAPON("srifle_DMR_02_camo_F",SNIPER_OPTIC,DMR_BIPOD,"ACE_muzzle_mzls_338")
 #define SR_AM WEAPON("srifle_lrr_tna_f",SNIPER_OPTIC,"","")
