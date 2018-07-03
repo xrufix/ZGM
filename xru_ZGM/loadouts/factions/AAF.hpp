@@ -87,8 +87,7 @@
 #define MAG_RIFLE_TRACER	ARR_1("30Rnd_556x45_Stanag_Tracer_yellow")
 
 // PDW
-#define PDW         WEAPON("hgun_PDW2000_F","","","")
-
+#define PDW             WEAPON("hgun_PDW2000_F","","","")
 #define MAG_PDW	        ARR_1("30Rnd_9x21_Mag")
 
 // CARBINES
@@ -102,12 +101,16 @@
 #define MAG_CARBINE_TRACER  MAG_RIFLE_TRACER
 
 // SF CARBINES
-#define RIFLE_RECON             WEAPON("arifle_Mk20_plain_F",LASERPOINTER,RCO,"muzzle_snds_m_snd_F")
-#define RIFLE_UGL_RECON         WEAPON("arifle_Mk20_GL_plain_F",LASERPOINTER,CCO,"muzzle_snds_m_snd_F")
-#define RIFLE_RECON_TAN         RIFLE_RECON
-#define RIFLE_UGL_RECON_TAN     RIFLE_UGL_RECON
-#define RIFLE_DIVER 		    WEAPON("arifle_TRG21_F",LASERPOINTER,RCO,"muzzle_snds_m_khk_F")
-#define RIFLE_UGL_DIVER 	    WEAPON("arifle_TRG21_gl_F",LASERPOINTER,CCO,"muzzle_snds_m_khk_F")
+#define RIFLE_RECON             ARR_2( \
+    WEAPON("w_arifle_mk20_black",LASERPOINTER,RCO,"rhsusf_acc_nt4_black"), \
+    WEAPON("w_arifle_mk20_grey",LASERPOINTER,RCO,"rhsusf_acc_rotex5_grey"))
+#define RIFLE_UGL_RECON         ARR_2( \
+    WEAPON("w_arifle_mk20_gl_black",LASERPOINTER,CCO,"rhsusf_acc_nt4_black"), \
+    WEAPON("w_arifle_mk20_gl_grey",LASERPOINTER,CCO,"rhsusf_acc_rotex5_grey"))
+#define RIFLE_RECON_TAN         WEAPON("arifle_Mk20_plain_F",LASERPOINTER,RCO,"muzzle_snds_m_snds_F")
+#define RIFLE_UGL_RECON_TAN     WEAPON("arifle_Mk20_gl_plain_F",LASERPOINTER,CCO,"muzzle_snds_m_snds_F")
+#define RIFLE_DIVER 		    WEAPON("w_arifle_trg20_black",LASERPOINTER,RCO,"rhsusf_acc_nt4_black")
+#define RIFLE_UGL_DIVER 	    WEAPON("w_arifle_trg21_gl_black",LASERPOINTER,CCO,"rhsusf_acc_nt4_black")
 
 #define MAG_RIFLE_RECON          MAG_RIFLE
 #define MAG_RIFLE_RECON_TRACER   MAG_RIFLE_TRACER
@@ -145,7 +148,7 @@
 
 /* ###################### - LAUNCHERS - ###################### */
 #define AT_LIGHT	    WEAPON("launch_nlaw_f","","","")
-#define AT_ROCKET	    WEAPON("xru_rpg32_camo","","","")
+#define AT_ROCKET	    ARR_2(WEAPON("launch_MRAWS_green_rail_F","acc_pointer_ir","",""),WEAPON("launch_MRAWS_olive_rail_F","acc_pointer_ir","",""))
 #define AA_MISSILE	    WEAPON("launch_i_Titan_F","","","")
 #define AT_MISSILE      WEAPON("launch_i_Titan_short_F","","","")
 
