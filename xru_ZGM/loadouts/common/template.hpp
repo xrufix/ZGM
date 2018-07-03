@@ -770,10 +770,10 @@ class LOADOUT(logistics,common) : COMMON {
 /* ###################### - MEDEVAC - ###################### */
 //Common MEDEVAC
 class LOADOUT(medevac,common): COMMON {
+    vest[] = {VEST_PROTECTED};
     primary[] = {""};
     secondary[] = {""};
     magazines[] = {GRENADES_BASIC};
-    items[] += {"CL_Logitracker"};
     headgear[] = {HELMET_BARE};
     goggles[] = {GOGGLES_OFFICER};
     insignia[] = {INSIGNIA_MEV};
@@ -784,7 +784,6 @@ class LOADOUT(medevac,common): COMMON {
 class LOADOUT(medevac,doc) : LOADOUT(medevac,common) {
     backpack[] = {BACKPACK_KITBAG};
     items[] += {
-        "ACE_personalAidKit",4,
         "ACE_salineIV_500",10,
         "ACE_surgicalKit",
         "W_Defibrillator",

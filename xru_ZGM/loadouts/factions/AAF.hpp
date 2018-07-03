@@ -32,15 +32,15 @@
 
 #define VEST_CREW		ARR_1("V_TacVest_khk")
 
-#define VEST_RECON			ARR_1("V_TacVest_khk") 
-#define VEST_RECON_TL		ARR_1("V_PlateCarrier2_blk") 
-#define VEST_RECON_MG		ARR_1("V_PlateCarrier1_blk") 
-#define VEST_RECON_GR		VEST_RECON_TL
+#define VEST_RECON		ARR_1("V_TacVest_khk") 
+#define VEST_RECON_TL	ARR_1("V_PlateCarrier2_blk") 
+#define VEST_RECON_MG	ARR_1("V_PlateCarrier1_blk") 
+#define VEST_RECON_GR	VEST_RECON_TL
 
 #define VEST_BREATHER	ARR_1("V_RebreatherIA")
 #define VEST_DIVER		ARR_1("V_TacVestIR_blk")
 
-
+#define VEST_PROTECTED  ARR_1("W_V_EOD_olive_ICRC")
 
 /* ###################### - BACKPACKS - ###################### */
 #define BACKPACK_ASSAULT    ARR_1("B_AssaultPack_dgtl")

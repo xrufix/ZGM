@@ -40,7 +40,7 @@
 #define VEST_BREATHER	ARR_1("V_RebreatherB")
 #define VEST_DIVER		ARR_1("VSM_LBT1961_Black")
 
-
+#define VEST_PROTECTED  "W_V_EOD_white_ICRC"
 
 /* ###################### - BACKPACKS - ###################### */
 #define BACKPACK_ASSAULT    ARR_3("B_FieldPack_oli","B_FieldPack_khk","B_FieldPack_cbr")

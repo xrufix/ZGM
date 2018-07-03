@@ -262,7 +262,7 @@ class cfgRoles {
     };
 
     class medevac {
-        displayName = "MEDEVAC (Red Cross – Protected)";
+        displayName = "Medical Staff (Red Crystal)";
 
         class tl {
             displayName = "Team Leader (Doctor)";

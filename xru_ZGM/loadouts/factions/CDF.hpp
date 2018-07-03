@@ -40,7 +40,7 @@
 #define VEST_BREATHER	ARR_1("V_RebreatherIR")
 #define VEST_DIVER		VEST_RECON
 
-
+#define VEST_PROTECTED  "V_Plain_crystal_F"
 
 /* ###################### - BACKPACKS - ###################### */
 #define BACKPACK_ASSAULT    ARR_1("rhs_assault_umbts")

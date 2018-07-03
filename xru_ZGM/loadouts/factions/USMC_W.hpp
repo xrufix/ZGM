@@ -17,6 +17,8 @@
 /* ###################### - VESTS - ###################### */
 /* Wie Desert */
 
+#define VEST_PROTECTED  "W_V_EOD_olive_ICRC"
+
 /* ###################### - BACKPACKS - ###################### */
 #define BACKPACK_ASSAULT    ARR_2("B_AssaultPack_rgr","rhsusf_falconii")
 #define BACKPACK_KITBAG     ARR_1("B_Kitbag_rgr")

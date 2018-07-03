@@ -35,6 +35,7 @@
 #define VEST_BREATHER	ARR_1("V_RebreatherB")
 #define VEST_DIVER		VEST_RECON
 
+#define VEST_PROTECTED  ARR_1("W_V_EOD_olive_ICRC")
 
 
 /* ###################### - BACKPACKS - ###################### */

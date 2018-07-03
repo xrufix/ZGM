@@ -32,6 +32,8 @@
 #define VEST_BREATHER	ARR_1("V_RebreatherB")
 #define VEST_DIVER		ARR_1("VSM_FAPC_Operator_OGA")
 
+#define VEST_PROTECTED  "W_V_EOD_coyote_ICRC"
+
 /* ###################### - BACKPACKS - ###################### */
 #define BACKPACK_ASSAULT    ARR_1("BWA3_AssaultPack_tropen")
 #define BACKPACK_KITBAG     ARR_1("BWA3_Kitbag_tropen")

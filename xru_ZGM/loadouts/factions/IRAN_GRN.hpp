@@ -19,8 +19,6 @@
 
 #define VEST_CREW		ARR_1("V_LegStrapBag_olive_F")
 
-
-
 /* ###################### - BACKPACKS - ###################### */
 #define BACKPACK_ASSAULT    ARR_3("B_FieldPack_oli","B_FieldPack_khk","B_FieldPack_ghex_f")
 #define BACKPACK_KITBAG     ARR_1("B_ViperLightHarness_ghex_F")

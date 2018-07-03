@@ -40,6 +40,8 @@
 #define VEST_BREATHER	"V_RebreatherB"
 #define VEST_DIVER		"rhsusf_mbav_rifleman"
 
+#define VEST_PROTECTED  "W_V_EOD_coyote_ICRC"
+
 
 
 /* ###################### - BACKPACKS - ###################### */

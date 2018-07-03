@@ -46,6 +46,8 @@
 #define VEST_BREATHER	ARR_1("V_RebreatherB")
 #define VEST_DIVER		ARR_1("V_TacVestIR_blk")
 
+#define VEST_PROTECTED  "V_Plain_crystal_F"
+
 
 /* ###################### - BACKPACKS - ###################### */
 #define BACKPACK_ASSAULT    ARR_4("B_FieldPack_blk","B_FieldPack_cbr","B_FieldPack_khk","B_FieldPack_oli")

@@ -40,6 +40,7 @@
 #define VEST_BREATHER	""
 #define VEST_DIVER		""
 
+#define VEST_PROTECTED  "V_Plain_crystal_F"
 
 
 /* ###################### - BACKPACKS - ###################### */

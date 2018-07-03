@@ -16,6 +16,8 @@
 #define VEST_RM         ARR_1("V_PlateCarrier2_rgr")
 #define VEST_SL         ARR_1("V_PlateCarrierGL_rgr")
 
+#define VEST_PROTECTED  "W_V_EOD_olive_ICRC"
+
 
 
 /* ###################### - BACKPACKS - ###################### */
