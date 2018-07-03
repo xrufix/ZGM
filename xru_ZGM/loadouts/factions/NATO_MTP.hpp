@@ -125,17 +125,16 @@
 #define MAG_RIFLE_RECON_TRACER   ARR_1("ACE_30Rnd_556x45_Stanag_Tracer_Dim")
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR WEAPON("arifle_MXM_F",DMR_BIPOD,LASERPOINTER,"optic_SOS")
-#define MAG_DMR     MAG_RIFLE
+#define DMR     WEAPON("srifle_EBR_F",DMR_BIPOD,LASERPOINTER,"optic_SOS")
+#define MAG_DMR ARR_1("20Rnd_762x51_Mag")
 
 #define DMR_RECON ARR_3(\
     WEAPON("arifle_SPAR_03_blk_F",LASERPOINTER,"optic_ams","muzzle_snds_b"),\
     WEAPON("arifle_SPAR_03_khk_F",LASERPOINTER,"optic_ams_khk","muzzle_snds_b_khk_f"),\
     WEAPON("arifle_SPAR_03_snd_F",LASERPOINTER,"optic_ams_snd","muzzle_snds_b_snd_f")\
 )
-#define MAG_DMR_RECON  ARR_1("20Rnd_762x51_Mag")
-
 #define DMR_DIVER WEAPON("arifle_SPAR_03_blk_F",LASERPOINTER,"optic_ams","muzzle_snds_b")
+#define MAG_DMR_RECON  MAG_DMR
 
 #define SR_AP WEAPON("srifle_DMR_02_sniper_F",SNIPER_OPTIC,"bipod_01_F_snd","ACE_muzzle_mzls_338")
 #define MAGS_SR_AP  ARR_4("10Rnd_338_Mag",10,"ACE_10Rnd_338_API526_Mag",5)
