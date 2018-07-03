@@ -11,7 +11,7 @@
 #define VEST_LIGHT      "v_chestrig_blk"
 #define VEST_RM         VEST_LIGHT
 #define VEST_GR         "v_harnessogl_gry"
-#define VEST_CM         VEST_LIGHT
+#define VEST_CM         "w_v_tacvestir_urban"
 #define VEST_SL         "v_harnesso_gry"
 
 #define VEST_CREW		"V_LegStrapBag_black_F"

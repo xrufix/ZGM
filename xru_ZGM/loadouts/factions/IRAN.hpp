@@ -20,11 +20,11 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      VEST_LIGHT
-#define VEST_OFFICER       "v_rangemaster_belt"
+#define VEST_OFFICER    "v_rangemaster_belt"
 #define VEST_LIGHT      "v_chestrig_khk"
 #define VEST_RM         VEST_LIGHT
 #define VEST_GR         "v_harnessogl_brn"
-#define VEST_CM         "v_tacchestrig_cbr_f"
+#define VEST_CM         "w_v_tacvestir_brown"
 #define VEST_SL         "v_harnesso_brn"
 #define VEST_TL         VEST_SL
 #define VEST_MG         VEST_SL

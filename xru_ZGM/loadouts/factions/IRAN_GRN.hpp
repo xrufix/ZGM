@@ -14,7 +14,7 @@
 #define VEST_LIGHT      ARR_2("v_chestrig_rgr","v_chestrig_oli")
 #define VEST_RM         VEST_LIGHT
 #define VEST_GR         ARR_1("v_harnessogl_ghex_f")
-#define VEST_CM         ARR_2("v_tacchestrig_grn_f","v_tacchestrig_oli_f")
+#define VEST_CM         ARR_1("w_v_tacvestir_green")
 #define VEST_SL         ARR_1("v_harnesso_ghex_f")
 
 #define VEST_CREW		ARR_1("V_LegStrapBag_olive_F")
