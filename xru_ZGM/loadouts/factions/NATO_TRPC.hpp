@@ -67,7 +67,7 @@
 #define RIFLE_UGL_RECON_TAN   WEAPON("arifle_SPAR_01_gl_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR WEAPON("arifle_MXM_khk_F",DMR_BIPOD,LASERPOINTER,"optic_SOS_khk_F")
+#define DMR WEAPON("w_srifle_ebr_khaki",DMR_BIPOD,LASERPOINTER,"optic_SOS_khk_F")
 
 #define DMR_RECON ARR_2(\
     WEAPON("arifle_SPAR_03_blk_F",LASERPOINTER,"optic_ams","muzzle_snds_b"),\
