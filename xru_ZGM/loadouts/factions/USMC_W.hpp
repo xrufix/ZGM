@@ -59,6 +59,7 @@
 /* Diver wie Desert */
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
+#define DMR WEAPON("w_srifle_ebr_khaki",DMR_BIPOD,LASERPOINTER,"rhsusf_acc_M8541_low")
 /* Wie Desert */
 #define SR_AP WEAPON("rhs_weap_m40a5_wd",SNIPER_OPTIC,"rhsusf_acc_harris_swivel","")
 #define SR_AM WEAPON("rhs_weap_M107_w",SNIPER_OPTIC,"","")
