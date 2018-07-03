@@ -17,7 +17,7 @@
 
 if !isServer exitWith {};
 
-["CaManBase", "init", {
+["Man", "init", {
 	private _unit = (_this select 0);
 	if (isPlayer _unit) exitWith {};
 	_unit unlinkItem "ItemMap";

@@ -1,22 +1,22 @@
 #define COMPONENT suppress
 
-#ifndef SUPRESS_BLINKING
-    #define SUPRESS_BLINKING 100
+#ifndef SUPPRESS_BLINKING
+    #define SUPPRESS_BLINKING 100
 #endif
-#ifndef SUPRESS_TUNNELVISION
-    #define SUPRESS_TUNNELVISION 100
+#ifndef SUPPRESS_TUNNELVISION
+    #define SUPPRESS_TUNNELVISION 100
 #endif
-#ifndef SUPRESS_CAMSHAKE
-    #define SUPRESS_CAMSHAKE 100
+#ifndef SUPPRESS_CAMSHAKE
+    #define SUPPRESS_CAMSHAKE 100
 #endif
-#ifndef SUPRESS_WEAPONSWAY
-    #define SUPRESS_WEAPONSWAY 100
+#ifndef SUPPRESS_WEAPONSWAY
+    #define SUPPRESS_WEAPONSWAY 100
 #endif
-#ifndef SUPRESS_CLIMBRATE
-    #define SUPRESS_CLIMBRATE 100
+#ifndef SUPPRESS_CLIMBRATE
+    #define SUPPRESS_CLIMBRATE 100
 #endif
-#ifndef SUPRESS_SINKRATE
-    #define SUPRESS_SINKRATE 100
+#ifndef SUPPRESS_SINKRATE
+    #define SUPPRESS_SINKRATE 100
 #endif
 
 class GVAR(Blinking) {
@@ -31,7 +31,7 @@ class GVAR(Blinking) {
         "200%",
         "300%"
     };
-    default = SUPRESS_BLINKING;
+    default = SUPPRESS_BLINKING;
     function = QFUNC(setBlinking);
     isGlobal = 1;
 };
@@ -47,7 +47,7 @@ class GVAR(Tunnelvision) {
         "200%",
         "300%"
     };
-    default = SUPRESS_TUNNELVISION;
+    default = SUPPRESS_TUNNELVISION;
     function = QFUNC(setTunnelvision);
     isGlobal = 1;
 };
@@ -63,7 +63,7 @@ class GVAR(CamShake) {
         "200%",
         "300%"
     };
-    default = SUPRESS_CAMSHAKE;
+    default = SUPPRESS_CAMSHAKE;
     function = QFUNC(setCamshake);
     isGlobal = 1;
 };
@@ -80,7 +80,7 @@ class GVAR(weaponSway) {
         "175%",
         "200%"
     };
-    default = SUPRESS_WEAPONSWAY;
+    default = SUPPRESS_WEAPONSWAY;
     function = QFUNC(setCamshake);
     isGlobal = 1;
 };
@@ -95,7 +95,7 @@ class GVAR(climbRate) {
         "200%",
         "300% (Schnell)"
     };
-    default = SUPRESS_CLIMBRATE;
+    default = SUPPRESS_CLIMBRATE;
     function = QFUNC(setClimbRate);
     isGlobal = 1;
 };
@@ -112,7 +112,7 @@ class GVAR(sinkRate) {
         "200%",
         "300% (Schnell)"
     };
-    default = SUPRESS_SINKRATE;
+    default = SUPPRESS_SINKRATE;
     function = QFUNC(setSinkRate);
     isGlobal = 1;
 };
