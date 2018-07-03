@@ -82,6 +82,10 @@
 #include "factions\NATO_WDL.hpp"
 #include "common\template.hpp"
 
+#define FACTION RU_35
+#include "factions\RU_35.hpp"
+#include "common\template.hpp"
+
 #define FACTION RU_DES
 #include "factions\RU_DES.hpp"
 #include "common\template.hpp"

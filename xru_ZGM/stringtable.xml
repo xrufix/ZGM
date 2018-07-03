@@ -82,6 +82,10 @@
                 <English>NATO 2035 (Woodland)</English>
                 <German>NATO 2035 (Wald)</German>
             </Key>
+            <Key ID="STR_ZGM_FACTIONS_RU_35">
+                <English>RU35 - Russian Armed Forces 2035</English>
+                <German>RU35 - Russische Streitkräfte 2035</German>
+            </Key>
             <Key ID="STR_ZGM_FACTIONS_RU_DES">
                 <English>VDV - Russian Airborne Troops (EMR Desert)</English>
                 <German>VDV - Russische Luftlandetruppen (EMR Wüste)</German>

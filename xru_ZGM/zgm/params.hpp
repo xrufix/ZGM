@@ -26,6 +26,7 @@ class DOUBLES(faction,var1) { \
         475, \
         500, \
         525, \
+        540, \
         550, \
         575, \
         600, \
@@ -60,6 +61,7 @@ class DOUBLES(faction,var1) { \
 /* 475 */   CSTRING(FACTIONS,NATO_MTP), \
 /* 500 */   CSTRING(FACTIONS,NATO_TRPC), \
 /* 525 */   CSTRING(FACTIONS,NATO_WDL), \
+/* 540 */   CSTRING(FACTIONS,RU_35), \
 /* 550 */   CSTRING(FACTIONS,RU_DES), \
 /* 575 */   CSTRING(FACTIONS,RU_EMR), \
 /* 600 */   CSTRING(FACTIONS,RU_FLORA), \

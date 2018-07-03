@@ -127,6 +127,12 @@ class CfgFactions {
         index = 525;
         sideShort = "b";
     };
+    class RU_35 {
+        displayName = CSTRING(FACTIONS,RU_35);
+        icon = "\x\xru_hidden_textures\addons\soldiers\flags\icon_rus_co.paa";
+        index = 540;
+        sideShort = "o";
+    };
     class RU_DES {
         displayName = CSTRING(FACTIONS,RU_DES);
         icon = "\rhsafrf\addons\rhs_main\data\icons\vdv.paa";
