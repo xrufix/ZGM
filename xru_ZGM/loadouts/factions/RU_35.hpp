@@ -1,6 +1,6 @@
 /* ###################### - UGL-Magazines - ###################### */
 #include "components\opfor.hpp"
-#include "components\ugl_vanilla.hpp"
+#include "components\ugl_rhsafrf.hpp"
 
 #define EASYTRACK
 // #define HUNTIR
@@ -80,20 +80,20 @@
 
 /* ###################### - PRIMARY WEAPONS - ###################### */
 // STANDARD ISSUE ASSAULT RIFLE
-#define RIFLE           "arifle_AK12_F"
+#define RIFLE           "hlc_rifle_ak12"
 #define RIFLE_RCO       WEAPON(RIFLE,LASERPOINTER,RCO,"")
 #define RIFLE_CCO       WEAPON(RIFLE,LASERPOINTER,CCO,"")
 
-#define RIFLE_UGL       "arifle_AK12_GL_F"
+#define RIFLE_UGL       "hlc_rifle_ak12GL"
 #define RIFLE_UGL_RCO   WEAPON(RIFLE_UGL,LASERPOINTER,RCO,"")
 #define RIFLE_UGL_CCO   WEAPON(RIFLE_UGL,LASERPOINTER,CCO,"")
 
-#define MAG_RIFLE           ARR_1("30Rnd_762x39_Mag_Green_F")
-#define MAG_RIFLE_TRACER    ARR_1("30Rnd_762x39_Mag_Tracer_Green_F")
+#define MAG_RIFLE           ARR_1("30Rnd_545x39_Mag_Green_F")
+#define MAG_RIFLE_TRACER    ARR_1("30Rnd_545x39_Mag_Tracer_Green_F")
 
 // PDW
 #define PDW                 WEAPON("hlc_rifle_aku12","rhs_acc_ekp8_18","","")
-#define MAG_PDW	            ARR_1("hlc_30Rnd_545x39_B_AK")
+#define MAG_PDW	            MAG_RIFLE
 
 
 // CARBINE
@@ -103,20 +103,20 @@
 #define CARBINE_UGL	        "hlc_rifle_ak12GL"
 #define CARBINE_UGL_CCO     WEAPON(CARBINE_UGL,CCO,"","")
 
-#define MAG_CARBINE         "30Rnd_545x39_Mag_Green_F"
-#define MAG_CARBINE_TRACER  "30Rnd_545x39_Mag_Tracer_Green_F"
+#define MAG_CARBINE         MAG_RIFLE
+#define MAG_CARBINE_TRACER  MAG_RIFLE_TRACER
 
 
 // SF CARBINES
-#define RIFLE_RECON         WEAPON("hlc_rifle_ak12",CCO,LASERPOINTER,"rhs_acc_tgpa")
-#define RIFLE_UGL_RECON     WEAPON("hlc_rifle_ak12GL",CCO,LASERPOINTER,"rhs_acc_tgpa")
+#define RIFLE_RECON         WEAPON(RIFLE,CCO,LASERPOINTER,"rhs_acc_tgpa")
+#define RIFLE_UGL_RECON     WEAPON(RIFLE_UGL,CCO,LASERPOINTER,"rhs_acc_tgpa")
 #define RIFLE_RECON_TAN     RIFLE_RECON
 #define RIFLE_UGL_RECON_TAN RIFLE_UGL_RECON
 #define RIFLE_DIVER 		RIFLE_RECON
 #define RIFLE_UGL_DIVER 	RIFLE_UGL_RECON
 
-#define MAG_RIFLE_RECON          ARR_1("30Rnd_545x39_Mag_Green_F")
-#define MAG_RIFLE_RECON_TRACER   ARR_1("30Rnd_545x39_Mag_Tracer_Green_F")
+#define MAG_RIFLE_RECON          MAG_RIFLE
+#define MAG_RIFLE_RECON_TRACER   MAG_RIFLE_TRACER
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
@@ -124,8 +124,8 @@
 #define MAG_DMR     ARR_1("10Rnd_93x64_DMR_05_Mag")
 
 #define DMR_RECON       WEAPON("srifle_DMR_04_F","optic_nightstalker",LASERPOINTER,"")
-#define DMR_DIVER       WEAPON("srifle_DMR_05_blk_F",DMR_OPTIC,LASERPOINTER,"muzzle_snds_93mmg")
-#define MAG_DMR_RECON   ARR_1("10Rnd_93x64_DMR_05_Mag")
+#define DMR_DIVER       WEAPON("srifle_DMR_04_F","optic_nightstalker",LASERPOINTER,"")
+#define MAG_DMR_RECON   ARR_1("10Rnd_127x54_Mag")
 
 #define SR_AP       WEAPON("srifle_DMR_05_tan_f",SNIPER_OPTIC,LASERPOINTER,DMR_BIPOD)
 #define MAGS_SR_AP  ARR_2("10Rnd_93x64_DMR_05_Mag",10)
@@ -152,8 +152,8 @@
 #define PISTOL		    WEAPON("hgun_Rook40_F","","","")
 #define MAG_PISTOL 		ARR_1("16Rnd_9x21_Mag")
 
-#define PISTOL_SF	    WEAPON("rhs_weap_pb_6p9","rhs_acc_6p9_suppressor","","")
-#define MAG_PISTOL_SF 	ARR_1("rhs_mag_9x18_8_57N181S")
+#define PISTOL_SF	    WEAPON("hgun_Rook40_F","hlc_muzzle_tirant9s","","")
+#define MAG_PISTOL_SF 	ARR_1("16Rnd_9x21_Mag")
 
 
 
