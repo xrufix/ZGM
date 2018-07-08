@@ -81,7 +81,6 @@
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
 #define DMR WEAPON("w_srifle_ebr_khaki","bipod_01_f_khk",LASERPOINTER,"optic_sos_khk_f")
-#define MAG_DMR MAG_DMR_RECON
 
 #define DMR_RECON WEAPON("w_srifle_ebr_khaki","muzzle_snds_B",LASERPOINTER,"optic_sos_khk_f")
 #define DMR_DIVER WEAPON("w_srifle_ebr_black",LASERPOINTER,"optic_sos","muzzle_snds_b")
