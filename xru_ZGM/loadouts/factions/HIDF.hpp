@@ -6,8 +6,8 @@
 // #define HUNTIR
 
 /* ###################### - UNIFORMS - ###################### */
-#define	UNIFORM_SINGLE      ARR_1("rhsgref_uniform_woodland")           // Für Inventar
-#define UNIFORM             UNIFORM_SINGLE                              // Für Zufallsauswahl
+#define	UNIFORM_SINGLE      "ace_banana"          // Für Inventar
+#define UNIFORM             ARR_1("rhsgref_uniform_woodland")                             // Für Zufallsauswahl
 #define UNIFORM_COMPANY     ARR_1("rhsgref_uniform_olive")
 #define UNIFORM_RECON       ARR_2("xru_u_b_combatuniform_wdl","xru_u_b_combatuniform_wdl_vest")
 #define UNIFORM_DIVER       ARR_1("xru_u_b_combatuniform_wdl_survivor")
@@ -64,8 +64,7 @@
 
 
 /* ###################### - ATTACHMENTS- ###################### */
-#define SNIPER_OPTIC    ""
-#define SNIPER_OPTIC_NV ""
+// #define SNIPER_OPTIC_NV ""
 
 #define DMR_BIPOD       "bipod_03_f_blk"
 
@@ -165,7 +164,7 @@
 #define HELMET_BARE ARR_2("rhsgref_helmet_M1_bare","rhsgref_helmet_M1_bare_alt01")
 // SPECIAL FORCES INFANTRY
 #define HELMET_SF ARR_3("rhs_Booniehat_m81","rhsusf_ach_helmet_M81","CUP_H_FR_Bandana_Headset")
-#define HELMET_DIVER ARR_2("rhsusf_opscore_mc_pelt","rhsusf_opscore_mc_pelt_nsw")
+#define HELMET_DIVER HELMET_SF
 // VEHICLE CREWS
 #define HELMET_CREW 		ARR_1("rhsusf_cvc_green_alt_helmet")
 #define HELMET_HELICOPTER	ARR_1("CUP_H_PMC_EP_Headset")
@@ -196,8 +195,8 @@
 #define DESIGNATOR	ARR_1("Laserdesignator_01_khk_F")
 
 /* ###################### - RADIOS - ###################### */
-#define RADIO_HAND	ARR_1("ACRE_PRC117F")
-#define RADIO_PACK 	ARR_1("ACRE_PRC152")
+#define RADIO_HAND	ARR_1("ACRE_PRC152")
+#define RADIO_PACK 	ARR_1("ACRE_PRC117F")
 
 /* ###################### - INSIGNIA - ###################### */
 // Kann in CfgLoadouts.hpp überschrieben werden.
