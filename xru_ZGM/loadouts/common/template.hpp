@@ -582,15 +582,17 @@ class LOADOUT(diver,jtac) : LOADOUT(diver,tl) {
 };
 
 /* ###################### - Sniper - ###################### */
-//Spotter
 class LOADOUT(sniper,common) : LOADOUT(recon,common) {
     uniform[] = {UNIFORM_SNIPER};
     map[] = {"ItemMap"};
     items[] += {
-        SNIPER_OPTIC_NV,
+        #ifdef SNIPER_OPTIC_NV
+            SNIPER_OPTIC_NV,
+        #endif
         "ACE_Rangecard"
     };
 };
+//Spotter
 class LOADOUT(sniper,spot) : LOADOUT(recon,common) {
     uniform[] = {UNIFORM_SNIPER};
     primary[] = {RIFLE_UGL_RECON_TAN};
@@ -829,4 +831,7 @@ class LOADOUT(medevac,drv) : LOADOUT(medevac,common) {
 #endif
 #ifdef EASYTRACK
     #undef EASYTRACK
+#endif
+#ifdef SNIPER_OPTIC_NV
+    #undef SNIPER_OPTIC_NV
 #endif
