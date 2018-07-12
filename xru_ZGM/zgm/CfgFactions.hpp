@@ -85,6 +85,12 @@ class CfgFactions {
         index = 325;
         sideShort = "b";
     };
+    class HIDF {
+        displayName = CSTRING(FACTIONS,HIDF);
+        icon = "\a3\ui_f\data\Map\Markers\Flags\tanoa_ca.paa";
+        index = 340;
+        sideShort = "i";
+    };
     class IDF {
         displayName = CSTRING(FACTIONS,IDF);
         icon = "zgm\ui\flags\idf.paa";

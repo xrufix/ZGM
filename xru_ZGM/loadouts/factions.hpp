@@ -54,6 +54,10 @@
 #include "factions\FIA.hpp"
 #include "common\template.hpp"
 
+#define FACTION HIDF
+#include "factions\HIDF.hpp"
+#include "common\template.hpp"
+
 #define FACTION IDF
 #include "factions\IDF.hpp"
 #include "common\template.hpp"

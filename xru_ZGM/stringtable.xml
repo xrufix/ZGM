@@ -55,6 +55,9 @@
             <Key ID="STR_ZGM_FACTIONS_FIA">
                 <English>FIA - Freedom and Independece Army</English>
             </Key>
+            <Key ID="STR_ZGM_FACTIONS_HIDF">
+                <English>HIDF - Horizon Islands Defence Forces</English>
+            </Key>
             <Key ID="STR_ZGM_FACTIONS_IDF">
                 <English>IDF - Israeli Defense Forces</English>
                 <German>IDF - Israelische Verteidigungsstreitkräfte</German>
