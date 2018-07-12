@@ -62,6 +62,10 @@
                 <English>IDF - Israeli Defense Forces</English>
                 <German>IDF - Israelische Verteidigungsstreitkräfte</German>
             </Key>
+            <Key ID="STR_ZGM_FACTIONS_ION">
+                <English>ION - Private Military Contractors</English>
+                <German>ION - Privates Militärunternehmen</German>
+            </Key>
             <Key ID="STR_ZGM_FACTIONS_IRAN">
                 <English>CSAT - Iranian Army (Brown)</English>
                 <German>CSAT - Iranische Armee (Braun)</German>

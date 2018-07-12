@@ -97,6 +97,12 @@ class CfgFactions {
         index = 350;
         sideShort = "i";
     };
+    class ION {
+        displayName = CSTRING(FACTIONS,ION);
+        icon = "CUP\BaseConfigs\CUP_BaseConfigs\Data\Flags\flag_ion_white_co";
+        index = 360;
+        sideShort = "i";
+    };
     class IRAN {
         displayName = CSTRING(FACTIONS,IRAN);
         icon = "\A3\ui_f\data\map\markers\flags\CSAT_ca.paa";

@@ -62,6 +62,10 @@
 #include "factions\IDF.hpp"
 #include "common\template.hpp"
 
+#defube FACTION ION
+#include "factions\ION.hpp"
+#include "common\template.hpp"
+
 #define FACTION IRAN
 #include "factions\IRAN.hpp"
 #include "common\template.hpp"
