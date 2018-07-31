@@ -1,4 +1,4 @@
-template_version = 5.1.1;
+template_version = "5.1.1";
 #ifdef STANDARD
     medical_system = "standard";
 #endif

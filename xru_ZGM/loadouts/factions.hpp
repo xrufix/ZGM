@@ -62,7 +62,7 @@
 #include "factions\IDF.hpp"
 #include "common\template.hpp"
 
-#defube FACTION ION
+#define FACTION ION
 #include "factions\ION.hpp"
 #include "common\template.hpp"
 

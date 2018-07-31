@@ -7,7 +7,7 @@
 
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      "U_BG_Guerilla1_1"        // Für Inventar
-#define UNIFORM             ARR_3(UNIFORM_SINGLE,ARR_6("U_BG_Guerilla2_1","U_BG_Guerilla2_2","U_BG_Guerilla2_3","U_BG_Guerilla3_1","U_BG_leader","U_C_HunterBody_grn"),ARR_6("U_I_G_resistanceLeader_F","U_I_G_Story_Protagonist_F","xru_u_b_combatuniform_wdl_tshirt","xru_u_guerilla1_1","xru_u_guerilla1_2","U_BG_Guerilla1_2_F")      // Für Zufallsauswahl
+#define UNIFORM             ARR_3(UNIFORM_SINGLE,ARR_6("U_BG_Guerilla2_1","U_BG_Guerilla2_2","U_BG_Guerilla2_3","U_BG_Guerilla3_1","U_BG_leader","U_C_HunterBody_grn"),ARR_6("U_I_G_resistanceLeader_F","U_I_G_Story_Protagonist_F","xru_u_b_combatuniform_wdl_tshirt","xru_u_guerilla1_1","xru_u_guerilla1_2","U_BG_Guerilla1_2_F"))      // Für Zufallsauswahl
 #define UNIFORM_COMPANY     UNIFORM
 #define UNIFORM_RECON       UNIFORM
 #define UNIFORM_DIVER       ARR_1("U_B_Wetsuit")
