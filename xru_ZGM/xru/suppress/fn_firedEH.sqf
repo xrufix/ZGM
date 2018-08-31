@@ -23,6 +23,6 @@ private _radius = 10 min (_hit / 2);
 
 GVAR(bullets) pushBack [_projectile,_hit,_radius];
 
-// #ifdef DEBUG_MODE
-//     systemChat str [_projectile,_hit,_radius];
-// #endif
+#ifdef DEBUG_MODE
+    systemChat str [_projectile,_hit,_radius];
+#endif

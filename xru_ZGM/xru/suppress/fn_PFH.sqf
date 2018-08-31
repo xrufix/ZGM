@@ -5,35 +5,26 @@ private _timeFactor = (time - GVAR(lastReduce));
 GVAR(bullets) = GVAR(bullets) select {
 	_x params ["_bullet","_hit","_radius"];
 	private _distance = (getPosASL _bullet) distance (eyePos ace_player);
-	switch true do {
-		case (!alive _bullet) : {			// Remove bullets which are no longer present.
-			false
-		};
-		case (_distance < _radius) : {		// Create suppression effects for all bullets near ace_player.
+	if (!alive _bullet) then {false} else {
+		if (_distance < _radius) then {
 			[_hit,_distance,_radius] call FUNC(effect);
-			true
 		};
-		default {							// Keep all other bullets.
-			true
-		};
+		true
 	};
 };
 
-if (time - GVAR(lastshotat) > 3) then {
-	GVAR(suppression) = 0 max (GVAR(suppression) - GVAR(sinkRate) * _timeFactor);
-};
+GVAR(suppression) = 0 max (GVAR(suppression) - _timeFactor * (((time - GVAR(lastShotAt)) / 20) min 1) ^ 2);
 
 if (GVAR(suppression) > 0) then {
-	private _factor = GVAR(suppression) / MAXSUPPRESS;
 	if (GVAR(Tunnelvision) > 0) then {
-    	private _inner = (0.7 - GVAR(suppression) / 200) / GVAR(Tunnelvision);
-    	private _outer = (1 - GVAR(suppression) / 500) / GVAR(Tunnelvision);
+    	private _inner = (0.7 - GVAR(suppression) / 2) / GVAR(Tunnelvision);
+    	private _outer = (1 - GVAR(suppression) / 5) / GVAR(Tunnelvision);
 		GVAR(suppressionCC) ppEffectAdjust [1, 1, 0, [0,0,0,1], [1,1,1,1], [1,1,1,0], [_outer , _outer, 0, 0, 0, _inner , 0.5]];
 		GVAR(suppressionCC) ppEffectCommit 0;
 	};
-	//[ace_player, "xru_suppress", 1 + 9 * (_factor ^ 1.5)] call ace_common_fnc_setAimCoef;
+	[ace_player, "xru_suppress", 15 * (GVAR(suppression) ^ 1)] call ace_common_fnc_setAimCoef;
 } else {
-	//[ace_player, "xru_suppress", 0, false] call ace_common_fnc_setAimCoef;
+	[ace_player, "xru_suppress", 0, false] call ace_common_fnc_setAimCoef;
 };
 
 #ifdef DEBUG_MODE

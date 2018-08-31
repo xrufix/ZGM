@@ -10,4 +10,4 @@ if (isNil QGVAR(Camshake))	 	then { GVAR(Camshake) = 1 };
 if (isNil QGVAR(Tunnelvision)) 	then { GVAR(Tunnelvision) = 1 };
 if (isNil QGVAR(weaponSway)) 	then { GVAR(weaponSway) = 1 };
 if (isNil QGVAR(climbRate)) 	then { GVAR(climbRate) = 1 };
-if (isNil QGVAR(sinkRate)) 		then { GVAR(sinkRate) = 10 };
+if (isNil QGVAR(sinkRate)) 		then { GVAR(sinkRate) = .1 };

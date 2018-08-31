@@ -4,6 +4,8 @@
 
 #include "aps\CfgFunctions.hpp"
 
+#include "doSuppress\CfgFunctions.hpp"
+
 #include "misc\CfgFunctions.hpp"
 
 #include "suppress\CfgFunctions.hpp"

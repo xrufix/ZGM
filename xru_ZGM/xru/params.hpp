@@ -16,6 +16,5 @@
 #define FUNC(var1) TRIPLES(ADDON,fnc,var1)
 #define QFUNC(var1) QUOTE(FUNC(var1))
 
-#include "addons\params.hpp"
 #include "ai\params.hpp"
 #include "suppress\params.hpp"
