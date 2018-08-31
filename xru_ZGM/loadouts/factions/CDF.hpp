@@ -82,8 +82,8 @@
 #define RIFLE_UGL_CCO WEAPON(RIFLE_UGL,"","","rhs_acc_dtkakm")
 #define RIFLE_UGL_RCO WEAPON(RIFLE_UGL,"rhs_acc_pkas","","rhs_acc_dtkakm")
 
-#define MAG_RIFLE           ARR_1("30Rnd_762x39_Mag_F")
-#define MAG_RIFLE_TRACER    ARR_1("30Rnd_762x39_Mag_Tracer_F")
+#define MAG_RIFLE           ARR_1("rhssaf_30Rnd_762x39mm_M67")
+#define MAG_RIFLE_TRACER    ARR_1("rhs_30Rnd_762x39mm_bakelite_tracer")
 
 // PDW
 #define PDW     "rhs_weap_pp2000"
@@ -91,35 +91,35 @@
 
 
 // CARBINE
-#define CARBINE         WEAPON("rhs_weap_m92","","","rhs_acc_dtk1l")
-#define CARBINE_CCO    CARBINE
+#define CARBINE     WEAPON("rhs_weap_m92","","","rhs_acc_dtk1l")
+#define CARBINE_CCO CARBINE
 
-#define CARBINE_UGL         WEAPON("rhs_weap_akms_gp25","","","rhs_acc_dtkakm")
-#define CARBINE_UGL_CCO    CARBINE_UGL
+#define CARBINE_UGL WEAPON("rhs_weap_akms_gp25","","","rhs_acc_dtkakm")
+#define CARBINE_UGL_CCO CARBINE_UGL
 
 #define MAG_CARBINE         MAG_RIFLE
 #define MAG_CARBINE_TRACER  MAG_RIFLE_TRACER
 
 
 // SF CARBINES
-#define RIFLE_RECON              WEAPON("rhs_weap_m21a","rhs_acc_1p63","rhs_acc_perst1ik","hlc_muzzle_556NATO_KAC")
-#define RIFLE_UGL_RECON          WEAPON("rhs_weap_m21a_pbg40","rhs_acc_1p63","","hlc_muzzle_556NATO_KAC")
-#define RIFLE_RECON_TAN           RIFLE_RECON
-#define RIFLE_UGL_RECON_TAN		RIFLE_UGL_RECON
+#define RIFLE_RECON         WEAPON("rhs_weap_m21a","rhs_acc_1p63","rhs_acc_perst1ik","hlc_muzzle_556NATO_KAC")
+#define RIFLE_UGL_RECON     WEAPON("rhs_weap_m21a_pbg40","rhs_acc_1p63","","hlc_muzzle_556NATO_KAC")
+#define RIFLE_RECON_TAN     RIFLE_RECON
+#define RIFLE_UGL_RECON_TAN	RIFLE_UGL_RECON
 #define RIFLE_DIVER 		WEAPON("rhs_weap_m21s","rhs_acc_1p63","rhs_acc_perst1ik","hlc_muzzle_556NATO_KAC")
 #define RIFLE_UGL_DIVER 	RIFLE_UGL_RECON
 
-#define MAG_RIFLE_RECON          "rhsgref_30rnd_556x45_m21"
-#define MAG_RIFLE_RECON_TRACER   "rhsgref_30rnd_556x45_m21_t"
+#define MAG_RIFLE_RECON        "rhsgref_30rnd_556x45_m21"
+#define MAG_RIFLE_RECON_TRACER "rhsgref_30rnd_556x45_m21_t"
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
 #define DMR         WEAPON("rhs_weap_m76","rhs_acc_pso1m2","","rhs_acc_dtk1l")
 #define MAG_DMR     ARR_1("rhsgref_10Rnd_792x57_m76")
 
-#define DMR_RECON      WEAPON("rhs_weap_m76","rhs_acc_pso1m2","rhs_acc_pbs1","rhs_acc_dtk1l")
-#define DMR_DIVER   DMR_RECON
-#define MAG_DMR_RECON  MAG_DMR
+#define DMR_RECON     WEAPON("rhs_weap_m76","rhs_acc_pso1m2","rhs_acc_pbs1","rhs_acc_dtk1l")
+#define DMR_DIVER     DMR_RECON
+#define MAG_DMR_RECON MAG_DMR
 
 #define SR_AP       WEAPON("rhs_weap_svdp","rhs_acc_pso1m21","","")
 #define MAGS_SR_AP  ARR_2("rhs_10Rnd_762x54mmR_7N1",10)
@@ -129,7 +129,7 @@
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE       "rhs_weap_m84"
+#define AUTORIFLE           "rhs_weap_m84"
 #define MAG_AUTORIFLE       ARR_1("rhs_100Rnd_762x54mmR")
 #define MAGS_AUTORIFLE      ARR_2(MAG_AUTORIFLE,3)
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_AUTORIFLE,2)
@@ -143,8 +143,8 @@
 
 
 /* ###################### - SIDEARMS - ###################### */
-#define PISTOL		    WEAPON("rhsusf_weap_glock17g4","","","")
-#define MAG_PISTOL 		ARR_1("rhsusf_mag_17Rnd_9x19_JHP")
+#define PISTOL		    WEAPON("rhs_weap_makarov_pm","","","")
+#define MAG_PISTOL 		ARR_1("rhs_mag_9x18_8_57N181S")
 
 #define PISTOL_SF	    WEAPON("rhs_weap_pp2000_folded","","","")
 #define MAG_PISTOL_SF 	ARR_1("rhs_mag_9x19mm_7n21_20")

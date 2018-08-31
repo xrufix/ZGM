@@ -57,8 +57,8 @@
 #define RIFLE_CCO       WEAPON(RIFLE,LASERPOINTER,CCO,"")
 #define RIFLE_UGL_CCO   WEAPON(RIFLE_UGL,LASERPOINTER,CCO,"")
 
-#define MAG_RIFLE			"30Rnd_556x45_Stanag_red"
-#define MAG_RIFLE_TRACER	"30Rnd_556x45_Stanag_Tracer_Red"
+#define MAG_RIFLE			"rhs_mag_30Rnd_556x45_M855A1_PMAG"
+#define MAG_RIFLE_TRACER	"rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red"
 
 // PDW
 #define PDW         ARR_4("smg_01_f",CCO,"acc_flashlight_smg_01","")
@@ -93,10 +93,7 @@
 #define MAGS_AUTORIFLE      ARR_3("200Rnd_556x45_Box_Red_F",4,"200Rnd_556x45_Box_Tracer_Red_F")
 #define MAGS_AUTORIFLE_ASST ARR_2("200Rnd_556x45_Box_Red_F",2)
 
-#define AUTORIFLE_RECON    ARR_2(\
-    WEAPON("arifle_SPAR_02_blk_F",LASERPOINTER,CCO,"muzzle_snds_M"),\
-    WEAPON("arifle_SPAR_02_khk_F",LASERPOINTER,CCO,"muzzle_snds_M_khk_f")\
-)
+#define AUTORIFLE_RECON RIFLE_RECON
 #define MMG WEAPON("MMG_02_black_F",LASERPOINTER,RCO,DMR_BIPOD)
 
 
