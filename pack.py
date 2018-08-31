@@ -31,8 +31,8 @@ def createTemp():
         "C:\Steam\steamapps\common\Arma 3 Tools\CfgConvert\CfgConvert.exe",
         "-txt",
         "-dst",
-        tempDir + "\\CfgLoadouts.hpp",
-        missionDir + "\\CfgLoadouts.hpp"
+        tempDir + "\\description.ext",
+        missionDir + "\\description.ext"
     ], stdout = subprocess.PIPE)
     #"C:\Steam\steamapps\common\Arma 3 Tools\CfgConvert\CfgConvert.exe" -txt -dst output.hpp CfgLoadouts.hpp
 
