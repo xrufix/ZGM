@@ -21,13 +21,13 @@
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      ARR_1("BWA3_Vest_Fleck")
 #define VEST_OFFICER    VEST_EMPTY
-#define VEST_LIGHT      ARR_1("BWA3_Vest_Rifleman1_Fleck")
+#define VEST_LIGHT      ARR_1("BWA3_Vest_Rifleman_Fleck")
 #define VEST_RM         VEST_LIGHT
 #define VEST_GR         ARR_1("BWA3_Vest_grenadier_Fleck")
 #define VEST_CM         ARR_1("BWA3_Vest_Medic_Fleck")
 #define VEST_SL         ARR_1("BWA3_Vest_Leader_Fleck")
 #define VEST_TL         VEST_SL
-#define VEST_MG         ARR_1("BWA3_Vest_Autorifleman_Fleck")
+#define VEST_MG         ARR_1("BWA3_Vest_MachineGunner_Fleck")
 #define VEST_DM         ARR_1("BWA3_Vest_Marksman_Fleck")
 
 #define VEST_CREW		VEST_EMPTY
@@ -131,7 +131,7 @@
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE       WEAPON("BWA3_MG4","rhsusf_acc_eotech_552","","")
+#define AUTORIFLE           WEAPON("BWA3_MG4","rhsusf_acc_eotech_552","","")
 #define MAG_AUTORIFLE       ARR_1("BWA3_200Rnd_556x45")
 #define MAGS_AUTORIFLE      ARR_3(MAG_AUTORIFLE,3,"BWA3_200Rnd_556x45_Tracer")
 #define MAGS_AUTORIFLE_ASST ARR_3(MAG_AUTORIFLE,2,"BWA3_200Rnd_556x45_Tracer")
@@ -155,11 +155,11 @@
 
 /* ###################### - LAUNCHERS - ###################### */
 #define AT_LIGHT	            WEAPON("BWA3_Pzf3","BWA3_optic_NSA80","","")
-#define MAGS_AT_LIGHT           ARR_1("BWA3_Pzf3_IT")
+#define MAGS_AT_LIGHT           ARR_1("BWA3_PzF3_Tandem")
 
-#define AT_ROCKET	            WEAPON("BWA3_CarlGustaf","BWA3_optic_CarlGustaf","","")
-#define MAGS_AT_ROCKET          ARR_3("BWA3_CarlGustaf_HEAT",2,"BWA3_CarlGustaf_HEDP")
-#define MAGS_AT_ROCKET_ASST     ARR_5("BWA3_CarlGustaf_HEAT",2,"BWA3_CarlGustaf_HEDP","BWA3_CarlGustaf_Illum",2)
+#define AT_ROCKET	            WEAPON("BWA3_CarlGustav_Optic","BWA3_optic_Carlgustav","","")
+#define MAGS_AT_ROCKET          ARR_3("BWA3_Carlgustav_HEAT",2,"BWA3_Carlgustav_HEDP")
+#define MAGS_AT_ROCKET_ASST     ARR_5("BWA3_Carlgustav_HEAT",2,"BWA3_Carlgustav_HEDP","BWA3_Carlgustav_Illum",2)
 
 #define AA_MISSILE	            WEAPON("rhs_weap_fim92","","","")
 #define MAGS_AA_MISSILE         ARR_1("rhs_fim92_mag")
@@ -178,7 +178,7 @@
 #define HELMET_BARE ARR_2("PBW_Helm4_fleck","PBW_Helm4_fleck_h")
 // SPECIAL FORCES INFANTRY
 #define HELMET_SF ARR_3("BWA3_OpsCore_Fleck_Camera","BWA3_OpsCore_Fleck_Patch","BWA3_OpsCore_Fleck")
-#define HELMET_DIVER ARR_2("BWA3_OpsCore_Schwarz","BWA3_OpsCore_Schwarz_Camera")
+#define HELMET_DIVER HELMET_SF
 // VEHICLE CREWS
 #define HELMET_CREW 		ARR_1("BWA3_CrewmanKSK_Fleck_Headset")
 #define HELMET_HELICOPTER	ARR_1("H_PilotHelmetHeli_O")
