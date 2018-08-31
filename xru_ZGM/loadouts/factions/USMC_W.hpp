@@ -43,25 +43,22 @@
 /* Wie Desert */
 
 // SF CARBINES
-#define RIFLE_RECON ARR_4(	                                                                        \
-    WEAPON("rhs_weap_m4a1_blockII_wd","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"),   	\
-    WEAPON("rhs_weap_m4a1_blockII_KAC_wd","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"),        	\
-    WEAPON("rhs_weap_m4a1_blockII","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"),	\
-    WEAPON("rhs_weap_m4a1_blockII_KAC","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"))
-#define RIFLE_UGL_RECON ARR_2(	                                                                            \
-    WEAPON("rhs_weap_m4a1_blockII_M203_wd","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_tan"),	    \
-    WEAPON("rhs_weap_m4a1_blockII_M203","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_tan"))
+#define RIFLE_RECON ARR_2( \
+    WEAPON("rhs_weap_m4a1_blockII_wd","rhsusf_acc_su230_mrds_c","rhsusf_acc_anpeq15_light","rhsusf_acc_nt4_tan"), \
+    WEAPON("rhs_weap_m4a1_blockII_KAC_wd","rhsusf_acc_su230_mrds_c","rhsusf_acc_anpeq15_light","rhsusf_acc_nt4_tan"))
+#define RIFLE_UGL_RECON WEAPON("rhs_weap_m4a1_blockII_M203_wd","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_tan")
 
-#define RIFLE_RECON_TAN ARR_2( \
-    WEAPON("rhs_weap_m4a1_blockII_wd","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"), \
-    WEAPON("rhs_weap_m4a1_blockII_KAC_wd","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"))
-#define RIFLE_UGL_RECON_TAN \
-    WEAPON("rhs_weap_m4a1_blockII_M203_wd","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_tan")
+#define RIFLE_RECON_TAN RIFLE_RECON
+#define RIFLE_UGL_RECON_TAN RIFLE_UGL_RECON
 
 /* Diver wie Desert */
 
+#define MAG_RIFLE_RECON          "rhs_mag_30Rnd_556x45_M855A1_PMAG"
+#define MAG_RIFLE_RECON_TRACER   "rhs_mag_30Rnd_556x45_M855A1_PMAG_Tracer_Red"
+
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR WEAPON("w_srifle_ebr_khaki",DMR_BIPOD,LASERPOINTER,"rhsusf_acc_M8541_low")
+#define DMR WEAPON("w_srifle_ebr_khaki",DMR_BIPOD,"rhsusf_acc_anpeq15side_bk","rhsusf_acc_m8541")
+#define DMR_RECON WEAPON("arifle_SPAR_03_khk_F","muzzle_snds_B_khk_F","","rhsusf_acc_su230a_mrds_c")
 /* Wie Desert */
 #define SR_AP WEAPON("rhs_weap_m40a5_wd",SNIPER_OPTIC,"rhsusf_acc_harris_swivel","")
 #define SR_AM WEAPON("rhs_weap_M107_w",SNIPER_OPTIC,"","")
@@ -75,13 +72,7 @@
 /* Wie Desert */
 
 
-
 /* ###################### - LAUNCHERS - ###################### */
-/* Wie Desert */
-
-
-
-/* ###################### - MAGAZINES - ###################### */
 /* Wie Desert */
 
 

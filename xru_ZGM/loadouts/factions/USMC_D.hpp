@@ -64,8 +64,8 @@
 
 
 /* ###################### - ATTACHMENTS- ###################### */
-#define LASERPOINTER "rhsusf_acc_anpeq15side_bk"
-#define LASERPOINTER_TN "rhsusf_acc_anpeq15side"
+#define LASERPOINTER "rhsusf_acc_anpeq15_bk_light"
+#define LASERPOINTER_TN "rhsusf_acc_anpeq16a_light"
 
 #define RCO_1 "rhsusf_acc_ACOG_USMC"
 #define RCO_2 "rhsusf_acc_ACOG2_USMC"
@@ -83,81 +83,61 @@
 
 /* ###################### - PRIMARY WEAPONS - ###################### */
 // STANDARD ISSUE ASSAULT RIFLE
-#define RIFLE_1 "rhs_weap_m16a4_carryhandle"
-#define RIFLE_2 "rhs_weap_m16a4_carryhandle_pmag"
+#define RIFLE "rhs_weap_m16a4"
 #define RIFLE_UGL "rhs_weap_m16a4_carryhandle_M203"
-#define RIFLE_RCO ARR_6(                      \
-    WEAPON(RIFLE_1,LASERPOINTER,RCO_1,""), \
-    WEAPON(RIFLE_1,LASERPOINTER,RCO_2,""), \
-    WEAPON(RIFLE_1,LASERPOINTER,RCO_3,""), \
-    WEAPON(RIFLE_2,LASERPOINTER,RCO_1,""), \
-    WEAPON(RIFLE_2,LASERPOINTER,RCO_2,""), \
-    WEAPON(RIFLE_2,LASERPOINTER,RCO_3,"")  \
-)
-#define RIFLE_UGL_RCO ARR_3(                    \
+#define RIFLE_RCO ARR_3( \
+    WEAPON(RIFLE,LASERPOINTER,RCO_1,""), \
+    WEAPON(RIFLE,LASERPOINTER,RCO_2,""), \
+    WEAPON(RIFLE,LASERPOINTER,RCO_3,""))
+#define RIFLE_UGL_RCO ARR_3( \
     WEAPON(RIFLE_UGL,LASERPOINTER,RCO_1,""), \
-    WEAPON(RIFLE_UGL,LASERPOINTER,RCO_2,""),	\
-    WEAPON(RIFLE_UGL,LASERPOINTER,RCO_3,"")	\
-)
+    WEAPON(RIFLE_UGL,LASERPOINTER,RCO_2,""), \
+    WEAPON(RIFLE_UGL,LASERPOINTER,RCO_3,""))
 #define RIFLE_CCO RIFLE_RCO
 #define RIFLE_UGL_CCO RIFLE_UGL_RCO
 
-#define MAG_RIFLE			"rhs_mag_30Rnd_556x45_M855_Stanag"
-#define MAG_RIFLE_TRACER	"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red"
+#define MAG_RIFLE			"rhs_mag_30Rnd_556x45_M855A1_Stanag"
+#define MAG_RIFLE_TRACER	"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"
 
 // PDW
 #define PDW WEAPON("SMG_05_F","","","")
 #define MAG_PDW	"30Rnd_9x21_Mag_SMG_02"
 
 // CARBINE
-#define CARBINE_1 "rhs_weap_m4_carryhandle"
-#define CARBINE_2 "rhs_weap_m4_carryhandle_mstock"
-#define CARBINE_3 "rhs_weap_m4_carryhandle_pmag"
-#define CARBINE_4 "rhs_weap_m4_mstock"
+#define CARBINE_1 "rhs_weap_m4"
+#define CARBINE_2 "rhs_weap_m4_mstock"
 #define CARBINE_UGL	"rhs_weap_m4a1_m203"
 
-#define CARBINE ARR_4(CARBINE_1,CARBINE_2,CARBINE_3,CARBINE_4)
-#define CARBINE_CCO ARR_4(            	\
+#define CARBINE ARR_2(CARBINE_1,CARBINE_2)
+#define CARBINE_CCO ARR_2(            	\
     WEAPON(CARBINE_1,HOLOSIGHT,"",""),	\
-    WEAPON(CARBINE_2,HOLOSIGHT,"",""),	\
-    WEAPON(CARBINE_3,HOLOSIGHT,"",""),	\
-    WEAPON(CARBINE_4,HOLOSIGHT,"","")	\
-)
+    WEAPON(CARBINE_2,HOLOSIGHT,"",""))
 #define CARBINE_UGL_CCO WEAPON(CARBINE_UGL,HOLOSIGHT,"","")
 
 #define MAG_CARBINE MAG_RIFLE
 #define MAG_CARBINE_TRACER MAG_RIFLE_TRACER
 
 // RECON RIFLES
-#define RIFLE_RECON ARR_4(	                                                                        \
-    WEAPON("rhs_weap_m4a1_blockII_d","rhsusf_acc_SpecterDR_D","rhsusf_acc_anpeq15","rhsusf_acc_nt4_tan"),   	\
-    WEAPON("rhs_weap_m4a1_blockII_KAC_d","rhsusf_acc_SpecterDR_D","rhsusf_acc_anpeq15","rhsusf_acc_nt4_tan"),        	\
-    WEAPON("rhs_weap_m4a1_blockII","rhsusf_acc_SpecterDR","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"),	\
-    WEAPON("rhs_weap_m4a1_blockII_KAC","rhsusf_acc_SpecterDR","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"))
-#define RIFLE_UGL_RECON ARR_2(	                                                                            \
-    WEAPON("rhs_weap_m4a1_blockII_M203_d","rhsusf_acc_g33_xps3_tan","rhsusf_acc_anpeq15side","rhsusf_acc_nt4_tan"),	    \
-    WEAPON("rhs_weap_m4a1_blockII_M203","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_tan"))
+#define RIFLE_RECON ARR_2( \
+    WEAPON("rhs_weap_m4a1_blockII_d","rhsusf_acc_su230_mrds_c","rhsusf_acc_anpeq15_wmx_light","rhsusf_acc_nt4_tan"), \
+    WEAPON("rhs_weap_m4a1_blockII_KAC_d","rhsusf_acc_su230_mrds_c","rhsusf_acc_anpeq15_light","rhsusf_acc_nt4_tan"))
+#define RIFLE_UGL_RECON WEAPON("rhs_weap_m4a1_blockII_M203_d","rhsusf_acc_g33_xps3_tan",LASERPOINTER_TN,"rhsusf_acc_nt4_tan")
     
-#define RIFLE_RECON_TAN ARR_2( \
-    WEAPON("rhs_weap_m4a1_blockII_d","rhsusf_acc_SpecterDR_D","rhsusf_acc_anpeq15","muzzle_snds_m_snd_F"), \
-    WEAPON("rhs_weap_m4a1_blockII_KAC_d","rhsusf_acc_SpecterDR_D","rhsusf_acc_anpeq15","muzzle_snds_m_snd_F"))
-#define RIFLE_UGL_RECON_TAN		WEAPON("rhs_weap_m4a1_blockII_M203_d","rhsusf_acc_SpecterDR_D","rhsusf_acc_anpeq15side","muzzle_snds_m_snd_F")
+#define RIFLE_RECON_TAN RIFLE_RECON
+#define RIFLE_UGL_RECON_TAN RIFLE_UGL_RECON
 
-#define RIFLE_DIVER 		    WEAPON("rhs_weap_mk18_KAC_bk","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_black")
-#define RIFLE_UGL_DIVER 	    WEAPON("rhs_weap_m4a1_blockII_M203_bk","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_black")
+#define RIFLE_DIVER WEAPON("rhs_weap_mk18_KAC_bk","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_black")
+#define RIFLE_UGL_DIVER WEAPON("rhs_weap_mk18_m320","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_black")
 
-#define MAG_RIFLE_RECON          MAG_RIFLE
-#define MAG_RIFLE_RECON_TRACER   MAG_RIFLE_TRACER
+#define MAG_RIFLE_RECON          "rhs_mag_30Rnd_556x45_M855A1_PMAG_Tan"
+#define MAG_RIFLE_RECON_TRACER   "rhs_mag_30Rnd_556x45_M855_PMAG_Tan_Tracer_Red"
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR WEAPON("srifle_EBR_F",DMR_BIPOD,LASERPOINTER,"rhsusf_acc_M8541_low")
+#define DMR WEAPON("srifle_EBR_F",DMR_BIPOD,"rhsusf_acc_anpeq15side_bk","rhsusf_acc_m8541")
 #define MAG_DMR "20Rnd_762x51_Mag"
 
-#define DMR_RECON ARR_3(                                                                     	\
-    WEAPON("arifle_SPAR_03_blk_F","muzzle_snds_B",LASERPOINTER,"optic_AMS"),         	\
-    WEAPON("arifle_SPAR_03_khk_F","muzzle_snds_B_khk_F",LASERPOINTER_TN,"optic_AMS_khk"),	\
-    WEAPON("arifle_SPAR_03_snd_F","muzzle_snds_B_snd_F",LASERPOINTER_TN,"optic_AMS_snd"))
-#define DMR_DIVER WEAPON("arifle_SPAR_03_blk_F","muzzle_snds_B",LASERPOINTER,"rhsusf_acc_SpecterDR_A")
+#define DMR_RECON WEAPON("arifle_SPAR_03_snd_F","muzzle_snds_B_snd_F","rhsusf_acc_anpeq16a_light","rhsusf_acc_su230a_mrds_c")
+#define DMR_DIVER WEAPON("arifle_SPAR_03_blk_F","muzzle_snds_B","rhsusf_acc_anpeq15side_bk","rhsusf_acc_su230a_mrds")
 #define MAG_DMR_RECON "ACE_20Rnd_762x51_M118LR_Mag"
 
 #define SR_AP WEAPON("rhs_weap_m40a5_d",SNIPER_OPTIC,"rhsusf_acc_harris_swivel","")
@@ -171,19 +151,16 @@
     WEAPON("rhs_weap_m27iar_grip",LASERPOINTER,RCO_1,"rhsusf_acc_harris_bipod"),	\
     WEAPON("rhs_weap_m27iar_grip",LASERPOINTER,RCO_2,"rhsusf_acc_harris_bipod"),	\
     WEAPON("rhs_weap_m27iar_grip",LASERPOINTER,RCO_3,"rhsusf_acc_harris_bipod"))
-#define MAG_AUTORIFLE       MAG_RIFLE
-#define MAGS_AUTORIFLE      ARR_4(MAG_RIFLE,12,MAG_RIFLE_TRACER,4)
-#define MAGS_AUTORIFLE_ASST ARR_4(MAG_RIFLE,8,MAG_RIFLE_TRACER,4)
+#define MAG_AUTORIFLE       "rhs_mag_30Rnd_556x45_M855A1_PMAG"
+#define MAGS_AUTORIFLE      ARR_4(MAG_AUTORIFLE,12,"rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red",4)
+#define MAGS_AUTORIFLE_ASST ARR_4(MAG_AUTORIFLE,8,"rhs_mag_30Rnd_556x45_M855_PMAG_Tracer_Red",4)
 
-#define AUTORIFLE_RECON ARR_3(                                                                     	\
-    WEAPON("arifle_SPAR_02_khk_F","rhsusf_acc_nt4_tan","bipod_01_F_khk","rhsusf_acc_SpecterDR_D"),	\
-    WEAPON("arifle_SPAR_02_snd_F","rhsusf_acc_nt4_tan","bipod_01_F_snd","rhsusf_acc_SpecterDR_D"),	\
-    WEAPON("arifle_SPAR_02_blk_F","rhsusf_acc_nt4_black","bipod_01_F_blk","rhsusf_acc_SpecterDR"))
-#define MAGS_AUTORIFLE_RECON   ARR_2("150Rnd_556x45_Drum_Mag_F",6)
+#define AUTORIFLE_RECON WEAPON("rhs_weap_m27iar_grip","rhsusf_acc_anpeq16a_light","rhsusf_acc_su230_mrds","rhsusf_acc_harris_bipod")
+#define MAGS_AUTORIFLE_RECON   ARR_2("rhs_mag_100Rnd_556x45_M855A1_cmag_mixed",6)
 
-#define MMG WEAPON("rhs_weap_m240B","rhsusf_acc_ACOG_MDO",LASERPOINTER,"")
-#define MAGS_MMG            ARR_2("rhsusf_100Rnd_762x51",3)
-#define MAGS_MMG_ASST       ARR_2("rhsusf_100Rnd_762x51",5)
+#define MMG WEAPON("rhs_weap_m240B","rhsusf_acc_ACOG_MDO","","")
+#define MAGS_MMG ARR_2("rhsusf_50Rnd_762x51_m80a1epr",4)
+#define MAGS_MMG_ASST ARR_2("rhsusf_50Rnd_762x51_m80a1epr",8)
 
 
 
@@ -191,7 +168,7 @@
 #define PISTOL			WEAPON("rhsusf_weap_m9","","","")
 #define MAG_PISTOL 		"rhsusf_mag_15Rnd_9x19_JHP"
 
-#define PISTOL_SF		WEAPON("rhsusf_weap_glock17g4","","","")
+#define PISTOL_SF		WEAPON("rhsusf_weap_glock17g4","acc_flashlight_pistol","","")
 #define MAG_PISTOL_SF 	"rhsusf_mag_17Rnd_9x19_JHP"
 
 

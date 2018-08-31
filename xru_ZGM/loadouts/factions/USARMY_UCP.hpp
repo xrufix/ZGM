@@ -70,8 +70,8 @@
 #define SR_AM       WEAPON("rhs_weap_M107_w",SNIPER_OPTIC,"","")
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-/* Wie OCP */
 
+#define MAG_AUTORIFLE       ARR_1("rhsusf_200Rnd_556x45_mixed_soft_pouch")
 
 
 /* ###################### - SIDEARMS - ###################### */
