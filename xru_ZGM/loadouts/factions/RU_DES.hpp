@@ -1,5 +1,5 @@
 #include "RU_EMR.hpp"
 
-/* ###################### - UNIFORMS - ###################### */
-#define	UNIFORM_SINGLE      "rhs_uniform_vdv_emr_des"
-#define UNIFORM_RECON     ARR_1("rhs_uniform_gorka_r_y")
+#define	UNIFORM_SINGLE "rhs_uniform_vdv_emr_des"
+
+#define RIFLE_RECON_TAN WEAPON("rhs_weap_ak74m_desert_npz","rhs_acc_1p87","rhs_acc_perst3","rhs_acc_tgpa")

@@ -94,20 +94,20 @@
                 <German>RU35 - Russische Streitkräfte 2035</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_RU_DES">
-                <English>VDV - Russian Airborne Troops (EMR Desert)</English>
-                <German>VDV - Russische Luftlandetruppen (EMR Wüste)</German>
+                <English>RU - Russian Armed Forces (201X Desert)</English>
+                <German>RU - Russische Streitkräfte (201X Wüste)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_RU_EMR">
-                <English>VDV - Russian Airborne Troops (EMR Summer)</English>
-                <German>VDV - Russische Luftlandetruppen (EMR Sommer)</German>
+                <English>RU - Russian Armed Forces (201X)</English>
+                <German>RU - Russische Streitkräfte (201X)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_RU_FLORA">
-                <English>VMF - Russian Naval Force (Flora)</English>
-                <German>VMF - Russische Marineinfanterie (Flora)</German>
+                <English>RU - Russian Armed Forces (200X)</English>
+                <German>RU - Russische Streitkräfte (200X)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_RU_MOUNT">
-                <English>VMF - Russian Naval Force (Mountain Flora)</English>
-                <German>VMF - Russische Marineinfanterie (Berg)</German>
+                <English>RU - Russian Armed Forces (200X Mountain)</English>
+                <German>RU - Russische Streitkräfte (200X Berg)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_SYND">
                 <English>Syndicat (Tanoa)</English>

@@ -28,9 +28,5 @@
 
 
 /* ###################### - HEADGEAR - ###################### */
-// GENERAL INFANTRY
-#define HELMET ARR_1("rhs_6b27m_ml")
-// NON-COMBAT INFANTRY
-#define HELMET_BARE ARR_1("rhs_6b27m_green")
 // COMMANDERS
 #define CAP_OFFICER ARR_1("rhs_fieldcap_ml")
