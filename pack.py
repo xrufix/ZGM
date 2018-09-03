@@ -44,12 +44,7 @@ def getVersion():
     print ("Set version number:")
     major = input("Major: ")
     minor = input("Minor: ")
-    if len(minor) < 2:
-        minor = "0" + minor
-    patch = input("Patch: ")
-    if len(patch) < 2:
-        patch = "0" + patch
-    version = "{}v{}{}".format(major,minor,patch)
+    version = "{}v{}".format(major,minor)
     print ("Version: " + version)
     return(version)
 
