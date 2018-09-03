@@ -133,3 +133,5 @@
 
 /* ###################### - RADIOS - ###################### */
 // Wie IRAN
+
+#define INSIGNIA_COMMON "GryffinRegiment"
