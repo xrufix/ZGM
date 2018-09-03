@@ -31,6 +31,7 @@ class COMMON : CommonDefault {
     watch[] = {"ItemWatch"};
 
     lrRadios[] = {""};
+    srRadio = RADIO_SR;
     insignia[] = {INSIGNIA_COMMON};
 
     preLoadout = TRAITS(0,0,false,false);

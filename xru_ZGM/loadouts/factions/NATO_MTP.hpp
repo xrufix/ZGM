@@ -252,6 +252,7 @@
 /* ###################### - RADIOS - ###################### */
 #define RADIO_HAND	ARR_1("ACRE_PRC148")
 #define RADIO_PACK 	ARR_1("ACRE_PRC117F")
+#define RADIO_SR "ACRE_PRC343"
 
 /* ###################### - INSIGNIA - ###################### */
 #define INSIGNIA_COMMON ARR_1("")

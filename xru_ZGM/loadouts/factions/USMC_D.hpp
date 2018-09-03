@@ -262,6 +262,7 @@
 /* ###################### - RADIOS - ###################### */
 #define RADIO_HAND	"ACRE_PRC148"
 #define RADIO_PACK 	"ACRE_PRC117F"
+#define RADIO_SR "ACRE_PRC343"
 
 
 

@@ -4,10 +4,11 @@ params ["_unit", "_radio"];
 switch (true) do {
     case (GVAR(usesACRE)): {
         _unit linkItem "ItemRadioAcreFlagged";
+        if (_radio == "") exitWith {};
         switch (true) do {
             case !(_unit canAdd _radio):              { GVAR(overflowItems) pushBack _radio };
-            case (_unit canAddItemToVest _radio):     { _unit addItemToVest _radio };
             case (_unit canAddItemToUniform _radio):  { _unit addItemToUniform _radio };
+            case (_unit canAddItemToVest _radio):     { _unit addItemToVest _radio };
             case (_unit canAddItemToBackpack _radio): { _unit addItemToBackpack _radio };
         };
     };

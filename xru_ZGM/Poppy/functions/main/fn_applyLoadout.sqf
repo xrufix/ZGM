@@ -9,7 +9,7 @@ if (_loadConfig) then {
     [_unit, _loadout] call compile (getText (_config >> "preLoadout"));
 };
 
-_uniqueRadio = [_unit] call FUNC(getUniqueRadio);
+_uniqueRadio = [_unit, _config] call FUNC(getUniqueRadio);
 
 GVAR(overflowItems) = [];
 if (_loadConfig) then {

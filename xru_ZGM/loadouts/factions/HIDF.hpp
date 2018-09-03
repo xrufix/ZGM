@@ -197,6 +197,7 @@
 /* ###################### - RADIOS - ###################### */
 #define RADIO_HAND	ARR_1("ACRE_PRC152")
 #define RADIO_PACK 	ARR_1("ACRE_PRC117F")
+#define RADIO_SR ""
 
 /* ###################### - INSIGNIA - ###################### */
 // Kann in CfgLoadouts.hpp überschrieben werden.

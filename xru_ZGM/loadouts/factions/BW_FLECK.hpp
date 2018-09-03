@@ -219,6 +219,7 @@
 /* ###################### - RADIOS - ###################### */
 #define RADIO_HAND	ARR_1("ACRE_SEM52SL")
 #define RADIO_PACK 	ARR_1("ACRE_SEM70")
+#define RADIO_SR "ACRE_SEM52SL"
 
 
 /* ###################### - INSIGNIA - ###################### */

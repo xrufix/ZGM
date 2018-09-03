@@ -130,7 +130,8 @@
 // COMMANDERS
 #define CAP_OFFICER ARR_2("rhs_fieldcap_digi2","rhs_fieldcap_digi")
 
-
+/* ###################### - RADIOS - ###################### */
+#define RADIO_SR "ACRE_SEM52SL"
 
 /* ###################### - GOGGLES / FACEWEAR - ###################### */
 #define GOGGLES         ARR_2("","rhs_scarf")
