@@ -158,8 +158,8 @@
 #define MAGS_AUTORIFLE_RECON   ARR_2(MAG_AUTORIFLE,5)
 
 //  DMR & SR
-#define MAG_DMR     ARR_1("rhsusf_20Rnd_762x51_m118_special_Mag")
-#define MAG_DMR_RECON  ARR_1("rhsusf_20Rnd_762x51_m118_special_Mag")
+#define MAG_DMR     ARR_1("rhsusf_20Rnd_762x51_SR25_m118_special_Mag")
+#define MAG_DMR_RECON  ARR_1("rhsusf_20Rnd_762x51_SR25_m118_special_Mag")
 #define MAGS_SR_AP  ARR_2("rhsusf_5Rnd_762x51_m118_special_Mag",10)
 #define MAGS_SR_AM  ARR_4("rhsusf_mag_10Rnd_STD_50BMG_M33",3,"rhsusf_mag_10Rnd_STD_50BMG_mk211",1)
 

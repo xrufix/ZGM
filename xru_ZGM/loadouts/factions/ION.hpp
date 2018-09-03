@@ -137,7 +137,7 @@
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
 #define DMR         WEAPON_OLD("rhs_weap_sr25_ec","optic_dms","","rhsusf_acc_harris_bipod")
-#define MAG_DMR     ARR_1("rhsusf_20Rnd_762x51_m118_special_Mag")
+#define MAG_DMR     ARR_1("rhsusf_20Rnd_762x51_SR25_m118_special_Mag")
 
 #define DMR_RECON       WEAPON_OLD("CUP_arifle_Mk20","optic_ams_snd","","rhsusf_acc_harris_bipod")
 #define DMR_DIVER       WEAPON_OLD("CUP_arifle_Mk17_STD_black","optic_ams","","rhsusf_acc_harris_bipod")
