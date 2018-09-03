@@ -57,11 +57,11 @@
 // SF CARBINES
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR_RECON      WEAPON("arifle_SPAR_03_snd_F","rhsusf_acc_LEUPOLDMK4_2","bipod_01_F_blk","hlc_muzzle_300blk_KAC")
+#define DMR_RECON   WEAPON("arifle_SPAR_03_snd_F","rhsusf_acc_LEUPOLDMK4_2","bipod_01_f_snd","hlc_muzzle_300blk_KAC","bwa3_acc_varioray_irlaser")
 
-#define SR_AP       WEAPON("hlc_rifle_awMagnum_fde_ghillie","rhsusf_acc_LEUPOLDMK4_2","","")
+#define SR_AP       WEAPON_OLD("hlc_rifle_awMagnum_fde_ghillie","rhsusf_acc_LEUPOLDMK4_2","","")
 
-#define SR_AM       WEAPON("rhs_weap_M107_d","rhsusf_acc_LEUPOLDMK4_2","","")
+#define SR_AM       WEAPON_OLD("rhs_weap_M107_d","rhsusf_acc_LEUPOLDMK4_2","","")
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
@@ -69,7 +69,7 @@
 /* ###################### - SIDEARMS - ###################### */
 
 /* ###################### - LAUNCHERS - ###################### */
-#define AT_MISSILE              WEAPON("launch_b_Titan_short_F","","","")
+#define AT_MISSILE              WEAPON_OLD("launch_b_Titan_short_F","","","")
 
 /* ###################### - HEADGEAR - ###################### */
 // GENERAL INFANTRY

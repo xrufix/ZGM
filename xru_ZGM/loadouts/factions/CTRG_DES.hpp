@@ -79,10 +79,10 @@
 // STANDARD ISSUE ASSAULT RIFLE
 #define RIFLE           ARR_1("hlc_rifle_ACR_Carb_tan")
 #define RIFLE_UGL       ARR_1("arifle_SPAR_01_GL_snd_F")
-#define RIFLE_RCO       WEAPON(RIFLE,RCO,LASERPOINTER,"")
-#define RIFLE_UGL_RCO   WEAPON(RIFLE_UGL,RCO,LASERPOINTER,"")
-#define RIFLE_CCO       WEAPON(RIFLE,RCO,LASERPOINTER,"")
-#define RIFLE_UGL_CCO   WEAPON(RIFLE_UGL,RCO,LASERPOINTER,"")
+#define RIFLE_RCO       WEAPON_OLD(RIFLE,RCO,LASERPOINTER,"")
+#define RIFLE_UGL_RCO   WEAPON_OLD(RIFLE_UGL,RCO,LASERPOINTER,"")
+#define RIFLE_CCO       WEAPON_OLD(RIFLE,RCO,LASERPOINTER,"")
+#define RIFLE_UGL_CCO   WEAPON_OLD(RIFLE_UGL,RCO,LASERPOINTER,"")
 
 #define MAG_RIFLE			ARR_1("30Rnd_556x45_Stanag_red")
 #define MAG_RIFLE_TRACER	ARR_1("30Rnd_556x45_Stanag_Tracer_Red")
@@ -91,7 +91,7 @@
 #define CARBINE     ARR_1("hlc_rifle_ACR_SBR_black")
 #define CARBINE_UGL	RIFLE_UGL
 
-#define CARBINE_CCO         WEAPON(CARBINE,"optic_Holosight_smg_blk_F","","")
+#define CARBINE_CCO         WEAPON_OLD(CARBINE,"optic_Holosight_smg_blk_F","","")
 #define CARBINE_UGL_CCO    RIFLE_UGL_CCO
 
 #define MAG_CARBINE         MAG_RIFLE
@@ -99,71 +99,71 @@
 
 
 // PDW
-#define PDW             WEAPON("smg_05_f","optic_Holosight_blk_F","","")
+#define PDW             WEAPON_OLD("smg_05_f","optic_Holosight_blk_F","","")
 #define MAG_PDW	        ARR_1("30Rnd_9x21_Mag_SMG_02")
 
 // SF CARBINES
-#define RIFLE_RECON         WEAPON("hlc_rifle_ACR_Carb_tan","optic_ERCO_snd_F",LASERPOINTER,"muzzle_snds_M_snd_f")
-#define RIFLE_UGL_RECON     WEAPON("arifle_SPAR_01_GL_snd_F","optic_Holosight",LASERPOINTER,"muzzle_snds_M_snd_f")
+#define RIFLE_RECON         WEAPON_OLD("hlc_rifle_ACR_Carb_tan","optic_ERCO_snd_F",LASERPOINTER,"muzzle_snds_M_snd_f")
+#define RIFLE_UGL_RECON     WEAPON_OLD("arifle_SPAR_01_GL_snd_F","optic_Holosight",LASERPOINTER,"muzzle_snds_M_snd_f")
 #define RIFLE_RECON_TAN     RIFLE_RECON
 #define RIFLE_UGL_RECON_TAN RIFLE_UGL_RECON
-#define RIFLE_DIVER 		WEAPON("hlc_rifle_ACR_SBR_black","optic_Holosight_blk_F",LASERPOINTER,"muzzle_snds_M")
-#define RIFLE_UGL_DIVER 	WEAPON("arifle_SPAR_01_gl_blk_F","optic_Holosight_blk_F",LASERPOINTER,"muzzle_snds_M")
+#define RIFLE_DIVER 		WEAPON_OLD("hlc_rifle_ACR_SBR_black","optic_Holosight_blk_F",LASERPOINTER,"muzzle_snds_M")
+#define RIFLE_UGL_DIVER 	WEAPON_OLD("arifle_SPAR_01_gl_blk_F","optic_Holosight_blk_F",LASERPOINTER,"muzzle_snds_M")
 
 #define MAG_RIFLE_RECON          MAG_RIFLE
 #define MAG_RIFLE_RECON_TRACER   ARR_1("ACE_30Rnd_556x45_Stanag_Tracer_Dim")
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR         WEAPON("hlc_rifle_ACR68_full_tan","optic_SOS",LASERPOINTER,DMR_BIPOD)
-#define DMR_RECON   WEAPON("hlc_rifle_ACR68_full_tan","optic_SOS",LASERPOINTER,"muzzle_snds_B_snd_F")
-#define DMR_DIVER   WEAPON("hlc_rifle_ACR68_full_black","optic_SOS",LASERPOINTER,"muzzle_snds_b")
+#define DMR         WEAPON_OLD("hlc_rifle_ACR68_full_tan","optic_SOS",LASERPOINTER,DMR_BIPOD)
+#define DMR_RECON   WEAPON("hlc_rifle_ACR68_full_tan","optic_SOS",LASERPOINTER,"muzzle_snds_B_snd_F",DMR_BIPOD)
+#define DMR_DIVER   WEAPON("hlc_rifle_ACR68_full_black","optic_SOS",LASERPOINTER,"muzzle_snds_b",DMR_BIPOD)
 
 #define MAG_DMR         ARR_1("hlc_30rnd_68x43_FMJ")
 #define MAG_DMR_RECON   MAG_DMR
 
-#define SR_AP       WEAPON("srifle_DMR_02_camo_F",SNIPER_OPTIC,"bipod_01_F_snd","")
+#define SR_AP       WEAPON_OLD("srifle_DMR_02_camo_F",SNIPER_OPTIC,"bipod_01_F_snd","")
 #define MAGS_SR_AP  ARR_4("10Rnd_338_Mag",10,"ACE_10Rnd_338_API526_Mag",5)
 
-#define SR_AM       WEAPON("srifle_lrr_camo_f","optic_LRPS","","")
+#define SR_AM       WEAPON_OLD("srifle_lrr_camo_f","optic_LRPS","","")
 #define MAGS_SR_AM  ARR_4("7Rnd_408_Mag",7,"ACE_7Rnd_408_305gr_Mag",3)
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE           WEAPON("hlc_rifle_ACR_mid_tan_x15",CCO,LASERPOINTER,DMR_BIPOD)
+#define AUTORIFLE           WEAPON_OLD("hlc_rifle_ACR_mid_tan_x15",CCO,LASERPOINTER,DMR_BIPOD)
 #define MAGS_AUTORIFLE      ARR_2("hlc_50rnd_556x45_EPR",11)
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_RIFLE,10)
 
-#define AUTORIFLE_RECON       WEAPON("hlc_rifle_ACR_mid_tan_x15","optic_ERCO_snd_F",LASERPOINTER,"muzzle_snds_M_snd_f")
+#define AUTORIFLE_RECON       WEAPON_OLD("hlc_rifle_ACR_mid_tan_x15","optic_ERCO_snd_F",LASERPOINTER,"muzzle_snds_M_snd_f")
 #define MAGS_AUTORIFLE_RECON  ARR_4("hlc_50rnd_556x45_EPR",8,MAG_RIFLE,8)
 
-#define MMG             WEAPON("MMG_02_sand_F","optic_Holosight",LASERPOINTER,"bipod_01_F_snd")
+#define MMG             WEAPON_OLD("MMG_02_sand_F","optic_Holosight",LASERPOINTER,"bipod_01_F_snd")
 #define MAGS_MMG        ARR_2("130Rnd_338_Mag",3)
 #define MAGS_MMG_ASST   ARR_2("130Rnd_338_Mag",5)
 
 
 
 /* ###################### - SIDEARMS - ###################### */
-#define PISTOL		    WEAPON("hlc_pistol_P226R_Combat","hlc_acc_TLR1","","")
+#define PISTOL		    WEAPON_OLD("hlc_pistol_P226R_Combat","hlc_acc_TLR1","","")
 #define MAG_PISTOL 		ARR_1("hlc_15Rnd_9x19_B_P226")
 
-#define PISTOL_SF	    WEAPON("hlc_pistol_P229R_Elite","HLC_Optic228_Docter_CADEX","hlc_muzzle_Evo9","hlc_acc_TLR1")
+#define PISTOL_SF	    WEAPON_OLD("hlc_pistol_P229R_Elite","HLC_Optic228_Docter_CADEX","hlc_muzzle_Evo9","hlc_acc_TLR1")
 #define MAG_PISTOL_SF 	ARR_1("hlc_15Rnd_9x19_SD_P226")
 
 
 
 /* ###################### - LAUNCHERS - ###################### */
-#define AT_LIGHT	            WEAPON("launch_MRAWS_sand_rail_F","","","")
+#define AT_LIGHT	            WEAPON_OLD("launch_MRAWS_sand_rail_F","","","")
 #define MAGS_AT_LIGHT           ARR_3("MRAWS_HEAT_F",2,"MRAWS_HE_F")
 
-#define AT_ROCKET	            WEAPON("launch_MRAWS_sand_F","","","")
+#define AT_ROCKET	            WEAPON_OLD("launch_MRAWS_sand_F","","","")
 #define MAGS_AT_ROCKET          ARR_1("MRAWS_HEAT_F")
 #define MAGS_AT_ROCKET_ASST     MAGS_AT_LIGHT
 
-#define AT_MISSILE              WEAPON("launch_b_Titan_short_F","","","")
+#define AT_MISSILE              WEAPON_OLD("launch_b_Titan_short_F","","","")
 #define MAGS_AT_MISSILE         ARR_1("Titan_AT")
 #define MAGS_AT_MISSILE_ASST    ARR_3("Titan_AT",2,"Titan_AP")
 
-#define AA_MISSILE	            WEAPON("launch_b_Titan_F","","","")
+#define AA_MISSILE	            WEAPON_OLD("launch_b_Titan_F","","","")
 #define MAGS_AA_MISSILE         ARR_1("Titan_AA")
 #define MAGS_AA_MISSILE_ASST    ARR_2("Titan_AA",2)
 

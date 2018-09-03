@@ -51,32 +51,32 @@
 #define RIFLE_UGL       ARR_1("arifle_SPAR_01_GL_blk_F")
 
 // SF CARBINES
-#define RIFLE_RECON         WEAPON("hlc_rifle_ACR_Carb_green","optic_ERCO_khk_F",LASERPOINTER,"muzzle_snds_M_khk_f")
-#define RIFLE_UGL_RECON     WEAPON("arifle_SPAR_01_gl_khk_F","optic_Holosight_khk_F",LASERPOINTER,"muzzle_snds_M_khk_f")
+#define RIFLE_RECON         WEAPON_OLD("hlc_rifle_ACR_Carb_green","optic_ERCO_khk_F",LASERPOINTER,"muzzle_snds_M_khk_f")
+#define RIFLE_UGL_RECON     WEAPON_OLD("arifle_SPAR_01_gl_khk_F","optic_Holosight_khk_F",LASERPOINTER,"muzzle_snds_M_khk_f")
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR         WEAPON("hlc_rifle_ACR68_full_black","optic_SOS",LASERPOINTER,DMR_BIPOD)
-#define DMR_RECON   WEAPON("hlc_rifle_ACR68_full_green","optic_SOS_khk_F",LASERPOINTER,"muzzle_snds_B_khk_F")
+#define DMR         WEAPON_OLD("hlc_rifle_ACR68_full_black","optic_SOS",LASERPOINTER,DMR_BIPOD)
+#define DMR_RECON   WEAPON("hlc_rifle_ACR68_full_green","optic_SOS_khk_F",LASERPOINTER,"muzzle_snds_B_khk_F",DMR_BIPOD)
 
-#define SR_AM       WEAPON("srifle_lrr_tna_f","optic_LRPS_tna_F","","")
+#define SR_AM       WEAPON_OLD("srifle_lrr_tna_f","optic_LRPS_tna_F","","")
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE           WEAPON("hlc_rifle_ACR_mid_black_x15",CCO,LASERPOINTER,DMR_BIPOD)
+#define AUTORIFLE           WEAPON_OLD("hlc_rifle_ACR_mid_black_x15",CCO,LASERPOINTER,DMR_BIPOD)
 
-#define AUTORIFLE_RECON       WEAPON("hlc_rifle_ACR_mid_green_x15","optic_ERCO_khk_F",LASERPOINTER,"muzzle_snds_M_khk_f")
+#define AUTORIFLE_RECON       WEAPON_OLD("hlc_rifle_ACR_mid_green_x15","optic_ERCO_khk_F",LASERPOINTER,"muzzle_snds_M_khk_f")
 
-#define MMG             WEAPON("MMG_02_black_F","optic_Holosight_blk_F",LASERPOINTER,"bipod_01_F_blk")
+#define MMG             WEAPON_OLD("MMG_02_black_F","optic_Holosight_blk_F",LASERPOINTER,"bipod_01_F_blk")
 
 /* ###################### - SIDEARMS - ###################### */
 
 /* ###################### - LAUNCHERS - ###################### */
-#define AT_LIGHT	            WEAPON("launch_MRAWS_green_rail_F","","","")
+#define AT_LIGHT	            WEAPON_OLD("launch_MRAWS_green_rail_F","","","")
 
-#define AT_ROCKET               WEAPON("launch_MRAWS_green_F","","","")
+#define AT_ROCKET               WEAPON_OLD("launch_MRAWS_green_F","","","")
 
-#define AT_MISSILE              WEAPON("launch_b_Titan_short_F","","","")
+#define AT_MISSILE              WEAPON_OLD("launch_b_Titan_short_F","","","")
 
-#define AA_MISSILE	            WEAPON("launch_B_Titan_short_tna_F","","","")
+#define AA_MISSILE	            WEAPON_OLD("launch_B_Titan_short_tna_F","","","")
 
 
 /* ###################### - HEADGEAR - ###################### */

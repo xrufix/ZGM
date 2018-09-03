@@ -46,23 +46,23 @@
 
 // SF CARBINES
 #define RIFLE_RECON         ARR_2( \
-    WEAPON("CUP_arifle_Mk16_CQC_FG","rhsusf_acc_g33_T1",LASERPOINTER,"CUP_muzzle_snds_SCAR_L"), \
-    WEAPON("CUP_arifle_Mk16_CQC_SFG","rhsusf_acc_g33_xps3_tan",LASERPOINTER,"CUP_muzzle_snds_SCAR_L") \
+    WEAPON_OLD("CUP_arifle_Mk16_CQC_FG","rhsusf_acc_g33_T1",LASERPOINTER,"CUP_muzzle_snds_SCAR_L"), \
+    WEAPON_OLD("CUP_arifle_Mk16_CQC_SFG","rhsusf_acc_g33_xps3_tan",LASERPOINTER,"CUP_muzzle_snds_SCAR_L") \
 )
 #define RIFLE_UGL_RECON         ARR_2( \
-    WEAPON("CUP_arifle_Mk16_CQC_EGLM","rhsusf_acc_g33_T1",LASERPOINTER,"CUP_muzzle_snds_SCAR_L"), \
-    WEAPON("CUP_arifle_Mk16_CQC_EGLM","rhsusf_acc_g33_xps3",LASERPOINTER,"CUP_muzzle_snds_SCAR_L") \
+    WEAPON_OLD("CUP_arifle_Mk16_CQC_EGLM","rhsusf_acc_g33_T1",LASERPOINTER,"CUP_muzzle_snds_SCAR_L"), \
+    WEAPON_OLD("CUP_arifle_Mk16_CQC_EGLM","rhsusf_acc_g33_xps3",LASERPOINTER,"CUP_muzzle_snds_SCAR_L") \
 )
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR           WEAPON("CUP_arifle_Mk16_SV","bipod_01_F_blk","rhsusf_acc_ACOG_d",LASERPOINTER)
+#define DMR           WEAPON_OLD("CUP_arifle_Mk16_SV","bipod_01_F_blk","rhsusf_acc_ACOG_d",LASERPOINTER)
 
-#define DMR_RECON     WEAPON("CUP_arifle_Mk17_STD_FG","bipod_01_F_blk","rhsusf_acc_ACOG_MDO","CUP_muzzle_snds_SCAR_H")
+#define DMR_RECON     WEAPON("CUP_arifle_Mk17_STD_FG","bipod_01_F_blk","rhsusf_acc_ACOG_MDO","CUP_muzzle_snds_SCAR_H",LASERPOINTER)
 
-#define SR_AP         WEAPON("hlc_rifle_awMagnum_FDE_ghillie","",SNIPER_OPTIC,"")
+#define SR_AP         WEAPON_OLD("hlc_rifle_awMagnum_FDE_ghillie","",SNIPER_OPTIC,"")
 
-#define SR_AM         WEAPON("rhs_weap_M107_d","rhsusf_acc_premier","","")
+#define SR_AM         WEAPON_OLD("rhs_weap_M107_d","rhsusf_acc_premier","","")
 
 // AUTOMATIC RIFLES & MACHINE GUNS
 

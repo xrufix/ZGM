@@ -60,8 +60,8 @@
 
 
 // SF CARBINES
-#define RIFLE_RECON              WEAPON("arifle_ARX_blk_F",RCO,LASERPOINTER,"muzzle_snds_65_TI_blk_F")
-#define RIFLE_RECON_TAN           WEAPON("arifle_ARX_hex_F",RCO_TN,LASERPOINTER,"muzzle_snds_65_TI_hex_F")
+#define RIFLE_RECON              WEAPON_OLD("arifle_ARX_blk_F",RCO,LASERPOINTER,"muzzle_snds_65_TI_blk_F")
+#define RIFLE_RECON_TAN           WEAPON_OLD("arifle_ARX_hex_F",RCO_TN,LASERPOINTER,"muzzle_snds_65_TI_hex_F")
 
 #define MAG_RIFLE_RECON          ARR_3("10Rnd_50BW_Mag_F",2,"30Rnd_65x39_caseless_green")
 #define MAG_RIFLE_RECON_TRACER   ARR_1("30Rnd_65x39_caseless_green")
@@ -72,9 +72,9 @@
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE_RECON        WEAPON("arifle_CTARS_blk_F",LASERPOINTER,RCO,"muzzle_snds_58_blk_F")
+#define AUTORIFLE_RECON        WEAPON_OLD("arifle_CTARS_blk_F",LASERPOINTER,RCO,"muzzle_snds_58_blk_F")
 
-#define MMG                 WEAPON("MMG_01_tan_F",RCO_TN,LASERPOINTER,DMR_BIPOD)
+#define MMG                 WEAPON_OLD("MMG_01_tan_F",RCO_TN,LASERPOINTER,DMR_BIPOD)
 
 
 /* ###################### - SIDEARMS - ###################### */

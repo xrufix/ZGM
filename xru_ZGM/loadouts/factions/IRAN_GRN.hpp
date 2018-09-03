@@ -60,20 +60,20 @@
 
 
 // SF CARBINES
-#define RIFLE_RECON              WEAPON("arifle_ARX_ghex_F",RCO_TN,LASERPOINTER,"muzzle_snds_65_TI_ghex_F")
+#define RIFLE_RECON              WEAPON_OLD("arifle_ARX_ghex_F",RCO_TN,LASERPOINTER,"muzzle_snds_65_TI_ghex_F")
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
 #define DMR_RECON      DMR_DIVER
 
-#define SR_AP      WEAPON("srifle_DMR_05_blk_F","optic_LRPS",LASERPOINTER,DMR_BIPOD)
-#define SR_AM      WEAPON("srifle_GM6_ghex_F",SNIPER_OPTIC,"","")
+#define SR_AP      WEAPON_OLD("srifle_DMR_05_blk_F","optic_LRPS",LASERPOINTER,DMR_BIPOD)
+#define SR_AM      WEAPON_OLD("srifle_GM6_ghex_F",SNIPER_OPTIC,"","")
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE_RECON        WEAPON("arifle_CTARS_ghex_F",LASERPOINTER,RCO_TN,"muzzle_snds_58_ghex_F")
+#define AUTORIFLE_RECON        WEAPON_OLD("arifle_CTARS_ghex_F",LASERPOINTER,RCO_TN,"muzzle_snds_58_ghex_F")
 
-#define MMG                 WEAPON("MMG_01_tan_F",RCO,LASERPOINTER,DMR_BIPOD)
+#define MMG                 WEAPON_OLD("MMG_01_tan_F",RCO,LASERPOINTER,DMR_BIPOD)
 
 
 /* ###################### - SIDEARMS - ###################### */
@@ -81,11 +81,11 @@
 
 
 /* ###################### - LAUNCHERS - ###################### */
-#define AT_LIGHT	            WEAPON("launch_rpg32_ghex_f","","","")
+#define AT_LIGHT	            WEAPON_OLD("launch_rpg32_ghex_f","","","")
 
-#define AA_MISSILE	            WEAPON("launch_O_Titan_ghex_F","","","")
+#define AA_MISSILE	            WEAPON_OLD("launch_O_Titan_ghex_F","","","")
 
-#define AT_MISSILE              WEAPON("launch_O_Vorona_green_F","","","")
+#define AT_MISSILE              WEAPON_OLD("launch_O_Vorona_green_F","","","")
 
 
 /* ###################### - HEADGEAR - ###################### */

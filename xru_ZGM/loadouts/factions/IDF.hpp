@@ -78,62 +78,62 @@
 // STANDARD ISSUE ASSAULT RIFLE
 #define RIFLE "w_arifle_trg21_black"
 #define RIFLE_UGL "w_arifle_trg21_gl_black"
-#define RIFLE_RCO WEAPON(RIFLE,"",RCO,"")
-#define RIFLE_UGL_RCO WEAPON(RIFLE_UGL,"",RCO,"")
-#define RIFLE_CCO WEAPON(RIFLE,"",CCO,"")
-#define RIFLE_UGL_CCO WEAPON(RIFLE_UGL,"",CCO,"")
+#define RIFLE_RCO WEAPON_OLD(RIFLE,"",RCO,"")
+#define RIFLE_UGL_RCO WEAPON_OLD(RIFLE_UGL,"",RCO,"")
+#define RIFLE_CCO WEAPON_OLD(RIFLE,"",CCO,"")
+#define RIFLE_UGL_CCO WEAPON_OLD(RIFLE_UGL,"",CCO,"")
 
 // CARBINE & PDW
-#define PDW WEAPON("hgun_PDW2000_F","","","")
+#define PDW WEAPON_OLD("hgun_PDW2000_F","","","")
 #define CARBINE_1 "arifle_TRG20_F"
 #define CARBINE_UGL	RIFLE_UGL
 
 #define CARBINE ARR_1(CARBINE_1)
-#define CARBINE_CCO WEAPON(CARBINE_1,CCO,"","")
-#define CARBINE_UGL_CCO WEAPON(CARBINE_UGL,CCO,"","")
+#define CARBINE_CCO WEAPON_OLD(CARBINE_1,CCO,"","")
+#define CARBINE_UGL_CCO WEAPON_OLD(CARBINE_UGL,CCO,"","")
 
 // SF CARBINES
 #define RIFLE_RECON ARR_2(\
-    WEAPON("arifle_TRG20_F",LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_tan"),\
-    WEAPON("arifle_TRG20_F",LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_black")\
+    WEAPON_OLD("arifle_TRG20_F",LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_tan"),\
+    WEAPON_OLD("arifle_TRG20_F",LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_black")\
 )
 #define RIFLE_UGL_RECON ARR_2(\
-    WEAPON("arifle_TRG21_GL_F",LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_tan"),\
-    WEAPON("arifle_TRG21_GL_F",LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_black")\
+    WEAPON_OLD("arifle_TRG21_GL_F",LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_tan"),\
+    WEAPON_OLD("arifle_TRG21_GL_F",LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_black")\
 )
 #define RIFLE_RECON_TAN     RIFLE_RECON
 #define RIFLE_UGL_RECON_TAN	RIFLE_UGL_RECON
-#define RIFLE_DIVER 		WEAPON(RIFLE,LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_black")
-#define RIFLE_UGL_DIVER 	WEAPON(RIFLE_UGL,LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_black")
+#define RIFLE_DIVER 		WEAPON_OLD(RIFLE,LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_black")
+#define RIFLE_UGL_DIVER 	WEAPON_OLD(RIFLE_UGL,LASERPOINTER,"optic_erco_blk_f","rhsusf_acc_nt4_black")
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR WEAPON("rhs_weap_sr25",DMR_BIPOD,LASERPOINTER,"rhsusf_acc_ACOG3")
+#define DMR WEAPON_OLD("rhs_weap_sr25",DMR_BIPOD,LASERPOINTER,"rhsusf_acc_ACOG3")
 #define DMR_RECON ARR_3(                                                                     	\
-    WEAPON("rhs_weap_sr25_ec","rhsusf_acc_sr25S",LASERPOINTER,"rhsusf_acc_ACOG3"),         	\
-    WEAPON("rhs_weap_sr25_ec_wd","rhsusf_acc_sr25S",LASERPOINTER,"rhsusf_acc_ACOG_wd"),	\
-    WEAPON("rhs_weap_sr25_ec_d","rhsusf_acc_sr25S",LASERPOINTER,"rhsusf_acc_ACOG_d")	\
+    WEAPON("rhs_weap_sr25_ec","rhsusf_acc_sr25S",LASERPOINTER,"rhsusf_acc_ACOG3","bipod_03_f_blk"),         	\
+    WEAPON("rhs_weap_sr25_ec_wd","rhsusf_acc_sr25S",LASERPOINTER,"rhsusf_acc_ACOG_wd","bipod_03_f_oli"),	\
+    WEAPON("rhs_weap_sr25_ec_d","rhsusf_acc_sr25S",LASERPOINTER,"rhsusf_acc_ACOG_d","bipod_02_f_hex")	\
 )
 #define DMR_DIVER DMR_RECON
-#define SR_AP WEAPON("rhs_weap_m24sws_ghillie",SNIPER_OPTIC,"rhsusf_acc_harris_swivel","")
-#define SR_AM WEAPON("rhs_weap_m82a1",SNIPER_OPTIC,"","")
+#define SR_AP WEAPON_OLD("rhs_weap_m24sws_ghillie",SNIPER_OPTIC,"rhsusf_acc_harris_swivel","")
+#define SR_AM WEAPON_OLD("rhs_weap_m82a1",SNIPER_OPTIC,"","")
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE WEAPON("LMG_Zafir_F","",RCO,"")
-#define AUTORIFLE_RECON WEAPON("LMG_Zafir_F",LASERPOINTER,RCO,"")
+#define AUTORIFLE WEAPON_OLD("LMG_Zafir_F","",RCO,"")
+#define AUTORIFLE_RECON WEAPON_OLD("LMG_Zafir_F",LASERPOINTER,RCO,"")
 #define MMG AUTORIFLE_RECON
 
 
 
 /* ###################### - SIDEARMS - ###################### */
-#define PISTOL		WEAPON("rhsusf_weap_m9","","","")
-#define PISTOL_SF	WEAPON("rhsusf_weap_glock17g4","","","")
+#define PISTOL		WEAPON_OLD("rhsusf_weap_m9","","","")
+#define PISTOL_SF	WEAPON_OLD("rhsusf_weap_glock17g4","","","")
 
 
 
 /* ###################### - LAUNCHERS - ###################### */
-#define AT_LIGHT	WEAPON("rhs_weap_m72a7","","","")
-#define AT_ROCKET	WEAPON("CUP_launch_M47","","","")
-#define AA_MISSILE	WEAPON("rhs_weap_fim92","","","")   // Nicht nutzen!
+#define AT_LIGHT	WEAPON_OLD("rhs_weap_m72a7","","","")
+#define AT_ROCKET	WEAPON_OLD("CUP_launch_M47","","","")
+#define AA_MISSILE	WEAPON_OLD("rhs_weap_fim92","","","")   // Nicht nutzen!
 #define AT_MISSILE AT_ROCKET
 
 

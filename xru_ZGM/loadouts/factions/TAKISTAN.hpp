@@ -112,56 +112,56 @@
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR         WEAPON("hlc_rifle_g3a3","hlc_optic_accupoint_g3","","")
+#define DMR         WEAPON_OLD("hlc_rifle_g3a3","hlc_optic_accupoint_g3","","")
 #define MAG_DMR     ARR_1("hlc_20rnd_762x51_b_G3")
 
-#define DMR_RECON       WEAPON("rhs_weap_akmn","rhs_acc_pso1m2_ak","","rhs_acc_dtkakm")
+#define DMR_RECON       WEAPON_OLD("rhs_weap_akmn","rhs_acc_pso1m2_ak","","rhs_acc_dtkakm")
 #define DMR_DIVER       DMR_RECON
-#define MAG_DMR_RECON   ARR_1("30Rnd_762x39_Mag_F")
+#define MAG_DMR_RECON   ARR_1("rhs_30Rnd_762x39mm_bakelite")
 
-#define SR_AP       WEAPON("rhs_weap_svdp","rhs_acc_pso1m2","","")
+#define SR_AP       WEAPON_OLD("rhs_weap_svdp","rhs_acc_pso1m2","","")
 #define MAGS_SR_AP  ARR_2("rhs_10Rnd_762x54mmR_7N1",20)
 
-#define SR_AM       WEAPON("srifle_GM6_F","optic_KHS_old","","")
+#define SR_AM       WEAPON_OLD("srifle_GM6_F","optic_KHS_old","","")
 #define MAGS_SR_AM  ARR_6("5Rnd_127x108_Mag",5,"5Rnd_127x108_APDS_Mag",5,"ACE_5Rnd_127x99_API_Mag",5)
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE           WEAPON("hlc_rifle_rpk_75rnd","","","")
+#define AUTORIFLE           WEAPON_OLD("hlc_rifle_rpk_75rnd","","","")
 #define MAG_AUTORIFLE       ARR_1("hlc_75Rnd_762x39_m_rpk")
 #define MAGS_AUTORIFLE      ARR_2(MAG_AUTORIFLE,4)
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_AUTORIFLE,2)
 
-#define AUTORIFLE_RECON        WEAPON("hlc_rifle_rpk_75rnd","","","")
+#define AUTORIFLE_RECON        WEAPON_OLD("hlc_rifle_rpk_75rnd","","","")
 #define MAGS_AUTORIFLE_RECON   ARR_4("hlc_75Rnd_762x39_m_rpk",4,"hlc_75Rnd_762x39_AP_rpk",3)
 
-#define MMG                 WEAPON("rhs_weap_pkp","","","")
+#define MMG                 WEAPON_OLD("rhs_weap_pkp","","","")
 #define MAGS_MMG            ARR_2("rhs_100Rnd_762x54mmR_7N13",2)
 #define MAGS_MMG_ASST       ARR_2("rhs_100Rnd_762x54mmR_7N13",2)
 
 
 /* ###################### - SIDEARMS - ###################### */
-#define PISTOL		    WEAPON("rhsusf_weap_m1911a1","","","")
+#define PISTOL		    WEAPON_OLD("rhsusf_weap_m1911a1","","","")
 #define MAG_PISTOL 		ARR_1("rhsusf_mag_7x45acp_MHP")
 
-#define PISTOL_SF	    WEAPON("hgun_Rook40_F","muzzle_snds_L","","")
+#define PISTOL_SF	    WEAPON_OLD("hgun_Rook40_F","muzzle_snds_L","","")
 #define MAG_PISTOL_SF 	ARR_1("16Rnd_9x21_Mag")
 
 
 
 /* ###################### - LAUNCHERS - ###################### */
-#define AT_LIGHT	            WEAPON("rhs_weap_rpg26","","","")
+#define AT_LIGHT	            WEAPON_OLD("rhs_weap_rpg26","","","")
 #define MAGS_AT_LIGHT           ARR_1("rhs_rpg26_mag")
 
-#define AT_ROCKET	            WEAPON("rhs_weap_rpg7","rhs_acc_pgo7v3","","")
+#define AT_ROCKET	            WEAPON_OLD("rhs_weap_rpg7","rhs_acc_pgo7v3","","")
 #define MAGS_AT_ROCKET          ARR_3("rhs_rpg7_PG7VR_mag",2,"rhs_rpg7_TBG7V_mag")
 #define MAGS_AT_ROCKET_ASST     ARR_4("rhs_rpg7_PG7VR_mag",3,"rhs_rpg7_OG7V_mag",3)
 
-#define AA_MISSILE	            WEAPON("rhs_weap_igla","","","")
+#define AA_MISSILE	            WEAPON_OLD("rhs_weap_igla","","","")
 #define MAGS_AA_MISSILE         ARR_1("rhs_mag_9k38_rocket")
 #define MAGS_AA_MISSILE_ASST    ARR_2("rhs_mag_9k38_rocket",2)
 
-#define AT_MISSILE              WEAPON("CUP_launch_M47","","","")
+#define AT_MISSILE              WEAPON_OLD("CUP_launch_M47","","","")
 #define MAGS_AT_MISSILE         ARR_1("CUP_Dragon_EP1_M")
 #define MAGS_AT_MISSILE_ASST    ARR_1("CUP_Dragon_EP1_M")
 

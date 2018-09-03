@@ -50,24 +50,24 @@
 
 // SF CARBINES
 #define RIFLE_RECON ARR_4(	                                                                        \
-    WEAPON("rhs_weap_m4a1_blockII_wd","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"),   	\
-    WEAPON("rhs_weap_m4a1_blockII_KAC_wd","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"),        	\
-    WEAPON("rhs_weap_m4a1_blockII","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"),	\
-    WEAPON("rhs_weap_m4a1_blockII_KAC","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"))
+    WEAPON_OLD("rhs_weap_m4a1_blockII_wd","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"),   	\
+    WEAPON_OLD("rhs_weap_m4a1_blockII_KAC_wd","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"),        	\
+    WEAPON_OLD("rhs_weap_m4a1_blockII","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"),	\
+    WEAPON_OLD("rhs_weap_m4a1_blockII_KAC","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"))
 #define RIFLE_UGL_RECON ARR_2(	                                                                            \
-    WEAPON("rhs_weap_m4a1_blockII_M203_wd","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_tan"),	    \
-    WEAPON("rhs_weap_m4a1_blockII_M203","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_tan"))
+    WEAPON_OLD("rhs_weap_m4a1_blockII_M203_wd","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_tan"),	    \
+    WEAPON_OLD("rhs_weap_m4a1_blockII_M203","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_tan"))
 
 #define RIFLE_RECON_TAN ARR_2( \
-    WEAPON("rhs_weap_m4a1_blockII_wd","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"), \
-    WEAPON("rhs_weap_m4a1_blockII_KAC_wd","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"))
+    WEAPON_OLD("rhs_weap_m4a1_blockII_wd","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"), \
+    WEAPON_OLD("rhs_weap_m4a1_blockII_KAC_wd","rhsusf_acc_SpecterDR_OD","rhsusf_acc_anpeq15_bk","rhsusf_acc_nt4_tan"))
 #define RIFLE_UGL_RECON_TAN \
-    WEAPON("rhs_weap_m4a1_blockII_M203_wd","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_tan")
+    WEAPON_OLD("rhs_weap_m4a1_blockII_M203_wd","rhsusf_acc_g33_xps3","rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_tan")
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define SR_AP       WEAPON("rhs_weap_xm2010_wd","rhsusf_acc_LEUPOLDMK4_2","","")
-#define SR_AM       WEAPON("rhs_weap_M107_w",SNIPER_OPTIC,"","")
+#define SR_AP       WEAPON_OLD("rhs_weap_xm2010_wd","rhsusf_acc_LEUPOLDMK4_2","","")
+#define SR_AM       WEAPON_OLD("rhs_weap_M107_w",SNIPER_OPTIC,"","")
 
 // AUTOMATIC RIFLES & MACHINE GUNS
 

@@ -476,7 +476,6 @@ class LOADOUT(recon,dm) : LOADOUT(recon,common) {
         GRENADES_RGO
     };
     items[] += {
-        DMR_BIPOD,
         "ACE_RangeCard"
     };
 };
@@ -570,7 +569,9 @@ class LOADOUT(diver,dm) : LOADOUT(diver,common) {
         GRENADES_RGO,
         "ACE_M84",4
     };
-    items[] += {DMR_BIPOD};
+    items[] += {
+        "ACE_RangeCard"
+    };
 };
 // Diver TL/JTAC
 class LOADOUT(diver,jtac) : LOADOUT(diver,tl) {

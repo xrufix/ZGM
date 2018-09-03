@@ -58,48 +58,47 @@
 
 // SF CARBINES
 #define RIFLE_RECON ARR_2(\
-    WEAPON("arifle_SPAR_01_blk_F",LASERPOINTER,"optic_ERCO_blk_F","muzzle_snds_M"),\
-    WEAPON("arifle_SPAR_01_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")\
+    WEAPON_OLD("arifle_SPAR_01_blk_F",LASERPOINTER,"optic_ERCO_blk_F","muzzle_snds_M"),\
+    WEAPON_OLD("arifle_SPAR_01_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")\
 )
 #define RIFLE_UGL_RECON ARR_2(\
-    WEAPON("arifle_SPAR_01_gl_blk_F",LASERPOINTER,"optic_ERCO_blk_F","muzzle_snds_M"),\
-    WEAPON("arifle_SPAR_01_gl_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")\
+    WEAPON_OLD("arifle_SPAR_01_gl_blk_F",LASERPOINTER,"optic_ERCO_blk_F","muzzle_snds_M"),\
+    WEAPON_OLD("arifle_SPAR_01_gl_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")\
 )
-#define RIFLE_RECON_TAN       WEAPON("arifle_SPAR_01_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")
-#define RIFLE_UGL_RECON_TAN   WEAPON("arifle_SPAR_01_gl_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")
+#define RIFLE_RECON_TAN       WEAPON_OLD("arifle_SPAR_01_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")
+#define RIFLE_UGL_RECON_TAN   WEAPON_OLD("arifle_SPAR_01_gl_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR WEAPON("w_srifle_ebr_khaki",DMR_BIPOD,LASERPOINTER,"optic_SOS_khk_F")
+#define DMR WEAPON_OLD("w_srifle_ebr_khaki",DMR_BIPOD,LASERPOINTER,"optic_SOS_khk_F")
 
 #define DMR_RECON ARR_2(\
-    WEAPON("arifle_SPAR_03_blk_F",LASERPOINTER,"optic_ams","muzzle_snds_b"),\
-    WEAPON("arifle_SPAR_03_khk_F",LASERPOINTER,"optic_ams_khk","muzzle_snds_b_khk_f")\
-)
+    WEAPON("arifle_SPAR_03_blk_F",LASERPOINTER,"optic_ams","muzzle_snds_b","bipod_01_f_blk"),\
+    WEAPON("arifle_SPAR_03_khk_F",LASERPOINTER,"optic_ams_khk","muzzle_snds_b_khk_f","bipod_01_f_khk"))
 
-#define SR_AP WEAPON("srifle_DMR_02_camo_F",SNIPER_OPTIC,DMR_BIPOD,"ACE_muzzle_mzls_338")
-#define SR_AM WEAPON("srifle_lrr_tna_f",SNIPER_OPTIC,"","")
+#define SR_AP WEAPON_OLD("srifle_DMR_02_camo_F",SNIPER_OPTIC,DMR_BIPOD,"ACE_muzzle_mzls_338")
+#define SR_AM WEAPON_OLD("srifle_lrr_tna_f",SNIPER_OPTIC,"","")
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE   WEAPON("arifle_MX_SW_khk_F",LASERPOINTER,RCO,DMR_BIPOD)
+#define AUTORIFLE   WEAPON_OLD("arifle_MX_SW_khk_F",LASERPOINTER,RCO,DMR_BIPOD)
 #define AUTORIFLE_RECON    ARR_2(\
-    WEAPON("arifle_SPAR_02_blk_F",LASERPOINTER,"optic_ERCO_blk_F","muzzle_snds_M"),\
-    WEAPON("arifle_SPAR_02_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")\
+    WEAPON_OLD("arifle_SPAR_02_blk_F",LASERPOINTER,"optic_ERCO_blk_F","muzzle_snds_M"),\
+    WEAPON_OLD("arifle_SPAR_02_khk_F",LASERPOINTER,"optic_ERCO_khk_F","muzzle_snds_M_khk_f")\
 )
-#define MMG WEAPON("MMG_02_black_F",LASERPOINTER,"optic_Hamr","bipod_01_F_blk")
+#define MMG WEAPON_OLD("MMG_02_black_F",LASERPOINTER,"optic_Hamr","bipod_01_F_blk")
 
 
 
 /* ###################### - SIDEARMS - ###################### */
-#define PISTOL		WEAPON("hgun_p07_khk_f","","","")
-#define PISTOL_SF	WEAPON("hgun_Pistol_heavy_01_F","muzzle_snds_acp","optic_MRD","")
+#define PISTOL		WEAPON_OLD("hgun_p07_khk_f","","","")
+#define PISTOL_SF	WEAPON_OLD("hgun_Pistol_heavy_01_F","muzzle_snds_acp","optic_MRD","")
 
 
 
 /* ###################### - LAUNCHERS - ###################### */
-#define AT_LIGHT    WEAPON("launch_nlaw_f","","","")
-#define AT_ROCKET   WEAPON("launch_MRAWS_green_F",LASERPOINTER,"","")
-#define AA_MISSILE  WEAPON("launch_B_Titan_tna_F","","","")
-#define AT_MISSILE  WEAPON("launch_B_Titan_short_tna_F","","","")
+#define AT_LIGHT    WEAPON_OLD("launch_nlaw_f","","","")
+#define AT_ROCKET   WEAPON_OLD("launch_MRAWS_green_F",LASERPOINTER,"","")
+#define AA_MISSILE  WEAPON_OLD("launch_B_Titan_tna_F","","","")
+#define AT_MISSILE  WEAPON_OLD("launch_B_Titan_short_tna_F","","","")
 
 
 /* ###################### - HEADGEAR - ###################### */

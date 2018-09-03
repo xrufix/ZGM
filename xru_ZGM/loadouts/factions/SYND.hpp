@@ -75,15 +75,15 @@
 #define RIFLE_4 ARR_1("rhs_weap_akm")
 
 #define RIFLE_CCO ARR_4( \
-    WEAPON(RIFLE_1,"rhs_acc_dtk","",""), \
-    WEAPON(RIFLE_2,"rhs_acc_dtkakm","",""), \
-    WEAPON(RIFLE_3,"rhs_acc_dtkakm","",""), \
-    WEAPON(RIFLE_4,"rhs_acc_dtkakm","",""))
+    WEAPON_OLD(RIFLE_1,"rhs_acc_dtk","",""), \
+    WEAPON_OLD(RIFLE_2,"rhs_acc_dtkakm","",""), \
+    WEAPON_OLD(RIFLE_3,"rhs_acc_dtkakm","",""), \
+    WEAPON_OLD(RIFLE_4,"rhs_acc_dtkakm","",""))
 #define RIFLE_RCO ARR_4( \
-    WEAPON(RIFLE_1,"rhs_acc_2dpZenit","rhs_acc_dtk",""), \
-    WEAPON(RIFLE_2,"rhs_acc_dtkakm","",""), \
-    WEAPON(RIFLE_3,"rhs_acc_2dpZenit","rhs_acc_dtkakm",""), \
-    WEAPON(RIFLE_4,"rhs_acc_2dpZenit","rhs_acc_dtkakm",""))
+    WEAPON_OLD(RIFLE_1,"rhs_acc_2dpZenit","rhs_acc_dtk",""), \
+    WEAPON_OLD(RIFLE_2,"rhs_acc_dtkakm","",""), \
+    WEAPON_OLD(RIFLE_3,"rhs_acc_2dpZenit","rhs_acc_dtkakm",""), \
+    WEAPON_OLD(RIFLE_4,"rhs_acc_2dpZenit","rhs_acc_dtkakm",""))
 
 
 // GRENADIER ASSAULT RIFLE
@@ -93,15 +93,15 @@
 #define RIFLE_UGL_4     ARR_1("rhs_weap_akm_gp25")
 
 #define RIFLE_UGL_CCO ARR_4( \
-    WEAPON(RIFLE_UGL_1,"rhs_acc_dtk","",""), \
-    WEAPON(RIFLE_UGL_2,"","",""), \
-    WEAPON(RIFLE_UGL_3,"rhs_acc_dtk","",""), \
-    WEAPON(RIFLE_UGL_4,"rhs_acc_dtk","",""))
+    WEAPON_OLD(RIFLE_UGL_1,"rhs_acc_dtk","",""), \
+    WEAPON_OLD(RIFLE_UGL_2,"","",""), \
+    WEAPON_OLD(RIFLE_UGL_3,"rhs_acc_dtk","",""), \
+    WEAPON_OLD(RIFLE_UGL_4,"rhs_acc_dtk","",""))
 #define RIFLE_UGL_RCO ARR_4( \
-    WEAPON(RIFLE_UGL_1,"rhs_acc_ekp8_02","rhs_acc_dtk","rhs_acc_2dpZenit"), \
-    WEAPON(RIFLE_UGL_2,"rhs_acc_1p63","",""), \
-    WEAPON(RIFLE_UGL_3,"rhs_acc_ekp1","rhs_acc_dtk","rhs_acc_2dpZenit"), \
-    WEAPON(RIFLE_UGL_4,"rhs_acc_pkas","rhs_acc_dtk","rhs_acc_2dpZenit"))
+    WEAPON_OLD(RIFLE_UGL_1,"rhs_acc_ekp8_02","rhs_acc_dtk","rhs_acc_2dpZenit"), \
+    WEAPON_OLD(RIFLE_UGL_2,"rhs_acc_1p63","",""), \
+    WEAPON_OLD(RIFLE_UGL_3,"rhs_acc_ekp1","rhs_acc_dtk","rhs_acc_2dpZenit"), \
+    WEAPON_OLD(RIFLE_UGL_4,"rhs_acc_pkas","rhs_acc_dtk","rhs_acc_2dpZenit"))
 
 #define MAG_RIFLE           ARR_1("30Rnd_762x39_Mag_Green_F")
 #define MAG_RIFLE_TRACER    ARR_1("30Rnd_762x39_Mag_Tracer_Green_F")
@@ -111,11 +111,11 @@
 #define CARBINE_1   "rhs_weap_aks74"
 #define CARBINE_2   "rhs_weap_aks74_2"
 #define CARBINE ARR_2( \
-    WEAPON(CARBINE_1,"rhs_acc_dtk","",""), \
-    WEAPON(CARBINE_2,"rhs_acc_dtk","",""))
+    WEAPON_OLD(CARBINE_1,"rhs_acc_dtk","",""), \
+    WEAPON_OLD(CARBINE_2,"rhs_acc_dtk","",""))
 #define CARBINE_CCO CARBINE
 
-#define CARBINE_UGL         WEAPON("rhs_weap_aks74_gp25","rhs_acc_dtk","","")
+#define CARBINE_UGL         WEAPON_OLD("rhs_weap_aks74_gp25","rhs_acc_dtk","","")
 #define CARBINE_UGL_CCO    CARBINE_UGL
 
 #define MAG_CARBINE         ARR_1("30Rnd_545x39_Mag_F")
@@ -124,28 +124,28 @@
 
 // PDW
 #define PDW ARR_2( \
-    WEAPON("rhs_weap_aks74u","rhs_acc_pgs64_74u","",""), \
-    WEAPON("rhs_weap_aks74un","rhs_acc_pgs64_74un","",""))
+    WEAPON_OLD("rhs_weap_aks74u","rhs_acc_pgs64_74u","",""), \
+    WEAPON_OLD("rhs_weap_aks74un","rhs_acc_pgs64_74un","",""))
 #define MAG_PDW ARR_1("30Rnd_545x39_Mag_F")
 
 
 // SF CARBINES
 #define RIFLE_RECON ARR_5( \
-    WEAPON("rhs_weap_ak105","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_1p63"), \
-    WEAPON("rhs_weap_ak74","rhs_acc_dtk","rhs_acc_2dpZenit",""), \
-    WEAPON("rhs_weap_ak74m_2mag","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp1"), \
-    WEAPON("rhs_weap_ak74m_camo","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp8_02"), \
-    WEAPON("rhs_weap_ak74_2","rhs_acc_dtk","rhs_acc_2dpZenit",""))
+    WEAPON_OLD("rhs_weap_ak105","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_1p63"), \
+    WEAPON_OLD("rhs_weap_ak74","rhs_acc_dtk","rhs_acc_2dpZenit",""), \
+    WEAPON_OLD("rhs_weap_ak74m_2mag","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp1"), \
+    WEAPON_OLD("rhs_weap_ak74m_camo","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp8_02"), \
+    WEAPON_OLD("rhs_weap_ak74_2","rhs_acc_dtk","rhs_acc_2dpZenit",""))
 
 #define RIFLE_UGL_RECON ARR_3( \
-    WEAPON("rhs_weap_ak74_gp25","rhs_acc_dtk","rhs_acc_2dpZenit",""), \
-    WEAPON("rhs_weap_ak74m_gp25","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp1"), \
-    WEAPON("rhs_weap_ak74m_fullplum_gp25","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp8_02"))
+    WEAPON_OLD("rhs_weap_ak74_gp25","rhs_acc_dtk","rhs_acc_2dpZenit",""), \
+    WEAPON_OLD("rhs_weap_ak74m_gp25","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp1"), \
+    WEAPON_OLD("rhs_weap_ak74m_fullplum_gp25","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp8_02"))
 
 #define RIFLE_RECON_TAN ARR_3( \
-    WEAPON("rhs_weap_ak74_3","rhs_acc_dtk","rhs_acc_2dpZenit",""), \
-    WEAPON("rhs_weap_ak74m_camo","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp1"), \
-    WEAPON("rhs_weap_ak74m_desert","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp8_02"))
+    WEAPON_OLD("rhs_weap_ak74_3","rhs_acc_dtk","rhs_acc_2dpZenit",""), \
+    WEAPON_OLD("rhs_weap_ak74m_camo","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp1"), \
+    WEAPON_OLD("rhs_weap_ak74m_desert","rhs_acc_dtk","rhs_acc_2dpZenit","rhs_acc_ekp8_02"))
 #define RIFLE_UGL_RECON_TAN		RIFLE_UGL_RECON
 #define RIFLE_DIVER 		RIFLE_RECON
 #define RIFLE_UGL_DIVER 	RIFLE_UGL_RECON
@@ -155,59 +155,59 @@
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR WEAPON("rhs_weap_ak103","rhs_acc_dtk","rhs_acc_pso1m2","")
+#define DMR WEAPON_OLD("rhs_weap_ak103","rhs_acc_dtk","rhs_acc_pso1m2","")
 #define MAG_DMR MAG_RIFLE
 
 #define DMR_RECON ARR_3( \
-    WEAPON("hlc_rifle_M14dmr_Rail","optic_KHS_old","",""), \
-    WEAPON("hlc_rifle_M21_Rail","optic_KHS_old","",""), \
-    WEAPON("srifle_DMR_03_khaki_F","optic_KHS_old","","bipod_01_F_khk"))
+    WEAPON_OLD("hlc_rifle_M14dmr_Rail","optic_KHS_old","",""), \
+    WEAPON_OLD("hlc_rifle_M21_Rail","optic_KHS_old","",""), \
+    WEAPON_OLD("srifle_DMR_03_khaki_F","optic_KHS_old","","bipod_01_F_khk"))
 #define DMR_DIVER   DMR_RECON
 #define MAG_DMR_RECON  ARR_1("20Rnd_762x51_Mag")
 
-#define SR_AP       WEAPON("rhs_weap_m24sws_ghillie","rhsusf_acc_LEUPOLDMK4_2_d","rhsusf_acc_harris_swivel","")
+#define SR_AP       WEAPON_OLD("rhs_weap_m24sws_ghillie","rhsusf_acc_LEUPOLDMK4_2_d","rhsusf_acc_harris_swivel","")
 #define MAGS_SR_AP  ARR_2("rhsusf_5Rnd_762x51_m118_special_Mag",16)
 
-#define SR_AM       WEAPON("rhs_weap_M107_w",SNIPER_OPTIC,"","")
+#define SR_AM       WEAPON_OLD("rhs_weap_M107_w",SNIPER_OPTIC,"","")
 #define MAGS_SR_AM  ARR_2("rhsusf_mag_10Rnd_STD_50BMG_M33",5)
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE           WEAPON("rhs_weap_pkm","","","")
+#define AUTORIFLE           WEAPON_OLD("rhs_weap_pkm","","","")
 
 #define MAG_AUTORIFLE       ARR_1("rhs_100Rnd_762x54mmR")
 #define MAGS_AUTORIFLE      ARR_2(MAG_AUTORIFLE,4)
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_AUTORIFLE,2)
 
-#define AUTORIFLE_RECON        WEAPON("hlc_rifle_RPK12_60rnd","rhs_acc_ekp8_18","","")
+#define AUTORIFLE_RECON        WEAPON_OLD("hlc_rifle_RPK12_60rnd","rhs_acc_ekp8_18","","")
 #define MAGS_AUTORIFLE_RECON   ARR_2("hlc_60Rnd_545x39_t_rpk",8)
 
-#define MMG                 WEAPON("rhs_weap_pkp","","","")
+#define MMG                 WEAPON_OLD("rhs_weap_pkp","","","")
 #define MAGS_MMG            ARR_2(MAG_AUTORIFLE,3)
 #define MAGS_MMG_ASST       MAGS_MMG
 
 
 /* ###################### - SIDEARMS - ###################### */
-#define PISTOL		    WEAPON("rhsusf_weap_m1911a1","","","")
+#define PISTOL		    WEAPON_OLD("rhsusf_weap_m1911a1","","","")
 #define MAG_PISTOL 		ARR_1("rhsusf_mag_7x45acp_MHP")
 
-#define PISTOL_SF	    WEAPON("rhs_weap_tt33","","","")
+#define PISTOL_SF	    WEAPON_OLD("rhs_weap_tt33","","","")
 #define MAG_PISTOL_SF 	ARR_1("rhs_mag_762x25_8")
 
 
 /* ###################### - LAUNCHERS - ###################### */
-#define AT_LIGHT	            WEAPON("rhs_weap_rpg7","","","")
+#define AT_LIGHT	            WEAPON_OLD("rhs_weap_rpg7","","","")
 #define MAGS_AT_LIGHT           ARR_2("rhs_rpg7_PG7V_mag",3)
 
-#define AT_ROCKET	            WEAPON("rhs_weap_rpg7","rhs_acc_pgo7v3","","")
+#define AT_ROCKET	            WEAPON_OLD("rhs_weap_rpg7","rhs_acc_pgo7v3","","")
 #define MAGS_AT_ROCKET          ARR_2("rhs_rpg7_PG7V_mag",1)
 #define MAGS_AT_ROCKET_ASST     ARR_2("rhs_rpg7_PG7V_mag",4)
 
-#define AA_MISSILE	            WEAPON("rhs_weap_igla","","","")
+#define AA_MISSILE	            WEAPON_OLD("rhs_weap_igla","","","")
 #define MAGS_AA_MISSILE         ARR_1("rhs_mag_9k38_rocket")
 #define MAGS_AA_MISSILE_ASST    ARR_2("rhs_mag_9k38_rocket",2)
 
-#define AT_MISSILE              WEAPON("launch_i_Titan_short_F","","","")
+#define AT_MISSILE              WEAPON_OLD("launch_i_Titan_short_F","","","")
 #define MAGS_AT_MISSILE         ARR_1("Titan_AT")
 #define MAGS_AT_MISSILE_ASST    ARR_3("Titan_AT",2,"Titan_AP")
 

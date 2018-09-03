@@ -64,8 +64,6 @@
 #define SNIPER_OPTIC    "RKSL_optic_PMII_525_wdl"
 #define SNIPER_OPTIC_NV "UK3CB_BAF_MaxiKite"
 
-#define DMR_BIPOD       "ace_banana"
-
 
 
 /* ###################### - PRIMARY WEAPONS - ###################### */
@@ -73,10 +71,10 @@
 #define RIFLE           ARR_1("UK3CB_BAF_L85A2")
 #define RIFLE_UGL       ARR_1("UK3CB_BAF_L85A2_UGL")
 
-#define RIFLE_RCO       WEAPON(RIFLE,RCO,"","")
-#define RIFLE_UGL_RCO   WEAPON(RIFLE_UGL,RCO,"","")
-#define RIFLE_CCO       WEAPON(RIFLE,RCO,"","")
-#define RIFLE_UGL_CCO   WEAPON(RIFLE_UGL,RCO,"","")
+#define RIFLE_RCO       WEAPON_OLD(RIFLE,RCO,"","")
+#define RIFLE_UGL_RCO   WEAPON_OLD(RIFLE_UGL,RCO,"","")
+#define RIFLE_CCO       WEAPON_OLD(RIFLE,RCO,"","")
+#define RIFLE_UGL_CCO   WEAPON_OLD(RIFLE_UGL,RCO,"","")
 
 #define MAG_RIFLE		 ARR_1("UK3CB_BAF_556_30Rnd")
 #define MAG_RIFLE_TRACER ARR_1("UK3CB_BAF_556_30Rnd_T")
@@ -90,15 +88,15 @@
 #define CARBINE     RIFLE
 #define CARBINE_UGL	RIFLE_UGL
 
-#define CARBINE_CCO        WEAPON(CARBINE,RCO,"","")
+#define CARBINE_CCO        WEAPON_OLD(CARBINE,RCO,"","")
 #define CARBINE_UGL_CCO    RIFLE_UGL_CCO
 
 #define MAG_CARBINE         MAG_RIFLE
 #define MAG_CARBINE_TRACER  MAG_RIFLE_TRACER
 
 // SF CARBINES
-#define RIFLE_RECON         WEAPON(RIFLE,RCO,"","UK3CB_BAF_Silencer_L85")
-#define RIFLE_UGL_RECON     WEAPON(RIFLE_UGL,RCO,"","UK3CB_BAF_Silencer_L85")
+#define RIFLE_RECON         WEAPON_OLD(RIFLE,RCO,"","UK3CB_BAF_Silencer_L85")
+#define RIFLE_UGL_RECON     WEAPON_OLD(RIFLE_UGL,RCO,"","UK3CB_BAF_Silencer_L85")
 #define RIFLE_RECON_TAN     RIFLE_RECON
 #define RIFLE_UGL_RECON_TAN RIFLE_UGL_RECON
 #define RIFLE_DIVER 		RIFLE_RECON
@@ -108,10 +106,10 @@
 #define MAG_RIFLE_RECON_TRACER   MAG_RIFLE_TRACER
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR           WEAPON("UK3CB_BAF_L86A2",RCO,"","")
+#define DMR           WEAPON_OLD("UK3CB_BAF_L86A2",RCO,"","")
 #define MAG_DMR       MAG_RIFLE
 
-#define DMR_RECON     WEAPON("UK3CB_BAF_L86A2",RCO,"UK3CB_BAF_Silencer_L85","")
+#define DMR_RECON     WEAPON_OLD("UK3CB_BAF_L86A2",RCO,"UK3CB_BAF_Silencer_L85","")
 #define DMR_DIVER     DMR_RECON
 #define MAG_DMR_RECON MAG_RIFLE
 
@@ -123,7 +121,7 @@
 #define AUTORIFLE_RECON      DMR_RECON
 #define MAGS_AUTORIFLE_RECON MAGS_AUTORIFLE
 
-#define MMG           WEAPON("UK3CB_BAF_L7A2",RCO,"","")
+#define MMG           WEAPON_OLD("UK3CB_BAF_L7A2",RCO,"","")
 #define MAGS_MMG      ARR_2("UK3CB_BAF_762_100Rnd",2)
 #define MAGS_MMG_ASST ARR_2("UK3CB_BAF_762_100Rnd",2)
 
