@@ -106,3 +106,4 @@
 
 
 /* ###################### - INSIGNIA - ###################### */
+#define INSIGNIA_COMMON "CTRG15"

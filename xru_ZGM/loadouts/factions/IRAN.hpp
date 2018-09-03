@@ -232,7 +232,7 @@
 
 /* ###################### - INSIGNIA - ###################### */
 // Kann in CfgLoadouts.hpp überschrieben werden.
-#define INSIGNIA_COMMON ARR_1("")
+#define INSIGNIA_COMMON "CSAT_ScimitarRegiment"
 #define INSIGNIA_SF INSIGNIA_COMMON
 #define INSIGNIA_TNK INSIGNIA_COMMON
 #define INSIGNIA_HELI INSIGNIA_COMMON

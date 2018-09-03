@@ -214,10 +214,10 @@
 
 /* ###################### - INSIGNIA - ###################### */
 // Kann in CfgLoadouts.hpp überschrieben werden.
-#define INSIGNIA_COMMON ARR_1("")
+#define INSIGNIA_COMMON "AAF_1stRegiment"
 #define INSIGNIA_SF INSIGNIA_COMMON
 #define INSIGNIA_TNK INSIGNIA_COMMON
 #define INSIGNIA_HELI INSIGNIA_COMMON
 #define INSIGNIA_JET INSIGNIA_COMMON
-#define INSIGNIA_MEV INSIGNIA_COMMON
-#define INSIGNIA_SUPPORT INSIGNIA_COMMON
+#define INSIGNIA_MEV "AAF_3rdRegiment"
+#define INSIGNIA_SUPPORT "AAF_3rdRegiment"
