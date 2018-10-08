@@ -32,9 +32,9 @@
 
 #define VEST_CREW		ARR_1("V_Chestrig_blk")
 
-#define VEST_RECON			ARR_1("VSM_FAPC_Operator_OGA") 
-#define VEST_RECON_TL		ARR_1("VSM_LBT6094_operator_OGA") 
-#define VEST_RECON_MG		ARR_1("VSM_FAPC_MG_OGA") 
+#define VEST_RECON			ARR_1("VSM_FAPC_Operator_OGA")
+#define VEST_RECON_TL		ARR_1("VSM_LBT6094_operator_OGA")
+#define VEST_RECON_MG		ARR_1("VSM_FAPC_MG_OGA")
 #define VEST_RECON_GR		ARR_1("VSM_RAV_operator_OGA")
 
 #define VEST_BREATHER	ARR_1("V_RebreatherB")
@@ -134,7 +134,7 @@
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_RIFLE,10)
 
 #define AUTORIFLE_RECON       WEAPON_OLD("hlc_rifle_ACR_mid_tan_x15","optic_ERCO_snd_F",LASERPOINTER,"muzzle_snds_M_snd_f")
-#define MAGS_AUTORIFLE_RECON  ARR_4("hlc_50rnd_556x45_EPR",8,MAG_RIFLE,8)
+#define MAGS_AUTORIFLE_RECON  ARR_2("hlc_50rnd_556x45_EPR",8)
 
 #define MMG             WEAPON_OLD("MMG_02_sand_F","optic_Holosight",LASERPOINTER,"bipod_01_F_snd")
 #define MAGS_MMG        ARR_2("130Rnd_338_Mag",3)
