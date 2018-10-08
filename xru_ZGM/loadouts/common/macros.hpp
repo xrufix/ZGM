@@ -9,7 +9,7 @@
 #define ARR_9(var1,var2,var3,var4,var5,var6,var7,var8,var9) var1, var2, var3, var4, var5, var6, var7, var8, var9
 #define ARR_10(var1,var2,var3,var4,var5,var6,var7,var8,var9,var10) var1, var2, var3, var4, var5, var6, var7, var8, var9, var10
 
-#define WEAPON_OLD(var1,var2,var3,var4) {ARR_4(var1,var2,var3,var4)}
+#define WEAPON_OLD(weapon,att0,att1,att2) {ARR_4(weapon,att0,att1,att2)}
 #define WEAPON(weapon,att0,att1,att2,att3) {ARR_5(weapon,att0,att1,att2,att3)}
 
 #define DOUBLES(var1,var2) var1##_##var2

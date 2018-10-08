@@ -3,11 +3,11 @@
 #define	UNIFORM_SINGLE      ARR_1("pbw_uniform3k_tropen")
 #define UNIFORM             ARR_7("pbw_uniform1_tropen","pbw_uniform1h_tropen","pbw_uniform2_tropen","pbw_uniform3_tropen","pbw_uniform3k_tropen","pbw_uniform4_tropen","pbw_uniform4k_tropen")
 #define UNIFORM_COMPANY     ARR_1("pbw_uniform1_tropen")
-#define UNIFORM_RECON     UNIFORM
+#define UNIFORM_RECON       ARR_2("BWA3_Uniform_Tropen","BWA3_Uniform_sleeves_Tropen")
 #define UNIFORM_DIVER       ARR_1("U_B_Wetsuit")
 #define UNIFORM_CREW        UNIFORM
 #define UNIFORM_HELICOPTER  ARR_1("bwa3_uniform_helipilot")
-#define UNIFORM_JET         ARR_1("U_B_PilotCoveralls") 
+#define UNIFORM_JET         ARR_1("U_B_PilotCoveralls")
 #define UNIFORM_SNIPER      ARR_2("U_B_FullGhillie_sard","U_B_FullGhillie_ard")
 
 /* ###################### - VESTS - ###################### */
@@ -57,8 +57,6 @@
 // SF CARBINES
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR_RECON   WEAPON("arifle_SPAR_03_snd_F","rhsusf_acc_LEUPOLDMK4_2","bipod_01_f_snd","hlc_muzzle_300blk_KAC","bwa3_acc_varioray_irlaser")
-
 #define SR_AP       WEAPON_OLD("hlc_rifle_awMagnum_fde_ghillie","rhsusf_acc_LEUPOLDMK4_2","","")
 
 #define SR_AM       WEAPON_OLD("rhs_weap_M107_d","rhsusf_acc_LEUPOLDMK4_2","","")

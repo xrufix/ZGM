@@ -9,11 +9,11 @@
 #define	UNIFORM_SINGLE      ARR_1("pbw_uniform3k_fleck")
 #define UNIFORM             ARR_7("pbw_uniform1_fleck","pbw_uniform1h_fleck","pbw_uniform2_fleck","pbw_uniform3_fleck","pbw_uniform3k_fleck","pbw_uniform4_fleck","pbw_uniform4k_fleck")
 #define UNIFORM_COMPANY     ARR_1("pbw_uniform1_fleck")
-#define UNIFORM_RECON       UNIFORM
+#define UNIFORM_RECON       ARR_2("BWA3_Uniform_Fleck","BWA3_Uniform_sleeves_Fleck")
 #define UNIFORM_DIVER       ARR_1("U_B_Wetsuit")
 #define UNIFORM_CREW        UNIFORM
 #define UNIFORM_HELICOPTER  ARR_1("bwa3_uniform_helipilot")
-#define UNIFORM_JET         ARR_1("U_B_PilotCoveralls") 
+#define UNIFORM_JET         ARR_1("U_B_PilotCoveralls")
 #define UNIFORM_SNIPER      ARR_1("U_B_FullGhillie_lsh")
 
 
@@ -64,64 +64,57 @@
 
 
 /* ###################### - ATTACHMENTS- ###################### */
-#define LASERPOINTER "ace_banana"
-
-#define DMR_OPTIC   "rhsusf_acc_LEUPOLDMK4_2"
-#define DMR_BIPOD   "bipod_01_F_blk"
-
-#define SNIPER_OPTIC    "rhsusf_acc_LEUPOLDMK4_2"
-#define SNIPER_OPTIC_NV "optic_NVS"
 
 
 
 /* ###################### - PRIMARY WEAPONS - ###################### */
 // STANDARD ISSUE ASSAULT RIFLE
-#define RIFLE           WEAPON_OLD("hlc_rifle_G36A1","ACE_muzzle_mzls_L","","")
+#define RIFLE           WEAPON("BWA3_G36A1","bwa3_acc_llm01_irlaser","","","")
 #define RIFLE_RCO       RIFLE
 #define RIFLE_CCO       RIFLE
 
-#define RIFLE_UGL       WEAPON_OLD("hlc_rifle_G36A1AG36","ACE_muzzle_mzls_L","","")
+#define RIFLE_UGL       WEAPON("BWA3_G36A1_AG40","bwa3_acc_llm01_irlaser","","","")
 #define RIFLE_UGL_RCO   RIFLE_UGL
 #define RIFLE_UGL_CCO   RIFLE_UGL
 
-#define MAG_RIFLE           ARR_1("hlc_30rnd_556x45_EPR_G36")
-#define MAG_RIFLE_TRACER    ARR_1("hlc_30rnd_556x45_Tracers_G36")
+#define MAG_RIFLE        ARR_1("BWA3_30Rnd_556x45_G36")
+#define MAG_RIFLE_TRACER ARR_1("BWA3_30Rnd_556x45_G36_Tracer")
 
 // PDW
-#define PDW                 WEAPON_OLD("hlc_smg_MP5N","","","")
-#define MAG_PDW	            ARR_1("hlc_30Rnd_9x19_B_MP5")
+#define PDW     WEAPON("hlc_smg_MP5N","","","","")
+#define MAG_PDW ARR_1("hlc_30Rnd_9x19_B_MP5")
 
 
 // CARBINE
-#define CARBINE            WEAPON_OLD("hlc_rifle_G36C","ACE_muzzle_mzls_L","","")
-#define CARBINE_CCO        WEAPON_OLD("hlc_rifle_G36C","optic_Holosight_blk_F","ACE_muzzle_mzls_L","")
+#define CARBINE     WEAPON("BWA3_G36KA0","","","","")
+#define CARBINE_CCO CARBINE
 
-#define CARBINE_UGL	        RIFLE_UGL
-#define CARBINE_UGL_CCO    RIFLE_UGL_CCO
+#define CARBINE_UGL     RIFLE_UGL
+#define CARBINE_UGL_CCO RIFLE_UGL_CCO
 
 #define MAG_CARBINE         MAG_RIFLE
 #define MAG_CARBINE_TRACER  MAG_RIFLE_TRACER
 
 
 // SF CARBINES
-#define RIFLE_RECON              WEAPON_OLD("hlc_rifle_G36KA1KSK","rhsusf_acc_g33_xps3","BWA3_acc_VarioRay_irlaser","hlc_muzzle_556NATO_KAC")
-#define RIFLE_UGL_RECON          WEAPON_OLD("HLC_Rifle_G36KSKAG36","rhsusf_acc_g33_xps3","BWA3_acc_VarioRay_irlaser","hlc_muzzle_556NATO_KAC")
-#define RIFLE_RECON_TAN          WEAPON_OLD("hlc_rifle_g36KTac","rhsusf_acc_g33_xps3","BWA3_acc_VarioRay_irlaser","hlc_muzzle_556NATO_KAC")
-#define RIFLE_UGL_RECON_TAN		 RIFLE_UGL_RECON
-#define RIFLE_DIVER 		     RIFLE_RECON
-#define RIFLE_UGL_DIVER 	     RIFLE_UGL_RECON
+#define RIFLE_RECON         WEAPON_OLD("BWA3_G36KA4","bwa3_optic_eotech_mag_off","bwa3_acc_llm01_irlaser","bwa3_muzzle_snds_qdss")
+#define RIFLE_UGL_RECON     WEAPON_OLD("BWA3_G36A3_AG40","bwa3_optic_eotech_mag_off","bwa3_acc_llm01_irlaser","bwa3_muzzle_snds_qdss")
+#define RIFLE_RECON_TAN     WEAPON_OLD("BWA3_G36KA4_tan","bwa3_optic_eotech_sand_mag_off","bwa3_acc_llm01_irlaser_tan","bwa3_muzzle_snds_qdss_tan")
+#define RIFLE_UGL_RECON_TAN WEAPON_OLD("BWA3_G36A3_AG40_tan","bwa3_optic_eotech_sand_mag_off","bwa3_acc_llm01_irlaser_tan","bwa3_muzzle_snds_qdss_tan")
+#define RIFLE_DIVER         RIFLE_RECON
+#define RIFLE_UGL_DIVER     RIFLE_UGL_RECON
 
-#define MAG_RIFLE_RECON          MAG_RIFLE
-#define MAG_RIFLE_RECON_TRACER   MAG_RIFLE_TRACER
+#define MAG_RIFLE_RECON         MAG_RIFLE
+#define MAG_RIFLE_RECON_TRACER  "BWA3_30Rnd_556x45_G36_Tracer_Dim"
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR         WEAPON_OLD("arifle_SPAR_03_blk_F","rhsusf_acc_LEUPOLDMK4_2","bipod_01_F_blk","")
-#define MAG_DMR     ARR_1("20Rnd_762x51_Mag")
+#define DMR     WEAPON("BWA3_G28","bwa3_optic_pmii_dmr_microt1_rear","bwa3_acc_llm01_irlaser","","")
+#define MAG_DMR ARR_3("BWA3_10Rnd_762x51_G28_Tracer",4,"BWA3_10Rnd_762x51_G28_LR")
 
-#define DMR_RECON      WEAPON("arifle_SPAR_03_khk_F","rhsusf_acc_LEUPOLDMK4_2","bipod_01_f_khk","hlc_muzzle_300blk_KAC","BWA3_acc_VarioRay_irlaser")
-#define DMR_DIVER      WEAPON("arifle_SPAR_03_blk_F","rhsusf_acc_LEUPOLDMK4_2","bipod_01_F_blk","hlc_muzzle_300blk_KAC","BWA3_acc_VarioRay_irlaser")
-#define MAG_DMR_RECON  ARR_1("20Rnd_762x51_Mag")
+#define DMR_RECON   WEAPON("BWA3_G28","bwa3_optic_pmii_dmr_microt1_rear","bwa3_acc_llm01_irlaser","bwa3_muzzle_snds_rotex_iia","")
+#define DMR_DIVER   DMR_RECON
+#define MAG_DMR_RECON ARR_3("BWA3_10Rnd_762x51_G28_Tracer_Dim",4,"BWA3_10Rnd_762x51_G28_LR")
 
 #define SR_AP       WEAPON_OLD("hlc_rifle_awMagnum_OD_ghillie","rhsusf_acc_LEUPOLDMK4_2","","")
 #define MAGS_SR_AP  ARR_6("hlc_5rnd_300WM_FMJ_AWM",5,"hlc_5rnd_300WM_AP_AWM",4,"hlc_5rnd_300WM_BTSP_AWM",2)
@@ -131,17 +124,17 @@
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE           WEAPON_OLD("BWA3_MG4","rhsusf_acc_eotech_552","","")
+#define AUTORIFLE           WEAPON_OLD("BWA3_MG4","bwa3_optic_zo4x30","bwa3_acc_llm01_irlaser","")
 #define MAG_AUTORIFLE       ARR_1("BWA3_200Rnd_556x45")
 #define MAGS_AUTORIFLE      ARR_3(MAG_AUTORIFLE,3,"BWA3_200Rnd_556x45_Tracer")
 #define MAGS_AUTORIFLE_ASST ARR_3(MAG_AUTORIFLE,2,"BWA3_200Rnd_556x45_Tracer")
 
-#define AUTORIFLE_RECON        WEAPON_OLD("hlc_rifle_MG36","hlc_muzzle_556NATO_KAC","","")
-#define MAGS_AUTORIFLE_RECON   ARR_2("hlc_100rnd_556x45_Mdim_G36",4)
+#define AUTORIFLE_RECON        WEAPON_OLD("BWA3_MG4","bwa3_optic_zo4x30_rsas","bwa3_acc_llm01_irlaser","bwa3_muzzle_snds_qdss")
+#define MAGS_AUTORIFLE_RECON   MAGS_AUTORIFLE
 
-#define MMG                 WEAPON_OLD("BWA3_MG5","rhsusf_acc_eotech_552","","")
-#define MAGS_MMG            ARR_2("BWA3_120Rnd_762x51",4)
-#define MAGS_MMG_ASST       ARR_2("BWA3_120Rnd_762x51",5)
+#define MMG           WEAPON_OLD("BWA3_MG3","bwa3_bipod_mg3","","")
+#define MAGS_MMG      ARR_4("BWA3_120Rnd_762x51_soft",2,"BWA3_120Rnd_762x51_Tracer_soft",2)
+#define MAGS_MMG_ASST MAGS_MMG
 
 
 /* ###################### - SIDEARMS - ###################### */
