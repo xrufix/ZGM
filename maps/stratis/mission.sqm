@@ -11597,9 +11597,9 @@ class Mission
 		lightningsForced=0;
 		wavesForced=0;
 		windForced=1;
-		year=2035;
-		month=11;
-		day=6;
+		year=2018;
+		month=10;
+		day=10;
 		hour=12;
 		minute=0;
 		startFogDecay=0.013;

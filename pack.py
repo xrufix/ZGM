@@ -34,13 +34,12 @@ def createTemp():
         tempDir + "\\description.ext",
         missionDir + "\\description.ext"
     ], stdout = subprocess.PIPE)
-    #"C:\Steam\steamapps\common\Arma 3 Tools\CfgConvert\CfgConvert.exe" -txt -dst output.hpp CfgLoadouts.hpp
 
 def clearTemp():
     global tempDir
     shutil.rmtree(tempDir)
 
-def getVersion():  
+def getVersion():
     print ("Set version number:")
     major = input("Major: ")
     minor = input("Minor: ")
@@ -51,7 +50,7 @@ def getVersion():
 def packPBO(version):
     destDir = gitDir + "\\pbo\\" + version + "\\"
     os.makedirs(destDir)
-    
+
     for root, dirs, files in os.walk(mapsDir):
         if root != mapsDir:
             mapName = root[len(mapsDir) + 1:]

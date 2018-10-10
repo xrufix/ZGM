@@ -11610,9 +11610,9 @@ class Mission
 		forecastWind=0.2;
 		forecastWaves=0.1;
 		windForced=1;
-		year=2035;
-		month=11;
-		day=9;
+		year=2018;
+		month=10;
+		day=10;
 		hour=12;
 		minute=0;
 		startFogDecay=0.013;
