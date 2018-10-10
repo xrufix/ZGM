@@ -27,10 +27,6 @@ class params {
     #include "zgm\params.hpp"
 };
 
-class RscTitles {
-    #include "xru\RscTitles.hpp"
-};
-
 // xru_zgm
 #include "zgm\ui\dialog.hpp"
 #include "zgm\CfgFactions.hpp"
