@@ -132,7 +132,7 @@
 #define AUTORIFLE_RECON        WEAPON_OLD("BWA3_MG4","bwa3_optic_zo4x30_rsas","bwa3_acc_llm01_irlaser","bwa3_muzzle_snds_qdss")
 #define MAGS_AUTORIFLE_RECON   MAGS_AUTORIFLE
 
-#define MMG           WEAPON_OLD("BWA3_MG3","bwa3_bipod_mg3","","")
+#define MMG           WEAPON("BWA3_MG5_tan","bwa3_optic_zo4x30i_sand","bwa3_acc_llm01_irlaser","","")
 #define MAGS_MMG      ARR_4("BWA3_120Rnd_762x51_soft",2,"BWA3_120Rnd_762x51_Tracer_soft",2)
 #define MAGS_MMG_ASST MAGS_MMG
 
