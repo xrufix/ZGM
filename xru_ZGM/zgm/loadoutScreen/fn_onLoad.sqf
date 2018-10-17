@@ -49,7 +49,7 @@ private _rolesIndex = ("true" configClasses (_rolesConfigs select _groupsIndex) 
 // Add groups as parents, roles as children in roles tree. Select players role.
 {	private _parent = _forEachIndex;
     _rolesTV tvAdd [[], getText (_x >> "displayName")];
-    
+
     {	_rolesTV tvAdd [[_parent], getText (_x >> "displayName")];
         if (isText (_x >> "icon")) then {
         _rolesTV tvSetPicture [[_parent,_forEachIndex], getText (_x >> "icon")]

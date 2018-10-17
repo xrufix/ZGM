@@ -21,7 +21,7 @@ if (!isMultiplayer) then {
 // Add EH that adds all spawned objects to all curators (except modules).
 ["All", "init", {
     {
-        _x addCuratorEditableObjects [_this,true]; 
+        _x addCuratorEditableObjects [_this,true];
     }forEach allCurators;
 }, true, ["logic","animal"], false] call CBA_fnc_addClassEventHandler;
 

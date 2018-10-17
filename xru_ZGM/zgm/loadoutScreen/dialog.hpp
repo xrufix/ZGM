@@ -140,7 +140,7 @@ class RscZGMLoadouts {
 	};
 	class Apply: RscZGMButton {
 		idc = -1;
-		onButtonClick = "_this call zgm_loadoutScreen_fnc_applySelected;";	
+		onButtonClick = "_this call zgm_loadoutScreen_fnc_applySelected;";
 		text = "Apply selected"; //--- ToDo: Localize;
 		x = "0.63128 * safezoneW + safezoneX";
 		y = "0.766012 * safezoneH + safezoneY";

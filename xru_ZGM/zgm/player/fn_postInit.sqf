@@ -25,4 +25,3 @@ switch (player call EFUNC(main,getSide)) do {
 		player setPosATL _position;
 	};
 };
-
