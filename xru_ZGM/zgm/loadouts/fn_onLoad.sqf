@@ -13,9 +13,7 @@ private _rolesConfigs = ("true" configClasses (missionConfigFile >> "CfgRoles"))
 
 
 // Get players faction, group and role.
-private _side 	    = [player] call EFUNC(main,getSide);
-private _sideIndex  = ["b","i","o"] find _side;
-private _faction 	= [player] call EFUNC(loadouts,getFaction);
+private _faction = [player] call FUNC(getFaction);
 (_unit getVariable [QGVAR(role),["squad","light"]]) params ["_group","_role"];
 private _groupsIndex = (_rolesConfigs apply {configName _x}) find _group;
 private _rolesIndex = ("true" configClasses (_rolesConfigs select _groupsIndex) apply {configName _x}) find _role;

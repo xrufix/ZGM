@@ -122,7 +122,7 @@ class RscZGMLoadouts {
         "Cancel"
 	};
 
-	onLoad = "_this call zgm_loadoutScreen_fnc_onLoad;";
+	onLoad = "_this call zgm_loadous_fnc_onLoad;";
 
 	class Background {
 		idc = -1;
@@ -140,7 +140,7 @@ class RscZGMLoadouts {
 	};
 	class Apply: RscZGMButton {
 		idc = -1;
-		onButtonClick = "_this call zgm_loadoutScreen_fnc_applySelected;";
+		onButtonClick = "_this call zgm_loadouts_fnc_applySelected;";
 		text = "Apply selected"; //--- ToDo: Localize;
 		x = "0.63128 * safezoneW + safezoneX";
 		y = "0.766012 * safezoneH + safezoneY";
@@ -149,8 +149,8 @@ class RscZGMLoadouts {
 	};
 	class Reset: RscZGMButton {
 		idc = -1;
-		onButtonClick = "_this call zgm_loadoutScreen_fnc_resetDefault;";
-		text = "Apply default"; //--- ToDo: Localize;
+		onButtonClick = "_this call zgm_loadouts_fnc_applyLast;";
+		text = "Apply last"; //--- ToDo: Localize;
 		x = "0.506564 * safezoneW + safezoneX";
 		y = "0.766012 * safezoneH + safezoneY";
 		w = "0.111588 * safezoneW";

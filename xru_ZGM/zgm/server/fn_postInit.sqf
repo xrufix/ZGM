@@ -1,15 +1,13 @@
 #include "script_component.hpp"
 
-if !isServer exitWith {};
+if (!isServer) exitWith {};
 
 // Disable AI in SP for performance
-if (!isMultiplayer) then {
-    private _allAI = allUnits;
-    _allAI deleteAt (_allAI find player);
+if (!isMultiplayer or is3DENMultiplayer) then {
     {
         _x disableAI "ALL";
         false
-    } count _allAI;
+    } count allUnits;
 };
 
 // Add spawn positions to zeus, so they can be moved, and add players.
@@ -22,7 +20,7 @@ if (!isMultiplayer) then {
 ["All", "init", {
     {
         _x addCuratorEditableObjects [_this,true];
-    }forEach allCurators;
+    } forEach allCurators;
 }, true, ["logic","animal"], false] call CBA_fnc_addClassEventHandler;
 
 // Add EH that removes link between players and curators on disconnect of player.

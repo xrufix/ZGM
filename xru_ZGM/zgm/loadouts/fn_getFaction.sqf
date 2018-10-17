@@ -2,9 +2,15 @@
 
 params ["_unit"];
 
-switch ([_unit] call EFUNC(main,getSide)) do {
-    case "b" : {GVAR(BLUFOR)};
-    case "o" : {GVAR(OPFOR)};
-    case "i" : {GVAR(INDEP)};
-    default	   {GVAR(BLUFOR)};
+private _faction = _unit getVariable [QGVAR(faction), ""];
+
+if (_faction == "") then {
+    switch (side _unit) do {
+        case west : {GVAR(BLUFOR)};
+        case east : {GVAR(OPFOR)};
+        case guer : {GVAR(INDEP)};
+        default	    {GVAR(BLUFOR)};
+    };
+} else {
+    _faction
 };

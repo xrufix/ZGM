@@ -1,2 +1,2 @@
 #include "..\config_macros.hpp"
-#include "..\loadoutScreen\dialog.hpp"
+#include "..\loadouts\dialog.hpp"
