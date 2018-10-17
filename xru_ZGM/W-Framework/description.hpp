@@ -1,4 +1,4 @@
-template_version = "5.1.1";
+template_version = "5.1.2";
 #ifdef STANDARD
     medical_system = "standard";
 #endif
@@ -14,7 +14,6 @@ respawnDialog = 0;
 
 // - Misc ---------------------------------------------------------------------
 disabledAI = 1;
-enableDebugConsole = 1;
 saving = 0;
 #ifndef ENABLE_CHAT_CHANNELS
     disableChannels[] = {0,1,2,3,6};
