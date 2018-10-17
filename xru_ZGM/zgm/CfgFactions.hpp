@@ -39,13 +39,13 @@ class CfgFactions {
     };
     class BW_FLECK {
         displayName = CSTRING(FACTIONS,BW_FLECK);
-        icon = "\bwa3_units\data\bwa3_faction_icon.paa";
+        icon = "\bwa3_common\data\bwa3_faction_icon.paa";
         index = 200;
         sideShort = "b";
     };
     class BW_TROP {
         displayName = CSTRING(FACTIONS,BW_TROP);
-        icon = "\bwa3_units\data\bwa3_faction_icon.paa";
+        icon = "\bwa3_common\data\bwa3_faction_icon.paa";
         index = 225;
         sideShort = "b";
     };
