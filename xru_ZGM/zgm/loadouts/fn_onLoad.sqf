@@ -1,3 +1,5 @@
+#define DEBUG_MODE_FULL
+
 #include "script_component.hpp"
 
 params ["_display"];
@@ -6,17 +8,13 @@ params ["_display"];
 private _factionsTV = _display displayCtrl 12;
 private _rolesTV = _display displayCtrl 13;
 
-
 // Get Configs
-private _factionsConfigs = ("true" configClasses (missionConfigFile >> "CfgFactions"));
-private _rolesConfigs = ("true" configClasses (missionConfigFile >> "CfgRoles"));
-
+private _factionsConfigs = "true" configClasses (missionConfigFile >> "CfgFactions");
+private _rolesConfigs = "true" configClasses (missionConfigFile >> "CfgRoles");
 
 // Get players faction, group and role.
-private _faction = [player] call FUNC(getFaction);
-(_unit getVariable [QGVAR(role),["squad","light"]]) params ["_group","_role"];
-private _groupsIndex = (_rolesConfigs apply {configName _x}) find _group;
-private _rolesIndex = ("true" configClasses (_rolesConfigs select _groupsIndex) apply {configName _x}) find _role;
+private _playerFaction = [player] call FUNC(getFaction);
+(player getVariable [QGVAR(role),["squad","light"]]) params ["_playerGroup","_playerRole"];
 
 
 {   // Add an entry for the side.
@@ -32,7 +30,7 @@ private _rolesIndex = ("true" configClasses (_rolesConfigs select _groupsIndex) 
         _factionsTV tvAdd [[_parent], _displayName];
         _factionsTV tvSetData [_currentItem,_configName];
         // Select the entry if it is the players faction
-        if (_configName == _faction) then {
+        if (_configName == _playerFaction) then {
             _factionsTV tvSetCurSel _currentItem;
         };
         // Add an picture if it is configured in CfgFactions or use default empty.
@@ -45,15 +43,25 @@ private _rolesIndex = ("true" configClasses (_rolesConfigs select _groupsIndex) 
 } forEach ["BLUFOR","INDEP","OPFOR"];
 
 // Add groups as parents, roles as children in roles tree. Select players role.
-{	private _parent = _forEachIndex;
+{
+    private _parent = _forEachIndex;
+    private _group = configName _x;
     _rolesTV tvAdd [[], getText (_x >> "displayName")];
+    _rolesTV tvSetData [[_parent], _group];
 
-    {	_rolesTV tvAdd [[_parent], getText (_x >> "displayName")];
+    {
+        private _role = configName _x;
+        _rolesTV tvAdd [[_parent], getText (_x >> "displayName")];
+        _rolesTV tvSetData [[_parent, _forEachIndex], _role];
+
         if (isText (_x >> "icon")) then {
-        _rolesTV tvSetPicture [[_parent,_forEachIndex], getText (_x >> "icon")]
+            _rolesTV tvSetPicture [[_parent,_forEachIndex], getText (_x >> "icon")];
+        };
+
+        TRACE_6("",_group,_playerGroup,_group==_playerGroup,_role,_playerRole,_group==_playerGroup);
+        if ((_group == _playerGroup) && {_role == _playerRole}) then {
+            _rolesTV tvExpand [_parent];
+            _rolesTV tvSetCurSel [_parent, _forEachIndex];
         };
     } forEach ("true" configClasses _x);
 } forEach _rolesConfigs;
-
-_rolesTV tvExpand [_groupsIndex];
-_rolesTV tvSetCurSel [_groupsIndex,_rolesIndex];

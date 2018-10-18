@@ -108,7 +108,7 @@ class RscZGMheader {
 class RscZGMLoadouts {
     idd = -1;
     movingEnable = "false";
-    enablesimulation = "true";
+    enableSimulation = "true";
     controlsBackground[] = {
 		"Background",
         "Faction",
@@ -122,7 +122,7 @@ class RscZGMLoadouts {
         "Cancel"
 	};
 
-	onLoad = "_this call zgm_loadous_fnc_onLoad;";
+	onLoad = "_this call zgm_loadouts_fnc_onLoad;";
 
 	class Background {
 		idc = -1;

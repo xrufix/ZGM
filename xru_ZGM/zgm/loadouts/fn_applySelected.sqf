@@ -30,7 +30,7 @@ private _role = configName ( ("true" configClasses (missionConfigFile >> "CfgRol
 private _loadout = format ["%1_%2_%3", _faction, _group, _role];
 [player, _loadout] call poppy_fnc_applyLoadout;
 
-player setVariable [QEGVAR(loadouts,faction), _faction];
-player setVariable [QEGVAR(loadouts,role), [_group,_role]];
+player setVariable [QGVAR(faction), _faction];
+player setVariable [QGVAR(role), [_group,_role]];
 
 _display closeDisplay 1;
