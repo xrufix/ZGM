@@ -8,5 +8,5 @@ if ([player] call EFUNC(main,isCurator)) exitWith {
 };
 
 // Teleport players to starting position.
-[player] call EFUNC(main,getSpawnArea);
+private _spawn = [player] call EFUNC(main,getSpawnArea);
 player setPos (getPos _spawn) findEmptyPosition [0, 20, "B_Soldier_F"];
