@@ -22,7 +22,7 @@
     }];
 
     false
-} count allcurators;
+} count allCurators;
 
 [QGVAR(transferGroup), {
     params ["_group"];
