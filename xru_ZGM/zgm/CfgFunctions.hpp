@@ -2,6 +2,4 @@
 
 #include "main\CfgFunctions.hpp"
 
-#include "player\CfgFunctions.hpp"
-
-#include "server\CfgFunctions.hpp"
+#include "params\CfgFunctions.hpp"

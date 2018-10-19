@@ -2,15 +2,15 @@
 
 if (!isServer) exitWith {};
 
-// Disable AI in SP for performance
-if (!isMultiplayer or is3DENMultiplayer) then {
+// Disable AI in SP
+if (!isMultiplayer) then {
     {
-        _x disableAI "ALL";
+        _x enableSimulation false;
         false
-    } count allUnits;
+    } count (allUnits - [player]);
 };
 
-// Add spawn positions to zeus, so they can be moved, and add players.
+// Add spawn positions to Zeus, so they can be moved, and add players.
 {
     _x addCuratorEditableObjects [allMissionObjects "Site_Military_Base", false];
 	_x addCuratorEditableObjects [allMissionObjects "Man",true];
@@ -22,14 +22,3 @@ if (!isMultiplayer or is3DENMultiplayer) then {
         _x addCuratorEditableObjects [_this,true];
     } forEach allCurators;
 }, true, ["logic","animal"], false] call CBA_fnc_addClassEventHandler;
-
-// Add EH that removes link between players and curators on disconnect of player.
-addMissionEventHandler ["HandleDisconnect",{
-	params ["_unit","","",""];
-
-	private _module = getAssignedCuratorLogic _unit;
-	if (isNull _module) exitWith {};
-	unassignCurator _module;
-
-	false
-}];

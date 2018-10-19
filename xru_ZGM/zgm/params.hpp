@@ -112,7 +112,7 @@ class Daytime {
         CSTRING(PARAMS_DAYTIME,NIGHT)
     };
     default = 0;
-    function = QEFUNC(server,daytime);
+    function = QEFUNC(params,daytime);
     isGlobal = 0;
 };
 class Weather {
