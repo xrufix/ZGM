@@ -6,21 +6,21 @@ private _factionsList = _display displayCtrl 12;
 private _rolesList = _display displayCtrl 13;
 
 if (count (tvCurSel _factionsList) != 2) exitWith {
-	[_display] spawn {
-		params ["_display"];
-		private _endState = ["No faction selected! Select a faction and try again.","ERROR",true,true] call BIS_fnc_guiMessage;
-		if (!_endState) then {_display closeDisplay 2};
-	};
+    [_display] spawn {
+        params ["_display"];
+        private _endState = ["No faction selected! Select a faction and try again.","ERROR",true,true] call BIS_fnc_guiMessage;
+        if (!_endState) then {_display closeDisplay 2};
+    };
 };
 private _faction = _factionsList tvData tvCurSel _factionsList;
 
 private _roleSelected = tvCurSel _rolesList;
 if (count _roleSelected != 2) exitWith {
-	[_display] spawn {
-		params ["_display"];
-		private _endState = ["No role selected! Select a role and try again.","ERROR",true,true] call BIS_fnc_guiMessage;
-		if (!_endState) then {_display closeDisplay 2};
-	};
+    [_display] spawn {
+        params ["_display"];
+        private _endState = ["No role selected! Select a role and try again.","ERROR",true,true] call BIS_fnc_guiMessage;
+        if (!_endState) then {_display closeDisplay 2};
+    };
 };
 _roleSelected params ["_groupIndex","_roleIndex"];
 
