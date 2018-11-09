@@ -13,7 +13,7 @@
 #define UNIFORM_DIVER       ARR_1("U_I_Wetsuit")
 #define UNIFORM_CREW        UNIFORM
 #define UNIFORM_HELICOPTER  ARR_1("U_B_HeliPilotCoveralls")
-#define UNIFORM_JET         ARR_1("U_B_PilotCoveralls") 
+#define UNIFORM_JET         ARR_1("U_B_PilotCoveralls")
 #define UNIFORM_SNIPER      ARR_2("U_B_FullGhillie_sard","U_B_FullGhillie_ard")
 
 
@@ -121,7 +121,7 @@
     WEAPON_OLD("rhs_weap_m4a1_blockII_d","rhsusf_acc_su230_mrds_c","rhsusf_acc_anpeq15_wmx_light","rhsusf_acc_nt4_tan"), \
     WEAPON_OLD("rhs_weap_m4a1_blockII_KAC_d","rhsusf_acc_su230_mrds_c","rhsusf_acc_anpeq15_light","rhsusf_acc_nt4_tan"))
 #define RIFLE_UGL_RECON WEAPON_OLD("rhs_weap_m4a1_blockII_M203_d","rhsusf_acc_g33_xps3_tan","rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_tan")
-    
+
 #define RIFLE_RECON_TAN RIFLE_RECON
 #define RIFLE_UGL_RECON_TAN RIFLE_UGL_RECON
 
@@ -160,7 +160,7 @@
 #define MAGS_AUTORIFLE      ARR_2(MAG_AUTORIFLE,3)
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_AUTORIFLE,3)
 
-#define AUTORIFLE_RECON    WEAPON_OLD("hlc_lmg_mk46mod1","rhsusf_acc_su230","rhsusf_acc_su230","")
+#define AUTORIFLE_RECON    WEAPON_OLD("rhs_weap_m249_pip_S_para","rhsusf_acc_su230",LASERPOINTER,"")
 #define MAGS_AUTORIFLE_RECON   ARR_2("rhsusf_100Rnd_556x45_soft_pouch",8)
 
 #define MMG WEAPON_OLD("rhs_weap_m240B","rhsusf_acc_ACOG_MDO","","")
