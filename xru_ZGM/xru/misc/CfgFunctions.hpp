@@ -5,6 +5,10 @@ class xru_misc {
         class insigniaFix {
             postInit = 1;
         };
+        class preInit {
+            preInit = 1;
+        };
+        class sunlight {};
         class tankFlip {
             preInit = 1;
         };

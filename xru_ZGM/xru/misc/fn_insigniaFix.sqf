@@ -17,6 +17,6 @@
 if !hasInterface exitWith {};
 
 [] spawn {
-	sleep 6;
-	[player, (getArray (missionConfigFile >> "CfgLoadouts" >> ([player] call Poppy_fnc_selectLoadout) >> "insignia"))] call Poppy_fnc_replaceInsignia;
+    sleep 6;
+    [player, (getArray (missionConfigFile >> "CfgLoadouts" >> ([player] call Poppy_fnc_selectLoadout) >> "insignia"))] call Poppy_fnc_replaceInsignia;
 };

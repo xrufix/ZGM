@@ -196,6 +196,7 @@ class LOADOUT(squad,ftl) : COMMON {
         "ACE_microDAGR",
         "ACE_IR_Strobe_Item"
     };
+    map[] = {"ItemMap"};
 };
 //Automatic Rifleman
 class LOADOUT(squad,ar) : COMMON {
@@ -330,7 +331,7 @@ class LOADOUT(weapons,agmg) : LOADOUT(assistant,common) {
 class LOADOUT(weapons,at) : LOADOUT(weapons,common) {
     backpack[] = {BACKPACK_AT_LIGHT};
     launcher[] = {AT_ROCKET};
-    magazines[] += {MAGS_AT_ROCKET};    
+    magazines[] += {MAGS_AT_ROCKET};
 };
 //ARS AT
 class LOADOUT(weapons,aat) : LOADOUT(assistant,common) {
@@ -600,7 +601,7 @@ class LOADOUT(sniper,spot) : LOADOUT(recon,common) {
     primary[] = {RIFLE_UGL_RECON_TAN};
     #ifdef EASYTRACK
         gps[] = {EASYTRACK_PDA};
-    #endif    
+    #endif
     binoculars[] = {RANGEFINDER};
     magazines[] = {
         MAG_PISTOL_SF,3,
@@ -710,7 +711,7 @@ class LOADOUT(crew,jet) : COMMON {
     map[] = {"itemMap"};
     #ifdef EASYTRACK
         gps[] = {EASYTRACK_PDA};
-    #endif    
+    #endif
     nvgs[] = {""};
     watch[] = {"ACE_Altimeter"};
     goggles[] = {GOGGLES_PILOT};

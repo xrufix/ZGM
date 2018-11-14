@@ -15,12 +15,11 @@
 
 #include "script_component.hpp"
 
-if !isServer exitWith {};
-
 ["Man", "init", {
-	private _unit = (_this select 0);
-	if (isPlayer _unit) exitWith {};
-	_unit unlinkItem "ItemMap";
-	_unit unlinkItem "ItemGPS";
-	_unit unlinkItem "Binocular";
+    private _unit = (_this select 0);
+    if (!local _unit) exitWith {};
+    if (isPlayer _unit) exitWith {};
+    _unit removeItems "ItemMap"; _unit unlinkitem "ItemMap";
+    _unit removeItems "ItemGPS"; _unit unlinkitem "ItemGPS";
+    _unit removeItems "Binocular"; _unit unlinkitem "Binocular";
 }, true, [], true] call CBA_fnc_addClassEventHandler;

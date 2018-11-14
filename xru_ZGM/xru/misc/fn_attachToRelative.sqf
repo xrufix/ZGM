@@ -18,11 +18,4 @@
 
 params ["_object","_target"];
 
-private _vector = _target worldToModelVisual [0,0,0];
-_vector = [
-	_target worldToModelVisual vectorDirVisual _object vectorDiff _vector,
-	_target worldToModelVisual vectorUpVisual  _object vectorDiff _vector
-];
-_object attachTo [_target];
-_object setVectorDirAndUp _vector;
-_vector
+_this call bis_fnc_attachToRelative
