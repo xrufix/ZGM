@@ -3,9 +3,7 @@ class zgm_main {
         file = "zgm\main";
         class getSpawnArea {};
         class inSpawnArea {};
-        class isCurator {
-            postInit = 1;
-        };
+        class isCurator {};
         class moveUnitsToHC {};
         class postInitPlayer {
             postInit = 1;

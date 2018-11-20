@@ -4,7 +4,7 @@ if (!isServer) exitWith {};
 
 params ["_daytime"];
 
-diag_log _daytime;
+TRACE_1("params",_daytime);
 
 switch (_daytime) do {
     case 1: {skipTime (15 + random [0,3,6])};
