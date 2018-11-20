@@ -5,6 +5,7 @@ params ["_unit"];
 _unit addEventHandler ["Local", {
 	params ["_unit", "_isLocal"];
 	if (_isLocal) then {
+		if !((side _unit) in [east, west, resistance]) exitWith {};
 		GVAR(units) pushBackUnique _unit;
 		GVAR(groups) pushBackUnique (group _unit);
 	};
