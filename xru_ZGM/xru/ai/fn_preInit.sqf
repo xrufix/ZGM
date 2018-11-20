@@ -5,16 +5,7 @@ GVAR(units) = [];
 
 // Add spawned units and their groups to the detect and share groups.
 ["Man", "init", {
-    params ["_unit"];
-    _unit call FUNC(setCamoValue);
-    if (isPlayer _unit) exitWith {};
-    if !((side _unit) in [east, west, resistance]) exitWith {};
-    [{  // delay to allow changing the locality first.
-        params ["_unit"];
-        if !(local _unit) exitWith {};
-        GVAR(units) pushBackUnique _unit;
-        GVAR(groups) pushBackUnique (group _unit);
-    }, _unit, 60] call CBA_fnc_waitAndExecute;
+    _this call FUNC(initUnit);
 }, true, [], true] call CBA_fnc_addClassEventHandler;
 
 // Set uniforms camouflage value when changing uniforms.

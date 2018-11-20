@@ -3,6 +3,7 @@ class xru_ai {
         file = "xru\ai";
         class addLoadoutEH {};
         class detectPFH {};
+        class initUnit {};
         class preInit {
             preInit = 1;
         };
