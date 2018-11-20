@@ -7,11 +7,14 @@ GVAR(units) = [];
 ["Man", "init", {
     params ["_unit"];
     _unit call FUNC(setCamoValue);
-    if !(local _unit) exitWith {};
     if (isPlayer _unit) exitWith {};
     if !((side _unit) in [east, west, resistance]) exitWith {};
-    GVAR(units) pushBackUnique _unit;
-    GVAR(groups) pushBackUnique (group _unit);
+    [{  // delay to allow changing the locality first.
+        params ["_unit"];
+        if !(local _unit) exitWith {};
+        GVAR(units) pushBackUnique _unit;
+        GVAR(groups) pushBackUnique (group _unit);
+    }, _unit, 60] call CBA_fnc_waitAndExecute;
 }, true, [], true] call CBA_fnc_addClassEventHandler;
 
 // Set uniforms camouflage value when changing uniforms.

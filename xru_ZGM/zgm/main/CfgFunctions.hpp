@@ -4,7 +4,9 @@ class zgm_main {
         class getSpawnArea {};
         class inSpawnArea {};
         class isCurator {};
-        class moveUnitsToHC {};
+        class moveUnitsToHC {
+            postInit = 1;
+        };
         class postInitPlayer {
             postInit = 1;
         };
