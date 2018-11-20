@@ -12527,7 +12527,7 @@ class Mission
 				position[]={13466.751,12.433342,7159.4707};
 				angles[]={6.253562,0,6.2641234};
 			};
-			name="HC";
+			name="zgm_HC";
 			isPlayable=1;
 			description="Headless Client";
 			id=172;
