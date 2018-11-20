@@ -11575,7 +11575,7 @@ class CustomAttributes
 		};
 		class Attribute1
 		{
-			property="EnableDebugConsole";
+			property="fakeattribute";
 			expression="true";
 			class Value
 			{
