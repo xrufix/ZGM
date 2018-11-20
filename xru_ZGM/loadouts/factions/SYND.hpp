@@ -103,8 +103,8 @@
     WEAPON_OLD(RIFLE_UGL_3,"rhs_acc_ekp1","rhs_acc_dtk","rhs_acc_2dpZenit"), \
     WEAPON_OLD(RIFLE_UGL_4,"rhs_acc_pkas","rhs_acc_dtk","rhs_acc_2dpZenit"))
 
-#define MAG_RIFLE           ARR_1("30Rnd_762x39_Mag_Green_F")
-#define MAG_RIFLE_TRACER    ARR_1("30Rnd_762x39_Mag_Tracer_Green_F")
+#define MAG_RIFLE           ARR_1("rhs_30Rnd_762x39mm")
+#define MAG_RIFLE_TRACER    ARR_1("rhs_30Rnd_762x39mm_tracer")
 
 
 // CARBINE
@@ -118,15 +118,15 @@
 #define CARBINE_UGL         WEAPON_OLD("rhs_weap_aks74_gp25","rhs_acc_dtk","","")
 #define CARBINE_UGL_CCO    CARBINE_UGL
 
-#define MAG_CARBINE         ARR_1("30Rnd_545x39_Mag_F")
-#define MAG_CARBINE_TRACER  ARR_1("30Rnd_545x39_Mag_Tracer_F")
+#define MAG_CARBINE         ARR_1("rhs_30Rnd_545x39_7N10_camo_AK")
+#define MAG_CARBINE_TRACER  ARR_1("rhs_30Rnd_545x39_AK_plum_green")
 
 
 // PDW
 #define PDW ARR_2( \
     WEAPON_OLD("rhs_weap_aks74u","rhs_acc_pgs64_74u","",""), \
     WEAPON_OLD("rhs_weap_aks74un","rhs_acc_pgs64_74un","",""))
-#define MAG_PDW ARR_1("30Rnd_545x39_Mag_F")
+#define MAG_PDW ARR_1("rhs_30Rnd_545x39_7N10_2mag_AK")
 
 
 // SF CARBINES
