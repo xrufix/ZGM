@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=156;
+		nextID=162;
 	};
 	class Camera
 	{
-		pos[]={14626.045,22.409979,16754.139};
-		dir[]={0.62559366,-0.4102169,0.66368121};
-		up[]={0.28138489,0.91198337,0.29851413};
-		aside[]={0.72771436,1.9278377e-007,-0.6859616};
+		pos[]={14611.534,38.948624,16701.074};
+		dir[]={0.57007533,-0.3777827,0.72967339};
+		up[]={0.23259598,0.9258883,0.2977109};
+		aside[]={0.788059,1.1271914e-007,-0.61570036};
 	};
 };
 binarizationWanted=0;
@@ -11596,7 +11596,6 @@ class Mission
 		windForced=1;
 		year=2018;
 		month=10;
-		day=10;
 		hour=12;
 		minute=0;
 		startFogDecay=0.013;
@@ -12184,7 +12183,7 @@ class Mission
 					side="Civilian";
 					class Entities
 					{
-						items=6;
+						items=5;
 						class Item0
 						{
 							dataType="Object";
@@ -12504,18 +12503,6 @@ class Mission
 								};
 								nAttributes=2;
 							};
-						};
-						class Item5
-						{
-							dataType="Waypoint";
-							position[]={8726.4736,0,25441.982};
-							class Effects
-							{
-							};
-							showWP="NEVER";
-							id=1354;
-							type="Move";
-							atlOffset=4.8827686;
 						};
 					};
 					class Attributes
