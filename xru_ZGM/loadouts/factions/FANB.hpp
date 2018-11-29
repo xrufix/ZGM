@@ -184,7 +184,7 @@
 
 /* ###################### - GOGGLES / FACEWEAR - ###################### */
 #define GOGGLES         ARR_1("")
-#define GOGGLES_OFFICER ARR_3("","G_Spectacles","G_Aviator");
+#define GOGGLES_OFFICER ARR_3("","G_Spectacles","G_Aviator")
 #define GOGGLES_FULL    ARR_1("rhs_googles_orange")
 #define GOGGLES_SF		ARR_1("G_Bandanna_blk","G_Bandanna_oli","G_Bandanna_tan")
 #define GOGGLES_SF_FULL ARR_1("G_Bandanna_sport")

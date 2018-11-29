@@ -122,7 +122,7 @@
     WEAPON_OLD("rhs_weap_m4a1_blockII_d","rhsusf_acc_su230_mrds_c","rhsusf_acc_anpeq15_wmx_light","rhsusf_acc_nt4_tan"), \
     WEAPON_OLD("rhs_weap_m4a1_blockII_KAC_d","rhsusf_acc_su230_mrds_c","rhsusf_acc_anpeq15_light","rhsusf_acc_nt4_tan"))
 #define RIFLE_UGL_RECON WEAPON_OLD("rhs_weap_m4a1_blockII_M203_d","rhsusf_acc_g33_xps3_tan",LASERPOINTER_TN,"rhsusf_acc_nt4_tan")
-    
+
 #define RIFLE_RECON_TAN RIFLE_RECON
 #define RIFLE_UGL_RECON_TAN RIFLE_UGL_RECON
 
@@ -237,7 +237,7 @@
 
 /* ###################### - GOGGLES / FACEWEAR - ###################### */
 #define GOGGLES         ARR_4("rhs_googles_clear","rhs_googles_black","rhs_googles_orange","rhs_googles_yellow")
-#define GOGGLES_OFFICER ARR_3("","G_Spectacles","G_Aviator");
+#define GOGGLES_OFFICER ARR_3("","G_Spectacles","G_Aviator")
 #define GOGGLES_FULL    ARR_6("rhsusf_shemagh_gogg_tan","rhsusf_shemagh_gogg_od","rhsusf_oakley_goggles_blk","rhsusf_oakley_goggles_clr","rhsusf_oakley_goggles_ylw","rhsusf_oakley_goggles_blk")
 #define GOGGLES_SF		ARR_8("rhsusf_shemagh_grn","rhsusf_shemagh_tan","rhsusf_shemagh_white","rhsusf_shemagh_od","G_Bandanna_blk","G_Bandanna_khk","G_Bandanna_oli","G_Bandanna_beast")
 #define GOGGLES_SF_FULL ARR_4("rhsusf_shemagh_gogg_grn","rhsusf_shemagh_gogg_tan","rhsusf_shemagh_gogg_od","rhsusf_shemagh_gogg_white")
