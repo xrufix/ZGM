@@ -17,7 +17,8 @@ class COMMON : CommonDefault {
     items[] = {
         "ACE_EarPlugs",
         "ACE_fieldDressing",10,
-        "ACE_tourniquet"
+        "ACE_tourniquet",
+        "ACE_CableTie"
     };
 
     headgear[] = {HELMET};
