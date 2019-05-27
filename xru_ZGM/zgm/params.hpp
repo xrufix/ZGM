@@ -6,6 +6,7 @@ class DOUBLES(faction,var1) { \
     title = CSTRING(PARAMS,var1); \
     values[] = { \
         100, \
+        107, \
         113, \
         115, \
         125, \
@@ -43,6 +44,7 @@ class DOUBLES(faction,var1) { \
     }; \
     texts[] = { \
 /* 100 */   CSTRING(FACTIONS,AAF), \
+/* 107 */   CSTRING(FACTIONS,ANA), \
 /* 113 */   CSTRING(FACTIONS,BAF_DPM), \
 /* 115 */   CSTRING(FACTIONS,BAF_MTP), \
 /* 125 */   CSTRING(FACTIONS,BEL_DES), \

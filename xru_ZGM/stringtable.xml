@@ -6,6 +6,10 @@
                 <English>AAF - Altis Armed Forces</English>
                 <German>AAF - Altische Streitkräfte</German>
             </Key>
+            <Key ID="STR_ZGM_FACTIONS_ANA">
+                <English>ANA - Afghan National Army</English>
+                <German>ANA - Afghanische Nationalarmee</German>
+            </Key>
             <Key ID="STR_ZGM_FACTIONS_BAF_DPM">
                 <English>BAF - British Army 2008 (DPM, woodland)</English>
                 <German>BAF - British Army 2008 (DPM, Wald)</German>

@@ -7,6 +7,12 @@ class CfgFactions {
         index = 100;
         sideShort = "i";
     };
+    class ANA {
+        displayName = CSTRING(FACTIONS,ANA);
+        icon = "\UK3CB_Factions\addons\UK3CB_Factions_ANA\Flag\ana_flag_co.paa";
+        index = 107;
+        sideShort = "i";
+    };
     class BAF_DPM {
         displayName = CSTRING(FACTIONS,BAF_DPM);
         icon = "\a3\ui_f\data\map\markers\flags\uk_ca.paa";
@@ -185,7 +191,7 @@ class CfgFactions {
         displayName = CSTRING(FACTIONS,TAKISTAN);
         icon = "CUP\BaseConfigs\CUP_BaseConfigs\Data\Flags\flag_tka_co.paa";
         index = 700;
-        sideShort = "i";
+        sideShort = "o";
     };
     class USARMY_OCP {
         displayName = CSTRING(FACTIONS,USARMY_OCP);
