@@ -84,9 +84,7 @@ class LOADOUT(company,mio) : LOADOUT(company,common) {
     #endif
 };
 //CoLo
-class LOADOUT(company,colo) : LOADOUT(company,common) {
-    items[] += {"CL_Logitracker"};
-};
+class LOADOUT(company,colo) : LOADOUT(company,common) {};
 //FO
 class LOADOUT(company,fo) : LOADOUT(company,common) {
     items[] += {"ACE_RangeTable_82mm"};
@@ -761,7 +759,6 @@ class LOADOUT(logistics,common) : COMMON {
     items[] += {
         "ACE_microDAGR",
         "ACE_MapTools",
-        "CL_Logitracker",
         "ToolKit"
     };
     lrRadios[] = {RADIO_PACK,RADIO_HAND};
@@ -809,8 +806,7 @@ class LOADOUT(medevac,tl) : LOADOUT(medevac,doc) {
     lrRadios[] = {RADIO_HAND};
     items[] += {
         "ACE_microDAGR",
-        "ACE_MapTools",
-        "CL_Logitracker"
+        "ACE_MapTools"
     };
 };
 //MEDEVAC Pilot
