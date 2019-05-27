@@ -1,7 +1,7 @@
 /*
  * Author: xrufix
  * Make a given AI-Vehicle suppress a position or object. Should be executed global or where unit is local.
- * 
+ *
  * Arguments:
  * 0: Suppressing vehicle or list of vehicles. <OBJECT|ARRAY>
  * 1: Target(s) of Suppression <OBJECT|ARRAY|LOCATION|TRIGGER>
@@ -50,7 +50,7 @@ params [
 TRACE_9("Params", _unit, _target, _distance, _dummyCount, _height, _stopCondition, _switchTime, _rearm, _muzzle);
 
 if (_unit isEqualType []) exitWith {
-    {[_x, _target, _distance, _dummyCount, _height, _stopCondition, _switchTime, _rearm, _muzzle] call FUNC(start)} forEach _unit;
+    {[_x, _target, _distance, _dummyCount, _height, _stopCondition, _switchTime, _rearm, _muzzle, _exitCode, _codeArguments] call FUNC(start)} forEach _unit;
 };
 if (isNull _unit) exitWith {ERROR("Suppressing vehicle is invalid or was not found.")};
 if (!local _unit) exitWith {};
