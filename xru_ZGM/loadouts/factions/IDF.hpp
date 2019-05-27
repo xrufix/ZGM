@@ -154,7 +154,7 @@
 #define MAGS_AUTORIFLE      ARR_2(MAG_AUTORIFLE,3)
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_AUTORIFLE,2)
 #define MAGS_MMG            MAGS_AUTORIFLE
-#define MAGS_MMG_ASST       ARR_2(MAG_AUTORIFLE,5)
+#define MAGS_MMG_ASST       ARR_2(MAG_AUTORIFLE,4)
 #define MAGS_AUTORIFLE_RECON   ARR_2(MAG_AUTORIFLE,5)
 
 //  DMR & SR
@@ -184,10 +184,7 @@
 
 /* ###################### - HEADGEAR - ###################### */
 // GENERAL INFANTRY
-#define HELMET ARR_2(                \
-    "rhsgref_helmet_M1_bare_alt01",  \
-    "rhsgref_helmet_M1_bare"         \
-)
+#define HELMET "rhsusf_ach_bare"
 // NON-COMBAT INFANTRY
 #define HELMET_BARE HELMET
 // SPECIAL FORCES INFANTRY
@@ -228,7 +225,7 @@
 
 
 /* ###################### - NIGHT VISION DEVICES - ###################### */
-#define NVG	    ARR_1("")
+#define NVG	    ARR_8("dzn_NVG_IDF_Mitznefet_Cover","dzn_NVG_IDF_Mitznefet_Cover_Desert","dzn_NVG_IDF_Mitznefet_Cover2","dzn_NVG_IDF_Mitznefet_Cover2_Desert","dzn_NVG_IDF_Mitznefet_Cover3","dzn_NVG_IDF_Mitznefet_Cover3_Desert","dzn_NVG_IDF_Mitznefet_Cover4","dzn_NVG_IDF_Mitznefet_Cover4_Desert")
 #define NVG_SF	ARR_1("NVGoggles_OPFOR")
 
 
