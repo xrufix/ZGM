@@ -6,10 +6,12 @@
 // #define HUNTIR
 
 /* ###################### - UNIFORMS - ###################### */
-#define	UNIFORM_SINGLE      "CUP_O_TKI_Khet_Jeans_04"        // Für Inventar
-#define UNIFORM             ARR_2( \
-    ARR_4("CUP_O_TKI_Khet_Jeans_01","CUP_O_TKI_Khet_Jeans_02","CUP_O_TKI_Khet_Jeans_03","CUP_O_TKI_Khet_Jeans_04"), \
-    ARR_8("CUP_O_TKI_Khet_Partug_01","CUP_O_TKI_Khet_Partug_02","CUP_O_TKI_Khet_Partug_03","CUP_O_TKI_Khet_Partug_04","CUP_O_TKI_Khet_Partug_05","CUP_O_TKI_Khet_Partug_06","CUP_O_TKI_Khet_Partug_07","CUP_O_TKI_Khet_Partug_08"))
+#define	UNIFORM_SINGLE      "UK3CB_TKC_C_U_01"        // Für Inventar
+#define UNIFORM             ARR_4( \
+    ARR_4("UK3CB_TKC_C_U_01","UK3CB_TKC_C_U_02","UK3CB_TKC_C_U_03","UK3CB_TKC_C_U_06"), \
+    ARR_5("UK3CB_TKM_O_U_01","UK3CB_TKM_O_U_03","UK3CB_TKM_O_U_04","UK3CB_TKM_O_U_05","UK3CB_TKM_O_U_06"), \
+    ARR_5("UK3CB_TKM_B_U_01","UK3CB_TKM_B_U_03","UK3CB_TKM_B_U_04","UK3CB_TKM_B_U_05","UK3CB_TKM_B_U_06"), \
+    ARR_5("UK3CB_TKM_I_U_01","UK3CB_TKM_I_U_03","UK3CB_TKM_I_U_04","UK3CB_TKM_I_U_05","UK3CB_TKM_I_U_06") )
 #define UNIFORM_COMPANY     UNIFORM
 #define UNIFORM_RECON       UNIFORM
 #define UNIFORM_DIVER       ARR_1("U_B_Wetsuit")
@@ -20,15 +22,10 @@
 
 
 /* ###################### - VESTS - ###################### */
-#define VEST_EMPTY      ARR_6("CUP_V_OI_TKI_Jacket1_01","CUP_V_OI_TKI_Jacket1_02","CUP_V_OI_TKI_Jacket1_03","CUP_V_OI_TKI_Jacket1_04","CUP_V_OI_TKI_Jacket1_05","CUP_V_OI_TKI_Jacket1_06")
+#define VEST_EMPTY      ""
 #define VEST_OFFICER    VEST_EMPTY
 #define VEST_LIGHT      VEST_EMPTY
-#define VEST_RM         ARR_5( \
-    ARR_6("CUP_V_OI_TKI_Jacket2_01","CUP_V_OI_TKI_Jacket2_02","CUP_V_OI_TKI_Jacket2_03","CUP_V_OI_TKI_Jacket2_04","CUP_V_OI_TKI_Jacket2_05","CUP_V_OI_TKI_Jacket2_06"), \
-    ARR_6("CUP_V_OI_TKI_Jacket3_01","CUP_V_OI_TKI_Jacket3_02","CUP_V_OI_TKI_Jacket3_03","CUP_V_OI_TKI_Jacket3_04","CUP_V_OI_TKI_Jacket3_05","CUP_V_OI_TKI_Jacket3_06"), \
-    ARR_6("CUP_V_OI_TKI_Jacket4_01","CUP_V_OI_TKI_Jacket4_02","CUP_V_OI_TKI_Jacket4_03","CUP_V_OI_TKI_Jacket4_04","CUP_V_OI_TKI_Jacket4_05","CUP_V_OI_TKI_Jacket4_06"), \
-    ARR_6("CUP_V_OI_TKI_Jacket5_01","CUP_V_OI_TKI_Jacket5_02","CUP_V_OI_TKI_Jacket5_03","CUP_V_OI_TKI_Jacket5_04","CUP_V_OI_TKI_Jacket5_05","CUP_V_OI_TKI_Jacket5_06"), \
-    ARR_6("CUP_V_OI_TKI_Jacket6_01","CUP_V_OI_TKI_Jacket6_02","CUP_V_OI_TKI_Jacket6_03","CUP_V_OI_TKI_Jacket6_04","CUP_V_OI_TKI_Jacket6_05","CUP_V_OI_TKI_Jacket6_06"))
+#define VEST_RM         ""
 #define VEST_GR         VEST_RM
 #define VEST_CM         VEST_RM
 #define VEST_SL         VEST_RM
@@ -182,10 +179,10 @@
 // GENERAL INFANTRY
 #define HELMET ARR_6( \
     ARR_3("H_Shemag_olive","H_ShemagOpen_tan","H_ShemagOpen_khk"), \
-    ARR_6("CUP_H_TKI_Pakol_1_01","CUP_H_TKI_Pakol_1_02","CUP_H_TKI_Pakol_1_03","CUP_H_TKI_Pakol_1_04","CUP_H_TKI_Pakol_1_05","CUP_H_TKI_Pakol_1_06"), \
-    ARR_6("CUP_H_TKI_Pakol_2_01","CUP_H_TKI_Pakol_2_02","CUP_H_TKI_Pakol_2_03","CUP_H_TKI_Pakol_2_04","CUP_H_TKI_Pakol_2_05","CUP_H_TKI_Pakol_2_06"), \
-    ARR_6("CUP_H_TKI_SkullCap_01","CUP_H_TKI_SkullCap_02","CUP_H_TKI_SkullCap_03","CUP_H_TKI_SkullCap_04","CUP_H_TKI_SkullCap_05","CUP_H_TKI_SkullCap_06"), \
-    ARR_6("CUP_H_TKI_Lungee_01","CUP_H_TKI_Lungee_02","CUP_H_TKI_Lungee_03","CUP_H_TKI_Lungee_04","CUP_H_TKI_Lungee_05","CUP_H_TKI_Lungee_06"), \
+    ARR_6("UK3CB_H_Mil_Turban_Wrap","UK3CB_TKM_I_H_Turban_02_1","UK3CB_TKM_I_H_Turban_01_1","UK3CB_TKM_I_H_Turban_05_1","UK3CB_TKM_I_H_Turban_04_1","UK3CB_TKM_I_H_Turban_03_1"), \
+    ARR_6("UK3CB_TKM_B_H_Turban_02_1","UK3CB_TKM_B_H_Turban_01_1","UK3CB_TKM_B_H_Turban_05_1","UK3CB_TKM_B_H_Turban_04_1","UK3CB_TKM_B_H_Turban_03_1","UK3CB_TKM_O_H_Turban_02_1"), \
+    ARR_6("UK3CB_TKM_O_H_Turban_01_1","UK3CB_TKM_O_H_Turban_05_1","UK3CB_TKM_O_H_Turban_04_1","UK3CB_TKM_O_H_Turban_03_1","UK3CB_TKC_H_Turban_05_1","UK3CB_TKC_H_Turban_04_1"), \
+    ARR_6("UK3CB_TKC_H_Turban_03_1","UK3CB_TKC_H_Turban_06_1","UK3CB_TKC_H_Turban_02_1","UK3CB_TKC_H_Turban_01_1","CUP_H_TKI_Lungee_05","CUP_H_TKI_Lungee_06"), \
     ARR_6("CUP_H_TKI_Lungee_Open_01","CUP_H_TKI_Lungee_Open_02","CUP_H_TKI_Lungee_Open_03","CUP_H_TKI_Lungee_Open_04","CUP_H_TKI_Lungee_Open_05","CUP_H_TKI_Lungee_Open_06"))
 // NON-COMBAT INFANTRY
 #define HELMET_BARE     HELMET
