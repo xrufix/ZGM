@@ -176,7 +176,7 @@
 #define HELMET_SF ARR_3("H_Shemag_olive","H_ShemagOpen_tan","H_ShemagOpen_khk")
 #define HELMET_DIVER ARR_1("")
 // VEHICLE CREWS
-#define HELMET_CREW 		ARR_2("rhs_tsh4","rhs_tsh4_ess")
+#define HELMET_CREW 		ARR_2("UK3CB_H_Crew_Cap","UK3CB_H_Crew_Cap_Ess")
 #define HELMET_HELICOPTER	ARR_2("UK3CB_TKA_O_H_zsh7a_mike_Des","UK3CB_TKA_O_H_zsh7a_mike_Des_alt")
 #define HELMET_HELI_CREW	HELMET_HELICOPTER
 #define HELMET_JET			ARR_2("UK3CB_TKA_O_H_zsh7a_Des_alt","UK3CB_TKA_O_H_zsh7a_Des")
@@ -221,10 +221,10 @@
 
 /* ###################### - INSIGNIA - ###################### */
 // Kann in CfgLoadouts.hpp überschrieben werden.
-#define INSIGNIA_COMMON ARR_1("")
-#define INSIGNIA_SF INSIGNIA_COMMON
-#define INSIGNIA_TNK INSIGNIA_COMMON
-#define INSIGNIA_HELI INSIGNIA_COMMON
-#define INSIGNIA_JET INSIGNIA_COMMON
-#define INSIGNIA_MEV INSIGNIA_COMMON
-#define INSIGNIA_SUPPORT INSIGNIA_COMMON
+#define INSIGNIA_COMMON ARR_1("UK3CB_TKA_B_Insignia_Armed_Forces_01")
+#define INSIGNIA_SF ARR_1("UK3CB_TKA_O_Insignia_Recon")
+#define INSIGNIA_TNK ARR_1("UK3CB_TKA_B_Insignia_Crew")
+#define INSIGNIA_HELI ARR_1("UK3CB_TKA_B_Insignia_Pilot")
+#define INSIGNIA_JET ARR_1("UK3CB_TKA_O_Insignia_Airforce")
+#define INSIGNIA_MEV ARR_1("UK3CB_TKA_B_Insignia_Armed_Forces_02")
+#define INSIGNIA_SUPPORT ARR_1("UK3CB_TKA_O_Insignia_Army")
