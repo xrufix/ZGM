@@ -15,6 +15,7 @@ class DOUBLES(faction,var1) { \
         200, \
         225, \
         250, \
+        265, \
         275, \
         300, \
         310, \
@@ -53,6 +54,7 @@ class DOUBLES(faction,var1) { \
 /* 200 */   CSTRING(FACTIONS,BW_FLECK), \
 /* 225 */   CSTRING(FACTIONS,BW_TROP), \
 /* 250 */   CSTRING(FACTIONS,CDF), \
+/* 265 */   CSTRING(FACTIONS,CHDKZ), \
 /* 275 */   CSTRING(FACTIONS,CHINA), \
 /* 300 */   CSTRING(FACTIONS,CHINA_GRN), \
 /* 310 */   CSTRING(FACTIONS,CTRG_DES), \

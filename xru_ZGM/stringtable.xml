@@ -40,6 +40,10 @@
                 <English>CDF - Chernarussian Defense Forces</English>
                 <German>CDF - Chernarussische Verteidigungsstreitkräfte</German>
             </Key>
+            <Key ID="STR_ZGM_FACTIONS_CHDKZ">
+                <English>CHDKZ - Chernarussian Movement of the Red Star</English>
+                <German>CHDKZ - Chernarussische Bewegung des Roten Sterns</German>
+            </Key>
             <Key ID="STR_ZGM_FACTIONS_CHINA">
                 <English>CSAT - PLA of China (Brown)</English>
                 <German>CSAT - Volksarmee China (Braun)</German>

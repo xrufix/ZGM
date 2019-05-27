@@ -2,6 +2,10 @@
 #include "factions\AAF.hpp"
 #include "common\template.hpp"
 
+#define FACTION ANA
+#include "factions\ANA.hpp"
+#include "common\template.hpp"
+
 #define FACTION BAF_DPM
 #include "factions\BAF_DPM.hpp"
 #include "common\template.hpp"
@@ -32,6 +36,10 @@
 
 #define FACTION CDF
 #include "factions\CDF.hpp"
+#include "common\template.hpp"
+
+#define FACTION CHDKZ
+#include "factions\CHDKZ.hpp"
 #include "common\template.hpp"
 
 #define FACTION CHINA

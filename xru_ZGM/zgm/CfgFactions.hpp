@@ -61,6 +61,12 @@ class CfgFactions {
         index = 250;
         sideShort = "i";
     };
+    class CHDKZ {
+        displayName = CSTRING(FACTIONS,CHDKZ);
+        icon = "\UK3CB_Factions\addons\UK3CB_Factions_CCM\Flag\ccm_o_flag_co.paa";
+        index = 265;
+        sideShort = "o";
+    };
     class CHINA {
         displayName = CSTRING(FACTIONS,CHINA);
         icon = "\A3\Ui_f\data\Map\Markers\Flags\viper_ca.paa";
