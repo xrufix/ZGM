@@ -27,8 +27,8 @@
 
 // UGLS Grenadiers
 #define UGLS_GREN ARR_5( \
-    ARR_2(UGL_HE,16), \
-    ARR_2(UGL_BOUNCE,6), \
-    ARR_2(UGL_TB,4), \
-    ARR_2(UGL_SMK,6), \
+    ARR_2(UGL_HE,12), \
+    ARR_2(UGL_BOUNCE,2), \
+    ARR_2(UGL_TB,2), \
+    ARR_2(UGL_SMK,4), \
     ARR_2(UGL_GDM,2))

@@ -69,55 +69,33 @@
 
 /* ###################### - PRIMARY WEAPONS - ###################### */
 // STANDARD ISSUE ASSAULT RIFLE
-#define RIFLE_1 ARR_1("rhs_weap_ak74m")
-#define RIFLE_2 ARR_1("rhs_weap_ak74m_2mag")
-#define RIFLE_3 ARR_1("rhs_weap_ak74m_2mag_camo")
-#define RIFLE_4 ARR_1("rhs_weap_ak74m_fullplum")
-
-#define RIFLE_CCO ARR_4( \
-    WEAPON_OLD(RIFLE_1,"","","rhs_acc_dtk2"), \
-    WEAPON_OLD(RIFLE_2,"","","rhs_acc_dtk3"), \
-    WEAPON_OLD(RIFLE_3,"","","rhs_acc_dtk2"), \
-    WEAPON_OLD(RIFLE_4,"","","rhs_acc_dtk3"))
-#define RIFLE_RCO ARR_4( \
-    WEAPON_OLD(RIFLE_1,"","","rhs_acc_dtk2"), \
-    WEAPON_OLD(RIFLE_2,"","","rhs_acc_dtk3"), \
-    WEAPON_OLD(RIFLE_3,"","","rhs_acc_dtk2"), \
-    WEAPON_OLD(RIFLE_4,"","","rhs_acc_dtk3"))
+#define RIFLE "rhs_weap_ak74m"
+#define RIFLE_CCO WEAPON_OLD(RIFLE,"","","rhs_acc_dtk2")
+#define RIFLE_RCO WEAPON_OLD(RIFLE,"","","rhs_acc_dtk2")
 
 
 // GRENADIER ASSAULT RIFLE
-#define RIFLE_UGL_1     ARR_1("rhs_weap_ak74m_gp25")
-#define RIFLE_UGL_2     ARR_1("rhs_weap_ak74m_fullplum_gp25")
+#define RIFLE_UGL "rhs_weap_ak74m_gp25"
+#define RIFLE_UGL_CCO WEAPON_OLD(RIFLE_UGL,"","","rhs_acc_dtk2")
+#define RIFLE_UGL_RCO RIFLE_UGL_CCO
 
-#define RIFLE_UGL_CCO ARR_2( \
-    WEAPON_OLD(RIFLE_UGL_1,"","","rhs_acc_dtk2"), \
-    WEAPON_OLD(RIFLE_UGL_2,"","","rhs_acc_dtk3"))
-#define RIFLE_UGL_RCO ARR_2( \
-    WEAPON_OLD(RIFLE_UGL_1,"","","rhs_acc_dtk2"), \
-    WEAPON_OLD(RIFLE_UGL_2,"","","rhs_acc_dtk3"))
-
-#define MAG_RIFLE           ARR_1("rhs_30Rnd_545x39_7N10_plum_AK")
-#define MAG_RIFLE_TRACER    ARR_1("rhs_30Rnd_545x39_AK_plum_green")
+#define MAG_RIFLE           ARR_1("rhs_30Rnd_545x39_7N6M_AK")
+#define MAG_RIFLE_TRACER    ARR_1("rhs_30Rnd_545x39_AK_green")
 
 // PDW
 #define PDW "rhs_weap_aks74u"
-#define MAG_PDW ARR_1("rhs_30Rnd_545x39_7N6M_AK")
+#define MAG_PDW MAG_RIFLE
 
 
 // CARBINE
-#define CARBINE_1   "rhs_weap_aks74"
-#define CARBINE_2   "rhs_weap_aks74_2"
-#define CARBINE ARR_2( \
-    WEAPON_OLD(CARBINE_1,"","","rhs_acc_dtk3"), \
-    WEAPON_OLD(CARBINE_2,"","","rhs_acc_dtk2"))
+#define CARBINE WEAPON_OLD("rhs_weap_aks74","","","rhs_acc_dtk3")
 #define CARBINE_CCO CARBINE
 
 #define CARBINE_UGL        WEAPON_OLD("rhs_weap_aks74_gp25","","","rhs_acc_dtk3")
 #define CARBINE_UGL_CCO    CARBINE_UGL
 
-#define MAG_CARBINE         "rhs_30Rnd_545x39_7N6M_AK"
-#define MAG_CARBINE_TRACER  "rhs_30Rnd_545x39_AK_green"
+#define MAG_CARBINE         MAG_RIFLE
+#define MAG_CARBINE_TRACER  MAG_RIFLE_TRACER
 
 
 // SF CARBINES
@@ -133,8 +111,8 @@
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR         WEAPON_OLD("rhs_weap_ak74m_fullplum","rhs_acc_1p78","","rhs_acc_dtk1983")
-#define MAG_DMR     MAG_RIFLE
+#define DMR         WEAPON_OLD("rhs_weap_svdp","rhs_acc_pso1m21","","")
+#define MAG_DMR     "rhs_10Rnd_762x54mmR_7N1"
 
 #define DMR_RECON      WEAPON_OLD("rhs_weap_svds","rhs_acc_pso1m2","","rhs_acc_tgpv")
 #define DMR_DIVER      WEAPON_OLD("rhs_weap_svds","rhs_acc_pso1m2","","")
@@ -148,7 +126,7 @@
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
-#define AUTORIFLE           WEAPON_OLD("hlc_rifle_rpk74n_45rnd","","","rhs_acc_dtk3")
+#define AUTORIFLE           WEAPON_OLD("hlc_rifle_rpk74n","","","rhs_acc_dtk3")
 #define MAG_AUTORIFLE       ARR_1("hlc_45Rnd_545x39_m_rpk")
 #define MAGS_AUTORIFLE      ARR_4(MAG_AUTORIFLE,5,"hlc_45Rnd_545x39_t_rpk",5)
 #define MAGS_AUTORIFLE_ASST ARR_4(MAG_AUTORIFLE,2,"hlc_45Rnd_545x39_t_rpk",2)

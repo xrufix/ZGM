@@ -411,7 +411,7 @@ class LOADOUT(recon,tl) : LOADOUT(recon,common) {
     vest[] = {VEST_RECON_TL};
     primary[] = {RIFLE_UGL_RECON};
     magazines[] += {
-        UGL_HE,10,
+        UGL_HE,6,
         UGL_SMK,2,
         UGLS_COL1,
         GRENADE_IR,
@@ -455,6 +455,7 @@ class LOADOUT(recon,lat) : LOADOUT(recon,common) {
 };
 //CM
 class LOADOUT(recon,cm) : LOADOUT(recon,common) {
+    backpack[] = {BACKPACK_KITBAG};
     items[] += {
         "ACE_fieldDressing",10,
         "ACE_elasticBandage",30,
@@ -597,6 +598,7 @@ class LOADOUT(sniper,common) : LOADOUT(recon,common) {
 //Spotter
 class LOADOUT(sniper,spot) : LOADOUT(recon,common) {
     uniform[] = {UNIFORM_SNIPER};
+    backpack[] = {BACKPACK_KITBAG};
     primary[] = {RIFLE_UGL_RECON_TAN};
     #ifdef EASYTRACK
         gps[] = {EASYTRACK_PDA};
