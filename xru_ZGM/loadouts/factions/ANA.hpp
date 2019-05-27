@@ -176,7 +176,7 @@
 #define HELMET_SF ARR_2("UK3CB_ANA_B_H_MICH_BARE_DES","UK3CB_ANA_B_H_MICH_BARE_DES_Headset")
 #define HELMET_DIVER ARR_1("")
 // VEHICLE CREWS
-#define HELMET_CREW 		ARR_2("rhs_tsh4","rhs_tsh4_ess")
+#define HELMET_CREW 		ARR_2("UK3CB_H_Crew_Cap","UK3CB_H_Crew_Cap_Ess")
 #define HELMET_HELICOPTER	ARR_2("rhs_zsh7a_mike_green","rhs_zsh7a_mike_green_alt")
 #define HELMET_HELI_CREW	HELMET_HELICOPTER
 #define HELMET_JET			ARR_2("rhs_zsh7a","rhs_zsh7a_alt")

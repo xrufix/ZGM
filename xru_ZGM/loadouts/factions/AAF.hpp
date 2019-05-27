@@ -8,7 +8,7 @@
 /* ###################### - UNIFORMS - ###################### */
 #define	UNIFORM_SINGLE      ARR_1("U_I_CombatUniform")        // Für Inventar
 #define UNIFORM             ARR_2(UNIFORM_SINGLE,"U_I_CombatUniform_shortsleeve")      // Für Zufallsauswahl
-#define UNIFORM_COMPANY     ARR_1("U_I_OfficerUniform")  
+#define UNIFORM_COMPANY     ARR_1("U_I_OfficerUniform")
 #define UNIFORM_RECON       ARR_1("xru_u_coveralls_urbancamo")
 #define UNIFORM_DIVER       ARR_1("U_i_Wetsuit")
 #define UNIFORM_CREW        ARR_1("U_Tank_green_F")
@@ -32,9 +32,9 @@
 
 #define VEST_CREW		ARR_1("V_TacVest_khk")
 
-#define VEST_RECON		ARR_1("V_TacVest_khk") 
-#define VEST_RECON_TL	ARR_1("V_PlateCarrier2_blk") 
-#define VEST_RECON_MG	ARR_1("V_PlateCarrier1_blk") 
+#define VEST_RECON		ARR_1("V_TacVest_khk")
+#define VEST_RECON_TL	ARR_1("V_PlateCarrier2_blk")
+#define VEST_RECON_MG	ARR_1("V_PlateCarrier1_blk")
 #define VEST_RECON_GR	VEST_RECON_TL
 
 #define VEST_BREATHER	ARR_1("V_RebreatherIA")
@@ -135,8 +135,8 @@
 
 #define MAGS_AUTORIFLE      ARR_4("200Rnd_65x39_cased_Box",3,"200Rnd_65x39_cased_Box_Tracer",2)
 #define MAGS_AUTORIFLE_ASST ARR_3("200Rnd_65x39_cased_Box",2,"200Rnd_65x39_cased_Box_Tracer")
-#define MAGS_MMG            ARR_2("xru_150Rnd_93x64_Mag_Mixed_Yellow",2)
-#define MAGS_MMG_ASST       ARR_2("xru_150Rnd_93x64_Mag_Mixed_Yellow",4)
+#define MAGS_MMG            ARR_2("ACE_150Rnd_93x64_Mag_yellow",2)
+#define MAGS_MMG_ASST       ARR_2("ACE_150Rnd_93x64_Mag_yellow",4)
 #define MAGS_AUTORIFLE_RECON   ARR_4("200Rnd_65x39_cased_Box",3,"ACE_200Rnd_65x39_cased_Box_Tracer_Dim",2)
 
 /* ###################### - SIDEARMS - ###################### */
