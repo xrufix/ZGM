@@ -18,5 +18,5 @@ if (hasInterface) then {
 };
 
 // Start detect and share loops.
-// GVAR(detectPFH) = [{call FUNC(detectPFH)}, DETECT_INTERVAL, []] call CBA_fnc_addPerFrameHandler;
-// GVAR(sharePFH) = [{call FUNC(sharePFH)}, REVEAL_INTERVAL, []] call CBA_fnc_addPerFrameHandler;
+GVAR(detectPFH) = [{call FUNC(detectPFH)}, DETECT_INTERVAL, []] call CBA_fnc_addPerFrameHandler;
+GVAR(sharePFH) = [{call FUNC(sharePFH)}, REVEAL_INTERVAL, []] call CBA_fnc_addPerFrameHandler;
