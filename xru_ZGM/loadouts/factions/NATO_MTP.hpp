@@ -20,7 +20,7 @@
 
 /* ###################### - VESTS - ###################### */
 #define VEST_EMPTY      ARR_2("V_PlateCarrier1_rgr","xru_V_PlateCarrier1_khk")
-#define VEST_OFFICER       ARR_1("V_Rangemaster_belt")
+#define VEST_OFFICER    ARR_1("V_Rangemaster_belt")
 #define VEST_LIGHT      VEST_EMPTY
 #define VEST_RM         ARR_2("V_PlateCarrier2_rgr","xru_V_PlateCarrier2_khk")
 #define VEST_GR         VEST_RM

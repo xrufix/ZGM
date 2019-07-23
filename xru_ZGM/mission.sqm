@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=165;
+		nextID=162;
 	};
 	class Camera
 	{
-		pos[]={14622.104,31.714695,16717.748};
-		dir[]={0.047117595,-0.38590163,0.92141187};
-		up[]={0.019710446,0.92253429,0.38541654};
-		aside[]={0.99876177,2.460074e-007,-0.051081937};
+		pos[]={14611.534,38.948624,16701.074};
+		dir[]={0.57007533,-0.3777827,0.72967339};
+		up[]={0.23259598,0.9258883,0.2977109};
+		aside[]={0.788059,1.1271914e-007,-0.61570036};
 	};
 };
 binarizationWanted=0;
@@ -11559,7 +11559,7 @@ class CustomAttributes
 		};
 		class Attribute1
 		{
-			property="EnableDebugConsole";
+			property="fakeattribute";
 			expression="true";
 			class Value
 			{
@@ -12522,7 +12522,7 @@ class Mission
 			{
 				position[]={14471.306,27.601307,6184.9805};
 			};
-			name="HC";
+			name="zgm_HC";
 			isPlayable=1;
 			description="Headless Client";
 			id=172;
