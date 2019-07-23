@@ -86,6 +86,10 @@
 #include "factions\IRAN_URB.hpp"
 #include "common\template.hpp"
 
+#define FACTION LDF
+#include "factions\LDF.hpp"
+#include "common\template.hpp"
+
 #define FACTION NATO_MTP
 #include "factions\NATO_MTP.hpp"
 #include "common\template.hpp"

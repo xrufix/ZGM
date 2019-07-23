@@ -133,6 +133,12 @@ class CfgFactions {
         index = 425;
         sideShort = "o";
     };
+	class LDF {
+        displayName = CSTRING(FACTIONS,LDF);
+        icon = "";
+        index = 450;
+        sideShort = "i";
+    };
     class NATO_MTP {
         displayName = CSTRING(FACTIONS,NATO_MTP);
         icon = "\a3\Data_f\cfgFactionClasses_BLU_ca.paa";

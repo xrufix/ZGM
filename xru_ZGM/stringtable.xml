@@ -86,6 +86,10 @@
                 <English>CSAT - Iranian Army (Urban)</English>
                 <German>CSAT - Iranische Armee (Stadt)</German>
             </Key>
+			<Key ID="STR_ZGM_FACTIONS_LDF">
+                <English>Livonian Defense Force</English>
+                <German>Livionische Verteidigungsstreitkräfte</German>
+            </Key>
             <Key ID="STR_ZGM_FACTIONS_NATO_MTP">
                 <English>NATO 2035 (MTP)</English>
             </Key>
