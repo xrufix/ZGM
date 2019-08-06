@@ -8,7 +8,7 @@ class EditorData
 	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=1365;
+		nextID=1366;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=171;
+		nextID=174;
 	};
 	class Camera
 	{
@@ -11592,7 +11592,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=13;
+		items=14;
 		class Item0
 		{
 			dataType="Marker";
@@ -12427,8 +12427,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={214.32631,267.71814,146.13383};
-								angles[]={5.8434968,0,0.24610862};
+								position[]={214.326,267.71802,146.134};
+								angles[]={5.843502,0,0.24610887};
 							};
 							side="Civilian";
 							flags=4;
@@ -12442,7 +12442,6 @@ class Mission
 							};
 							id=1336;
 							type="C_man_1";
-							atlOffset=9.1552734e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38606,6 +38605,18 @@ class Mission
 			};
 			isPlayable=1;
 			id=1364;
+			type="ace_spectator_virtual";
+			atlOffset=3.0517578e-005;
+		};
+		class Item13
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={210.909,265.78214,142.961};
+			};
+			isPlayable=1;
+			id=1365;
 			type="ace_spectator_virtual";
 			atlOffset=3.0517578e-005;
 		};

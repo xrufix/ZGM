@@ -9,3 +9,13 @@
     Mehr Informationen dazu unter
     https://community.bistudio.com/wiki/Initialization_Order
  */
+
+[{
+    !isNil "clib_fnc_loadModules"
+}, {
+    call clib_fnc_loadModules
+}] call CBA_fnc_waitUntilAndExecute;
+
+sleep 1;
+setViewDistance 3000;
+setObjectViewDistance 3000;

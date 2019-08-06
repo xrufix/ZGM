@@ -27,6 +27,13 @@ class params {
     #include "zgm\params.hpp"
 };
 
+class CLib {
+    Modules[] = {"CLib", "Streamator"};
+    useExperimentalAutoload = 0;
+    useCompressedFunction = 0;
+    useFallbackRemoteExecution = 0;
+};
+
 // xru_zgm
 #include "zgm\ui\dialog.hpp"
 #include "zgm\CfgFactions.hpp"

@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=1355;
+		nextID=1358;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=162;
+		nextID=165;
 	};
 	class Camera
 	{
@@ -38,13 +38,14 @@ addons[]=
 	"ace_explosives",
 	"ace_nouniformrestrictions",
 	"A3_Characters_F_Jets",
-	"A3_Signs_F"
+	"A3_Signs_F",
+	"A3_Data_F_Exp_A_Virtual"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -112,6 +113,13 @@ class AddonsMetaData
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Data_F_Exp_A";
+			name="Arma 3 Nexus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -11557,26 +11565,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
-		{
-			property="fakeattribute";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=2;
-				};
-			};
-		};
-		nAttributes=2;
+		nAttributes=1;
 	};
 };
 class Mission
@@ -11596,7 +11585,6 @@ class Mission
 		windForced=1;
 		year=2018;
 		month=10;
-		day=10;
 		hour=12;
 		minute=0;
 		startFogDecay=0.013;
@@ -11604,7 +11592,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=11;
+		items=14;
 		class Item0
 		{
 			dataType="Marker";
@@ -12206,6 +12194,7 @@ class Mission
 							};
 							id=1332;
 							type="C_man_1";
+							atlOffset=-5.7220459e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12269,6 +12258,7 @@ class Mission
 							};
 							id=1333;
 							type="C_man_1";
+							atlOffset=-5.7220459e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12395,6 +12385,7 @@ class Mission
 							};
 							id=1335;
 							type="C_man_1";
+							atlOffset=-5.7220459e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12458,6 +12449,7 @@ class Mission
 							};
 							id=1336;
 							type="C_man_1";
+							atlOffset=-5.7220459e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12506,10 +12498,11 @@ class Mission
 					{
 					};
 					id=1173;
+					atlOffset=-5.7220459e-006;
 				};
 			};
 			id=154;
-			atlOffset=0.0097808838;
+			atlOffset=0.0097770691;
 		};
 		class Item2
 		{
@@ -30567,7 +30560,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8162.2695,41.385765,25126.482};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -30629,7 +30622,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8162.2695,41.385765,25123.982};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -30691,7 +30684,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8162.2695,41.385765,25121.482};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -30752,7 +30745,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8162.2695,41.385765,25118.982};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -30813,7 +30806,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8162.2695,41.385765,25116.482};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -30875,7 +30868,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8162.2695,41.385765,25113.982};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -30937,7 +30930,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8162.2695,41.385765,25111.482};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -30998,7 +30991,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8162.2695,41.385765,25108.982};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -31136,7 +31129,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8163.7754,41.382,25126.406};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -31198,7 +31191,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8163.7754,41.382,25123.906};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -31260,7 +31253,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8163.7754,41.382,25121.406};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -31321,7 +31314,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8163.7754,41.382,25118.906};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -31382,7 +31375,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8163.7754,41.382,25116.406};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -31444,7 +31437,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8163.7754,41.382,25113.906};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -31506,7 +31499,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8163.7754,41.382,25111.406};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -31567,7 +31560,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={8163.7754,41.382,25108.906};
-								angles[]={-0,0,6.2806959};
+								angles[]={0,0,6.2806959};
 							};
 							side="Independent";
 							flags=4;
@@ -37922,6 +37915,339 @@ class Mission
 			id=1337;
 			type="FlagSmall_F";
 			atlOffset=-1.9073486e-006;
+		};
+		class Item11
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5.2624474,18.793917,7.91362};
+			};
+			isPlayable=1;
+			description="Streamnator";
+			id=1355;
+			type="VirtualSpectator_F";
+			atlOffset=3.0517578e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="AllowFreeCamera";
+					expression="_this setVariable ['AllowFreeCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="WhitelistedSides";
+					expression="_this setVariable ['WhitelistedSides', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ShowFocusInfo";
+					expression="_this setVariable ['ShowFocusInfo', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="AllowAi";
+					expression="_this setVariable ['AllowAi', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Allow3PPCamera";
+					expression="_this setVariable ['Allow3PPCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item12
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6.2304497,18.828016,7.8586273};
+			};
+			isPlayable=1;
+			description="Streamnator";
+			id=1356;
+			type="VirtualSpectator_F";
+			atlOffset=3.0517578e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="AllowFreeCamera";
+					expression="_this setVariable ['AllowFreeCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="WhitelistedSides";
+					expression="_this setVariable ['WhitelistedSides', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ShowFocusInfo";
+					expression="_this setVariable ['ShowFocusInfo', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="AllowAi";
+					expression="_this setVariable ['AllowAi', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Allow3PPCamera";
+					expression="_this setVariable ['Allow3PPCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item13
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7.2524376,18.86458,7.814621};
+			};
+			isPlayable=1;
+			description="Streamnator";
+			id=1357;
+			type="VirtualSpectator_F";
+			atlOffset=3.0517578e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="AllowFreeCamera";
+					expression="_this setVariable ['AllowFreeCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="WhitelistedSides";
+					expression="_this setVariable ['WhitelistedSides', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ShowFocusInfo";
+					expression="_this setVariable ['ShowFocusInfo', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="AllowAi";
+					expression="_this setVariable ['AllowAi', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Allow3PPCamera";
+					expression="_this setVariable ['Allow3PPCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 };

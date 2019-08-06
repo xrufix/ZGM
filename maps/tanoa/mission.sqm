@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1796;
+		nextID=1799;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=129;
+		nextID=133;
 	};
 	class Camera
 	{
@@ -38,13 +38,14 @@ addons[]=
 	"A3_Characters_F_Mark",
 	"ace_explosives",
 	"ace_nouniformrestrictions",
-	"A3_Characters_F_Jets"
+	"A3_Characters_F_Jets",
+	"A3_Data_F_Exp_A_Virtual"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -112,6 +113,13 @@ class AddonsMetaData
 		{
 			className="A3_Characters_F_Jets";
 			name="Arma 3 Jets - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Data_F_Exp_A";
+			name="Arma 3 Nexus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -11557,26 +11565,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
-		{
-			property="fakeattribute";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=2;
-				};
-			};
-		};
-		nAttributes=2;
+		nAttributes=1;
 	};
 };
 class Mission
@@ -11593,13 +11582,9 @@ class Mission
 		forecastWeather=0.30000001;
 		forecastWind=0.2;
 		forecastWaves=0.1;
-		rainForced=0;
-		lightningsForced=0;
-		wavesForced=0;
 		windForced=1;
 		year=2018;
 		month=10;
-		day=10;
 		hour=12;
 		minute=0;
 		startFogDecay=0.013;
@@ -11607,7 +11592,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=12;
+		items=15;
 		class Item0
 		{
 			dataType="Marker";
@@ -12211,6 +12196,7 @@ class Mission
 							};
 							id=1332;
 							type="C_man_1";
+							atlOffset=2.4437904e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12274,7 +12260,7 @@ class Mission
 							};
 							id=1333;
 							type="C_man_1";
-							atlOffset=5.9604645e-008;
+							atlOffset=2.5033951e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12338,6 +12324,7 @@ class Mission
 							};
 							id=1334;
 							type="C_man_1";
+							atlOffset=2.1994114e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12401,7 +12388,7 @@ class Mission
 							};
 							id=1335;
 							type="C_man_1";
-							atlOffset=0.045805931;
+							atlOffset=0.045808315;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12465,7 +12452,7 @@ class Mission
 							};
 							id=1336;
 							type="C_man_1";
-							atlOffset=0.11212045;
+							atlOffset=0.11214608;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12514,10 +12501,11 @@ class Mission
 					{
 					};
 					id=1173;
+					atlOffset=2.4437904e-006;
 				};
 			};
 			id=154;
-			atlOffset=0.031305373;
+			atlOffset=0.031307817;
 		};
 		class Item2
 		{
@@ -12557,7 +12545,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6928.5098,2.6600001,7380.2344};
-				angles[]={-0,2.1854401,0};
+				angles[]={0,2.1854401,0};
 			};
 			name="spawn_opfor";
 			id=205;
@@ -12763,7 +12751,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6932.7725,2.6600001,7357.5293};
-				angles[]={-0,2.1854401,0};
+				angles[]={0,2.1854401,0};
 			};
 			name="spawn_indep";
 			id=206;
@@ -12969,7 +12957,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6923.7808,2.6600001,7401.7417};
-				angles[]={-0,2.1854401,0};
+				angles[]={0,2.1854401,0};
 			};
 			name="spawn_blufor";
 			id=208;
@@ -13185,6 +13173,7 @@ class Mission
 			};
 			id=1348;
 			type="Land_AncientStatue_01_F";
+			atlOffset=-5.9604645e-008;
 		};
 		class Item9
 		{
@@ -13344,6 +13333,7 @@ class Mission
 							};
 							id=1353;
 							type="B_Soldier_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -13607,7 +13597,7 @@ class Mission
 							};
 							id=1358;
 							type="B_Soldier_F";
-							atlOffset=1.9073486e-006;
+							atlOffset=3.8146973e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -13732,7 +13722,7 @@ class Mission
 							};
 							id=1360;
 							type="B_Soldier_F";
-							atlOffset=1.9073486e-006;
+							atlOffset=3.8146973e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -13933,6 +13923,7 @@ class Mission
 							};
 							id=1364;
 							type="B_Soldier_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -13994,6 +13985,7 @@ class Mission
 							};
 							id=1365;
 							type="B_Soldier_TL_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -14055,6 +14047,7 @@ class Mission
 							};
 							id=1366;
 							type="B_soldier_AR_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -14115,6 +14108,7 @@ class Mission
 							};
 							id=1367;
 							type="B_Soldier_GL_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -14175,6 +14169,7 @@ class Mission
 							};
 							id=1368;
 							type="B_Soldier_lite_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -14357,6 +14352,7 @@ class Mission
 							};
 							id=1371;
 							type="B_Soldier_GL_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -14466,6 +14462,7 @@ class Mission
 						formation="FILE";
 					};
 					id=1363;
+					atlOffset=1.9073486e-006;
 				};
 				class Item3
 				{
@@ -14675,6 +14672,7 @@ class Mission
 							};
 							id=1377;
 							type="B_Soldier_GL_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -14735,7 +14733,6 @@ class Mission
 							};
 							id=1378;
 							type="B_Soldier_lite_F";
-							atlOffset=-1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -14858,6 +14855,7 @@ class Mission
 							};
 							id=1380;
 							type="B_soldier_AR_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15055,7 +15053,7 @@ class Mission
 							};
 							id=1384;
 							type="B_Soldier_F";
-							atlOffset=0.0049610138;
+							atlOffset=0.0049629211;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15238,7 +15236,7 @@ class Mission
 							};
 							id=1387;
 							type="B_Soldier_GL_F";
-							atlOffset=1.9073486e-006;
+							atlOffset=3.8146973e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15360,7 +15358,7 @@ class Mission
 							};
 							id=1389;
 							type="B_Soldier_TL_F";
-							atlOffset=0.90000153;
+							atlOffset=0.90000343;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15482,7 +15480,7 @@ class Mission
 							};
 							id=1391;
 							type="B_Soldier_GL_F";
-							atlOffset=1.9073486e-006;
+							atlOffset=3.8146973e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15543,7 +15541,7 @@ class Mission
 							};
 							id=1392;
 							type="B_Soldier_lite_F";
-							atlOffset=1.9073486e-006;
+							atlOffset=3.8146973e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15593,7 +15591,7 @@ class Mission
 						formation="FILE";
 					};
 					id=1383;
-					atlOffset=0.0049610138;
+					atlOffset=0.0049629211;
 				};
 				class Item5
 				{
@@ -15621,7 +15619,7 @@ class Mission
 							};
 							id=1394;
 							type="B_Soldier_F";
-							atlOffset=0.026737213;
+							atlOffset=0.02673912;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15683,7 +15681,7 @@ class Mission
 							};
 							id=1395;
 							type="B_HeavyGunner_F";
-							atlOffset=0.024065018;
+							atlOffset=0.024066925;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15744,7 +15742,7 @@ class Mission
 							};
 							id=1396;
 							type="B_Soldier_A_F";
-							atlOffset=0.016765594;
+							atlOffset=0.016767502;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15806,6 +15804,7 @@ class Mission
 							};
 							id=1397;
 							type="B_HeavyGunner_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15927,6 +15926,7 @@ class Mission
 							};
 							id=1399;
 							type="B_soldier_AT_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -16048,6 +16048,7 @@ class Mission
 							};
 							id=1401;
 							type="B_soldier_AA_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -16157,7 +16158,7 @@ class Mission
 						formation="FILE";
 					};
 					id=1393;
-					atlOffset=0.026737213;
+					atlOffset=0.02673912;
 				};
 				class Item6
 				{
@@ -17976,6 +17977,7 @@ class Mission
 							};
 							id=1437;
 							type="B_crew_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -18703,7 +18705,7 @@ class Mission
 							};
 							id=1451;
 							type="B_crew_F";
-							atlOffset=0.02898407;
+							atlOffset=0.028985977;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -18766,7 +18768,7 @@ class Mission
 							};
 							id=1452;
 							type="B_crew_F";
-							atlOffset=0.02362442;
+							atlOffset=0.023626328;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -18829,7 +18831,7 @@ class Mission
 							};
 							id=1453;
 							type="B_crew_F";
-							atlOffset=0.013652802;
+							atlOffset=0.013654709;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -18891,7 +18893,7 @@ class Mission
 							};
 							id=1454;
 							type="B_Soldier_TL_F";
-							atlOffset=0.0010032654;
+							atlOffset=0.0010051727;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -18953,6 +18955,7 @@ class Mission
 							};
 							id=1455;
 							type="B_soldier_AR_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -19073,6 +19076,7 @@ class Mission
 							};
 							id=1457;
 							type="B_Soldier_lite_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -19242,7 +19246,7 @@ class Mission
 						formation="FILE";
 					};
 					id=1450;
-					atlOffset=0.02898407;
+					atlOffset=0.028985977;
 				};
 				class Item15
 				{
@@ -19333,7 +19337,7 @@ class Mission
 							};
 							id=1462;
 							type="B_crew_F";
-							atlOffset=0.023656845;
+							atlOffset=0.023658752;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -19396,7 +19400,7 @@ class Mission
 							};
 							id=1463;
 							type="B_crew_F";
-							atlOffset=0.0096549988;
+							atlOffset=0.0096569061;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -19580,6 +19584,7 @@ class Mission
 							};
 							id=1466;
 							type="B_Soldier_GL_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20026,6 +20031,7 @@ class Mission
 							};
 							id=1474;
 							type="B_Soldier_TL_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20087,7 +20093,7 @@ class Mission
 							};
 							id=1475;
 							type="B_soldier_AR_F";
-							atlOffset=1.9073486e-006;
+							atlOffset=3.8146973e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20209,6 +20215,7 @@ class Mission
 							};
 							id=1477;
 							type="B_Soldier_lite_F";
+							atlOffset=1.9073486e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20330,7 +20337,7 @@ class Mission
 							};
 							id=1479;
 							type="B_Soldier_lite_F";
-							atlOffset=1.9073486e-006;
+							atlOffset=3.8146973e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -25729,7 +25736,7 @@ class Mission
 							};
 							id=1578;
 							type="I_helicrew_F";
-							atlOffset=-0.029323578;
+							atlOffset=-0.029324532;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29078,7 +29085,7 @@ class Mission
 							};
 							id=1638;
 							type="I_Soldier_lite_F";
-							atlOffset=0.088129044;
+							atlOffset=0.088129997;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29200,7 +29207,7 @@ class Mission
 							};
 							id=1640;
 							type="I_Soldier_lite_F";
-							atlOffset=0.006814003;
+							atlOffset=0.0068149567;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -37818,6 +37825,339 @@ class Mission
 			};
 			id=1647;
 			atlOffset=-0.094371796;
+		};
+		class Item12
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8947.9053,0.47459468,1058.2823};
+			};
+			isPlayable=1;
+			description="Streamnator";
+			id=1796;
+			type="VirtualSpectator_F";
+			atlOffset=3.0517578e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="AllowFreeCamera";
+					expression="_this setVariable ['AllowFreeCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="WhitelistedSides";
+					expression="_this setVariable ['WhitelistedSides', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ShowFocusInfo";
+					expression="_this setVariable ['ShowFocusInfo', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="AllowAi";
+					expression="_this setVariable ['AllowAi', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Allow3PPCamera";
+					expression="_this setVariable ['Allow3PPCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item13
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8948.874,0.42024416,1058.2274};
+			};
+			isPlayable=1;
+			description="Streamnator";
+			id=1797;
+			type="VirtualSpectator_F";
+			atlOffset=3.0517578e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="AllowFreeCamera";
+					expression="_this setVariable ['AllowFreeCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="WhitelistedSides";
+					expression="_this setVariable ['WhitelistedSides', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ShowFocusInfo";
+					expression="_this setVariable ['ShowFocusInfo', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="AllowAi";
+					expression="_this setVariable ['AllowAi', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Allow3PPCamera";
+					expression="_this setVariable ['Allow3PPCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item14
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8949.8955,0.36424682,1058.1833};
+			};
+			isPlayable=1;
+			description="Streamnator";
+			id=1798;
+			type="VirtualSpectator_F";
+			atlOffset=3.0517578e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="AllowFreeCamera";
+					expression="_this setVariable ['AllowFreeCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="WhitelistedSides";
+					expression="_this setVariable ['WhitelistedSides', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ShowFocusInfo";
+					expression="_this setVariable ['ShowFocusInfo', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="AllowAi";
+					expression="_this setVariable ['AllowAi', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Allow3PPCamera";
+					expression="_this setVariable ['Allow3PPCamera', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 };
