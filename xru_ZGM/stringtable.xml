@@ -101,10 +101,6 @@
                 <English>NATO 2035 (Woodland)</English>
                 <German>NATO 2035 (Wald)</German>
             </Key>
-            <Key ID="STR_ZGM_FACTIONS_RU_35">
-                <English>RU35 - Russian Armed Forces 2035</English>
-                <German>RU35 - Russische Streitkräfte 2035</German>
-            </Key>
             <Key ID="STR_ZGM_FACTIONS_RU_DES">
                 <English>RU - Russian Armed Forces (201X Desert)</English>
                 <German>RU - Russische Streitkräfte (201X Wüste)</German>
@@ -120,6 +116,14 @@
             <Key ID="STR_ZGM_FACTIONS_RU_MOUNT">
                 <English>RU - Russian Armed Forces (200X Mountain)</English>
                 <German>RU - Russische Streitkräfte (200X Berg)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_RU_RAVEN">
+                <English>RU35 - Russian Armed Forces 2035 (Raven)</English>
+                <German>RU35 - Russische Streitkräfte 2035 (Raven)</German>
+            </Key>
+            <Key ID="STR_ZGM_FACTIONS_RU_TAIGA">
+                <English>RU35 - Russian Armed Forces 2035 (Taiga)</English>
+                <German>RU35 - Russische Streitkräfte 2035 (Taiga)</German>
             </Key>
             <Key ID="STR_ZGM_FACTIONS_SYND">
                 <English>Syndicat (Tanoa)</English>

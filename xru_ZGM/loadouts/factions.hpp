@@ -102,10 +102,6 @@
 #include "factions\NATO_WDL.hpp"
 #include "common\template.hpp"
 
-#define FACTION RU_35
-#include "factions\RU_35.hpp"
-#include "common\template.hpp"
-
 #define FACTION RU_DES
 #include "factions\RU_DES.hpp"
 #include "common\template.hpp"
@@ -120,6 +116,14 @@
 
 #define FACTION RU_MOUNT
 #include "factions\RU_MOUNT.hpp"
+#include "common\template.hpp"
+
+#define FACTION RU_RAVEN
+#include "factions\RU_RAVEN.hpp"
+#include "common\template.hpp"
+
+#define FACTION RU_TAIGA
+#include "factions\RU_TAIGA.hpp"
 #include "common\template.hpp"
 
 #define FACTION SYND

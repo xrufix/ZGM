@@ -179,7 +179,7 @@
 #define MAGS_AUTORIFLE      ARR_2(MAG_AUTORIFLE,4)
 #define MAGS_AUTORIFLE_ASST ARR_2(MAG_AUTORIFLE,2)
 
-#define AUTORIFLE_RECON        WEAPON_OLD("hlc_rifle_RPK12_60rnd","rhs_acc_ekp8_18","","")
+#define AUTORIFLE_RECON        WEAPON_OLD("hlc_rifle_RPK12","rhs_acc_ekp8_18","","")
 #define MAGS_AUTORIFLE_RECON   ARR_2("hlc_60Rnd_545x39_t_rpk",8)
 
 #define MMG                 WEAPON_OLD("rhs_weap_pkp","","","")

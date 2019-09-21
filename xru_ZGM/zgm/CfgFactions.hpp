@@ -157,12 +157,6 @@ class CfgFactions {
         index = 525;
         sideShort = "b";
     };
-    class RU_35 {
-        displayName = CSTRING(FACTIONS,RU_35);
-        icon = "\x\xru_hidden_textures\addons\soldiers\flags\icon_rus_co.paa";
-        index = 540;
-        sideShort = "o";
-    };
     class RU_DES {
         displayName = CSTRING(FACTIONS,RU_DES);
         icon = "\rhsafrf\addons\rhs_main\data\icons\vdv.paa";
@@ -185,6 +179,18 @@ class CfgFactions {
         displayName = CSTRING(FACTIONS,RU_MOUNT);
         icon = "\rhsafrf\addons\rhs_main\data\icons\vmf.paa";
         index = 625;
+        sideShort = "o";
+    };
+    class RU_RAVEN {
+        displayName = CSTRING(FACTIONS,RU_RAVEN);
+        icon = "\x\xru_hidden_textures\addons\soldiers\flags\icon_rus_co.paa";
+        index = 630;
+        sideShort = "o";
+    };
+    class RU_TAIGA {
+        displayName = CSTRING(FACTIONS,RU_TAIGA);
+        icon = "\x\xru_hidden_textures\addons\soldiers\flags\icon_rus_co.paa";
+        index = 635;
         sideShort = "o";
     };
     class SYND {

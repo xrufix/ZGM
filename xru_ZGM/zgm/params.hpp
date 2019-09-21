@@ -31,11 +31,12 @@ class DOUBLES(faction,var1) { \
         475, \
         500, \
         525, \
-        540, \
         550, \
         575, \
         600, \
         625, \
+        630, \
+        635, \
         650, \
         675, \
         700, \
@@ -71,11 +72,12 @@ class DOUBLES(faction,var1) { \
 /* 475 */   CSTRING(FACTIONS,NATO_MTP), \
 /* 500 */   CSTRING(FACTIONS,NATO_TRPC), \
 /* 525 */   CSTRING(FACTIONS,NATO_WDL), \
-/* 540 */   CSTRING(FACTIONS,RU_35), \
 /* 550 */   CSTRING(FACTIONS,RU_DES), \
 /* 575 */   CSTRING(FACTIONS,RU_EMR), \
 /* 600 */   CSTRING(FACTIONS,RU_FLORA), \
 /* 625 */   CSTRING(FACTIONS,RU_MOUNT), \
+/* 630 */   CSTRING(FACTIONS,RU_RAVEN), \
+/* 635 */   CSTRING(FACTIONS,RU_TAIGA), \
 /* 650 */   CSTRING(FACTIONS,SYND), \
 /* 675 */   CSTRING(FACTIONS,TAKI_INS), \
 /* 700 */   CSTRING(FACTIONS,TAKISTAN), \
