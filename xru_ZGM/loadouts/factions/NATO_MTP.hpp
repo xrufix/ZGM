@@ -46,7 +46,7 @@
 #define BACKPACK_ASSAULT    ARR_5("B_AssaultPack_cbr","B_AssaultPack_rgr","B_AssaultPack_khk","B_AssaultPack_mcamo","B_AssaultPack_sgg")
 #define BACKPACK_KITBAG     ARR_2("B_Kitbag_mcamo","B_Kitbag_cbr")
 #define BACKPACK_CARRYALL   ARR_1("B_Carryall_mcamo")
-#define BACKPACK_RADIO      BACKPACK_ASSAULT
+#define BACKPACK_RADIO      ARR_1("B_RadioBag_01_mtp_F")
 #define BACKPACK_AT_LIGHT 	ARR_1("")
 #define BACKPACK_DIVER      ARR_1("xru_Carryall_blk")
 #define BACKPACK_RECON      BACKPACK_ASSAULT

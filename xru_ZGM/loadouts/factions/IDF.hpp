@@ -46,7 +46,7 @@
 #define BACKPACK_ASSAULT    ARR_3("B_FieldPack_oli","B_FieldPack_khk","B_FieldPack_cbr")
 #define BACKPACK_KITBAG     ARR_2("B_Kitbag_rgr","B_Kitbag_cbr")
 #define BACKPACK_CARRYALL   ARR_1("B_Carryall_oli")
-#define BACKPACK_RADIO      BACKPACK_ASSAULT
+#define BACKPACK_RADIO      ARR_1("B_RadioBag_01_black_F")
 #define BACKPACK_AT_LIGHT 	BACKPACK_ASSAULT
 #define BACKPACK_DIVER      ARR_1("xru_Carryall_blk")
 #define BACKPACK_RECON      BACKPACK_ASSAULT

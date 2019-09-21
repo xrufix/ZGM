@@ -30,6 +30,7 @@
 #define BACKPACK_ASSAULT    ARR_1("B_FieldPack_oucamo")
 #define BACKPACK_KITBAG     ARR_1("w_b_viperlightharness_urban")
 #define BACKPACK_CARRYALL   ARR_1("B_Carryall_oucamo")
+#define BACKPACK_RADIO      ARR_1("B_RadioBag_01_oucamo_F")
 #define BACKPACK_DIVER      ARR_1("b_viperharness_blk_f")
 #define BACKPACK_RECON      ARR_1("w_b_viperharness_urban")
 

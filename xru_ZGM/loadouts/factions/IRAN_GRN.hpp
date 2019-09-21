@@ -23,7 +23,7 @@
 #define BACKPACK_ASSAULT    ARR_3("B_FieldPack_oli","B_FieldPack_khk","B_FieldPack_ghex_f")
 #define BACKPACK_KITBAG     ARR_1("B_ViperLightHarness_ghex_F")
 #define BACKPACK_CARRYALL   ARR_1("B_Carryall_ghex_f")
-#define BACKPACK_RADIO      BACKPACK_ASSAULT
+#define BACKPACK_RADIO      ARR_1("B_RadioBag_01_ghex_F")
 #define BACKPACK_RECON      ARR_1("b_viperharness_ghex_f")
 
 //	CSW-BACKPACKS
