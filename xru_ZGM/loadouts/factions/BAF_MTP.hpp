@@ -197,7 +197,7 @@
 #define GOGGLES_PILOT	ARR_1("G_Aviator")
 
 /* ###################### - NIGHT VISION DEVICES - ###################### */
-#define NVG	    ARR_1("CUP_NVG_HMNVS")
+#define NVG	    ARR_1("UK3CB_BAF_HMNVS")
 #define NVG_SF  ARR_1("NVGoggles_OPFOR")
 
 /* ###################### - BINOCULARS - ###################### */

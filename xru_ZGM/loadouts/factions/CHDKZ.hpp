@@ -105,8 +105,8 @@
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR     WEAPON_OLD("CUP_srifle_CZ550","","","")
-#define MAG_DMR ARR_1("CUP_5x_22_LR_17_HMR_M")
+#define DMR     WEAPON_OLD("rhs_weap_m38","","","")
+#define MAG_DMR ARR_1("rhsgref_5Rnd_762x54_m38")
 
 #define DMR_RECON       WEAPON_OLD("rhs_weap_svdp_wd","rhs_acc_pso1m21","","")
 #define DMR_DIVER       DMR_RECON

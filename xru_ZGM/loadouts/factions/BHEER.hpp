@@ -32,9 +32,9 @@
 
 #define VEST_CREW		ARR_1("V_LegStrapBag_black_F")
 
-#define VEST_RECON		ARR_1("VSM_RAV_operator_Multicam") 
-#define VEST_RECON_TL	ARR_1("VSM_LBT6094_operator_Multicam") 
-#define VEST_RECON_MG	ARR_1("VSM_RAV_MG_Multicam") 
+#define VEST_RECON		ARR_1("VSM_RAV_operator_Multicam")
+#define VEST_RECON_TL	ARR_1("VSM_LBT6094_operator_Multicam")
+#define VEST_RECON_MG	ARR_1("VSM_RAV_MG_Multicam")
 #define VEST_RECON_GR	VEST_RECON
 
 #define VEST_BREATHER	ARR_1("V_RebreatherB")
@@ -194,7 +194,7 @@
 
 /* ###################### - NIGHT VISION DEVICES - ###################### */
 #define NVG	    ARR_1("")
-#define NVG_SF  ARR_1("CUP_NVG_PVS7")
+#define NVG_SF  ARR_1("UK3CB_BAF_HMNVS")
 
 /* ###################### - BINOCULARS - ###################### */
 #define BINOCULAR	ARR_1("Binocular")

@@ -32,9 +32,9 @@
 
 #define VEST_CREW		ARR_1("V_LegStrapBag_olive_F")
 
-#define VEST_RECON		ARR_1("VSM_FAPC_Operator_M81") 
-#define VEST_RECON_TL	ARR_1("VSM_RAV_operator_M81") 
-#define VEST_RECON_MG	ARR_1("VSM_FAPC_MG_M81") 
+#define VEST_RECON		ARR_1("VSM_FAPC_Operator_M81")
+#define VEST_RECON_TL	ARR_1("VSM_RAV_operator_M81")
+#define VEST_RECON_MG	ARR_1("VSM_FAPC_MG_M81")
 #define VEST_RECON_GR	VEST_RECON_TL
 
 #define VEST_BREATHER	ARR_1("V_RebreatherIA")
@@ -72,8 +72,8 @@
 
 /* ###################### - PRIMARY WEAPONS - ###################### */
 // STANDARD ISSUE ASSAULT RIFLE
-#define RIFLE           ARR_1("CUP_arifle_M16A2")
-#define RIFLE_UGL       ARR_1("CUP_arifle_M16A2_GL")
+#define RIFLE           ARR_1("UK3CB_M16A2")
+#define RIFLE_UGL       ARR_1("UK3CB_M16A2_UGL")
 #define RIFLE_RCO       RIFLE
 #define RIFLE_UGL_RCO   RIFLE_UGL
 #define RIFLE_CCO       RIFLE
@@ -153,9 +153,9 @@
 #define MAGS_AA_MISSILE         ARR_1("rhs_fim92_mag")
 #define MAGS_AA_MISSILE_ASST    ARR_2("rhs_fim92_mag",2)
 
-#define AT_MISSILE              WEAPON_OLD("CUP_launch_M47","","","")
-#define MAGS_AT_MISSILE         ARR_1("CUP_Dragon_EP1_M")
-#define MAGS_AT_MISSILE_ASST    MAGS_AT_MISSILE
+#define AT_MISSILE              WEAPON("rhs_weap_fgm148","","","","")
+#define MAGS_AT_MISSILE         ARR_1("rhs_fgm148_magazine_AT")
+#define MAGS_AT_MISSILE_ASST    ARR_1("rhs_fgm148_magazine_AT")
 
 /* ###################### - HEADGEAR - ###################### */
 // GENERAL INFANTRY
@@ -163,12 +163,12 @@
 // NON-COMBAT INFANTRY
 #define HELMET_BARE ARR_2("rhsgref_helmet_M1_bare","rhsgref_helmet_M1_bare_alt01")
 // SPECIAL FORCES INFANTRY
-#define HELMET_SF ARR_3("rhs_Booniehat_m81","rhsusf_ach_helmet_M81","CUP_H_FR_Bandana_Headset")
+#define HELMET_SF ARR_2("rhs_Booniehat_m81","rhsusf_ach_helmet_M81")
 #define HELMET_DIVER HELMET_SF
 // VEHICLE CREWS
 #define HELMET_CREW 		ARR_1("rhsusf_cvc_green_alt_helmet")
-#define HELMET_HELICOPTER	ARR_1("CUP_H_PMC_EP_Headset")
-#define HELMET_HELI_CREW	ARR_1("CUP_H_PMC_EP_Headset")
+#define HELMET_HELICOPTER	ARR_1("UK3CB_H_Pilot_Helmet")
+#define HELMET_HELI_CREW	ARR_1("UK3CB_H_Crew_Helmet")
 #define HELMET_JET			ARR_1("H_PilotHelmetFighter_B")
 
 // COMMANDERS
@@ -187,7 +187,7 @@
 
 /* ###################### - NIGHT VISION DEVICES - ###################### */
 #define NVG	    ARR_1("")
-#define NVG_SF  ARR_1("CUP_NVG_PVS14")
+#define NVG_SF  ARR_1("rhsusf_ANPVS_14")
 
 /* ###################### - BINOCULARS - ###################### */
 #define BINOCULAR	ARR_1("Binocular")

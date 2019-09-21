@@ -48,7 +48,7 @@
 
 /* ###################### - BACKPACKS - ###################### */
 #define BACKPACK_ASSAULT    ARR_4("B_FieldPack_blk","B_FieldPack_cbr","B_FieldPack_khk","B_FieldPack_oli")
-#define BACKPACK_KITBAG     ARR_1("CUP_B_AlicePack_Khaki")
+#define BACKPACK_KITBAG     ARR_2("rhsgref_ttsko_alicepack","rhsgref_hidf_alicepack")
 #define BACKPACK_CARRYALL   ARR_2("rhsgref_ttsko_alicepack","rhsgref_hidf_alicepack")
 #define BACKPACK_RADIO      BACKPACK_ASSAULT
 #define BACKPACK_AT_LIGHT 	ARR_1("rhs_rpg_empty")
@@ -177,13 +177,12 @@
 
 /* ###################### - HEADGEAR - ###################### */
 // GENERAL INFANTRY
-#define HELMET ARR_6( \
+#define HELMET ARR_5( \
     ARR_3("H_Shemag_olive","H_ShemagOpen_tan","H_ShemagOpen_khk"), \
     ARR_6("UK3CB_H_Mil_Turban_Wrap","UK3CB_TKM_I_H_Turban_02_1","UK3CB_TKM_I_H_Turban_01_1","UK3CB_TKM_I_H_Turban_05_1","UK3CB_TKM_I_H_Turban_04_1","UK3CB_TKM_I_H_Turban_03_1"), \
     ARR_6("UK3CB_TKM_B_H_Turban_02_1","UK3CB_TKM_B_H_Turban_01_1","UK3CB_TKM_B_H_Turban_05_1","UK3CB_TKM_B_H_Turban_04_1","UK3CB_TKM_B_H_Turban_03_1","UK3CB_TKM_O_H_Turban_02_1"), \
     ARR_6("UK3CB_TKM_O_H_Turban_01_1","UK3CB_TKM_O_H_Turban_05_1","UK3CB_TKM_O_H_Turban_04_1","UK3CB_TKM_O_H_Turban_03_1","UK3CB_TKC_H_Turban_05_1","UK3CB_TKC_H_Turban_04_1"), \
-    ARR_6("UK3CB_TKC_H_Turban_03_1","UK3CB_TKC_H_Turban_06_1","UK3CB_TKC_H_Turban_02_1","UK3CB_TKC_H_Turban_01_1","CUP_H_TKI_Lungee_05","CUP_H_TKI_Lungee_06"), \
-    ARR_6("CUP_H_TKI_Lungee_Open_01","CUP_H_TKI_Lungee_Open_02","CUP_H_TKI_Lungee_Open_03","CUP_H_TKI_Lungee_Open_04","CUP_H_TKI_Lungee_Open_05","CUP_H_TKI_Lungee_Open_06"))
+    ARR_4("UK3CB_TKC_H_Turban_03_1","UK3CB_TKC_H_Turban_06_1","UK3CB_TKC_H_Turban_02_1","UK3CB_TKC_H_Turban_01_1"))
 // NON-COMBAT INFANTRY
 #define HELMET_BARE     HELMET
 // SPECIAL FORCES INFANTRY

@@ -19,10 +19,11 @@
     ARR_2("hlc_GRD_green",2), \
     ARR_2("hlc_GRD_Red",2))
 // Colored Flares (two of each kind)
-#define UGLS_FLR ARR_3( \
-    ARR_2("CUP_FlareGreen_GP25_M",2), \
-    ARR_2("CUP_FlareRed_GP25_M",2), \
-    ARR_2("CUP_FlareYellow_GP25_M",2))
+#define UGLS_FLR ""
+// #define UGLS_FLR ARR_3( \
+//     ARR_2("CUP_FlareGreen_GP25_M",2), \
+//     ARR_2("CUP_FlareRed_GP25_M",2), \
+//     ARR_2("CUP_FlareYellow_GP25_M",2))
 
 // UGLS Grenadiers
 #define UGLS_GREN ARR_2( \

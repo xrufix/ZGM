@@ -136,15 +136,15 @@
 
 
 // DESIGNATED MARKSMAN RIFLES & SNIPER RIFLES
-#define DMR         WEAPON_OLD("rhs_weap_sr25_ec","optic_dms","","rhsusf_acc_harris_bipod")
+#define DMR         WEAPON_OLD("rhs_weap_sr25_ec","rksl_optic_pmii_312","","rhsusf_acc_harris_bipod")
 #define MAG_DMR     ARR_1("rhsusf_20Rnd_762x51_SR25_m118_special_Mag")
 
-#define DMR_RECON       WEAPON_OLD("CUP_arifle_Mk20","optic_ams_snd","","rhsusf_acc_harris_bipod")
-#define DMR_DIVER       WEAPON_OLD("CUP_arifle_Mk17_STD_black","optic_ams","","rhsusf_acc_harris_bipod")
-#define MAG_DMR_RECON   ARR_1("CUP_20Rnd_762x51_B_SCAR")
+#define DMR_RECON       WEAPON_OLD("hlc_rifle_SG550Sniper_RIS","rksl_optic_pmii_312","rhsusf_acc_rotex5_grey","")
+#define DMR_DIVER       DMR_RECON
+#define MAG_DMR_RECON   ARR_1("hlc_30Rnd_556x45_EPR_sg550")
 
-#define SR_AP       WEAPON_OLD("CUP_arifle_Mk20","rhsusf_acc_premier","cup_muzzle_snds_scar_h","rhsusf_acc_harris_bipod")
-#define MAGS_SR_AP  ARR_2("CUP_20Rnd_762x51_B_SCAR",7)
+#define SR_AP       WEAPON_OLD("srifle_LRR_camo_F","rksl_optic_pmii_525_wdl","","")
+#define MAGS_SR_AP  ARR_2("7Rnd_408_Mag",7)
 
 #define SR_AM       WEAPON_OLD("rhs_weap_m82a1","rhsusf_acc_premier","","")
 #define MAGS_SR_AM  ARR_2("rhsusf_mag_10Rnd_STD_50BMG_M33",5)

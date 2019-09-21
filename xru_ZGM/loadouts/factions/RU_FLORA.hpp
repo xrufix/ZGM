@@ -121,8 +121,8 @@
 #define SR_AP       WEAPON_OLD("rhs_weap_svdp_wd","rhs_acc_pso1m2","","")
 #define MAGS_SR_AP  ARR_2("rhs_10Rnd_762x54mmR_7N1",10)
 
-#define SR_AM       WEAPON_OLD("CUP_srifle_ksvk","CUP_optic_PSO_3","","")
-#define MAGS_SR_AM  ARR_2("CUP_5Rnd_127x108_KSVK_M",10)
+#define SR_AM       SR_AP
+#define MAGS_SR_AM  MAGS_SR_AP
 
 
 // AUTOMATIC RIFLES & MACHINE GUNS
@@ -160,10 +160,9 @@
 #define MAGS_AA_MISSILE         ARR_1("rhs_mag_9k38_rocket")
 #define MAGS_AA_MISSILE_ASST    ARR_2("rhs_mag_9k38_rocket",2)
 
-#define AT_MISSILE              WEAPON_OLD("CUP_launch_Metis","","","")
-#define MAGS_AT_MISSILE         ARR_1("CUP_AT13_M")
-#define MAGS_AT_MISSILE_ASST    ARR_1("CUP_AT13_M")
-
+#define AT_MISSILE              WEAPON_OLD("launch_O_Vorona_green_F","","","")
+#define MAGS_AT_MISSILE         ARR_1("Vorona_HEAT")
+#define MAGS_AT_MISSILE_ASST    ARR_1("Vorona_HEAT")
 
 
 /* ###################### - HEADGEAR - ###################### */

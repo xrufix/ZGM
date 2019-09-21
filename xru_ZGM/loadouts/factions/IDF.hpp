@@ -131,10 +131,20 @@
 
 
 /* ###################### - LAUNCHERS - ###################### */
-#define AT_LIGHT	WEAPON_OLD("rhs_weap_m72a7","","","")
-#define AT_ROCKET	WEAPON_OLD("CUP_launch_M47","","","")
-#define AA_MISSILE	WEAPON_OLD("rhs_weap_fim92","","","")   // Nicht nutzen!
-#define AT_MISSILE AT_ROCKET
+#define AT_LIGHT	            WEAPON_OLD("rhs_weap_m72a7","","","")
+#define MAGS_AT_LIGHT           ARR_1("rhs_m72a7_mag")
+
+#define AT_ROCKET	            WEAPON_OLD("launch_MRAWS_olive_rail_F","acc_pointer_ir","","")
+#define MAGS_AT_ROCKET          ARR_1("MRAWS_HEAT_F")
+#define MAGS_AT_ROCKET_ASST     ARR_2("MRAWS_HEAT_F",2)
+
+#define AA_MISSILE	            WEAPON_OLD("rhs_weap_fim92","","","")
+#define MAGS_AA_MISSILE         ARR_1("rhs_fim92_mag")
+#define MAGS_AA_MISSILE_ASST    ARR_2("rhs_fim92_mag",2)
+
+#define AT_MISSILE              WEAPON("rhs_weap_fgm148","","","","")
+#define MAGS_AT_MISSILE         ARR_1("rhs_fgm148_magazine_AT")
+#define MAGS_AT_MISSILE_ASST    ARR_1("rhs_fgm148_magazine_AT")
 
 
 
@@ -167,18 +177,6 @@
 #define MAG_PDW	        ARR_1("30Rnd_9x21_Mag")
 #define MAG_PISTOL 		ARR_1("rhsusf_mag_15Rnd_9x19_JHP")
 #define MAG_PISTOL_SF 	ARR_1("rhsusf_mag_17Rnd_9x19_JHP")
-
-//  ROCKETS & MISSILES
-#define MAGS_AT_LIGHT           ARR_1("rhs_m72a7_mag")
-#define MAGS_AT_ROCKET          ARR_1("CUP_Dragon_EP1_M")
-#define MAGS_AT_ROCKET_ASST     ARR_2("CUP_Dragon_EP1_M",1)
-#define MAGS_AT_MISSILE       MAGS_AT_ROCKET
-#define MAGS_AT_MISSILE_ASST  MAGS_AT_ROCKET_ASST
-#define MAGS_AA_MISSILE         ARR_1("rhs_fim92_mag")
-#define MAGS_AA_MISSILE_ASST    ARR_2("rhs_fim92_mag",2)
-
-//  GRENADES
-
 
 
 

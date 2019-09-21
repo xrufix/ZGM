@@ -161,9 +161,9 @@
 #define MAGS_AA_MISSILE         ARR_1("rhs_fim92_mag")
 #define MAGS_AA_MISSILE_ASST    ARR_2("rhs_fim92_mag",2)
 
-#define AT_MISSILE              WEAPON_OLD("CUP_launch_M47","","","")
-#define MAGS_AT_MISSILE         ARR_1("CUP_Dragon_EP1_M")
-#define MAGS_AT_MISSILE_ASST    ARR_1("CUP_Dragon_EP1_M")
+#define AT_MISSILE              WEAPON("rhs_weap_fgm148","","","","")
+#define MAGS_AT_MISSILE         ARR_1("rhs_fgm148_magazine_AT")
+#define MAGS_AT_MISSILE_ASST    ARR_1("rhs_fgm148_magazine_AT")
 
 
 
@@ -201,7 +201,7 @@
 
 /* ###################### - NIGHT VISION DEVICES - ###################### */
 #define NVG	    ARR_1("")
-#define NVG_SF	ARR_1("CUP_NVG_PVS7")
+#define NVG_SF	ARR_1("rhsusf_ANPVS_14")
 
 
 

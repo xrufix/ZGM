@@ -160,7 +160,7 @@
 
 /* ###################### - NIGHT VISION DEVICES - ###################### */
 #define NVG	    ARR_1("")
-#define NVG_SF  ARR_1("CUP_NVG_HMNVS")
+#define NVG_SF  ARR_1("UK3CB_BAF_HMNVS")
 
 /* ###################### - BINOCULARS - ###################### */
 
@@ -169,4 +169,3 @@
 
 /* ###################### - INSIGNIA - ###################### */
 // Kann in CfgLoadouts.hpp überschrieben werden.
-

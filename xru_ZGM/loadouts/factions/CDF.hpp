@@ -163,9 +163,9 @@
 #define MAGS_AA_MISSILE         ARR_1("rhs_mag_9k38_rocket")
 #define MAGS_AA_MISSILE_ASST    ARR_2("rhs_mag_9k38_rocket",2)
 
-#define AT_MISSILE              WEAPON_OLD("CUP_launch_M47","","","")
-#define MAGS_AT_MISSILE         ARR_1("CUP_Dragon_EP1_M")
-#define MAGS_AT_MISSILE_ASST    ARR_1("CUP_Dragon_EP1_M")
+#define AT_MISSILE              WEAPON_OLD("launch_O_Vorona_brown_F","","","")
+#define MAGS_AT_MISSILE         ARR_1("Vorona_HEAT")
+#define MAGS_AT_MISSILE_ASST    ARR_1("Vorona_HEAT")
 
 
 
