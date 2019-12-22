@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+if (isGamePaused) exitWith {};
+
 private _factor = (time - GVAR(detect_lastTime)) / DETECT_TIMETOMAX;
 
 // Caculate environmental effects:

@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+if (isGamePaused) exitWith {};
+
 GVAR(groups) = GVAR(groups) select {
     private _group = _x;
     private _units = units _group;
